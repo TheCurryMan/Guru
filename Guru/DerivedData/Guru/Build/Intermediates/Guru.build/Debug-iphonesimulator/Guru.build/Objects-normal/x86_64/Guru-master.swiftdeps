@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "33f7c4bc139bb4258e73e235d911611b"
-build_time: [538289561, 216200000]
+options: "cd6885df52e5d3a226c2b27a48542329"
+build_time: [538291648, 439304000]
 inputs:
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/ViewController.swift": [538289559, 0]
-  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/AppDelegate.swift": [538288563, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/AppDelegate.swift": [538291646, 0]

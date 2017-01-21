@@ -1,0 +1,317 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "BFCancellationToken.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFCancellationTokenRegistration.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFCancellationTokenSource.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFExecutor.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFExecutor.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFTask+Exceptions.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFTask.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFTaskCompletionSource.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "Bolts-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Bolts-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Bolts.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/Bolts.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PFACL.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFACL.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFAnalytics.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnalytics.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFAnonymousUtils+Deprecated.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils+Deprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFAnonymousUtils.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFCloud+Deprecated.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Deprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFCloud+Synchronous.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Synchronous.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFCloud.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFConfig+Synchronous.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig+Synchronous.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFConfig.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFConstants.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFFile+Deprecated.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Deprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFFile+Synchronous.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Synchronous.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFFile.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFGeoPoint.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFGeoPoint.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFInstallation.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFInstallation.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFNetworkActivityIndicatorManager.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFObject+Deprecated.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Deprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFObject+Subclass.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Subclass.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFObject+Synchronous.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Synchronous.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFObject.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFProduct.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFProduct.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFPurchase.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPurchase.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFPush+Deprecated.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Deprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFPush+Synchronous.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Synchronous.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFPush.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFQuery+Deprecated.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Deprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFQuery+Synchronous.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Synchronous.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFQuery.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFRelation.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRelation.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFRole.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRole.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFSession.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSession.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFSubclassing.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSubclassing.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFUser+Deprecated.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Deprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFUser+Synchronous.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Synchronous.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFUser.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFUserAuthenticationDelegate.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "Parse-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Parse-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Parse/Parse-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Parse.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/Parse.h"
+        },
+        {
+          'type': 'file',
+          'name': "ParseClientConfiguration.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/ParseClientConfiguration.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Parse.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Pods_Guru.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Guru-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Pods-Guru/Pods-Guru-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Guru-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Pods_Guru.framework/Headers/Pods_Guru-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Pods_Guru.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Guru.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

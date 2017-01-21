@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		A0rJ07O5iWkfgL0ZPzxLjDY725s=
+		zaOyRUNZK+KxmDN7mnEoSLtJHQQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,8 +30,41 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		Yje1lvyMsWY0lmToJmZn26EVCiU=
+		bTPQzOI/0cHqKEbZYV+OAiY1FqM=
 		</data>
+		<key>Frameworks/Bolts.framework/Bolts</key>
+		<data>
+		sd6v3vvuNjDKJGVm5Bn6MiSTR6w=
+		</data>
+		<key>Frameworks/Bolts.framework/Info.plist</key>
+		<data>
+		xqn8KoVY92Nqybd8rye8jRAgK+o=
+		</data>
+		<key>Frameworks/Bolts.framework/_CodeSignature/CodeResources</key>
+		<data>
+		8UUrStocn4vmiihKC2SN4xgnCH4=
+		</data>
+		<key>Frameworks/Parse.framework/Info.plist</key>
+		<data>
+		OsE5dq8dbVqPP1duoLJBhh1jG9M=
+		</data>
+		<key>Frameworks/Parse.framework/Parse</key>
+		<data>
+		HrW7Z4RXv9SHBytsiotEyg0fMwk=
+		</data>
+		<key>Frameworks/Parse.framework/_CodeSignature/CodeResources</key>
+		<data>
+		gBAhegR6xBlrZpHSk4GApPbO+xU=
+		</data>
+		<key>Frameworks/Parse.framework/en.lproj/Parse.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+zD5I8hra/3GTgFrVFJJgyIKTao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		blagc+UjPVBTHaTHbrlBKbVn20I=
@@ -43,6 +76,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		kczkyFkTsCEEfoO5GHHQIgCOuAU=
+		</data>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<data>
+		Gi6tQUKV0825sFZxc/lQij939dM=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -131,11 +168,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A0rJ07O5iWkfgL0ZPzxLjDY725s=
+			zaOyRUNZK+KxmDN7mnEoSLtJHQQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			RQ8jGr4sjtaxxikBqJRcWaGmhK7K0+TuV0I+D871NEs=
+			42HQLwbc19GW6VIZ8O5Mu4k1XXxRme4KluQFPEtBbA0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -153,12 +190,91 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yje1lvyMsWY0lmToJmZn26EVCiU=
+			bTPQzOI/0cHqKEbZYV+OAiY1FqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			8QagaGz2krv9Jg869tkA8LdtguECHKQ85OaFeuIBxRw=
+			iOTca+k33EQHgag07t6V/kCji9F5+/4lNQiizhZstts=
 			</data>
+		</dict>
+		<key>Frameworks/Bolts.framework/Bolts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sd6v3vvuNjDKJGVm5Bn6MiSTR6w=
+			</data>
+			<key>hash2</key>
+			<data>
+			Mf2zziRYJjMv8R7cFlhBXviL6LM4KlaR5qt3zYcRw5g=
+			</data>
+		</dict>
+		<key>Frameworks/Bolts.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xqn8KoVY92Nqybd8rye8jRAgK+o=
+			</data>
+			<key>hash2</key>
+			<data>
+			zcvVn69YTJdiuPon03daJJUg3/3MY7TV5IerrlF0q3g=
+			</data>
+		</dict>
+		<key>Frameworks/Bolts.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8UUrStocn4vmiihKC2SN4xgnCH4=
+			</data>
+			<key>hash2</key>
+			<data>
+			FYrPBpAlyf/yXMyQcju6VE5uvbphHcyDuBmcy6wb5nY=
+			</data>
+		</dict>
+		<key>Frameworks/Parse.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OsE5dq8dbVqPP1duoLJBhh1jG9M=
+			</data>
+			<key>hash2</key>
+			<data>
+			FQCWjj6zQ4j93gxleWvRrwLpI7I29yS8Kev+zxh5I98=
+			</data>
+		</dict>
+		<key>Frameworks/Parse.framework/Parse</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HrW7Z4RXv9SHBytsiotEyg0fMwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			NPNPna2uqtL90a1rlcHOSjsphIv3yvBd2zHpA3hB9oc=
+			</data>
+		</dict>
+		<key>Frameworks/Parse.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gBAhegR6xBlrZpHSk4GApPbO+xU=
+			</data>
+			<key>hash2</key>
+			<data>
+			D02OjdNmI9JuRCzBYgnr2a8lMlsGmm7VxU7jXqWhs50=
+			</data>
+		</dict>
+		<key>Frameworks/Parse.framework/en.lproj/Parse.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+zD5I8hra/3GTgFrVFJJgyIKTao=
+			</data>
+			<key>hash2</key>
+			<data>
+			S7J+RJ/8cCeYHZ5VocE14vZIebIA+gevu0HRvvrLYdY=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
@@ -191,6 +307,17 @@
 			<key>hash2</key>
 			<data>
 			FnvDmgNFr2JomOicwx+7EKcBGQdHHuJ5gh2aixoStCM=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gi6tQUKV0825sFZxc/lQij939dM=
+			</data>
+			<key>hash2</key>
+			<data>
+			RrNqMBJSgxXzD93OtINifrsadnebuEanBmcA3nXs7M0=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
