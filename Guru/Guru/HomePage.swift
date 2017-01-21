@@ -15,6 +15,8 @@ class HomePage: UIViewController {
     @IBOutlet weak var subjectsEntered: UITextField!
     @IBOutlet weak var acceptButton: UIButton!
     var avail = true
+    var question: PFObject?
+    
     @IBAction func tapped(_ sender: Any) {
         questionField.resignFirstResponder()
         subjectsEntered.resignFirstResponder()
@@ -46,13 +48,14 @@ class HomePage: UIViewController {
     func submitQuestion() {
         let user = PFUser.current()
 
-        var question = PFObject(className:"Question")
+        let question = PFObject(className:"Question")
         question["text"] = questionField.text
         question["topic"] = subjectsEntered.text
         question["student"] = user
         question.saveInBackground {
             (success, error) -> Void in
             if (success) {
+                self.question = question
                 self.performSegue(withIdentifier: "loading", sender: self)
                 
             } else {
@@ -85,14 +88,16 @@ class HomePage: UIViewController {
         
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "loading") {
+            let waitingScreen = segue.destination as! WaitingScreen
+            waitingScreen.question = self.question!
+        }
     }
-    */
+ 
 
 }
