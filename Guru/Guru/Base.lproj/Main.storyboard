@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2xA-kP-gBz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -280,10 +280,48 @@
             </objects>
             <point key="canvasLocation" x="640.79999999999995" y="138.98050974512745"/>
         </scene>
+        <!--Waiting Screen-->
+        <scene sceneID="SZm-73-hRi">
+            <objects>
+                <viewController id="2xA-kP-gBz" customClass="WaitingScreen" customModule="Guru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tWS-47-Fkp"/>
+                        <viewControllerLayoutGuide type="bottom" id="qUh-1o-Hql"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r55-YH-rwW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BKG.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLz-8g-3Zw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="38X-nd-4Zd">
+                                <rect key="frame" x="47" y="206" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Guru_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="bcC-dX-zQC">
+                                <rect key="frame" x="137" y="296" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="circles" destination="38X-nd-4Zd" id="xBc-km-k4d"/>
+                        <outlet property="guru" destination="bcC-dX-zQC" id="q81-Fp-VH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hF-Fe-AHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349.5999999999999" y="127.28635682158921"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BKG.png" width="1080" height="1920"/>
         <image name="Camera.png" width="100" height="100"/>
+        <image name="Guru_green.png" width="1024" height="1024"/>
         <image name="Guru_trans.png" width="1024" height="1024"/>
+        <image name="circle.png" width="500" height="500"/>
     </resources>
 </document>

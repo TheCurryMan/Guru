@@ -10,6 +10,9 @@
 		4326C5A422095AE111FFAEF9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
 		AF2821631E33373500493A74 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821621E33373500493A74 /* Camera.png */; };
+		AF2821651E33440500493A74 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821641E33440500493A74 /* circle.png */; };
+		AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2821661E33448500493A74 /* WaitingScreen.swift */; };
+		AF2821691E33466700493A74 /* Guru_green.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821681E33466700493A74 /* Guru_green.png */; };
 		AFB441761E331FF9006C3864 /* BKG.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB441751E331FF9006C3864 /* BKG.png */; };
 		AFB441781E332246006C3864 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB441771E332246006C3864 /* HomePage.swift */; };
 		AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB4417B1E3322DE006C3864 /* Guru_trans.png */; };
@@ -47,6 +50,9 @@
 		72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.release.xcconfig"; sourceTree = "<group>"; };
 		AF2821621E33373500493A74 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
+		AF2821641E33440500493A74 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		AF2821661E33448500493A74 /* WaitingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingScreen.swift; sourceTree = "<group>"; };
+		AF2821681E33466700493A74 /* Guru_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guru_green.png; sourceTree = "<group>"; };
 		AFB441751E331FF9006C3864 /* BKG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG.png; sourceTree = "<group>"; };
 		AFB441771E332246006C3864 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		AFB4417B1E3322DE006C3864 /* Guru_trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guru_trans.png; sourceTree = "<group>"; };
@@ -143,12 +149,15 @@
 				E1F3F3601E333152003C281D /* SignUpViewController.swift */,
 				E1F3F3321E331BB4003C281D /* ViewController.swift */,
 				E1F3F3341E331BB4003C281D /* Main.storyboard */,
+				AF2821661E33448500493A74 /* WaitingScreen.swift */,
 				AFB441771E332246006C3864 /* HomePage.swift */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
 				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
+				AF2821641E33440500493A74 /* circle.png */,
 				AFB441751E331FF9006C3864 /* BKG.png */,
 				AF2821621E33373500493A74 /* Camera.png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
+				AF2821681E33466700493A74 /* Guru_green.png */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
 			);
 			path = Guru;
@@ -295,6 +304,8 @@
 				E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */,
 				AF2821631E33373500493A74 /* Camera.png in Resources */,
 				AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */,
+				AF2821691E33466700493A74 /* Guru_green.png in Resources */,
+				AF2821651E33440500493A74 /* circle.png in Resources */,
 				AFB441761E331FF9006C3864 /* BKG.png in Resources */,
 				E1F3F3361E331BB4003C281D /* Main.storyboard in Resources */,
 			);
@@ -459,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */,
 				E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
