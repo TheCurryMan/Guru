@@ -135,10 +135,19 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
-@class UIButton;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
+@interface GuruRequestsViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+@class UIButton;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
 @interface HomePage : UIViewController

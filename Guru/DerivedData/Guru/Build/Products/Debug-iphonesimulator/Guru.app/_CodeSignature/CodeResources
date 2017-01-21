@@ -10,7 +10,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		CaJQKA7BSY1A2dv35Bw3aSgSNjs=
+		7TcRm0THvLsN5mdzf+DzIOdRRkA=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,35 +18,35 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		g3LyNqG98c5UWp/pHwX5Wdlvq/E=
+		dDtT300eQ3+77L4QIzkLWBOxn+A=
 		</data>
 		<key>Base.lproj/Main.storyboardc/0ja-Hk-275-view-TUD-bE-7cy.nib</key>
 		<data>
-		iv/vQ+n+6nUxYwE1m9bTGme+gaY=
+		uE+OcGMF9PgyxquORMc9y9Vztz8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/2xA-kP-gBz-view-r55-YH-rwW.nib</key>
 		<data>
-		SL9yqOpoQWVgRsQ0b72c/EVFVv0=
+		pDzP8sAqPLsB3q1UlpdLrTiYjpw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		tEkTA2Z+5jNVxAVOwVjyumrs8mc=
+		Mqisy0h5NbRWkBhtAyJfjFHAC7k=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		0eq7s+yoUJXdzwefZSBTs46uzVA=
+		ZRsSBOsuzO5b2oJqAHTZJ8FeB5Y=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-0ja-Hk-275.nib</key>
 		<data>
-		8IyqRHvW61uP1vDDrMjx2aDYqpg=
+		b+G1txlI+JwEeLX05LtVbvMbXcw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-2xA-kP-gBz.nib</key>
 		<data>
-		7ZjS123S0tXWQyDyDblQneopxvk=
+		/AcTjud92a25XZEEGl+v0LgRwC8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		vBmPWEF0V2iWLq1K2D4icI+dPbg=
+		ECmnjSfx928z9QENGxlggqF9HzA=
 		</data>
 		<key>Camera.png</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/Bolts.framework/Bolts</key>
 		<data>
-		sd6v3vvuNjDKJGVm5Bn6MiSTR6w=
+		98bqs42QOvZYBJc8JgQxwbh9Wic=
 		</data>
 		<key>Frameworks/Bolts.framework/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/Parse.framework/Parse</key>
 		<data>
-		HrW7Z4RXv9SHBytsiotEyg0fMwk=
+		T8SJnNrGo4a1i8gEpqqHXzJRGT8=
 		</data>
 		<key>Frameworks/Parse.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -135,7 +135,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2cVKdZpB76q2LygBCGKaXWBFh+I=
+		dRogKL2oQ6xErRRpniwO6jIeA7U=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -155,7 +155,7 @@
 		</data>
 		<key>red.png</key>
 		<data>
-		DKzQ5YD4Ia2E/5YC9JfgYPbweqQ=
+		bOHcZLhKUuWFLu3HxnHkkQAAI2I=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -175,11 +175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CaJQKA7BSY1A2dv35Bw3aSgSNjs=
+			7TcRm0THvLsN5mdzf+DzIOdRRkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			EwoZKSZUFRc4D4ffOnvopwVsHzTRXSR0F3VkyjNrdyY=
+			VG81Q4mLSu8t6utRIqnN1f9fensBK/qESH1tCafbyF4=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -197,88 +197,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g3LyNqG98c5UWp/pHwX5Wdlvq/E=
+			dDtT300eQ3+77L4QIzkLWBOxn+A=
 			</data>
 			<key>hash2</key>
 			<data>
-			5GTG4FDE5dCLQZATALhK3arHrc0yhCV8sAAK5Cs8twA=
+			eqOeYqMWPWGpO+9iQiGXNO6rAboIN3yMX6JiLgWsoRQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/0ja-Hk-275-view-TUD-bE-7cy.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iv/vQ+n+6nUxYwE1m9bTGme+gaY=
+			uE+OcGMF9PgyxquORMc9y9Vztz8=
 			</data>
 			<key>hash2</key>
 			<data>
-			uVTX++0tujYVOs8BY7zKO2afM9udzZnQBmLNAnbpoX0=
+			rFh9VUPN3hZZWp3FK2ql1XHvsn0XYF0/8OMXxbaU5fU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/2xA-kP-gBz-view-r55-YH-rwW.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SL9yqOpoQWVgRsQ0b72c/EVFVv0=
+			pDzP8sAqPLsB3q1UlpdLrTiYjpw=
 			</data>
 			<key>hash2</key>
 			<data>
-			KPxbS5xSN2bJEdBUF4N5CWEujd+AeYk7mHcSc0y9GH0=
+			1DFcVWM4/+qeN6fgSsI0JkeLNyP2mfgjZ6Fk+oAmcB0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tEkTA2Z+5jNVxAVOwVjyumrs8mc=
+			Mqisy0h5NbRWkBhtAyJfjFHAC7k=
 			</data>
 			<key>hash2</key>
 			<data>
-			PXCsE+5upoH9PboD1zblRn2tZ2+dNewMwOotDwT6hec=
+			4Vs2jn4FA1OEi8NM5hFDkSW5gmcJGB2oDCwsJbwl3tw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0eq7s+yoUJXdzwefZSBTs46uzVA=
+			ZRsSBOsuzO5b2oJqAHTZJ8FeB5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			pwAFiPu2PzGSX28S9qvqEpsBVZFwt0k8j2E85VfDCIg=
+			nkR8Vo4/Y2FFWsCR9VVnKGALr3le8CzUAe0ak2fJHpU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-0ja-Hk-275.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8IyqRHvW61uP1vDDrMjx2aDYqpg=
+			b+G1txlI+JwEeLX05LtVbvMbXcw=
 			</data>
 			<key>hash2</key>
 			<data>
-			RZm97OlijoX5xew6XAqnb/WDS95NUzYUBf6L6WOPQWU=
+			CMl+gmd/6KuCV9ElU/J0yYJv2eUzXT5XPstC9Iqy4qE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-2xA-kP-gBz.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7ZjS123S0tXWQyDyDblQneopxvk=
+			/AcTjud92a25XZEEGl+v0LgRwC8=
 			</data>
 			<key>hash2</key>
 			<data>
-			NaCr43uNmgbb3W1W6hSP6hbtkToEH705eZpGTn/qN/0=
+			mld49tRiYRqZ2/s0OIeU4uDITNEspIWUEHKR19Q3+50=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vBmPWEF0V2iWLq1K2D4icI+dPbg=
+			ECmnjSfx928z9QENGxlggqF9HzA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nIfxq4xy+1P1kWBT9megCzqxyGFwrPjycFOoW9fw0SM=
+			0+m2pMZ/nN9cEgCYqUwYYtd/2iNi7EBkh/CZG4sUrjE=
 			</data>
 		</dict>
 		<key>Camera.png</key>
@@ -296,11 +296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sd6v3vvuNjDKJGVm5Bn6MiSTR6w=
+			98bqs42QOvZYBJc8JgQxwbh9Wic=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mf2zziRYJjMv8R7cFlhBXviL6LM4KlaR5qt3zYcRw5g=
+			SW4Hc052sQ53XhKMvgZsS+cLHPCogEcO1cJ4WbUggSU=
 			</data>
 		</dict>
 		<key>Frameworks/Bolts.framework/Info.plist</key>
@@ -340,11 +340,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HrW7Z4RXv9SHBytsiotEyg0fMwk=
+			T8SJnNrGo4a1i8gEpqqHXzJRGT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			NPNPna2uqtL90a1rlcHOSjsphIv3yvBd2zHpA3hB9oc=
+			dg0YIXeHEW7Zz4X7NDE8oXN7QYwKuKN7XR4P9ks0I7Q=
 			</data>
 		</dict>
 		<key>Frameworks/Parse.framework/_CodeSignature/CodeResources</key>
@@ -540,11 +540,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DKzQ5YD4Ia2E/5YC9JfgYPbweqQ=
+			bOHcZLhKUuWFLu3HxnHkkQAAI2I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q/qgyEchZ9QiaGn6tdGMW0ZNPU5ml35bpscfdweeTUE=
+			88o5GUrqh84akkSb8OIMZXXnZMC0plSdALHSRiwriDE=
 			</data>
 		</dict>
 	</dict>
