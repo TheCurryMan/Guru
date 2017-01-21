@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import OneSignal
 
 class SignUpViewController: UIViewController {
 
@@ -55,6 +56,7 @@ class SignUpViewController: UIViewController {
                 // Show the errorString somewhere and let the user try again.
             } else {
                 // Hooray! Let them use the app now.
+                OneSignal.sendTag("userID", value: PFUser.current()!.objectId!)
                 self.performSegue(withIdentifier: "signup", sender: self)
             }
         }

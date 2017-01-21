@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16F579B5A60682A874D89313 /* Pods_Guru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */; };
 		4326C5A422095AE111FFAEF9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		6514C0C0DD4146398976A739 /* Pods_GuruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
 		AF2821631E33373500493A74 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821621E33373500493A74 /* Camera.png */; };
 		AF2821651E33440500493A74 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821641E33440500493A74 /* circle.png */; };
@@ -51,6 +53,10 @@
 		716B7D6DDAA026DF4E0D7DED /* Pods-Guru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.debug.xcconfig"; sourceTree = "<group>"; };
 		72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.release.xcconfig"; sourceTree = "<group>"; };
+		77AA496A1E336B3A0065DC6B /* Guru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guru.entitlements; sourceTree = "<group>"; };
+		7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBCFAF66F74F2ADF68E3E27 /* Pods-GuruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A326BE5B6BCB5F3DAC5D4E50 /* Pods-GuruTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF2821621E33373500493A74 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
 		AF2821641E33440500493A74 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		AF2821661E33448500493A74 /* WaitingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingScreen.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4326C5A422095AE111FFAEF9 /* (null) in Frameworks */,
+				16F579B5A60682A874D89313 /* Pods_Guru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6514C0C0DD4146398976A739 /* Pods_GuruTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +117,7 @@
 			children = (
 				6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */,
 				1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */,
+				7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +129,8 @@
 				7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */,
 				72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */,
 				FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */,
+				9DBCFAF66F74F2ADF68E3E27 /* Pods-GuruTests.debug.xcconfig */,
+				A326BE5B6BCB5F3DAC5D4E50 /* Pods-GuruTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 		E1F3F32F1E331BB4003C281D /* Guru */ = {
 			isa = PBXGroup;
 			children = (
+				77AA496A1E336B3A0065DC6B /* Guru.entitlements */,
 				E1F3F3301E331BB4003C281D /* AppDelegate.swift */,
 				E1F3F3601E333152003C281D /* SignUpViewController.swift */,
 				E1F3F3321E331BB4003C281D /* ViewController.swift */,
@@ -264,7 +276,16 @@
 				TargetAttributes = {
 					E1F3F32C1E331BB3003C281D = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 9FC732TXJR;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					E1F3F3401E331BB4003C281D = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -347,7 +368,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6A8826FD5CBF13CD5D993E13 /* [CP] Copy Pods Resources */ = {
@@ -377,7 +398,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		99B70BB32953221A744F246A /* [CP] Embed Pods Frameworks */ = {
@@ -437,7 +458,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F31D6EE41026F92E0522249B /* [CP] Copy Pods Resources */ = {
@@ -632,11 +653,14 @@
 			baseConfigurationReference = 716B7D6DDAA026DF4E0D7DED /* Pods-Guru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = Guru/Guru.entitlements;
+				DEVELOPMENT_TEAM = 9FC732TXJR;
 				INFOPLIST_FILE = Guru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Pennapps.Guru;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcdwebdesign.guru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1f8d2777-7f0c-49d5-b84a-7c95ea4a1047";
+				PROVISIONING_PROFILE_SPECIFIER = "Guru Push Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -646,17 +670,21 @@
 			baseConfigurationReference = 7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = Guru/Guru.entitlements;
+				DEVELOPMENT_TEAM = 9FC732TXJR;
 				INFOPLIST_FILE = Guru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Pennapps.Guru;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcdwebdesign.guru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1f8d2777-7f0c-49d5-b84a-7c95ea4a1047";
+				PROVISIONING_PROFILE_SPECIFIER = "Guru Push Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E1F3F3591E331BB4003C281D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DBCFAF66F74F2ADF68E3E27 /* Pods-GuruTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -672,6 +700,7 @@
 		};
 		E1F3F35A1E331BB4003C281D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A326BE5B6BCB5F3DAC5D4E50 /* Pods-GuruTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
