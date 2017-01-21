@@ -138,6 +138,31 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC4Guru8HomePage")
+@interface HomePage : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+
+SWIFT_CLASS("_TtC4Guru20SignUpViewController")
+@interface SignUpViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topics;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)submit:(id _Nonnull)sender;
+- (void)didReceiveMemoryWarning;
+- (void)signUp;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC4Guru14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
