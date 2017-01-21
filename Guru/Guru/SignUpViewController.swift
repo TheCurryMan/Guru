@@ -11,6 +11,11 @@ import Parse
 
 class SignUpViewController: UIViewController {
 
+    @IBAction func tappedScreen(_ sender: Any) {
+        username.resignFirstResponder()
+        password.resignFirstResponder()
+        topics.resignFirstResponder()
+    }
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var topics: UITextField!
@@ -42,6 +47,7 @@ class SignUpViewController: UIViewController {
         user.password = password.text
         // other fields can be set just like with PFObject
         user["topics"] = topics.text?.components(separatedBy: ",")
+        user["available"] = false
         user.signUpInBackground {
             (success, error) -> Void in
             if let error = error {

@@ -7,13 +7,49 @@
 //
 
 import UIKit
+import Parse
 
-class HomePage: UIViewController {
+class HomePage: UIViewController, UITextViewDelegate {
 
+    @IBOutlet weak var questionField: UITextField!
+    @IBOutlet weak var subjectsEntered: UITextView!
+
+    @IBAction func tapped(_ sender: Any) {
+        questionField.resignFirstResponder()
+        subjectsEntered.resignFirstResponder()
+    }
+    @IBAction func pressedCamera(_ sender: Any) {
+        
+    }
+    
+    @IBAction func pressedAsk(_ sender: Any) {
+        submitQuestion()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.subjectsEntered.delegate = self;
 
         // Do any additional setup after loading the view.
+    }
+    
+    func submitQuestion() {
+        let user = PFUser.current()
+
+        var question = PFObject(className:"Question")
+        question["text"] = questionField.text
+        question["topic"] = subjectsEntered.text
+        question["student"] = user
+        question.saveInBackground {
+            (success, error) -> Void in
+            if (success) {
+                
+            } else {
+                // There was a problem, check error.description
+            }
+        
+        }
     }
 
     override func didReceiveMemoryWarning() {
