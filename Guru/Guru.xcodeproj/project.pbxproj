@@ -25,6 +25,7 @@
 		E1F3F3511E331BB4003C281D /* GuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3501E331BB4003C281D /* GuruUITests.swift */; };
 		E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3601E333152003C281D /* SignUpViewController.swift */; };
 		E1F3F3651E334DAB003C281D /* notifications-button (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3641E334DAB003C281D /* notifications-button (1).png */; };
+		E1F3F3671E336139003C281D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3661E336139003C281D /* red.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		E1F3F3521E331BB4003C281D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1F3F3601E333152003C281D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1F3F3641E334DAB003C281D /* notifications-button (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notifications-button (1).png"; sourceTree = "<group>"; };
+		E1F3F3661E336139003C281D /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				E1F3F3641E334DAB003C281D /* notifications-button (1).png */,
 				AFB441751E331FF9006C3864 /* BKG.png */,
 				AF2821621E33373500493A74 /* Camera.png */,
+				E1F3F3661E336139003C281D /* red.png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
 				AF2821681E33466700493A74 /* Guru_green.png */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
@@ -310,6 +313,7 @@
 				AF2821651E33440500493A74 /* circle.png in Resources */,
 				AFB441761E331FF9006C3864 /* BKG.png in Resources */,
 				E1F3F3651E334DAB003C281D /* notifications-button (1).png in Resources */,
+				E1F3F3671E336139003C281D /* red.png in Resources */,
 				E1F3F3361E331BB4003C281D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

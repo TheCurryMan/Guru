@@ -24,7 +24,7 @@ class SignUpViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        var currentUser = PFUser.current()
+        let currentUser = PFUser.current()
         if currentUser != nil {
             self.performSegue(withIdentifier: "signup", sender: self)
         } else {
@@ -42,7 +42,7 @@ class SignUpViewController: UIViewController {
     }
     
     func signUp() {
-        var user = PFUser()
+        let user = PFUser()
         user.username = username.text
         user.password = password.text
         // other fields can be set just like with PFObject

@@ -6,28 +6,39 @@ provides-nominal:
 provides-member:
 - ["C4Guru8HomePage", ""]
 provides-dynamic-lookup:
-- "subjectsEntered"
-- "tapped"
 - "prefersStatusBarHidden"
-- "didReceiveMemoryWarning"
+- "acceptButton"
 - "viewDidLoad"
-- "questionField"
+- "tapped"
+- "subjectsEntered"
 - "submitQuestion"
 - "pressedAsk"
+- "accept"
+- "didReceiveMemoryWarning"
+- "avail"
+- "questionField"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UIViewController"
+- !private "!"
+- !private "PFObject"
 - !private "Void"
 - !private "StringLiteralType"
+- "BooleanLiteralType"
+- "UIButton"
 - "HomePage"
 - !private "PFUser"
+- "UIViewController"
 - "Bool"
-- "AssignmentPrecedence"
 - "UITextField"
-- !private "PFObject"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "UIImage"
 depends-member:
 - !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "UIImage"]
+- ["Ps9AnyObject", "accept"]
+- ["Ps9AnyObject", "acceptButton"]
+- ["Ps9AnyObject", "avail"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
@@ -37,6 +48,7 @@ depends-member:
 - ["Ps9AnyObject", "questionField"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - !private ["Ps9AnyObject", "saveInBackground"]
+- !private ["Ps9AnyObject", "setImage"]
 - ["Ps9AnyObject", "subjectsEntered"]
 - ["Ps9AnyObject", "submitQuestion"]
 - !private ["Ps9AnyObject", "subscript"]
@@ -44,12 +56,18 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- ["CSo6BFTask", "deinit"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "resignFirstResponder"]
+- !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "PFUser"]
+- !private ["Ps7CVarArg", "UIImage"]
+- ["Ps7CVarArg", "accept"]
+- ["Ps7CVarArg", "acceptButton"]
+- ["Ps7CVarArg", "avail"]
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
@@ -59,6 +77,7 @@ depends-member:
 - ["Ps7CVarArg", "questionField"]
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - !private ["Ps7CVarArg", "saveInBackground"]
+- !private ["Ps7CVarArg", "setImage"]
 - ["Ps7CVarArg", "subjectsEntered"]
 - ["Ps7CVarArg", "submitQuestion"]
 - !private ["Ps7CVarArg", "subscript"]
@@ -69,6 +88,10 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- ["Ps28CustomDebugStringConvertible", "accept"]
+- ["Ps28CustomDebugStringConvertible", "acceptButton"]
+- ["Ps28CustomDebugStringConvertible", "avail"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
@@ -78,6 +101,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "questionField"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - ["Ps28CustomDebugStringConvertible", "subjectsEntered"]
 - ["Ps28CustomDebugStringConvertible", "submitQuestion"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -91,7 +115,11 @@ depends-member:
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "accept"]
+- ["Ps23CustomStringConvertible", "acceptButton"]
+- ["Ps23CustomStringConvertible", "avail"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
@@ -101,6 +129,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "questionField"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
+- !private ["Ps23CustomStringConvertible", "setImage"]
 - ["Ps23CustomStringConvertible", "subjectsEntered"]
 - ["Ps23CustomStringConvertible", "submitQuestion"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -110,16 +139,22 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "PFUser"]
+- !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "accept"]
+- ["Ps9Equatable", "acceptButton"]
+- ["Ps9Equatable", "avail"]
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "prefersStatusBarHidden"]
 - ["Ps9Equatable", "pressedAsk"]
 - ["Ps9Equatable", "questionField"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - !private ["Ps9Equatable", "saveInBackground"]
+- !private ["Ps9Equatable", "setImage"]
 - ["Ps9Equatable", "subjectsEntered"]
 - ["Ps9Equatable", "submitQuestion"]
 - !private ["Ps9Equatable", "subscript"]
@@ -127,6 +162,7 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
@@ -134,7 +170,11 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "PFUser"]
+- !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "accept"]
+- ["Ps8Hashable", "acceptButton"]
+- ["Ps8Hashable", "avail"]
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
@@ -144,6 +184,7 @@ depends-member:
 - ["Ps8Hashable", "questionField"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - !private ["Ps8Hashable", "saveInBackground"]
+- !private ["Ps8Hashable", "setImage"]
 - ["Ps8Hashable", "subjectsEntered"]
 - ["Ps8Hashable", "submitQuestion"]
 - !private ["Ps8Hashable", "subscript"]
@@ -154,8 +195,13 @@ depends-member:
 - ["C4Guru8HomePage", "Bool"]
 - !private ["C4Guru8HomePage", "PFObject"]
 - !private ["C4Guru8HomePage", "PFUser"]
+- ["C4Guru8HomePage", "UIButton"]
+- !private ["C4Guru8HomePage", "UIImage"]
 - ["C4Guru8HomePage", "UITextField"]
 - !private ["C4Guru8HomePage", "Void"]
+- ["C4Guru8HomePage", "accept"]
+- ["C4Guru8HomePage", "acceptButton"]
+- ["C4Guru8HomePage", "avail"]
 - ["C4Guru8HomePage", "deinit"]
 - ["C4Guru8HomePage", "didReceiveMemoryWarning"]
 - ["C4Guru8HomePage", "init"]
@@ -174,6 +220,10 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "PFObject"]
 - !private ["PSo8NSCoding", "PFUser"]
+- !private ["PSo8NSCoding", "UIImage"]
+- ["PSo8NSCoding", "accept"]
+- ["PSo8NSCoding", "acceptButton"]
+- ["PSo8NSCoding", "avail"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "performSegue"]
@@ -181,6 +231,7 @@ depends-member:
 - ["PSo8NSCoding", "pressedAsk"]
 - ["PSo8NSCoding", "questionField"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
+- !private ["PSo8NSCoding", "setImage"]
 - ["PSo8NSCoding", "subjectsEntered"]
 - ["PSo8NSCoding", "submitQuestion"]
 - ["PSo8NSCoding", "tapped"]
@@ -190,6 +241,10 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "PFObject"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- ["PSo26NSExtensionRequestHandling", "accept"]
+- ["PSo26NSExtensionRequestHandling", "acceptButton"]
+- ["PSo26NSExtensionRequestHandling", "avail"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
@@ -205,8 +260,13 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFUser"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "accept"]
+- ["CSo8NSObject", "acceptButton"]
+- ["CSo8NSObject", "avail"]
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
@@ -216,6 +276,7 @@ depends-member:
 - ["CSo8NSObject", "questionField"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - !private ["CSo8NSObject", "saveInBackground"]
+- !private ["CSo8NSObject", "setImage"]
 - ["CSo8NSObject", "subjectsEntered"]
 - ["CSo8NSObject", "submitQuestion"]
 - !private ["CSo8NSObject", "subscript"]
@@ -224,6 +285,10 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- ["PSo16NSObjectProtocol", "accept"]
+- ["PSo16NSObjectProtocol", "acceptButton"]
+- ["PSo16NSObjectProtocol", "avail"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -233,6 +298,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "questionField"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - !private ["PSo16NSObjectProtocol", "saveInBackground"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
 - ["PSo16NSObjectProtocol", "subjectsEntered"]
 - ["PSo16NSObjectProtocol", "submitQuestion"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
@@ -242,6 +308,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
+- !private ["Ps9OptionSet", "normal"]
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "current"]
 - ["CSo8PFObject", "deinit"]
@@ -249,17 +316,31 @@ depends-member:
 - !private ["CSo8PFObject", "saveInBackground"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["PSo13PFSubclassing", "current"]
+- !private ["PSo13PFSubclassing", "saveInBackground"]
+- !private ["PSo13PFSubclassing", "subscript"]
 - !private ["CSo6PFUser", "current"]
+- ["CSo6PFUser", "deinit"]
+- !private ["CSo6PFUser", "saveInBackground"]
+- !private ["CSo6PFUser", "subscript"]
+- !private ["Ps16RawRepresentable", "normal"]
+- !private ["Ps10SetAlgebra", "normal"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
+- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "PFObject"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- ["PSo21UIAppearanceContainer", "accept"]
+- ["PSo21UIAppearanceContainer", "acceptButton"]
+- ["PSo21UIAppearanceContainer", "avail"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
@@ -267,14 +348,20 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pressedAsk"]
 - ["PSo21UIAppearanceContainer", "questionField"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
 - ["PSo21UIAppearanceContainer", "subjectsEntered"]
 - ["PSo21UIAppearanceContainer", "submitQuestion"]
 - ["PSo21UIAppearanceContainer", "tapped"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "setImage"]
 - !private ["PSo18UIContentContainer", "PFObject"]
 - !private ["PSo18UIContentContainer", "PFUser"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- ["PSo18UIContentContainer", "accept"]
+- ["PSo18UIContentContainer", "acceptButton"]
+- ["PSo18UIContentContainer", "avail"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "performSegue"]
@@ -289,13 +376,22 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "resignFirstResponder"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
+- !private ["CSo9UIControl", "setImage"]
 - !private ["CSo9UIControl", "text"]
+- ["VSC14UIControlState", "deinit"]
+- !private ["VSC14UIControlState", "normal"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
+- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "PFObject"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- ["PSo18UIFocusEnvironment", "accept"]
+- ["PSo18UIFocusEnvironment", "acceptButton"]
+- ["PSo18UIFocusEnvironment", "avail"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
@@ -303,6 +399,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pressedAsk"]
 - ["PSo18UIFocusEnvironment", "questionField"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
+- !private ["PSo18UIFocusEnvironment", "setImage"]
 - ["PSo18UIFocusEnvironment", "subjectsEntered"]
 - ["PSo18UIFocusEnvironment", "submitQuestion"]
 - ["PSo18UIFocusEnvironment", "tapped"]
@@ -310,14 +407,21 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
+- !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UIImage", "init"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFUser"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "accept"]
+- ["CSo11UIResponder", "acceptButton"]
+- ["CSo11UIResponder", "avail"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "performSegue"]
@@ -325,6 +429,7 @@ depends-member:
 - ["CSo11UIResponder", "pressedAsk"]
 - ["CSo11UIResponder", "questionField"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
+- !private ["CSo11UIResponder", "setImage"]
 - ["CSo11UIResponder", "subjectsEntered"]
 - ["CSo11UIResponder", "submitQuestion"]
 - ["CSo11UIResponder", "tapped"]
@@ -332,6 +437,10 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "PFObject"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- ["PSo30UIResponderStandardEditActions", "accept"]
+- ["PSo30UIResponderStandardEditActions", "acceptButton"]
+- ["PSo30UIResponderStandardEditActions", "avail"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
@@ -339,6 +448,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "pressedAsk"]
 - ["PSo30UIResponderStandardEditActions", "questionField"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
+- !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - ["PSo30UIResponderStandardEditActions", "subjectsEntered"]
 - ["PSo30UIResponderStandardEditActions", "submitQuestion"]
 - ["PSo30UIResponderStandardEditActions", "tapped"]
@@ -347,6 +457,10 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "PFObject"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- ["PSo16UIStateRestoring", "accept"]
+- ["PSo16UIStateRestoring", "acceptButton"]
+- ["PSo16UIStateRestoring", "avail"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
@@ -366,6 +480,10 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "PFObject"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- ["PSo18UITraitEnvironment", "accept"]
+- ["PSo18UITraitEnvironment", "acceptButton"]
+- ["PSo18UITraitEnvironment", "avail"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
@@ -373,6 +491,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pressedAsk"]
 - ["PSo18UITraitEnvironment", "questionField"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
 - ["PSo18UITraitEnvironment", "subjectsEntered"]
 - ["PSo18UITraitEnvironment", "submitQuestion"]
 - ["PSo18UITraitEnvironment", "tapped"]
@@ -380,12 +499,18 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "resignFirstResponder"]
+- !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFUser"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "accept"]
+- ["CSo16UIViewController", "acceptButton"]
+- ["CSo16UIViewController", "avail"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
@@ -399,16 +524,22 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "PFUser"]
+- !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "accept"]
+- ["Ps9_Hashable", "acceptButton"]
+- ["Ps9_Hashable", "avail"]
 - !private ["Ps9_Hashable", "current"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
@@ -418,6 +549,7 @@ depends-member:
 - ["Ps9_Hashable", "questionField"]
 - !private ["Ps9_Hashable", "resignFirstResponder"]
 - !private ["Ps9_Hashable", "saveInBackground"]
+- !private ["Ps9_Hashable", "setImage"]
 - ["Ps9_Hashable", "subjectsEntered"]
 - ["Ps9_Hashable", "submitQuestion"]
 - !private ["Ps9_Hashable", "subscript"]
@@ -429,6 +561,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- "CSo6BFTask"
 - "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
@@ -438,6 +571,7 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
@@ -457,23 +591,29 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "Ps9OptionSet"
 - "Sq"
 - "CSo8PFObject"
 - !private "PSo13PFSubclassing"
-- !private "CSo6PFUser"
+- "CSo6PFUser"
+- !private "Ps16RawRepresentable"
+- !private "Ps10SetAlgebra"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
+- "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
+- !private "CSo7UIImage"
 - !private "PSo10UIKeyInput"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -490,6 +630,7 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -556,4 +697,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "82b53918258aa535640eeda99f51371d"
+interface-hash: "d2d0df94a1983d653931aa23e28b0a3e"

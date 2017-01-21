@@ -13,7 +13,8 @@ class HomePage: UIViewController {
 
     @IBOutlet weak var questionField: UITextField!
     @IBOutlet weak var subjectsEntered: UITextField!
-
+    @IBOutlet weak var acceptButton: UIButton!
+    var avail = true
     @IBAction func tapped(_ sender: Any) {
         questionField.resignFirstResponder()
         subjectsEntered.resignFirstResponder()
@@ -29,6 +30,16 @@ class HomePage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let user = PFUser.current()
+        avail = user?["available"] as! Bool
+        if(avail)
+        {   acceptButton.setImage(UIImage(named: "Guru_trans.png"), for: .normal)
+            
+        }
+        else {
+            acceptButton.setImage(UIImage(named: "red.png"), for: .normal)
+        }
     
     }
     
@@ -56,6 +67,23 @@ class HomePage: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+    @IBAction func accept(_ sender: Any) {
+       avail = !avail
+        if(avail)
+        {   acceptButton.setImage(UIImage(named: "Guru_trans.png"), for: .normal)
+            
+        }
+        else {
+            acceptButton.setImage(UIImage(named: "red.png"), for: .normal)
+        }
+        if let currentUser = PFUser.current(){
+            currentUser["available"] = avail
+            currentUser.saveInBackground()
+        }
+
+        
+    }
 
     /*
     // MARK: - Navigation

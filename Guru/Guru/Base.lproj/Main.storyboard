@@ -223,9 +223,12 @@
                                 <state key="normal" image="notifications-button (1).png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koS-63-Qnc">
-                                <rect key="frame" x="0.0" y="14" width="70" height="70"/>
+                                <rect key="frame" x="0.0" y="11" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Guru_trans.png"/>
+                                <connections>
+                                    <action selector="accept:" destination="0ja-Hk-275" eventType="touchUpInside" id="W9e-1v-bSq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-cD-kcB">
                                 <rect key="frame" x="16" y="143" width="343" height="30"/>
@@ -242,6 +245,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="acceptButton" destination="koS-63-Qnc" id="Q5R-cq-ctB"/>
                         <outlet property="questionField" destination="r5H-cD-kcB" id="UtV-LC-qoS"/>
                         <outlet property="subjectsEntered" destination="vzS-i4-TQI" id="e6x-rd-Hr1"/>
                         <segue destination="2xA-kP-gBz" kind="presentation" identifier="loading" id="qIo-tJ-kbc"/>

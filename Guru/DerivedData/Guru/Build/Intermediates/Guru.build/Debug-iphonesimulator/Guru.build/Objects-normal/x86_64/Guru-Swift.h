@@ -136,6 +136,7 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 @end
 
 @class UITextField;
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
@@ -143,12 +144,15 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @interface HomePage : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified questionField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified subjectsEntered;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptButton;
+@property (nonatomic) BOOL avail;
 - (IBAction)tapped:(id _Nonnull)sender;
 - (IBAction)pressedAsk:(id _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
 - (void)submitQuestion;
 - (void)didReceiveMemoryWarning;
+- (IBAction)accept:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

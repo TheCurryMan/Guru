@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C4Guru13WaitingScreen", ""]
 provides-dynamic-lookup:
-- "circles"
 - "prefersStatusBarHidden"
-- "didReceiveMemoryWarning"
-- "guru"
-- "viewDidAppear"
+- "circles"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "viewDidAppear"
+- "guru"
 depends-top-level:
-- "UIViewController"
-- "Bool"
-- !private "BooleanLiteralType"
+- !private "M_PI"
 - !private "/"
 - "UIImageView"
-- !private "M_PI"
-- !private "CGFloat"
-- "WaitingScreen"
-- !private "UIView"
+- !private "BooleanLiteralType"
+- "UIViewController"
+- "Bool"
 - !private "-"
-- "AssignmentPrecedence"
+- !private "UIView"
+- "WaitingScreen"
 - !private "CGAffineTransform"
+- "AssignmentPrecedence"
+- !private "CGFloat"
 - !private "Array"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
