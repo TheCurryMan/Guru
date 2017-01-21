@@ -141,6 +141,7 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 SWIFT_CLASS("_TtC4Guru14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
