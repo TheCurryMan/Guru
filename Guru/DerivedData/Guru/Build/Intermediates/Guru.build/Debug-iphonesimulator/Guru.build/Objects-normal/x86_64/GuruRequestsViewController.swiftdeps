@@ -9,47 +9,48 @@ provides-member:
 - ["C4Guru20RequestTableViewCell", ""]
 - ["C4Guru26GuruRequestsViewController", ""]
 provides-dynamic-lookup:
-- "finalT"
+- "finalQ"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "didReceiveMemoryWarning"
 - "viewDidLoad"
 - "topicLabel"
-- "usernameLabel"
-- "qTopics"
-- "prepare"
 - "topics"
-- "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "finalQ"
+- "qTopics"
+- "usernameLabel"
 - "questionLabel"
+- "prepare"
+- "finalT"
 - "questions"
 - "usernames"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "PFQuery"
-- "Int"
-- !private "UINib"
-- "UITableViewCell"
-- "IndexPath"
-- "RequestTableViewCell"
-- "UITableViewDataSource"
-- "UIStoryboardSegue"
-- "UITableViewDelegate"
-- "String"
+- !private "BooleanLiteralType"
 - !private "Array"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
+- !private "UINib"
 - "UITableView"
-- !private "PFUser"
+- "UIStoryboardSegue"
+- "UITableViewCell"
+- "Int"
 - "UILabel"
-- !private "PFObject"
-- !private "Error"
-- "GuruRequestsViewController"
 - !private "UIView"
-- "CastingPrecedence"
+- "RequestTableViewCell"
+- !private "PFObject"
+- !private "PFQuery"
+- !private "StringLiteralType"
+- !private "AcceptViewController"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "AcceptViewController"
 - "UIViewController"
+- "IndexPath"
+- "CastingPrecedence"
+- "GuruRequestsViewController"
+- "String"
+- !private "Error"
+- !private "PFUser"
 depends-member:
 - ["C4Guru20AcceptViewController", "deinit"]
 - !private ["C4Guru20AcceptViewController", "question"]
@@ -62,6 +63,7 @@ depends-member:
 - !private ["Ps9AnyObject", "cellForRow"]
 - !private ["Ps9AnyObject", "current"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "deselectRow"]
 - !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "finalQ"]
@@ -97,6 +99,7 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - ["Ps9AnyObject", "sectionIndexTitles"]
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
+- !private ["Ps9AnyObject", "selectionStyle"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "tableFooterView"]
 - ["Ps9AnyObject", "tableView"]
@@ -159,10 +162,12 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "cellForRow"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "deselectRow"]
 - !private ["PSo15CALayerDelegate", "init"]
 - ["PSo15CALayerDelegate", "questionLabel"]
 - !private ["PSo15CALayerDelegate", "register"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "selectionStyle"]
 - !private ["PSo15CALayerDelegate", "tableFooterView"]
 - !private ["PSo15CALayerDelegate", "text"]
 - ["PSo15CALayerDelegate", "topicLabel"]
@@ -187,6 +192,7 @@ depends-member:
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "deselectRow"]
 - !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "finalQ"]
@@ -222,6 +228,7 @@ depends-member:
 - ["Ps7CVarArg", "scrollViewWillEndDragging"]
 - ["Ps7CVarArg", "sectionIndexTitles"]
 - ["Ps7CVarArg", "sectionIndexTitlesForTableView"]
+- !private ["Ps7CVarArg", "selectionStyle"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "tableFooterView"]
 - ["Ps7CVarArg", "tableView"]
@@ -269,6 +276,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "deselectRow"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "finalQ"]
@@ -305,6 +313,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitles"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "selectionStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "tableFooterView"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
@@ -359,6 +368,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "deselectRow"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "finalQ"]
@@ -395,6 +405,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitles"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps23CustomStringConvertible", "selectionStyle"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "tableFooterView"]
 - ["Ps23CustomStringConvertible", "tableView"]
@@ -431,6 +442,7 @@ depends-member:
 - !private ["Ps9Equatable", "cellForRow"]
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "deselectRow"]
 - !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "finalQ"]
@@ -441,6 +453,7 @@ depends-member:
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "none"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - !private ["Ps9Equatable", "order"]
@@ -467,6 +480,7 @@ depends-member:
 - ["Ps9Equatable", "scrollViewWillEndDragging"]
 - ["Ps9Equatable", "sectionIndexTitles"]
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9Equatable", "selectionStyle"]
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "tableFooterView"]
 - ["Ps9Equatable", "tableView"]
@@ -559,6 +573,7 @@ depends-member:
 - !private ["Ps8Hashable", "cellForRow"]
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "deselectRow"]
 - !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "finalQ"]
@@ -569,6 +584,7 @@ depends-member:
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "none"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - !private ["Ps8Hashable", "order"]
@@ -595,6 +611,7 @@ depends-member:
 - ["Ps8Hashable", "scrollViewWillEndDragging"]
 - ["Ps8Hashable", "sectionIndexTitles"]
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps8Hashable", "selectionStyle"]
 - !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "tableFooterView"]
 - ["Ps8Hashable", "tableView"]
@@ -684,6 +701,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "cellForRow"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
+- !private ["PSo8NSCoding", "deselectRow"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "finalQ"]
 - ["PSo8NSCoding", "finalT"]
@@ -714,6 +732,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitles"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- !private ["PSo8NSCoding", "selectionStyle"]
 - !private ["PSo8NSCoding", "tableFooterView"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
@@ -790,6 +809,7 @@ depends-member:
 - !private ["CSo8NSObject", "cellForRow"]
 - !private ["CSo8NSObject", "current"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
+- !private ["CSo8NSObject", "deselectRow"]
 - !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "finalQ"]
@@ -825,6 +845,7 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitles"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- !private ["CSo8NSObject", "selectionStyle"]
 - !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "tableFooterView"]
 - ["CSo8NSObject", "tableView"]
@@ -846,6 +867,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cellForRow"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "deselectRow"]
 - !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "finalQ"]
@@ -881,6 +903,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitles"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- !private ["PSo16NSObjectProtocol", "selectionStyle"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "tableFooterView"]
 - ["PSo16NSObjectProtocol", "tableView"]
@@ -962,11 +985,13 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
+- !private ["Ps16RawRepresentable", "none"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - ["C4Guru20RequestTableViewCell", "UILabel"]
 - ["C4Guru20RequestTableViewCell", "deinit"]
 - ["C4Guru20RequestTableViewCell", "init"]
 - ["C4Guru20RequestTableViewCell", "questionLabel"]
+- !private ["C4Guru20RequestTableViewCell", "selectionStyle"]
 - ["C4Guru20RequestTableViewCell", "topicLabel"]
 - ["C4Guru20RequestTableViewCell", "usernameLabel"]
 - !private ["Ps8Sequence", "Element"]
@@ -1000,10 +1025,12 @@ depends-member:
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "cellForRow"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "deselectRow"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "questionLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "register"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "selectionStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "tableFooterView"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - ["PSo29UIAccessibilityIdentification", "topicLabel"]
@@ -1011,10 +1038,12 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "cellForRow"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "deselectRow"]
 - !private ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "questionLabel"]
 - !private ["PSo12UIAppearance", "register"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "selectionStyle"]
 - !private ["PSo12UIAppearance", "tableFooterView"]
 - !private ["PSo12UIAppearance", "text"]
 - ["PSo12UIAppearance", "topicLabel"]
@@ -1027,6 +1056,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "cellForRow"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "deselectRow"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "finalQ"]
 - ["PSo21UIAppearanceContainer", "finalT"]
@@ -1057,6 +1087,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitles"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UIAppearanceContainer", "selectionStyle"]
 - !private ["PSo21UIAppearanceContainer", "tableFooterView"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -1112,10 +1143,12 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "cellForRow"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "deselectRow"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "questionLabel"]
 - !private ["PSo17UICoordinateSpace", "register"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "selectionStyle"]
 - !private ["PSo17UICoordinateSpace", "tableFooterView"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - ["PSo17UICoordinateSpace", "topicLabel"]
@@ -1123,10 +1156,12 @@ depends-member:
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "cellForRow"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "deselectRow"]
 - !private ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "questionLabel"]
 - !private ["PSo13UIDynamicItem", "register"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "selectionStyle"]
 - !private ["PSo13UIDynamicItem", "tableFooterView"]
 - !private ["PSo13UIDynamicItem", "text"]
 - ["PSo13UIDynamicItem", "topicLabel"]
@@ -1139,6 +1174,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "cellForRow"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "deselectRow"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "finalQ"]
 - ["PSo18UIFocusEnvironment", "finalT"]
@@ -1169,6 +1205,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitles"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UIFocusEnvironment", "selectionStyle"]
 - !private ["PSo18UIFocusEnvironment", "tableFooterView"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -1183,10 +1220,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "cellForRow"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "deselectRow"]
 - !private ["PSo11UIFocusItem", "init"]
 - ["PSo11UIFocusItem", "questionLabel"]
 - !private ["PSo11UIFocusItem", "register"]
 - !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "selectionStyle"]
 - !private ["PSo11UIFocusItem", "tableFooterView"]
 - !private ["PSo11UIFocusItem", "text"]
 - ["PSo11UIFocusItem", "topicLabel"]
@@ -1194,6 +1233,7 @@ depends-member:
 - ["PSo11UIFocusItem", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
 - ["PSo27UIGestureRecognizerDelegate", "questionLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "selectionStyle"]
 - ["PSo27UIGestureRecognizerDelegate", "topicLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "usernameLabel"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
@@ -1217,6 +1257,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "cellForRow"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
+- !private ["CSo11UIResponder", "deselectRow"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "finalQ"]
 - ["CSo11UIResponder", "finalT"]
@@ -1247,6 +1288,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitles"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- !private ["CSo11UIResponder", "selectionStyle"]
 - !private ["CSo11UIResponder", "tableFooterView"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
@@ -1265,6 +1307,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "cellForRow"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- !private ["PSo30UIResponderStandardEditActions", "deselectRow"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "finalQ"]
 - ["PSo30UIResponderStandardEditActions", "finalT"]
@@ -1295,6 +1338,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
 - ["PSo30UIResponderStandardEditActions", "sectionIndexTitles"]
 - ["PSo30UIResponderStandardEditActions", "sectionIndexTitlesForTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "selectionStyle"]
 - !private ["PSo30UIResponderStandardEditActions", "tableFooterView"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -1309,6 +1353,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "cellForRow"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
+- !private ["CSo12UIScrollView", "deselectRow"]
 - !private ["CSo12UIScrollView", "register"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["CSo12UIScrollView", "tableFooterView"]
@@ -1392,6 +1437,7 @@ depends-member:
 - !private ["CSo11UITableView", "cellForRow"]
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
+- !private ["CSo11UITableView", "deselectRow"]
 - !private ["CSo11UITableView", "register"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "tableFooterView"]
@@ -1399,9 +1445,12 @@ depends-member:
 - ["CSo15UITableViewCell", "deinit"]
 - ["CSo15UITableViewCell", "init"]
 - ["CSo15UITableViewCell", "questionLabel"]
+- !private ["CSo15UITableViewCell", "selectionStyle"]
 - ["CSo15UITableViewCell", "topicLabel"]
 - ["CSo15UITableViewCell", "usernameLabel"]
 - ["CSo15UITableViewCell", ""]
+- ["OSC29UITableViewCellSelectionStyle", "deinit"]
+- !private ["OSC29UITableViewCellSelectionStyle", "none"]
 - ["OSC20UITableViewCellStyle", "deinit"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
 - !private ["PSo21UITableViewDataSource", "PFUser"]
@@ -1478,6 +1527,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "cellForRow"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UITraitEnvironment", "deselectRow"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "finalQ"]
 - ["PSo18UITraitEnvironment", "finalT"]
@@ -1508,6 +1558,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitles"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UITraitEnvironment", "selectionStyle"]
 - !private ["PSo18UITraitEnvironment", "tableFooterView"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -1524,10 +1575,12 @@ depends-member:
 - !private ["CSo6UIView", "cellForRow"]
 - ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "deselectRow"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "questionLabel"]
 - !private ["CSo6UIView", "register"]
 - !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "selectionStyle"]
 - !private ["CSo6UIView", "tableFooterView"]
 - !private ["CSo6UIView", "text"]
 - ["CSo6UIView", "topicLabel"]
@@ -1594,10 +1647,12 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cellForRow"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "deselectRow"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "questionLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "register"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "selectionStyle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tableFooterView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "topicLabel"]
@@ -1634,6 +1689,7 @@ depends-member:
 - !private ["Ps9_Hashable", "cellForRow"]
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "deselectRow"]
 - !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "finalQ"]
@@ -1644,6 +1700,7 @@ depends-member:
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "none"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
 - !private ["Ps9_Hashable", "order"]
@@ -1670,6 +1727,7 @@ depends-member:
 - ["Ps9_Hashable", "scrollViewWillEndDragging"]
 - ["Ps9_Hashable", "sectionIndexTitles"]
 - ["Ps9_Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9_Hashable", "selectionStyle"]
 - !private ["Ps9_Hashable", "subscript"]
 - !private ["Ps9_Hashable", "tableFooterView"]
 - ["Ps9_Hashable", "tableView"]
@@ -1776,6 +1834,7 @@ depends-nominal:
 - !private "Vs17RandomAccessSlice"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - "C4Guru20RequestTableViewCell"
 - "Ps8Sequence"
@@ -1806,6 +1865,7 @@ depends-nominal:
 - "CSo17UIStoryboardSegue"
 - "CSo11UITableView"
 - "CSo15UITableViewCell"
+- "OSC29UITableViewCellSelectionStyle"
 - "OSC20UITableViewCellStyle"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"

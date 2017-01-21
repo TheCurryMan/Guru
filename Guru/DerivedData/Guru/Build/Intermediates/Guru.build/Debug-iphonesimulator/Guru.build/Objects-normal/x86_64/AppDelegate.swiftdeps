@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C4Guru11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
-- "application"
 - "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
+- "window"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "application"
 depends-top-level:
+- "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
+- !private "ParseClientConfiguration"
+- !private "OneSignal"
 - !private "BooleanLiteralType"
-- "Bool"
 - "StringLiteralType"
 - "UIApplication"
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- !private "Parse"
-- !private "ParseClientConfiguration"
-- !private "AssignmentPrecedence"
 - "UIWindow"
 - "UIApplicationDelegate"
-- !private "OneSignal"
 - "UIResponder"
+- !private "Parse"
+- !private "AssignmentPrecedence"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "OneSignal"]
 - !private ["Ps9AnyObject", "Parse"]

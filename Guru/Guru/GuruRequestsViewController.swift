@@ -73,6 +73,7 @@ class GuruRequestsViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "request", for: indexPath) as! RequestTableViewCell
+        cell.selectionStyle = .none
         cell.questionLabel.text = questions[indexPath.row]
         cell.topicLabel.text = qTopics[indexPath.row]
         cell.usernameLabel.text = usernames[indexPath.row]
@@ -82,6 +83,8 @@ class GuruRequestsViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! RequestTableViewCell
+        self.tableView.deselectRow(at: indexPath, animated: false)
+        
         finalQ = cell.questionLabel.text!
         finalT = cell.topicLabel.text!
         performSegue(withIdentifier: "accept", sender: self)

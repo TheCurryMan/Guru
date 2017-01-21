@@ -121,6 +121,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIView;
 @class UILabel;
 @class NSBundle;
 @class NSCoder;
@@ -129,6 +130,7 @@ SWIFT_CLASS("_TtC4Guru20AcceptViewController")
 @interface AcceptViewController : UIViewController
 @property (nonatomic, copy) NSString * _Nonnull question;
 @property (nonatomic, copy) NSString * _Nonnull topic;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified questionLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topicLabel;
 - (void)viewDidLoad;
@@ -186,6 +188,7 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified subjectsEntered;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptButton;
 @property (nonatomic) BOOL avail;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
 - (IBAction)tapped:(id _Nonnull)sender;
 - (IBAction)pressedAsk:(id _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;

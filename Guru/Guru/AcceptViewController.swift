@@ -12,7 +12,8 @@ class AcceptViewController: UIViewController {
 
     var question = String()
     var topic = String()
-    
+
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var topicLabel: UILabel!
@@ -20,7 +21,7 @@ class AcceptViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        backgroundView.layer.cornerRadius = 15
         questionLabel.text = question
         topicLabel.text = topic
 
