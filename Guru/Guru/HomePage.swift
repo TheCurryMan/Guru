@@ -7,13 +7,48 @@
 //
 
 import UIKit
+import Parse
 
 class HomePage: UIViewController {
 
+    @IBOutlet weak var questionField: UITextField!
+    @IBOutlet weak var subjectsEntered: UITextField!
+
+    @IBAction func tapped(_ sender: Any) {
+        questionField.resignFirstResponder()
+        subjectsEntered.resignFirstResponder()
+    }
+    
+    @IBAction func pressedAsk(_ sender: Any) {
+        submitQuestion()
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+    }
+    
+    func submitQuestion() {
+        let user = PFUser.current()
 
-        // Do any additional setup after loading the view.
+        var question = PFObject(className:"Question")
+        question["text"] = questionField.text
+        question["topic"] = subjectsEntered.text
+        question["student"] = user
+        question.saveInBackground {
+            (success, error) -> Void in
+            if (success) {
+                self.performSegue(withIdentifier: "loading", sender: self)
+                
+            } else {
+                // There was a problem, check error.description
+            }
+        
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4326C5A422095AE111FFAEF9 /* Pods_Guru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D664C796A2C4B5EAB0580F40 /* Pods_Guru.framework */; };
+		4326C5A422095AE111FFAEF9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
+		AF2821631E33373500493A74 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821621E33373500493A74 /* Camera.png */; };
+		AF2821651E33440500493A74 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821641E33440500493A74 /* circle.png */; };
+		AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2821661E33448500493A74 /* WaitingScreen.swift */; };
+		AF2821691E33466700493A74 /* Guru_green.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821681E33466700493A74 /* Guru_green.png */; };
 		AFB441761E331FF9006C3864 /* BKG.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB441751E331FF9006C3864 /* BKG.png */; };
 		AFB441781E332246006C3864 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB441771E332246006C3864 /* HomePage.swift */; };
-		AFB4417A1E332283006C3864 /* HomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB441791E332283006C3864 /* HomePage.xib */; };
 		AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB4417B1E3322DE006C3864 /* Guru_trans.png */; };
 		E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3301E331BB4003C281D /* AppDelegate.swift */; };
 		E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3321E331BB4003C281D /* ViewController.swift */; };
@@ -20,6 +23,8 @@
 		E1F3F33B1E331BB4003C281D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */; };
 		E1F3F3461E331BB4003C281D /* GuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3451E331BB4003C281D /* GuruTests.swift */; };
 		E1F3F3511E331BB4003C281D /* GuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3501E331BB4003C281D /* GuruUITests.swift */; };
+		E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3601E333152003C281D /* SignUpViewController.swift */; };
+		E1F3F3651E334DAB003C281D /* notifications-button (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3641E334DAB003C281D /* notifications-button (1).png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +50,12 @@
 		716B7D6DDAA026DF4E0D7DED /* Pods-Guru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.debug.xcconfig"; sourceTree = "<group>"; };
 		72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.release.xcconfig"; sourceTree = "<group>"; };
+		AF2821621E33373500493A74 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
+		AF2821641E33440500493A74 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		AF2821661E33448500493A74 /* WaitingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingScreen.swift; sourceTree = "<group>"; };
+		AF2821681E33466700493A74 /* Guru_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guru_green.png; sourceTree = "<group>"; };
 		AFB441751E331FF9006C3864 /* BKG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG.png; sourceTree = "<group>"; };
 		AFB441771E332246006C3864 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
-		AFB441791E332283006C3864 /* HomePage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePage.xib; sourceTree = "<group>"; };
 		AFB4417B1E3322DE006C3864 /* Guru_trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guru_trans.png; sourceTree = "<group>"; };
 		E1F3F32D1E331BB4003C281D /* Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F3F3301E331BB4003C281D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,8 @@
 		E1F3F34C1E331BB4003C281D /* GuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F3F3501E331BB4003C281D /* GuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuruUITests.swift; sourceTree = "<group>"; };
 		E1F3F3521E331BB4003C281D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F3F3601E333152003C281D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E1F3F3641E334DAB003C281D /* notifications-button (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notifications-button (1).png"; sourceTree = "<group>"; };
 		FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4326C5A422095AE111FFAEF9 /* Pods_Guru.framework in Frameworks */,
+				4326C5A422095AE111FFAEF9 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36EFBB50935857E1F8F1C9D /* Pods_GuruTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +105,6 @@
 		71870440F445100E06D451FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D664C796A2C4B5EAB0580F40 /* Pods_Guru.framework */,
 				6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */,
 				1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */,
 			);
@@ -108,8 +116,6 @@
 			children = (
 				716B7D6DDAA026DF4E0D7DED /* Pods-Guru.debug.xcconfig */,
 				7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */,
-				BBCE5D4F0C2B9F54EDA76F05 /* Pods-GuruTests.debug.xcconfig */,
-				B2BD9064ABA6FBDC8341E669 /* Pods-GuruTests.release.xcconfig */,
 				72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */,
 				FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */,
 			);
@@ -142,14 +148,19 @@
 			isa = PBXGroup;
 			children = (
 				E1F3F3301E331BB4003C281D /* AppDelegate.swift */,
+				E1F3F3601E333152003C281D /* SignUpViewController.swift */,
 				E1F3F3321E331BB4003C281D /* ViewController.swift */,
 				E1F3F3341E331BB4003C281D /* Main.storyboard */,
+				AF2821661E33448500493A74 /* WaitingScreen.swift */,
 				AFB441771E332246006C3864 /* HomePage.swift */,
-				AFB441791E332283006C3864 /* HomePage.xib */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
 				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
+				AF2821641E33440500493A74 /* circle.png */,
+				E1F3F3641E334DAB003C281D /* notifications-button (1).png */,
 				AFB441751E331FF9006C3864 /* BKG.png */,
+				AF2821621E33373500493A74 /* Camera.png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
+				AF2821681E33466700493A74 /* Guru_green.png */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
 			);
 			path = Guru;
@@ -291,11 +302,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB4417A1E332283006C3864 /* HomePage.xib in Resources */,
 				E1F3F33B1E331BB4003C281D /* LaunchScreen.storyboard in Resources */,
 				E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */,
+				AF2821631E33373500493A74 /* Camera.png in Resources */,
 				AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */,
+				AF2821691E33466700493A74 /* Guru_green.png in Resources */,
+				AF2821651E33440500493A74 /* circle.png in Resources */,
 				AFB441761E331FF9006C3864 /* BKG.png in Resources */,
+				E1F3F3651E334DAB003C281D /* notifications-button (1).png in Resources */,
 				E1F3F3361E331BB4003C281D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,8 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */,
 				E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
+				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
 				E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,7 +653,6 @@
 		};
 		E1F3F3591E331BB4003C281D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBCE5D4F0C2B9F54EDA76F05 /* Pods-GuruTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,7 +668,6 @@
 		};
 		E1F3F35A1E331BB4003C281D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2BD9064ABA6FBDC8341E669 /* Pods-GuruTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
