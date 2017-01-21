@@ -135,21 +135,28 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
 @interface HomePage : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified questionField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified subjectsEntered;
+- (IBAction)tapped:(id _Nonnull)sender;
+- (IBAction)pressedAsk:(id _Nonnull)sender;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (void)submitQuestion;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
 
 SWIFT_CLASS("_TtC4Guru20SignUpViewController")
 @interface SignUpViewController : UIViewController
+- (IBAction)tappedScreen:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topics;
@@ -166,6 +173,20 @@ SWIFT_CLASS("_TtC4Guru20SignUpViewController")
 SWIFT_CLASS("_TtC4Guru14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+
+SWIFT_CLASS("_TtC4Guru13WaitingScreen")
+@interface WaitingScreen : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified circles;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified guru;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

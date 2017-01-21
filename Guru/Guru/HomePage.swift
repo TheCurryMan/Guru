@@ -11,26 +11,25 @@ import Parse
 
 class HomePage: UIViewController {
 
-    @IBOutlet weak var questionField: UITextView!
+    @IBOutlet weak var questionField: UITextField!
     @IBOutlet weak var subjectsEntered: UITextField!
 
     @IBAction func tapped(_ sender: Any) {
         questionField.resignFirstResponder()
         subjectsEntered.resignFirstResponder()
     }
-    @IBAction func pressedCamera(_ sender: Any) {
-        
-    }
     
     @IBAction func pressedAsk(_ sender: Any) {
         submitQuestion()
     }
     
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        // Do any additional setup after loading the view.
+    
     }
     
     func submitQuestion() {
@@ -43,6 +42,7 @@ class HomePage: UIViewController {
         question.saveInBackground {
             (success, error) -> Void in
             if (success) {
+                self.performSegue(withIdentifier: "loading", sender: self)
                 
             } else {
                 // There was a problem, check error.description

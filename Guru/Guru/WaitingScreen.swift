@@ -17,16 +17,18 @@ class WaitingScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         self.guru.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI/8))
-
+        
         UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse] , animations: {
             self.guru.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI/8))
             self.circles.transform=CGAffineTransform(scaleX: 0.95, y: 0.95)
-
+            
             
         }, completion: nil)
-        
-        
+
     }
     
     override var prefersStatusBarHidden: Bool {
