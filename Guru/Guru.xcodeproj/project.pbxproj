@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFB441761E331FF9006C3864 /* BKG.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB441751E331FF9006C3864 /* BKG.png */; };
 		E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3301E331BB4003C281D /* AppDelegate.swift */; };
 		E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3321E331BB4003C281D /* ViewController.swift */; };
 		E1F3F3361E331BB4003C281D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3341E331BB4003C281D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AFB441751E331FF9006C3864 /* BKG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG.png; sourceTree = "<group>"; };
 		E1F3F32D1E331BB4003C281D /* Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F3F3301E331BB4003C281D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F3F3321E331BB4003C281D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				E1F3F3341E331BB4003C281D /* Main.storyboard */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
 				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
+				AFB441751E331FF9006C3864 /* BKG.png */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
 			);
 			path = Guru;
@@ -236,6 +239,7 @@
 			files = (
 				E1F3F33B1E331BB4003C281D /* LaunchScreen.storyboard in Resources */,
 				E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */,
+				AFB441761E331FF9006C3864 /* BKG.png in Resources */,
 				E1F3F3361E331BB4003C281D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +515,7 @@
 				E1F3F3571E331BB4003C281D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1F3F3581E331BB4003C281D /* Build configuration list for PBXNativeTarget "GuruTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				E1F3F35A1E331BB4003C281D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1F3F35B1E331BB4003C281D /* Build configuration list for PBXNativeTarget "GuruUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				E1F3F35D1E331BB4003C281D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
