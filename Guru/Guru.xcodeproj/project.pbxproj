@@ -29,6 +29,7 @@
 		E1F3F3651E334DAB003C281D /* notifications-button (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3641E334DAB003C281D /* notifications-button (1).png */; };
 		E1F3F36B1E33D1D1003C281D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F36A1E33D1D1003C281D /* red.png */; };
 		E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */; };
+		E1F3F36F1E33DA83003C281D /* RequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		E1F3F3641E334DAB003C281D /* notifications-button (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notifications-button (1).png"; sourceTree = "<group>"; };
 		E1F3F36A1E33D1D1003C281D /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruRequestsViewController.swift; sourceTree = "<group>"; };
+		E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestTableViewCell.xib; sourceTree = "<group>"; };
 		FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 				E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */,
 				AF2821661E33448500493A74 /* WaitingScreen.swift */,
 				E1F3F3341E331BB4003C281D /* Main.storyboard */,
+				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
 				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
 				AF2821641E33440500493A74 /* circle.png */,
@@ -329,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F3F36F1E33DA83003C281D /* RequestTableViewCell.xib in Resources */,
 				E1F3F33B1E331BB4003C281D /* LaunchScreen.storyboard in Resources */,
 				E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */,
 				AF2821631E33373500493A74 /* Camera.png in Resources */,
