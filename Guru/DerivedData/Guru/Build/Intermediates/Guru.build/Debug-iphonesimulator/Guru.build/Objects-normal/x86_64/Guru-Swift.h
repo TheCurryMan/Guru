@@ -116,10 +116,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIView;
+@class UILabel;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC4Guru20AcceptViewController")
+@interface AcceptViewController : UIViewController
+@property (nonatomic, copy) NSString * _Nonnull question;
+@property (nonatomic, copy) NSString * _Nonnull topic;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified questionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topicLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)accept:(id _Nonnull)sender;
+- (IBAction)decline:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -135,21 +156,57 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class UITableViewCell;
+@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
+@interface GuruRequestsViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull topics;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull questions;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull qTopics;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull usernames;
+@property (nonatomic, copy) NSString * _Nonnull finalQ;
+@property (nonatomic, copy) NSString * _Nonnull finalT;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITextField;
-@class NSBundle;
-@class NSCoder;
+@class UIButton;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
 @interface HomePage : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified questionField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified subjectsEntered;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptButton;
+@property (nonatomic) BOOL avail;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
 - (IBAction)tapped:(id _Nonnull)sender;
 - (IBAction)pressedAsk:(id _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
 - (void)submitQuestion;
 - (void)didReceiveMemoryWarning;
+- (IBAction)accept:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Guru20RequestTableViewCell")
+@interface RequestTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified questionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topicLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import OneSignal
 
 class SignUpViewController: UIViewController {
 
@@ -24,7 +25,7 @@ class SignUpViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        var currentUser = PFUser.current()
+        let currentUser = PFUser.current()
         if currentUser != nil {
             self.performSegue(withIdentifier: "signup", sender: self)
         } else {
@@ -42,11 +43,11 @@ class SignUpViewController: UIViewController {
     }
     
     func signUp() {
-        var user = PFUser()
+        let user = PFUser()
         user.username = username.text
         user.password = password.text
         // other fields can be set just like with PFObject
-        user["topics"] = topics.text?.components(separatedBy: ",")
+        user["topics"] = topics.text?.components(separatedBy: ", ")
         user["available"] = false
         user.signUpInBackground {
             (success, error) -> Void in
@@ -55,6 +56,7 @@ class SignUpViewController: UIViewController {
                 // Show the errorString somewhere and let the user try again.
             } else {
                 // Hooray! Let them use the app now.
+                OneSignal.sendTag("userID", value: PFUser.current()!.objectId!)
                 self.performSegue(withIdentifier: "signup", sender: self)
             }
         }
