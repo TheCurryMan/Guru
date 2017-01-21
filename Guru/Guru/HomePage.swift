@@ -9,10 +9,10 @@
 import UIKit
 import Parse
 
-class HomePage: UIViewController, UITextViewDelegate {
+class HomePage: UIViewController {
 
-    @IBOutlet weak var questionField: UITextField!
-    @IBOutlet weak var subjectsEntered: UITextView!
+    @IBOutlet weak var questionField: UITextView!
+    @IBOutlet weak var subjectsEntered: UITextField!
 
     @IBAction func tapped(_ sender: Any) {
         questionField.resignFirstResponder()
@@ -29,7 +29,6 @@ class HomePage: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.subjectsEntered.delegate = self;
 
         // Do any additional setup after loading the view.
     }
