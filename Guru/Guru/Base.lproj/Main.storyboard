@@ -120,8 +120,52 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
+        <!--Home Page-->
+        <scene sceneID="qtK-MN-U1n">
+            <objects>
+                <viewController id="0ja-Hk-275" customClass="HomePage" customModule="Guru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Dq-dp-1EJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="yIZ-Nb-qnT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TUD-bE-7cy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BKG.png" translatesAutoresizingMaskIntoConstraints="NO" id="JXT-NO-Rv6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Guru_trans.png" translatesAutoresizingMaskIntoConstraints="NO" id="t9n-HC-pAO">
+                                <rect key="frame" x="-9" y="7" width="94" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-oL-4nD">
+                                <rect key="frame" x="77" y="29" width="87" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your question..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvs-Se-gW2">
+                                <rect key="frame" x="16" y="97" width="343" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25I-un-MpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BKG.png" width="1080" height="1920"/>
+        <image name="Guru_trans.png" width="1024" height="1024"/>
     </resources>
 </document>
