@@ -17,13 +17,17 @@ class RequestTableViewCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
 }
 
-class GuruRequestsViewController: UIViewController, UITableViewDataSource {
+class GuruRequestsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var topics = [String]()
     
     var questions = [String]()
     var qTopics = [String]()
     var usernames = [String]()
+    
+    var finalQ = String()
+    var finalT = String()
+    
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -74,6 +78,22 @@ class GuruRequestsViewController: UIViewController, UITableViewDataSource {
         cell.usernameLabel.text = usernames[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! RequestTableViewCell
+        finalQ = cell.questionLabel.text!
+        finalT = cell.topicLabel.text!
+        performSegue(withIdentifier: "accept", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "accept") {
+            var vc = segue.destination as! AcceptViewController
+            vc.question = finalQ
+            vc.topic = finalT
+        }
     }
 
     /*

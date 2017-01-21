@@ -30,6 +30,9 @@
 		E1F3F36B1E33D1D1003C281D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F36A1E33D1D1003C281D /* red.png */; };
 		E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */; };
 		E1F3F36F1E33DA83003C281D /* RequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */; };
+		E1F3F3721E33F058003C281D /* checked (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3701E33F058003C281D /* checked (1).png */; };
+		E1F3F3731E33F058003C281D /* cancel (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3711E33F058003C281D /* cancel (1).png */; };
+		E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		E1F3F36A1E33D1D1003C281D /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruRequestsViewController.swift; sourceTree = "<group>"; };
 		E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestTableViewCell.xib; sourceTree = "<group>"; };
+		E1F3F3701E33F058003C281D /* checked (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked (1).png"; sourceTree = "<group>"; };
+		E1F3F3711E33F058003C281D /* cancel (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel (1).png"; sourceTree = "<group>"; };
+		E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
 		FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +177,7 @@
 				AFB441771E332246006C3864 /* HomePage.swift */,
 				E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */,
 				AF2821661E33448500493A74 /* WaitingScreen.swift */,
+				E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */,
 				E1F3F3341E331BB4003C281D /* Main.storyboard */,
 				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
@@ -180,6 +187,8 @@
 				AFB441751E331FF9006C3864 /* BKG.png */,
 				E1F3F36A1E33D1D1003C281D /* red.png */,
 				AF2821621E33373500493A74 /* Camera.png */,
+				E1F3F3701E33F058003C281D /* checked (1).png */,
+				E1F3F3711E33F058003C281D /* cancel (1).png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
 				AF2821681E33466700493A74 /* Guru_green.png */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
@@ -339,6 +348,8 @@
 				E1F3F36B1E33D1D1003C281D /* red.png in Resources */,
 				AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */,
 				AF2821691E33466700493A74 /* Guru_green.png in Resources */,
+				E1F3F3731E33F058003C281D /* cancel (1).png in Resources */,
+				E1F3F3721E33F058003C281D /* checked (1).png in Resources */,
 				AF2821651E33440500493A74 /* circle.png in Resources */,
 				AFB441761E331FF9006C3864 /* BKG.png in Resources */,
 				E1F3F3651E334DAB003C281D /* notifications-button (1).png in Resources */,
@@ -508,6 +519,7 @@
 				AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */,
 				E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
+				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
 				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
 				E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */,
 				E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */,
