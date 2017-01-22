@@ -22,8 +22,16 @@ class VideoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let liveDrawVC = self.storyboard?.instantiateViewController(withIdentifier: "LiveDrawing") as! LDViewController
+        self.addChildViewController(liveDrawVC)
+        self.view.addSubview(liveDrawVC.view)
         
         // Do any additional setup after loading the view.
+    }
+    
+    override var prefersStatusBarHidden: Bool
+    {
+        return true
     }
     
     override func didReceiveMemoryWarning() {
