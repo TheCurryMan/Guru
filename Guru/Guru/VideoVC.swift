@@ -32,6 +32,8 @@ class VideoVC: UIViewController {
         liveDrawVC.question = question
         self.addChildViewController(liveDrawVC)
         self.view.addSubview(liveDrawVC.view)
+        self.view.bringSubview(toFront: disconnectButton)
+        self.view.bringSubview(toFront: micButton)
     }
     
     override var prefersStatusBarHidden: Bool
@@ -54,6 +56,7 @@ class VideoVC: UIViewController {
     @IBAction func disconnect(sender: AnyObject) {
         print("disconnecting user")
         self.delegate?.disconnect(sender: sender)
+        self.performSegue(withIdentifier: "home", sender: self)
     }
     @IBAction func toggleMic(sender: AnyObject) {
         print("toggle mic")

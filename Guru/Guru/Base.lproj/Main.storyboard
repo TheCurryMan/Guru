@@ -522,6 +522,7 @@
                         <outlet property="micButton" destination="5mR-mI-twG" id="EEc-TD-Wdz"/>
                         <outlet property="previewView" destination="lEc-xl-TQH" id="FoP-fT-xpA"/>
                         <outlet property="remoteView" destination="zkp-y0-zla" id="Bzg-3J-5L1"/>
+                        <segue destination="0ja-Hk-275" kind="modal" identifier="home" id="lug-eI-cFg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZj-Vd-U9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -592,6 +593,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="lug-eI-cFg"/>
         <segue reference="qIo-tJ-kbc"/>
     </inferredMetricsTieBreakers>
 </document>
