@@ -6,40 +6,43 @@ provides-nominal:
 provides-member:
 - ["C4Guru20SignUpViewController", ""]
 provides-dynamic-lookup:
-- "submit"
+- "tappedScreen"
+- "password"
+- "signUp"
+- "viewDidLoad"
+- "viewDidAppear"
 - "didReceiveMemoryWarning"
 - "username"
-- "viewDidAppear"
-- "viewDidLoad"
-- "password"
-- "tappedScreen"
-- "signUp"
+- "submit"
 - "topics"
 depends-top-level:
-- !private "!="
-- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "StringLiteralType"
+- !private "Void"
 - !private "PFUser"
+- "AssignmentPrecedence"
 - !private "CastingPrecedence"
+- !private "OneSignal"
+- !private "!="
 - "SignUpViewController"
 - !private "NSString"
-- !private "BooleanLiteralType"
+- "UITextField"
+- !private "NSError"
 - "UIViewController"
 - "Bool"
-- !private "Void"
-- !private "NSError"
-- !private "UnicodeScalarType"
-- !private "StringLiteralType"
-- "UITextField"
 depends-member:
 - !private ["Vs11AnyHashable", "deinit"]
+- !private ["Ps9AnyObject", "OneSignal"]
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "components"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "objectId"]
 - ["Ps9AnyObject", "password"]
 - !private ["Ps9AnyObject", "performSegue"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
+- !private ["Ps9AnyObject", "sendTag"]
 - ["Ps9AnyObject", "signUp"]
 - !private ["Ps9AnyObject", "signUpInBackground"]
 - ["Ps9AnyObject", "submit"]
@@ -63,6 +66,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["Ps7CVarArg", "OneSignal"]
 - !private ["Ps7CVarArg", "PFUser"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
@@ -72,9 +76,11 @@ depends-member:
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "objectId"]
 - ["Ps7CVarArg", "password"]
 - !private ["Ps7CVarArg", "performSegue"]
 - !private ["Ps7CVarArg", "resignFirstResponder"]
+- !private ["Ps7CVarArg", "sendTag"]
 - ["Ps7CVarArg", "signUp"]
 - !private ["Ps7CVarArg", "signUpInBackground"]
 - ["Ps7CVarArg", "submit"]
@@ -102,6 +108,7 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "OneSignal"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
@@ -109,9 +116,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "objectId"]
 - ["Ps28CustomDebugStringConvertible", "password"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
+- !private ["Ps28CustomDebugStringConvertible", "sendTag"]
 - ["Ps28CustomDebugStringConvertible", "signUp"]
 - !private ["Ps28CustomDebugStringConvertible", "signUpInBackground"]
 - ["Ps28CustomDebugStringConvertible", "submit"]
@@ -144,6 +153,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "OneSignal"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
@@ -154,9 +164,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "objectId"]
 - ["Ps23CustomStringConvertible", "password"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
+- !private ["Ps23CustomStringConvertible", "sendTag"]
 - ["Ps23CustomStringConvertible", "signUp"]
 - !private ["Ps23CustomStringConvertible", "signUpInBackground"]
 - ["Ps23CustomStringConvertible", "submit"]
@@ -177,6 +189,7 @@ depends-member:
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Vs15DictionaryIndex", "deinit"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "OneSignal"]
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
@@ -185,9 +198,11 @@ depends-member:
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "objectId"]
 - ["Ps9Equatable", "password"]
 - !private ["Ps9Equatable", "performSegue"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
+- !private ["Ps9Equatable", "sendTag"]
 - ["Ps9Equatable", "signUp"]
 - !private ["Ps9Equatable", "signUpInBackground"]
 - ["Ps9Equatable", "submit"]
@@ -220,6 +235,7 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "components"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "OneSignal"]
 - !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
@@ -228,9 +244,11 @@ depends-member:
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "objectId"]
 - ["Ps8Hashable", "password"]
 - !private ["Ps8Hashable", "performSegue"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
+- !private ["Ps8Hashable", "sendTag"]
 - ["Ps8Hashable", "signUp"]
 - !private ["Ps8Hashable", "signUpInBackground"]
 - ["Ps8Hashable", "submit"]
@@ -276,6 +294,7 @@ depends-member:
 - !private ["Ps10MirrorPath", "components"]
 - !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "OneSignal"]
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "components"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -298,6 +317,7 @@ depends-member:
 - !private ["PSo9NSCopying", "userInfo"]
 - !private ["CSo7NSError", "deinit"]
 - !private ["CSo7NSError", "userInfo"]
+- !private ["PSo26NSExtensionRequestHandling", "OneSignal"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
@@ -316,6 +336,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "OneSignal"]
 - !private ["CSo8NSObject", "PFUser"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "Void"]
@@ -323,9 +344,11 @@ depends-member:
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "objectId"]
 - ["CSo8NSObject", "password"]
 - !private ["CSo8NSObject", "performSegue"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
+- !private ["CSo8NSObject", "sendTag"]
 - ["CSo8NSObject", "signUp"]
 - !private ["CSo8NSObject", "signUpInBackground"]
 - ["CSo8NSObject", "submit"]
@@ -337,14 +360,17 @@ depends-member:
 - ["CSo8NSObject", "username"]
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "OneSignal"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "components"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "objectId"]
 - ["PSo16NSObjectProtocol", "password"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
+- !private ["PSo16NSObjectProtocol", "sendTag"]
 - ["PSo16NSObjectProtocol", "signUp"]
 - !private ["PSo16NSObjectProtocol", "signUpInBackground"]
 - ["PSo16NSObjectProtocol", "submit"]
@@ -363,15 +389,18 @@ depends-member:
 - !private ["CSo8NSString", "components"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo9OneSignal", "sendTag"]
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "current"]
 - !private ["CSo8PFObject", "init"]
+- !private ["CSo8PFObject", "objectId"]
 - !private ["CSo8PFObject", "password"]
 - !private ["CSo8PFObject", "signUpInBackground"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["CSo8PFObject", "username"]
 - !private ["PSo13PFSubclassing", "current"]
 - !private ["PSo13PFSubclassing", "init"]
+- !private ["PSo13PFSubclassing", "objectId"]
 - !private ["PSo13PFSubclassing", "password"]
 - !private ["PSo13PFSubclassing", "signUpInBackground"]
 - !private ["PSo13PFSubclassing", "subscript"]
@@ -379,6 +408,7 @@ depends-member:
 - !private ["CSo6PFUser", "current"]
 - ["CSo6PFUser", "deinit"]
 - !private ["CSo6PFUser", "init"]
+- !private ["CSo6PFUser", "objectId"]
 - !private ["CSo6PFUser", "password"]
 - !private ["CSo6PFUser", "signUpInBackground"]
 - !private ["CSo6PFUser", "subscript"]
@@ -394,6 +424,7 @@ depends-member:
 - ["C4Guru20SignUpViewController", "Bool"]
 - !private ["C4Guru20SignUpViewController", "NSError"]
 - !private ["C4Guru20SignUpViewController", "NSString"]
+- !private ["C4Guru20SignUpViewController", "OneSignal"]
 - !private ["C4Guru20SignUpViewController", "PFUser"]
 - ["C4Guru20SignUpViewController", "UITextField"]
 - !private ["C4Guru20SignUpViewController", "Void"]
@@ -433,6 +464,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "OneSignal"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "init"]
@@ -448,6 +480,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "OneSignal"]
 - !private ["PSo18UIContentContainer", "PFUser"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
@@ -469,6 +502,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "OneSignal"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "init"]
@@ -491,6 +525,7 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSString"]
+- !private ["CSo11UIResponder", "OneSignal"]
 - !private ["CSo11UIResponder", "PFUser"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "Void"]
@@ -507,6 +542,7 @@ depends-member:
 - ["CSo11UIResponder", "username"]
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "OneSignal"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
@@ -522,6 +558,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "OneSignal"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
@@ -541,6 +578,7 @@ depends-member:
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "OneSignal"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -561,6 +599,7 @@ depends-member:
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "NSString"]
+- !private ["CSo16UIViewController", "OneSignal"]
 - !private ["CSo16UIViewController", "PFUser"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "Void"]
@@ -594,6 +633,7 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "components"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
+- !private ["Ps9_Hashable", "OneSignal"]
 - !private ["Ps9_Hashable", "PFUser"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
@@ -603,9 +643,11 @@ depends-member:
 - !private ["Ps9_Hashable", "deinit"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "objectId"]
 - ["Ps9_Hashable", "password"]
 - !private ["Ps9_Hashable", "performSegue"]
 - !private ["Ps9_Hashable", "resignFirstResponder"]
+- !private ["Ps9_Hashable", "sendTag"]
 - ["Ps9_Hashable", "signUp"]
 - !private ["Ps9_Hashable", "signUpInBackground"]
 - ["Ps9_Hashable", "submit"]
@@ -693,6 +735,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "CSo9OneSignal"
 - "Sq"
 - !private "CSo8PFObject"
 - !private "PSo13PFSubclassing"
@@ -806,4 +849,6 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "253ad77dc5d55e594b8c2b8d1f5b942f"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
+interface-hash: "318544466cd2ffc4ddb462f8da490de9"

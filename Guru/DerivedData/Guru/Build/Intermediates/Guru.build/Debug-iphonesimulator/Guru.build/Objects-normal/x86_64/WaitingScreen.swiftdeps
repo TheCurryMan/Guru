@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C4Guru13WaitingScreen", ""]
 provides-dynamic-lookup:
-- "prefersStatusBarHidden"
 - "circles"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
 - "viewDidAppear"
 - "guru"
+- "prefersStatusBarHidden"
+- "viewDidLoad"
 depends-top-level:
-- !private "M_PI"
-- !private "/"
-- "UIImageView"
-- !private "BooleanLiteralType"
 - "UIViewController"
+- !private "BooleanLiteralType"
 - "Bool"
-- !private "-"
 - !private "UIView"
-- "WaitingScreen"
-- !private "CGAffineTransform"
-- "AssignmentPrecedence"
-- !private "CGFloat"
 - !private "Array"
+- "UIImageView"
+- !private "CGAffineTransform"
+- !private "CGFloat"
+- !private "-"
+- !private "/"
+- !private "M_PI"
+- "AssignmentPrecedence"
+- "WaitingScreen"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGAffineTransform"]
@@ -480,4 +480,6 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "11a8c7bdd682b2da220b1a3f504136ec"

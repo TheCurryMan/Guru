@@ -16,6 +16,7 @@ class HomePage: UIViewController {
     @IBOutlet weak var acceptButton: UIButton!
     var avail = true
     var question: PFObject?
+	@IBOutlet weak var backgroundView: UIView!
     
     @IBAction func tapped(_ sender: Any) {
         questionField.resignFirstResponder()
@@ -32,7 +33,7 @@ class HomePage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.backgroundView.layer.cornerRadius = 15
         let user = PFUser.current()
         avail = user?["available"] as! Bool
         if(avail)

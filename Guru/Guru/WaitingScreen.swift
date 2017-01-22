@@ -32,7 +32,7 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
     var participant: TVIParticipant?
     
     var question: PFObject!
-    
+    var tutor = false
     // MARK: UI Element Outlets and handles
     @IBOutlet weak var circles: UIImageView!
     @IBOutlet weak var guru: UIImageView!
@@ -43,6 +43,8 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         self.videoScreen = self.storyboard?.instantiateViewController(withIdentifier: "videoVC") as! VideoVC
         self.addChildViewController(self.videoScreen)
         self.view.addSubview(self.videoScreen.view)
+        self.videoScreen.view.alpha = 0
+        self.videoScreen.view.isUserInteractionEnabled = false
         localMedia = TVILocalMedia()
         
         if PlatformUtils.isSimulator {
@@ -217,6 +219,9 @@ extension WaitingScreen: TVIRoomDelegate {
         if (room.participants.count > 0) {
             self.participant = room.participants[0]
             self.participant?.delegate = self
+            UIView.animate(withDuration: 0.5) {
+                self.videoScreen.view.alpha = 1
+            }
         }
     }
     
@@ -227,6 +232,7 @@ extension WaitingScreen: TVIRoomDelegate {
         self.room = nil
         
         self.videoScreen.showRoomUI(inRoom: false)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func room(_ room: TVIRoom, didFailToConnectWithError error: Error) {
@@ -242,6 +248,11 @@ extension WaitingScreen: TVIRoomDelegate {
             self.participant?.delegate = self
         }
         logMessage(messageText: "Room \(room.name), Participant \(participant.identity) connected")
+        
+        UIView.animate(withDuration: 0.5) { 
+            self.videoScreen.view.alpha = 1
+        }
+        self.videoScreen.view.isUserInteractionEnabled = true
     }
     
     func room(_ room: TVIRoom, participantDidDisconnect participant: TVIParticipant) {
