@@ -24,6 +24,7 @@ class HomePage: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var askedLabel: UILabel!
     @IBOutlet weak var topicButton: UIButton!
     var popup = PopupController()
+    var finalTopic = ""
     @IBAction func tapped(_ sender: Any) {
         questionField.resignFirstResponder()
         //subjectsEntered.resignFirstResponder()
@@ -68,8 +69,7 @@ class HomePage: UIViewController, UITextFieldDelegate {
                 print("No userInfo found in notification")
                 return
         }
-        
-        self.topicButton.titleLabel?.text = topic
+        finalTopic = topic
         popup.dismiss()
         
         //let alert = UIAlertController(title: "Notification!",
@@ -110,6 +110,13 @@ class HomePage: UIViewController, UITextFieldDelegate {
             }
             .didCloseHandler { _ in
                 print("closed popup!")
+                
+                    
+                
+                self.topicButton.setTitle(self.finalTopic, for: UIControlState.normal)
+                self.topicButton.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
+             
+                
                 
             }
         
