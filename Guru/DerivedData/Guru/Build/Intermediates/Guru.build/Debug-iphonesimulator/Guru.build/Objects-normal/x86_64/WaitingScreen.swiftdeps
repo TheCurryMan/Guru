@@ -9,88 +9,90 @@ provides-member:
 - ["P4Guru21WaitingScreenDelegate", ""]
 - ["C4Guru13WaitingScreen", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "localAudioTrack"
-- "didConnect"
 - "connect"
-- "client"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "logMessage"
-- "videoScreen"
-- "toggleMic"
-- "prepareLocalMedia"
-- "localVideoTrack"
-- "circles"
-- "cleanupRemoteParticipant"
-- "dismissView"
-- "viewDidLoad"
-- "guru"
-- "flipCamera"
-- "tutor"
-- "localMedia"
 - "prefersStatusBarHidden"
-- "viewWillAppear"
-- "disconnect"
-- "startPreview"
-- "tokenUrl"
-- "camera"
+- "flipCamera"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "localAudioTrack"
+- "dismissButton"
+- "client"
+- "toggleMic"
+- "viewDidLoad"
 - "room"
 - "room"
 - "room"
 - "room"
 - "room"
 - "question"
+- "localMedia"
+- "videoScreen"
 - "accessToken"
+- "disconnect"
+- "didConnect"
+- "circles"
+- "viewWillAppear"
+- "dismissView"
+- "tutor"
+- "camera"
+- "tokenUrl"
+- "localVideoTrack"
+- "didReceiveMemoryWarning"
+- "guru"
+- "prepareLocalMedia"
+- "cleanupRemoteParticipant"
+- "logMessage"
+- "startPreview"
 depends-top-level:
-- !private "CGFloat"
-- !private "!"
-- "TVIRoomDelegate"
-- "TVIParticipantDelegate"
-- "Bool"
-- !private "PlatformUtils"
-- "TVILocalMedia"
-- !private "-"
-- !private "!="
-- !private ">"
-- !private "Array"
-- "VideoVC"
-- "TVIAudioTrack"
-- "TVILocalAudioTrack"
 - !private "TokenUtils"
-- "TVITrack"
-- "UIImageView"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "CGAffineTransform"
-- !private "=="
-- "TVIVideoClient"
-- "WaitingScreen"
-- "PFUser"
-- "StringLiteralType"
-- "TVICameraCapturer"
-- !private "UIView"
-- "TVIParticipant"
-- !private "/"
-- "WaitingScreenDelegate"
-- "TVIRoom"
-- "BooleanLiteralType"
-- "AnyObject"
-- "PFObject"
-- "Error"
-- "String"
-- "TVIVideoTrack"
-- !private "M_PI"
-- !private "UITapGestureRecognizer"
-- !private "print"
+- !private "!"
 - !private "TVIConnectOptions"
+- "TVILocalMedia"
+- "StringLiteralType"
+- "TVIAudioTrack"
+- "TVITrack"
+- !private "CGAffineTransform"
+- "TVICameraCapturer"
+- "BooleanLiteralType"
+- "UIImageView"
+- "TVIVideoClient"
+- "TVIVideoTrack"
+- "UIButton"
+- "Error"
+- !private "!="
+- "AnyObject"
+- !private "-"
+- "TVILocalAudioTrack"
+- !private "Array"
+- !private ">"
+- !private "UITapGestureRecognizer"
+- "String"
 - "UIViewController"
+- !private "print"
+- !private "M_PI"
+- "PFObject"
+- "PFUser"
+- "Bool"
+- !private "CGFloat"
+- "WaitingScreenDelegate"
+- !private "PlatformUtils"
+- "WaitingScreen"
+- "TVIParticipantDelegate"
+- !private "/"
+- "VideoVC"
+- "TVIParticipant"
+- !private "UIView"
+- "CastingPrecedence"
 - "TVILocalVideoTrack"
+- "TVIRoomDelegate"
+- "TVIRoom"
+- "AssignmentPrecedence"
+- !private "=="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGAffineTransform"]
@@ -131,6 +133,7 @@ depends-member:
 - ["Ps9AnyObject", "disconnect"]
 - !private ["Ps9AnyObject", "disconnectButton"]
 - !private ["Ps9AnyObject", "dismiss"]
+- ["Ps9AnyObject", "dismissButton"]
 - ["Ps9AnyObject", "dismissView"]
 - ["Ps9AnyObject", "flipCamera"]
 - ["Ps9AnyObject", "guru"]
@@ -172,6 +175,7 @@ depends-member:
 - !private ["Ps9AnyObject", "transform"]
 - ["Ps9AnyObject", "tutor"]
 - ["Ps9AnyObject", "username"]
+- !private ["Ps9AnyObject", "videoDimensions"]
 - ["Ps9AnyObject", "videoScreen"]
 - !private ["Ps9AnyObject", "videoTracks"]
 - !private ["Ps9AnyObject", "view"]
@@ -220,6 +224,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "animate"]
+- !private ["PSo15CALayerDelegate", "isEnabled"]
 - !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "isUserInteractionEnabled"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
@@ -230,6 +235,8 @@ depends-member:
 - !private ["VSC17CGAffineTransform", "init"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
+- ["VSC17CMVideoDimensions", "deinit"]
+- !private ["VSC17CMVideoDimensions", "height"]
 - !private ["Ps7CVarArg", "CGAffineTransform"]
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "Index"]
@@ -276,6 +283,7 @@ depends-member:
 - ["Ps7CVarArg", "disconnect"]
 - !private ["Ps7CVarArg", "disconnectButton"]
 - !private ["Ps7CVarArg", "dismiss"]
+- ["Ps7CVarArg", "dismissButton"]
 - ["Ps7CVarArg", "dismissView"]
 - ["Ps7CVarArg", "flipCamera"]
 - ["Ps7CVarArg", "guru"]
@@ -318,6 +326,7 @@ depends-member:
 - !private ["Ps7CVarArg", "transform"]
 - ["Ps7CVarArg", "tutor"]
 - ["Ps7CVarArg", "username"]
+- !private ["Ps7CVarArg", "videoDimensions"]
 - ["Ps7CVarArg", "videoScreen"]
 - !private ["Ps7CVarArg", "videoTracks"]
 - !private ["Ps7CVarArg", "view"]
@@ -384,6 +393,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "disconnect"]
 - !private ["Ps28CustomDebugStringConvertible", "disconnectButton"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- ["Ps28CustomDebugStringConvertible", "dismissButton"]
 - ["Ps28CustomDebugStringConvertible", "dismissView"]
 - ["Ps28CustomDebugStringConvertible", "flipCamera"]
 - !private ["Ps28CustomDebugStringConvertible", "frontCamera"]
@@ -427,6 +437,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "transform"]
 - ["Ps28CustomDebugStringConvertible", "tutor"]
 - ["Ps28CustomDebugStringConvertible", "username"]
+- !private ["Ps28CustomDebugStringConvertible", "videoDimensions"]
 - ["Ps28CustomDebugStringConvertible", "videoScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "videoTracks"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -500,6 +511,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "disconnect"]
 - !private ["Ps23CustomStringConvertible", "disconnectButton"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
+- ["Ps23CustomStringConvertible", "dismissButton"]
 - ["Ps23CustomStringConvertible", "dismissView"]
 - ["Ps23CustomStringConvertible", "flipCamera"]
 - ["Ps23CustomStringConvertible", "guru"]
@@ -542,6 +554,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "transform"]
 - ["Ps23CustomStringConvertible", "tutor"]
 - ["Ps23CustomStringConvertible", "username"]
+- !private ["Ps23CustomStringConvertible", "videoDimensions"]
 - ["Ps23CustomStringConvertible", "videoScreen"]
 - !private ["Ps23CustomStringConvertible", "videoTracks"]
 - !private ["Ps23CustomStringConvertible", "view"]
@@ -604,6 +617,7 @@ depends-member:
 - ["Ps9Equatable", "disconnect"]
 - !private ["Ps9Equatable", "disconnectButton"]
 - !private ["Ps9Equatable", "dismiss"]
+- ["Ps9Equatable", "dismissButton"]
 - ["Ps9Equatable", "dismissView"]
 - ["Ps9Equatable", "flipCamera"]
 - !private ["Ps9Equatable", "frontCamera"]
@@ -648,6 +662,7 @@ depends-member:
 - !private ["Ps9Equatable", "transform"]
 - ["Ps9Equatable", "tutor"]
 - ["Ps9Equatable", "username"]
+- !private ["Ps9Equatable", "videoDimensions"]
 - ["Ps9Equatable", "videoScreen"]
 - !private ["Ps9Equatable", "videoTracks"]
 - !private ["Ps9Equatable", "view"]
@@ -725,6 +740,7 @@ depends-member:
 - ["Ps8Hashable", "disconnect"]
 - !private ["Ps8Hashable", "disconnectButton"]
 - !private ["Ps8Hashable", "dismiss"]
+- ["Ps8Hashable", "dismissButton"]
 - ["Ps8Hashable", "dismissView"]
 - ["Ps8Hashable", "flipCamera"]
 - !private ["Ps8Hashable", "frontCamera"]
@@ -767,6 +783,7 @@ depends-member:
 - !private ["Ps8Hashable", "transform"]
 - ["Ps8Hashable", "tutor"]
 - ["Ps8Hashable", "username"]
+- !private ["Ps8Hashable", "videoDimensions"]
 - ["Ps8Hashable", "videoScreen"]
 - !private ["Ps8Hashable", "videoTracks"]
 - !private ["Ps8Hashable", "view"]
@@ -863,10 +880,12 @@ depends-member:
 - ["PSo8NSCoding", "disconnect"]
 - !private ["PSo8NSCoding", "disconnectButton"]
 - !private ["PSo8NSCoding", "dismiss"]
+- ["PSo8NSCoding", "dismissButton"]
 - ["PSo8NSCoding", "dismissView"]
 - ["PSo8NSCoding", "flipCamera"]
 - ["PSo8NSCoding", "guru"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isEnabled"]
 - !private ["PSo8NSCoding", "isHidden"]
 - !private ["PSo8NSCoding", "isUserInteractionEnabled"]
 - ["PSo8NSCoding", "localAudioTrack"]
@@ -926,6 +945,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "disconnect"]
 - !private ["PSo26NSExtensionRequestHandling", "disconnectButton"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
+- ["PSo26NSExtensionRequestHandling", "dismissButton"]
 - ["PSo26NSExtensionRequestHandling", "dismissView"]
 - ["PSo26NSExtensionRequestHandling", "flipCamera"]
 - ["PSo26NSExtensionRequestHandling", "guru"]
@@ -980,6 +1000,7 @@ depends-member:
 - ["CSo8NSObject", "TVIVideoClient"]
 - ["CSo8NSObject", "TVIVideoTrack"]
 - !private ["CSo8NSObject", "TokenUtils"]
+- ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UITapGestureRecognizer"]
 - !private ["CSo8NSObject", "UIView"]
@@ -1010,6 +1031,7 @@ depends-member:
 - ["CSo8NSObject", "disconnect"]
 - !private ["CSo8NSObject", "disconnectButton"]
 - !private ["CSo8NSObject", "dismiss"]
+- ["CSo8NSObject", "dismissButton"]
 - ["CSo8NSObject", "dismissView"]
 - ["CSo8NSObject", "flipCamera"]
 - ["CSo8NSObject", "guru"]
@@ -1051,6 +1073,7 @@ depends-member:
 - !private ["CSo8NSObject", "transform"]
 - ["CSo8NSObject", "tutor"]
 - ["CSo8NSObject", "username"]
+- !private ["CSo8NSObject", "videoDimensions"]
 - ["CSo8NSObject", "videoScreen"]
 - !private ["CSo8NSObject", "videoTracks"]
 - !private ["CSo8NSObject", "view"]
@@ -1094,6 +1117,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "disconnect"]
 - !private ["PSo16NSObjectProtocol", "disconnectButton"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
+- ["PSo16NSObjectProtocol", "dismissButton"]
 - ["PSo16NSObjectProtocol", "dismissView"]
 - ["PSo16NSObjectProtocol", "flipCamera"]
 - ["PSo16NSObjectProtocol", "guru"]
@@ -1135,6 +1159,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "transform"]
 - ["PSo16NSObjectProtocol", "tutor"]
 - ["PSo16NSObjectProtocol", "username"]
+- !private ["PSo16NSObjectProtocol", "videoDimensions"]
 - ["PSo16NSObjectProtocol", "videoScreen"]
 - !private ["PSo16NSObjectProtocol", "videoTracks"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -1287,6 +1312,7 @@ depends-member:
 - ["PSo22TVIParticipantDelegate", "didConnectToRoom"]
 - ["PSo22TVIParticipantDelegate", "disconnect"]
 - !private ["PSo22TVIParticipantDelegate", "dismiss"]
+- !private ["PSo22TVIParticipantDelegate", "dismissButton"]
 - !private ["PSo22TVIParticipantDelegate", "flipCamera"]
 - !private ["PSo22TVIParticipantDelegate", "guru"]
 - !private ["PSo22TVIParticipantDelegate", "localAudioTrack"]
@@ -1334,6 +1360,7 @@ depends-member:
 - ["PSo15TVIRoomDelegate", "didConnectToRoom"]
 - ["PSo15TVIRoomDelegate", "disconnect"]
 - !private ["PSo15TVIRoomDelegate", "dismiss"]
+- !private ["PSo15TVIRoomDelegate", "dismissButton"]
 - !private ["PSo15TVIRoomDelegate", "flipCamera"]
 - !private ["PSo15TVIRoomDelegate", "guru"]
 - !private ["PSo15TVIRoomDelegate", "localAudioTrack"]
@@ -1356,6 +1383,7 @@ depends-member:
 - ["CSo8TVITrack", "deinit"]
 - !private ["CSo8TVITrack", "detach"]
 - !private ["CSo8TVITrack", "isEnabled"]
+- !private ["CSo8TVITrack", "videoDimensions"]
 - !private ["OSC21TVIVideoCaptureSource", "backCameraWide"]
 - ["OSC21TVIVideoCaptureSource", "deinit"]
 - !private ["OSC21TVIVideoCaptureSource", "frontCamera"]
@@ -1367,6 +1395,7 @@ depends-member:
 - !private ["CSo13TVIVideoTrack", "attach"]
 - ["CSo13TVIVideoTrack", "deinit"]
 - !private ["CSo13TVIVideoTrack", "detach"]
+- !private ["CSo13TVIVideoTrack", "videoDimensions"]
 - !private ["Ps16TextOutputStream", "characters"]
 - ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "characters"]
@@ -1376,6 +1405,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animate"]
+- !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "isUserInteractionEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
@@ -1386,6 +1416,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "animate"]
+- !private ["PSo12UIAppearance", "isEnabled"]
 - !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo12UIAppearance", "isUserInteractionEnabled"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
@@ -1422,10 +1453,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "disconnect"]
 - !private ["PSo21UIAppearanceContainer", "disconnectButton"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
+- ["PSo21UIAppearanceContainer", "dismissButton"]
 - ["PSo21UIAppearanceContainer", "dismissView"]
 - ["PSo21UIAppearanceContainer", "flipCamera"]
 - ["PSo21UIAppearanceContainer", "guru"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "isUserInteractionEnabled"]
 - ["PSo21UIAppearanceContainer", "localAudioTrack"]
@@ -1457,6 +1490,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "isEnabled"]
 - !private ["CSo8UIButton", "isHidden"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["PSo18UIContentContainer", "CGAffineTransform"]
@@ -1485,6 +1519,7 @@ depends-member:
 - ["PSo18UIContentContainer", "disconnect"]
 - !private ["PSo18UIContentContainer", "disconnectButton"]
 - !private ["PSo18UIContentContainer", "dismiss"]
+- ["PSo18UIContentContainer", "dismissButton"]
 - ["PSo18UIContentContainer", "dismissView"]
 - ["PSo18UIContentContainer", "flipCamera"]
 - ["PSo18UIContentContainer", "guru"]
@@ -1515,6 +1550,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "isEnabled"]
 - !private ["CSo9UIControl", "isHidden"]
 - !private ["CSo9UIControl", "setTitle"]
 - ["VSC14UIControlState", "deinit"]
@@ -1523,6 +1559,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "animate"]
+- !private ["PSo17UICoordinateSpace", "isEnabled"]
 - !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "isUserInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
@@ -1533,6 +1570,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animate"]
+- !private ["PSo13UIDynamicItem", "isEnabled"]
 - !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "isUserInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
@@ -1569,10 +1607,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "disconnect"]
 - !private ["PSo18UIFocusEnvironment", "disconnectButton"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
+- ["PSo18UIFocusEnvironment", "dismissButton"]
 - ["PSo18UIFocusEnvironment", "dismissView"]
 - ["PSo18UIFocusEnvironment", "flipCamera"]
 - ["PSo18UIFocusEnvironment", "guru"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "isUserInteractionEnabled"]
 - ["PSo18UIFocusEnvironment", "localAudioTrack"]
@@ -1608,6 +1648,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "alpha"]
 - !private ["PSo11UIFocusItem", "animate"]
+- !private ["PSo11UIFocusItem", "isEnabled"]
 - !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "isUserInteractionEnabled"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
@@ -1639,6 +1680,7 @@ depends-member:
 - ["CSo11UIResponder", "TVIVideoClient"]
 - ["CSo11UIResponder", "TVIVideoTrack"]
 - !private ["CSo11UIResponder", "TokenUtils"]
+- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UITapGestureRecognizer"]
 - !private ["CSo11UIResponder", "UIView"]
@@ -1661,10 +1703,12 @@ depends-member:
 - ["CSo11UIResponder", "disconnect"]
 - !private ["CSo11UIResponder", "disconnectButton"]
 - !private ["CSo11UIResponder", "dismiss"]
+- ["CSo11UIResponder", "dismissButton"]
 - ["CSo11UIResponder", "dismissView"]
 - ["CSo11UIResponder", "flipCamera"]
 - ["CSo11UIResponder", "guru"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isEnabled"]
 - !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "isUserInteractionEnabled"]
 - ["CSo11UIResponder", "localAudioTrack"]
@@ -1725,10 +1769,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "disconnect"]
 - !private ["PSo30UIResponderStandardEditActions", "disconnectButton"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- ["PSo30UIResponderStandardEditActions", "dismissButton"]
 - ["PSo30UIResponderStandardEditActions", "dismissView"]
 - ["PSo30UIResponderStandardEditActions", "flipCamera"]
 - ["PSo30UIResponderStandardEditActions", "guru"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "isUserInteractionEnabled"]
 - ["PSo30UIResponderStandardEditActions", "localAudioTrack"]
@@ -1786,6 +1832,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "disconnect"]
 - !private ["PSo16UIStateRestoring", "disconnectButton"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
+- ["PSo16UIStateRestoring", "dismissButton"]
 - ["PSo16UIStateRestoring", "dismissView"]
 - ["PSo16UIStateRestoring", "flipCamera"]
 - ["PSo16UIStateRestoring", "guru"]
@@ -1849,10 +1896,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "disconnect"]
 - !private ["PSo18UITraitEnvironment", "disconnectButton"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
+- ["PSo18UITraitEnvironment", "dismissButton"]
 - ["PSo18UITraitEnvironment", "dismissView"]
 - ["PSo18UITraitEnvironment", "flipCamera"]
 - ["PSo18UITraitEnvironment", "guru"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isEnabled"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "isUserInteractionEnabled"]
 - ["PSo18UITraitEnvironment", "localAudioTrack"]
@@ -1888,6 +1937,7 @@ depends-member:
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "animate"]
+- !private ["CSo6UIView", "isEnabled"]
 - !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "isUserInteractionEnabled"]
 - !private ["CSo6UIView", "removeFromSuperview"]
@@ -1920,6 +1970,7 @@ depends-member:
 - ["CSo16UIViewController", "TVIVideoClient"]
 - ["CSo16UIViewController", "TVIVideoTrack"]
 - !private ["CSo16UIViewController", "TokenUtils"]
+- ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIImageView"]
 - !private ["CSo16UIViewController", "UITapGestureRecognizer"]
 - !private ["CSo16UIViewController", "UIView"]
@@ -1939,6 +1990,7 @@ depends-member:
 - ["CSo16UIViewController", "disconnect"]
 - !private ["CSo16UIViewController", "disconnectButton"]
 - !private ["CSo16UIViewController", "dismiss"]
+- ["CSo16UIViewController", "dismissButton"]
 - ["CSo16UIViewController", "dismissView"]
 - ["CSo16UIViewController", "flipCamera"]
 - ["CSo16UIViewController", "guru"]
@@ -1979,6 +2031,7 @@ depends-member:
 - !private ["C4Guru7VideoVC", "messageLabel"]
 - !private ["C4Guru7VideoVC", "micButton"]
 - !private ["C4Guru7VideoVC", "previewView"]
+- !private ["C4Guru7VideoVC", "question"]
 - !private ["C4Guru7VideoVC", "remoteView"]
 - !private ["C4Guru7VideoVC", "showRoomUI"]
 - !private ["C4Guru7VideoVC", "view"]
@@ -2004,6 +2057,7 @@ depends-member:
 - ["C4Guru13WaitingScreen", "TVIVideoClient"]
 - ["C4Guru13WaitingScreen", "TVIVideoTrack"]
 - !private ["C4Guru13WaitingScreen", "TokenUtils"]
+- ["C4Guru13WaitingScreen", "UIButton"]
 - ["C4Guru13WaitingScreen", "UIImageView"]
 - !private ["C4Guru13WaitingScreen", "UITapGestureRecognizer"]
 - !private ["C4Guru13WaitingScreen", "UIView"]
@@ -2022,6 +2076,7 @@ depends-member:
 - ["C4Guru13WaitingScreen", "didReceiveMemoryWarning"]
 - ["C4Guru13WaitingScreen", "disconnect"]
 - !private ["C4Guru13WaitingScreen", "dismiss"]
+- ["C4Guru13WaitingScreen", "dismissButton"]
 - ["C4Guru13WaitingScreen", "dismissView"]
 - ["C4Guru13WaitingScreen", "flipCamera"]
 - ["C4Guru13WaitingScreen", "guru"]
@@ -2070,6 +2125,7 @@ depends-member:
 - ["P4Guru21WaitingScreenDelegate", "didConnectToRoom"]
 - ["P4Guru21WaitingScreenDelegate", "disconnect"]
 - !private ["P4Guru21WaitingScreenDelegate", "dismiss"]
+- !private ["P4Guru21WaitingScreenDelegate", "dismissButton"]
 - !private ["P4Guru21WaitingScreenDelegate", "flipCamera"]
 - !private ["P4Guru21WaitingScreenDelegate", "guru"]
 - !private ["P4Guru21WaitingScreenDelegate", "localAudioTrack"]
@@ -2101,6 +2157,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isUserInteractionEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
@@ -2171,6 +2228,7 @@ depends-member:
 - ["Ps9_Hashable", "disconnect"]
 - !private ["Ps9_Hashable", "disconnectButton"]
 - !private ["Ps9_Hashable", "dismiss"]
+- ["Ps9_Hashable", "dismissButton"]
 - ["Ps9_Hashable", "dismissView"]
 - ["Ps9_Hashable", "flipCamera"]
 - !private ["Ps9_Hashable", "frontCamera"]
@@ -2213,6 +2271,7 @@ depends-member:
 - !private ["Ps9_Hashable", "transform"]
 - ["Ps9_Hashable", "tutor"]
 - ["Ps9_Hashable", "username"]
+- !private ["Ps9_Hashable", "videoDimensions"]
 - ["Ps9_Hashable", "videoScreen"]
 - !private ["Ps9_Hashable", "videoTracks"]
 - !private ["Ps9_Hashable", "view"]
@@ -2264,6 +2323,7 @@ depends-nominal:
 - !private "PSo15CALayerDelegate"
 - "VSC17CGAffineTransform"
 - "V12CoreGraphics7CGFloat"
+- "VSC17CMVideoDimensions"
 - "Ps7CVarArg"
 - "Vs9Character"
 - !private "VSS13CharacterView"
@@ -2421,35 +2481,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoConstraints.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoClient.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIScreenCapturer.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIRoom.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIParticipant.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIMedia.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalParticipant.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalMedia.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIIceOptions.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIError.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIConnectOptions.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIClientOptions.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraPreviewView.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFormat.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFrame.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoCapturer.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraCapturer.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVITrack.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioTrack.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioController.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioConstraints.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TwilioVideo.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
@@ -2501,6 +2532,47 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Modules/ParseLiveQuery.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoConstraints.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoClient.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIScreenCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIRoom.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIParticipant.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIMedia.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalParticipant.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalMedia.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIIceOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIError.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIConnectOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIClientOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraPreviewView.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFormat.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFrame.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVITrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioTrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioController.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioConstraints.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TwilioVideo.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "b9f2af19d53ef7fa2b61808e8e3e2b5d"
+interface-hash: "2ddf2dea54a20cd52d5616acb53f8443"

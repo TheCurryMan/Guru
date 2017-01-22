@@ -24,8 +24,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.clientKey = "b1Epo8kZhnQeWnGTOcxH"
         }
         Parse.initialize(with: configuration)
+//        OneSignal.initWithLaunchOptions(launchOptions, appId: "713d5fe7-58ab-4147-ae00-8461c5965335")
         
-        OneSignal.initWithLaunchOptions(launchOptions, appId: "713d5fe7-58ab-4147-ae00-8461c5965335")
+        
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "713d5fe7-58ab-4147-ae00-8461c5965335", handleNotificationReceived: { (notification) in
+            
+            //            if (notification?.displayType == .notification) {
+            //                //user clicked on notification, go to approval screen
+            //            }
+            //            else {
+            //                //user is in app, show alert
+            //
+            //            }
+            
+        
+            let questionID = notification?.payload.additionalData["questionID"] as! String
+            
+            let questionObject = PFObject(withoutDataWithClassName: "Question", objectId: questionID)
+            questionObject.fetchInBackground(block: { (question: PFObject?, error: Error?) in
+                let rootVC = UIApplication.shared.keyWindow?.rootViewController
+                let detailVC = rootVC?.storyboard?.instantiateViewController(withIdentifier: "detailVC") as! AcceptViewController
+                detailVC.question = question!
+                rootVC?.present(detailVC, animated: true, completion: nil)
+                
+            })
+            
+            
+            
+        }, handleNotificationAction: nil, settings: [kOSSettingsKeyInAppAlerts: OSNotificationDisplayType.none.rawValue])
         
         
         return true
