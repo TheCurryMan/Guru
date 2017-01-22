@@ -8,6 +8,8 @@
 
 import UIKit
 import Parse
+import ParseLiveQuery
+
 
 class LDViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
@@ -26,6 +28,8 @@ class LDViewController: UIViewController {
     var selectedImage:UIImage!
     var Drawing=false
     var toggleStatus=0
+    
+    // MARK: - IBACTIONS
     
     @IBAction func togglePressed(_ sender: Any) {
         switch toggleStatus {
@@ -76,14 +80,21 @@ class LDViewController: UIViewController {
             self.resetButton.isEnabled=false
         })
     }
+    
+    // MARK: - Init Functions
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        Parse.initialize(with: ParseClientConfiguration {
+            $0.applicationId = "Iv8F42WDp3TtmqOXIa7D"
+            $0.server = "https://theguruapp.herokuapp.com/pars"
+        })
 
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
