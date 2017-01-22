@@ -190,6 +190,9 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic) BOOL avail;
 @property (nonatomic, strong) PFObject * _Nullable question;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointsLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified answeredLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified askedLabel;
 - (IBAction)tapped:(id _Nonnull)sender;
 - (IBAction)pressedAsk:(UIButton * _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;

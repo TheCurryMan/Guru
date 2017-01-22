@@ -6,28 +6,34 @@ provides-nominal:
 provides-member:
 - ["C4Guru11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
 - "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
-- "applicationDidEnterBackground"
 - "window"
-- "applicationWillResignActive"
+- "application"
 - "applicationWillTerminate"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UIWindow"
-- "UIApplication"
-- "UIResponder"
-- "UIApplicationLaunchOptionsKey"
-- "Bool"
-- !private "ParseClientConfiguration"
-- "StringLiteralType"
-- !private "OneSignal"
-- "UIApplicationDelegate"
-- "AppDelegate"
-- !private "Parse"
 - !private "AssignmentPrecedence"
+- "UIApplication"
+- "UIApplicationLaunchOptionsKey"
+- !private "OneSignal"
+- "AppDelegate"
+- !private "kOSSettingsKeyAutoPrompt"
+- !private "Parse"
+- "UIApplicationDelegate"
+- "UIResponder"
+- "UIWindow"
+- "Bool"
+- !private "OSNotification"
+- !private "BooleanLiteralType"
+- "StringLiteralType"
+- !private "Dictionary"
+- !private "ParseClientConfiguration"
+- !private "kOSSettingsKeyInFocusDisplayOption"
+- !private "OSNotificationDisplayType"
 depends-member:
+- !private ["Ps9AnyObject", "OSNotificationDisplayType"]
 - !private ["Ps9AnyObject", "OneSignal"]
 - !private ["Ps9AnyObject", "Parse"]
 - !private ["Ps9AnyObject", "ParseClientConfiguration"]
@@ -46,9 +52,13 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "initWithLaunchOptions"]
 - !private ["Ps9AnyObject", "initialize"]
+- !private ["Ps9AnyObject", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps9AnyObject", "kOSSettingsKeyInFocusDisplayOption"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C4Guru11AppDelegate", "Bool"]
+- !private ["C4Guru11AppDelegate", "OSNotification"]
+- !private ["C4Guru11AppDelegate", "OSNotificationDisplayType"]
 - !private ["C4Guru11AppDelegate", "OneSignal"]
 - !private ["C4Guru11AppDelegate", "Parse"]
 - !private ["C4Guru11AppDelegate", "ParseClientConfiguration"]
@@ -69,11 +79,16 @@ depends-member:
 - ["C4Guru11AppDelegate", "applicationWillTerminate"]
 - ["C4Guru11AppDelegate", "deinit"]
 - ["C4Guru11AppDelegate", "init"]
+- !private ["C4Guru11AppDelegate", "kOSSettingsKeyAutoPrompt"]
+- !private ["C4Guru11AppDelegate", "kOSSettingsKeyInFocusDisplayOption"]
 - ["C4Guru11AppDelegate", "window"]
 - ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "OSNotificationDisplayType"]
 - !private ["Ps7CVarArg", "OneSignal"]
 - !private ["Ps7CVarArg", "Parse"]
 - !private ["Ps7CVarArg", "ParseClientConfiguration"]
+- !private ["Ps7CVarArg", "Value"]
 - ["Ps7CVarArg", "application"]
 - ["Ps7CVarArg", "applicationDidBecomeActive"]
 - ["Ps7CVarArg", "applicationDidEnterBackground"]
@@ -89,12 +104,19 @@ depends-member:
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "initWithLaunchOptions"]
 - !private ["Ps7CVarArg", "initialize"]
+- !private ["Ps7CVarArg", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps7CVarArg", "kOSSettingsKeyInFocusDisplayOption"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "Value"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "OSNotificationDisplayType"]
 - !private ["Ps28CustomDebugStringConvertible", "OneSignal"]
 - !private ["Ps28CustomDebugStringConvertible", "Parse"]
 - !private ["Ps28CustomDebugStringConvertible", "ParseClientConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -110,13 +132,20 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "initWithLaunchOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "initialize"]
+- !private ["Ps28CustomDebugStringConvertible", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps28CustomDebugStringConvertible", "kOSSettingsKeyInFocusDisplayOption"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "OSNotificationDisplayType"]
 - !private ["Ps23CustomStringConvertible", "OneSignal"]
 - !private ["Ps23CustomStringConvertible", "Parse"]
 - !private ["Ps23CustomStringConvertible", "ParseClientConfiguration"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -132,8 +161,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "initWithLaunchOptions"]
 - !private ["Ps23CustomStringConvertible", "initialize"]
+- !private ["Ps23CustomStringConvertible", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps23CustomStringConvertible", "kOSSettingsKeyInFocusDisplayOption"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Ps9Equatable", "OSNotificationDisplayType"]
 - !private ["Ps9Equatable", "OneSignal"]
 - !private ["Ps9Equatable", "Parse"]
 - !private ["Ps9Equatable", "ParseClientConfiguration"]
@@ -152,12 +187,18 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "initWithLaunchOptions"]
 - !private ["Ps9Equatable", "initialize"]
+- !private ["Ps9Equatable", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps9Equatable", "kOSSettingsKeyInFocusDisplayOption"]
+- !private ["Ps9Equatable", "none"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "OSNotificationDisplayType"]
 - !private ["Ps8Hashable", "OneSignal"]
 - !private ["Ps8Hashable", "Parse"]
 - !private ["Ps8Hashable", "ParseClientConfiguration"]
@@ -176,15 +217,24 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "initWithLaunchOptions"]
 - !private ["Ps8Hashable", "initialize"]
+- !private ["Ps8Hashable", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps8Hashable", "kOSSettingsKeyInFocusDisplayOption"]
+- !private ["Ps8Hashable", "none"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "Value"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "OSNotification"]
+- !private ["CSo8NSObject", "OSNotificationDisplayType"]
 - !private ["CSo8NSObject", "OneSignal"]
 - !private ["CSo8NSObject", "Parse"]
 - !private ["CSo8NSObject", "ParseClientConfiguration"]
@@ -206,7 +256,10 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "initWithLaunchOptions"]
 - !private ["CSo8NSObject", "initialize"]
+- !private ["CSo8NSObject", "kOSSettingsKeyAutoPrompt"]
+- !private ["CSo8NSObject", "kOSSettingsKeyInFocusDisplayOption"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "OSNotificationDisplayType"]
 - !private ["PSo16NSObjectProtocol", "OneSignal"]
 - !private ["PSo16NSObjectProtocol", "Parse"]
 - !private ["PSo16NSObjectProtocol", "ParseClientConfiguration"]
@@ -227,11 +280,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "initWithLaunchOptions"]
 - !private ["PSo16NSObjectProtocol", "initialize"]
+- !private ["PSo16NSObjectProtocol", "kOSSettingsKeyAutoPrompt"]
+- !private ["PSo16NSObjectProtocol", "kOSSettingsKeyInFocusDisplayOption"]
 - !private ["PSo16NSObjectProtocol", "server"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
+- ["OSC25OSNotificationDisplayType", "deinit"]
+- !private ["OSC25OSNotificationDisplayType", "none"]
 - !private ["CSo9OneSignal", "initWithLaunchOptions"]
 - ["Sq", "deinit"]
 - !private ["CSo5Parse", "initialize"]
@@ -241,10 +298,14 @@ depends-member:
 - !private ["PSo31ParseMutableClientConfiguration", "clientKey"]
 - !private ["PSo31ParseMutableClientConfiguration", "deinit"]
 - !private ["PSo31ParseMutableClientConfiguration", "server"]
+- !private ["Ps16RawRepresentable", "none"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "Value"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo21UIApplicationDelegate", "OSNotificationDisplayType"]
 - !private ["PSo21UIApplicationDelegate", "OneSignal"]
 - !private ["PSo21UIApplicationDelegate", "Parse"]
 - !private ["PSo21UIApplicationDelegate", "ParseClientConfiguration"]
@@ -260,9 +321,13 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "kOSSettingsKeyAutoPrompt"]
+- !private ["PSo21UIApplicationDelegate", "kOSSettingsKeyInFocusDisplayOption"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "OSNotification"]
+- !private ["CSo11UIResponder", "OSNotificationDisplayType"]
 - !private ["CSo11UIResponder", "OneSignal"]
 - !private ["CSo11UIResponder", "Parse"]
 - !private ["CSo11UIResponder", "ParseClientConfiguration"]
@@ -283,8 +348,11 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "deinit"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "kOSSettingsKeyAutoPrompt"]
+- !private ["CSo11UIResponder", "kOSSettingsKeyInFocusDisplayOption"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSo30UIResponderStandardEditActions", "OSNotificationDisplayType"]
 - !private ["PSo30UIResponderStandardEditActions", "OneSignal"]
 - !private ["PSo30UIResponderStandardEditActions", "Parse"]
 - !private ["PSo30UIResponderStandardEditActions", "ParseClientConfiguration"]
@@ -301,6 +369,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "kOSSettingsKeyAutoPrompt"]
+- !private ["PSo30UIResponderStandardEditActions", "kOSSettingsKeyInFocusDisplayOption"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -308,6 +378,7 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "OSNotificationDisplayType"]
 - !private ["Ps9_Hashable", "OneSignal"]
 - !private ["Ps9_Hashable", "Parse"]
 - !private ["Ps9_Hashable", "ParseClientConfiguration"]
@@ -326,26 +397,36 @@ depends-member:
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "initWithLaunchOptions"]
 - !private ["Ps9_Hashable", "initialize"]
+- !private ["Ps9_Hashable", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps9_Hashable", "kOSSettingsKeyInFocusDisplayOption"]
+- !private ["Ps9_Hashable", "none"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "C4Guru11AppDelegate"
 - "Sb"
 - "Ps7CVarArg"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
 - "Ps9Equatable"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "PSo8NSCoding"
@@ -355,11 +436,14 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- "OSC25OSNotificationDisplayType"
 - !private "CSo9OneSignal"
 - "Sq"
 - !private "CSo5Parse"
 - "CSo24ParseClientConfiguration"
 - !private "PSo31ParseMutableClientConfiguration"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"

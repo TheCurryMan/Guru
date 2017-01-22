@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C4Guru20SignUpViewController", ""]
 provides-dynamic-lookup:
-- "username"
-- "viewDidLoad"
-- "tappedScreen"
 - "password"
-- "submit"
+- "viewDidLoad"
+- "signUp"
 - "topics"
+- "tappedScreen"
 - "didReceiveMemoryWarning"
 - "viewDidAppear"
-- "signUp"
+- "submit"
+- "username"
 depends-top-level:
-- !private "!="
-- !private "StringLiteralType"
-- !private "NSString"
-- !private "Void"
 - !private "BooleanLiteralType"
 - "Bool"
-- "UITextField"
-- !private "PFUser"
-- "UIViewController"
-- "AssignmentPrecedence"
+- !private "!="
+- !private "StringLiteralType"
+- !private "Void"
+- !private "NSString"
 - !private "CastingPrecedence"
+- !private "PFUser"
+- "AssignmentPrecedence"
+- "UIViewController"
+- "UITextField"
 - "SignUpViewController"
 - !private "NSError"
 - !private "OneSignal"
@@ -278,6 +278,7 @@ depends-member:
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
+- ["Si", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
@@ -719,7 +720,7 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
-- !private "Si"
+- "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"

@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(with: configuration)
         
         OneSignal.initWithLaunchOptions(launchOptions, appId: "713d5fe7-58ab-4147-ae00-8461c5965335")
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "713d5fe7-58ab-4147-ae00-8461c5965335", handleNotificationReceived: { (notification: OSNotification?) in
+            
+            
+            
+        }, handleNotificationAction: nil, settings: [kOSSettingsKeyAutoPrompt : true, kOSSettingsKeyInFocusDisplayOption: OSNotificationDisplayType.none])
         
         
         return true

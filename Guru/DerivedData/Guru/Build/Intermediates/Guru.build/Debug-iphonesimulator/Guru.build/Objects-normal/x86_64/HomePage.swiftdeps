@@ -6,46 +6,58 @@ provides-nominal:
 provides-member:
 - ["C4Guru8HomePage", ""]
 provides-dynamic-lookup:
-- "submitQuestion"
-- "prepare"
-- "avail"
-- "tapped"
-- "prefersStatusBarHidden"
+- "accept"
 - "questionField"
+- "pointsLabel"
+- "avail"
 - "viewWillAppear"
-- "question"
+- "prepare"
+- "prefersStatusBarHidden"
+- "askedLabel"
+- "didReceiveMemoryWarning"
 - "subjectsEntered"
+- "viewDidLoad"
+- "tapped"
+- "submitQuestion"
+- "answeredLabel"
+- "pressedAsk"
 - "backgroundView"
 - "acceptButton"
-- "accept"
-- "didReceiveMemoryWarning"
-- "pressedAsk"
-- "viewDidLoad"
+- "question"
 depends-top-level:
-- "UIViewController"
-- !private "WaitingScreen"
+- !private "PFUser"
+- !private "UIImage"
 - !private "!"
 - "UIButton"
-- "BooleanLiteralType"
-- "UIStoryboardSegue"
+- !private "WaitingScreen"
+- "PFObject"
+- "AssignmentPrecedence"
 - "UITextField"
 - "UIView"
-- "PFObject"
-- "Bool"
-- !private "Void"
 - "CastingPrecedence"
-- "AssignmentPrecedence"
+- "UILabel"
+- "UIViewController"
 - !private "=="
-- !private "PFUser"
-- "HomePage"
+- !private "Void"
+- !private "-"
+- "Bool"
 - !private "StringLiteralType"
-- !private "UIImage"
+- !private "Int"
+- !private "String"
+- !private "+"
+- "BooleanLiteralType"
+- "HomePage"
+- "UIStoryboardSegue"
 depends-member:
+- !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "accept"]
 - ["Ps9AnyObject", "acceptButton"]
+- ["Ps9AnyObject", "answeredLabel"]
+- ["Ps9AnyObject", "askedLabel"]
 - ["Ps9AnyObject", "avail"]
 - ["Ps9AnyObject", "backgroundView"]
 - !private ["Ps9AnyObject", "cornerRadius"]
@@ -57,6 +69,7 @@ depends-member:
 - !private ["Ps9AnyObject", "isEnabled"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "performSegue"]
+- ["Ps9AnyObject", "pointsLabel"]
 - ["Ps9AnyObject", "prefersStatusBarHidden"]
 - ["Ps9AnyObject", "prepare"]
 - ["Ps9AnyObject", "pressedAsk"]
@@ -74,6 +87,7 @@ depends-member:
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
 - ["CSo6BFTask", "deinit"]
+- !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["CSo7CALayer", "cornerRadius"]
@@ -85,11 +99,15 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "Int"]
 - !private ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "PFUser"]
+- !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "UIImage"]
 - ["Ps7CVarArg", "accept"]
 - ["Ps7CVarArg", "acceptButton"]
+- ["Ps7CVarArg", "answeredLabel"]
+- ["Ps7CVarArg", "askedLabel"]
 - ["Ps7CVarArg", "avail"]
 - ["Ps7CVarArg", "backgroundView"]
 - !private ["Ps7CVarArg", "cornerRadius"]
@@ -101,6 +119,7 @@ depends-member:
 - !private ["Ps7CVarArg", "isEnabled"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "performSegue"]
+- ["Ps7CVarArg", "pointsLabel"]
 - ["Ps7CVarArg", "prefersStatusBarHidden"]
 - ["Ps7CVarArg", "prepare"]
 - ["Ps7CVarArg", "pressedAsk"]
@@ -118,11 +137,18 @@ depends-member:
 - ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- !private ["Ps28CustomDebugStringConvertible", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "_DisallowMixedSignArithmetic"]
 - ["Ps28CustomDebugStringConvertible", "accept"]
 - ["Ps28CustomDebugStringConvertible", "acceptButton"]
+- ["Ps28CustomDebugStringConvertible", "answeredLabel"]
+- ["Ps28CustomDebugStringConvertible", "askedLabel"]
 - ["Ps28CustomDebugStringConvertible", "avail"]
 - ["Ps28CustomDebugStringConvertible", "backgroundView"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
@@ -134,6 +160,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
+- ["Ps28CustomDebugStringConvertible", "pointsLabel"]
 - ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - ["Ps28CustomDebugStringConvertible", "pressedAsk"]
@@ -152,14 +179,21 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Int"]
 - !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
+- !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "accept"]
 - ["Ps23CustomStringConvertible", "acceptButton"]
+- ["Ps23CustomStringConvertible", "answeredLabel"]
+- ["Ps23CustomStringConvertible", "askedLabel"]
 - ["Ps23CustomStringConvertible", "avail"]
 - ["Ps23CustomStringConvertible", "backgroundView"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
@@ -171,6 +205,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
+- ["Ps23CustomStringConvertible", "pointsLabel"]
 - ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - ["Ps23CustomStringConvertible", "pressedAsk"]
@@ -187,12 +222,16 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "PFUser"]
+- !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "accept"]
 - ["Ps9Equatable", "acceptButton"]
+- ["Ps9Equatable", "answeredLabel"]
+- ["Ps9Equatable", "askedLabel"]
 - ["Ps9Equatable", "avail"]
 - ["Ps9Equatable", "backgroundView"]
 - !private ["Ps9Equatable", "cornerRadius"]
@@ -205,6 +244,7 @@ depends-member:
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "performSegue"]
+- ["Ps9Equatable", "pointsLabel"]
 - ["Ps9Equatable", "prefersStatusBarHidden"]
 - ["Ps9Equatable", "prepare"]
 - ["Ps9Equatable", "pressedAsk"]
@@ -224,15 +264,23 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "Iterator"]
+- !private ["Ps23ExpressibleByNilLiteral", "Stride"]
+- !private ["Ps23ExpressibleByNilLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "PFUser"]
+- !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "accept"]
 - ["Ps8Hashable", "acceptButton"]
+- ["Ps8Hashable", "answeredLabel"]
+- ["Ps8Hashable", "askedLabel"]
 - ["Ps8Hashable", "avail"]
 - ["Ps8Hashable", "backgroundView"]
 - !private ["Ps8Hashable", "cornerRadius"]
@@ -244,6 +292,7 @@ depends-member:
 - !private ["Ps8Hashable", "isEnabled"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "performSegue"]
+- ["Ps8Hashable", "pointsLabel"]
 - ["Ps8Hashable", "prefersStatusBarHidden"]
 - ["Ps8Hashable", "prepare"]
 - ["Ps8Hashable", "pressedAsk"]
@@ -261,10 +310,13 @@ depends-member:
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
 - ["C4Guru8HomePage", "Bool"]
+- !private ["C4Guru8HomePage", "Int"]
 - ["C4Guru8HomePage", "PFObject"]
 - !private ["C4Guru8HomePage", "PFUser"]
+- !private ["C4Guru8HomePage", "String"]
 - ["C4Guru8HomePage", "UIButton"]
 - !private ["C4Guru8HomePage", "UIImage"]
+- ["C4Guru8HomePage", "UILabel"]
 - ["C4Guru8HomePage", "UIStoryboardSegue"]
 - ["C4Guru8HomePage", "UITextField"]
 - ["C4Guru8HomePage", "UIView"]
@@ -272,12 +324,15 @@ depends-member:
 - !private ["C4Guru8HomePage", "WaitingScreen"]
 - ["C4Guru8HomePage", "accept"]
 - ["C4Guru8HomePage", "acceptButton"]
+- ["C4Guru8HomePage", "answeredLabel"]
+- ["C4Guru8HomePage", "askedLabel"]
 - ["C4Guru8HomePage", "avail"]
 - ["C4Guru8HomePage", "backgroundView"]
 - ["C4Guru8HomePage", "deinit"]
 - ["C4Guru8HomePage", "didReceiveMemoryWarning"]
 - ["C4Guru8HomePage", "init"]
 - !private ["C4Guru8HomePage", "performSegue"]
+- ["C4Guru8HomePage", "pointsLabel"]
 - ["C4Guru8HomePage", "prefersStatusBarHidden"]
 - ["C4Guru8HomePage", "prepare"]
 - ["C4Guru8HomePage", "pressedAsk"]
@@ -289,15 +344,23 @@ depends-member:
 - ["C4Guru8HomePage", "viewDidLoad"]
 - ["C4Guru8HomePage", "viewWillAppear"]
 - ["SQ", "deinit"]
+- ["Si", "deinit"]
+- !private ["Si", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "PFObject"]
 - !private ["PSo8NSCoding", "PFUser"]
+- !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "accept"]
 - ["PSo8NSCoding", "acceptButton"]
+- ["PSo8NSCoding", "answeredLabel"]
+- ["PSo8NSCoding", "askedLabel"]
 - ["PSo8NSCoding", "avail"]
 - ["PSo8NSCoding", "backgroundView"]
 - !private ["PSo8NSCoding", "cornerRadius"]
@@ -306,6 +369,7 @@ depends-member:
 - !private ["PSo8NSCoding", "isEnabled"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "performSegue"]
+- ["PSo8NSCoding", "pointsLabel"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
 - ["PSo8NSCoding", "prepare"]
 - ["PSo8NSCoding", "pressedAsk"]
@@ -321,16 +385,21 @@ depends-member:
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "PFObject"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "accept"]
 - ["PSo26NSExtensionRequestHandling", "acceptButton"]
+- ["PSo26NSExtensionRequestHandling", "answeredLabel"]
+- ["PSo26NSExtensionRequestHandling", "askedLabel"]
 - ["PSo26NSExtensionRequestHandling", "avail"]
 - ["PSo26NSExtensionRequestHandling", "backgroundView"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
+- ["PSo26NSExtensionRequestHandling", "pointsLabel"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - ["PSo26NSExtensionRequestHandling", "pressedAsk"]
@@ -344,10 +413,13 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFUser"]
+- !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "UIView"]
@@ -355,6 +427,8 @@ depends-member:
 - !private ["CSo8NSObject", "WaitingScreen"]
 - ["CSo8NSObject", "accept"]
 - ["CSo8NSObject", "acceptButton"]
+- ["CSo8NSObject", "answeredLabel"]
+- ["CSo8NSObject", "askedLabel"]
 - ["CSo8NSObject", "avail"]
 - ["CSo8NSObject", "backgroundView"]
 - !private ["CSo8NSObject", "cornerRadius"]
@@ -366,6 +440,7 @@ depends-member:
 - !private ["CSo8NSObject", "isEnabled"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "performSegue"]
+- ["CSo8NSObject", "pointsLabel"]
 - ["CSo8NSObject", "prefersStatusBarHidden"]
 - ["CSo8NSObject", "prepare"]
 - ["CSo8NSObject", "pressedAsk"]
@@ -381,11 +456,15 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
+- !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "accept"]
 - ["PSo16NSObjectProtocol", "acceptButton"]
+- ["PSo16NSObjectProtocol", "answeredLabel"]
+- ["PSo16NSObjectProtocol", "askedLabel"]
 - ["PSo16NSObjectProtocol", "avail"]
 - ["PSo16NSObjectProtocol", "backgroundView"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
@@ -397,6 +476,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
+- ["PSo16NSObjectProtocol", "pointsLabel"]
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - ["PSo16NSObjectProtocol", "pressedAsk"]
@@ -416,6 +496,9 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - !private ["Ps9OptionSet", "normal"]
+- !private ["Sq", "Iterator"]
+- !private ["Sq", "Stride"]
+- !private ["Sq", "_DisallowMixedSignArithmetic"]
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "current"]
 - ["CSo8PFObject", "deinit"]
@@ -431,6 +514,9 @@ depends-member:
 - !private ["CSo6PFUser", "subscript"]
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["Ps10SetAlgebra", "normal"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["PSo22TVIParticipantDelegate", "question"]
@@ -448,11 +534,15 @@ depends-member:
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "PFObject"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
+- !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "accept"]
 - ["PSo21UIAppearanceContainer", "acceptButton"]
+- ["PSo21UIAppearanceContainer", "answeredLabel"]
+- ["PSo21UIAppearanceContainer", "askedLabel"]
 - ["PSo21UIAppearanceContainer", "avail"]
 - ["PSo21UIAppearanceContainer", "backgroundView"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -460,6 +550,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
+- ["PSo21UIAppearanceContainer", "pointsLabel"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - ["PSo21UIAppearanceContainer", "pressedAsk"]
@@ -477,16 +568,21 @@ depends-member:
 - ["CSo8UIButton", "deinit"]
 - !private ["CSo8UIButton", "isEnabled"]
 - !private ["CSo8UIButton", "setImage"]
+- !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "PFObject"]
 - !private ["PSo18UIContentContainer", "PFUser"]
+- !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "accept"]
 - ["PSo18UIContentContainer", "acceptButton"]
+- ["PSo18UIContentContainer", "answeredLabel"]
+- ["PSo18UIContentContainer", "askedLabel"]
 - ["PSo18UIContentContainer", "avail"]
 - ["PSo18UIContentContainer", "backgroundView"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "performSegue"]
+- ["PSo18UIContentContainer", "pointsLabel"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - ["PSo18UIContentContainer", "prepare"]
 - ["PSo18UIContentContainer", "pressedAsk"]
@@ -516,11 +612,15 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "PFObject"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
+- !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "accept"]
 - ["PSo18UIFocusEnvironment", "acceptButton"]
+- ["PSo18UIFocusEnvironment", "answeredLabel"]
+- ["PSo18UIFocusEnvironment", "askedLabel"]
 - ["PSo18UIFocusEnvironment", "avail"]
 - ["PSo18UIFocusEnvironment", "backgroundView"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -528,6 +628,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
+- ["PSo18UIFocusEnvironment", "pointsLabel"]
 - ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - ["PSo18UIFocusEnvironment", "pressedAsk"]
@@ -550,11 +651,15 @@ depends-member:
 - !private ["CSo7UIImage", "init"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFUser"]
+- !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "UIView"]
@@ -562,6 +667,8 @@ depends-member:
 - !private ["CSo11UIResponder", "WaitingScreen"]
 - ["CSo11UIResponder", "accept"]
 - ["CSo11UIResponder", "acceptButton"]
+- ["CSo11UIResponder", "answeredLabel"]
+- ["CSo11UIResponder", "askedLabel"]
 - ["CSo11UIResponder", "avail"]
 - ["CSo11UIResponder", "backgroundView"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -569,6 +676,7 @@ depends-member:
 - !private ["CSo11UIResponder", "isEnabled"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "performSegue"]
+- ["CSo11UIResponder", "pointsLabel"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
 - ["CSo11UIResponder", "prepare"]
 - ["CSo11UIResponder", "pressedAsk"]
@@ -582,11 +690,15 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "Int"]
 - !private ["PSo30UIResponderStandardEditActions", "PFObject"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - ["PSo30UIResponderStandardEditActions", "accept"]
 - ["PSo30UIResponderStandardEditActions", "acceptButton"]
+- ["PSo30UIResponderStandardEditActions", "answeredLabel"]
+- ["PSo30UIResponderStandardEditActions", "askedLabel"]
 - ["PSo30UIResponderStandardEditActions", "avail"]
 - ["PSo30UIResponderStandardEditActions", "backgroundView"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
@@ -594,6 +706,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
+- ["PSo30UIResponderStandardEditActions", "pointsLabel"]
 - ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - ["PSo30UIResponderStandardEditActions", "pressedAsk"]
@@ -608,16 +721,21 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "PFObject"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
+- !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "accept"]
 - ["PSo16UIStateRestoring", "acceptButton"]
+- ["PSo16UIStateRestoring", "answeredLabel"]
+- ["PSo16UIStateRestoring", "askedLabel"]
 - ["PSo16UIStateRestoring", "avail"]
 - ["PSo16UIStateRestoring", "backgroundView"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
+- ["PSo16UIStateRestoring", "pointsLabel"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - ["PSo16UIStateRestoring", "prepare"]
 - ["PSo16UIStateRestoring", "pressedAsk"]
@@ -638,11 +756,15 @@ depends-member:
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "PFObject"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
+- !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "accept"]
 - ["PSo18UITraitEnvironment", "acceptButton"]
+- ["PSo18UITraitEnvironment", "answeredLabel"]
+- ["PSo18UITraitEnvironment", "askedLabel"]
 - ["PSo18UITraitEnvironment", "avail"]
 - ["PSo18UITraitEnvironment", "backgroundView"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -650,6 +772,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
+- ["PSo18UITraitEnvironment", "pointsLabel"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - ["PSo18UITraitEnvironment", "pressedAsk"]
@@ -670,10 +793,13 @@ depends-member:
 - !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFUser"]
+- !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "UIView"]
@@ -681,12 +807,15 @@ depends-member:
 - !private ["CSo16UIViewController", "WaitingScreen"]
 - ["CSo16UIViewController", "accept"]
 - ["CSo16UIViewController", "acceptButton"]
+- ["CSo16UIViewController", "answeredLabel"]
+- ["CSo16UIViewController", "askedLabel"]
 - ["CSo16UIViewController", "avail"]
 - ["CSo16UIViewController", "backgroundView"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "performSegue"]
+- ["CSo16UIViewController", "pointsLabel"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
 - ["CSo16UIViewController", "prepare"]
 - ["CSo16UIViewController", "pressedAsk"]
@@ -708,17 +837,22 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "PFUser"]
+- !private ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "accept"]
 - ["Ps9_Hashable", "acceptButton"]
+- ["Ps9_Hashable", "answeredLabel"]
+- ["Ps9_Hashable", "askedLabel"]
 - ["Ps9_Hashable", "avail"]
 - ["Ps9_Hashable", "backgroundView"]
 - !private ["Ps9_Hashable", "cornerRadius"]
@@ -730,6 +864,7 @@ depends-member:
 - !private ["Ps9_Hashable", "isEnabled"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "performSegue"]
+- ["Ps9_Hashable", "pointsLabel"]
 - ["Ps9_Hashable", "prefersStatusBarHidden"]
 - ["Ps9_Hashable", "prepare"]
 - ["Ps9_Hashable", "pressedAsk"]
@@ -746,12 +881,21 @@ depends-member:
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "CSo6BFTask"
+- !private "Ps17BitwiseOperations"
 - "Sb"
 - "CSo7CALayer"
 - !private "PSo15CALayerDelegate"
@@ -767,12 +911,17 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "C4Guru8HomePage"
 - "SQ"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - "CSo7NSCoder"
@@ -791,6 +940,9 @@ depends-nominal:
 - "CSo6PFUser"
 - !private "Ps16RawRepresentable"
 - !private "Ps10SetAlgebra"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
 - "SS"
 - !private "PSo22TVIParticipantDelegate"
 - !private "PSo15TVIRoomDelegate"
@@ -810,6 +962,7 @@ depends-nominal:
 - !private "PSo11UIFocusItem"
 - !private "CSo7UIImage"
 - !private "PSo10UIKeyInput"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
@@ -825,14 +978,20 @@ depends-nominal:
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps26_ExpressibleByImageLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -927,4 +1086,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "68d805957cc7c3ebf452f515f102d4ef"
+interface-hash: "5cdf4ca67680962fdbe1e9a592b1b700"
