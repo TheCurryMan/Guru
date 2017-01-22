@@ -11,6 +11,8 @@ import Parse
 import ParseLiveQuery
 
 
+let liveQueryClient = ParseLiveQuery.Client()
+
 class LDViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var swipeUpRec: UISwipeGestureRecognizer!
@@ -28,6 +30,27 @@ class LDViewController: UIViewController {
     var selectedImage:UIImage!
     var Drawing=false
     var toggleStatus=0
+    
+    var subscriptionQuery: Subscription<Point>?
+    
+    var pointQuery: PFQuery<Point> {
+        return (Point.query()?
+            .whereKey("fromX", equalTo: 5)) as! PFQuery<Point>
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.subscribeLiveQuery()
+    }
+    
+    func subscribeLiveQuery(){
+        
+        subscriptionQuery = liveQueryClient.subscribe(pointQuery).handle(Event.created, { (query: PFQuery<Point>, point: Point) in
+            print("new point created")
+        })
+    
+    }
+    
     
     // MARK: - IBACTIONS
     
@@ -88,14 +111,6 @@ class LDViewController: UIViewController {
     }
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        Parse.initialize(with: ParseClientConfiguration {
-            $0.applicationId = "Iv8F42WDp3TtmqOXIa7D"
-            $0.server = "https://theguruapp.herokuapp.com/pars"
-        })
-
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
@@ -131,11 +146,6 @@ class LDViewController: UIViewController {
             
             
         }
-    }
-    
-    func subscribeLiveQuery(){
-        let myQuery = Message.query()!.where(....)
-        let subscription: Subscription<Message> = myQuery.subscribe()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {

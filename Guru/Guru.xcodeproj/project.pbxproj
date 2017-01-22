@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		16F579B5A60682A874D89313 /* Pods_Guru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */; };
-		4326C5A422095AE111FFAEF9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		4326C5A422095AE111FFAEF9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		6514C0C0DD4146398976A739 /* Pods_GuruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */; };
+		77BCB9CD1E345579004DF9AB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB9CC1E345579004DF9AB /* Point.swift */; };
 		77D66B831E33E1B200C90E01 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B821E33E1B200C90E01 /* VideoVC.swift */; };
 		77D66B851E33E34600C90E01 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B841E33E34600C90E01 /* Utils.swift */; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
@@ -65,6 +66,7 @@
 		72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.release.xcconfig"; sourceTree = "<group>"; };
 		77AA496A1E336B3A0065DC6B /* Guru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guru.entitlements; sourceTree = "<group>"; };
+		77BCB9CC1E345579004DF9AB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		77D66B821E33E1B200C90E01 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		77D66B841E33E34600C90E01 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4326C5A422095AE111FFAEF9 /* BuildFile in Frameworks */,
+				4326C5A422095AE111FFAEF9 /* (null) in Frameworks */,
 				16F579B5A60682A874D89313 /* Pods_Guru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +212,7 @@
 				E1F3F3711E33F058003C281D /* cancel (1).png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
 				AF2821681E33466700493A74 /* Guru_green.png */,
+				77BCB9CC1E345579004DF9AB /* Point.swift */,
 			);
 			path = Guru;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				77D66B851E33E34600C90E01 /* Utils.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
+				77BCB9CD1E345579004DF9AB /* Point.swift in Sources */,
 				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
 				E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */,
 				E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */,
