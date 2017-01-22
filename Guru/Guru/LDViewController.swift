@@ -122,6 +122,11 @@ class LDViewController: UIViewController {
         }
     }
     
+    func subscribeLiveQuery(){
+        let myQuery = Message.query()!.where(....)
+        let subscription: Subscription<Message> = myQuery.subscribe()
+    }
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = true
         

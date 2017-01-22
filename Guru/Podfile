@@ -9,6 +9,8 @@ target 'Guru' do
   pod ‘Parse’
   pod ‘OneSignal’
   pod 'TwilioVideo', '1.0.0-beta5'
+  pod 'ParseLiveQuery'
+
 
   # Pods for Guru
 
