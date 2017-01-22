@@ -23,8 +23,9 @@ class HomePage: UIViewController {
         subjectsEntered.resignFirstResponder()
     }
     
-    @IBAction func pressedAsk(_ sender: Any) {
-        submitQuestion()
+    @IBAction func pressedAsk(_ sender: UIButton) {
+        sender.isEnabled = false
+        submitQuestion(sender: sender)
     }
     
     override var prefersStatusBarHidden: Bool{
@@ -46,7 +47,12 @@ class HomePage: UIViewController {
     
     }
     
-    func submitQuestion() {
+    override func viewWillAppear(_ animated: Bool) {
+        questionField.text = ""
+        subjectsEntered.text = ""
+    }
+    
+    func submitQuestion(sender: UIButton) {
         let user = PFUser.current()
 
         let question = PFObject(className:"Question")
@@ -62,7 +68,7 @@ class HomePage: UIViewController {
             } else {
                 // There was a problem, check error.description
             }
-        
+            sender.isEnabled = true
         }
     }
 

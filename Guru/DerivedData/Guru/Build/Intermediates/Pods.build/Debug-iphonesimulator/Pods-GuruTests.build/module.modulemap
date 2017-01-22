@@ -1,0 +1,6 @@
+framework module Pods_GuruTests {
+  umbrella header "Pods-GuruTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

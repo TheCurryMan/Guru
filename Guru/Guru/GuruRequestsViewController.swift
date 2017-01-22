@@ -43,6 +43,8 @@ class GuruRequestsViewController: UIViewController, UITableViewDataSource, UITab
         // Do any additional setup after loading the view.
     }
     
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -78,6 +80,10 @@ class GuruRequestsViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
+    @IBAction func dismissView(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
      // MARK: - Navigation
      
