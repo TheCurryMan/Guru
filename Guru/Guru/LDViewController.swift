@@ -30,12 +30,13 @@ class LDViewController: UIViewController {
     var selectedImage:UIImage!
     var Drawing=false
     var toggleStatus=0
+    var localDraw=false
     
     var subscriptionQuery: Subscription<Point>?
     
     var pointQuery: PFQuery<Point> {
         return (Point.query()?
-            .whereKey("fromX", equalTo: 5)) as! PFQuery<Point>
+            .whereKey("fromX", notEqualTo: "")) as! PFQuery<Point>
     }
     
     override func viewDidLoad() {
@@ -46,11 +47,48 @@ class LDViewController: UIViewController {
     func subscribeLiveQuery(){
         
         subscriptionQuery = liveQueryClient.subscribe(pointQuery).handle(Event.created, { (query: PFQuery<Point>, point: Point) in
-            print("new point created")
+            if(!self.localDraw)
+            {
+                self.drawLines(fromPoint: CGPoint(x: point.fromX, y: point.fromY), toPoint: CGPoint(x: point.toX, y: point.toY))
+                print("BOUNCE: FROM (\(point.fromX), \(point.fromY)) \n TO (\(point.toX), \(point.toY))" )
+            }
         })
-    
     }
     
+    func sendPointData(fromX:Double, fromY:Double, toX:Double, toY:Double)
+    {
+//        print("INITIATED POINT SENDING")
+    
+        let Point_PFOBJ = PFObject(className:"Point")
+        Point_PFOBJ["fromX"] = fromX
+        Point_PFOBJ["fromY"] = fromY
+        Point_PFOBJ["toX"] = toX
+        Point_PFOBJ["toY"] = toY
+        
+        Point_PFOBJ.saveInBackground {
+        (success, error) -> Void in
+        if (success) {
+            print("SP")
+        } else {
+            }
+        }
+    }
+    
+//    func fetchPointData()
+//    {
+//        let Point_PFOBJ = PFObject(className:"Point")
+//        Point_PFOBJ.fetchInBackground { (updatedQuestion: PFObject?, error: Error?) in
+//            if (updatedQuestion?["tutor"] == nil) {
+//                self.question["tutor"] = PFUser.current()!
+//                self.question.saveEventually()
+//                self.performSegue(withIdentifier: "acceptCallSegue", sender: self)
+//            }
+//            else {
+//                _ = self.navigationController?.popViewController(animated: true)
+//            }
+//        }
+//
+//    }
     
     // MARK: - IBACTIONS
     
@@ -110,8 +148,6 @@ class LDViewController: UIViewController {
         return true
     }
     
-
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
         
@@ -122,8 +158,9 @@ class LDViewController: UIViewController {
     }
     
     func drawLines(fromPoint:CGPoint,toPoint:CGPoint) {
+        
         if Drawing {
-      
+            
         UIGraphicsBeginImageContext(self.view.frame.size)
         imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         let context = UIGraphicsGetCurrentContext()
@@ -140,11 +177,12 @@ class LDViewController: UIViewController {
         context?.setStrokeColor(UIColor(red: 255, green: 0, blue: 0, alpha: 1.0).cgColor)
         
         context?.strokePath()
-        
+            
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
             
-            
+        localDraw=false
+        
         }
     }
     
@@ -153,6 +191,8 @@ class LDViewController: UIViewController {
         
         if let touch = touches.first {
             let currentPoint = touch.location(in: self.view)
+            localDraw=true
+            sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
             drawLines(fromPoint: lastPoint, toPoint: currentPoint)
             
             lastPoint = currentPoint
