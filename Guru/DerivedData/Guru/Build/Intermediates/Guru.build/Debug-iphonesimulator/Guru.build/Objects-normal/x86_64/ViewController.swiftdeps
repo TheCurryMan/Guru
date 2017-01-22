@@ -7,13 +7,13 @@ provides-member:
 - ["C4Guru14ViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
 - "prefersStatusBarHidden"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "BooleanLiteralType"
 - "Bool"
-- "ViewController"
+- !private "BooleanLiteralType"
 - "UIViewController"
+- "ViewController"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]

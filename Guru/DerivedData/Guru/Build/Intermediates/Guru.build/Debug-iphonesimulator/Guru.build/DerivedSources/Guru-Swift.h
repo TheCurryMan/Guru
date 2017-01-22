@@ -117,6 +117,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import CoreGraphics;
 @import TwilioVideo;
 #endif
 
@@ -202,6 +203,44 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UISwipeGestureRecognizer;
+@class UIImage;
+@class UITouch;
+@class UIEvent;
+
+SWIFT_CLASS("_TtC4Guru16LDViewController")
+@interface LDViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified imageView;
+@property (nonatomic, strong) IBOutlet UISwipeGestureRecognizer * _Null_unspecified swipeUpRec;
+@property (nonatomic, strong) IBOutlet UISwipeGestureRecognizer * _Null_unspecified swipeDownRec;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified resetButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toggleButton;
+@property (nonatomic) CGPoint lastPoint;
+@property (nonatomic) BOOL swiped;
+@property (nonatomic) CGFloat red;
+@property (nonatomic) CGFloat green;
+@property (nonatomic) CGFloat blue;
+@property (nonatomic, strong) UIImageView * _Null_unspecified tool;
+@property (nonatomic) BOOL isDrawing;
+@property (nonatomic, strong) UIImage * _Null_unspecified selectedImage;
+@property (nonatomic) BOOL Drawing;
+@property (nonatomic) NSInteger toggleStatus;
+- (IBAction)togglePressed:(id _Nonnull)sender;
+- (IBAction)swipedUp:(id _Nonnull)sender;
+- (IBAction)swipedDown:(id _Nonnull)sender;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (void)viewDidLoad;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)drawLinesFromPoint:(CGPoint)fromPoint toPoint:(CGPoint)toPoint;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (IBAction)reset:(id _Nonnull)sender;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC4Guru20RequestTableViewCell")
 @interface RequestTableViewCell : UITableViewCell
@@ -238,6 +277,7 @@ SWIFT_CLASS("_TtC4Guru7VideoVC")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified messageLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified micButton;
 - (void)viewDidLoad;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)didReceiveMemoryWarning;
 - (void)showRoomUIInRoom:(BOOL)inRoom;
 - (IBAction)disconnectWithSender:(id _Nonnull)sender;
@@ -263,7 +303,6 @@ SWIFT_CLASS("_TtC4Guru14ViewController")
 @class TVILocalVideoTrack;
 @class TVILocalAudioTrack;
 @class TVIParticipant;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 @interface WaitingScreen : UIViewController

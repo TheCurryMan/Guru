@@ -14,15 +14,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Executor"
-- "Error"
-- !private "TaskCompletionSource"
-- !private "CastingPrecedence"
-- !private "TaskState"
 - !private "fatalError"
-- "Task"
-- !private "abort"
+- !private "TaskCompletionSource"
 - "StringLiteralType"
+- !private "TaskState"
+- !private "abort"
+- !private "CastingPrecedence"
 - !private "TaskContinuationOptions"
+- "Error"
+- "Task"
 depends-member:
 - !private ["Ps9AnyObject", "Task"]
 - !private ["Ps9AnyObject", "TaskCompletionSource"]

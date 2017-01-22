@@ -44,7 +44,7 @@ class LDViewController: UIViewController {
             UIView.animate(withDuration: 1.2, animations: {
 
                 self.imageView.center.y=626+(self.imageView.frame.height/2)
-                self.imageView.alpha=0.1;
+                self.imageView.alpha=0;
                 self.Drawing=false
                 self.resetButton.alpha=0
                 self.resetButton.isEnabled=false
@@ -121,12 +121,7 @@ class LDViewController: UIViewController {
             
         }
     }
-    
-    func subscribeLiveQuery(){
-        let myQuery = Message.query()!.where(....)
-        let subscription: Subscription<Message> = myQuery.subscribe()
-    }
-    
+
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = true
         
