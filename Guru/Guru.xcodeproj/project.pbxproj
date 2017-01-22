@@ -195,6 +195,7 @@
 				AF2821661E33448500493A74 /* WaitingScreen.swift */,
 				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
 				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
+				77BCB9CC1E345579004DF9AB /* Point.swift */,
 				77D66B841E33E34600C90E01 /* Utils.swift */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
 				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
@@ -212,7 +213,6 @@
 				E1F3F3711E33F058003C281D /* cancel (1).png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
 				AF2821681E33466700493A74 /* Guru_green.png */,
-				77BCB9CC1E345579004DF9AB /* Point.swift */,
 			);
 			path = Guru;
 			sourceTree = "<group>";
