@@ -19,7 +19,7 @@ class VideoVC: UIViewController {
     
     weak var delegate:WaitingScreenDelegate?
     var question: PFObject!
-
+    var liveDrawVC: LDViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +28,10 @@ class VideoVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let liveDrawVC = self.storyboard?.instantiateViewController(withIdentifier: "LiveDrawing") as! LDViewController
-        liveDrawVC.question = question
-        self.addChildViewController(liveDrawVC)
-        self.view.addSubview(liveDrawVC.view)
+        self.liveDrawVC = self.storyboard?.instantiateViewController(withIdentifier: "LiveDrawing") as? LDViewController
+        liveDrawVC?.question = question
+        self.addChildViewController(liveDrawVC!)
+        self.view.addSubview((liveDrawVC?.view)!)
         self.view.bringSubview(toFront: disconnectButton)
         self.view.bringSubview(toFront: micButton)
     }
@@ -56,7 +56,6 @@ class VideoVC: UIViewController {
     @IBAction func disconnect(sender: AnyObject) {
         print("disconnecting user")
         self.delegate?.disconnect(sender: sender)
-        self.performSegue(withIdentifier: "home", sender: self)
     }
     @IBAction func toggleMic(sender: AnyObject) {
         print("toggle mic")
