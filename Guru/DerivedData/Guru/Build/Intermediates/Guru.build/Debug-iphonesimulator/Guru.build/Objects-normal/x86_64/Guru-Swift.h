@@ -118,6 +118,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import Foundation;
 @import CoreGraphics;
+@import Parse;
 @import TwilioVideo;
 #endif
 
@@ -219,21 +220,26 @@ SWIFT_CLASS("_TtC4Guru16LDViewController")
 @property (nonatomic, strong) IBOutlet UISwipeGestureRecognizer * _Null_unspecified swipeDownRec;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified resetButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toggleButton;
+@property (nonatomic, strong) PFObject * _Null_unspecified question;
 @property (nonatomic) CGPoint lastPoint;
 @property (nonatomic) BOOL swiped;
 @property (nonatomic) CGFloat red;
 @property (nonatomic) CGFloat green;
 @property (nonatomic) CGFloat blue;
 @property (nonatomic, strong) UIImageView * _Null_unspecified tool;
-@property (nonatomic) BOOL isDrawing;
 @property (nonatomic, strong) UIImage * _Null_unspecified selectedImage;
-@property (nonatomic) BOOL Drawing;
 @property (nonatomic) NSInteger toggleStatus;
+// 'pointQuery' below
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)subscribeLiveQuery;
+- (void)sendPointDataFromX:(double)fromX fromY:(double)fromY toX:(double)toX toY:(double)toY;
+- (void)disconnectFromChatRoom;
 - (IBAction)togglePressed:(id _Nonnull)sender;
 - (IBAction)swipedUp:(id _Nonnull)sender;
 - (IBAction)swipedDown:(id _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (void)viewDidLoad;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)drawLinesFromPoint:(CGPoint)fromPoint toPoint:(CGPoint)toPoint;
 - (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
@@ -242,6 +248,19 @@ SWIFT_CLASS("_TtC4Guru16LDViewController")
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Guru5Point")
+@interface Point : PFObject <PFSubclassing>
+@property (nonatomic) NSInteger fromX;
+@property (nonatomic) NSInteger toX;
+@property (nonatomic) NSInteger fromY;
+@property (nonatomic) NSInteger toY;
+@property (nonatomic, strong) PFObject * _Nullable question;
++ (NSString * _Nonnull)parseClassName;
+- (nonnull instancetype)initWithClassName:(NSString * _Nonnull)newClassName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -275,11 +294,12 @@ SWIFT_CLASS("_TtC4Guru7VideoVC")
 @interface VideoVC : UIViewController
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified remoteView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified previewView;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified connectButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified disconnectButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified messageLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified micButton;
+@property (nonatomic, strong) PFObject * _Null_unspecified question;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)didReceiveMemoryWarning;
 - (void)showRoomUIInRoom:(BOOL)inRoom;
@@ -322,6 +342,7 @@ SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 @property (nonatomic) BOOL tutor;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified circles;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified guru;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified dismissButton;
 @property (nonatomic, strong) VideoVC * _Null_unspecified videoScreen;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -360,6 +381,10 @@ SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 - (void)participant:(TVIParticipant * _Nonnull)participant removedAudioTrack:(TVIAudioTrack * _Nonnull)audioTrack;
 - (void)participant:(TVIParticipant * _Nonnull)participant enabledTrack:(TVITrack * _Nonnull)track;
 - (void)participant:(TVIParticipant * _Nonnull)participant disabledTrack:(TVITrack * _Nonnull)track;
+@end
+
+@interface LDViewController (SWIFT_EXTENSION(Guru))
+@property (nonatomic, strong) PFQuery<Point *> * _Null_unspecified pointQuery;
 @end
 
 #pragma clang diagnostic pop

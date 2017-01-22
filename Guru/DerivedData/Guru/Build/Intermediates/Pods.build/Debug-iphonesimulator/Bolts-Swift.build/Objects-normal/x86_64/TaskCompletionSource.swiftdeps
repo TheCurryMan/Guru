@@ -7,13 +7,13 @@ provides-member:
 - ["C10BoltsSwift20TaskCompletionSource", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Task"
 - "Error"
-- "Bool"
 - "TaskCompletionSource"
-- !private "StringLiteralType"
-- !private "preconditionFailure"
 - "TaskState"
+- !private "StringLiteralType"
+- "Task"
+- !private "preconditionFailure"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "Task"]
 - ["Ps9AnyObject", "init"]

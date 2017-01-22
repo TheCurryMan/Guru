@@ -7,19 +7,19 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "CastingPrecedence"
-- "BFTask"
-- "Task"
-- "unknownDomain"
-- !private "BFTaskCompletionSource"
-- "swiftTask"
+- "objcTask"
 - !private "fatalError"
-- "AnyObject"
+- !private "CastingPrecedence"
+- "swiftTask"
+- !private "BFTaskCompletionSource"
+- "StringLiteralType"
+- "Task"
 - !private "??"
 - !private "TaskCompletionSource"
-- "StringLiteralType"
 - !private "NSError"
-- "objcTask"
+- "AnyObject"
+- "unknownDomain"
+- "BFTask"
 depends-member:
 - !private ["Ps9AnyObject", "cancelled"]
 - !private ["Ps9AnyObject", "continue"]
