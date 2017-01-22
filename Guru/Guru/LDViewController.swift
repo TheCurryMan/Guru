@@ -31,7 +31,6 @@ class LDViewController: UIViewController {
     var selectedImage:UIImage!
     var Drawing=false
     var toggleStatus=0
-    var localDraw=false
     
     var subscriptionQuery: Subscription<Point>?
     
@@ -53,11 +52,10 @@ class LDViewController: UIViewController {
     func subscribeLiveQuery(){
         
         subscriptionQuery = liveQueryClient.subscribe(pointQuery).handle(Event.created, { (query: PFQuery<Point>, point: Point) in
-            if(!self.localDraw)
-            {
+
                 self.drawLines(fromPoint: CGPoint(x: point.fromX, y: point.fromY), toPoint: CGPoint(x: point.toX, y: point.toY))
                 print("BOUNCE: FROM (\(point.fromX), \(point.fromY)) \n TO (\(point.toX), \(point.toY))" )
-            }
+
         })
     }
     
@@ -176,8 +174,6 @@ class LDViewController: UIViewController {
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
             
-        localDraw=false
-        
         }
     }
     
@@ -186,7 +182,6 @@ class LDViewController: UIViewController {
         
         if let touch = touches.first {
             let currentPoint = touch.location(in: self.view)
-            localDraw=true
             sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
             drawLines(fromPoint: lastPoint, toPoint: currentPoint)
             
@@ -224,18 +219,6 @@ class LDViewController: UIViewController {
 //        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
 //        
 //        present(actionSheet, animated: true, completion: nil)
-//        
-//    }
-//    @IBAction func erase(_ sender: AnyObject) {
-//        
-//        if (isDrawing) {
-//            (red,green,blue) = (1,1,1)
-//            
-//        } else {
-//            (red,green,blue) = (0,0,0)
-//        }
-//        
-//        isDrawing = !isDrawing
 //        
 //    }
 //
