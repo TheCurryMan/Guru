@@ -10,21 +10,21 @@ provides-member:
 - ["V4Guru10TokenUtils", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSError"
+- !private "Array"
 - "CastingPrecedence"
-- !private "JSONSerialization"
-- "AssignmentPrecedence"
-- "Bool"
 - !private "print"
-- !private "Data"
+- "Bool"
+- "AssignmentPrecedence"
+- "TokenUtils"
+- !private "JSONSerialization"
+- !private "AnyObject"
+- !private "NSError"
 - "PlatformUtils"
 - "BooleanLiteralType"
-- "TokenUtils"
-- "String"
 - !private "URL"
+- !private "Data"
 - !private "StringLiteralType"
-- !private "AnyObject"
-- !private "Array"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "jsonObject"]
@@ -357,6 +357,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "b11bd1264502e259bbfe71a57cb5ab35"

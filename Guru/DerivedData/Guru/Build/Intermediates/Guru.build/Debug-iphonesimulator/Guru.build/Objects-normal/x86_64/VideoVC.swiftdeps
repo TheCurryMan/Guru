@@ -6,37 +6,38 @@ provides-nominal:
 provides-member:
 - ["C4Guru7VideoVC", ""]
 provides-dynamic-lookup:
-- "question"
-- "remoteView"
-- "viewDidLoad"
-- "disconnectButton"
 - "didReceiveMemoryWarning"
-- "disconnect"
-- "viewDidAppear"
-- "micButton"
 - "prefersStatusBarHidden"
-- "showRoomUI"
+- "viewDidAppear"
 - "previewView"
+- "question"
 - "toggleMic"
 - "messageLabel"
+- "viewDidLoad"
+- "disconnectButton"
+- "remoteView"
+- "disconnect"
+- "micButton"
+- "liveDrawVC"
+- "showRoomUI"
 depends-top-level:
-- "UILabel"
+- "LDViewController"
 - "UIViewController"
-- "PFObject"
-- "CastingPrecedence"
 - "AssignmentPrecedence"
-- !private "UIApplication"
-- "AnyObject"
-- !private "BooleanLiteralType"
-- "UIView"
-- "VideoVC"
-- !private "LDViewController"
+- "WaitingScreenDelegate"
+- "CastingPrecedence"
+- "PFObject"
 - "Bool"
-- !private "!"
+- "AnyObject"
+- !private "StringLiteralType"
 - !private "print"
 - "UIButton"
-- !private "StringLiteralType"
-- "WaitingScreenDelegate"
+- "VideoVC"
+- "UIView"
+- !private "UIApplication"
+- "UILabel"
+- !private "!"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "addChildViewController"]
@@ -51,9 +52,9 @@ depends-member:
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "isIdleTimerDisabled"]
+- ["Ps9AnyObject", "liveDrawVC"]
 - ["Ps9AnyObject", "messageLabel"]
 - ["Ps9AnyObject", "micButton"]
-- !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "prefersStatusBarHidden"]
 - ["Ps9AnyObject", "previewView"]
 - !private ["Ps9AnyObject", "print"]
@@ -83,9 +84,9 @@ depends-member:
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "isIdleTimerDisabled"]
+- ["Ps7CVarArg", "liveDrawVC"]
 - ["Ps7CVarArg", "messageLabel"]
 - ["Ps7CVarArg", "micButton"]
-- !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "prefersStatusBarHidden"]
 - ["Ps7CVarArg", "previewView"]
 - !private ["Ps7CVarArg", "print"]
@@ -112,9 +113,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "isIdleTimerDisabled"]
+- ["Ps28CustomDebugStringConvertible", "liveDrawVC"]
 - ["Ps28CustomDebugStringConvertible", "messageLabel"]
 - ["Ps28CustomDebugStringConvertible", "micButton"]
-- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
 - ["Ps28CustomDebugStringConvertible", "previewView"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -142,9 +143,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "isIdleTimerDisabled"]
+- ["Ps23CustomStringConvertible", "liveDrawVC"]
 - ["Ps23CustomStringConvertible", "messageLabel"]
 - ["Ps23CustomStringConvertible", "micButton"]
-- !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
 - ["Ps23CustomStringConvertible", "previewView"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -170,9 +171,9 @@ depends-member:
 - !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isHidden"]
 - !private ["Ps9Equatable", "isIdleTimerDisabled"]
+- ["Ps9Equatable", "liveDrawVC"]
 - ["Ps9Equatable", "messageLabel"]
 - ["Ps9Equatable", "micButton"]
-- !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "prefersStatusBarHidden"]
 - ["Ps9Equatable", "previewView"]
 - !private ["Ps9Equatable", "print"]
@@ -202,9 +203,9 @@ depends-member:
 - !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isHidden"]
 - !private ["Ps8Hashable", "isIdleTimerDisabled"]
+- ["Ps8Hashable", "liveDrawVC"]
 - ["Ps8Hashable", "messageLabel"]
 - ["Ps8Hashable", "micButton"]
-- !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "prefersStatusBarHidden"]
 - ["Ps8Hashable", "previewView"]
 - !private ["Ps8Hashable", "print"]
@@ -235,9 +236,9 @@ depends-member:
 - ["PSo8NSCoding", "disconnectButton"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isHidden"]
+- ["PSo8NSCoding", "liveDrawVC"]
 - ["PSo8NSCoding", "messageLabel"]
 - ["PSo8NSCoding", "micButton"]
-- !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
 - ["PSo8NSCoding", "previewView"]
 - !private ["PSo8NSCoding", "print"]
@@ -258,9 +259,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "disconnect"]
 - ["PSo26NSExtensionRequestHandling", "disconnectButton"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "liveDrawVC"]
 - ["PSo26NSExtensionRequestHandling", "messageLabel"]
 - ["PSo26NSExtensionRequestHandling", "micButton"]
-- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - ["PSo26NSExtensionRequestHandling", "previewView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -276,7 +277,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "LDViewController"]
+- ["CSo8NSObject", "LDViewController"]
 - ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIButton"]
@@ -294,9 +295,9 @@ depends-member:
 - !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "isIdleTimerDisabled"]
+- ["CSo8NSObject", "liveDrawVC"]
 - ["CSo8NSObject", "messageLabel"]
 - ["CSo8NSObject", "micButton"]
-- !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "prefersStatusBarHidden"]
 - ["CSo8NSObject", "previewView"]
 - !private ["CSo8NSObject", "print"]
@@ -321,9 +322,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "isIdleTimerDisabled"]
+- ["PSo16NSObjectProtocol", "liveDrawVC"]
 - ["PSo16NSObjectProtocol", "messageLabel"]
 - ["PSo16NSObjectProtocol", "micButton"]
-- !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - ["PSo16NSObjectProtocol", "previewView"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -360,9 +361,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "disconnectButton"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
+- ["PSo21UIAppearanceContainer", "liveDrawVC"]
 - ["PSo21UIAppearanceContainer", "messageLabel"]
 - ["PSo21UIAppearanceContainer", "micButton"]
-- !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - ["PSo21UIAppearanceContainer", "previewView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -386,9 +387,9 @@ depends-member:
 - ["PSo18UIContentContainer", "disconnect"]
 - ["PSo18UIContentContainer", "disconnectButton"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "liveDrawVC"]
 - ["PSo18UIContentContainer", "messageLabel"]
 - ["PSo18UIContentContainer", "micButton"]
-- !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - ["PSo18UIContentContainer", "previewView"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -418,9 +419,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "disconnectButton"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
+- ["PSo18UIFocusEnvironment", "liveDrawVC"]
 - ["PSo18UIFocusEnvironment", "messageLabel"]
 - ["PSo18UIFocusEnvironment", "micButton"]
-- !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UIFocusEnvironment", "previewView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -438,7 +439,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "isHidden"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "LDViewController"]
+- ["CSo11UIResponder", "LDViewController"]
 - ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIButton"]
@@ -455,9 +456,9 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "isIdleTimerDisabled"]
+- ["CSo11UIResponder", "liveDrawVC"]
 - ["CSo11UIResponder", "messageLabel"]
 - ["CSo11UIResponder", "micButton"]
-- !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
 - ["CSo11UIResponder", "previewView"]
 - !private ["CSo11UIResponder", "print"]
@@ -481,9 +482,9 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "isIdleTimerDisabled"]
+- ["PSo30UIResponderStandardEditActions", "liveDrawVC"]
 - ["PSo30UIResponderStandardEditActions", "messageLabel"]
 - ["PSo30UIResponderStandardEditActions", "micButton"]
-- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
 - ["PSo30UIResponderStandardEditActions", "previewView"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
@@ -504,9 +505,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "disconnect"]
 - ["PSo16UIStateRestoring", "disconnectButton"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "liveDrawVC"]
 - ["PSo16UIStateRestoring", "messageLabel"]
 - ["PSo16UIStateRestoring", "micButton"]
-- !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - ["PSo16UIStateRestoring", "previewView"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -531,9 +532,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "disconnectButton"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
+- ["PSo18UITraitEnvironment", "liveDrawVC"]
 - ["PSo18UITraitEnvironment", "messageLabel"]
 - ["PSo18UITraitEnvironment", "micButton"]
-- !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UITraitEnvironment", "previewView"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -548,10 +549,11 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "bringSubview"]
+- ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "isHidden"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "LDViewController"]
+- ["CSo16UIViewController", "LDViewController"]
 - ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIButton"]
@@ -565,9 +567,9 @@ depends-member:
 - ["CSo16UIViewController", "disconnect"]
 - ["CSo16UIViewController", "disconnectButton"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "liveDrawVC"]
 - ["CSo16UIViewController", "messageLabel"]
 - ["CSo16UIViewController", "micButton"]
-- !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
 - ["CSo16UIViewController", "previewView"]
 - !private ["CSo16UIViewController", "print"]
@@ -582,7 +584,7 @@ depends-member:
 - ["CSo16UIViewController", ""]
 - ["C4Guru7VideoVC", "AnyObject"]
 - ["C4Guru7VideoVC", "Bool"]
-- !private ["C4Guru7VideoVC", "LDViewController"]
+- ["C4Guru7VideoVC", "LDViewController"]
 - ["C4Guru7VideoVC", "PFObject"]
 - !private ["C4Guru7VideoVC", "UIApplication"]
 - ["C4Guru7VideoVC", "UIButton"]
@@ -596,9 +598,9 @@ depends-member:
 - ["C4Guru7VideoVC", "disconnect"]
 - ["C4Guru7VideoVC", "disconnectButton"]
 - ["C4Guru7VideoVC", "init"]
+- ["C4Guru7VideoVC", "liveDrawVC"]
 - ["C4Guru7VideoVC", "messageLabel"]
 - ["C4Guru7VideoVC", "micButton"]
-- !private ["C4Guru7VideoVC", "performSegue"]
 - ["C4Guru7VideoVC", "prefersStatusBarHidden"]
 - ["C4Guru7VideoVC", "previewView"]
 - !private ["C4Guru7VideoVC", "print"]
@@ -632,9 +634,9 @@ depends-member:
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isHidden"]
 - !private ["Ps9_Hashable", "isIdleTimerDisabled"]
+- ["Ps9_Hashable", "liveDrawVC"]
 - ["Ps9_Hashable", "messageLabel"]
 - ["Ps9_Hashable", "micButton"]
-- !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "prefersStatusBarHidden"]
 - ["Ps9_Hashable", "previewView"]
 - !private ["Ps9_Hashable", "print"]
@@ -698,7 +700,7 @@ depends-nominal:
 - "PSo16UIStateRestoring"
 - "CSo12UIStoryboard"
 - "PSo18UITraitEnvironment"
-- !private "CSo6UIView"
+- "CSo6UIView"
 - "CSo16UIViewController"
 - "C4Guru7VideoVC"
 - !private "P4Guru21WaitingScreenDelegate"
@@ -814,6 +816,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "de267c5fc9e09ee658719f0efaff12a6"
+interface-hash: "65eba649267a2b49449bc07e8cb8febc"

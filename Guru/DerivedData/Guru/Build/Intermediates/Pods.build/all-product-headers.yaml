@@ -369,6 +369,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PopupController-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PopupController-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/PopupController/PopupController-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/PopupController.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers",
       'contents': [
         {

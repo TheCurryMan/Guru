@@ -7,83 +7,84 @@ provides-nominal:
 provides-member:
 - ["C4Guru16LDViewController", ""]
 provides-dynamic-lookup:
-- "prefersStatusBarHidden"
-- "swipeUpRec"
-- "touchesBegan"
-- "viewDidLoad"
-- "toggleButton"
-- "blue"
-- "swiped"
-- "subscribeLiveQuery"
-- "toggleStatus"
-- "tool"
-- "resetButton"
+- "swipeDownRec"
 - "red"
-- "disconnectFromChatRoom"
 - "reset"
-- "swipedDown"
-- "togglePressed"
-- "question"
-- "pointQuery"
-- "swipedUp"
-- "green"
-- "lastPoint"
-- "didReceiveMemoryWarning"
+- "tool"
+- "viewDidLoad"
+- "prefersStatusBarHidden"
 - "imageView"
+- "subscribeLiveQuery"
+- "touchesBegan"
+- "swiped"
 - "sendPointData"
-- "drawLines"
+- "question"
+- "blue"
+- "viewDidAppear"
+- "toggleStatus"
+- "swipedUp"
+- "viewWillDisappear"
+- "resetButton"
+- "pointQuery"
+- "togglePressed"
+- "disconnectFromChatRoom"
+- "didReceiveMemoryWarning"
 - "touchesMoved"
 - "touchesEnded"
-- "viewDidAppear"
-- "swipeDownRec"
-- "viewWillDisappear"
+- "toggleButton"
 - "selectedImage"
+- "swipeUpRec"
+- "swipedDown"
+- "drawLines"
+- "green"
+- "lastPoint"
 depends-top-level:
-- !private "UIColor"
-- !private "CGRect"
-- !private "*"
-- !private "UIGraphicsEndImageContext"
 - "Set"
 - "UITouch"
-- "UISwipeGestureRecognizer"
-- "LDViewController"
-- "liveQueryClient"
-- "UIImageView"
+- "UnicodeScalarType"
+- !private "print"
+- !private "CGRect"
+- !private "UIGraphicsEndImageContext"
 - "UIEvent"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "DispatchQueue"
-- !private "UIGraphicsGetCurrentContext"
-- "UIButton"
-- !private "+"
-- "UnicodeScalarType"
-- !private "UIGraphicsBeginImageContext"
-- !private "CGLineCap"
-- "UIViewController"
-- !private "!"
-- !private "UIControlState"
-- "BooleanLiteralType"
 - "Bool"
-- !private "Event"
-- "Double"
-- "UIImage"
-- "CGFloat"
-- !private "/"
-- "PFObject"
-- "PFQuery"
-- !private "PFUser"
-- !private "Void"
 - !private "UIView"
-- "Subscription"
-- !private "CGBlendMode"
-- "CastingPrecedence"
-- !private "print"
+- "PFObject"
+- !private "DispatchQueue"
+- "UIViewController"
+- "CGFloat"
 - "AssignmentPrecedence"
-- !private "~="
-- "Point"
+- "CastingPrecedence"
 - "ParseLiveQuery"
 - "CGPoint"
+- "UIImage"
 - "AnyObject"
+- !private "CGBlendMode"
+- !private "~="
+- "PFQuery"
+- "UIButton"
+- "liveQueryClient"
+- !private "UIControlState"
+- !private "Event"
+- "UIImageView"
+- !private "UIColor"
+- !private "/"
+- !private "Void"
+- !private "*"
 - !private "StringLiteralType"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UIScreen"
+- !private "PFUser"
+- "UISwipeGestureRecognizer"
+- "BooleanLiteralType"
+- "Double"
+- "LDViewController"
+- "Subscription"
+- !private "+"
+- !private "CGLineCap"
+- !private "!"
+- !private "UIGraphicsBeginImageContext"
+- "Point"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGBlendMode"]
@@ -104,6 +105,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIGraphicsGetCurrentContext"]
 - !private ["Ps9AnyObject", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIScreen"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addLine"]
 - !private ["Ps9AnyObject", "alpha"]
@@ -112,6 +114,7 @@ depends-member:
 - ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "cgColor"]
+- !private ["Ps9AnyObject", "contentsScale"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "disconnectFromChatRoom"]
@@ -127,6 +130,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isEnabled"]
 - ["Ps9AnyObject", "lastPoint"]
+- !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "liveQueryClient"]
 - !private ["Ps9AnyObject", "location"]
 - !private ["Ps9AnyObject", "main"]
@@ -141,6 +145,7 @@ depends-member:
 - ["Ps9AnyObject", "reset"]
 - ["Ps9AnyObject", "resetButton"]
 - !private ["Ps9AnyObject", "saveInBackground"]
+- !private ["Ps9AnyObject", "scale"]
 - ["Ps9AnyObject", "selectedImage"]
 - ["Ps9AnyObject", "sendPointData"]
 - !private ["Ps9AnyObject", "setBlendMode"]
@@ -179,14 +184,18 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["CSo7CALayer", "contentsScale"]
+- ["CSo7CALayer", "deinit"]
 - !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "animate"]
 - !private ["PSo15CALayerDelegate", "center"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "image"]
 - !private ["PSo15CALayerDelegate", "isEnabled"]
+- !private ["PSo15CALayerDelegate", "layer"]
 - !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "setNeedsDisplay"]
+- !private ["PSo13CAMediaTiming", "contentsScale"]
 - ["OSC11CGBlendMode", "deinit"]
 - !private ["OSC11CGBlendMode", "normal"]
 - ["CSo7CGColor", "deinit"]
@@ -230,6 +239,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIGraphicsGetCurrentContext"]
 - !private ["Ps7CVarArg", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps7CVarArg", "UIImage"]
+- !private ["Ps7CVarArg", "UIScreen"]
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "alpha"]
 - !private ["Ps7CVarArg", "animate"]
@@ -237,6 +247,7 @@ depends-member:
 - ["Ps7CVarArg", "blue"]
 - !private ["Ps7CVarArg", "center"]
 - !private ["Ps7CVarArg", "cgColor"]
+- !private ["Ps7CVarArg", "contentsScale"]
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "disconnectFromChatRoom"]
@@ -252,6 +263,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isEnabled"]
 - ["Ps7CVarArg", "lastPoint"]
+- !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "liveQueryClient"]
 - !private ["Ps7CVarArg", "location"]
 - !private ["Ps7CVarArg", "main"]
@@ -265,6 +277,7 @@ depends-member:
 - ["Ps7CVarArg", "reset"]
 - ["Ps7CVarArg", "resetButton"]
 - !private ["Ps7CVarArg", "saveInBackground"]
+- !private ["Ps7CVarArg", "scale"]
 - ["Ps7CVarArg", "selectedImage"]
 - ["Ps7CVarArg", "sendPointData"]
 - !private ["Ps7CVarArg", "setImage"]
@@ -324,6 +337,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetCurrentContext"]
 - !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "animate"]
@@ -331,6 +345,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
+- !private ["Ps28CustomDebugStringConvertible", "contentsScale"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "disconnectFromChatRoom"]
@@ -347,6 +362,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - ["Ps28CustomDebugStringConvertible", "lastPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "liveQueryClient"]
 - !private ["Ps28CustomDebugStringConvertible", "location"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
@@ -360,6 +376,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "reset"]
 - ["Ps28CustomDebugStringConvertible", "resetButton"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
 - ["Ps28CustomDebugStringConvertible", "selectedImage"]
 - ["Ps28CustomDebugStringConvertible", "sendPointData"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
@@ -434,6 +451,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIGraphicsGetCurrentContext"]
 - !private ["Ps23CustomStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIScreen"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
@@ -442,6 +460,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
+- !private ["Ps23CustomStringConvertible", "contentsScale"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "disconnectFromChatRoom"]
@@ -457,6 +476,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - ["Ps23CustomStringConvertible", "lastPoint"]
+- !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "liveQueryClient"]
 - !private ["Ps23CustomStringConvertible", "location"]
 - !private ["Ps23CustomStringConvertible", "main"]
@@ -470,6 +490,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "reset"]
 - ["Ps23CustomStringConvertible", "resetButton"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
+- !private ["Ps23CustomStringConvertible", "scale"]
 - ["Ps23CustomStringConvertible", "selectedImage"]
 - ["Ps23CustomStringConvertible", "sendPointData"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
@@ -525,6 +546,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIGraphicsGetCurrentContext"]
 - !private ["Ps9Equatable", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIScreen"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "alpha"]
@@ -533,6 +555,7 @@ depends-member:
 - ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "cgColor"]
+- !private ["Ps9Equatable", "contentsScale"]
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "disconnectFromChatRoom"]
@@ -549,6 +572,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isEnabled"]
 - ["Ps9Equatable", "lastPoint"]
+- !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "liveQueryClient"]
 - !private ["Ps9Equatable", "location"]
 - !private ["Ps9Equatable", "main"]
@@ -564,6 +588,7 @@ depends-member:
 - ["Ps9Equatable", "resetButton"]
 - !private ["Ps9Equatable", "round"]
 - !private ["Ps9Equatable", "saveInBackground"]
+- !private ["Ps9Equatable", "scale"]
 - ["Ps9Equatable", "selectedImage"]
 - ["Ps9Equatable", "sendPointData"]
 - !private ["Ps9Equatable", "setImage"]
@@ -631,6 +656,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIGraphicsGetCurrentContext"]
 - !private ["Ps8Hashable", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIScreen"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "alpha"]
@@ -639,6 +665,7 @@ depends-member:
 - ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "cgColor"]
+- !private ["Ps8Hashable", "contentsScale"]
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "disconnectFromChatRoom"]
@@ -654,6 +681,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isEnabled"]
 - ["Ps8Hashable", "lastPoint"]
+- !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "liveQueryClient"]
 - !private ["Ps8Hashable", "location"]
 - !private ["Ps8Hashable", "main"]
@@ -669,6 +697,7 @@ depends-member:
 - ["Ps8Hashable", "resetButton"]
 - !private ["Ps8Hashable", "round"]
 - !private ["Ps8Hashable", "saveInBackground"]
+- !private ["Ps8Hashable", "scale"]
 - ["Ps8Hashable", "selectedImage"]
 - ["Ps8Hashable", "sendPointData"]
 - !private ["Ps8Hashable", "setImage"]
@@ -738,6 +767,7 @@ depends-member:
 - !private ["C4Guru16LDViewController", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["C4Guru16LDViewController", "UIImage"]
 - ["C4Guru16LDViewController", "UIImageView"]
+- !private ["C4Guru16LDViewController", "UIScreen"]
 - ["C4Guru16LDViewController", "UISwipeGestureRecognizer"]
 - ["C4Guru16LDViewController", "UITouch"]
 - !private ["C4Guru16LDViewController", "UIView"]
@@ -801,12 +831,14 @@ depends-member:
 - !private ["PSo8NSCoding", "UIGraphicsGetCurrentContext"]
 - !private ["PSo8NSCoding", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIScreen"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "animate"]
 - ["PSo8NSCoding", "blue"]
 - !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "cgColor"]
+- !private ["PSo8NSCoding", "contentsScale"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "disconnectFromChatRoom"]
 - !private ["PSo8NSCoding", "draw"]
@@ -818,6 +850,7 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isEnabled"]
 - ["PSo8NSCoding", "lastPoint"]
+- !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "liveQueryClient"]
 - ["PSo8NSCoding", "pointQuery"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
@@ -869,6 +902,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIGraphicsGetCurrentContext"]
 - !private ["PSo26NSExtensionRequestHandling", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "blue"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -934,6 +968,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
+- !private ["CSo8NSObject", "UIScreen"]
 - ["CSo8NSObject", "UISwipeGestureRecognizer"]
 - ["CSo8NSObject", "UITouch"]
 - !private ["CSo8NSObject", "UIView"]
@@ -944,6 +979,7 @@ depends-member:
 - ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "cgColor"]
+- !private ["CSo8NSObject", "contentsScale"]
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "disconnectFromChatRoom"]
@@ -958,6 +994,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isEnabled"]
 - ["CSo8NSObject", "lastPoint"]
+- !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "liveQueryClient"]
 - !private ["CSo8NSObject", "location"]
 - !private ["CSo8NSObject", "main"]
@@ -971,6 +1008,7 @@ depends-member:
 - ["CSo8NSObject", "reset"]
 - ["CSo8NSObject", "resetButton"]
 - !private ["CSo8NSObject", "saveInBackground"]
+- !private ["CSo8NSObject", "scale"]
 - ["CSo8NSObject", "selectedImage"]
 - ["CSo8NSObject", "sendPointData"]
 - !private ["CSo8NSObject", "setImage"]
@@ -1016,6 +1054,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIGraphicsGetCurrentContext"]
 - !private ["PSo16NSObjectProtocol", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "animate"]
@@ -1023,6 +1062,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
+- !private ["PSo16NSObjectProtocol", "contentsScale"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "disconnectFromChatRoom"]
@@ -1037,6 +1077,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - ["PSo16NSObjectProtocol", "lastPoint"]
+- !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "liveQueryClient"]
 - !private ["PSo16NSObjectProtocol", "location"]
 - !private ["PSo16NSObjectProtocol", "main"]
@@ -1050,6 +1091,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "reset"]
 - ["PSo16NSObjectProtocol", "resetButton"]
 - !private ["PSo16NSObjectProtocol", "saveInBackground"]
+- !private ["PSo16NSObjectProtocol", "scale"]
 - ["PSo16NSObjectProtocol", "selectedImage"]
 - ["PSo16NSObjectProtocol", "sendPointData"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
@@ -1153,6 +1195,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setNeedsDisplay"]
 - !private ["PSo12UIAppearance", "alpha"]
@@ -1161,6 +1204,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "isEnabled"]
+- !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "setNeedsDisplay"]
 - !private ["PSo21UIAppearanceContainer", "CGBlendMode"]
@@ -1180,6 +1224,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIGraphicsGetCurrentContext"]
 - !private ["PSo21UIAppearanceContainer", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIScreen"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "animate"]
@@ -1195,6 +1240,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - ["PSo21UIAppearanceContainer", "lastPoint"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "liveQueryClient"]
 - ["PSo21UIAppearanceContainer", "pointQuery"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
@@ -1249,6 +1295,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIGraphicsGetCurrentContext"]
 - !private ["PSo18UIContentContainer", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UIScreen"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "blue"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -1298,6 +1345,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "isEnabled"]
+- !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "setNeedsDisplay"]
 - !private ["PSo13UIDynamicItem", "alpha"]
@@ -1306,6 +1354,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "isEnabled"]
+- !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "setNeedsDisplay"]
 - !private ["PSo18UIFocusEnvironment", "CGBlendMode"]
@@ -1325,6 +1374,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIGraphicsGetCurrentContext"]
 - !private ["PSo18UIFocusEnvironment", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIScreen"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "animate"]
@@ -1340,6 +1390,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - ["PSo18UIFocusEnvironment", "lastPoint"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "liveQueryClient"]
 - ["PSo18UIFocusEnvironment", "pointQuery"]
 - ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
@@ -1377,6 +1428,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "image"]
 - !private ["PSo11UIFocusItem", "isEnabled"]
+- !private ["PSo11UIFocusItem", "layer"]
 - !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "setNeedsDisplay"]
 - !private ["CSo7UIImage", "draw"]
@@ -1385,6 +1437,7 @@ depends-member:
 - !private ["CSo11UIImageView", "center"]
 - !private ["CSo11UIImageView", "frame"]
 - !private ["CSo11UIImageView", "image"]
+- !private ["CSo11UIImageView", "layer"]
 - !private ["CSo11UIImageView", "setNeedsDisplay"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -1412,6 +1465,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
+- !private ["CSo11UIResponder", "UIScreen"]
 - ["CSo11UIResponder", "UISwipeGestureRecognizer"]
 - ["CSo11UIResponder", "UITouch"]
 - !private ["CSo11UIResponder", "UIView"]
@@ -1430,6 +1484,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isEnabled"]
 - ["CSo11UIResponder", "lastPoint"]
+- !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "liveQueryClient"]
 - ["CSo11UIResponder", "pointQuery"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
@@ -1477,6 +1532,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIGraphicsGetCurrentContext"]
 - !private ["PSo30UIResponderStandardEditActions", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- !private ["PSo30UIResponderStandardEditActions", "UIScreen"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
 - !private ["PSo30UIResponderStandardEditActions", "animate"]
@@ -1492,6 +1548,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - ["PSo30UIResponderStandardEditActions", "lastPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
 - !private ["PSo30UIResponderStandardEditActions", "liveQueryClient"]
 - ["PSo30UIResponderStandardEditActions", "pointQuery"]
 - ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
@@ -1523,6 +1580,9 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewWillDisappear"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- ["CSo8UIScreen", "deinit"]
+- !private ["CSo8UIScreen", "main"]
+- !private ["CSo8UIScreen", "scale"]
 - !private ["PSo16UIStateRestoring", "CGBlendMode"]
 - !private ["PSo16UIStateRestoring", "CGLineCap"]
 - ["PSo16UIStateRestoring", "CGPoint"]
@@ -1540,6 +1600,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIGraphicsGetCurrentContext"]
 - !private ["PSo16UIStateRestoring", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UIScreen"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "blue"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -1597,6 +1658,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIGraphicsGetCurrentContext"]
 - !private ["PSo18UITraitEnvironment", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIScreen"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "animate"]
@@ -1612,7 +1674,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
 - ["PSo18UITraitEnvironment", "lastPoint"]
+- !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "liveQueryClient"]
+- !private ["PSo18UITraitEnvironment", "main"]
 - ["PSo18UITraitEnvironment", "pointQuery"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -1620,6 +1684,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "red"]
 - ["PSo18UITraitEnvironment", "reset"]
 - ["PSo18UITraitEnvironment", "resetButton"]
+- !private ["PSo18UITraitEnvironment", "scale"]
 - ["PSo18UITraitEnvironment", "selectedImage"]
 - ["PSo18UITraitEnvironment", "sendPointData"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
@@ -1649,6 +1714,7 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "isEnabled"]
+- !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "setNeedsDisplay"]
 - ["CSo16UIViewController", "AnyObject"]
@@ -1677,6 +1743,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
+- !private ["CSo16UIViewController", "UIScreen"]
 - ["CSo16UIViewController", "UISwipeGestureRecognizer"]
 - ["CSo16UIViewController", "UITouch"]
 - !private ["CSo16UIViewController", "UIView"]
@@ -1733,6 +1800,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setNeedsDisplay"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -1767,6 +1835,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIGraphicsGetCurrentContext"]
 - !private ["Ps9_Hashable", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps9_Hashable", "UIImage"]
+- !private ["Ps9_Hashable", "UIScreen"]
 - !private ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "alpha"]
@@ -1775,6 +1844,7 @@ depends-member:
 - ["Ps9_Hashable", "blue"]
 - !private ["Ps9_Hashable", "center"]
 - !private ["Ps9_Hashable", "cgColor"]
+- !private ["Ps9_Hashable", "contentsScale"]
 - !private ["Ps9_Hashable", "current"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "disconnectFromChatRoom"]
@@ -1790,6 +1860,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isEnabled"]
 - ["Ps9_Hashable", "lastPoint"]
+- !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "liveQueryClient"]
 - !private ["Ps9_Hashable", "location"]
 - !private ["Ps9_Hashable", "main"]
@@ -1805,6 +1876,7 @@ depends-member:
 - ["Ps9_Hashable", "resetButton"]
 - !private ["Ps9_Hashable", "round"]
 - !private ["Ps9_Hashable", "saveInBackground"]
+- !private ["Ps9_Hashable", "scale"]
 - ["Ps9_Hashable", "selectedImage"]
 - ["Ps9_Hashable", "sendPointData"]
 - !private ["Ps9_Hashable", "setImage"]
@@ -1858,7 +1930,9 @@ depends-nominal:
 - !private "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
 - "Sb"
+- "CSo7CALayer"
 - !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
 - "OSC11CGBlendMode"
 - "CSo7CGColor"
 - "CSo9CGContext"
@@ -1956,6 +2030,7 @@ depends-nominal:
 - !private "CSo11UIImageView"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- "CSo8UIScreen"
 - "PSo16UIStateRestoring"
 - "CSo7UITouch"
 - "PSo18UITraitEnvironment"
@@ -2092,6 +2167,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "47f4801f3852e4a3e1104cb5a44e7194"

@@ -41,6 +41,8 @@
 		E1F3F3731E33F058003C281D /* cancel (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3711E33F058003C281D /* cancel (1).png */; };
 		E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */; };
 		E1F3F37B1E345698003C281D /* mute (2).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F37A1E345698003C281D /* mute (2).png */; };
+		E1F3F37E1E34B64D003C281D /* DemoPopupViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */; };
+		E1F3F37F1E34B64D003C281D /* DemoPopupViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F37D1E34B64D003C281D /* DemoPopupViewController2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		E1F3F3711E33F058003C281D /* cancel (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel (1).png"; sourceTree = "<group>"; };
 		E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
 		E1F3F37A1E345698003C281D /* mute (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mute (2).png"; sourceTree = "<group>"; };
+		E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPopupViewController2.swift; sourceTree = "<group>"; };
+		E1F3F37D1E34B64D003C281D /* DemoPopupViewController2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoPopupViewController2.storyboard; sourceTree = "<group>"; };
 		FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +203,8 @@
 				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
 				77BCB9CC1E345579004DF9AB /* Point.swift */,
 				77D66B841E33E34600C90E01 /* Utils.swift */,
+				E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */,
+				E1F3F37D1E34B64D003C281D /* DemoPopupViewController2.storyboard */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
 				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
@@ -375,6 +381,7 @@
 				E1F3F37B1E345698003C281D /* mute (2).png in Resources */,
 				AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */,
 				AF2821691E33466700493A74 /* Guru_green.png in Resources */,
+				E1F3F37F1E34B64D003C281D /* DemoPopupViewController2.storyboard in Resources */,
 				E1F3F3731E33F058003C281D /* cancel (1).png in Resources */,
 				E1F3F3721E33F058003C281D /* checked (1).png in Resources */,
 				AFBE11E01E3441A8008BCBC8 /* white_down.png in Resources */,
@@ -551,6 +558,7 @@
 				77D66B851E33E34600C90E01 /* Utils.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
+				E1F3F37E1E34B64D003C281D /* DemoPopupViewController2.swift in Sources */,
 				77BCB9CD1E345579004DF9AB /* Point.swift in Sources */,
 				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
 				E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */,

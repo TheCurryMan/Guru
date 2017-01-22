@@ -37,6 +37,8 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
     @IBOutlet weak var circles: UIImageView!
     @IBOutlet weak var guru: UIImageView!
     @IBOutlet var dismissButton: UIButton!
+    @IBOutlet var questionLabel: UILabel!
+    
     var videoScreen: VideoVC!
 
     override func viewDidLoad() {
@@ -47,6 +49,8 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         self.videoScreen.view.alpha = 0
         self.videoScreen.view.isUserInteractionEnabled = false
         self.videoScreen.question = question
+        
+        self.questionLabel.text = self.question["text"] as? String
         
         localMedia = TVILocalMedia()
         
@@ -74,6 +78,11 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
             
         }, completion: nil)
 
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.videoScreen.liveDrawVC?.removeFromParentViewController()
+        self.videoScreen.removeFromParentViewController()
     }
     
     func connect() {

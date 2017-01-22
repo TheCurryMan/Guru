@@ -88,6 +88,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Parse/Parse.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ParseLiveQuery/ParseLiveQuery.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PopupController/PopupController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SocketRocket/SocketRocket.framework"
   install_framework "${PODS_ROOT}/TwilioVideo/TwilioVideo.framework"
 fi
@@ -96,6 +97,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Parse/Parse.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ParseLiveQuery/ParseLiveQuery.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PopupController/PopupController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SocketRocket/SocketRocket.framework"
   install_framework "${PODS_ROOT}/TwilioVideo/TwilioVideo.framework"
 fi

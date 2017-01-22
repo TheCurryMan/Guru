@@ -42,6 +42,7 @@ class LDViewController: UIViewController {
         pointQuery = (Point.query()?
             .whereKey("userID", notEqualTo: PFUser.current()!.objectId!).whereKey("questionID", equalTo: self.question.objectId!)) as! PFQuery<Point>
         self.subscribeLiveQuery()
+        self.imageView.layer.contentsScale = UIScreen.main.scale
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -91,9 +92,9 @@ class LDViewController: UIViewController {
     @IBAction func togglePressed(_ sender: Any) {
         switch toggleStatus {
         case 0:
-            UIView.animate(withDuration: 1.2, animations: {
+            UIView.animate(withDuration: 1, animations: {
                 self.imageView.center.y=0+(self.imageView.frame.height/2)
-                self.imageView.alpha=0.6;
+                self.imageView.alpha=1;
                 self.resetButton.alpha=1
                 self.resetButton.isEnabled=true
                 self.toggleButton.setImage(UIImage(named:"white_down.png"), for: UIControlState.normal)
@@ -118,7 +119,7 @@ class LDViewController: UIViewController {
     
     @IBAction func swipedUp(_ sender: Any) {
         print("SwipedUp")
-        UIView.animate(withDuration: 1.2, animations: {
+        UIView.animate(withDuration: 1, animations: {
             self.imageView.center.y=0+(self.imageView.frame.height/2)
             self.resetButton.alpha=1
             self.resetButton.isEnabled=true
@@ -164,7 +165,7 @@ class LDViewController: UIViewController {
         
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(3)
+        context?.setLineWidth(5)
         context?.setStrokeColor(UIColor(red: 255, green: 0, blue: 0, alpha: 1.0).cgColor)
         
         context?.strokePath()

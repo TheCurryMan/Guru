@@ -6,35 +6,37 @@ provides-nominal:
 provides-member:
 - ["C4Guru11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
-- "applicationDidBecomeActive"
 - "window"
-- "applicationWillTerminate"
 - "application"
-- "applicationWillResignActive"
+- "reactToNotification"
+- "topMostController"
 depends-top-level:
-- "UIResponder"
-- "UIWindow"
-- !private "CastingPrecedence"
-- !private "PFObject"
-- "UIApplicationLaunchOptionsKey"
-- "Bool"
-- !private "AssignmentPrecedence"
-- "UIApplication"
-- "AppDelegate"
-- !private "String"
-- "UIApplicationDelegate"
-- !private "Parse"
-- "BooleanLiteralType"
-- !private "kOSSettingsKeyInAppAlerts"
-- !private "AcceptViewController"
-- !private "Error"
-- !private "OSNotificationDisplayType"
-- !private "ParseClientConfiguration"
 - "StringLiteralType"
+- !private "Parse"
+- "UIViewController"
 - !private "OneSignal"
+- "UIApplication"
+- !private "ParseClientConfiguration"
+- !private "PFObject"
+- "UIApplicationDelegate"
+- !private "print"
+- !private "BooleanLiteralType"
+- "UIWindow"
+- !private "!="
+- "AppDelegate"
+- "UIApplicationLaunchOptionsKey"
+- !private "kOSSettingsKeyInAppAlerts"
+- !private "Error"
 - !private "Dictionary"
+- !private "String"
+- "UIResponder"
+- "OSNotification"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "AcceptViewController"
+- "Bool"
+- !private "OSNotificationDisplayType"
+- !private "OSNotificationOpenedResult"
 depends-member:
 - !private ["C4Guru20AcceptViewController", "deinit"]
 - !private ["C4Guru20AcceptViewController", "question"]
@@ -65,18 +67,26 @@ depends-member:
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "kOSSettingsKeyInAppAlerts"]
 - !private ["Ps9AnyObject", "keyWindow"]
+- !private ["Ps9AnyObject", "makeKeyAndVisible"]
+- !private ["Ps9AnyObject", "notification"]
 - !private ["Ps9AnyObject", "payload"]
 - !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "presentedViewController"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "question"]
+- ["Ps9AnyObject", "reactToNotification"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "storyboard"]
+- ["Ps9AnyObject", "topMostController"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - !private ["C4Guru11AppDelegate", "AcceptViewController"]
 - ["C4Guru11AppDelegate", "Bool"]
 - !private ["C4Guru11AppDelegate", "Error"]
+- ["C4Guru11AppDelegate", "OSNotification"]
 - !private ["C4Guru11AppDelegate", "OSNotificationDisplayType"]
+- !private ["C4Guru11AppDelegate", "OSNotificationOpenedResult"]
 - !private ["C4Guru11AppDelegate", "OneSignal"]
 - !private ["C4Guru11AppDelegate", "PFObject"]
 - !private ["C4Guru11AppDelegate", "Parse"]
@@ -84,6 +94,7 @@ depends-member:
 - !private ["C4Guru11AppDelegate", "String"]
 - ["C4Guru11AppDelegate", "UIApplication"]
 - ["C4Guru11AppDelegate", "UIApplicationLaunchOptionsKey"]
+- ["C4Guru11AppDelegate", "UIViewController"]
 - ["C4Guru11AppDelegate", "UIWindow"]
 - ["C4Guru11AppDelegate", "application"]
 - ["C4Guru11AppDelegate", "applicationDidBecomeActive"]
@@ -100,20 +111,31 @@ depends-member:
 - ["C4Guru11AppDelegate", "deinit"]
 - ["C4Guru11AppDelegate", "init"]
 - !private ["C4Guru11AppDelegate", "kOSSettingsKeyInAppAlerts"]
+- !private ["C4Guru11AppDelegate", "print"]
+- ["C4Guru11AppDelegate", "reactToNotification"]
+- ["C4Guru11AppDelegate", "topMostController"]
 - ["C4Guru11AppDelegate", "window"]
+- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "makeKeyAndVisible"]
 - !private ["PSo15CALayerDelegate", "rootViewController"]
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IndexDistance"]
+- !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "OSNotificationDisplayType"]
 - !private ["Ps7CVarArg", "OneSignal"]
 - !private ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "Parse"]
 - !private ["Ps7CVarArg", "ParseClientConfiguration"]
+- !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIApplication"]
 - !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "additionalData"]
 - ["Ps7CVarArg", "application"]
@@ -135,15 +157,22 @@ depends-member:
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "kOSSettingsKeyInAppAlerts"]
 - !private ["Ps7CVarArg", "keyWindow"]
+- !private ["Ps7CVarArg", "makeKeyAndVisible"]
+- !private ["Ps7CVarArg", "notification"]
 - !private ["Ps7CVarArg", "payload"]
 - !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "presentedViewController"]
+- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "question"]
+- ["Ps7CVarArg", "reactToNotification"]
 - !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "storyboard"]
 - !private ["Ps7CVarArg", "subscript"]
+- ["Ps7CVarArg", "topMostController"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
+- !private ["Vs11ClosedRange", "deinit"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Iterator"]
@@ -152,6 +181,9 @@ depends-member:
 - !private ["Ps10Collection", "Value"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
@@ -185,36 +217,54 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "kOSSettingsKeyInAppAlerts"]
 - !private ["Ps28CustomDebugStringConvertible", "keyWindow"]
+- !private ["Ps28CustomDebugStringConvertible", "makeKeyAndVisible"]
+- !private ["Ps28CustomDebugStringConvertible", "notification"]
 - !private ["Ps28CustomDebugStringConvertible", "payload"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "presentedViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "question"]
+- ["Ps28CustomDebugStringConvertible", "reactToNotification"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "storyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "topMostController"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "IndexDistance"]
+- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "OSNotificationDisplayType"]
 - !private ["Ps23CustomStringConvertible", "OneSignal"]
 - !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "Parse"]
 - !private ["Ps23CustomStringConvertible", "ParseClientConfiguration"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "additionalData"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
@@ -235,13 +285,19 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "kOSSettingsKeyInAppAlerts"]
 - !private ["Ps23CustomStringConvertible", "keyWindow"]
+- !private ["Ps23CustomStringConvertible", "makeKeyAndVisible"]
+- !private ["Ps23CustomStringConvertible", "notification"]
 - !private ["Ps23CustomStringConvertible", "payload"]
 - !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "presentedViewController"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "question"]
+- ["Ps23CustomStringConvertible", "reactToNotification"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "storyboard"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "topMostController"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs10Dictionary", "Index"]
@@ -253,12 +309,16 @@ depends-member:
 - ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Vs15DictionaryIndex", "deinit"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "OSNotificationDisplayType"]
 - !private ["Ps9Equatable", "OneSignal"]
 - !private ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "Parse"]
 - !private ["Ps9Equatable", "ParseClientConfiguration"]
+- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "additionalData"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
@@ -279,16 +339,23 @@ depends-member:
 - !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "kOSSettingsKeyInAppAlerts"]
 - !private ["Ps9Equatable", "keyWindow"]
+- !private ["Ps9Equatable", "makeKeyAndVisible"]
 - !private ["Ps9Equatable", "none"]
+- !private ["Ps9Equatable", "notification"]
 - !private ["Ps9Equatable", "payload"]
 - !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "presentedViewController"]
+- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "question"]
 - !private ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", "reactToNotification"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "storyboard"]
+- ["Ps9Equatable", "topMostController"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "IndexDistance"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
@@ -297,15 +364,22 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "_Element"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "OSNotificationDisplayType"]
 - !private ["Ps8Hashable", "OneSignal"]
 - !private ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "Parse"]
 - !private ["Ps8Hashable", "ParseClientConfiguration"]
+- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "additionalData"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
@@ -326,14 +400,20 @@ depends-member:
 - !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "kOSSettingsKeyInAppAlerts"]
 - !private ["Ps8Hashable", "keyWindow"]
+- !private ["Ps8Hashable", "makeKeyAndVisible"]
 - !private ["Ps8Hashable", "none"]
+- !private ["Ps8Hashable", "notification"]
 - !private ["Ps8Hashable", "payload"]
 - !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "presentedViewController"]
+- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "question"]
 - !private ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", "reactToNotification"]
 - !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "storyboard"]
+- ["Ps8Hashable", "topMostController"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
@@ -354,23 +434,41 @@ depends-member:
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "_DisabledRangeIndex"]
+- !private ["Ps7Integer", "IntegerLiteralType"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "_DisabledRangeIndex"]
+- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "IntegerLiteralType"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "makeKeyAndVisible"]
 - !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "presentedViewController"]
 - !private ["PSo8NSCoding", "question"]
 - !private ["PSo8NSCoding", "rootViewController"]
 - !private ["PSo8NSCoding", "storyboard"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "present"]
+- !private ["PSo26NSExtensionRequestHandling", "presentedViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "question"]
 - !private ["PSo26NSExtensionRequestHandling", "storyboard"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "AcceptViewController"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Error"]
+- ["CSo8NSObject", "OSNotification"]
 - !private ["CSo8NSObject", "OSNotificationDisplayType"]
+- !private ["CSo8NSObject", "OSNotificationOpenedResult"]
 - !private ["CSo8NSObject", "OneSignal"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "Parse"]
@@ -378,6 +476,7 @@ depends-member:
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
+- ["CSo8NSObject", "UIViewController"]
 - ["CSo8NSObject", "UIWindow"]
 - !private ["CSo8NSObject", "additionalData"]
 - ["CSo8NSObject", "application"]
@@ -399,12 +498,18 @@ depends-member:
 - !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "kOSSettingsKeyInAppAlerts"]
 - !private ["CSo8NSObject", "keyWindow"]
+- !private ["CSo8NSObject", "makeKeyAndVisible"]
+- !private ["CSo8NSObject", "notification"]
 - !private ["CSo8NSObject", "payload"]
 - !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "presentedViewController"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "question"]
+- ["CSo8NSObject", "reactToNotification"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "storyboard"]
+- ["CSo8NSObject", "topMostController"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "OSNotificationDisplayType"]
 - !private ["PSo16NSObjectProtocol", "OneSignal"]
@@ -434,26 +539,34 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "kOSSettingsKeyInAppAlerts"]
 - !private ["PSo16NSObjectProtocol", "keyWindow"]
+- !private ["PSo16NSObjectProtocol", "makeKeyAndVisible"]
+- !private ["PSo16NSObjectProtocol", "notification"]
 - !private ["PSo16NSObjectProtocol", "payload"]
 - !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "presentedViewController"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "question"]
+- ["PSo16NSObjectProtocol", "reactToNotification"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "server"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "storyboard"]
+- ["PSo16NSObjectProtocol", "topMostController"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- !private ["CSo14OSNotification", "deinit"]
+- ["CSo14OSNotification", "deinit"]
 - !private ["CSo14OSNotification", "payload"]
 - ["OSC25OSNotificationDisplayType", "deinit"]
 - !private ["OSC25OSNotificationDisplayType", "none"]
 - !private ["OSC25OSNotificationDisplayType", "rawValue"]
+- !private ["CSo26OSNotificationOpenedResult", "deinit"]
+- !private ["CSo26OSNotificationOpenedResult", "notification"]
 - !private ["CSo21OSNotificationPayload", "additionalData"]
 - !private ["CSo9OneSignal", "initWithLaunchOptions"]
 - ["Sq", "deinit"]
-- !private ["CSo8PFObject", "deinit"]
+- ["CSo8PFObject", "deinit"]
 - !private ["CSo8PFObject", "fetchInBackground"]
 - !private ["CSo8PFObject", "init"]
 - !private ["CSo5Parse", "initialize"]
@@ -463,6 +576,7 @@ depends-member:
 - !private ["PSo31ParseMutableClientConfiguration", "clientKey"]
 - !private ["PSo31ParseMutableClientConfiguration", "deinit"]
 - !private ["PSo31ParseMutableClientConfiguration", "server"]
+- !private ["Vs5Range", "deinit"]
 - !private ["Ps16RawRepresentable", "none"]
 - !private ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps8Sequence", "Element"]
@@ -474,21 +588,34 @@ depends-member:
 - !private ["Ps8Sequence", "Value"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "IntegerLiteralType"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps12SignedNumber", "IntegerLiteralType"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "Iterator"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "makeKeyAndVisible"]
 - !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- !private ["PSo12UIAppearance", "makeKeyAndVisible"]
 - !private ["PSo12UIAppearance", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "makeKeyAndVisible"]
 - !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "presentedViewController"]
 - !private ["PSo21UIAppearanceContainer", "question"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "storyboard"]
-- !private ["CSo13UIApplication", "deinit"]
+- ["CSo13UIApplication", "deinit"]
 - !private ["CSo13UIApplication", "keyWindow"]
 - !private ["CSo13UIApplication", "shared"]
 - !private ["PSo21UIApplicationDelegate", "OSNotificationDisplayType"]
@@ -510,22 +637,33 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
 - !private ["PSo21UIApplicationDelegate", "kOSSettingsKeyInAppAlerts"]
+- !private ["PSo21UIApplicationDelegate", "print"]
+- !private ["PSo21UIApplicationDelegate", "reactToNotification"]
+- !private ["PSo21UIApplicationDelegate", "topMostController"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - !private ["PSo18UIContentContainer", "present"]
+- !private ["PSo18UIContentContainer", "presentedViewController"]
 - !private ["PSo18UIContentContainer", "question"]
 - !private ["PSo18UIContentContainer", "storyboard"]
+- !private ["PSo17UICoordinateSpace", "makeKeyAndVisible"]
 - !private ["PSo17UICoordinateSpace", "rootViewController"]
+- !private ["PSo13UIDynamicItem", "makeKeyAndVisible"]
 - !private ["PSo13UIDynamicItem", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "makeKeyAndVisible"]
 - !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "presentedViewController"]
 - !private ["PSo18UIFocusEnvironment", "question"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - !private ["PSo18UIFocusEnvironment", "storyboard"]
+- !private ["PSo11UIFocusItem", "makeKeyAndVisible"]
 - !private ["PSo11UIFocusItem", "rootViewController"]
 - !private ["CSo11UIResponder", "AcceptViewController"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Error"]
+- ["CSo11UIResponder", "OSNotification"]
 - !private ["CSo11UIResponder", "OSNotificationDisplayType"]
+- !private ["CSo11UIResponder", "OSNotificationOpenedResult"]
 - !private ["CSo11UIResponder", "OneSignal"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "Parse"]
@@ -533,6 +671,7 @@ depends-member:
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
+- ["CSo11UIResponder", "UIViewController"]
 - ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
@@ -550,11 +689,16 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "kOSSettingsKeyInAppAlerts"]
 - !private ["CSo11UIResponder", "keyWindow"]
+- !private ["CSo11UIResponder", "makeKeyAndVisible"]
 - !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "presentedViewController"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "question"]
+- ["CSo11UIResponder", "reactToNotification"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "shared"]
 - !private ["CSo11UIResponder", "storyboard"]
+- ["CSo11UIResponder", "topMostController"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - !private ["PSo30UIResponderStandardEditActions", "OSNotificationDisplayType"]
@@ -578,42 +722,62 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "kOSSettingsKeyInAppAlerts"]
 - !private ["PSo30UIResponderStandardEditActions", "keyWindow"]
+- !private ["PSo30UIResponderStandardEditActions", "makeKeyAndVisible"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "presentedViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "question"]
+- ["PSo30UIResponderStandardEditActions", "reactToNotification"]
 - !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "shared"]
 - !private ["PSo30UIResponderStandardEditActions", "storyboard"]
+- ["PSo30UIResponderStandardEditActions", "topMostController"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "present"]
+- !private ["PSo16UIStateRestoring", "presentedViewController"]
 - !private ["PSo16UIStateRestoring", "question"]
 - !private ["PSo16UIStateRestoring", "storyboard"]
 - !private ["CSo12UIStoryboard", "deinit"]
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
+- !private ["PSo18UITraitEnvironment", "makeKeyAndVisible"]
 - !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "presentedViewController"]
 - !private ["PSo18UITraitEnvironment", "question"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "storyboard"]
+- !private ["CSo6UIView", "makeKeyAndVisible"]
 - !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo16UIViewController", "deinit"]
 - !private ["CSo16UIViewController", "present"]
+- !private ["CSo16UIViewController", "presentedViewController"]
 - !private ["CSo16UIViewController", "question"]
 - !private ["CSo16UIViewController", "storyboard"]
-- !private ["CSo8UIWindow", "deinit"]
+- ["CSo8UIWindow", "deinit"]
+- !private ["CSo8UIWindow", "makeKeyAndVisible"]
 - !private ["CSo8UIWindow", "rootViewController"]
 - ["Su", "deinit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "makeKeyAndVisible"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "OSNotificationDisplayType"]
 - !private ["Ps9_Hashable", "OneSignal"]
 - !private ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "Parse"]
 - !private ["Ps9_Hashable", "ParseClientConfiguration"]
+- !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIApplication"]
+- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "additionalData"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
@@ -635,32 +799,60 @@ depends-member:
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "kOSSettingsKeyInAppAlerts"]
 - !private ["Ps9_Hashable", "keyWindow"]
+- !private ["Ps9_Hashable", "makeKeyAndVisible"]
 - !private ["Ps9_Hashable", "none"]
+- !private ["Ps9_Hashable", "notification"]
 - !private ["Ps9_Hashable", "payload"]
 - !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "presentedViewController"]
+- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "question"]
 - !private ["Ps9_Hashable", "rawValue"]
+- ["Ps9_Hashable", "reactToNotification"]
 - !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "storyboard"]
+- ["Ps9_Hashable", "topMostController"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps8_Integer", "IntegerLiteralType"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps11_Strideable", "IntegerLiteralType"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
 depends-nominal:
 - !private "C4Guru20AcceptViewController"
 - !private "Vs11AnyHashable"
 - "Ps9AnyObject"
 - "C4Guru11AppDelegate"
+- !private "Ps17BitwiseOperations"
 - "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
+- !private "Vs11ClosedRange"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -670,8 +862,10 @@ depends-nominal:
 - "Vs10Dictionary"
 - !private "Vs15DictionaryIndex"
 - "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -680,6 +874,9 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
@@ -691,25 +888,30 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "CSo14OSNotification"
+- "CSo14OSNotification"
 - "OSC25OSNotificationDisplayType"
+- !private "CSo26OSNotificationOpenedResult"
 - !private "CSo21OSNotificationPayload"
 - !private "CSo9OneSignal"
 - "Sq"
-- !private "CSo8PFObject"
+- "CSo8PFObject"
 - !private "CSo5Parse"
 - "CSo24ParseClientConfiguration"
 - !private "PSo31ParseMutableClientConfiguration"
+- !private "Vs5Range"
 - !private "Ps16RawRepresentable"
 - !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
 - !private "Vs5Slice"
+- !private "Ps10Strideable"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - !private "PSo21UIAppearanceContainer"
-- !private "CSo13UIApplication"
+- "CSo13UIApplication"
 - "PSo21UIApplicationDelegate"
 - !private "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
@@ -723,16 +925,24 @@ depends-nominal:
 - !private "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - !private "CSo16UIViewController"
-- !private "CSo8UIWindow"
+- "CSo8UIWindow"
 - "Su"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -837,6 +1047,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "9a6c226c8c538f4f25af8b5ee593922f"
+interface-hash: "4ce9b602108a729453791c7e0dad646c"
