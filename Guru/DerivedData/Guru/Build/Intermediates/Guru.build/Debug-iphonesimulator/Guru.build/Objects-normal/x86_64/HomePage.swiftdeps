@@ -6,58 +6,61 @@ provides-nominal:
 provides-member:
 - ["C4Guru8HomePage", ""]
 provides-dynamic-lookup:
-- "pressedAsk"
-- "showTopics"
-- "avail"
-- "pointsLabel"
-- "tapped"
-- "viewWillAppear"
-- "submitQuestion"
-- "didReceiveMemoryWarning"
-- "questionField"
-- "prefersStatusBarHidden"
 - "askedLabel"
-- "accept"
-- "prepare"
 - "textFieldShouldReturn"
+- "prefersStatusBarHidden"
+- "avail"
+- "prepare"
 - "question"
-- "backgroundView"
-- "popup"
-- "catchNotification"
-- "viewDidLoad"
+- "showTopics"
+- "viewWillAppear"
+- "questionField"
+- "pointsLabel"
+- "finalTopic"
+- "accept"
+- "answeredLabel"
+- "tapped"
+- "didReceiveMemoryWarning"
 - "topicButton"
 - "acceptButton"
-- "answeredLabel"
+- "backgroundView"
+- "popup"
+- "viewDidLoad"
+- "pressedAsk"
+- "submitQuestion"
+- "catchNotification"
 depends-top-level:
-- "UITextFieldDelegate"
-- !private "String"
-- !private "print"
-- !private "DemoPopupViewController2"
-- "AnyObject"
-- "UIButton"
-- "AssignmentPrecedence"
-- !private "=="
-- "UILabel"
-- "Notification"
-- "CastingPrecedence"
-- "UIStoryboardSegue"
-- "PFObject"
-- !private "StringLiteralType"
-- "Void"
-- "UIView"
-- "UIViewController"
-- !private "!"
-- !private "UIImage"
-- "UITextField"
-- !private "WaitingScreen"
-- "Bool"
-- !private "PFUser"
-- !private "Array"
-- !private "NotificationCenter"
-- "HomePage"
 - !private "Int"
-- "PopupController"
+- "AssignmentPrecedence"
+- "UILabel"
+- "Bool"
+- !private "=="
+- !private "PFUser"
+- "UITextFieldDelegate"
+- "StringLiteralType"
+- !private "print"
+- "PFObject"
 - "BooleanLiteralType"
+- "UIStoryboardSegue"
+- "AnyObject"
+- "UIViewController"
+- "Notification"
+- !private "UIImage"
+- "UIButton"
+- !private "UIControlState"
+- !private "!"
+- !private "Array"
+- !private "UIColor"
+- "Void"
+- !private "NotificationCenter"
+- !private "WaitingScreen"
+- "PopupController"
+- "CastingPrecedence"
+- !private "String"
+- !private "DemoPopupViewController2"
+- "UIView"
+- "HomePage"
+- "UITextField"
 depends-member:
 - !private ["Vs11AnyHashable", "deinit"]
 - !private ["Ps9AnyObject", "DemoPopupViewController2"]
@@ -67,6 +70,8 @@ depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
 - ["Ps9AnyObject", "PopupController"]
 - !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIControlState"]
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "accept"]
 - ["Ps9AnyObject", "acceptButton"]
@@ -80,12 +85,14 @@ depends-member:
 - !private ["Ps9AnyObject", "create"]
 - !private ["Ps9AnyObject", "current"]
 - !private ["Ps9AnyObject", "customize"]
+- !private ["Ps9AnyObject", "darkGray"]
 - !private ["Ps9AnyObject", "default"]
 - !private ["Ps9AnyObject", "destination"]
 - !private ["Ps9AnyObject", "didCloseHandler"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "didShowHandler"]
 - !private ["Ps9AnyObject", "dismiss"]
+- ["Ps9AnyObject", "finalTopic"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instance"]
@@ -103,6 +110,8 @@ depends-member:
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - !private ["Ps9AnyObject", "saveInBackground"]
 - !private ["Ps9AnyObject", "setImage"]
+- !private ["Ps9AnyObject", "setTitle"]
+- !private ["Ps9AnyObject", "setTitleColor"]
 - !private ["Ps9AnyObject", "show"]
 - ["Ps9AnyObject", "showTopics"]
 - ["Ps9AnyObject", "submitQuestion"]
@@ -137,6 +146,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "layer"]
 - !private ["PSo15CALayerDelegate", "resignFirstResponder"]
 - !private ["PSo15CALayerDelegate", "setImage"]
+- !private ["PSo15CALayerDelegate", "setTitle"]
+- !private ["PSo15CALayerDelegate", "setTitleColor"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "titleLabel"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
@@ -154,6 +165,8 @@ depends-member:
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIControlState"]
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -169,12 +182,14 @@ depends-member:
 - !private ["Ps7CVarArg", "create"]
 - !private ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "customize"]
+- !private ["Ps7CVarArg", "darkGray"]
 - !private ["Ps7CVarArg", "default"]
 - !private ["Ps7CVarArg", "destination"]
 - !private ["Ps7CVarArg", "didCloseHandler"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "didShowHandler"]
 - !private ["Ps7CVarArg", "dismiss"]
+- ["Ps7CVarArg", "finalTopic"]
 - !private ["Ps7CVarArg", "identifier"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instance"]
@@ -192,6 +207,8 @@ depends-member:
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - !private ["Ps7CVarArg", "saveInBackground"]
 - !private ["Ps7CVarArg", "setImage"]
+- !private ["Ps7CVarArg", "setTitle"]
+- !private ["Ps7CVarArg", "setTitleColor"]
 - !private ["Ps7CVarArg", "show"]
 - ["Ps7CVarArg", "showTopics"]
 - ["Ps7CVarArg", "submitQuestion"]
@@ -221,7 +238,7 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
-- !private ["Ps10Comparable", "init"]
+- ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "DemoPopupViewController2"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -234,6 +251,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "PopupController"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIControlState"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "accept"]
@@ -248,12 +267,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "create"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "customize"]
+- !private ["Ps28CustomDebugStringConvertible", "darkGray"]
 - !private ["Ps28CustomDebugStringConvertible", "default"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - !private ["Ps28CustomDebugStringConvertible", "didCloseHandler"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "didShowHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- ["Ps28CustomDebugStringConvertible", "finalTopic"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instance"]
@@ -271,6 +292,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitleColor"]
 - !private ["Ps28CustomDebugStringConvertible", "show"]
 - ["Ps28CustomDebugStringConvertible", "showTopics"]
 - ["Ps28CustomDebugStringConvertible", "submitQuestion"]
@@ -294,7 +317,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "IndexDistance"]
@@ -305,7 +328,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "userInfo"]
 - !private ["Ps23CustomStringConvertible", "DemoPopupViewController2"]
@@ -322,6 +345,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIControlState"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -338,12 +363,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "create"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "customize"]
+- !private ["Ps23CustomStringConvertible", "darkGray"]
 - !private ["Ps23CustomStringConvertible", "default"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - !private ["Ps23CustomStringConvertible", "didCloseHandler"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "didShowHandler"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
+- ["Ps23CustomStringConvertible", "finalTopic"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instance"]
@@ -361,6 +388,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
+- !private ["Ps23CustomStringConvertible", "setTitle"]
+- !private ["Ps23CustomStringConvertible", "setTitleColor"]
 - !private ["Ps23CustomStringConvertible", "show"]
 - ["Ps23CustomStringConvertible", "showTopics"]
 - ["Ps23CustomStringConvertible", "submitQuestion"]
@@ -399,6 +428,8 @@ depends-member:
 - ["Ps9Equatable", "PopupController"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIControlState"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -414,12 +445,14 @@ depends-member:
 - !private ["Ps9Equatable", "create"]
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "customize"]
+- !private ["Ps9Equatable", "darkGray"]
 - !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "destination"]
 - !private ["Ps9Equatable", "didCloseHandler"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "didShowHandler"]
 - !private ["Ps9Equatable", "dismiss"]
+- ["Ps9Equatable", "finalTopic"]
 - !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instance"]
@@ -438,6 +471,8 @@ depends-member:
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - !private ["Ps9Equatable", "saveInBackground"]
 - !private ["Ps9Equatable", "setImage"]
+- !private ["Ps9Equatable", "setTitle"]
+- !private ["Ps9Equatable", "setTitleColor"]
 - !private ["Ps9Equatable", "show"]
 - ["Ps9Equatable", "showTopics"]
 - !private ["Ps9Equatable", "slideUp"]
@@ -466,13 +501,13 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "_Element"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "DemoPopupViewController2"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Name"]
@@ -483,6 +518,8 @@ depends-member:
 - ["Ps8Hashable", "PopupController"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIControlState"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -498,12 +535,14 @@ depends-member:
 - !private ["Ps8Hashable", "create"]
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "customize"]
+- !private ["Ps8Hashable", "darkGray"]
 - !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "destination"]
 - !private ["Ps8Hashable", "didCloseHandler"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "didShowHandler"]
 - !private ["Ps8Hashable", "dismiss"]
+- ["Ps8Hashable", "finalTopic"]
 - !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instance"]
@@ -521,6 +560,8 @@ depends-member:
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - !private ["Ps8Hashable", "saveInBackground"]
 - !private ["Ps8Hashable", "setImage"]
+- !private ["Ps8Hashable", "setTitle"]
+- !private ["Ps8Hashable", "setTitleColor"]
 - !private ["Ps8Hashable", "show"]
 - ["Ps8Hashable", "showTopics"]
 - !private ["Ps8Hashable", "slideUp"]
@@ -552,6 +593,8 @@ depends-member:
 - ["C4Guru8HomePage", "PopupController"]
 - !private ["C4Guru8HomePage", "String"]
 - ["C4Guru8HomePage", "UIButton"]
+- !private ["C4Guru8HomePage", "UIColor"]
+- !private ["C4Guru8HomePage", "UIControlState"]
 - !private ["C4Guru8HomePage", "UIImage"]
 - ["C4Guru8HomePage", "UILabel"]
 - ["C4Guru8HomePage", "UIStoryboardSegue"]
@@ -568,6 +611,7 @@ depends-member:
 - ["C4Guru8HomePage", "catchNotification"]
 - ["C4Guru8HomePage", "deinit"]
 - ["C4Guru8HomePage", "didReceiveMemoryWarning"]
+- ["C4Guru8HomePage", "finalTopic"]
 - ["C4Guru8HomePage", "init"]
 - !private ["C4Guru8HomePage", "performSegue"]
 - ["C4Guru8HomePage", "pointsLabel"]
@@ -619,11 +663,11 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps25LosslessStringConvertible", "init"]
+- ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
-- !private ["Ps10MirrorPath", "init"]
+- ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps16MutableIndexable", "Element"]
 - ["CSo7NSCoder", "deinit"]
@@ -634,6 +678,8 @@ depends-member:
 - !private ["PSo8NSCoding", "PFUser"]
 - ["PSo8NSCoding", "PopupController"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIControlState"]
 - !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "accept"]
 - ["PSo8NSCoding", "acceptButton"]
@@ -645,10 +691,12 @@ depends-member:
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "create"]
 - !private ["PSo8NSCoding", "customize"]
+- !private ["PSo8NSCoding", "darkGray"]
 - !private ["PSo8NSCoding", "didCloseHandler"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "didShowHandler"]
 - !private ["PSo8NSCoding", "dismiss"]
+- ["PSo8NSCoding", "finalTopic"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "instance"]
 - !private ["PSo8NSCoding", "isEnabled"]
@@ -664,6 +712,8 @@ depends-member:
 - ["PSo8NSCoding", "questionField"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - !private ["PSo8NSCoding", "setImage"]
+- !private ["PSo8NSCoding", "setTitle"]
+- !private ["PSo8NSCoding", "setTitleColor"]
 - !private ["PSo8NSCoding", "show"]
 - ["PSo8NSCoding", "showTopics"]
 - ["PSo8NSCoding", "submitQuestion"]
@@ -681,7 +731,8 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "darkGray"]
+- ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "DemoPopupViewController2"]
 - !private ["PSo26NSExtensionRequestHandling", "Notification"]
 - !private ["PSo26NSExtensionRequestHandling", "NotificationCenter"]
@@ -689,6 +740,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - ["PSo26NSExtensionRequestHandling", "PopupController"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "accept"]
 - ["PSo26NSExtensionRequestHandling", "acceptButton"]
@@ -703,6 +756,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "didShowHandler"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
+- ["PSo26NSExtensionRequestHandling", "finalTopic"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "instance"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
@@ -729,7 +783,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "DemoPopupViewController2"]
@@ -741,6 +795,8 @@ depends-member:
 - ["CSo8NSObject", "PopupController"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIControlState"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -760,12 +816,14 @@ depends-member:
 - !private ["CSo8NSObject", "create"]
 - !private ["CSo8NSObject", "current"]
 - !private ["CSo8NSObject", "customize"]
+- !private ["CSo8NSObject", "darkGray"]
 - !private ["CSo8NSObject", "default"]
 - !private ["CSo8NSObject", "destination"]
 - !private ["CSo8NSObject", "didCloseHandler"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "didShowHandler"]
 - !private ["CSo8NSObject", "dismiss"]
+- ["CSo8NSObject", "finalTopic"]
 - !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instance"]
@@ -783,6 +841,8 @@ depends-member:
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - !private ["CSo8NSObject", "saveInBackground"]
 - !private ["CSo8NSObject", "setImage"]
+- !private ["CSo8NSObject", "setTitle"]
+- !private ["CSo8NSObject", "setTitleColor"]
 - !private ["CSo8NSObject", "show"]
 - ["CSo8NSObject", "showTopics"]
 - ["CSo8NSObject", "submitQuestion"]
@@ -807,6 +867,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - ["PSo16NSObjectProtocol", "PopupController"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIControlState"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "accept"]
 - ["PSo16NSObjectProtocol", "acceptButton"]
@@ -820,6 +882,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "create"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - !private ["PSo16NSObjectProtocol", "customize"]
+- !private ["PSo16NSObjectProtocol", "darkGray"]
 - !private ["PSo16NSObjectProtocol", "default"]
 - ["PSo16NSObjectProtocol", "deinit"]
 - !private ["PSo16NSObjectProtocol", "destination"]
@@ -827,6 +890,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "didShowHandler"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
+- ["PSo16NSObjectProtocol", "finalTopic"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instance"]
@@ -844,6 +908,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - !private ["PSo16NSObjectProtocol", "saveInBackground"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
+- !private ["PSo16NSObjectProtocol", "setTitle"]
+- !private ["PSo16NSObjectProtocol", "setTitleColor"]
 - !private ["PSo16NSObjectProtocol", "show"]
 - ["PSo16NSObjectProtocol", "showTopics"]
 - ["PSo16NSObjectProtocol", "submitQuestion"]
@@ -862,8 +928,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
+- !private ["PSo14NSSecureCoding", "darkGray"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
 - ["VCSo14NSNotification4Name", "deinit"]
 - !private ["VCSo14NSNotification4Name", "init"]
 - !private ["V10Foundation12Notification", "Name"]
@@ -934,22 +1001,26 @@ depends-member:
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - ["SS", "deinit"]
-- !private ["SS", "init"]
+- ["SS", "init"]
 - !private ["PSo22TVIParticipantDelegate", "question"]
 - !private ["PSo15TVIRoomDelegate", "question"]
-- !private ["Ps16TextOutputStream", "init"]
-- !private ["Ps20TextOutputStreamable", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitle"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitleColor"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - !private ["PSo12UIAppearance", "isEnabled"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "setImage"]
+- !private ["PSo12UIAppearance", "setTitle"]
+- !private ["PSo12UIAppearance", "setTitleColor"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "titleLabel"]
 - !private ["PSo21UIAppearanceContainer", "DemoPopupViewController2"]
@@ -959,6 +1030,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - ["PSo21UIAppearanceContainer", "PopupController"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIControlState"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "accept"]
 - ["PSo21UIAppearanceContainer", "acceptButton"]
@@ -973,6 +1046,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "didShowHandler"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
+- ["PSo21UIAppearanceContainer", "finalTopic"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "instance"]
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
@@ -988,6 +1062,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "questionField"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
+- !private ["PSo21UIAppearanceContainer", "setTitle"]
+- !private ["PSo21UIAppearanceContainer", "setTitleColor"]
 - !private ["PSo21UIAppearanceContainer", "show"]
 - ["PSo21UIAppearanceContainer", "showTopics"]
 - ["PSo21UIAppearanceContainer", "submitQuestion"]
@@ -1008,7 +1084,11 @@ depends-member:
 - ["CSo8UIButton", "deinit"]
 - !private ["CSo8UIButton", "isEnabled"]
 - !private ["CSo8UIButton", "setImage"]
+- !private ["CSo8UIButton", "setTitle"]
+- !private ["CSo8UIButton", "setTitleColor"]
 - !private ["CSo8UIButton", "titleLabel"]
+- !private ["CSo7UIColor", "darkGray"]
+- !private ["CSo7UIColor", "deinit"]
 - !private ["PSo18UIContentContainer", "DemoPopupViewController2"]
 - !private ["PSo18UIContentContainer", "Notification"]
 - !private ["PSo18UIContentContainer", "NotificationCenter"]
@@ -1016,6 +1096,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "PFUser"]
 - ["PSo18UIContentContainer", "PopupController"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIControlState"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "accept"]
 - ["PSo18UIContentContainer", "acceptButton"]
@@ -1030,6 +1112,7 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "didShowHandler"]
 - !private ["PSo18UIContentContainer", "dismiss"]
+- ["PSo18UIContentContainer", "finalTopic"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "instance"]
 - !private ["PSo18UIContentContainer", "performSegue"]
@@ -1061,6 +1144,8 @@ depends-member:
 - !private ["CSo9UIControl", "isEnabled"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "setImage"]
+- !private ["CSo9UIControl", "setTitle"]
+- !private ["CSo9UIControl", "setTitleColor"]
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "titleLabel"]
 - ["VSC14UIControlState", "deinit"]
@@ -1069,12 +1154,16 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
+- !private ["PSo17UICoordinateSpace", "setTitle"]
+- !private ["PSo17UICoordinateSpace", "setTitleColor"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "titleLabel"]
 - !private ["PSo13UIDynamicItem", "isEnabled"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "setImage"]
+- !private ["PSo13UIDynamicItem", "setTitle"]
+- !private ["PSo13UIDynamicItem", "setTitleColor"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
 - !private ["PSo18UIFocusEnvironment", "DemoPopupViewController2"]
@@ -1084,6 +1173,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - ["PSo18UIFocusEnvironment", "PopupController"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIControlState"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "accept"]
 - ["PSo18UIFocusEnvironment", "acceptButton"]
@@ -1098,6 +1189,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "didShowHandler"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
+- ["PSo18UIFocusEnvironment", "finalTopic"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "instance"]
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
@@ -1113,6 +1205,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "questionField"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
+- !private ["PSo18UIFocusEnvironment", "setTitle"]
+- !private ["PSo18UIFocusEnvironment", "setTitleColor"]
 - !private ["PSo18UIFocusEnvironment", "show"]
 - ["PSo18UIFocusEnvironment", "showTopics"]
 - ["PSo18UIFocusEnvironment", "submitQuestion"]
@@ -1134,6 +1228,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "layer"]
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
 - !private ["PSo11UIFocusItem", "setImage"]
+- !private ["PSo11UIFocusItem", "setTitle"]
+- !private ["PSo11UIFocusItem", "setTitleColor"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "titleLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "create"]
@@ -1159,6 +1255,8 @@ depends-member:
 - ["CSo11UIResponder", "PopupController"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIControlState"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -1179,6 +1277,7 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "didShowHandler"]
 - !private ["CSo11UIResponder", "dismiss"]
+- ["CSo11UIResponder", "finalTopic"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "instance"]
 - !private ["CSo11UIResponder", "isEnabled"]
@@ -1194,6 +1293,8 @@ depends-member:
 - ["CSo11UIResponder", "questionField"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - !private ["CSo11UIResponder", "setImage"]
+- !private ["CSo11UIResponder", "setTitle"]
+- !private ["CSo11UIResponder", "setTitleColor"]
 - !private ["CSo11UIResponder", "show"]
 - ["CSo11UIResponder", "showTopics"]
 - ["CSo11UIResponder", "submitQuestion"]
@@ -1217,6 +1318,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - ["PSo30UIResponderStandardEditActions", "PopupController"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIControlState"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - ["PSo30UIResponderStandardEditActions", "accept"]
 - ["PSo30UIResponderStandardEditActions", "acceptButton"]
@@ -1231,6 +1334,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "didShowHandler"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- ["PSo30UIResponderStandardEditActions", "finalTopic"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "instance"]
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
@@ -1246,6 +1350,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "questionField"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
 - !private ["PSo30UIResponderStandardEditActions", "setImage"]
+- !private ["PSo30UIResponderStandardEditActions", "setTitle"]
+- !private ["PSo30UIResponderStandardEditActions", "setTitleColor"]
 - !private ["PSo30UIResponderStandardEditActions", "show"]
 - ["PSo30UIResponderStandardEditActions", "showTopics"]
 - ["PSo30UIResponderStandardEditActions", "submitQuestion"]
@@ -1278,6 +1384,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - ["PSo16UIStateRestoring", "PopupController"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIControlState"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "accept"]
 - ["PSo16UIStateRestoring", "acceptButton"]
@@ -1292,6 +1400,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "didShowHandler"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
+- ["PSo16UIStateRestoring", "finalTopic"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "instance"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
@@ -1333,6 +1442,8 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "PFUser"]
 - ["PSo19UITextFieldDelegate", "PopupController"]
 - !private ["PSo19UITextFieldDelegate", "String"]
+- !private ["PSo19UITextFieldDelegate", "UIColor"]
+- !private ["PSo19UITextFieldDelegate", "UIControlState"]
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
 - !private ["PSo19UITextFieldDelegate", "acceptButton"]
 - !private ["PSo19UITextFieldDelegate", "answeredLabel"]
@@ -1340,6 +1451,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "avail"]
 - !private ["PSo19UITextFieldDelegate", "backgroundView"]
 - !private ["PSo19UITextFieldDelegate", "catchNotification"]
+- !private ["PSo19UITextFieldDelegate", "finalTopic"]
 - !private ["PSo19UITextFieldDelegate", "performSegue"]
 - !private ["PSo19UITextFieldDelegate", "pointsLabel"]
 - !private ["PSo19UITextFieldDelegate", "popup"]
@@ -1367,6 +1479,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - ["PSo18UITraitEnvironment", "PopupController"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIControlState"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "accept"]
 - ["PSo18UITraitEnvironment", "acceptButton"]
@@ -1381,6 +1495,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "didShowHandler"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
+- ["PSo18UITraitEnvironment", "finalTopic"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "instance"]
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
@@ -1396,6 +1511,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "questionField"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
+- !private ["PSo18UITraitEnvironment", "setTitle"]
+- !private ["PSo18UITraitEnvironment", "setTitleColor"]
 - !private ["PSo18UITraitEnvironment", "show"]
 - ["PSo18UITraitEnvironment", "showTopics"]
 - ["PSo18UITraitEnvironment", "submitQuestion"]
@@ -1417,6 +1534,8 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "setImage"]
+- !private ["CSo6UIView", "setTitle"]
+- !private ["CSo6UIView", "setTitleColor"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "titleLabel"]
 - ["CSo16UIViewController", "AnyObject"]
@@ -1430,6 +1549,8 @@ depends-member:
 - ["CSo16UIViewController", "PopupController"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIControlState"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -1451,6 +1572,7 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "didShowHandler"]
 - !private ["CSo16UIViewController", "dismiss"]
+- ["CSo16UIViewController", "finalTopic"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "instance"]
 - !private ["CSo16UIViewController", "performSegue"]
@@ -1485,19 +1607,22 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitleColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "darkGray"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "DemoPopupViewController2"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Name"]
@@ -1508,6 +1633,8 @@ depends-member:
 - ["Ps9_Hashable", "PopupController"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "String"]
+- !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIControlState"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -1523,6 +1650,7 @@ depends-member:
 - !private ["Ps9_Hashable", "create"]
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "customize"]
+- !private ["Ps9_Hashable", "darkGray"]
 - !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "deinit"]
 - !private ["Ps9_Hashable", "destination"]
@@ -1530,6 +1658,7 @@ depends-member:
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "didShowHandler"]
 - !private ["Ps9_Hashable", "dismiss"]
+- ["Ps9_Hashable", "finalTopic"]
 - !private ["Ps9_Hashable", "identifier"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instance"]
@@ -1547,6 +1676,8 @@ depends-member:
 - !private ["Ps9_Hashable", "resignFirstResponder"]
 - !private ["Ps9_Hashable", "saveInBackground"]
 - !private ["Ps9_Hashable", "setImage"]
+- !private ["Ps9_Hashable", "setTitle"]
+- !private ["Ps9_Hashable", "setTitleColor"]
 - !private ["Ps9_Hashable", "show"]
 - ["Ps9_Hashable", "showTopics"]
 - !private ["Ps9_Hashable", "slideUp"]
@@ -1586,7 +1717,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "userInfo"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
@@ -1613,10 +1744,10 @@ depends-nominal:
 - "Ps7CVarArg"
 - !private "Vs11ClosedRange"
 - !private "Ps10Collection"
-- !private "Ps10Comparable"
+- "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "C4Guru24DemoPopupViewController2"
 - "Vs10Dictionary"
@@ -1625,11 +1756,11 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "C4Guru8HomePage"
 - "SQ"
@@ -1640,19 +1771,19 @@ depends-nominal:
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
+- "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
 - "VCSo14NSNotification4Name"
 - "V10Foundation12Notification"
 - "CSo18NotificationCenter"
@@ -1682,12 +1813,13 @@ depends-nominal:
 - "SS"
 - !private "PSo22TVIParticipantDelegate"
 - !private "PSo15TVIRoomDelegate"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "CSo8UIButton"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
@@ -1720,18 +1852,19 @@ depends-nominal:
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
 - !private "Ps26_ExpressibleByImageLiteral"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
-- !private "Ps21_ObjectiveCBridgeable"
+- "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
@@ -1846,4 +1979,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "c98de2c629944862fd16e18979e66d08"
+interface-hash: "cf37005276a699a3ec5d5bb0cc2372f3"

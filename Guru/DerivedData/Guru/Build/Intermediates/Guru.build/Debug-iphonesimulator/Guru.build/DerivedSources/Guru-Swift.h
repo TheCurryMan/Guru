@@ -218,6 +218,7 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified askedLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topicButton;
 @property (nonatomic, strong) PopupController * _Nonnull popup;
+@property (nonatomic, copy) NSString * _Nonnull finalTopic;
 - (IBAction)tapped:(id _Nonnull)sender;
 - (IBAction)pressedAsk:(UIButton * _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
