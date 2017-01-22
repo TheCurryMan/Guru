@@ -178,8 +178,8 @@ SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
 @class UIButton;
+@class UITextField;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
 @interface HomePage : UIViewController
@@ -190,11 +190,11 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic, strong) PFObject * _Nullable question;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
 - (IBAction)tapped:(id _Nonnull)sender;
-- (IBAction)pressedAsk:(id _Nonnull)sender;
+- (IBAction)pressedAsk:(UIButton * _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)submitQuestion;
+- (void)submitQuestionWithSender:(UIButton * _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (IBAction)accept:(id _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
