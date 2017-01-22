@@ -10,6 +10,8 @@
 		16F579B5A60682A874D89313 /* Pods_Guru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */; };
 		4326C5A422095AE111FFAEF9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		6514C0C0DD4146398976A739 /* Pods_GuruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */; };
+		77D66B831E33E1B200C90E01 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B821E33E1B200C90E01 /* VideoVC.swift */; };
+		77D66B851E33E34600C90E01 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B841E33E34600C90E01 /* Utils.swift */; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
 		AF2821631E33373500493A74 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821621E33373500493A74 /* Camera.png */; };
 		AF2821651E33440500493A74 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821641E33440500493A74 /* circle.png */; };
@@ -59,6 +61,8 @@
 		72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.release.xcconfig"; sourceTree = "<group>"; };
 		77AA496A1E336B3A0065DC6B /* Guru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guru.entitlements; sourceTree = "<group>"; };
+		77D66B821E33E1B200C90E01 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		77D66B841E33E34600C90E01 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBCFAF66F74F2ADF68E3E27 /* Pods-GuruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A326BE5B6BCB5F3DAC5D4E50 /* Pods-GuruTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +183,11 @@
 				AF2821661E33448500493A74 /* WaitingScreen.swift */,
 				E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */,
 				E1F3F3341E331BB4003C281D /* Main.storyboard */,
+				AFB441771E332246006C3864 /* HomePage.swift */,
+				AF2821661E33448500493A74 /* WaitingScreen.swift */,
+				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
+				77D66B841E33E34600C90E01 /* Utils.swift */,
+				E1F3F33C1E331BB4003C281D /* Info.plist */,
 				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
 				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
@@ -191,7 +200,6 @@
 				E1F3F3711E33F058003C281D /* cancel (1).png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
 				AF2821681E33466700493A74 /* Guru_green.png */,
-				E1F3F33C1E331BB4003C281D /* Info.plist */,
 			);
 			path = Guru;
 			sourceTree = "<group>";
@@ -516,8 +524,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D66B831E33E1B200C90E01 /* VideoVC.swift in Sources */,
 				AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */,
 				E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */,
+				77D66B851E33E34600C90E01 /* Utils.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
 				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
@@ -675,6 +685,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Guru/Guru.entitlements;
 				DEVELOPMENT_TEAM = 9FC732TXJR;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Guru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcdwebdesign.guru;
@@ -692,6 +703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Guru/Guru.entitlements;
 				DEVELOPMENT_TEAM = 9FC732TXJR;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Guru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcdwebdesign.guru;

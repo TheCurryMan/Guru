@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -140,7 +140,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-652" y="139"/>
         </scene>
         <!--Guru Requests View Controller-->
         <scene sceneID="E1Q-f6-cip">
@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8EL-h1-6ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632.79999999999995" y="-534.78260869565224"/>
+            <point key="canvasLocation" x="177" y="-975"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="qtK-MN-U1n">
@@ -330,7 +330,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="632.79999999999995" y="138.98050974512745"/>
+            <point key="canvasLocation" x="228" y="139"/>
         </scene>
         <!--Accept View Controller-->
         <scene sceneID="FLu-gK-9Xv">
@@ -407,12 +407,12 @@
                         <outlet property="backgroundView" destination="8Zb-eV-0WR" id="14H-UO-Ixt"/>
                         <outlet property="questionLabel" destination="WLV-FU-Sm9" id="dRs-57-3NT"/>
                         <outlet property="topicLabel" destination="wGH-8j-IdV" id="J8j-ev-aA4"/>
-                        <segue destination="uEA-wC-0KF" kind="presentation" identifier="decline" id="gaI-DI-dbc"/>
+                        <segue destination="2xA-kP-gBz" kind="presentation" identifier="acceptCallSegue" id="S2a-jK-q84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BG9-ek-9HM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1349.5999999999999" y="-535.68215892053979"/>
+            <point key="canvasLocation" x="1350" y="-974"/>
         </scene>
         <!--Waiting Screen-->
         <scene sceneID="SZm-73-hRi">
@@ -426,7 +426,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BKG.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLz-8g-3Zw">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BKG.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLz-8g-3Zw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -436,9 +436,6 @@
                                 <state key="normal" image="cancel (1).png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="0ja-Hk-275" kind="presentation" id="jY9-7s-xex"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="38X-nd-4Zd">
                                 <rect key="frame" x="47" y="206" width="280" height="280"/>
@@ -467,22 +464,91 @@
             </objects>
             <point key="canvasLocation" x="1349.5999999999999" y="127.28635682158921"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aSH-n0-quh">
+        <!--VideoVC-->
+        <scene sceneID="jR3-9A-OVa">
             <objects>
-                <viewController id="cqS-ic-780" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="videoVC" id="OUN-nR-Bto" customClass="VideoVC" customModule="Guru" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0cG-SH-DbU"/>
-                        <viewControllerLayoutGuide type="bottom" id="hxF-VQ-JXb"/>
+                        <viewControllerLayoutGuide type="top" id="BNy-XN-Qra"/>
+                        <viewControllerLayoutGuide type="bottom" id="hgF-A4-5qa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mp3-h5-dTr">
+                    <view key="view" contentMode="scaleToFill" id="2Ut-EB-YJo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkp-y0-zla">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEc-xl-TQH">
+                                <rect key="frame" x="253" y="502" width="122" height="165"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="TGW-Qi-hZW"/>
+                                    <constraint firstAttribute="width" constant="122" id="c31-rH-ubl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuB-Pm-mmk" userLabel="Mic Button">
+                                <rect key="frame" x="147" y="610" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sXL-Y7-g05"/>
+                                    <constraint firstAttribute="width" constant="80" id="xTU-G7-vul"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Mute">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleMicWithSender:" destination="OUN-nR-Bto" eventType="touchUpInside" id="Myp-Bh-jrN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="logz" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf9-bw-9xN">
+                                <rect key="frame" x="0.0" y="10" width="375" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1E-zI-Wg2">
+                                <rect key="frame" x="50" y="610" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VYb-aq-8pc"/>
+                                    <constraint firstAttribute="width" constant="80" id="hOf-mi-bfN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnectWithSender:" destination="OUN-nR-Bto" eventType="touchUpInside" id="tl8-3x-9Ba"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OuB-Pm-mmk" firstAttribute="leading" secondItem="o1E-zI-Wg2" secondAttribute="trailing" constant="17" id="COV-E1-Vef"/>
+                            <constraint firstAttribute="trailing" secondItem="lEc-xl-TQH" secondAttribute="trailing" id="E4T-70-AHS"/>
+                            <constraint firstItem="hgF-A4-5qa" firstAttribute="top" secondItem="OuB-Pm-mmk" secondAttribute="bottom" constant="13" id="Kyr-Cz-Zk1"/>
+                            <constraint firstItem="hgF-A4-5qa" firstAttribute="top" secondItem="o1E-zI-Wg2" secondAttribute="bottom" constant="13" id="TYD-fQ-bWw"/>
+                            <constraint firstItem="hgF-A4-5qa" firstAttribute="top" secondItem="lEc-xl-TQH" secondAttribute="bottom" id="U5T-zL-HVU"/>
+                            <constraint firstItem="lEc-xl-TQH" firstAttribute="leading" secondItem="OuB-Pm-mmk" secondAttribute="trailing" constant="26" id="sDB-nP-7s9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="connectButton" destination="o1E-zI-Wg2" id="D9B-9w-c8i"/>
+                        <outlet property="disconnectButton" destination="o1E-zI-Wg2" id="aN2-vx-IjQ"/>
+                        <outlet property="messageLabel" destination="Gf9-bw-9xN" id="UQ3-4e-Xua"/>
+                        <outlet property="micButton" destination="OuB-Pm-mmk" id="QPf-mJ-Ig4"/>
+                        <outlet property="previewView" destination="lEc-xl-TQH" id="FoP-fT-xpA"/>
+                        <outlet property="remoteView" destination="zkp-y0-zla" id="Bzg-3J-5L1"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QjC-KA-jJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZj-Vd-U9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1997.5999999999999" y="127.28635682158921"/>
         </scene>
     </scenes>
     <resources>
@@ -495,7 +561,7 @@
         <image name="notifications-button (1).png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jY9-7s-xex"/>
-        <segue reference="gaI-DI-dbc"/>
+        <segue reference="qIo-tJ-kbc"/>
+        <segue reference="Xwg-Wr-Z0h"/>
     </inferredMetricsTieBreakers>
 </document>
