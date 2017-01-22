@@ -46,7 +46,8 @@ class LDViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.disconnectFromChatRoom()
+        print("disconnecting from live query server")
+        self.disconnectFromServer()
     }
     
     func subscribeLiveQuery(){
@@ -83,7 +84,7 @@ class LDViewController: UIViewController {
     }
     
     
-    func disconnectFromChatRoom() {
+    func disconnectFromServer() {
         liveQueryClient.unsubscribe(pointQuery, handler: subscriptionQuery!)
     }
     
@@ -180,8 +181,10 @@ class LDViewController: UIViewController {
         
         if let touch = touches.first {
             let currentPoint = touch.location(in: self.view)
-            sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
-            drawLines(fromPoint: lastPoint, toPoint: currentPoint)
+            if (self.toggleStatus == 1) {
+                sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
+                drawLines(fromPoint: lastPoint, toPoint: currentPoint)
+            }
             
             lastPoint = currentPoint
         }

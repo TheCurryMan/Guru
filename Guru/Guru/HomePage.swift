@@ -56,10 +56,12 @@ class HomePage: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         questionField.text = ""
         subjectsEntered.text = ""
-        
-        pointsLabel.text = String(PFUser.current()?["points"] as! Int)
-        answeredLabel.text = String(PFUser.current()?["answered"] as! Int)
-        askedLabel.text = String(PFUser.current()?["asked"] as! Int)
+        PFUser.current()?.fetchInBackground(block: { (user: PFObject?, error: Error?) in
+            self.pointsLabel.text = String(user?["points"] as! Int)
+            self.answeredLabel.text = String(user?["answered"] as! Int)
+            self.askedLabel.text = String(user?["asked"] as! Int)
+        })
+       
         
     }
     

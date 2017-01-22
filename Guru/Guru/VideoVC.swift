@@ -52,10 +52,15 @@ class VideoVC: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = inRoom
     }
     
+    @IBAction func camChange(_ sender: Any) {
+        print("toggling cam")
+        self.delegate?.toggleCamera()
+    }
     
     @IBAction func disconnect(sender: AnyObject) {
         print("disconnecting user")
         self.delegate?.disconnect(sender: sender)
+        self.liveDrawVC?.disconnectFromServer()
     }
     @IBAction func toggleMic(sender: AnyObject) {
         print("toggle mic")

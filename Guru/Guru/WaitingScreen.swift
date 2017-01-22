@@ -13,6 +13,7 @@ import Parse
 protocol WaitingScreenDelegate: class {
     func toggleMic(sender: AnyObject)
     func disconnect(sender: AnyObject)
+    func toggleCamera()
 }
 
 class WaitingScreen: UIViewController, WaitingScreenDelegate {
@@ -49,6 +50,7 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         self.videoScreen.view.alpha = 0
         self.videoScreen.view.isUserInteractionEnabled = false
         self.videoScreen.question = question
+        self.videoScreen.delegate = self
         
         self.questionLabel.text = self.question["text"] as? String
         
@@ -164,10 +166,11 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
             
             logMessage(messageText: "Video track added to localMedia")
             
-            // We will flip camera on tap.
-            let tap = UITapGestureRecognizer(target: self, action: #selector(WaitingScreen.flipCamera))
-            self.videoScreen.previewView.addGestureRecognizer(tap)
         }
+    }
+    
+    func toggleCamera() {
+        self.flipCamera()
     }
     
     func flipCamera() {
@@ -282,6 +285,7 @@ extension WaitingScreen: TVIRoomDelegate {
             cleanupRemoteParticipant()
         }
         logMessage(messageText: "Room \(room.name), Participant \(participant.identity) disconnected")
+        self.room!.disconnect()
     }
 }
 

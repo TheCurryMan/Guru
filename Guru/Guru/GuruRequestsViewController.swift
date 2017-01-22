@@ -32,6 +32,7 @@ class GuruRequestsViewController: UIViewController, UITableViewDataSource, UITab
         
         let query = PFQuery(className: "Requests")
         query.whereKey("tutor", equalTo: PFUser.current()!)
+        query.whereKeyDoesNotExist("question.tutor")
         query.order(byAscending: "createdAt")
         query.includeKeys(["question", "question.student"])
         query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
