@@ -19,6 +19,7 @@ class LDViewController: UIViewController {
     @IBOutlet var swipeDownRec: UISwipeGestureRecognizer!
     @IBOutlet var resetButton: UIButton!
     @IBOutlet weak var toggleButton: UIButton!
+    var question: PFObject!
 
     var lastPoint = CGPoint.zero
     var swiped = false
@@ -36,12 +37,17 @@ class LDViewController: UIViewController {
     
     var pointQuery: PFQuery<Point> {
         return (Point.query()?
-            .whereKey("fromX", notEqualTo: "")) as! PFQuery<Point>
+                .whereKey("userID", notEqualTo: PFUser.current()!.objectId!).whereKey("questionID", equalTo: self.question.objectId!)) as! PFQuery<Point>
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.subscribeLiveQuery()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.disconnectFromChatRoom()
     }
     
     func subscribeLiveQuery(){
@@ -74,21 +80,10 @@ class LDViewController: UIViewController {
         }
     }
     
-//    func fetchPointData()
-//    {
-//        let Point_PFOBJ = PFObject(className:"Point")
-//        Point_PFOBJ.fetchInBackground { (updatedQuestion: PFObject?, error: Error?) in
-//            if (updatedQuestion?["tutor"] == nil) {
-//                self.question["tutor"] = PFUser.current()!
-//                self.question.saveEventually()
-//                self.performSegue(withIdentifier: "acceptCallSegue", sender: self)
-//            }
-//            else {
-//                _ = self.navigationController?.popViewController(animated: true)
-//            }
-//        }
-//
-//    }
+
+    func disconnectFromChatRoom() {
+        liveQueryClient.unsubscribe(pointQuery, handler: subscriptionQuery!)
+    }
     
     // MARK: - IBACTIONS
     

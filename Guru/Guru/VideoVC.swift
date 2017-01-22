@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class VideoVC: UIViewController {
     
@@ -18,11 +19,13 @@ class VideoVC: UIViewController {
     @IBOutlet weak var micButton: UIButton!
     
     weak var delegate:WaitingScreenDelegate?
-    
+    var question: PFObject!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let liveDrawVC = self.storyboard?.instantiateViewController(withIdentifier: "LiveDrawing") as! LDViewController
+        liveDrawVC.question = question
         self.addChildViewController(liveDrawVC)
         self.view.addSubview(liveDrawVC.view)
         
