@@ -6,41 +6,42 @@ provides-nominal:
 provides-member:
 - ["C4Guru7VideoVC", ""]
 provides-dynamic-lookup:
-- "disconnect"
-- "showRoomUI"
+- "question"
+- "remoteView"
+- "viewDidLoad"
 - "disconnectButton"
 - "didReceiveMemoryWarning"
-- "remoteView"
-- "prefersStatusBarHidden"
-- "toggleMic"
-- "previewView"
-- "question"
-- "viewDidLoad"
-- "messageLabel"
-- "micButton"
+- "disconnect"
 - "viewDidAppear"
+- "micButton"
+- "prefersStatusBarHidden"
+- "showRoomUI"
+- "previewView"
+- "toggleMic"
+- "messageLabel"
 depends-top-level:
 - "UILabel"
-- "WaitingScreenDelegate"
-- "AssignmentPrecedence"
-- !private "LDViewController"
-- "CastingPrecedence"
-- "UIButton"
-- !private "print"
-- !private "StringLiteralType"
-- !private "!"
-- !private "UIApplication"
-- "Bool"
-- "UIView"
-- "PFObject"
-- "VideoVC"
-- "AnyObject"
 - "UIViewController"
+- "PFObject"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "UIApplication"
+- "AnyObject"
 - !private "BooleanLiteralType"
+- "UIView"
+- "VideoVC"
+- !private "LDViewController"
+- "Bool"
+- !private "!"
+- !private "print"
+- "UIButton"
+- !private "StringLiteralType"
+- "WaitingScreenDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "addChildViewController"]
 - !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "bringSubview"]
 - ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -52,6 +53,7 @@ depends-member:
 - !private ["Ps9AnyObject", "isIdleTimerDisabled"]
 - ["Ps9AnyObject", "messageLabel"]
 - ["Ps9AnyObject", "micButton"]
+- !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "prefersStatusBarHidden"]
 - ["Ps9AnyObject", "previewView"]
 - !private ["Ps9AnyObject", "print"]
@@ -67,10 +69,12 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "bringSubview"]
 - !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["Ps7CVarArg", "UIApplication"]
 - !private ["Ps7CVarArg", "addChildViewController"]
 - !private ["Ps7CVarArg", "addSubview"]
+- !private ["Ps7CVarArg", "bringSubview"]
 - ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "disconnect"]
@@ -81,6 +85,7 @@ depends-member:
 - !private ["Ps7CVarArg", "isIdleTimerDisabled"]
 - ["Ps7CVarArg", "messageLabel"]
 - ["Ps7CVarArg", "micButton"]
+- !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "prefersStatusBarHidden"]
 - ["Ps7CVarArg", "previewView"]
 - !private ["Ps7CVarArg", "print"]
@@ -98,6 +103,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "addChildViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "bringSubview"]
 - ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "disconnect"]
@@ -108,6 +114,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "isIdleTimerDisabled"]
 - ["Ps28CustomDebugStringConvertible", "messageLabel"]
 - ["Ps28CustomDebugStringConvertible", "micButton"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
 - ["Ps28CustomDebugStringConvertible", "previewView"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -126,6 +133,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "addChildViewController"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "bringSubview"]
 - ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "disconnect"]
@@ -136,6 +144,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "isIdleTimerDisabled"]
 - ["Ps23CustomStringConvertible", "messageLabel"]
 - ["Ps23CustomStringConvertible", "micButton"]
+- !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
 - ["Ps23CustomStringConvertible", "previewView"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -152,6 +161,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "addChildViewController"]
 - !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "bringSubview"]
 - ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "disconnect"]
@@ -162,6 +172,7 @@ depends-member:
 - !private ["Ps9Equatable", "isIdleTimerDisabled"]
 - ["Ps9Equatable", "messageLabel"]
 - ["Ps9Equatable", "micButton"]
+- !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "prefersStatusBarHidden"]
 - ["Ps9Equatable", "previewView"]
 - !private ["Ps9Equatable", "print"]
@@ -182,6 +193,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "addChildViewController"]
 - !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "bringSubview"]
 - ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "disconnect"]
@@ -192,6 +204,7 @@ depends-member:
 - !private ["Ps8Hashable", "isIdleTimerDisabled"]
 - ["Ps8Hashable", "messageLabel"]
 - ["Ps8Hashable", "micButton"]
+- !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "prefersStatusBarHidden"]
 - ["Ps8Hashable", "previewView"]
 - !private ["Ps8Hashable", "print"]
@@ -215,6 +228,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "addChildViewController"]
 - !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "bringSubview"]
 - ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "disconnect"]
@@ -223,6 +237,7 @@ depends-member:
 - !private ["PSo8NSCoding", "isHidden"]
 - ["PSo8NSCoding", "messageLabel"]
 - ["PSo8NSCoding", "micButton"]
+- !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
 - ["PSo8NSCoding", "previewView"]
 - !private ["PSo8NSCoding", "print"]
@@ -245,6 +260,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "messageLabel"]
 - ["PSo26NSExtensionRequestHandling", "micButton"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - ["PSo26NSExtensionRequestHandling", "previewView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -269,6 +285,7 @@ depends-member:
 - ["CSo8NSObject", "WaitingScreenDelegate"]
 - !private ["CSo8NSObject", "addChildViewController"]
 - !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "bringSubview"]
 - ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "disconnect"]
@@ -279,6 +296,7 @@ depends-member:
 - !private ["CSo8NSObject", "isIdleTimerDisabled"]
 - ["CSo8NSObject", "messageLabel"]
 - ["CSo8NSObject", "micButton"]
+- !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "prefersStatusBarHidden"]
 - ["CSo8NSObject", "previewView"]
 - !private ["CSo8NSObject", "print"]
@@ -294,6 +312,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "addChildViewController"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "bringSubview"]
 - ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "disconnect"]
@@ -304,6 +323,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isIdleTimerDisabled"]
 - ["PSo16NSObjectProtocol", "messageLabel"]
 - ["PSo16NSObjectProtocol", "micButton"]
+- !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - ["PSo16NSObjectProtocol", "previewView"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -325,12 +345,15 @@ depends-member:
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "bringSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "bringSubview"]
 - !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "addChildViewController"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "bringSubview"]
 - ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "disconnect"]
@@ -339,6 +362,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
 - ["PSo21UIAppearanceContainer", "messageLabel"]
 - ["PSo21UIAppearanceContainer", "micButton"]
+- !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - ["PSo21UIAppearanceContainer", "previewView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -364,6 +388,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "messageLabel"]
 - ["PSo18UIContentContainer", "micButton"]
+- !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - ["PSo18UIContentContainer", "previewView"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -378,12 +403,15 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "bringSubview"]
 - !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "bringSubview"]
 - !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "addChildViewController"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "bringSubview"]
 - ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "disconnect"]
@@ -392,6 +420,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
 - ["PSo18UIFocusEnvironment", "messageLabel"]
 - ["PSo18UIFocusEnvironment", "micButton"]
+- !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UIFocusEnvironment", "previewView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -405,6 +434,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "bringSubview"]
 - !private ["PSo11UIFocusItem", "isHidden"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -417,6 +447,7 @@ depends-member:
 - ["CSo11UIResponder", "WaitingScreenDelegate"]
 - !private ["CSo11UIResponder", "addChildViewController"]
 - !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "bringSubview"]
 - ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "disconnect"]
@@ -426,6 +457,7 @@ depends-member:
 - !private ["CSo11UIResponder", "isIdleTimerDisabled"]
 - ["CSo11UIResponder", "messageLabel"]
 - ["CSo11UIResponder", "micButton"]
+- !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
 - ["CSo11UIResponder", "previewView"]
 - !private ["CSo11UIResponder", "print"]
@@ -441,6 +473,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - !private ["PSo30UIResponderStandardEditActions", "addChildViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "bringSubview"]
 - ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "disconnect"]
@@ -450,6 +483,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "isIdleTimerDisabled"]
 - ["PSo30UIResponderStandardEditActions", "messageLabel"]
 - ["PSo30UIResponderStandardEditActions", "micButton"]
+- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
 - ["PSo30UIResponderStandardEditActions", "previewView"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
@@ -472,6 +506,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "messageLabel"]
 - ["PSo16UIStateRestoring", "micButton"]
+- !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - ["PSo16UIStateRestoring", "previewView"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -489,6 +524,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "addChildViewController"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "bringSubview"]
 - ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "disconnect"]
@@ -497,6 +533,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "isHidden"]
 - ["PSo18UITraitEnvironment", "messageLabel"]
 - ["PSo18UITraitEnvironment", "micButton"]
+- !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UITraitEnvironment", "previewView"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -510,6 +547,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "bringSubview"]
 - !private ["CSo6UIView", "isHidden"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
@@ -529,6 +567,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "messageLabel"]
 - ["CSo16UIViewController", "micButton"]
+- !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
 - ["CSo16UIViewController", "previewView"]
 - !private ["CSo16UIViewController", "print"]
@@ -559,6 +598,7 @@ depends-member:
 - ["C4Guru7VideoVC", "init"]
 - ["C4Guru7VideoVC", "messageLabel"]
 - ["C4Guru7VideoVC", "micButton"]
+- !private ["C4Guru7VideoVC", "performSegue"]
 - ["C4Guru7VideoVC", "prefersStatusBarHidden"]
 - ["C4Guru7VideoVC", "previewView"]
 - !private ["C4Guru7VideoVC", "print"]
@@ -573,6 +613,7 @@ depends-member:
 - !private ["P4Guru21WaitingScreenDelegate", "disconnect"]
 - !private ["P4Guru21WaitingScreenDelegate", "toggleMic"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bringSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -582,6 +623,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIApplication"]
 - !private ["Ps9_Hashable", "addChildViewController"]
 - !private ["Ps9_Hashable", "addSubview"]
+- !private ["Ps9_Hashable", "bringSubview"]
 - ["Ps9_Hashable", "delegate"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "disconnect"]
@@ -592,6 +634,7 @@ depends-member:
 - !private ["Ps9_Hashable", "isIdleTimerDisabled"]
 - ["Ps9_Hashable", "messageLabel"]
 - ["Ps9_Hashable", "micButton"]
+- !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "prefersStatusBarHidden"]
 - ["Ps9_Hashable", "previewView"]
 - !private ["Ps9_Hashable", "print"]

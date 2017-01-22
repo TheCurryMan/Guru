@@ -1,9 +1,9 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "77ac1582e339fbed3247b6e25708dd66"
-build_time: [538386899, 301867000]
+build_time: [538389131, 730121000]
 inputs:
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/LDViewController.swift": [538386898, 0]
-  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/VideoVC.swift": [538384574, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/VideoVC.swift": [538389130, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/WaitingScreen.swift": [538386091, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/ViewController.swift": [538289559, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Utils.swift": [538362275, 0]
