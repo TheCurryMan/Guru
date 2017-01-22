@@ -18,6 +18,10 @@ class HomePage: UIViewController {
     var question: PFObject?
 	@IBOutlet weak var backgroundView: UIView!
     
+    @IBOutlet weak var pointsLabel: UILabel!
+    @IBOutlet weak var answeredLabel: UILabel!
+    @IBOutlet weak var askedLabel: UILabel!
+    
     @IBAction func tapped(_ sender: Any) {
         questionField.resignFirstResponder()
         subjectsEntered.resignFirstResponder()
@@ -44,12 +48,19 @@ class HomePage: UIViewController {
         else {
             acceptButton.setImage(UIImage(named: "red.png"), for: .normal)
         }
+        
+        
     
     }
     
     override func viewWillAppear(_ animated: Bool) {
         questionField.text = ""
         subjectsEntered.text = ""
+        
+        pointsLabel.text = String(PFUser.current()?["points"] as! Int)
+        answeredLabel.text = String(PFUser.current()?["answered"] as! Int)
+        askedLabel.text = String(PFUser.current()?["asked"] as! Int)
+        
     }
     
     func submitQuestion(sender: UIButton) {

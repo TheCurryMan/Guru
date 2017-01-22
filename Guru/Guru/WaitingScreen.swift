@@ -36,6 +36,7 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
     // MARK: UI Element Outlets and handles
     @IBOutlet weak var circles: UIImageView!
     @IBOutlet weak var guru: UIImageView!
+    @IBOutlet var dismissButton: UIButton!
     var videoScreen: VideoVC!
 
     override func viewDidLoad() {
@@ -45,6 +46,8 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         self.view.addSubview(self.videoScreen.view)
         self.videoScreen.view.alpha = 0
         self.videoScreen.view.isUserInteractionEnabled = false
+        self.videoScreen.question = question
+        
         localMedia = TVILocalMedia()
         
         if PlatformUtils.isSimulator {
@@ -209,6 +212,7 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
     
     
     @IBAction func dismissView(_ sender: Any) {
+        print("dismissing view")
         self.dismiss(animated: true, completion: nil)
     }
 
@@ -228,6 +232,8 @@ extension WaitingScreen: TVIRoomDelegate {
             UIView.animate(withDuration: 0.5) {
                 self.videoScreen.view.alpha = 1
             }
+            self.videoScreen.view.isUserInteractionEnabled = true
+            self.dismissButton.isEnabled = false
         }
     }
     
@@ -259,6 +265,7 @@ extension WaitingScreen: TVIRoomDelegate {
             self.videoScreen.view.alpha = 1
         }
         self.videoScreen.view.isUserInteractionEnabled = true
+        self.dismissButton.isEnabled = false
     }
     
     func room(_ room: TVIRoom, participantDidDisconnect participant: TVIParticipant) {
@@ -275,6 +282,7 @@ extension WaitingScreen : TVIParticipantDelegate {
         logMessage(messageText: "Participant \(participant.identity) added video track")
         
         if (self.participant == participant) {
+            print("THIS IS THE HEIGHT: \(videoTrack.videoDimensions.height)")
             videoTrack.attach(self.videoScreen.remoteView)
         }
     }

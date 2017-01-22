@@ -7,26 +7,31 @@
 //
 
 import UIKit
+import Parse
 
 class VideoVC: UIViewController {
     
     @IBOutlet weak var remoteView: UIView!
     @IBOutlet weak var previewView: UIView!
-    @IBOutlet weak var connectButton: UIButton!
     @IBOutlet weak var disconnectButton: UIButton!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var micButton: UIButton!
     
     weak var delegate:WaitingScreenDelegate?
-    
+    var question: PFObject!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         let liveDrawVC = self.storyboard?.instantiateViewController(withIdentifier: "LiveDrawing") as! LDViewController
+        liveDrawVC.question = question
         self.addChildViewController(liveDrawVC)
         self.view.addSubview(liveDrawVC.view)
-        
-        // Do any additional setup after loading the view.
     }
     
     override var prefersStatusBarHidden: Bool
@@ -40,7 +45,6 @@ class VideoVC: UIViewController {
     }
     
     func showRoomUI(inRoom: Bool) {
-        self.connectButton.isHidden = inRoom
         self.micButton.isHidden = !inRoom
         self.disconnectButton.isHidden = !inRoom
         UIApplication.shared.isIdleTimerDisabled = inRoom
@@ -48,9 +52,11 @@ class VideoVC: UIViewController {
     
     
     @IBAction func disconnect(sender: AnyObject) {
+        print("disconnecting user")
         self.delegate?.disconnect(sender: sender)
     }
     @IBAction func toggleMic(sender: AnyObject) {
+        print("toggle mic")
         self.delegate?.toggleMic(sender: sender)
     }
     

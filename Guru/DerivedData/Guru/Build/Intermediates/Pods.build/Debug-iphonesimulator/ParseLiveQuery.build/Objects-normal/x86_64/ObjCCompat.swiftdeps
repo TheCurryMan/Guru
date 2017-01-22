@@ -1,0 +1,912 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ObjCCompat_SubscriptionHandling"
+- "PFLiveQueryEventType"
+- "ObjCCompat"
+provides-nominal:
+- "P14ParseLiveQuery31ObjCCompat_SubscriptionHandling"
+- "O14ParseLiveQuery20PFLiveQueryEventType"
+- "V14ParseLiveQuery10ObjCCompat"
+- "CV14ParseLiveQuery10ObjCCompat5Event"
+- "CV14ParseLiveQuery10ObjCCompat12Subscription"
+provides-member:
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", ""]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", ""]
+- ["V14ParseLiveQuery10ObjCCompat", ""]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", ""]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", ""]
+- ["C14ParseLiveQuery6Client", ""]
+- ["CSo7PFQuery", ""]
+- ["C14ParseLiveQuery6Client", "_PF_objc_subscribe"]
+- ["C14ParseLiveQuery6Client", "_PF_objc_subscribe"]
+- ["C14ParseLiveQuery6Client", "_PF_objc_unsubscribe"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "init"]
+- ["CSo7PFQuery", "_PF_objc_subscribe"]
+provides-dynamic-lookup:
+- "_PF_objc_subscribe"
+- "_PF_objc_subscribe"
+- "_PF_objc_unsubscribe"
+- "didSubscribe"
+- "didSubscribe"
+- "addUnsubscribeHandler"
+- "subscribeHandlers"
+- "type"
+- "addEventHandler"
+- "errorHandlers"
+- "didRecieveError"
+- "didRecieveError"
+- "addUpdateHandler"
+- "addCreateHandler"
+- "eventHandlers"
+- "addEnterHandler"
+- "addDeleteHandler"
+- "unsubscribeHandlers"
+- "addSubscribeHandler"
+- "didRecieveEvent"
+- "didRecieveEvent"
+- "addErrorHandler"
+- "didUnsubscribe"
+- "didUnsubscribe"
+- "object"
+- "addLeaveHandler"
+depends-top-level:
+- !private "==="
+- "NSObject"
+- "CastingPrecedence"
+- !private "objc_setAssociatedObject"
+- "=="
+- !private "~="
+- "PFObject"
+- "AssignmentPrecedence"
+- "ObjCCompat"
+- "IntegerLiteralType"
+- !private "Error"
+- !private "TernaryPrecedence"
+- "ObjCCompat_SubscriptionHandling"
+- "PFQuery"
+- "NSError"
+- "FloatLiteralType"
+- !private "&&"
+- "PFLiveQueryEventType"
+- "Void"
+- "BooleanLiteralType"
+- "Int"
+- "ParseLiveQuery"
+- !private "SubscriptionHandling"
+- "Event"
+- !private "StringLiteralType"
+- "Client"
+depends-member:
+- !private ["Ps9AnyObject", "Client"]
+- ["Ps9AnyObject", "ErrorHandler"]
+- ["Ps9AnyObject", "EventHandler"]
+- !private ["Ps9AnyObject", "HandlerConverter"]
+- !private ["Ps9AnyObject", "ObjCCompat"]
+- !private ["Ps9AnyObject", "PFObjectSubclass"]
+- ["Ps9AnyObject", "SubscribeHandler"]
+- ["Ps9AnyObject", "_PF_objc_subscribe"]
+- ["Ps9AnyObject", "_PF_objc_unsubscribe"]
+- ["Ps9AnyObject", "addCreateHandler"]
+- ["Ps9AnyObject", "addDeleteHandler"]
+- ["Ps9AnyObject", "addEnterHandler"]
+- ["Ps9AnyObject", "addErrorHandler"]
+- ["Ps9AnyObject", "addEventHandler"]
+- ["Ps9AnyObject", "addLeaveHandler"]
+- ["Ps9AnyObject", "addSubscribeHandler"]
+- ["Ps9AnyObject", "addUnsubscribeHandler"]
+- ["Ps9AnyObject", "addUpdateHandler"]
+- !private ["Ps9AnyObject", "associatedObjectKey"]
+- !private ["Ps9AnyObject", "didEncounter"]
+- !private ["Ps9AnyObject", "didReceive"]
+- ["Ps9AnyObject", "didRecieveError"]
+- ["Ps9AnyObject", "didRecieveEvent"]
+- ["Ps9AnyObject", "didSubscribe"]
+- ["Ps9AnyObject", "didUnsubscribe"]
+- ["Ps9AnyObject", "errorHandlers"]
+- ["Ps9AnyObject", "eventHandlers"]
+- !private ["Ps9AnyObject", "handler"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "objc_setAssociatedObject"]
+- ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "query"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "subscribe"]
+- ["Ps9AnyObject", "subscribeHandlers"]
+- !private ["Ps9AnyObject", "subscriptionHandler"]
+- ["Ps9AnyObject", "type"]
+- !private ["Ps9AnyObject", "unsubscribe"]
+- ["Ps9AnyObject", "unsubscribeHandlers"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "deinit"]
+- !private ["Sa", "forEach"]
+- ["Sa", "init"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "forEach"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "forEach"]
+- ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Client"]
+- ["Ps7CVarArg", "ErrorHandler"]
+- ["Ps7CVarArg", "EventHandler"]
+- !private ["Ps7CVarArg", "HandlerConverter"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "ObjCCompat"]
+- !private ["Ps7CVarArg", "Stride"]
+- ["Ps7CVarArg", "SubscribeHandler"]
+- !private ["Ps7CVarArg", "_Element"]
+- ["Ps7CVarArg", "_PF_objc_subscribe"]
+- ["Ps7CVarArg", "_PF_objc_unsubscribe"]
+- ["Ps7CVarArg", "addCreateHandler"]
+- ["Ps7CVarArg", "addDeleteHandler"]
+- ["Ps7CVarArg", "addEnterHandler"]
+- ["Ps7CVarArg", "addErrorHandler"]
+- ["Ps7CVarArg", "addEventHandler"]
+- ["Ps7CVarArg", "addLeaveHandler"]
+- ["Ps7CVarArg", "addSubscribeHandler"]
+- ["Ps7CVarArg", "addUnsubscribeHandler"]
+- ["Ps7CVarArg", "addUpdateHandler"]
+- !private ["Ps7CVarArg", "append"]
+- ["Ps7CVarArg", "didRecieveError"]
+- ["Ps7CVarArg", "didRecieveEvent"]
+- ["Ps7CVarArg", "didSubscribe"]
+- ["Ps7CVarArg", "didUnsubscribe"]
+- ["Ps7CVarArg", "errorHandlers"]
+- ["Ps7CVarArg", "eventHandlers"]
+- !private ["Ps7CVarArg", "forEach"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "objc_setAssociatedObject"]
+- ["Ps7CVarArg", "object"]
+- !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "subscribe"]
+- ["Ps7CVarArg", "subscribeHandlers"]
+- ["Ps7CVarArg", "type"]
+- !private ["Ps7CVarArg", "unsubscribe"]
+- ["Ps7CVarArg", "unsubscribeHandlers"]
+- ["Ps7CVarArg", ""]
+- !private ["C14ParseLiveQuery6Client", "Client"]
+- !private ["C14ParseLiveQuery6Client", "Error"]
+- !private ["C14ParseLiveQuery6Client", "Event"]
+- !private ["C14ParseLiveQuery6Client", "HandlerConverter"]
+- !private ["C14ParseLiveQuery6Client", "Int"]
+- !private ["C14ParseLiveQuery6Client", "NSError"]
+- ["C14ParseLiveQuery6Client", "ObjCCompat"]
+- ["C14ParseLiveQuery6Client", "ObjCCompat_SubscriptionHandling"]
+- ["C14ParseLiveQuery6Client", "PFObject"]
+- ["C14ParseLiveQuery6Client", "PFQuery"]
+- !private ["C14ParseLiveQuery6Client", "SubscriptionHandling"]
+- ["C14ParseLiveQuery6Client", "_PF_objc_subscribe"]
+- ["C14ParseLiveQuery6Client", "_PF_objc_unsubscribe"]
+- ["C14ParseLiveQuery6Client", "deinit"]
+- !private ["C14ParseLiveQuery6Client", "objc_setAssociatedObject"]
+- !private ["C14ParseLiveQuery6Client", "shared"]
+- !private ["C14ParseLiveQuery6Client", "subscribe"]
+- !private ["C14ParseLiveQuery6Client", "unsubscribe"]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "forEach"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "Client"]
+- ["Ps28CustomDebugStringConvertible", "ErrorHandler"]
+- ["Ps28CustomDebugStringConvertible", "EventHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "HandlerConverter"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "ObjCCompat"]
+- ["Ps28CustomDebugStringConvertible", "SubscribeHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "_PF_objc_subscribe"]
+- ["Ps28CustomDebugStringConvertible", "_PF_objc_unsubscribe"]
+- ["Ps28CustomDebugStringConvertible", "addCreateHandler"]
+- ["Ps28CustomDebugStringConvertible", "addDeleteHandler"]
+- ["Ps28CustomDebugStringConvertible", "addEnterHandler"]
+- ["Ps28CustomDebugStringConvertible", "addErrorHandler"]
+- ["Ps28CustomDebugStringConvertible", "addEventHandler"]
+- ["Ps28CustomDebugStringConvertible", "addLeaveHandler"]
+- ["Ps28CustomDebugStringConvertible", "addSubscribeHandler"]
+- ["Ps28CustomDebugStringConvertible", "addUnsubscribeHandler"]
+- ["Ps28CustomDebugStringConvertible", "addUpdateHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- ["Ps28CustomDebugStringConvertible", "didRecieveError"]
+- ["Ps28CustomDebugStringConvertible", "didRecieveEvent"]
+- ["Ps28CustomDebugStringConvertible", "didSubscribe"]
+- ["Ps28CustomDebugStringConvertible", "didUnsubscribe"]
+- ["Ps28CustomDebugStringConvertible", "errorHandlers"]
+- ["Ps28CustomDebugStringConvertible", "eventHandlers"]
+- !private ["Ps28CustomDebugStringConvertible", "forEach"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "objc_setAssociatedObject"]
+- ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "subscribe"]
+- ["Ps28CustomDebugStringConvertible", "subscribeHandlers"]
+- ["Ps28CustomDebugStringConvertible", "type"]
+- !private ["Ps28CustomDebugStringConvertible", "unsubscribe"]
+- ["Ps28CustomDebugStringConvertible", "unsubscribeHandlers"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "forEach"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Client"]
+- ["Ps23CustomStringConvertible", "ErrorHandler"]
+- ["Ps23CustomStringConvertible", "EventHandler"]
+- !private ["Ps23CustomStringConvertible", "HandlerConverter"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "ObjCCompat"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- ["Ps23CustomStringConvertible", "SubscribeHandler"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- ["Ps23CustomStringConvertible", "_PF_objc_subscribe"]
+- ["Ps23CustomStringConvertible", "_PF_objc_unsubscribe"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "addCreateHandler"]
+- ["Ps23CustomStringConvertible", "addDeleteHandler"]
+- ["Ps23CustomStringConvertible", "addEnterHandler"]
+- ["Ps23CustomStringConvertible", "addErrorHandler"]
+- ["Ps23CustomStringConvertible", "addEventHandler"]
+- ["Ps23CustomStringConvertible", "addLeaveHandler"]
+- ["Ps23CustomStringConvertible", "addSubscribeHandler"]
+- ["Ps23CustomStringConvertible", "addUnsubscribeHandler"]
+- ["Ps23CustomStringConvertible", "addUpdateHandler"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- ["Ps23CustomStringConvertible", "didRecieveError"]
+- ["Ps23CustomStringConvertible", "didRecieveEvent"]
+- ["Ps23CustomStringConvertible", "didSubscribe"]
+- ["Ps23CustomStringConvertible", "didUnsubscribe"]
+- ["Ps23CustomStringConvertible", "errorHandlers"]
+- ["Ps23CustomStringConvertible", "eventHandlers"]
+- !private ["Ps23CustomStringConvertible", "forEach"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "objc_setAssociatedObject"]
+- ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "subscribe"]
+- ["Ps23CustomStringConvertible", "subscribeHandlers"]
+- ["Ps23CustomStringConvertible", "type"]
+- !private ["Ps23CustomStringConvertible", "unsubscribe"]
+- ["Ps23CustomStringConvertible", "unsubscribeHandlers"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Client"]
+- ["Ps9Equatable", "ErrorHandler"]
+- ["Ps9Equatable", "EventHandler"]
+- !private ["Ps9Equatable", "HandlerConverter"]
+- !private ["Ps9Equatable", "OBJC_ASSOCIATION_RETAIN"]
+- !private ["Ps9Equatable", "ObjCCompat"]
+- ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Stride"]
+- ["Ps9Equatable", "SubscribeHandler"]
+- ["Ps9Equatable", "_PF_objc_subscribe"]
+- ["Ps9Equatable", "_PF_objc_unsubscribe"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "addCreateHandler"]
+- ["Ps9Equatable", "addDeleteHandler"]
+- ["Ps9Equatable", "addEnterHandler"]
+- ["Ps9Equatable", "addErrorHandler"]
+- ["Ps9Equatable", "addEventHandler"]
+- ["Ps9Equatable", "addLeaveHandler"]
+- ["Ps9Equatable", "addSubscribeHandler"]
+- ["Ps9Equatable", "addUnsubscribeHandler"]
+- ["Ps9Equatable", "addUpdateHandler"]
+- !private ["Ps9Equatable", "created"]
+- !private ["Ps9Equatable", "deleted"]
+- ["Ps9Equatable", "didRecieveError"]
+- ["Ps9Equatable", "didRecieveEvent"]
+- ["Ps9Equatable", "didSubscribe"]
+- ["Ps9Equatable", "didUnsubscribe"]
+- !private ["Ps9Equatable", "entered"]
+- ["Ps9Equatable", "errorHandlers"]
+- ["Ps9Equatable", "eventHandlers"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "left"]
+- !private ["Ps9Equatable", "objc_setAssociatedObject"]
+- ["Ps9Equatable", "object"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "subscribe"]
+- ["Ps9Equatable", "subscribeHandlers"]
+- ["Ps9Equatable", "type"]
+- !private ["Ps9Equatable", "unsubscribe"]
+- ["Ps9Equatable", "unsubscribeHandlers"]
+- !private ["Ps9Equatable", "updated"]
+- ["Ps9Equatable", ""]
+- !private ["Ps5Error", "deinit"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "PFLiveQueryEventType"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "PFObject"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "ParseLiveQuery"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "deinit"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "init"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "object"]
+- ["CV14ParseLiveQuery10ObjCCompat5Event", "type"]
+- !private ["O14ParseLiveQuery5Event", "created"]
+- !private ["O14ParseLiveQuery5Event", "deinit"]
+- !private ["O14ParseLiveQuery5Event", "deleted"]
+- !private ["O14ParseLiveQuery5Event", "entered"]
+- !private ["O14ParseLiveQuery5Event", "left"]
+- !private ["O14ParseLiveQuery5Event", "updated"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "forEach"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Client"]
+- ["Ps8Hashable", "ErrorHandler"]
+- ["Ps8Hashable", "EventHandler"]
+- !private ["Ps8Hashable", "HandlerConverter"]
+- !private ["Ps8Hashable", "OBJC_ASSOCIATION_RETAIN"]
+- !private ["Ps8Hashable", "ObjCCompat"]
+- ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "Stride"]
+- ["Ps8Hashable", "SubscribeHandler"]
+- ["Ps8Hashable", "_PF_objc_subscribe"]
+- ["Ps8Hashable", "_PF_objc_unsubscribe"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "addCreateHandler"]
+- ["Ps8Hashable", "addDeleteHandler"]
+- ["Ps8Hashable", "addEnterHandler"]
+- ["Ps8Hashable", "addErrorHandler"]
+- ["Ps8Hashable", "addEventHandler"]
+- ["Ps8Hashable", "addLeaveHandler"]
+- ["Ps8Hashable", "addSubscribeHandler"]
+- ["Ps8Hashable", "addUnsubscribeHandler"]
+- ["Ps8Hashable", "addUpdateHandler"]
+- !private ["Ps8Hashable", "created"]
+- !private ["Ps8Hashable", "deleted"]
+- ["Ps8Hashable", "didRecieveError"]
+- ["Ps8Hashable", "didRecieveEvent"]
+- ["Ps8Hashable", "didSubscribe"]
+- ["Ps8Hashable", "didUnsubscribe"]
+- !private ["Ps8Hashable", "entered"]
+- ["Ps8Hashable", "errorHandlers"]
+- ["Ps8Hashable", "eventHandlers"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "left"]
+- !private ["Ps8Hashable", "objc_setAssociatedObject"]
+- ["Ps8Hashable", "object"]
+- ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "subscribe"]
+- ["Ps8Hashable", "subscribeHandlers"]
+- ["Ps8Hashable", "type"]
+- !private ["Ps8Hashable", "unsubscribe"]
+- ["Ps8Hashable", "unsubscribeHandlers"]
+- !private ["Ps8Hashable", "updated"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "forEach"]
+- ["Ps9Indexable", "init"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "forEach"]
+- ["Ps13IndexableBase", "init"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "Stride"]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "forEach"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "forEach"]
+- ["Ps16MutableIndexable", "init"]
+- !private ["PSo9NSCopying", "Client"]
+- !private ["CSo7NSError", "deinit"]
+- ["CSo8NSObject", "Client"]
+- !private ["CSo8NSObject", "Error"]
+- ["CSo8NSObject", "ErrorHandler"]
+- ["CSo8NSObject", "Event"]
+- ["CSo8NSObject", "EventHandler"]
+- !private ["CSo8NSObject", "HandlerConverter"]
+- !private ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSError"]
+- ["CSo8NSObject", "ObjCCompat"]
+- ["CSo8NSObject", "ObjCCompat_SubscriptionHandling"]
+- ["CSo8NSObject", "ObjectHandler"]
+- ["CSo8NSObject", "PFLiveQueryEventType"]
+- ["CSo8NSObject", "PFObject"]
+- ["CSo8NSObject", "PFQuery"]
+- ["CSo8NSObject", "ParseLiveQuery"]
+- ["CSo8NSObject", "SubscribeHandler"]
+- ["CSo8NSObject", "Subscription"]
+- !private ["CSo8NSObject", "SubscriptionHandling"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "_PF_objc_subscribe"]
+- ["CSo8NSObject", "_PF_objc_unsubscribe"]
+- ["CSo8NSObject", "addCreateHandler"]
+- ["CSo8NSObject", "addDeleteHandler"]
+- ["CSo8NSObject", "addEnterHandler"]
+- ["CSo8NSObject", "addErrorHandler"]
+- ["CSo8NSObject", "addEventHandler"]
+- ["CSo8NSObject", "addLeaveHandler"]
+- ["CSo8NSObject", "addSubscribeHandler"]
+- ["CSo8NSObject", "addUnsubscribeHandler"]
+- ["CSo8NSObject", "addUpdateHandler"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "didRecieveError"]
+- ["CSo8NSObject", "didRecieveEvent"]
+- ["CSo8NSObject", "didSubscribe"]
+- ["CSo8NSObject", "didUnsubscribe"]
+- ["CSo8NSObject", "errorHandlers"]
+- ["CSo8NSObject", "eventHandlers"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "objc_setAssociatedObject"]
+- ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "subscribe"]
+- ["CSo8NSObject", "subscribeHandlers"]
+- ["CSo8NSObject", "type"]
+- !private ["CSo8NSObject", "unsubscribe"]
+- ["CSo8NSObject", "unsubscribeHandlers"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Client"]
+- ["PSo16NSObjectProtocol", "ErrorHandler"]
+- ["PSo16NSObjectProtocol", "EventHandler"]
+- !private ["PSo16NSObjectProtocol", "HandlerConverter"]
+- !private ["PSo16NSObjectProtocol", "ObjCCompat"]
+- ["PSo16NSObjectProtocol", "SubscribeHandler"]
+- ["PSo16NSObjectProtocol", "_PF_objc_subscribe"]
+- ["PSo16NSObjectProtocol", "_PF_objc_unsubscribe"]
+- ["PSo16NSObjectProtocol", "addCreateHandler"]
+- ["PSo16NSObjectProtocol", "addDeleteHandler"]
+- ["PSo16NSObjectProtocol", "addEnterHandler"]
+- ["PSo16NSObjectProtocol", "addErrorHandler"]
+- ["PSo16NSObjectProtocol", "addEventHandler"]
+- ["PSo16NSObjectProtocol", "addLeaveHandler"]
+- ["PSo16NSObjectProtocol", "addSubscribeHandler"]
+- ["PSo16NSObjectProtocol", "addUnsubscribeHandler"]
+- ["PSo16NSObjectProtocol", "addUpdateHandler"]
+- ["PSo16NSObjectProtocol", "didRecieveError"]
+- ["PSo16NSObjectProtocol", "didRecieveEvent"]
+- ["PSo16NSObjectProtocol", "didSubscribe"]
+- ["PSo16NSObjectProtocol", "didUnsubscribe"]
+- ["PSo16NSObjectProtocol", "errorHandlers"]
+- ["PSo16NSObjectProtocol", "eventHandlers"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "objc_setAssociatedObject"]
+- ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "subscribe"]
+- ["PSo16NSObjectProtocol", "subscribeHandlers"]
+- ["PSo16NSObjectProtocol", "type"]
+- !private ["PSo16NSObjectProtocol", "unsubscribe"]
+- ["PSo16NSObjectProtocol", "unsubscribeHandlers"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Os5Never", "deinit"]
+- ["V14ParseLiveQuery10ObjCCompat", "Event"]
+- ["V14ParseLiveQuery10ObjCCompat", "NSError"]
+- ["V14ParseLiveQuery10ObjCCompat", "NSObject"]
+- ["V14ParseLiveQuery10ObjCCompat", "PFLiveQueryEventType"]
+- ["V14ParseLiveQuery10ObjCCompat", "PFObject"]
+- ["V14ParseLiveQuery10ObjCCompat", "PFQuery"]
+- ["V14ParseLiveQuery10ObjCCompat", "Subscription"]
+- ["V14ParseLiveQuery10ObjCCompat", "Void"]
+- !private ["V14ParseLiveQuery10ObjCCompat", "init"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "Client"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "ErrorHandler"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "EventHandler"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "NSError"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "ObjCCompat"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "PFObject"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "PFQuery"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "SubscribeHandler"]
+- !private ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "addEventHandler"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "deinit"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "didRecieveError"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "didRecieveEvent"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "didSubscribe"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "didUnsubscribe"]
+- !private ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "errorHandlers"]
+- !private ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "eventHandlers"]
+- !private ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "init"]
+- !private ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "subscribeHandlers"]
+- !private ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", "unsubscribeHandlers"]
+- ["P14ParseLiveQuery31ObjCCompat_SubscriptionHandling", ""]
+- !private ["Sq", "deinit"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "RawValue"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "_toAnyHashable"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "created"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "deinit"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "deleted"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "entered"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "hashValue"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "init"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "left"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "rawValue"]
+- ["O14ParseLiveQuery20PFLiveQueryEventType", "updated"]
+- ["CSo8PFObject", "deinit"]
+- !private ["CSo7PFQuery", "Client"]
+- ["CSo7PFQuery", "ObjCCompat"]
+- !private ["CSo7PFQuery", "PFObject"]
+- !private ["CSo7PFQuery", "PFQuery"]
+- ["CSo7PFQuery", "_PF_objc_subscribe"]
+- ["CSo7PFQuery", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "forEach"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "forEach"]
+- ["Ps21RandomAccessIndexable", "init"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "forEach"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "forEach"]
+- ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps16RawRepresentable", "OBJC_ASSOCIATION_RETAIN"]
+- ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- !private ["Ps16RawRepresentable", "created"]
+- !private ["Ps16RawRepresentable", "deleted"]
+- !private ["Ps16RawRepresentable", "entered"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "left"]
+- ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "updated"]
+- ["Ps16RawRepresentable", ""]
+- !private ["PSo19SRWebSocketDelegate", "HandlerConverter"]
+- !private ["PSo19SRWebSocketDelegate", "ObjCCompat"]
+- !private ["PSo19SRWebSocketDelegate", "_PF_objc_subscribe"]
+- !private ["PSo19SRWebSocketDelegate", "objc_setAssociatedObject"]
+- !private ["PSo19SRWebSocketDelegate", "shared"]
+- !private ["PSo19SRWebSocketDelegate", "subscribe"]
+- !private ["PSo19SRWebSocketDelegate", "unsubscribe"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "forEach"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "Client"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "ErrorHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "Event"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "EventHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "NSError"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "ObjCCompat"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "ObjectHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "PFObject"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "PFQuery"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "SubscribeHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "Subscription"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "Void"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addCreateHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addDeleteHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addEnterHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addErrorHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addEventHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addLeaveHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addSubscribeHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addUnsubscribeHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "addUpdateHandler"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "deinit"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "didRecieveError"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "didRecieveEvent"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "didSubscribe"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "didUnsubscribe"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "errorHandlers"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "eventHandlers"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "init"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "subscribeHandlers"]
+- ["CV14ParseLiveQuery10ObjCCompat12Subscription", "unsubscribeHandlers"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "HandlerConverter"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "ObjCCompat"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "PFObjectSubclass"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "associatedObjectKey"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "didEncounter"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "didReceive"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "didSubscribe"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "didUnsubscribe"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "handler"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "init"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "objc_setAssociatedObject"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", ""]
+- !private ["CC14ParseLiveQuery6Client18SubscriptionRecord", "deinit"]
+- !private ["CC14ParseLiveQuery6Client18SubscriptionRecord", "query"]
+- !private ["CC14ParseLiveQuery6Client18SubscriptionRecord", "subscriptionHandler"]
+- ["Su", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "forEach"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "forEach"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "Client"]
+- ["Ps9_Hashable", "ErrorHandler"]
+- ["Ps9_Hashable", "EventHandler"]
+- !private ["Ps9_Hashable", "HandlerConverter"]
+- !private ["Ps9_Hashable", "OBJC_ASSOCIATION_RETAIN"]
+- !private ["Ps9_Hashable", "ObjCCompat"]
+- ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "Stride"]
+- ["Ps9_Hashable", "SubscribeHandler"]
+- ["Ps9_Hashable", "_PF_objc_subscribe"]
+- ["Ps9_Hashable", "_PF_objc_unsubscribe"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "addCreateHandler"]
+- ["Ps9_Hashable", "addDeleteHandler"]
+- ["Ps9_Hashable", "addEnterHandler"]
+- ["Ps9_Hashable", "addErrorHandler"]
+- ["Ps9_Hashable", "addEventHandler"]
+- ["Ps9_Hashable", "addLeaveHandler"]
+- ["Ps9_Hashable", "addSubscribeHandler"]
+- ["Ps9_Hashable", "addUnsubscribeHandler"]
+- ["Ps9_Hashable", "addUpdateHandler"]
+- !private ["Ps9_Hashable", "created"]
+- !private ["Ps9_Hashable", "deleted"]
+- ["Ps9_Hashable", "didRecieveError"]
+- ["Ps9_Hashable", "didRecieveEvent"]
+- ["Ps9_Hashable", "didSubscribe"]
+- ["Ps9_Hashable", "didUnsubscribe"]
+- !private ["Ps9_Hashable", "entered"]
+- ["Ps9_Hashable", "errorHandlers"]
+- ["Ps9_Hashable", "eventHandlers"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "left"]
+- !private ["Ps9_Hashable", "objc_setAssociatedObject"]
+- ["Ps9_Hashable", "object"]
+- ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "subscribe"]
+- ["Ps9_Hashable", "subscribeHandlers"]
+- ["Ps9_Hashable", "type"]
+- !private ["Ps9_Hashable", "unsubscribe"]
+- ["Ps9_Hashable", "unsubscribeHandlers"]
+- !private ["Ps9_Hashable", "updated"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "forEach"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "hashValue"]
+- !private ["OSC22objc_AssociationPolicy", "OBJC_ASSOCIATION_RETAIN"]
+- ["OSC22objc_AssociationPolicy", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "Ps7CVarArg"
+- "C14ParseLiveQuery6Client"
+- !private "Vs11ClosedRange"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- "CV14ParseLiveQuery10ObjCCompat5Event"
+- !private "O14ParseLiveQuery5Event"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Os5Never"
+- "V14ParseLiveQuery10ObjCCompat"
+- "P14ParseLiveQuery31ObjCCompat_SubscriptionHandling"
+- !private "Sq"
+- "O14ParseLiveQuery20PFLiveQueryEventType"
+- "CSo8PFObject"
+- "CSo7PFQuery"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- !private "Vs5Range"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- "Ps16RawRepresentable"
+- !private "PSo19SRWebSocketDelegate"
+- "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- "Vs12StaticString"
+- !private "Ps10Strideable"
+- "CV14ParseLiveQuery10ObjCCompat12Subscription"
+- !private "P14ParseLiveQuery20SubscriptionHandling"
+- !private "CC14ParseLiveQuery6Client18SubscriptionRecord"
+- "Su"
+- "Ps14_ArrayProtocol"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- "OSC22objc_AssociationPolicy"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/ParseLiveQuery/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/ParseLiveQuery.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts-Swift.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Parse/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Parse.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/SocketRocket/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/SocketRocket.build/module.modulemap"
+interface-hash: "47b05fb1a6f4ca16bcefa0be8731bc14"

@@ -48,7 +48,10 @@ class SignUpViewController: UIViewController {
         user.password = password.text
         // other fields can be set just like with PFObject
         user["topics"] = topics.text?.components(separatedBy: ", ")
-        user["available"] = false
+        user["available"] = true
+        user["points"] = 10
+        user["asked"] = 0
+        user["answered"] = 0
         user.signUpInBackground {
             (success, error) -> Void in
             if let error = error {
