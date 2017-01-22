@@ -58,10 +58,11 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         self.videoScreen.disconnectButton.isHidden = true
         self.videoScreen.micButton.isHidden = true
         
+        self.guru.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI/8))
+        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.guru.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI/8))
+    override func viewWillAppear(_ animated: Bool) {
         
         UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse] , animations: {
             self.guru.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI/8))
@@ -204,6 +205,11 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func dismissView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 
 }

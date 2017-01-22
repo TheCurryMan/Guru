@@ -1,0 +1,28 @@
+19:54:09.793 Xcode[5363:321866] Beginning test session GuruUITests-FD50AE6D-1EF8-4B6D-8946-72FDE22DFC80 at 2017-01-21 19:54:09.793 with Xcode 8C1002 on target <DVTiPhoneSimulator: 0x7fc67e58e4e0> {
+		SimDevice: SimDevice : iPhone 7 Plus (E7851141-2FEA-4BC6-8A7D-3A1B5FDAAF40) : state={ Booted } deviceType={ SimDeviceType : com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus } runtime={ SimRuntime : 10.2 (14C89) - com.apple.CoreSimulator.SimRuntime.iOS-10-2 }
+} (10.2 (14C89))
+19:54:09.793 Xcode[5363:321866] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
+19:54:09.793 Xcode[5363:321866] Initializing test infrastructure.
+19:54:09.794 Xcode[5363:1080184] E7851141-2FEA-4BC6-8A7D-3A1B5FDAAF40: Registered for sim device notification, got token 23
+19:54:09.794 Xcode[5363:1080184] E7851141-2FEA-4BC6-8A7D-3A1B5FDAAF40: Unregistering for sim device notification with token 23
+19:54:09.794 Xcode[5363:1080184] Sim iPhone 7 Plus is booted (state = 3)
+19:54:09.794 Xcode[5363:1080184] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+19:54:09.798 Xcode[5363:1080184] Returning /private/tmp/com.apple.launchd.7LzXebZDes/com.apple.testmanagerd.unix-domain.socket for TESTMANAGERD_SIM_SOCK
+19:54:09.798 Xcode[5363:1080184] Sim iPhone 7 Plus has testmanagerd socket at /private/tmp/com.apple.launchd.7LzXebZDes/com.apple.testmanagerd.unix-domain.socket
+19:54:09.798 Xcode[5363:1080184] Connected socket 94 to testmanagerd for Sim iPhone 7 Plus
+19:54:09.798 Xcode[5363:1080184] Creating the test bundle connection.
+19:54:09.798 Xcode[5363:1080184] Listening for proxy connection request from the test bundle (all platforms)
+19:54:09.798 Xcode[5363:1080184] Resuming the connection.
+19:54:09.798 Xcode[5363:1080184] Test connection requires daemon assistance.
+19:54:09.827 Xcode[5363:321866] Received Ready from iOSSimulator
+19:54:09.827 Xcode[5363:321866] Sending notification: NSConcreteNotification 0x7fc678f372e0 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "E7851141-2FEA-4BC6-8A7D-3A1B5FDAAF40";
+}}
+19:54:09.827 Xcode[5363:321866] Received Ready from iOSSimulator
+19:54:09.827 Xcode[5363:321866] Sending notification: NSConcreteNotification 0x7fc68ad495f0 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "E7851141-2FEA-4BC6-8A7D-3A1B5FDAAF40";
+}}
+19:54:09.848 Xcode[5363:321866] Starting test session with ID FD50AE6D-1EF8-4B6D-8946-72FDE22DFC80
+19:54:09.848 Xcode[5363:321866] Checking test manager availability..., will wait up to 120s
+19:54:10.911 Xcode[5363:321866] Test operation failure: Test operation was canceled.
+19:54:10.911 Xcode[5363:321866] _finishWithError:Error Domain=IDETestOperationsObserverErrorDomain Code=3 "Test operation was canceled." UserInfo={NSLocalizedDescription=Test operation was canceled.} didCancel: 1

@@ -1,0 +1,544 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VideoVC"
+provides-nominal:
+- "C4Guru7VideoVC"
+provides-member:
+- ["C4Guru7VideoVC", ""]
+provides-dynamic-lookup:
+- "remoteView"
+- "connectButton"
+- "disconnectButton"
+- "viewDidLoad"
+- "micButton"
+- "toggleMic"
+- "didReceiveMemoryWarning"
+- "previewView"
+- "disconnect"
+- "messageLabel"
+- "showRoomUI"
+depends-top-level:
+- "UIButton"
+- "UIViewController"
+- "UILabel"
+- !private "!"
+- "UIView"
+- "Bool"
+- "AssignmentPrecedence"
+- "AnyObject"
+- "WaitingScreenDelegate"
+- "VideoVC"
+- !private "UIApplication"
+depends-member:
+- !private ["Ps9AnyObject", "UIApplication"]
+- ["Ps9AnyObject", "connectButton"]
+- ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "disconnect"]
+- ["Ps9AnyObject", "disconnectButton"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isHidden"]
+- !private ["Ps9AnyObject", "isIdleTimerDisabled"]
+- ["Ps9AnyObject", "messageLabel"]
+- ["Ps9AnyObject", "micButton"]
+- ["Ps9AnyObject", "previewView"]
+- ["Ps9AnyObject", "remoteView"]
+- !private ["Ps9AnyObject", "shared"]
+- ["Ps9AnyObject", "showRoomUI"]
+- ["Ps9AnyObject", "toggleMic"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
+- !private ["Ps7CVarArg", "UIApplication"]
+- ["Ps7CVarArg", "connectButton"]
+- ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "disconnect"]
+- ["Ps7CVarArg", "disconnectButton"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isHidden"]
+- !private ["Ps7CVarArg", "isIdleTimerDisabled"]
+- ["Ps7CVarArg", "messageLabel"]
+- ["Ps7CVarArg", "micButton"]
+- ["Ps7CVarArg", "previewView"]
+- ["Ps7CVarArg", "remoteView"]
+- !private ["Ps7CVarArg", "shared"]
+- ["Ps7CVarArg", "showRoomUI"]
+- ["Ps7CVarArg", "toggleMic"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- ["Ps28CustomDebugStringConvertible", "connectButton"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "disconnect"]
+- ["Ps28CustomDebugStringConvertible", "disconnectButton"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "isIdleTimerDisabled"]
+- ["Ps28CustomDebugStringConvertible", "messageLabel"]
+- ["Ps28CustomDebugStringConvertible", "micButton"]
+- ["Ps28CustomDebugStringConvertible", "previewView"]
+- ["Ps28CustomDebugStringConvertible", "remoteView"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- ["Ps28CustomDebugStringConvertible", "showRoomUI"]
+- ["Ps28CustomDebugStringConvertible", "toggleMic"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- ["Ps23CustomStringConvertible", "connectButton"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "disconnect"]
+- ["Ps23CustomStringConvertible", "disconnectButton"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
+- !private ["Ps23CustomStringConvertible", "isIdleTimerDisabled"]
+- ["Ps23CustomStringConvertible", "messageLabel"]
+- ["Ps23CustomStringConvertible", "micButton"]
+- ["Ps23CustomStringConvertible", "previewView"]
+- ["Ps23CustomStringConvertible", "remoteView"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- ["Ps23CustomStringConvertible", "showRoomUI"]
+- ["Ps23CustomStringConvertible", "toggleMic"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "UIApplication"]
+- ["Ps9Equatable", "connectButton"]
+- ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "disconnect"]
+- ["Ps9Equatable", "disconnectButton"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isHidden"]
+- !private ["Ps9Equatable", "isIdleTimerDisabled"]
+- ["Ps9Equatable", "messageLabel"]
+- ["Ps9Equatable", "micButton"]
+- ["Ps9Equatable", "previewView"]
+- ["Ps9Equatable", "remoteView"]
+- !private ["Ps9Equatable", "shared"]
+- ["Ps9Equatable", "showRoomUI"]
+- ["Ps9Equatable", "toggleMic"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "UIApplication"]
+- ["Ps8Hashable", "connectButton"]
+- ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "disconnect"]
+- ["Ps8Hashable", "disconnectButton"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isHidden"]
+- !private ["Ps8Hashable", "isIdleTimerDisabled"]
+- ["Ps8Hashable", "messageLabel"]
+- ["Ps8Hashable", "micButton"]
+- ["Ps8Hashable", "previewView"]
+- ["Ps8Hashable", "remoteView"]
+- !private ["Ps8Hashable", "shared"]
+- ["Ps8Hashable", "showRoomUI"]
+- ["Ps8Hashable", "toggleMic"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "UIApplication"]
+- ["PSo8NSCoding", "connectButton"]
+- ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "disconnect"]
+- ["PSo8NSCoding", "disconnectButton"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isHidden"]
+- ["PSo8NSCoding", "messageLabel"]
+- ["PSo8NSCoding", "micButton"]
+- ["PSo8NSCoding", "previewView"]
+- ["PSo8NSCoding", "remoteView"]
+- ["PSo8NSCoding", "showRoomUI"]
+- ["PSo8NSCoding", "toggleMic"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
+- ["PSo26NSExtensionRequestHandling", "connectButton"]
+- ["PSo26NSExtensionRequestHandling", "delegate"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "disconnect"]
+- ["PSo26NSExtensionRequestHandling", "disconnectButton"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "messageLabel"]
+- ["PSo26NSExtensionRequestHandling", "micButton"]
+- ["PSo26NSExtensionRequestHandling", "previewView"]
+- ["PSo26NSExtensionRequestHandling", "remoteView"]
+- ["PSo26NSExtensionRequestHandling", "showRoomUI"]
+- ["PSo26NSExtensionRequestHandling", "toggleMic"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIView"]
+- ["CSo8NSObject", "WaitingScreenDelegate"]
+- ["CSo8NSObject", "connectButton"]
+- ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "disconnect"]
+- ["CSo8NSObject", "disconnectButton"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isHidden"]
+- !private ["CSo8NSObject", "isIdleTimerDisabled"]
+- ["CSo8NSObject", "messageLabel"]
+- ["CSo8NSObject", "micButton"]
+- ["CSo8NSObject", "previewView"]
+- ["CSo8NSObject", "remoteView"]
+- !private ["CSo8NSObject", "shared"]
+- ["CSo8NSObject", "showRoomUI"]
+- ["CSo8NSObject", "toggleMic"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- ["PSo16NSObjectProtocol", "connectButton"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "disconnect"]
+- ["PSo16NSObjectProtocol", "disconnectButton"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
+- !private ["PSo16NSObjectProtocol", "isIdleTimerDisabled"]
+- ["PSo16NSObjectProtocol", "messageLabel"]
+- ["PSo16NSObjectProtocol", "micButton"]
+- ["PSo16NSObjectProtocol", "previewView"]
+- ["PSo16NSObjectProtocol", "remoteView"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- ["PSo16NSObjectProtocol", "showRoomUI"]
+- ["PSo16NSObjectProtocol", "toggleMic"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
+- !private ["PSo12UIAppearance", "isHidden"]
+- !private ["PSo21UIAppearanceContainer", "UIApplication"]
+- ["PSo21UIAppearanceContainer", "connectButton"]
+- ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "disconnect"]
+- ["PSo21UIAppearanceContainer", "disconnectButton"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
+- ["PSo21UIAppearanceContainer", "messageLabel"]
+- ["PSo21UIAppearanceContainer", "micButton"]
+- ["PSo21UIAppearanceContainer", "previewView"]
+- ["PSo21UIAppearanceContainer", "remoteView"]
+- ["PSo21UIAppearanceContainer", "showRoomUI"]
+- ["PSo21UIAppearanceContainer", "toggleMic"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo13UIApplication", "deinit"]
+- !private ["CSo13UIApplication", "isIdleTimerDisabled"]
+- !private ["CSo13UIApplication", "shared"]
+- !private ["CSo8UIButton", "isHidden"]
+- !private ["PSo18UIContentContainer", "UIApplication"]
+- ["PSo18UIContentContainer", "connectButton"]
+- ["PSo18UIContentContainer", "delegate"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "disconnect"]
+- ["PSo18UIContentContainer", "disconnectButton"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "messageLabel"]
+- ["PSo18UIContentContainer", "micButton"]
+- ["PSo18UIContentContainer", "previewView"]
+- ["PSo18UIContentContainer", "remoteView"]
+- ["PSo18UIContentContainer", "showRoomUI"]
+- ["PSo18UIContentContainer", "toggleMic"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "isHidden"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
+- !private ["PSo18UIFocusEnvironment", "UIApplication"]
+- ["PSo18UIFocusEnvironment", "connectButton"]
+- ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "disconnect"]
+- ["PSo18UIFocusEnvironment", "disconnectButton"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
+- ["PSo18UIFocusEnvironment", "messageLabel"]
+- ["PSo18UIFocusEnvironment", "micButton"]
+- ["PSo18UIFocusEnvironment", "previewView"]
+- ["PSo18UIFocusEnvironment", "remoteView"]
+- ["PSo18UIFocusEnvironment", "showRoomUI"]
+- ["PSo18UIFocusEnvironment", "toggleMic"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "isHidden"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIView"]
+- ["CSo11UIResponder", "WaitingScreenDelegate"]
+- ["CSo11UIResponder", "connectButton"]
+- ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "disconnect"]
+- ["CSo11UIResponder", "disconnectButton"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isHidden"]
+- !private ["CSo11UIResponder", "isIdleTimerDisabled"]
+- ["CSo11UIResponder", "messageLabel"]
+- ["CSo11UIResponder", "micButton"]
+- ["CSo11UIResponder", "previewView"]
+- ["CSo11UIResponder", "remoteView"]
+- !private ["CSo11UIResponder", "shared"]
+- ["CSo11UIResponder", "showRoomUI"]
+- ["CSo11UIResponder", "toggleMic"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
+- ["PSo30UIResponderStandardEditActions", "connectButton"]
+- ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "disconnect"]
+- ["PSo30UIResponderStandardEditActions", "disconnectButton"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "isIdleTimerDisabled"]
+- ["PSo30UIResponderStandardEditActions", "messageLabel"]
+- ["PSo30UIResponderStandardEditActions", "micButton"]
+- ["PSo30UIResponderStandardEditActions", "previewView"]
+- ["PSo30UIResponderStandardEditActions", "remoteView"]
+- !private ["PSo30UIResponderStandardEditActions", "shared"]
+- ["PSo30UIResponderStandardEditActions", "showRoomUI"]
+- ["PSo30UIResponderStandardEditActions", "toggleMic"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "UIApplication"]
+- ["PSo16UIStateRestoring", "connectButton"]
+- ["PSo16UIStateRestoring", "delegate"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "disconnect"]
+- ["PSo16UIStateRestoring", "disconnectButton"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "messageLabel"]
+- ["PSo16UIStateRestoring", "micButton"]
+- ["PSo16UIStateRestoring", "previewView"]
+- ["PSo16UIStateRestoring", "remoteView"]
+- ["PSo16UIStateRestoring", "showRoomUI"]
+- ["PSo16UIStateRestoring", "toggleMic"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "UIApplication"]
+- ["PSo18UITraitEnvironment", "connectButton"]
+- ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "disconnect"]
+- ["PSo18UITraitEnvironment", "disconnectButton"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
+- ["PSo18UITraitEnvironment", "messageLabel"]
+- ["PSo18UITraitEnvironment", "micButton"]
+- ["PSo18UITraitEnvironment", "previewView"]
+- ["PSo18UITraitEnvironment", "remoteView"]
+- ["PSo18UITraitEnvironment", "showRoomUI"]
+- ["PSo18UITraitEnvironment", "toggleMic"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "isHidden"]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "UIApplication"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UIView"]
+- ["CSo16UIViewController", "WaitingScreenDelegate"]
+- ["CSo16UIViewController", "connectButton"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "delegate"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "disconnect"]
+- ["CSo16UIViewController", "disconnectButton"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "messageLabel"]
+- ["CSo16UIViewController", "micButton"]
+- ["CSo16UIViewController", "previewView"]
+- ["CSo16UIViewController", "remoteView"]
+- ["CSo16UIViewController", "showRoomUI"]
+- ["CSo16UIViewController", "toggleMic"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["C4Guru7VideoVC", "AnyObject"]
+- ["C4Guru7VideoVC", "Bool"]
+- !private ["C4Guru7VideoVC", "UIApplication"]
+- ["C4Guru7VideoVC", "UIButton"]
+- ["C4Guru7VideoVC", "UILabel"]
+- ["C4Guru7VideoVC", "UIView"]
+- ["C4Guru7VideoVC", "WaitingScreenDelegate"]
+- ["C4Guru7VideoVC", "connectButton"]
+- ["C4Guru7VideoVC", "deinit"]
+- ["C4Guru7VideoVC", "delegate"]
+- ["C4Guru7VideoVC", "didReceiveMemoryWarning"]
+- ["C4Guru7VideoVC", "disconnect"]
+- ["C4Guru7VideoVC", "disconnectButton"]
+- ["C4Guru7VideoVC", "init"]
+- ["C4Guru7VideoVC", "messageLabel"]
+- ["C4Guru7VideoVC", "micButton"]
+- ["C4Guru7VideoVC", "previewView"]
+- ["C4Guru7VideoVC", "remoteView"]
+- ["C4Guru7VideoVC", "showRoomUI"]
+- ["C4Guru7VideoVC", "toggleMic"]
+- ["C4Guru7VideoVC", "viewDidLoad"]
+- !private ["P4Guru21WaitingScreenDelegate", "disconnect"]
+- !private ["P4Guru21WaitingScreenDelegate", "toggleMic"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
+- !private ["Ps9_Hashable", "UIApplication"]
+- ["Ps9_Hashable", "connectButton"]
+- ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "disconnect"]
+- ["Ps9_Hashable", "disconnectButton"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isHidden"]
+- !private ["Ps9_Hashable", "isIdleTimerDisabled"]
+- ["Ps9_Hashable", "messageLabel"]
+- ["Ps9_Hashable", "micButton"]
+- ["Ps9_Hashable", "previewView"]
+- ["Ps9_Hashable", "remoteView"]
+- !private ["Ps9_Hashable", "shared"]
+- ["Ps9_Hashable", "showRoomUI"]
+- ["Ps9_Hashable", "toggleMic"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo13UIApplication"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "C4Guru7VideoVC"
+- !private "P4Guru21WaitingScreenDelegate"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoConstraints.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoClient.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIScreenCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIRoom.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIParticipant.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIMedia.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalParticipant.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalMedia.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIIceOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIError.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIConnectOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIClientOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraPreviewView.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFormat.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFrame.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVITrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioTrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioController.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioConstraints.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TwilioVideo.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
+interface-hash: "d2612a089f115f74d66c2cf7f42d04f5"

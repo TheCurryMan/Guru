@@ -47,7 +47,7 @@ class AcceptViewController: UIViewController {
     }
     
     @IBAction func decline(_ sender: Any) {
-        performSegue(withIdentifier: "decline", sender: self)
+        self.dismiss(animated: true, completion: nil)
     }
     
     

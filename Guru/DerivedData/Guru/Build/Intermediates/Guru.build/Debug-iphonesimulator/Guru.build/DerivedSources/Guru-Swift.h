@@ -117,10 +117,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import TwilioVideo;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class PFObject;
+@class UIStoryboardSegue;
 @class UIView;
 @class UILabel;
 @class NSBundle;
@@ -128,8 +131,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC4Guru20AcceptViewController")
 @interface AcceptViewController : UIViewController
-@property (nonatomic, copy) NSString * _Nonnull question;
-@property (nonatomic, copy) NSString * _Nonnull topic;
+@property (nonatomic, strong) PFObject * _Null_unspecified question;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified questionLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topicLabel;
@@ -137,6 +139,7 @@ SWIFT_CLASS("_TtC4Guru20AcceptViewController")
 - (void)didReceiveMemoryWarning;
 - (IBAction)accept:(id _Nonnull)sender;
 - (IBAction)decline:(id _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -158,16 +161,11 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 
 @class UITableView;
 @class UITableViewCell;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
 @interface GuruRequestsViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull topics;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull questions;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull qTopics;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull usernames;
-@property (nonatomic, copy) NSString * _Nonnull finalQ;
-@property (nonatomic, copy) NSString * _Nonnull finalT;
+@property (nonatomic, copy) NSArray<PFObject *> * _Nonnull questions;
+@property (nonatomic, strong) PFObject * _Nullable selectedQuestion;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -175,6 +173,7 @@ SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)dismissView:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -188,14 +187,17 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified subjectsEntered;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptButton;
 @property (nonatomic) BOOL avail;
+@property (nonatomic, strong) PFObject * _Nullable question;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
 - (IBAction)tapped:(id _Nonnull)sender;
 - (IBAction)pressedAsk:(id _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)submitQuestion;
 - (void)didReceiveMemoryWarning;
 - (IBAction)accept:(id _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -227,6 +229,24 @@ SWIFT_CLASS("_TtC4Guru20SignUpViewController")
 @end
 
 
+SWIFT_CLASS("_TtC4Guru7VideoVC")
+@interface VideoVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified remoteView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified previewView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified connectButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified disconnectButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified messageLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified micButton;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)showRoomUIInRoom:(BOOL)inRoom;
+- (IBAction)disconnectWithSender:(id _Nonnull)sender;
+- (IBAction)toggleMicWithSender:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC4Guru14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
@@ -236,18 +256,68 @@ SWIFT_CLASS("_TtC4Guru14ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TVIVideoClient;
+@class TVIRoom;
+@class TVILocalMedia;
+@class TVICameraCapturer;
+@class TVILocalVideoTrack;
+@class TVILocalAudioTrack;
+@class TVIParticipant;
 @class UIImageView;
 
 SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 @interface WaitingScreen : UIViewController
+@property (nonatomic, copy) NSString * _Nonnull accessToken;
+@property (nonatomic, copy) NSString * _Nonnull tokenUrl;
+@property (nonatomic, strong) TVIVideoClient * _Nullable client;
+@property (nonatomic, strong) TVIRoom * _Nullable room;
+@property (nonatomic, strong) TVILocalMedia * _Nullable localMedia;
+@property (nonatomic, strong) TVICameraCapturer * _Nullable camera;
+@property (nonatomic, strong) TVILocalVideoTrack * _Nullable localVideoTrack;
+@property (nonatomic, strong) TVILocalAudioTrack * _Nullable localAudioTrack;
+@property (nonatomic, strong) TVIParticipant * _Nullable participant;
+@property (nonatomic, strong) PFObject * _Null_unspecified question;
+@property (nonatomic) BOOL tutor;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified circles;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified guru;
+@property (nonatomic, strong) VideoVC * _Null_unspecified videoScreen;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)connect;
+- (void)disconnectWithSender:(id _Nonnull)sender;
+- (void)toggleMicWithSender:(id _Nonnull)sender;
+- (void)startPreview;
+- (void)flipCamera;
+- (void)prepareLocalMedia;
+- (void)cleanupRemoteParticipant;
+- (void)logMessageWithMessageText:(NSString * _Nonnull)messageText;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)didReceiveMemoryWarning;
+- (IBAction)dismissView:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WaitingScreen (SWIFT_EXTENSION(Guru)) <TVIRoomDelegate>
+- (void)didConnectToRoom:(TVIRoom * _Nonnull)room;
+- (void)room:(TVIRoom * _Nonnull)room didDisconnectWithError:(NSError * _Nullable)error;
+- (void)room:(TVIRoom * _Nonnull)room didFailToConnectWithError:(NSError * _Nonnull)error;
+- (void)room:(TVIRoom * _Nonnull)room participantDidConnect:(TVIParticipant * _Nonnull)participant;
+- (void)room:(TVIRoom * _Nonnull)room participantDidDisconnect:(TVIParticipant * _Nonnull)participant;
+@end
+
+@class TVIVideoTrack;
+@class TVIAudioTrack;
+@class TVITrack;
+
+@interface WaitingScreen (SWIFT_EXTENSION(Guru)) <TVIParticipantDelegate>
+- (void)participant:(TVIParticipant * _Nonnull)participant addedVideoTrack:(TVIVideoTrack * _Nonnull)videoTrack;
+- (void)participant:(TVIParticipant * _Nonnull)participant removedVideoTrack:(TVIVideoTrack * _Nonnull)videoTrack;
+- (void)participant:(TVIParticipant * _Nonnull)participant addedAudioTrack:(TVIAudioTrack * _Nonnull)audioTrack;
+- (void)participant:(TVIParticipant * _Nonnull)participant removedAudioTrack:(TVIAudioTrack * _Nonnull)audioTrack;
+- (void)participant:(TVIParticipant * _Nonnull)participant enabledTrack:(TVITrack * _Nonnull)track;
+- (void)participant:(TVIParticipant * _Nonnull)participant disabledTrack:(TVITrack * _Nonnull)track;
 @end
 
 #pragma clang diagnostic pop
