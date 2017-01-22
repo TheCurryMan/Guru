@@ -116,8 +116,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import Foundation;
 @import CoreGraphics;
+@import Foundation;
 @import Parse;
 @import TwilioVideo;
 #endif
@@ -148,21 +148,44 @@ SWIFT_CLASS("_TtC4Guru20AcceptViewController")
 
 @class UIWindow;
 @class UIApplication;
+@class OSNotification;
 
 SWIFT_CLASS("_TtC4Guru11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
-- (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
-- (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
-- (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
-- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
-- (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (void)reactToNotificationWithNotification:(OSNotification * _Nonnull)notification;
+- (UIViewController * _Nonnull)topMostController;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC4Guru14DemoPopup2Cell")
+@interface DemoPopup2Cell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PopupController;
 @class UITableView;
-@class UITableViewCell;
+
+SWIFT_CLASS("_TtC4Guru24DemoPopupViewController2")
+@interface DemoPopupViewController2 : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull topics;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
++ (DemoPopupViewController2 * _Nonnull)instance;
+- (void)didReceiveMemoryWarning;
+- (CGSize)sizeForPopup:(PopupController * _Nonnull)popupController size:(CGSize)size showingKeyboard:(BOOL)showingKeyboard;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
 @interface GuruRequestsViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -184,9 +207,8 @@ SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
 @class UITextField;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
-@interface HomePage : UIViewController
+@interface HomePage : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified questionField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified subjectsEntered;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptButton;
 @property (nonatomic) BOOL avail;
 @property (nonatomic, strong) PFObject * _Nullable question;
@@ -194,11 +216,17 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointsLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified answeredLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified askedLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topicButton;
+@property (nonatomic, strong) PopupController * _Nonnull popup;
+@property (nonatomic, copy) NSString * _Nonnull finalTopic;
 - (IBAction)tapped:(id _Nonnull)sender;
 - (IBAction)pressedAsk:(UIButton * _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (void)catchNotificationWithNotification:(NSNotification * _Nonnull)notification;
 - (void)viewWillAppear:(BOOL)animated;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (IBAction)showTopics:(id _Nonnull)sender;
 - (void)submitQuestionWithSender:(UIButton * _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (IBAction)accept:(id _Nonnull)sender;
@@ -298,6 +326,7 @@ SWIFT_CLASS("_TtC4Guru7VideoVC")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified messageLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified micButton;
 @property (nonatomic, strong) PFObject * _Null_unspecified question;
+@property (nonatomic, strong) LDViewController * _Nullable liveDrawVC;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
@@ -343,9 +372,11 @@ SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified circles;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified guru;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified dismissButton;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified questionLabel;
 @property (nonatomic, strong) VideoVC * _Null_unspecified videoScreen;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)connect;
 - (void)disconnectWithSender:(id _Nonnull)sender;
 - (void)toggleMicWithSender:(id _Nonnull)sender;

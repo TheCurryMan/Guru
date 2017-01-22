@@ -15,22 +15,22 @@ provides-member:
 - ["C14ParseLiveQuery12Subscription", "handle"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "Bool"
-- "Subscription"
-- "Event"
-- !private "StringLiteralType"
-- "AnyObject"
-- "SubscriptionHandling"
-- !private "fatalError"
+- !private "CastingPrecedence"
+- "Client"
+- "PFObject"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "CastingPrecedence"
-- "Error"
-- "Client"
-- "Void"
-- "PFObject"
+- !private "fatalError"
+- "SubscriptionHandling"
 - "PFQuery"
+- "Error"
+- "Void"
+- !private "BooleanLiteralType"
+- !private "Bool"
+- "Event"
+- "AnyObject"
+- "Subscription"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "Client"]
 - ["Ps9AnyObject", "Error"]

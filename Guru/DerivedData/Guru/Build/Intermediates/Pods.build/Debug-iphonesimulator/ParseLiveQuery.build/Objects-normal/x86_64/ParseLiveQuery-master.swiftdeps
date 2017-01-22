@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "a1fdb9b24df8f95029d38966ecefbe3d"
-build_time: [538384986, 186345000]
+build_time: [538394954, 126928000]
 inputs:
   "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Internal/BoltsHelpers.swift": [538375235, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Client.swift": [538375235, 0]

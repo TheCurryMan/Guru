@@ -6,72 +6,52 @@
 	<dict>
 		<key>Bolts-Swift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>ParseLiveQuery.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Guru.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-GuruTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-GuruUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
+		</dict>
+		<key>PopupController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SocketRocket.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0216AFADE589A0B17B41C247619B8D0F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>27E51815DE79D042F77AB5B4813E7CE7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2C8AA1BAF35413BDB954A1DF93576ED1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2E0595D602850048C2B60495D87C3D28</key>
 		<dict>
 			<key>primary</key>
@@ -82,17 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7129FAB61478FA70223DADF4921468CD</key>
+		<key>630F90BAC7A838A67D81686D95F3B199</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CBFCAC325DD1A6E531CB36E00F0DC50</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>90CEB39287113E619608AAD35E15E3A9</key>
+		<key>A29D751E5F4E7FFAA15FBD0B09942F3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -103,11 +78,6 @@
 			<true/>
 		</dict>
 		<key>D19B48CA399A7DEF6381AD8475D635B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DF3982430F5E571DEB4614560DB6C4BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

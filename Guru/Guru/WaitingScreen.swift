@@ -39,6 +39,7 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
     @IBOutlet weak var guru: UIImageView!
     @IBOutlet var dismissButton: UIButton!
     @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var loadingLabel: UILabel!
     
     var videoScreen: VideoVC!
 
@@ -53,6 +54,13 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         self.videoScreen.delegate = self
         
         self.questionLabel.text = self.question["text"] as? String
+        
+        if (self.tutor == false) {
+            self.loadingLabel.text = "Finding a guru..."
+        }
+        else {
+            self.loadingLabel.text = "Connecting to student..."
+        }
         
         localMedia = TVILocalMedia()
         

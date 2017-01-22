@@ -60,6 +60,7 @@ class AcceptViewController: UIViewController {
         if (segue.identifier == "acceptCallSegue") {
             let waitingScreen = segue.destination as! WaitingScreen
             waitingScreen.question = self.question
+            waitingScreen.tutor = true
         }
     }
     

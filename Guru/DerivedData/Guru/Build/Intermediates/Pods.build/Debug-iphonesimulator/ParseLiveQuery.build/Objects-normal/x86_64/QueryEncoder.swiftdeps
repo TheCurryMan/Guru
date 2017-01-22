@@ -10,16 +10,16 @@ provides-member:
 provides-dynamic-lookup:
 - "encodedDictionary"
 depends-top-level:
-- "ExpressibleByStringLiteral"
-- "String"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- "AnyObject"
 - "PFQuery"
-- !private "StringLiteralType"
+- "String"
+- "ExpressibleByStringLiteral"
 - "PFObject"
-- "PFGeoPoint"
+- !private "StringLiteralType"
+- "AnyObject"
 - "Dictionary"
+- "AssignmentPrecedence"
+- "PFGeoPoint"
+- "CastingPrecedence"
 depends-member:
 - ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "encodedDictionary"]

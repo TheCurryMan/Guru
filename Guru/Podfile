@@ -10,6 +10,7 @@ target 'Guru' do
   pod 'OneSignal’, '~> 2.3.5’
   pod 'TwilioVideo', '1.0.0-beta5'
   pod 'ParseLiveQuery'
+  pod 'PopupController'
 
 
   # Pods for Guru
