@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/462/608/datas/gallery.jpg"/>
+</p>
+
+
 ## Inspiration
 In today's world, there are experts in every field. Your neighbors, your best friends, people you see every day or those you have never met could be possible experts or at least knowledgeable in the field of your question. Instead of having to find clunky explanations online, search and filter through hours of youtube content, or even set up meetings with tutors days in advance to understand concepts, problems or doubts, Guru saves the day. 
 ## What it does
