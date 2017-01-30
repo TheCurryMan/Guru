@@ -9,38 +9,75 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var usernameLabel: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
     
-    @IBOutlet weak var passwordLabel: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.usernameField.delegate = self
+        self.passwordField.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.usernameField.text = nil
+        self.passwordField.text = nil
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func tappedScreen(_ sender: Any) {
+        usernameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+    }
+    
     @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func goButtonPressed(_ sender: Any) {
+        self.login(sender)
+    }
+    
     @IBAction func login(_ sender: Any) {
-        if usernameLabel.text != "" && passwordLabel.text != "" {
-            PFUser.logInWithUsername(inBackground: usernameLabel.text!, password: passwordLabel.text!)
+        if usernameField.text != "" && passwordField.text != "" {
+            PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!)
             { (user, error) -> Void in
                 if error == nil {
                     self.performSegue(withIdentifier: "login", sender: self)
                 } else {
                     print("whoops")
+                    self.passwordField.backgroundColor = UIColor.red
+                    self.passwordField.shake()
                 }
             }
-        
+            
         }
-
+        
     }
+    //MARK: UITextFieldDelegate Methods
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("next button pressed")
+        if (textField == self.usernameField) {
+            print("password field becoming responder")
+            self.passwordField.becomeFirstResponder()
+        }
+        else if (textField == self.passwordField) {
+            self.view.endEditing(true)
+            self.login(textField)
+        }
+        return false
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if (textField == self.passwordField) {
+            textField.text = nil
+        }
+    }
+   
 }

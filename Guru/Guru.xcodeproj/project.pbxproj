@@ -10,6 +10,7 @@
 		16F579B5A60682A874D89313 /* Pods_Guru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */; };
 		4326C5A422095AE111FFAEF9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		6514C0C0DD4146398976A739 /* Pods_GuruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */; };
+		77A86A061E3EE66E00D23385 /* UIView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A86A051E3EE66E00D23385 /* UIView Extension.swift */; };
 		77BCB9CD1E345579004DF9AB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB9CC1E345579004DF9AB /* Point.swift */; };
 		77D66B831E33E1B200C90E01 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B821E33E1B200C90E01 /* VideoVC.swift */; };
 		77D66B851E33E34600C90E01 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B841E33E34600C90E01 /* Utils.swift */; };
@@ -27,7 +28,6 @@
 		AFBE11E31E34421F008BCBC8 /* LDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE11E21E34421F008BCBC8 /* LDViewController.swift */; };
 		E156A71A1E3E696400C7B4CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E156A7191E3E696400C7B4CD /* LoginViewController.swift */; };
 		E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3301E331BB4003C281D /* AppDelegate.swift */; };
-		E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3321E331BB4003C281D /* ViewController.swift */; };
 		E1F3F3361E331BB4003C281D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3341E331BB4003C281D /* Main.storyboard */; };
 		E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3371E331BB4003C281D /* Assets.xcassets */; };
 		E1F3F33B1E331BB4003C281D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */; };
@@ -69,6 +69,7 @@
 		716B7D6DDAA026DF4E0D7DED /* Pods-Guru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.debug.xcconfig"; sourceTree = "<group>"; };
 		72113A437218719506326280 /* Pods-GuruUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7468ED20223D19669D5BB1EE /* Pods-Guru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guru.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guru/Pods-Guru.release.xcconfig"; sourceTree = "<group>"; };
+		77A86A051E3EE66E00D23385 /* UIView Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView Extension.swift"; sourceTree = "<group>"; };
 		77AA496A1E336B3A0065DC6B /* Guru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guru.entitlements; sourceTree = "<group>"; };
 		77BCB9CC1E345579004DF9AB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		77D66B821E33E1B200C90E01 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		E156A7191E3E696400C7B4CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E1F3F32D1E331BB4003C281D /* Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F3F3301E331BB4003C281D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1F3F3321E331BB4003C281D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1F3F3351E331BB4003C281D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1F3F3371E331BB4003C281D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1F3F33A1E331BB4003C281D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -154,6 +154,71 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77A86A001E3EE49100D23385 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E156A7191E3E696400C7B4CD /* LoginViewController.swift */,
+				E1F3F3601E333152003C281D /* SignUpViewController.swift */,
+				AFB441771E332246006C3864 /* HomePage.swift */,
+				E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */,
+				E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */,
+				E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */,
+				AF2821661E33448500493A74 /* WaitingScreen.swift */,
+				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
+				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		77A86A011E3EE4A800D23385 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77BCB9CC1E345579004DF9AB /* Point.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		77A86A021E3EE4B700D23385 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				77D66B841E33E34600C90E01 /* Utils.swift */,
+				77A86A051E3EE66E00D23385 /* UIView Extension.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		77A86A031E3EE4DB00D23385 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1F3F3341E331BB4003C281D /* Main.storyboard */,
+				E1F3F37D1E34B64D003C281D /* DemoPopupViewController2.storyboard */,
+				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
+				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		77A86A041E3EE4FB00D23385 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
+				AF2821641E33440500493A74 /* circle.png */,
+				E1F3F3641E334DAB003C281D /* notifications-button (1).png */,
+				AFB441751E331FF9006C3864 /* BKG.png */,
+				E1F3F36A1E33D1D1003C281D /* red.png */,
+				AF2821621E33373500493A74 /* Camera.png */,
+				AFBE11DC1E3441A8008BCBC8 /* Reset.png */,
+				E1F3F37A1E345698003C281D /* mute (2).png */,
+				AFBE11DD1E3441A8008BCBC8 /* white_down.png */,
+				AFBE11DE1E3441A8008BCBC8 /* white_up.png */,
+				E1F3F3701E33F058003C281D /* checked (1).png */,
+				E1F3F3711E33F058003C281D /* cancel (1).png */,
+				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
+				AF2821681E33466700493A74 /* Guru_green.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		8952CFFBFAB6BE263B4DD8DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,39 +257,14 @@
 		E1F3F32F1E331BB4003C281D /* Guru */ = {
 			isa = PBXGroup;
 			children = (
-				77AA496A1E336B3A0065DC6B /* Guru.entitlements */,
 				E1F3F3301E331BB4003C281D /* AppDelegate.swift */,
-				E156A7191E3E696400C7B4CD /* LoginViewController.swift */,
-				E1F3F3601E333152003C281D /* SignUpViewController.swift */,
-				E1F3F3321E331BB4003C281D /* ViewController.swift */,
-				E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */,
-				E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */,
-				E1F3F3341E331BB4003C281D /* Main.storyboard */,
-				AFB441771E332246006C3864 /* HomePage.swift */,
-				AF2821661E33448500493A74 /* WaitingScreen.swift */,
-				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
-				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
-				77BCB9CC1E345579004DF9AB /* Point.swift */,
-				77D66B841E33E34600C90E01 /* Utils.swift */,
-				E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */,
-				E1F3F37D1E34B64D003C281D /* DemoPopupViewController2.storyboard */,
+				77A86A021E3EE4B700D23385 /* Utilities */,
+				77A86A011E3EE4A800D23385 /* Model */,
+				77A86A031E3EE4DB00D23385 /* Views */,
+				77A86A001E3EE49100D23385 /* Controllers */,
+				77A86A041E3EE4FB00D23385 /* Assets */,
+				77AA496A1E336B3A0065DC6B /* Guru.entitlements */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
-				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
-				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
-				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
-				AF2821641E33440500493A74 /* circle.png */,
-				E1F3F3641E334DAB003C281D /* notifications-button (1).png */,
-				AFB441751E331FF9006C3864 /* BKG.png */,
-				E1F3F36A1E33D1D1003C281D /* red.png */,
-				AF2821621E33373500493A74 /* Camera.png */,
-				AFBE11DC1E3441A8008BCBC8 /* Reset.png */,
-				E1F3F37A1E345698003C281D /* mute (2).png */,
-				AFBE11DD1E3441A8008BCBC8 /* white_down.png */,
-				AFBE11DE1E3441A8008BCBC8 /* white_up.png */,
-				E1F3F3701E33F058003C281D /* checked (1).png */,
-				E1F3F3711E33F058003C281D /* cancel (1).png */,
-				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
-				AF2821681E33466700493A74 /* Guru_green.png */,
 			);
 			path = Guru;
 			sourceTree = "<group>";
@@ -557,7 +597,6 @@
 				AFBE11E31E34421F008BCBC8 /* LDViewController.swift in Sources */,
 				77D66B831E33E1B200C90E01 /* VideoVC.swift in Sources */,
 				AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */,
-				E1F3F3331E331BB4003C281D /* ViewController.swift in Sources */,
 				77D66B851E33E34600C90E01 /* Utils.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
@@ -566,6 +605,7 @@
 				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
 				E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */,
 				E156A71A1E3E696400C7B4CD /* LoginViewController.swift in Sources */,
+				77A86A061E3EE66E00D23385 /* UIView Extension.swift in Sources */,
 				E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
