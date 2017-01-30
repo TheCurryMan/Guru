@@ -7,84 +7,85 @@ provides-nominal:
 provides-member:
 - ["C4Guru16LDViewController", ""]
 provides-dynamic-lookup:
-- "swipeDownRec"
-- "red"
-- "reset"
-- "tool"
-- "viewDidLoad"
-- "prefersStatusBarHidden"
-- "imageView"
-- "subscribeLiveQuery"
-- "touchesBegan"
-- "swiped"
-- "sendPointData"
-- "question"
-- "blue"
-- "viewDidAppear"
-- "toggleStatus"
-- "swipedUp"
-- "viewWillDisappear"
-- "resetButton"
-- "pointQuery"
 - "togglePressed"
-- "disconnectFromChatRoom"
 - "didReceiveMemoryWarning"
-- "touchesMoved"
-- "touchesEnded"
-- "toggleButton"
-- "selectedImage"
-- "swipeUpRec"
+- "sendPointData"
+- "swipeDownRec"
+- "viewWillDisappear"
+- "pointQuery"
+- "swipedUp"
 - "swipedDown"
-- "drawLines"
-- "green"
+- "touchesEnded"
+- "imageView"
+- "selectedImage"
 - "lastPoint"
+- "question"
+- "subscribeLiveQuery"
+- "green"
+- "viewDidAppear"
+- "disconnectFromServer"
+- "reset"
+- "red"
+- "touchesBegan"
+- "viewDidLoad"
+- "tool"
+- "drawLines"
+- "resetButton"
+- "swiped"
+- "prefersStatusBarHidden"
+- "toggleButton"
+- "toggleStatus"
+- "blue"
+- "swipeUpRec"
+- "touchesMoved"
 depends-top-level:
-- "Set"
-- "UITouch"
-- "UnicodeScalarType"
-- !private "print"
-- !private "CGRect"
-- !private "UIGraphicsEndImageContext"
-- "UIEvent"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- "Bool"
-- !private "UIView"
-- "PFObject"
-- !private "DispatchQueue"
-- "UIViewController"
-- "CGFloat"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "ParseLiveQuery"
-- "CGPoint"
-- "UIImage"
-- "AnyObject"
-- !private "CGBlendMode"
-- !private "~="
-- "PFQuery"
-- "UIButton"
-- "liveQueryClient"
-- !private "UIControlState"
-- !private "Event"
-- "UIImageView"
-- !private "UIColor"
-- !private "/"
-- !private "Void"
-- !private "*"
-- !private "StringLiteralType"
 - !private "UIGraphicsGetCurrentContext"
-- !private "UIScreen"
-- !private "PFUser"
-- "UISwipeGestureRecognizer"
-- "BooleanLiteralType"
-- "Double"
-- "LDViewController"
-- "Subscription"
+- !private "~="
+- "AssignmentPrecedence"
+- !private "DispatchQueue"
+- "CastingPrecedence"
+- "PFQuery"
+- "CGPoint"
+- !private "Void"
 - !private "+"
-- !private "CGLineCap"
-- !private "!"
+- !private "*"
 - !private "UIGraphicsBeginImageContext"
+- !private "UIControlState"
+- "UIImage"
+- !private "CGBlendMode"
+- "ParseLiveQuery"
+- "PFObject"
+- "CGFloat"
+- "UIEvent"
+- !private "CGRect"
+- !private "Event"
+- "Double"
+- !private "UIColor"
+- !private "=="
+- "Subscription"
+- "UIViewController"
 - "Point"
+- "Set"
+- "UnicodeScalarType"
+- "UIButton"
+- !private "!"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- "UITouch"
+- "UIImageView"
+- "liveQueryClient"
+- !private "CGLineCap"
+- "BooleanLiteralType"
+- !private "PFUser"
+- !private "UIGraphicsEndImageContext"
+- !private "print"
+- "Bool"
+- "UISwipeGestureRecognizer"
+- "AnyObject"
+- "LDViewController"
+- !private "StringLiteralType"
+- !private "UIView"
+- !private "/"
+- !private "UIScreen"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGBlendMode"]
@@ -117,7 +118,7 @@ depends-member:
 - !private ["Ps9AnyObject", "contentsScale"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
-- ["Ps9AnyObject", "disconnectFromChatRoom"]
+- ["Ps9AnyObject", "disconnectFromServer"]
 - !private ["Ps9AnyObject", "draw"]
 - ["Ps9AnyObject", "drawLines"]
 - !private ["Ps9AnyObject", "frame"]
@@ -250,7 +251,7 @@ depends-member:
 - !private ["Ps7CVarArg", "contentsScale"]
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
-- ["Ps7CVarArg", "disconnectFromChatRoom"]
+- ["Ps7CVarArg", "disconnectFromServer"]
 - !private ["Ps7CVarArg", "draw"]
 - ["Ps7CVarArg", "drawLines"]
 - !private ["Ps7CVarArg", "first"]
@@ -348,7 +349,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "contentsScale"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
-- ["Ps28CustomDebugStringConvertible", "disconnectFromChatRoom"]
+- ["Ps28CustomDebugStringConvertible", "disconnectFromServer"]
 - !private ["Ps28CustomDebugStringConvertible", "draw"]
 - ["Ps28CustomDebugStringConvertible", "drawLines"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
@@ -463,7 +464,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "contentsScale"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
-- ["Ps23CustomStringConvertible", "disconnectFromChatRoom"]
+- ["Ps23CustomStringConvertible", "disconnectFromServer"]
 - !private ["Ps23CustomStringConvertible", "draw"]
 - ["Ps23CustomStringConvertible", "drawLines"]
 - !private ["Ps23CustomStringConvertible", "first"]
@@ -558,7 +559,7 @@ depends-member:
 - !private ["Ps9Equatable", "contentsScale"]
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
-- ["Ps9Equatable", "disconnectFromChatRoom"]
+- ["Ps9Equatable", "disconnectFromServer"]
 - !private ["Ps9Equatable", "draw"]
 - ["Ps9Equatable", "drawLines"]
 - !private ["Ps9Equatable", "first"]
@@ -668,7 +669,7 @@ depends-member:
 - !private ["Ps8Hashable", "contentsScale"]
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
-- ["Ps8Hashable", "disconnectFromChatRoom"]
+- ["Ps8Hashable", "disconnectFromServer"]
 - !private ["Ps8Hashable", "draw"]
 - ["Ps8Hashable", "drawLines"]
 - !private ["Ps8Hashable", "first"]
@@ -775,7 +776,7 @@ depends-member:
 - ["C4Guru16LDViewController", "blue"]
 - ["C4Guru16LDViewController", "deinit"]
 - ["C4Guru16LDViewController", "didReceiveMemoryWarning"]
-- ["C4Guru16LDViewController", "disconnectFromChatRoom"]
+- ["C4Guru16LDViewController", "disconnectFromServer"]
 - ["C4Guru16LDViewController", "drawLines"]
 - ["C4Guru16LDViewController", "green"]
 - ["C4Guru16LDViewController", "imageView"]
@@ -840,7 +841,7 @@ depends-member:
 - !private ["PSo8NSCoding", "cgColor"]
 - !private ["PSo8NSCoding", "contentsScale"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
-- ["PSo8NSCoding", "disconnectFromChatRoom"]
+- ["PSo8NSCoding", "disconnectFromServer"]
 - !private ["PSo8NSCoding", "draw"]
 - ["PSo8NSCoding", "drawLines"]
 - !private ["PSo8NSCoding", "frame"]
@@ -906,7 +907,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "blue"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
-- ["PSo26NSExtensionRequestHandling", "disconnectFromChatRoom"]
+- ["PSo26NSExtensionRequestHandling", "disconnectFromServer"]
 - ["PSo26NSExtensionRequestHandling", "drawLines"]
 - ["PSo26NSExtensionRequestHandling", "green"]
 - ["PSo26NSExtensionRequestHandling", "imageView"]
@@ -982,7 +983,7 @@ depends-member:
 - !private ["CSo8NSObject", "contentsScale"]
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
-- ["CSo8NSObject", "disconnectFromChatRoom"]
+- ["CSo8NSObject", "disconnectFromServer"]
 - !private ["CSo8NSObject", "draw"]
 - ["CSo8NSObject", "drawLines"]
 - !private ["CSo8NSObject", "frame"]
@@ -1065,7 +1066,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "contentsScale"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
-- ["PSo16NSObjectProtocol", "disconnectFromChatRoom"]
+- ["PSo16NSObjectProtocol", "disconnectFromServer"]
 - !private ["PSo16NSObjectProtocol", "draw"]
 - ["PSo16NSObjectProtocol", "drawLines"]
 - !private ["PSo16NSObjectProtocol", "frame"]
@@ -1231,7 +1232,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "blue"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
-- ["PSo21UIAppearanceContainer", "disconnectFromChatRoom"]
+- ["PSo21UIAppearanceContainer", "disconnectFromServer"]
 - ["PSo21UIAppearanceContainer", "drawLines"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "green"]
@@ -1299,7 +1300,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "blue"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
-- ["PSo18UIContentContainer", "disconnectFromChatRoom"]
+- ["PSo18UIContentContainer", "disconnectFromServer"]
 - ["PSo18UIContentContainer", "drawLines"]
 - ["PSo18UIContentContainer", "green"]
 - ["PSo18UIContentContainer", "imageView"]
@@ -1381,7 +1382,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "blue"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
-- ["PSo18UIFocusEnvironment", "disconnectFromChatRoom"]
+- ["PSo18UIFocusEnvironment", "disconnectFromServer"]
 - ["PSo18UIFocusEnvironment", "drawLines"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "green"]
@@ -1475,7 +1476,7 @@ depends-member:
 - ["CSo11UIResponder", "blue"]
 - !private ["CSo11UIResponder", "center"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
-- ["CSo11UIResponder", "disconnectFromChatRoom"]
+- ["CSo11UIResponder", "disconnectFromServer"]
 - ["CSo11UIResponder", "drawLines"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "green"]
@@ -1539,7 +1540,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "blue"]
 - !private ["PSo30UIResponderStandardEditActions", "center"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
-- ["PSo30UIResponderStandardEditActions", "disconnectFromChatRoom"]
+- ["PSo30UIResponderStandardEditActions", "disconnectFromServer"]
 - ["PSo30UIResponderStandardEditActions", "drawLines"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - ["PSo30UIResponderStandardEditActions", "green"]
@@ -1604,7 +1605,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "blue"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
-- ["PSo16UIStateRestoring", "disconnectFromChatRoom"]
+- ["PSo16UIStateRestoring", "disconnectFromServer"]
 - ["PSo16UIStateRestoring", "drawLines"]
 - ["PSo16UIStateRestoring", "green"]
 - ["PSo16UIStateRestoring", "imageView"]
@@ -1665,7 +1666,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "blue"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
-- ["PSo18UITraitEnvironment", "disconnectFromChatRoom"]
+- ["PSo18UITraitEnvironment", "disconnectFromServer"]
 - ["PSo18UITraitEnvironment", "drawLines"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "green"]
@@ -1751,7 +1752,7 @@ depends-member:
 - ["CSo16UIViewController", "blue"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
-- ["CSo16UIViewController", "disconnectFromChatRoom"]
+- ["CSo16UIViewController", "disconnectFromServer"]
 - ["CSo16UIViewController", "drawLines"]
 - ["CSo16UIViewController", "green"]
 - ["CSo16UIViewController", "imageView"]
@@ -1847,7 +1848,7 @@ depends-member:
 - !private ["Ps9_Hashable", "contentsScale"]
 - !private ["Ps9_Hashable", "current"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
-- ["Ps9_Hashable", "disconnectFromChatRoom"]
+- ["Ps9_Hashable", "disconnectFromServer"]
 - !private ["Ps9_Hashable", "draw"]
 - ["Ps9_Hashable", "drawLines"]
 - !private ["Ps9_Hashable", "first"]
@@ -2173,4 +2174,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "47f4801f3852e4a3e1104cb5a44e7194"
+interface-hash: "cd6d29be401913aead079bc0b147346c"

@@ -60,6 +60,10 @@ class HomePage: UIViewController, UITextFieldDelegate {
         
     
     }
+    @IBAction func logout(_ sender: Any) {
+        PFUser.logOut()
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func catchNotification(notification:Notification) -> Void {
         print("Catch notification")

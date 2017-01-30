@@ -9,45 +9,45 @@ provides-member:
 - ["C4Guru20RequestTableViewCell", ""]
 - ["C4Guru26GuruRequestsViewController", ""]
 provides-dynamic-lookup:
-- "selectedQuestion"
-- "dismissView"
-- "topicLabel"
 - "usernameLabel"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "selectedQuestion"
 - "questionLabel"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
-- "questions"
+- "dismissView"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "prepare"
+- "questions"
+- "topicLabel"
 depends-top-level:
-- !private "String"
-- "IndexPath"
-- "GuruRequestsViewController"
 - "CastingPrecedence"
-- !private "PFQuery"
-- "UITableView"
-- !private "Array"
 - "AssignmentPrecedence"
-- !private "UIView"
 - !private "=="
+- "Int"
+- !private "Array"
+- "GuruRequestsViewController"
+- "UITableViewDelegate"
+- "UITableViewCell"
+- !private "PFUser"
+- !private "UIView"
+- "PFObject"
+- "UITableView"
 - "UILabel"
+- "UIViewController"
+- "UITableViewDataSource"
+- !private "StringLiteralType"
 - !private "AcceptViewController"
 - !private "Error"
-- "UIStoryboardSegue"
+- "IndexPath"
+- !private "String"
 - !private "BooleanLiteralType"
-- "UITableViewDelegate"
-- "UITableViewDataSource"
-- "UITableViewCell"
 - "RequestTableViewCell"
-- !private "PFUser"
-- "Int"
-- "PFObject"
-- "UIViewController"
+- !private "PFQuery"
+- "UIStoryboardSegue"
 - !private "UINib"
-- !private "StringLiteralType"
 depends-member:
 - ["C4Guru20AcceptViewController", "deinit"]
 - !private ["C4Guru20AcceptViewController", "question"]
@@ -106,6 +106,7 @@ depends-member:
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - !private ["Ps9AnyObject", "whereKey"]
+- !private ["Ps9AnyObject", "whereKeyDoesNotExist"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "Index"]
@@ -231,6 +232,7 @@ depends-member:
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
 - !private ["Ps7CVarArg", "whereKey"]
+- !private ["Ps7CVarArg", "whereKeyDoesNotExist"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Index"]
@@ -313,6 +315,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps28CustomDebugStringConvertible", "whereKey"]
+- !private ["Ps28CustomDebugStringConvertible", "whereKeyDoesNotExist"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
@@ -402,6 +405,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps23CustomStringConvertible", "whereKey"]
+- !private ["Ps23CustomStringConvertible", "whereKeyDoesNotExist"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
@@ -474,6 +478,7 @@ depends-member:
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - !private ["Ps9Equatable", "whereKey"]
+- !private ["Ps9Equatable", "whereKeyDoesNotExist"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
@@ -600,6 +605,7 @@ depends-member:
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - !private ["Ps8Hashable", "whereKey"]
+- !private ["Ps8Hashable", "whereKeyDoesNotExist"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["V10Foundation9IndexPath", "deinit"]
@@ -721,6 +727,7 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "order"]
 - !private ["PSo9NSCopying", "whereKey"]
+- !private ["PSo9NSCopying", "whereKeyDoesNotExist"]
 - ["PSo26NSExtensionRequestHandling", "PFObject"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
@@ -824,6 +831,7 @@ depends-member:
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "whereKey"]
+- !private ["CSo8NSObject", "whereKeyDoesNotExist"]
 - ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
@@ -879,6 +887,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "whereKey"]
+- !private ["PSo16NSObjectProtocol", "whereKeyDoesNotExist"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
@@ -893,6 +902,7 @@ depends-member:
 - !private ["CSo7PFQuery", "init"]
 - !private ["CSo7PFQuery", "order"]
 - !private ["CSo7PFQuery", "whereKey"]
+- !private ["CSo7PFQuery", "whereKeyDoesNotExist"]
 - !private ["PSo13PFSubclassing", "current"]
 - !private ["PSo13PFSubclassing", "username"]
 - !private ["CSo6PFUser", "current"]
@@ -1654,6 +1664,7 @@ depends-member:
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
 - !private ["Ps9_Hashable", "whereKey"]
+- !private ["Ps9_Hashable", "whereKeyDoesNotExist"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]

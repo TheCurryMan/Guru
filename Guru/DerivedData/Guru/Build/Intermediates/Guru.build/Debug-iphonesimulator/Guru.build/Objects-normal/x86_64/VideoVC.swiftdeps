@@ -6,48 +6,51 @@ provides-nominal:
 provides-member:
 - ["C4Guru7VideoVC", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "prefersStatusBarHidden"
-- "viewDidAppear"
-- "previewView"
-- "question"
-- "toggleMic"
-- "messageLabel"
+- "liveDrawVC"
+- "micButton"
 - "viewDidLoad"
 - "disconnectButton"
-- "remoteView"
 - "disconnect"
-- "micButton"
-- "liveDrawVC"
+- "previewView"
+- "prefersStatusBarHidden"
+- "viewDidAppear"
+- "toggleMic"
+- "messageLabel"
+- "remoteView"
+- "camChange"
+- "didReceiveMemoryWarning"
+- "question"
 - "showRoomUI"
 depends-top-level:
+- "UIButton"
+- "Bool"
+- !private "BooleanLiteralType"
+- "VideoVC"
 - "LDViewController"
-- "UIViewController"
-- "AssignmentPrecedence"
+- !private "print"
+- !private "StringLiteralType"
+- "AnyObject"
+- "UIView"
 - "WaitingScreenDelegate"
 - "CastingPrecedence"
+- "AssignmentPrecedence"
 - "PFObject"
-- "Bool"
-- "AnyObject"
-- !private "StringLiteralType"
-- !private "print"
-- "UIButton"
-- "VideoVC"
-- "UIView"
 - !private "UIApplication"
+- "UIViewController"
 - "UILabel"
 - !private "!"
-- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "addChildViewController"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "bringSubview"]
+- ["Ps9AnyObject", "camChange"]
 - ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "disconnect"]
 - ["Ps9AnyObject", "disconnectButton"]
+- !private ["Ps9AnyObject", "disconnectFromServer"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isHidden"]
@@ -76,10 +79,12 @@ depends-member:
 - !private ["Ps7CVarArg", "addChildViewController"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "bringSubview"]
+- ["Ps7CVarArg", "camChange"]
 - ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "disconnect"]
 - ["Ps7CVarArg", "disconnectButton"]
+- !private ["Ps7CVarArg", "disconnectFromServer"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isHidden"]
@@ -105,10 +110,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addChildViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "bringSubview"]
+- ["Ps28CustomDebugStringConvertible", "camChange"]
 - ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "disconnect"]
 - ["Ps28CustomDebugStringConvertible", "disconnectButton"]
+- !private ["Ps28CustomDebugStringConvertible", "disconnectFromServer"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
@@ -135,10 +142,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addChildViewController"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "bringSubview"]
+- ["Ps23CustomStringConvertible", "camChange"]
 - ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "disconnect"]
 - ["Ps23CustomStringConvertible", "disconnectButton"]
+- !private ["Ps23CustomStringConvertible", "disconnectFromServer"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
@@ -163,10 +172,12 @@ depends-member:
 - !private ["Ps9Equatable", "addChildViewController"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "bringSubview"]
+- ["Ps9Equatable", "camChange"]
 - ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "disconnect"]
 - ["Ps9Equatable", "disconnectButton"]
+- !private ["Ps9Equatable", "disconnectFromServer"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isHidden"]
@@ -195,10 +206,12 @@ depends-member:
 - !private ["Ps8Hashable", "addChildViewController"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "bringSubview"]
+- ["Ps8Hashable", "camChange"]
 - ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "disconnect"]
 - ["Ps8Hashable", "disconnectButton"]
+- !private ["Ps8Hashable", "disconnectFromServer"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isHidden"]
@@ -221,6 +234,7 @@ depends-member:
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["C4Guru16LDViewController", "deinit"]
+- !private ["C4Guru16LDViewController", "disconnectFromServer"]
 - !private ["C4Guru16LDViewController", "question"]
 - !private ["C4Guru16LDViewController", "view"]
 - !private ["Ps25LosslessStringConvertible", "init"]
@@ -230,10 +244,12 @@ depends-member:
 - !private ["PSo8NSCoding", "addChildViewController"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "bringSubview"]
+- ["PSo8NSCoding", "camChange"]
 - ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "disconnect"]
 - ["PSo8NSCoding", "disconnectButton"]
+- !private ["PSo8NSCoding", "disconnectFromServer"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isHidden"]
 - ["PSo8NSCoding", "liveDrawVC"]
@@ -254,10 +270,12 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "addChildViewController"]
+- ["PSo26NSExtensionRequestHandling", "camChange"]
 - ["PSo26NSExtensionRequestHandling", "delegate"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "disconnect"]
 - ["PSo26NSExtensionRequestHandling", "disconnectButton"]
+- !private ["PSo26NSExtensionRequestHandling", "disconnectFromServer"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "liveDrawVC"]
 - ["PSo26NSExtensionRequestHandling", "messageLabel"]
@@ -287,10 +305,12 @@ depends-member:
 - !private ["CSo8NSObject", "addChildViewController"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "bringSubview"]
+- ["CSo8NSObject", "camChange"]
 - ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "disconnect"]
 - ["CSo8NSObject", "disconnectButton"]
+- !private ["CSo8NSObject", "disconnectFromServer"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "isHidden"]
@@ -314,10 +334,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addChildViewController"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "bringSubview"]
+- ["PSo16NSObjectProtocol", "camChange"]
 - ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "disconnect"]
 - ["PSo16NSObjectProtocol", "disconnectButton"]
+- !private ["PSo16NSObjectProtocol", "disconnectFromServer"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
@@ -355,10 +377,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addChildViewController"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "bringSubview"]
+- ["PSo21UIAppearanceContainer", "camChange"]
 - ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "disconnect"]
 - ["PSo21UIAppearanceContainer", "disconnectButton"]
+- !private ["PSo21UIAppearanceContainer", "disconnectFromServer"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
 - ["PSo21UIAppearanceContainer", "liveDrawVC"]
@@ -382,10 +406,12 @@ depends-member:
 - !private ["CSo8UIButton", "isHidden"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "addChildViewController"]
+- ["PSo18UIContentContainer", "camChange"]
 - ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "disconnect"]
 - ["PSo18UIContentContainer", "disconnectButton"]
+- !private ["PSo18UIContentContainer", "disconnectFromServer"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "liveDrawVC"]
 - ["PSo18UIContentContainer", "messageLabel"]
@@ -413,10 +439,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addChildViewController"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "bringSubview"]
+- ["PSo18UIFocusEnvironment", "camChange"]
 - ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "disconnect"]
 - ["PSo18UIFocusEnvironment", "disconnectButton"]
+- !private ["PSo18UIFocusEnvironment", "disconnectFromServer"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
 - ["PSo18UIFocusEnvironment", "liveDrawVC"]
@@ -449,10 +477,12 @@ depends-member:
 - !private ["CSo11UIResponder", "addChildViewController"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "bringSubview"]
+- ["CSo11UIResponder", "camChange"]
 - ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "disconnect"]
 - ["CSo11UIResponder", "disconnectButton"]
+- !private ["CSo11UIResponder", "disconnectFromServer"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "isIdleTimerDisabled"]
@@ -475,10 +505,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "addChildViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "bringSubview"]
+- ["PSo30UIResponderStandardEditActions", "camChange"]
 - ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "disconnect"]
 - ["PSo30UIResponderStandardEditActions", "disconnectButton"]
+- !private ["PSo30UIResponderStandardEditActions", "disconnectFromServer"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "isIdleTimerDisabled"]
@@ -500,10 +532,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "addChildViewController"]
+- ["PSo16UIStateRestoring", "camChange"]
 - ["PSo16UIStateRestoring", "delegate"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "disconnect"]
 - ["PSo16UIStateRestoring", "disconnectButton"]
+- !private ["PSo16UIStateRestoring", "disconnectFromServer"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "liveDrawVC"]
 - ["PSo16UIStateRestoring", "messageLabel"]
@@ -526,10 +560,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addChildViewController"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "bringSubview"]
+- ["PSo18UITraitEnvironment", "camChange"]
 - ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "disconnect"]
 - ["PSo18UITraitEnvironment", "disconnectButton"]
+- !private ["PSo18UITraitEnvironment", "disconnectFromServer"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
 - ["PSo18UITraitEnvironment", "liveDrawVC"]
@@ -561,11 +597,13 @@ depends-member:
 - ["CSo16UIViewController", "UIView"]
 - ["CSo16UIViewController", "WaitingScreenDelegate"]
 - !private ["CSo16UIViewController", "addChildViewController"]
+- ["CSo16UIViewController", "camChange"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "delegate"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "disconnect"]
 - ["CSo16UIViewController", "disconnectButton"]
+- !private ["CSo16UIViewController", "disconnectFromServer"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "liveDrawVC"]
 - ["CSo16UIViewController", "messageLabel"]
@@ -592,6 +630,7 @@ depends-member:
 - ["C4Guru7VideoVC", "UIView"]
 - ["C4Guru7VideoVC", "WaitingScreenDelegate"]
 - !private ["C4Guru7VideoVC", "addChildViewController"]
+- ["C4Guru7VideoVC", "camChange"]
 - ["C4Guru7VideoVC", "deinit"]
 - ["C4Guru7VideoVC", "delegate"]
 - ["C4Guru7VideoVC", "didReceiveMemoryWarning"]
@@ -613,6 +652,7 @@ depends-member:
 - ["C4Guru7VideoVC", "viewDidAppear"]
 - ["C4Guru7VideoVC", "viewDidLoad"]
 - !private ["P4Guru21WaitingScreenDelegate", "disconnect"]
+- !private ["P4Guru21WaitingScreenDelegate", "toggleCamera"]
 - !private ["P4Guru21WaitingScreenDelegate", "toggleMic"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bringSubview"]
@@ -626,10 +666,12 @@ depends-member:
 - !private ["Ps9_Hashable", "addChildViewController"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "bringSubview"]
+- ["Ps9_Hashable", "camChange"]
 - ["Ps9_Hashable", "delegate"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "disconnect"]
 - ["Ps9_Hashable", "disconnectButton"]
+- !private ["Ps9_Hashable", "disconnectFromServer"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isHidden"]
@@ -822,4 +864,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "65eba649267a2b49449bc07e8cb8febc"
+interface-hash: "7a049c9ef3dcf92608cccb7d39d87731"
