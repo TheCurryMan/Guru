@@ -88,15 +88,19 @@ class HomePage: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         questionField.text = ""
+        self.updateUserStats()
         self.topicButton.setTitle("Calculus", for: UIControlState.normal)
         self.topicButton.setTitleColor(UIColor(red:0.73, green:0.73, blue:0.76, alpha:1.0), for: UIControlState.normal)
         PFUser.current()?.fetchInBackground(block: { (user: PFObject?, error: Error?) in
-            self.pointsLabel.text = String(user?["points"] as! Int)
-            self.answeredLabel.text = String(user?["answered"] as! Int)
-            self.askedLabel.text = String(user?["asked"] as! Int)
+            self.updateUserStats()
         })
-       
-        
+    }
+    
+    func updateUserStats() {
+        let user = PFUser.current()
+        self.pointsLabel.text = String(user?["points"] as! Int)
+        self.answeredLabel.text = String(user?["answered"] as! Int)
+        self.askedLabel.text = String(user?["asked"] as! Int)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
