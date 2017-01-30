@@ -6,61 +6,63 @@ provides-nominal:
 provides-member:
 - ["C4Guru8HomePage", ""]
 provides-dynamic-lookup:
-- "askedLabel"
-- "textFieldShouldReturn"
-- "prefersStatusBarHidden"
-- "avail"
-- "prepare"
-- "question"
-- "showTopics"
-- "viewWillAppear"
-- "questionField"
-- "pointsLabel"
-- "finalTopic"
-- "accept"
-- "answeredLabel"
-- "tapped"
-- "didReceiveMemoryWarning"
-- "topicButton"
-- "acceptButton"
-- "backgroundView"
-- "popup"
-- "viewDidLoad"
-- "pressedAsk"
 - "submitQuestion"
+- "tapped"
+- "answeredLabel"
+- "question"
+- "topicButton"
+- "popup"
+- "textFieldShouldReturn"
+- "accept"
 - "catchNotification"
+- "prepare"
+- "backgroundView"
+- "acceptButton"
+- "showTopics"
+- "pressedAsk"
+- "askedLabel"
+- "avail"
+- "viewWillAppear"
+- "prefersStatusBarHidden"
+- "didReceiveMemoryWarning"
+- "pointsLabel"
+- "logout"
+- "questionField"
+- "viewDidLoad"
+- "finalTopic"
 depends-top-level:
-- !private "Int"
-- "AssignmentPrecedence"
-- "UILabel"
-- "Bool"
-- !private "=="
-- !private "PFUser"
-- "UITextFieldDelegate"
-- "StringLiteralType"
-- !private "print"
-- "PFObject"
-- "BooleanLiteralType"
-- "UIStoryboardSegue"
-- "AnyObject"
-- "UIViewController"
-- "Notification"
-- !private "UIImage"
-- "UIButton"
-- !private "UIControlState"
-- !private "!"
-- !private "Array"
-- !private "UIColor"
-- "Void"
-- !private "NotificationCenter"
 - !private "WaitingScreen"
-- "PopupController"
-- "CastingPrecedence"
-- !private "String"
+- "PFObject"
+- !private "=="
+- !private "UIColor"
+- "StringLiteralType"
+- !private "NotificationCenter"
+- "UIViewController"
+- !private "print"
 - !private "DemoPopupViewController2"
 - "UIView"
+- "UILabel"
+- !private "Array"
+- "BooleanLiteralType"
+- "PopupController"
+- "UIStoryboardSegue"
+- !private "UIImage"
+- !private "UIControlState"
 - "HomePage"
+- !private "Error"
 - "UITextField"
+- "Void"
+- "Notification"
+- "AnyObject"
+- "UITextFieldDelegate"
+- "UIButton"
+- !private "Int"
+- "CastingPrecedence"
+- !private "!"
+- "Bool"
+- !private "String"
+- "AssignmentPrecedence"
+- !private "PFUser"
 depends-member:
 - !private ["Vs11AnyHashable", "deinit"]
 - !private ["Ps9AnyObject", "DemoPopupViewController2"]
@@ -92,12 +94,15 @@ depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "didShowHandler"]
 - !private ["Ps9AnyObject", "dismiss"]
+- !private ["Ps9AnyObject", "fetchInBackground"]
 - ["Ps9AnyObject", "finalTopic"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instance"]
 - !private ["Ps9AnyObject", "isEnabled"]
 - !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "logOut"]
+- ["Ps9AnyObject", "logout"]
 - !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "pointsLabel"]
 - ["Ps9AnyObject", "popup"]
@@ -189,12 +194,15 @@ depends-member:
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "didShowHandler"]
 - !private ["Ps7CVarArg", "dismiss"]
+- !private ["Ps7CVarArg", "fetchInBackground"]
 - ["Ps7CVarArg", "finalTopic"]
 - !private ["Ps7CVarArg", "identifier"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instance"]
 - !private ["Ps7CVarArg", "isEnabled"]
 - !private ["Ps7CVarArg", "layer"]
+- !private ["Ps7CVarArg", "logOut"]
+- ["Ps7CVarArg", "logout"]
 - !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "pointsLabel"]
 - ["Ps7CVarArg", "popup"]
@@ -274,12 +282,15 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "didShowHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- !private ["Ps28CustomDebugStringConvertible", "fetchInBackground"]
 - ["Ps28CustomDebugStringConvertible", "finalTopic"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instance"]
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "logOut"]
+- ["Ps28CustomDebugStringConvertible", "logout"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "pointsLabel"]
 - ["Ps28CustomDebugStringConvertible", "popup"]
@@ -370,12 +381,15 @@ depends-member:
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "didShowHandler"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
+- !private ["Ps23CustomStringConvertible", "fetchInBackground"]
 - ["Ps23CustomStringConvertible", "finalTopic"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instance"]
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "logOut"]
+- ["Ps23CustomStringConvertible", "logout"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "pointsLabel"]
 - ["Ps23CustomStringConvertible", "popup"]
@@ -452,12 +466,15 @@ depends-member:
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "didShowHandler"]
 - !private ["Ps9Equatable", "dismiss"]
+- !private ["Ps9Equatable", "fetchInBackground"]
 - ["Ps9Equatable", "finalTopic"]
 - !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instance"]
 - !private ["Ps9Equatable", "isEnabled"]
 - !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "logOut"]
+- ["Ps9Equatable", "logout"]
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "pointsLabel"]
@@ -542,12 +559,15 @@ depends-member:
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "didShowHandler"]
 - !private ["Ps8Hashable", "dismiss"]
+- !private ["Ps8Hashable", "fetchInBackground"]
 - ["Ps8Hashable", "finalTopic"]
 - !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instance"]
 - !private ["Ps8Hashable", "isEnabled"]
 - !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "logOut"]
+- ["Ps8Hashable", "logout"]
 - !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "pointsLabel"]
 - ["Ps8Hashable", "popup"]
@@ -585,6 +605,7 @@ depends-member:
 - ["C4Guru8HomePage", "AnyObject"]
 - ["C4Guru8HomePage", "Bool"]
 - !private ["C4Guru8HomePage", "DemoPopupViewController2"]
+- !private ["C4Guru8HomePage", "Error"]
 - !private ["C4Guru8HomePage", "Int"]
 - ["C4Guru8HomePage", "Notification"]
 - !private ["C4Guru8HomePage", "NotificationCenter"]
@@ -611,8 +632,10 @@ depends-member:
 - ["C4Guru8HomePage", "catchNotification"]
 - ["C4Guru8HomePage", "deinit"]
 - ["C4Guru8HomePage", "didReceiveMemoryWarning"]
+- !private ["C4Guru8HomePage", "dismiss"]
 - ["C4Guru8HomePage", "finalTopic"]
 - ["C4Guru8HomePage", "init"]
+- ["C4Guru8HomePage", "logout"]
 - !private ["C4Guru8HomePage", "performSegue"]
 - ["C4Guru8HomePage", "pointsLabel"]
 - ["C4Guru8HomePage", "popup"]
@@ -654,7 +677,7 @@ depends-member:
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
-- ["Si", "deinit"]
+- !private ["Si", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
@@ -701,6 +724,7 @@ depends-member:
 - !private ["PSo8NSCoding", "instance"]
 - !private ["PSo8NSCoding", "isEnabled"]
 - !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "logout"]
 - !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "pointsLabel"]
 - ["PSo8NSCoding", "popup"]
@@ -759,6 +783,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "finalTopic"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "instance"]
+- ["PSo26NSExtensionRequestHandling", "logout"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "pointsLabel"]
 - ["PSo26NSExtensionRequestHandling", "popup"]
@@ -787,6 +812,7 @@ depends-member:
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "DemoPopupViewController2"]
+- !private ["CSo8NSObject", "Error"]
 - !private ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "Notification"]
 - !private ["CSo8NSObject", "NotificationCenter"]
@@ -823,12 +849,15 @@ depends-member:
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "didShowHandler"]
 - !private ["CSo8NSObject", "dismiss"]
+- !private ["CSo8NSObject", "fetchInBackground"]
 - ["CSo8NSObject", "finalTopic"]
 - !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instance"]
 - !private ["CSo8NSObject", "isEnabled"]
 - !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "logOut"]
+- ["CSo8NSObject", "logout"]
 - !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "pointsLabel"]
 - ["CSo8NSObject", "popup"]
@@ -890,12 +919,15 @@ depends-member:
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "didShowHandler"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
+- !private ["PSo16NSObjectProtocol", "fetchInBackground"]
 - ["PSo16NSObjectProtocol", "finalTopic"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instance"]
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "logOut"]
+- ["PSo16NSObjectProtocol", "logout"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "pointsLabel"]
 - ["PSo16NSObjectProtocol", "popup"]
@@ -943,14 +975,20 @@ depends-member:
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "current"]
 - ["CSo8PFObject", "deinit"]
+- !private ["CSo8PFObject", "fetchInBackground"]
 - !private ["CSo8PFObject", "init"]
+- !private ["CSo8PFObject", "logOut"]
 - !private ["CSo8PFObject", "saveInBackground"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["PSo13PFSubclassing", "current"]
+- !private ["PSo13PFSubclassing", "fetchInBackground"]
+- !private ["PSo13PFSubclassing", "logOut"]
 - !private ["PSo13PFSubclassing", "saveInBackground"]
 - !private ["PSo13PFSubclassing", "subscript"]
 - !private ["CSo6PFUser", "current"]
 - ["CSo6PFUser", "deinit"]
+- !private ["CSo6PFUser", "fetchInBackground"]
+- !private ["CSo6PFUser", "logOut"]
 - !private ["CSo6PFUser", "saveInBackground"]
 - !private ["CSo6PFUser", "subscript"]
 - ["OC15PopupController15PopupController14PopupAnimation", "deinit"]
@@ -1051,6 +1089,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "instance"]
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "logout"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "pointsLabel"]
 - ["PSo21UIAppearanceContainer", "popup"]
@@ -1088,7 +1127,8 @@ depends-member:
 - !private ["CSo8UIButton", "setTitleColor"]
 - !private ["CSo8UIButton", "titleLabel"]
 - !private ["CSo7UIColor", "darkGray"]
-- !private ["CSo7UIColor", "deinit"]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "DemoPopupViewController2"]
 - !private ["PSo18UIContentContainer", "Notification"]
 - !private ["PSo18UIContentContainer", "NotificationCenter"]
@@ -1115,6 +1155,7 @@ depends-member:
 - ["PSo18UIContentContainer", "finalTopic"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "instance"]
+- ["PSo18UIContentContainer", "logout"]
 - !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "pointsLabel"]
 - ["PSo18UIContentContainer", "popup"]
@@ -1194,6 +1235,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "instance"]
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "logout"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "pointsLabel"]
 - ["PSo18UIFocusEnvironment", "popup"]
@@ -1247,6 +1289,7 @@ depends-member:
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "DemoPopupViewController2"]
+- !private ["CSo11UIResponder", "Error"]
 - !private ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "Notification"]
 - !private ["CSo11UIResponder", "NotificationCenter"]
@@ -1282,6 +1325,7 @@ depends-member:
 - !private ["CSo11UIResponder", "instance"]
 - !private ["CSo11UIResponder", "isEnabled"]
 - !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "logout"]
 - !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "pointsLabel"]
 - ["CSo11UIResponder", "popup"]
@@ -1339,6 +1383,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "instance"]
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "logout"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "pointsLabel"]
 - ["PSo30UIResponderStandardEditActions", "popup"]
@@ -1403,6 +1448,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "finalTopic"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "instance"]
+- ["PSo16UIStateRestoring", "logout"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "pointsLabel"]
 - ["PSo16UIStateRestoring", "popup"]
@@ -1451,6 +1497,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "avail"]
 - !private ["PSo19UITextFieldDelegate", "backgroundView"]
 - !private ["PSo19UITextFieldDelegate", "catchNotification"]
+- !private ["PSo19UITextFieldDelegate", "dismiss"]
 - !private ["PSo19UITextFieldDelegate", "finalTopic"]
 - !private ["PSo19UITextFieldDelegate", "performSegue"]
 - !private ["PSo19UITextFieldDelegate", "pointsLabel"]
@@ -1500,6 +1547,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "instance"]
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "logout"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "pointsLabel"]
 - ["PSo18UITraitEnvironment", "popup"]
@@ -1541,6 +1589,7 @@ depends-member:
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "DemoPopupViewController2"]
+- !private ["CSo16UIViewController", "Error"]
 - !private ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "Notification"]
 - !private ["CSo16UIViewController", "NotificationCenter"]
@@ -1575,6 +1624,7 @@ depends-member:
 - ["CSo16UIViewController", "finalTopic"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "instance"]
+- ["CSo16UIViewController", "logout"]
 - !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "pointsLabel"]
 - ["CSo16UIViewController", "popup"]
@@ -1621,6 +1671,7 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "darkGray"]
+- !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "DemoPopupViewController2"]
@@ -1658,12 +1709,15 @@ depends-member:
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "didShowHandler"]
 - !private ["Ps9_Hashable", "dismiss"]
+- !private ["Ps9_Hashable", "fetchInBackground"]
 - ["Ps9_Hashable", "finalTopic"]
 - !private ["Ps9_Hashable", "identifier"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instance"]
 - !private ["Ps9_Hashable", "isEnabled"]
 - !private ["Ps9_Hashable", "layer"]
+- !private ["Ps9_Hashable", "logOut"]
+- ["Ps9_Hashable", "logout"]
 - !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "pointsLabel"]
 - ["Ps9_Hashable", "popup"]
@@ -1767,7 +1821,7 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
-- "Si"
+- !private "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
@@ -1819,7 +1873,7 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "CSo8UIButton"
-- !private "CSo7UIColor"
+- "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
@@ -1979,4 +2033,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "cf37005276a699a3ec5d5bb0cc2372f3"
+interface-hash: "4815f375c037411c617b72ca78389259"

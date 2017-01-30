@@ -223,6 +223,7 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 - (IBAction)pressedAsk:(UIButton * _Nonnull)sender;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (IBAction)logout:(id _Nonnull)sender;
 - (void)catchNotificationWithNotification:(NSNotification * _Nonnull)notification;
 - (void)viewWillAppear:(BOOL)animated;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
@@ -263,7 +264,7 @@ SWIFT_CLASS("_TtC4Guru16LDViewController")
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)subscribeLiveQuery;
 - (void)sendPointDataFromX:(double)fromX fromY:(double)fromY toX:(double)toX toY:(double)toY;
-- (void)disconnectFromChatRoom;
+- (void)disconnectFromServer;
 - (IBAction)togglePressed:(id _Nonnull)sender;
 - (IBAction)swipedUp:(id _Nonnull)sender;
 - (IBAction)swipedDown:(id _Nonnull)sender;
@@ -274,6 +275,19 @@ SWIFT_CLASS("_TtC4Guru16LDViewController")
 - (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (IBAction)reset:(id _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Guru19LoginViewController")
+@interface LoginViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)cancel:(id _Nonnull)sender;
+- (IBAction)login:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -332,6 +346,7 @@ SWIFT_CLASS("_TtC4Guru7VideoVC")
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)didReceiveMemoryWarning;
 - (void)showRoomUIInRoom:(BOOL)inRoom;
+- (IBAction)camChange:(id _Nonnull)sender;
 - (IBAction)disconnectWithSender:(id _Nonnull)sender;
 - (IBAction)toggleMicWithSender:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -373,6 +388,7 @@ SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified guru;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified dismissButton;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified questionLabel;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified loadingLabel;
 @property (nonatomic, strong) VideoVC * _Null_unspecified videoScreen;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -381,6 +397,7 @@ SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 - (void)disconnectWithSender:(id _Nonnull)sender;
 - (void)toggleMicWithSender:(id _Nonnull)sender;
 - (void)startPreview;
+- (void)toggleCamera;
 - (void)flipCamera;
 - (void)prepareLocalMedia;
 - (void)cleanupRemoteParticipant;

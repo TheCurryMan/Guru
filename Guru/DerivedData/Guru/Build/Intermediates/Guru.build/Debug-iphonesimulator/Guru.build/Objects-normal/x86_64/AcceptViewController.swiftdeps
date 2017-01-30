@@ -6,31 +6,31 @@ provides-nominal:
 provides-member:
 - ["C4Guru20AcceptViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "questionLabel"
 - "question"
-- "accept"
-- "prepare"
-- "viewDidLoad"
-- "backgroundView"
 - "topicLabel"
+- "questionLabel"
+- "didReceiveMemoryWarning"
+- "accept"
 - "decline"
+- "prepare"
+- "backgroundView"
+- "viewDidLoad"
 depends-top-level:
 - "UIViewController"
 - "PFObject"
-- "CastingPrecedence"
+- !private "PFUser"
+- "UILabel"
+- !private "String"
 - "AssignmentPrecedence"
 - !private "=="
-- "UILabel"
-- "UIView"
-- !private "Error"
-- "BooleanLiteralType"
-- !private "String"
+- "CastingPrecedence"
 - "UIStoryboardSegue"
-- !private "PFUser"
-- !private "StringLiteralType"
-- !private "WaitingScreen"
+- "UIView"
 - "AcceptViewController"
+- !private "StringLiteralType"
+- "BooleanLiteralType"
+- !private "WaitingScreen"
+- !private "Error"
 depends-member:
 - !private ["C4Guru20AcceptViewController", "Error"]
 - ["C4Guru20AcceptViewController", "PFObject"]
@@ -77,6 +77,7 @@ depends-member:
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "topicLabel"]
+- !private ["Ps9AnyObject", "tutor"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["CSo6BFTask", "deinit"]
@@ -111,6 +112,7 @@ depends-member:
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "topicLabel"]
+- !private ["Ps7CVarArg", "tutor"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
@@ -137,6 +139,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "topicLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "tutor"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -167,6 +170,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "topicLabel"]
+- !private ["Ps23CustomStringConvertible", "tutor"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "PFUser"]
@@ -193,6 +197,7 @@ depends-member:
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "topicLabel"]
+- !private ["Ps9Equatable", "tutor"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -224,6 +229,7 @@ depends-member:
 - !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "topicLabel"]
+- !private ["Ps8Hashable", "tutor"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
@@ -248,6 +254,7 @@ depends-member:
 - ["PSo8NSCoding", "questionLabel"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "topicLabel"]
+- !private ["PSo8NSCoding", "tutor"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
@@ -265,6 +272,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "question"]
 - ["PSo26NSExtensionRequestHandling", "questionLabel"]
 - ["PSo26NSExtensionRequestHandling", "topicLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "tutor"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -298,6 +306,7 @@ depends-member:
 - !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "topicLabel"]
+- !private ["CSo8NSObject", "tutor"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - ["PSo16NSObjectProtocol", "accept"]
@@ -322,6 +331,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "topicLabel"]
+- !private ["PSo16NSObjectProtocol", "tutor"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -338,7 +348,9 @@ depends-member:
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["PSo22TVIParticipantDelegate", "question"]
+- !private ["PSo22TVIParticipantDelegate", "tutor"]
 - !private ["PSo15TVIRoomDelegate", "question"]
+- !private ["PSo15TVIRoomDelegate", "tutor"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
@@ -361,6 +373,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "questionLabel"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "topicLabel"]
+- !private ["PSo21UIAppearanceContainer", "tutor"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "PFUser"]
@@ -377,6 +390,7 @@ depends-member:
 - ["PSo18UIContentContainer", "question"]
 - ["PSo18UIContentContainer", "questionLabel"]
 - ["PSo18UIContentContainer", "topicLabel"]
+- !private ["PSo18UIContentContainer", "tutor"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
@@ -400,6 +414,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "questionLabel"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "topicLabel"]
+- !private ["PSo18UIFocusEnvironment", "tutor"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "layer"]
@@ -430,6 +445,7 @@ depends-member:
 - ["CSo11UIResponder", "questionLabel"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "topicLabel"]
+- !private ["CSo11UIResponder", "tutor"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - ["PSo30UIResponderStandardEditActions", "accept"]
@@ -447,6 +463,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "questionLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "topicLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "tutor"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "PFUser"]
@@ -463,6 +480,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "question"]
 - ["PSo16UIStateRestoring", "questionLabel"]
 - ["PSo16UIStateRestoring", "topicLabel"]
+- !private ["PSo16UIStateRestoring", "tutor"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["CSo17UIStoryboardSegue", "deinit"]
@@ -484,6 +502,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "questionLabel"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "topicLabel"]
+- !private ["PSo18UITraitEnvironment", "tutor"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "layer"]
@@ -510,11 +529,14 @@ depends-member:
 - ["CSo16UIViewController", "question"]
 - ["CSo16UIViewController", "questionLabel"]
 - ["CSo16UIViewController", "topicLabel"]
+- !private ["CSo16UIViewController", "tutor"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - ["C4Guru13WaitingScreen", "deinit"]
 - !private ["C4Guru13WaitingScreen", "question"]
+- !private ["C4Guru13WaitingScreen", "tutor"]
 - !private ["P4Guru21WaitingScreenDelegate", "question"]
+- !private ["P4Guru21WaitingScreenDelegate", "tutor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -547,6 +569,7 @@ depends-member:
 - !private ["Ps9_Hashable", "subscript"]
 - !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "topicLabel"]
+- !private ["Ps9_Hashable", "tutor"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
