@@ -40,11 +40,14 @@ class LDViewController: UIViewController {
     var universalColorR:CGFloat=0;
     var universalColorG:CGFloat=0;
     var universalColorB:CGFloat=0;
-
-    
     var subscriptionQuery: Subscription<Point>?
-    
     var pointQuery: PFQuery<Point>!
+    
+    // MARK: - Init Functions
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,12 +87,56 @@ class LDViewController: UIViewController {
         self.disconnectFromServer()
     }
     
+    func setUpColorBubbles()
+    {
+        button1.setImage(button1.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button1.tintColor = UIColor.init(red: 255, green: 0, blue: 0, alpha: 1)
+        
+        button2.setImage(button2.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button2.tintColor = UIColor.init(red: 0, green: 255, blue: 0, alpha: 1)
+        
+        button3.setImage(button3.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button3.tintColor = UIColor.init(red: 0, green: 0, blue: 255, alpha: 1)
+        
+        button4.setImage(button4.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button4.tintColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1)
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        swiped = false
+        if let touch = touches.first {
+            lastPoint = touch.location(in: self.view)
+        }
+    }
+    
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        swiped = true
+        
+        if let touch = touches.first {
+            let currentPoint = touch.location(in: self.view)
+            if (self.toggleStatus == 1) {
+                sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
+                drawLines(fromPoint: lastPoint, toPoint: currentPoint)
+            }
+            lastPoint = currentPoint
+        }
+    }
+    
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if !swiped {
+            drawLines(fromPoint: lastPoint, toPoint: lastPoint)
+        }
+    }
+    
+    // MARK: - Live Query Functions
+
     func subscribeLiveQuery(){
         
         subscriptionQuery = liveQueryClient.subscribe(pointQuery).handle(Event.created, { (query: PFQuery<Point>, point: Point) in
             
-            DispatchQueue.main.async {
-                
+        DispatchQueue.main.async {
                 self.drawLines(fromPoint: CGPoint(x: point.fromX, y: point.fromY), toPoint: CGPoint(x: point.toX, y: point.toY))
                 self.universalColorR = CGFloat(point.red)
                 self.universalColorG = CGFloat(point.green)
@@ -103,8 +150,6 @@ class LDViewController: UIViewController {
     
     func sendPointData(fromX:Double, fromY:Double, toX:Double, toY:Double)
     {
-        //        print("INITIATED POINT SENDING")
-        
         let Point_PFOBJ = PFObject(className:"Point")
         Point_PFOBJ["fromX"] = fromX
         Point_PFOBJ["fromY"] = fromY
@@ -120,15 +165,44 @@ class LDViewController: UIViewController {
             (success, error) -> Void in
             if (success) {
                 print("Sent Point")
-            } else {
             }
         }
     }
     
-    
     func disconnectFromServer() {
         liveQueryClient.unsubscribe(pointQuery, handler: subscriptionQuery!)
     }
+    
+    func drawLines(fromPoint:CGPoint,toPoint:CGPoint) {
+        
+        print("drawing points")
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        let context = UIGraphicsGetCurrentContext()
+        
+        context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y/self.view.frame.height*imageView.frame.height))
+        context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y/self.view.frame.height*imageView.frame.height))
+        context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y/self.view.frame.height*imageView.frame.height))
+        context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y/self.view.frame.height*imageView.frame.height))
+        
+        context?.setBlendMode(CGBlendMode.normal)
+        context?.setLineCap(CGLineCap.round)
+        context?.setLineWidth(5)
+        context?.setStrokeColor(UIColor(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1.0).cgColor)
+        
+        context?.strokePath()
+        
+        imageView.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+    }
+    
+    func redrawPencilIcon()
+    {
+        pencilIcon.setImage(pencilIcon.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        pencilIcon.tintColor = UIColor.init(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1)
+    }
+
     
     // MARK: - IBACTIONS
     
@@ -145,7 +219,6 @@ class LDViewController: UIViewController {
                 self.toggleButton.setImage(UIImage(named:"white_down.png"), for: UIControlState.normal)
             })
             toggleStatus=1
-            
         case 1:
             UIView.animate(withDuration: 1.2, animations: {
                 
@@ -158,111 +231,16 @@ class LDViewController: UIViewController {
                 self.toggleButton.setImage(UIImage(named:"white_up.png"), for: UIControlState.normal)
             })
             toggleStatus=0
-            
         default:
             print("error")
         }
     }
     
-    @IBAction func swipedUp(_ sender: Any) {
-        print("SwipedUp")
-        UIView.animate(withDuration: 1, animations: {
-            self.imageView.center.y=0+(self.imageView.frame.height/2)
-            self.resetButton.alpha=1
-            self.resetButton.isEnabled=true
-        })
-    }
-    
-    @IBAction func swipedDown(_ sender: Any) {
-        print("swipedDown")
-        UIView.animate(withDuration: 1.2, animations: {
-            self.imageView.center.y=545+(self.imageView.frame.height/2)
-            self.resetButton.alpha=0
-            self.resetButton.isEnabled=false
-        })
-    }
-    
-    // MARK: - Init Functions
-    
-    override var prefersStatusBarHidden: Bool{
-        return true
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = false
-        
-        if let touch = touches.first {
-            lastPoint = touch.location(in: self.view)
-        }
-        
-    }
-    
-    func drawLines(fromPoint:CGPoint,toPoint:CGPoint) {
-        
-        print("drawing points")
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        let context = UIGraphicsGetCurrentContext()
-        
-        context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y/self.view.frame.height*imageView.frame.height))
-        context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y/self.view.frame.height*imageView.frame.height))
-        
-        context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y/self.view.frame.height*imageView.frame.height))
-        context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y/self.view.frame.height*imageView.frame.height))
-        
-        context?.setBlendMode(CGBlendMode.normal)
-        context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(5)
-        context?.setStrokeColor(UIColor(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1.0).cgColor)
-        
-        context?.strokePath()
-        
-        imageView.image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = true
-        
-        if let touch = touches.first {
-            let currentPoint = touch.location(in: self.view)
-            if (self.toggleStatus == 1) {
-                
-                sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
-                drawLines(fromPoint: lastPoint, toPoint: currentPoint)
-            }
-            
-            lastPoint = currentPoint
-        }
-    }
-    
-    func setUpColorBubbles()
-    {
-        button1.setImage(button1.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button1.tintColor = UIColor.init(red: 255, green: 0, blue: 0, alpha: 1)
-        
-        button2.setImage(button2.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button2.tintColor = UIColor.init(red: 0, green: 255, blue: 0, alpha: 1)
-        
-        button3.setImage(button3.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button3.tintColor = UIColor.init(red: 0, green: 0, blue: 255, alpha: 1)
-        
-        button4.setImage(button4.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button4.tintColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1)
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if !swiped {
-            drawLines(fromPoint: lastPoint, toPoint: lastPoint)
-        }
-    }
     @IBAction func reset(_ sender: AnyObject) {
         self.imageView.image = nil
     }
 
     @IBAction func button1Pressed(_ sender: Any) {
-        //255,0,0
         universalColorR=255
         universalColorG=0
         universalColorB=0
@@ -270,7 +248,6 @@ class LDViewController: UIViewController {
     }
     
     @IBAction func button2Pressed(_ sender: Any) {
-        //0,255,0
         universalColorR=0
         universalColorG=255
         universalColorB=0
@@ -279,21 +256,17 @@ class LDViewController: UIViewController {
     }
     
     @IBAction func button3Pressed(_ sender: Any) {
-        //0,0,255
         universalColorR=0
         universalColorG=0
         universalColorB=255
         self.redrawPencilIcon()
-
     }
     
     @IBAction func button4Pressed(_ sender: Any) {
-        //0,0,0
         universalColorR=0
         universalColorG=0
         universalColorB=0
         self.redrawPencilIcon()
-
     }
     
     @IBAction func pressedPencil(_ sender: Any) {
@@ -329,12 +302,6 @@ class LDViewController: UIViewController {
                 self.bigCircle.alpha=0
             })
         }
-    }
-    
-    func redrawPencilIcon()
-    {
-        pencilIcon.setImage(pencilIcon.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        pencilIcon.tintColor = UIColor.init(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1)
     }
     
     override func didReceiveMemoryWarning() {
