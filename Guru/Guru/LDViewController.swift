@@ -52,26 +52,27 @@ class LDViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
 
-        universalColorR=255;
-        universalColorG=0;
-        universalColorB=0;
-        button1.alpha=0;
-        button2.alpha=0;
-        button3.alpha=0;
-        button4.alpha=0;
-//        button1.isEnabled = false
-//        button2.isEnabled = false
-//        button3.isEnabled = false
-//        button4.isEnabled = false
+        universalColorR=255
+        universalColorG=0
+        universalColorB=0
+        button1.alpha=0
+        button2.alpha=0
+        button3.alpha=0
+        button4.alpha=0
+        pencilIcon.alpha = 0
+        pencilIcon.isEnabled = false
+        button1.isEnabled = false
+        button2.isEnabled = false
+        button3.isEnabled = false
+        button4.isEnabled = false
         bigCircle.alpha=0
 
         pencilIcon.setImage(pencilIcon.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
         pencilIcon.tintColor = UIColor.init(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1)
         
-        
-//        pointQuery = (Point.query()?
-//            .whereKey("userID", notEqualTo: PFUser.current()!.objectId!).whereKey("questionID", equalTo: self.question.objectId!)) as! PFQuery<Point>
-//        self.subscribeLiveQuery()
+        pointQuery = (Point.query()?
+            .whereKey("userID", notEqualTo: PFUser.current()!.objectId!).whereKey("questionID", equalTo: self.question.objectId!)) as! PFQuery<Point>
+        self.subscribeLiveQuery()
         
         self.imageView.layer.contentsScale = UIScreen.main.scale
         
@@ -88,7 +89,12 @@ class LDViewController: UIViewController {
         subscriptionQuery = liveQueryClient.subscribe(pointQuery).handle(Event.created, { (query: PFQuery<Point>, point: Point) in
             
             DispatchQueue.main.async {
+                
                 self.drawLines(fromPoint: CGPoint(x: point.fromX, y: point.fromY), toPoint: CGPoint(x: point.toX, y: point.toY))
+                self.universalColorR = CGFloat(point.red)
+                self.universalColorG = CGFloat(point.green)
+                self.universalColorB = CGFloat(point.blue)
+                
                 print("BOUNCE: FROM (\(point.fromX), \(point.fromY)) \n TO (\(point.toX), \(point.toY))" )
                 self.imageView.setNeedsDisplay()
             }
@@ -106,12 +112,14 @@ class LDViewController: UIViewController {
         Point_PFOBJ["toY"] = toY
         Point_PFOBJ["userID"] = PFUser.current()!.objectId!
         Point_PFOBJ["questionID"] = self.question.objectId!
-
+        Point_PFOBJ["red"] = universalColorR
+        Point_PFOBJ["green"] = universalColorR
+        Point_PFOBJ["blue"] = universalColorR
         
         Point_PFOBJ.saveInBackground {
             (success, error) -> Void in
             if (success) {
-                print("SP")
+                print("Sent Point")
             } else {
             }
         }
@@ -132,6 +140,8 @@ class LDViewController: UIViewController {
                 self.imageView.alpha=1;
                 self.resetButton.alpha=1
                 self.resetButton.isEnabled=true
+                self.pencilIcon.alpha=1
+                self.pencilIcon.isEnabled=true
                 self.toggleButton.setImage(UIImage(named:"white_down.png"), for: UIControlState.normal)
             })
             toggleStatus=1
@@ -143,6 +153,8 @@ class LDViewController: UIViewController {
                 self.imageView.alpha=0;
                 self.resetButton.alpha=0
                 self.resetButton.isEnabled=false
+                self.pencilIcon.alpha=0
+                self.pencilIcon.isEnabled=false
                 self.toggleButton.setImage(UIImage(named:"white_up.png"), for: UIControlState.normal)
             })
             toggleStatus=0
@@ -217,7 +229,7 @@ class LDViewController: UIViewController {
             let currentPoint = touch.location(in: self.view)
             if (self.toggleStatus == 1) {
                 
-//                sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
+                sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
                 drawLines(fromPoint: lastPoint, toPoint: currentPoint)
             }
             
@@ -251,35 +263,35 @@ class LDViewController: UIViewController {
 
     @IBAction func button1Pressed(_ sender: Any) {
         //255,0,0
-        universalColorR=255;
-        universalColorG=0;
-        universalColorB=0;
+        universalColorR=255
+        universalColorG=0
+        universalColorB=0
         self.redrawPencilIcon()
     }
     
     @IBAction func button2Pressed(_ sender: Any) {
         //0,255,0
-        universalColorR=0;
-        universalColorG=255;
-        universalColorB=0;
+        universalColorR=0
+        universalColorG=255
+        universalColorB=0
         self.redrawPencilIcon()
 
     }
     
     @IBAction func button3Pressed(_ sender: Any) {
         //0,0,255
-        universalColorR=0;
-        universalColorG=0;
-        universalColorB=255;
+        universalColorR=0
+        universalColorG=0
+        universalColorB=255
         self.redrawPencilIcon()
 
     }
     
     @IBAction func button4Pressed(_ sender: Any) {
         //0,0,0
-        universalColorR=0;
-        universalColorG=0;
-        universalColorB=0;
+        universalColorR=0
+        universalColorG=0
+        universalColorB=0
         self.redrawPencilIcon()
 
     }
@@ -290,10 +302,10 @@ class LDViewController: UIViewController {
         switch circleOut {
         case false:
             UIView.animate(withDuration: 1, animations: {
-                self.button1.alpha=1;
-                self.button2.alpha=1;
-                self.button3.alpha=1;
-                self.button4.alpha=1;
+                self.button1.alpha=1
+                self.button2.alpha=1
+                self.button3.alpha=1
+                self.button4.alpha=1
                 self.button1.isEnabled = true
                 self.button2.isEnabled = true
                 self.button3.isEnabled = true
@@ -310,10 +322,10 @@ class LDViewController: UIViewController {
                 self.button2.isEnabled = false
                 self.button3.isEnabled = false
                 self.button4.isEnabled = false
-                self.button1.alpha=0;
-                self.button2.alpha=0;
-                self.button3.alpha=0;
-                self.button4.alpha=0;
+                self.button1.alpha=0
+                self.button2.alpha=0
+                self.button3.alpha=0
+                self.button4.alpha=0
                 self.bigCircle.alpha=0
             })
         }
