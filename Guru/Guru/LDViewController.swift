@@ -14,6 +14,13 @@ import ParseLiveQuery
 let liveQueryClient = ParseLiveQuery.Client()
 
 class LDViewController: UIViewController {
+    @IBOutlet weak var pencilIcon: UIButton!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var bigCircle: UIImageView!
+
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var swipeUpRec: UISwipeGestureRecognizer!
     @IBOutlet var swipeDownRec: UISwipeGestureRecognizer!
@@ -23,12 +30,17 @@ class LDViewController: UIViewController {
     
     var lastPoint = CGPoint.zero
     var swiped = false
+    var circleOut = false
     var red:CGFloat = 0.0
     var green:CGFloat = 0.0
     var blue:CGFloat = 0.0
     var tool:UIImageView!
     var selectedImage:UIImage!
     var toggleStatus=0
+    var universalColorR:CGFloat=0;
+    var universalColorG:CGFloat=0;
+    var universalColorB:CGFloat=0;
+
     
     var subscriptionQuery: Subscription<Point>?
     
@@ -39,10 +51,32 @@ class LDViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+
+        universalColorR=255
+        universalColorG=0
+        universalColorB=0
+        button1.alpha=0
+        button2.alpha=0
+        button3.alpha=0
+        button4.alpha=0
+        pencilIcon.alpha = 0
+        pencilIcon.isEnabled = false
+        button1.isEnabled = false
+        button2.isEnabled = false
+        button3.isEnabled = false
+        button4.isEnabled = false
+        bigCircle.alpha=0
+
+        pencilIcon.setImage(pencilIcon.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        pencilIcon.tintColor = UIColor.init(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1)
+        
         pointQuery = (Point.query()?
             .whereKey("userID", notEqualTo: PFUser.current()!.objectId!).whereKey("questionID", equalTo: self.question.objectId!)) as! PFQuery<Point>
         self.subscribeLiveQuery()
+        
         self.imageView.layer.contentsScale = UIScreen.main.scale
+        
+        self.setUpColorBubbles()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -55,7 +89,12 @@ class LDViewController: UIViewController {
         subscriptionQuery = liveQueryClient.subscribe(pointQuery).handle(Event.created, { (query: PFQuery<Point>, point: Point) in
             
             DispatchQueue.main.async {
+                
                 self.drawLines(fromPoint: CGPoint(x: point.fromX, y: point.fromY), toPoint: CGPoint(x: point.toX, y: point.toY))
+                self.universalColorR = CGFloat(point.red)
+                self.universalColorG = CGFloat(point.green)
+                self.universalColorB = CGFloat(point.blue)
+                
                 print("BOUNCE: FROM (\(point.fromX), \(point.fromY)) \n TO (\(point.toX), \(point.toY))" )
                 self.imageView.setNeedsDisplay()
             }
@@ -73,11 +112,14 @@ class LDViewController: UIViewController {
         Point_PFOBJ["toY"] = toY
         Point_PFOBJ["userID"] = PFUser.current()!.objectId!
         Point_PFOBJ["questionID"] = self.question.objectId!
+        Point_PFOBJ["red"] = universalColorR
+        Point_PFOBJ["green"] = universalColorR
+        Point_PFOBJ["blue"] = universalColorR
         
         Point_PFOBJ.saveInBackground {
             (success, error) -> Void in
             if (success) {
-                print("SP")
+                print("Sent Point")
             } else {
             }
         }
@@ -98,6 +140,8 @@ class LDViewController: UIViewController {
                 self.imageView.alpha=1;
                 self.resetButton.alpha=1
                 self.resetButton.isEnabled=true
+                self.pencilIcon.alpha=1
+                self.pencilIcon.isEnabled=true
                 self.toggleButton.setImage(UIImage(named:"white_down.png"), for: UIControlState.normal)
             })
             toggleStatus=1
@@ -109,6 +153,8 @@ class LDViewController: UIViewController {
                 self.imageView.alpha=0;
                 self.resetButton.alpha=0
                 self.resetButton.isEnabled=false
+                self.pencilIcon.alpha=0
+                self.pencilIcon.isEnabled=false
                 self.toggleButton.setImage(UIImage(named:"white_up.png"), for: UIControlState.normal)
             })
             toggleStatus=0
@@ -167,7 +213,7 @@ class LDViewController: UIViewController {
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(5)
-        context?.setStrokeColor(UIColor(red: 255, green: 0, blue: 0, alpha: 1.0).cgColor)
+        context?.setStrokeColor(UIColor(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1.0).cgColor)
         
         context?.strokePath()
         
@@ -182,12 +228,28 @@ class LDViewController: UIViewController {
         if let touch = touches.first {
             let currentPoint = touch.location(in: self.view)
             if (self.toggleStatus == 1) {
+                
                 sendPointData(fromX: Double(lastPoint.x), fromY: Double(lastPoint.y), toX: Double(currentPoint.x), toY: Double(currentPoint.y))
                 drawLines(fromPoint: lastPoint, toPoint: currentPoint)
             }
             
             lastPoint = currentPoint
         }
+    }
+    
+    func setUpColorBubbles()
+    {
+        button1.setImage(button1.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button1.tintColor = UIColor.init(red: 255, green: 0, blue: 0, alpha: 1)
+        
+        button2.setImage(button2.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button2.tintColor = UIColor.init(red: 0, green: 255, blue: 0, alpha: 1)
+        
+        button3.setImage(button3.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button3.tintColor = UIColor.init(red: 0, green: 0, blue: 255, alpha: 1)
+        
+        button4.setImage(button4.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        button4.tintColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -198,32 +260,82 @@ class LDViewController: UIViewController {
     @IBAction func reset(_ sender: AnyObject) {
         self.imageView.image = nil
     }
+
+    @IBAction func button1Pressed(_ sender: Any) {
+        //255,0,0
+        universalColorR=255
+        universalColorG=0
+        universalColorB=0
+        self.redrawPencilIcon()
+    }
     
-    //    func save(_ sender: AnyObject) {
-    //
-    //        let actionSheet = UIAlertController(title: "Pick your option", message: "", preferredStyle: .actionSheet)
-    //        actionSheet.addAction(UIAlertAction(title: "Pick an image", style: .default, handler: { (_) in
-    //
-    //            let imagePicker = UIImagePickerController()
-    //            imagePicker.sourceType = .photoLibrary
-    //            imagePicker.allowsEditing = false
-    //
-    //            self.present(imagePicker, animated: true, completion: nil)
-    //
-    //        }))
-    //        actionSheet.addAction(UIAlertAction(title: "Save your drawing", style: .default, handler: { (_) in
-    //            if let image = self.imageView.image {
-    //                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-    //            }
-    //        }))
-    //
-    //        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-    //
-    //        present(actionSheet, animated: true, completion: nil)
-    //
-    //    }
-    //
+    @IBAction func button2Pressed(_ sender: Any) {
+        //0,255,0
+        universalColorR=0
+        universalColorG=255
+        universalColorB=0
+        self.redrawPencilIcon()
+
+    }
     
+    @IBAction func button3Pressed(_ sender: Any) {
+        //0,0,255
+        universalColorR=0
+        universalColorG=0
+        universalColorB=255
+        self.redrawPencilIcon()
+
+    }
+    
+    @IBAction func button4Pressed(_ sender: Any) {
+        //0,0,0
+        universalColorR=0
+        universalColorG=0
+        universalColorB=0
+        self.redrawPencilIcon()
+
+    }
+    
+    @IBAction func pressedPencil(_ sender: Any) {
+        print("pressedPencil")
+        
+        switch circleOut {
+        case false:
+            UIView.animate(withDuration: 1, animations: {
+                self.button1.alpha=1
+                self.button2.alpha=1
+                self.button3.alpha=1
+                self.button4.alpha=1
+                self.button1.isEnabled = true
+                self.button2.isEnabled = true
+                self.button3.isEnabled = true
+                self.button4.isEnabled = true
+                self.bigCircle.alpha=1
+                self.circleOut=true
+            })
+
+        case true:
+            UIView.animate(withDuration: 1, animations: {
+         
+                self.circleOut=false
+                self.button1.isEnabled = false
+                self.button2.isEnabled = false
+                self.button3.isEnabled = false
+                self.button4.isEnabled = false
+                self.button1.alpha=0
+                self.button2.alpha=0
+                self.button3.alpha=0
+                self.button4.alpha=0
+                self.bigCircle.alpha=0
+            })
+        }
+    }
+    
+    func redrawPencilIcon()
+    {
+        pencilIcon.setImage(pencilIcon.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+        pencilIcon.tintColor = UIColor.init(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
