@@ -23,4 +23,10 @@ extension UIView {
         
         self.layer.add(anim, forKey:nil )
     }
+    func setRounded() {
+        self.layoutIfNeeded()
+        let radius = self.frame.width / 2
+        self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
+    }
 }

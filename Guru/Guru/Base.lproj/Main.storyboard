@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="a7e-SB-7I7">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -697,33 +697,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zRX-EK-cFz">
-                                <rect key="frame" x="16" y="78" width="15" height="15"/>
+                                <rect key="frame" x="6" y="79" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="circle.png"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="button1Pressed:" destination="a7e-SB-7I7" eventType="touchUpInside" id="l6S-jb-i8g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G6c-wj-IFj">
-                                <rect key="frame" x="42" y="68" width="15" height="15"/>
+                                <rect key="frame" x="40" y="69" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="circle.png"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="button2Pressed:" destination="a7e-SB-7I7" eventType="touchUpInside" id="6dy-AX-HG6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8bp-xw-Xeo">
-                                <rect key="frame" x="61" y="48" width="15" height="15"/>
+                                <rect key="frame" x="70" y="43" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="circle.png"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="button3Pressed:" destination="a7e-SB-7I7" eventType="touchUpInside" id="aV3-Ch-4g8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qqK-69-o9i">
-                                <rect key="frame" x="73" y="24" width="15" height="15"/>
+                                <rect key="frame" x="82" y="10" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="circle.png"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="button4Pressed:" destination="a7e-SB-7I7" eventType="touchUpInside" id="f0I-Ql-qhM"/>
                                 </connections>
@@ -732,14 +732,14 @@
                     </view>
                     <connections>
                         <outlet property="bigCircle" destination="ikr-87-1KC" id="dgT-hK-khZ"/>
-                        <outlet property="button1" destination="zRX-EK-cFz" id="3AP-w9-lw5"/>
-                        <outlet property="button2" destination="G6c-wj-IFj" id="ZmA-59-tY8"/>
-                        <outlet property="button3" destination="8bp-xw-Xeo" id="Omo-Z6-uV1"/>
-                        <outlet property="button4" destination="qqK-69-o9i" id="3Ge-fw-A8M"/>
                         <outlet property="imageView" destination="oZw-qK-JJP" id="gLL-eL-XN8"/>
                         <outlet property="pencilIcon" destination="60m-rh-OO9" id="Xh9-hM-6na"/>
                         <outlet property="resetButton" destination="cf4-EY-3fV" id="ffq-43-fr1"/>
                         <outlet property="toggleButton" destination="IUV-3z-yVd" id="vYZ-VB-1QT"/>
+                        <outletCollection property="colorButtons" destination="qqK-69-o9i" collectionClass="NSMutableArray" id="Vtt-42-Dmz"/>
+                        <outletCollection property="colorButtons" destination="8bp-xw-Xeo" collectionClass="NSMutableArray" id="4pU-ZA-2VY"/>
+                        <outletCollection property="colorButtons" destination="G6c-wj-IFj" collectionClass="NSMutableArray" id="RVU-RZ-8ul"/>
+                        <outletCollection property="colorButtons" destination="zRX-EK-cFz" collectionClass="NSMutableArray" id="A8V-Rf-Us7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xli-kb-WFV" userLabel="First Responder" sceneMemberID="firstResponder"/>

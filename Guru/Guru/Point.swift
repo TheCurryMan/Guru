@@ -10,14 +10,17 @@ import Foundation
 import Parse
 
 class Point: PFObject, PFSubclassing {
-    @NSManaged var fromX: Int
-    @NSManaged var toX: Int
-    @NSManaged var fromY: Int
-    @NSManaged var toY: Int
+    @NSManaged var fromX: Double
+    @NSManaged var toX: Double
+    @NSManaged var fromY: Double
+    @NSManaged var toY: Double
     @NSManaged var question: PFObject?
     @NSManaged var red: Double
     @NSManaged var green: Double
     @NSManaged var blue: Double
+    @NSManaged var userID: String
+    @NSManaged var questionID: String
+
     
     class func parseClassName() -> String {
         return "Point"

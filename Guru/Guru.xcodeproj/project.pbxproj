@@ -168,7 +168,6 @@
 				AF2821661E33448500493A74 /* WaitingScreen.swift */,
 				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
 				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
-				77A86A041E3EE4FB00D23385 /* Assets */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +265,7 @@
 				77A86A011E3EE4A800D23385 /* Model */,
 				77A86A031E3EE4DB00D23385 /* Views */,
 				77A86A001E3EE49100D23385 /* Controllers */,
+				77A86A041E3EE4FB00D23385 /* Assets */,
 				77AA496A1E336B3A0065DC6B /* Guru.entitlements */,
 				E1F3F33C1E331BB4003C281D /* Info.plist */,
 			);

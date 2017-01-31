@@ -15,10 +15,7 @@ let liveQueryClient = ParseLiveQuery.Client()
 
 class LDViewController: UIViewController {
     @IBOutlet weak var pencilIcon: UIButton!
-    @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var button4: UIButton!
+    @IBOutlet var colorButtons: [UIButton]!
     @IBOutlet weak var bigCircle: UIImageView!
 
     @IBOutlet var imageView: UIImageView!
@@ -58,17 +55,10 @@ class LDViewController: UIViewController {
         universalColorR=255
         universalColorG=0
         universalColorB=0
-        button1.alpha=0
-        button2.alpha=0
-        button3.alpha=0
-        button4.alpha=0
         pencilIcon.alpha = 0
         pencilIcon.isEnabled = false
-        button1.isEnabled = false
-        button2.isEnabled = false
-        button3.isEnabled = false
-        button4.isEnabled = false
         bigCircle.alpha=0
+        self.hideButtons()
 
         pencilIcon.setImage(pencilIcon.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
         pencilIcon.tintColor = UIColor.init(red: universalColorR, green: universalColorG, blue: universalColorB, alpha: 1)
@@ -79,27 +69,14 @@ class LDViewController: UIViewController {
         
         self.imageView.layer.contentsScale = UIScreen.main.scale
         
-        self.setUpColorBubbles()
+        for colorButton in self.colorButtons {
+            colorButton.setRounded()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         print("disconnecting from live query server")
         self.disconnectFromServer()
-    }
-    
-    func setUpColorBubbles()
-    {
-        button1.setImage(button1.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button1.tintColor = UIColor.init(red: 255, green: 0, blue: 0, alpha: 1)
-        
-        button2.setImage(button2.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button2.tintColor = UIColor.init(red: 0, green: 255, blue: 0, alpha: 1)
-        
-        button3.setImage(button3.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button3.tintColor = UIColor.init(red: 0, green: 0, blue: 255, alpha: 1)
-        
-        button4.setImage(button4.image(for: .normal)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
-        button4.tintColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -150,18 +127,18 @@ class LDViewController: UIViewController {
     
     func sendPointData(fromX:Double, fromY:Double, toX:Double, toY:Double)
     {
-        let Point_PFOBJ = PFObject(className:"Point")
-        Point_PFOBJ["fromX"] = fromX
-        Point_PFOBJ["fromY"] = fromY
-        Point_PFOBJ["toX"] = toX
-        Point_PFOBJ["toY"] = toY
-        Point_PFOBJ["userID"] = PFUser.current()!.objectId!
-        Point_PFOBJ["questionID"] = self.question.objectId!
-        Point_PFOBJ["red"] = universalColorR
-        Point_PFOBJ["green"] = universalColorR
-        Point_PFOBJ["blue"] = universalColorR
+        let point = Point()
+        point.fromX = fromX
+        point.fromY = fromY
+        point.toX = toX
+        point.toY = toY
+        point.userID = PFUser.current()!.objectId!
+        point.questionID = self.question.objectId!
+        point.red = Double(universalColorR)
+        point.green = Double(universalColorG)
+        point.blue = Double(universalColorB)
         
-        Point_PFOBJ.saveInBackground {
+        point.saveInBackground {
             (success, error) -> Void in
             if (success) {
                 print("Sent Point")
@@ -275,34 +252,35 @@ class LDViewController: UIViewController {
         switch circleOut {
         case false:
             UIView.animate(withDuration: 1, animations: {
-                self.button1.alpha=1
-                self.button2.alpha=1
-                self.button3.alpha=1
-                self.button4.alpha=1
-                self.button1.isEnabled = true
-                self.button2.isEnabled = true
-                self.button3.isEnabled = true
-                self.button4.isEnabled = true
+                self.showButtons()
                 self.bigCircle.alpha=1
                 self.circleOut=true
             })
 
         case true:
             UIView.animate(withDuration: 1, animations: {
-         
-                self.circleOut=false
-                self.button1.isEnabled = false
-                self.button2.isEnabled = false
-                self.button3.isEnabled = false
-                self.button4.isEnabled = false
-                self.button1.alpha=0
-                self.button2.alpha=0
-                self.button3.alpha=0
-                self.button4.alpha=0
+                self.hideButtons()
                 self.bigCircle.alpha=0
+                self.circleOut=false
             })
         }
     }
+    
+    
+    func hideButtons() {
+        for colorButton in self.colorButtons {
+            colorButton.isEnabled = false
+            colorButton.alpha = 0
+        }
+    }
+    
+    func showButtons() {
+        for colorButton in self.colorButtons {
+            colorButton.isEnabled = true
+            colorButton.alpha = 1
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
