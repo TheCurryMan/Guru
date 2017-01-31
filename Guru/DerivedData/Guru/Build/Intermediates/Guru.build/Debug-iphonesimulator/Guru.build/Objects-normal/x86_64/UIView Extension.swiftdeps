@@ -1,0 +1,455 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo6UIView", ""]
+- ["CSo6UIView", "shake"]
+provides-dynamic-lookup:
+- "shake"
+depends-top-level:
+- !private "BooleanLiteralType"
+- !private "Array"
+- !private "NSValue"
+- "UIView"
+- !private "CATransform3DMakeTranslation"
+- !private "StringLiteralType"
+- "AssignmentPrecedence"
+- !private "CAKeyframeAnimation"
+depends-member:
+- !private ["Ps9AnyObject", "CAKeyframeAnimation"]
+- !private ["Ps9AnyObject", "CATransform3DMakeTranslation"]
+- !private ["Ps9AnyObject", "NSValue"]
+- !private ["Ps9AnyObject", "add"]
+- !private ["Ps9AnyObject", "autoreverses"]
+- !private ["Ps9AnyObject", "duration"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "repeatCount"]
+- ["Ps9AnyObject", "shake"]
+- !private ["Ps9AnyObject", "values"]
+- !private ["Sa", "Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
+- ["Sb", "deinit"]
+- !private ["PSo8CAAction", "autoreverses"]
+- !private ["PSo8CAAction", "duration"]
+- !private ["PSo8CAAction", "init"]
+- !private ["PSo8CAAction", "repeatCount"]
+- !private ["PSo8CAAction", "values"]
+- !private ["CSo11CAAnimation", "autoreverses"]
+- !private ["CSo11CAAnimation", "duration"]
+- !private ["CSo11CAAnimation", "init"]
+- !private ["CSo11CAAnimation", "repeatCount"]
+- !private ["CSo11CAAnimation", "values"]
+- !private ["CSo19CAKeyframeAnimation", "autoreverses"]
+- ["CSo19CAKeyframeAnimation", "deinit"]
+- !private ["CSo19CAKeyframeAnimation", "duration"]
+- !private ["CSo19CAKeyframeAnimation", "init"]
+- !private ["CSo19CAKeyframeAnimation", "repeatCount"]
+- !private ["CSo19CAKeyframeAnimation", "values"]
+- !private ["CSo7CALayer", "add"]
+- ["CSo7CALayer", "deinit"]
+- !private ["PSo15CALayerDelegate", "CAKeyframeAnimation"]
+- !private ["PSo15CALayerDelegate", "CATransform3DMakeTranslation"]
+- !private ["PSo15CALayerDelegate", "NSValue"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo13CAMediaTiming", "add"]
+- !private ["PSo13CAMediaTiming", "autoreverses"]
+- !private ["PSo13CAMediaTiming", "duration"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "repeatCount"]
+- !private ["PSo13CAMediaTiming", "values"]
+- !private ["CSo19CAPropertyAnimation", "autoreverses"]
+- !private ["CSo19CAPropertyAnimation", "duration"]
+- !private ["CSo19CAPropertyAnimation", "init"]
+- !private ["CSo19CAPropertyAnimation", "repeatCount"]
+- !private ["CSo19CAPropertyAnimation", "values"]
+- ["VSC13CATransform3D", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "CAKeyframeAnimation"]
+- !private ["Ps7CVarArg", "CATransform3DMakeTranslation"]
+- !private ["Ps7CVarArg", "Element"]
+- !private ["Ps7CVarArg", "NSValue"]
+- !private ["Ps7CVarArg", "add"]
+- !private ["Ps7CVarArg", "autoreverses"]
+- !private ["Ps7CVarArg", "duration"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "layer"]
+- !private ["Ps7CVarArg", "repeatCount"]
+- ["Ps7CVarArg", "shake"]
+- !private ["Ps7CVarArg", "values"]
+- !private ["Ps10Collection", "Element"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CAKeyframeAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "CATransform3DMakeTranslation"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "NSValue"]
+- !private ["Ps28CustomDebugStringConvertible", "add"]
+- !private ["Ps28CustomDebugStringConvertible", "autoreverses"]
+- !private ["Ps28CustomDebugStringConvertible", "duration"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "repeatCount"]
+- ["Ps28CustomDebugStringConvertible", "shake"]
+- !private ["Ps28CustomDebugStringConvertible", "values"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "CAKeyframeAnimation"]
+- !private ["Ps23CustomStringConvertible", "CATransform3DMakeTranslation"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "NSValue"]
+- !private ["Ps23CustomStringConvertible", "add"]
+- !private ["Ps23CustomStringConvertible", "autoreverses"]
+- !private ["Ps23CustomStringConvertible", "duration"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "repeatCount"]
+- ["Ps23CustomStringConvertible", "shake"]
+- !private ["Ps23CustomStringConvertible", "values"]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CAKeyframeAnimation"]
+- !private ["Ps9Equatable", "CATransform3DMakeTranslation"]
+- !private ["Ps9Equatable", "NSValue"]
+- !private ["Ps9Equatable", "add"]
+- !private ["Ps9Equatable", "autoreverses"]
+- !private ["Ps9Equatable", "duration"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "repeatCount"]
+- ["Ps9Equatable", "shake"]
+- !private ["Ps9Equatable", "values"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Sf", "deinit"]
+- !private ["Ps8Hashable", "CAKeyframeAnimation"]
+- !private ["Ps8Hashable", "CATransform3DMakeTranslation"]
+- !private ["Ps8Hashable", "NSValue"]
+- !private ["Ps8Hashable", "add"]
+- !private ["Ps8Hashable", "autoreverses"]
+- !private ["Ps8Hashable", "duration"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "repeatCount"]
+- ["Ps8Hashable", "shake"]
+- !private ["Ps8Hashable", "values"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps13IndexableBase", "Element"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["PSo8NSCoding", "CAKeyframeAnimation"]
+- !private ["PSo8NSCoding", "CATransform3DMakeTranslation"]
+- !private ["PSo8NSCoding", "NSValue"]
+- !private ["PSo8NSCoding", "add"]
+- !private ["PSo8NSCoding", "autoreverses"]
+- !private ["PSo8NSCoding", "duration"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "repeatCount"]
+- !private ["PSo8NSCoding", "values"]
+- !private ["PSo9NSCopying", "autoreverses"]
+- !private ["PSo9NSCopying", "duration"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "repeatCount"]
+- !private ["PSo9NSCopying", "values"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "CAKeyframeAnimation"]
+- !private ["CSo8NSObject", "CATransform3DMakeTranslation"]
+- !private ["CSo8NSObject", "NSValue"]
+- !private ["CSo8NSObject", "add"]
+- !private ["CSo8NSObject", "autoreverses"]
+- !private ["CSo8NSObject", "duration"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "repeatCount"]
+- ["CSo8NSObject", "shake"]
+- !private ["CSo8NSObject", "values"]
+- !private ["PSo16NSObjectProtocol", "CAKeyframeAnimation"]
+- !private ["PSo16NSObjectProtocol", "CATransform3DMakeTranslation"]
+- !private ["PSo16NSObjectProtocol", "NSValue"]
+- !private ["PSo16NSObjectProtocol", "add"]
+- !private ["PSo16NSObjectProtocol", "autoreverses"]
+- !private ["PSo16NSObjectProtocol", "duration"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "repeatCount"]
+- ["PSo16NSObjectProtocol", "shake"]
+- !private ["PSo16NSObjectProtocol", "values"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["CSo7NSValue", "deinit"]
+- !private ["CSo7NSValue", "init"]
+- ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["Ps8Sequence", "Element"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "CAKeyframeAnimation"]
+- !private ["PSo29UIAccessibilityIdentification", "CATransform3DMakeTranslation"]
+- !private ["PSo29UIAccessibilityIdentification", "NSValue"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo12UIAppearance", "CAKeyframeAnimation"]
+- !private ["PSo12UIAppearance", "CATransform3DMakeTranslation"]
+- !private ["PSo12UIAppearance", "NSValue"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo21UIAppearanceContainer", "CAKeyframeAnimation"]
+- !private ["PSo21UIAppearanceContainer", "CATransform3DMakeTranslation"]
+- !private ["PSo21UIAppearanceContainer", "NSValue"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo17UICoordinateSpace", "CAKeyframeAnimation"]
+- !private ["PSo17UICoordinateSpace", "CATransform3DMakeTranslation"]
+- !private ["PSo17UICoordinateSpace", "NSValue"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo13UIDynamicItem", "CAKeyframeAnimation"]
+- !private ["PSo13UIDynamicItem", "CATransform3DMakeTranslation"]
+- !private ["PSo13UIDynamicItem", "NSValue"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo18UIFocusEnvironment", "CAKeyframeAnimation"]
+- !private ["PSo18UIFocusEnvironment", "CATransform3DMakeTranslation"]
+- !private ["PSo18UIFocusEnvironment", "NSValue"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo11UIFocusItem", "CAKeyframeAnimation"]
+- !private ["PSo11UIFocusItem", "CATransform3DMakeTranslation"]
+- !private ["PSo11UIFocusItem", "NSValue"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["CSo11UIResponder", "CAKeyframeAnimation"]
+- !private ["CSo11UIResponder", "CATransform3DMakeTranslation"]
+- !private ["CSo11UIResponder", "NSValue"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "shake"]
+- !private ["PSo30UIResponderStandardEditActions", "CAKeyframeAnimation"]
+- !private ["PSo30UIResponderStandardEditActions", "CATransform3DMakeTranslation"]
+- !private ["PSo30UIResponderStandardEditActions", "NSValue"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "shake"]
+- !private ["PSo18UITraitEnvironment", "CAKeyframeAnimation"]
+- !private ["PSo18UITraitEnvironment", "CATransform3DMakeTranslation"]
+- !private ["PSo18UITraitEnvironment", "NSValue"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["CSo6UIView", "CAKeyframeAnimation"]
+- !private ["CSo6UIView", "CATransform3DMakeTranslation"]
+- !private ["CSo6UIView", "NSValue"]
+- ["CSo6UIView", "deinit"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "shake"]
+- !private ["Ps14_ArrayProtocol", "Element"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CAKeyframeAnimation"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CATransform3DMakeTranslation"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSValue"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "CAKeyframeAnimation"]
+- !private ["Ps9_Hashable", "CATransform3DMakeTranslation"]
+- !private ["Ps9_Hashable", "NSValue"]
+- !private ["Ps9_Hashable", "add"]
+- !private ["Ps9_Hashable", "autoreverses"]
+- !private ["Ps9_Hashable", "duration"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "layer"]
+- !private ["Ps9_Hashable", "repeatCount"]
+- ["Ps9_Hashable", "shake"]
+- !private ["Ps9_Hashable", "values"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Sb"
+- !private "PSo8CAAction"
+- !private "CSo11CAAnimation"
+- "CSo19CAKeyframeAnimation"
+- "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- !private "CSo19CAPropertyAnimation"
+- "VSC13CATransform3D"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Sf"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo7NSValue"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Modules/ParseLiveQuery.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoConstraints.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoClient.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIScreenCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIRoom.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIParticipant.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIMedia.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalParticipant.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVILocalMedia.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIIceOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIError.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIConnectOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIClientOptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraPreviewView.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFormat.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoFrame.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVICameraCapturer.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVITrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioTrack.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioController.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIAudioConstraints.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TwilioVideo.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
+interface-hash: "de0031ea0f68920aa350b57c478eb55b"

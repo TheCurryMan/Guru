@@ -204,6 +204,28 @@ SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
 @end
 
 @class UIButton;
+
+SWIFT_CLASS("_TtC4Guru24GuruReviewViewController")
+@interface GuruReviewViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified reviewLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified oneStar;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified twoStar;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified threeStar;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified fourStar;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified fiveStar;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)clearAllStars;
+- (IBAction)oneStarReview:(id _Nonnull)sender;
+- (IBAction)twoStarReview:(id _Nonnull)sender;
+- (IBAction)threeStarReview:(id _Nonnull)sender;
+- (IBAction)fourStarReview:(id _Nonnull)sender;
+- (IBAction)fiveStarReview:(id _Nonnull)sender;
+- (IBAction)submitReview:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITextField;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
@@ -226,6 +248,7 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 - (IBAction)logout:(id _Nonnull)sender;
 - (void)catchNotificationWithNotification:(NSNotification * _Nonnull)notification;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)updateUserStats;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (IBAction)showTopics:(id _Nonnull)sender;
 - (void)submitQuestionWithSender:(UIButton * _Nonnull)sender;
@@ -244,6 +267,12 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 
 SWIFT_CLASS("_TtC4Guru16LDViewController")
 @interface LDViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified pencilIcon;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button1;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button2;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button3;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button4;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bigCircle;
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, strong) IBOutlet UISwipeGestureRecognizer * _Null_unspecified swipeUpRec;
 @property (nonatomic, strong) IBOutlet UISwipeGestureRecognizer * _Null_unspecified swipeDownRec;
@@ -252,28 +281,37 @@ SWIFT_CLASS("_TtC4Guru16LDViewController")
 @property (nonatomic, strong) PFObject * _Null_unspecified question;
 @property (nonatomic) CGPoint lastPoint;
 @property (nonatomic) BOOL swiped;
+@property (nonatomic) BOOL circleOut;
 @property (nonatomic) CGFloat red;
 @property (nonatomic) CGFloat green;
 @property (nonatomic) CGFloat blue;
 @property (nonatomic, strong) UIImageView * _Null_unspecified tool;
 @property (nonatomic, strong) UIImage * _Null_unspecified selectedImage;
 @property (nonatomic) NSInteger toggleStatus;
+@property (nonatomic) CGFloat universalColorR;
+@property (nonatomic) CGFloat universalColorG;
+@property (nonatomic) CGFloat universalColorB;
 // 'pointQuery' below
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
+- (void)setUpColorBubbles;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)subscribeLiveQuery;
 - (void)sendPointDataFromX:(double)fromX fromY:(double)fromY toX:(double)toX toY:(double)toY;
 - (void)disconnectFromServer;
-- (IBAction)togglePressed:(id _Nonnull)sender;
-- (IBAction)swipedUp:(id _Nonnull)sender;
-- (IBAction)swipedDown:(id _Nonnull)sender;
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)drawLinesFromPoint:(CGPoint)fromPoint toPoint:(CGPoint)toPoint;
-- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)redrawPencilIcon;
+- (IBAction)togglePressed:(id _Nonnull)sender;
 - (IBAction)reset:(id _Nonnull)sender;
+- (IBAction)button1Pressed:(id _Nonnull)sender;
+- (IBAction)button2Pressed:(id _Nonnull)sender;
+- (IBAction)button3Pressed:(id _Nonnull)sender;
+- (IBAction)button4Pressed:(id _Nonnull)sender;
+- (IBAction)pressedPencil:(id _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -281,13 +319,18 @@ SWIFT_CLASS("_TtC4Guru16LDViewController")
 
 
 SWIFT_CLASS("_TtC4Guru19LoginViewController")
-@interface LoginViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameLabel;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordLabel;
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
+- (IBAction)tappedScreen:(id _Nonnull)sender;
 - (IBAction)cancel:(id _Nonnull)sender;
+- (IBAction)goButtonPressed:(id _Nonnull)sender;
 - (IBAction)login:(id _Nonnull)sender;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -300,6 +343,9 @@ SWIFT_CLASS("_TtC4Guru5Point")
 @property (nonatomic) NSInteger fromY;
 @property (nonatomic) NSInteger toY;
 @property (nonatomic, strong) PFObject * _Nullable question;
+@property (nonatomic) double red;
+@property (nonatomic) double green;
+@property (nonatomic) double blue;
 + (NSString * _Nonnull)parseClassName;
 - (nonnull instancetype)initWithClassName:(NSString * _Nonnull)newClassName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -332,6 +378,11 @@ SWIFT_CLASS("_TtC4Guru20SignUpViewController")
 @end
 
 
+@interface UIView (SWIFT_EXTENSION(Guru))
+- (void)shake;
+@end
+
+
 SWIFT_CLASS("_TtC4Guru7VideoVC")
 @interface VideoVC : UIViewController
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified remoteView;
@@ -349,16 +400,6 @@ SWIFT_CLASS("_TtC4Guru7VideoVC")
 - (IBAction)camChange:(id _Nonnull)sender;
 - (IBAction)disconnectWithSender:(id _Nonnull)sender;
 - (IBAction)toggleMicWithSender:(id _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Guru14ViewController")
-@interface ViewController : UIViewController
-- (void)viewDidLoad;
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

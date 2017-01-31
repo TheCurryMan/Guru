@@ -28,6 +28,9 @@
 		AFBE11E31E34421F008BCBC8 /* LDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE11E21E34421F008BCBC8 /* LDViewController.swift */; };
 		AFFAD9DE1E40094200A7A33D /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFAD9DD1E40094200A7A33D /* pencil.png */; };
 		E156A71A1E3E696400C7B4CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E156A7191E3E696400C7B4CD /* LoginViewController.swift */; };
+		E1B4140F1E40366800F722B2 /* GuruReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */; };
+		E1B414121E403AB200F722B2 /* star filled.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414101E403AB200F722B2 /* star filled.png */; };
+		E1B414131E403AB200F722B2 /* star (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414111E403AB200F722B2 /* star (1).png */; };
 		E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3301E331BB4003C281D /* AppDelegate.swift */; };
 		E1F3F3361E331BB4003C281D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3341E331BB4003C281D /* Main.storyboard */; };
 		E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3371E331BB4003C281D /* Assets.xcassets */; };
@@ -91,6 +94,9 @@
 		AFBE11E21E34421F008BCBC8 /* LDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDViewController.swift; sourceTree = "<group>"; };
 		AFFAD9DD1E40094200A7A33D /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
 		E156A7191E3E696400C7B4CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruReviewViewController.swift; sourceTree = "<group>"; };
+		E1B414101E403AB200F722B2 /* star filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star filled.png"; sourceTree = "<group>"; };
+		E1B414111E403AB200F722B2 /* star (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star (1).png"; sourceTree = "<group>"; };
 		E1F3F32D1E331BB4003C281D /* Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F3F3301E331BB4003C281D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F3F3351E331BB4003C281D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 				AF2821661E33448500493A74 /* WaitingScreen.swift */,
 				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
 				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
+				E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */,
 				77A86A041E3EE4FB00D23385 /* Assets */,
 			);
 			name = Controllers;
@@ -219,6 +226,8 @@
 				E1F3F3711E33F058003C281D /* cancel (1).png */,
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
 				AF2821681E33466700493A74 /* Guru_green.png */,
+				E1B414101E403AB200F722B2 /* star filled.png */,
+				E1B414111E403AB200F722B2 /* star (1).png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -421,7 +430,9 @@
 				E1F3F33B1E331BB4003C281D /* LaunchScreen.storyboard in Resources */,
 				E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */,
 				AFBE11DF1E3441A8008BCBC8 /* Reset.png in Resources */,
+				E1B414121E403AB200F722B2 /* star filled.png in Resources */,
 				AFBE11E11E3441A8008BCBC8 /* white_up.png in Resources */,
+				E1B414131E403AB200F722B2 /* star (1).png in Resources */,
 				AFFAD9DE1E40094200A7A33D /* pencil.png in Resources */,
 				AF2821631E33373500493A74 /* Camera.png in Resources */,
 				E1F3F36B1E33D1D1003C281D /* red.png in Resources */,
@@ -605,6 +616,7 @@
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
 				E1F3F37E1E34B64D003C281D /* DemoPopupViewController2.swift in Sources */,
+				E1B4140F1E40366800F722B2 /* GuruReviewViewController.swift in Sources */,
 				77BCB9CD1E345579004DF9AB /* Point.swift in Sources */,
 				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
 				E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */,
