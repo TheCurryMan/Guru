@@ -170,14 +170,15 @@
 				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
+			path = "/Users/dylancdiamond/Desktop/Xcode Work/Guru/Guru/Guru/Guru/Controllers";
+			sourceTree = "<absolute>";
 		};
 		77A86A011E3EE4A800D23385 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				77BCB9CC1E345579004DF9AB /* Point.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77A86A021E3EE4B700D23385 /* Utilities */ = {
@@ -186,7 +187,7 @@
 				77D66B841E33E34600C90E01 /* Utils.swift */,
 				77A86A051E3EE66E00D23385 /* UIView Extension.swift */,
 			);
-			name = Utilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		77A86A031E3EE4DB00D23385 /* Views */ = {
@@ -197,7 +198,7 @@
 				E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */,
 				E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		77A86A041E3EE4FB00D23385 /* Assets */ = {
@@ -219,7 +220,7 @@
 				AFB4417B1E3322DE006C3864 /* Guru_trans.png */,
 				AF2821681E33466700493A74 /* Guru_green.png */,
 			);
-			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		8952CFFBFAB6BE263B4DD8DA /* Pods */ = {
@@ -652,7 +653,8 @@
 				E1F3F3351E331BB4003C281D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = "/Users/dylancdiamond/Desktop/Xcode Work/Guru/Guru/Guru/Guru";
+			sourceTree = "<absolute>";
 		};
 		E1F3F3391E331BB4003C281D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -660,7 +662,8 @@
 				E1F3F33A1E331BB4003C281D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			path = "/Users/dylancdiamond/Desktop/Xcode Work/Guru/Guru/Guru/Guru";
+			sourceTree = "<absolute>";
 		};
 /* End PBXVariantGroup section */
 

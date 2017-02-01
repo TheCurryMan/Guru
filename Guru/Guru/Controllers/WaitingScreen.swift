@@ -63,6 +63,8 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         }
         
         localMedia = TVILocalMedia()
+        let audioController = localMedia?.audioController
+        audioController?.audioOutput = .videoChatSpeaker
         
         if PlatformUtils.isSimulator {
             self.videoScreen.previewView.removeFromSuperview()

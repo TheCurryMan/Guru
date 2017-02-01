@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PopupController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,11 +52,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>27E51815DE79D042F77AB5B4813E7CE7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2E0595D602850048C2B60495D87C3D28</key>
 		<dict>
 			<key>primary</key>
