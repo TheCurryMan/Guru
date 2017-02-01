@@ -1,0 +1,338 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SubscriptionHandling"
+- "Event"
+- "Subscription"
+provides-nominal:
+- "P14ParseLiveQuery20SubscriptionHandling"
+- "O14ParseLiveQuery5Event"
+- "C14ParseLiveQuery12Subscription"
+provides-member:
+- ["P14ParseLiveQuery20SubscriptionHandling", ""]
+- ["O14ParseLiveQuery5Event", ""]
+- ["C14ParseLiveQuery12Subscription", ""]
+- ["C14ParseLiveQuery12Subscription", "handle"]
+- ["C14ParseLiveQuery12Subscription", "handle"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Subscription"
+- "AnyObject"
+- !private "StringLiteralType"
+- "PFObject"
+- "Error"
+- !private "fatalError"
+- "Void"
+- !private "BooleanLiteralType"
+- "SubscriptionHandling"
+- "Client"
+- !private "Bool"
+- !private "CastingPrecedence"
+- !private "=="
+- "AssignmentPrecedence"
+- "PFQuery"
+- "Event"
+depends-member:
+- ["Ps9AnyObject", "Client"]
+- ["Ps9AnyObject", "Error"]
+- ["Ps9AnyObject", "Event"]
+- ["Ps9AnyObject", "PFObject"]
+- ["Ps9AnyObject", "PFObjectSubclass"]
+- ["Ps9AnyObject", "PFQuery"]
+- ["Ps9AnyObject", "didEncounter"]
+- ["Ps9AnyObject", "didReceive"]
+- ["Ps9AnyObject", "didSubscribe"]
+- ["Ps9AnyObject", "didUnsubscribe"]
+- !private ["Ps9AnyObject", "errorHandlers"]
+- !private ["Ps9AnyObject", "eventHandlers"]
+- !private ["Ps9AnyObject", "handleEvent"]
+- !private ["Ps9AnyObject", "subscribeHandlers"]
+- !private ["Ps9AnyObject", "unsubscribeHandlers"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "deinit"]
+- !private ["Sa", "forEach"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "forEach"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "forEach"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "forEach"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "forEach"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "forEach"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "forEach"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "forEach"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps5Error", "deinit"]
+- ["O14ParseLiveQuery5Event", "Event"]
+- ["O14ParseLiveQuery5Event", "PFObject"]
+- ["O14ParseLiveQuery5Event", "T"]
+- ["O14ParseLiveQuery5Event", "created"]
+- ["O14ParseLiveQuery5Event", "deinit"]
+- ["O14ParseLiveQuery5Event", "deleted"]
+- ["O14ParseLiveQuery5Event", "entered"]
+- !private ["O14ParseLiveQuery5Event", "fatalError"]
+- ["O14ParseLiveQuery5Event", "init"]
+- ["O14ParseLiveQuery5Event", "left"]
+- ["O14ParseLiveQuery5Event", "updated"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "forEach"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "forEach"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "forEach"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "forEach"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "forEach"]
+- ["Os5Never", "deinit"]
+- !private ["Sq", "deinit"]
+- !private ["CSo7PFQuery", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "forEach"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "forEach"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "forEach"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "forEach"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "forEach"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["C14ParseLiveQuery12Subscription", "Client"]
+- ["C14ParseLiveQuery12Subscription", "Error"]
+- ["C14ParseLiveQuery12Subscription", "Event"]
+- ["C14ParseLiveQuery12Subscription", "PFObjectSubclass"]
+- ["C14ParseLiveQuery12Subscription", "PFQuery"]
+- ["C14ParseLiveQuery12Subscription", "Subscription"]
+- ["C14ParseLiveQuery12Subscription", "T"]
+- ["C14ParseLiveQuery12Subscription", "Void"]
+- ["C14ParseLiveQuery12Subscription", "deinit"]
+- ["C14ParseLiveQuery12Subscription", "didEncounter"]
+- ["C14ParseLiveQuery12Subscription", "didReceive"]
+- ["C14ParseLiveQuery12Subscription", "didSubscribe"]
+- ["C14ParseLiveQuery12Subscription", "didUnsubscribe"]
+- !private ["C14ParseLiveQuery12Subscription", "errorHandlers"]
+- !private ["C14ParseLiveQuery12Subscription", "eventHandlers"]
+- ["C14ParseLiveQuery12Subscription", "handle"]
+- ["C14ParseLiveQuery12Subscription", "handleError"]
+- ["C14ParseLiveQuery12Subscription", "handleEvent"]
+- ["C14ParseLiveQuery12Subscription", "handleSubscribe"]
+- ["C14ParseLiveQuery12Subscription", "handleUnsubscribe"]
+- ["C14ParseLiveQuery12Subscription", "init"]
+- !private ["C14ParseLiveQuery12Subscription", "subscribeHandlers"]
+- !private ["C14ParseLiveQuery12Subscription", "unsubscribeHandlers"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "Client"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "Error"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "Event"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "PFObject"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "PFObjectSubclass"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "PFQuery"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "didEncounter"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "didReceive"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "didSubscribe"]
+- ["P14ParseLiveQuery20SubscriptionHandling", "didUnsubscribe"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "errorHandlers"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "eventHandlers"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "handleEvent"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "subscribeHandlers"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "unsubscribeHandlers"]
+- ["P14ParseLiveQuery20SubscriptionHandling", ""]
+- ["Su", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "forEach"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "forEach"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "forEach"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Sb"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps5Error"
+- "O14ParseLiveQuery5Event"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "Os5Never"
+- !private "Sq"
+- !private "CSo7PFQuery"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- "Vs12StaticString"
+- "C14ParseLiveQuery12Subscription"
+- "P14ParseLiveQuery20SubscriptionHandling"
+- "Su"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/ParseLiveQuery/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/ParseLiveQuery.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Parse/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Parse.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/SocketRocket/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/SocketRocket.build/module.modulemap"
+interface-hash: "4b09a6e4cd8218347055774c4440bcb1"

@@ -7,101 +7,99 @@ provides-nominal:
 provides-member:
 - ["C4Guru16LDViewController", ""]
 provides-dynamic-lookup:
-- "swipeUpRec"
-- "sendPointData"
-- "pressedPencil"
-- "redrawPencilIcon"
-- "setUpColorBubbles"
-- "togglePressed"
-- "tool"
-- "button2"
-- "lastPoint"
-- "reset"
-- "viewDidAppear"
-- "question"
-- "universalColorB"
-- "imageView"
-- "touchesEnded"
-- "blue"
-- "bigCircle"
-- "button4Pressed"
-- "disconnectFromServer"
-- "button1"
-- "universalColorG"
-- "button2Pressed"
-- "subscribeLiveQuery"
-- "touchesBegan"
-- "button4"
-- "green"
-- "toggleButton"
-- "pencilIcon"
-- "resetButton"
-- "prefersStatusBarHidden"
-- "universalColorR"
-- "red"
-- "button1Pressed"
-- "button3Pressed"
-- "didReceiveMemoryWarning"
-- "toggleStatus"
-- "touchesMoved"
-- "circleOut"
-- "button3"
-- "drawLines"
-- "viewWillDisappear"
 - "pointQuery"
+- "drawLines"
+- "colorButtons"
 - "viewDidLoad"
 - "swiped"
 - "selectedImage"
+- "touchesBegan"
+- "viewWillDisappear"
+- "didReceiveMemoryWarning"
+- "blue"
+- "reset"
+- "question"
+- "tool"
+- "touchesMoved"
+- "bigCircle"
+- "lastPoint"
+- "showButtons"
+- "universalColorB"
+- "redrawPencilIcon"
+- "green"
+- "touchesEnded"
+- "imageView"
+- "pressedPencil"
+- "toggleButton"
+- "subscribeLiveQuery"
+- "universalColorG"
+- "togglePressed"
+- "hideButtons"
+- "swipeUpRec"
+- "viewDidAppear"
+- "toggleStatus"
+- "button1Pressed"
+- "button4Pressed"
+- "disconnectFromServer"
+- "circleOut"
+- "sendPointData"
+- "prefersStatusBarHidden"
+- "resetButton"
+- "universalColorR"
+- "button2Pressed"
+- "button3Pressed"
+- "pencilIcon"
+- "red"
 - "swipeDownRec"
 depends-top-level:
-- "Subscription"
-- "Point"
-- "UnicodeScalarType"
-- "CGPoint"
-- "UISwipeGestureRecognizer"
-- !private "UIGraphicsBeginImageContext"
-- !private "UIGraphicsGetCurrentContext"
-- "ParseLiveQuery"
-- !private "DispatchQueue"
-- "CGFloat"
-- "Double"
-- !private "+"
-- "PFObject"
-- "UIButton"
-- !private "*"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "CGBlendMode"
 - !private "StringLiteralType"
-- "AnyObject"
-- "BooleanLiteralType"
-- !private "PFUser"
-- !private "/"
-- "UIImageView"
-- !private "UIGraphicsEndImageContext"
-- !private "UIScreen"
-- !private "UIColor"
-- !private "print"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "=="
-- "Bool"
-- !private "Event"
-- !private "UIView"
-- !private "~="
-- !private "CGRect"
+- "UIButton"
+- !private "!"
+- "CGPoint"
 - "Set"
 - "UITouch"
-- "UIViewController"
-- !private "Void"
+- !private "UIView"
+- "UIImage"
+- "BooleanLiteralType"
+- !private "UIGraphicsBeginImageContext"
+- "Subscription"
+- "AnyObject"
+- !private "UIGraphicsGetCurrentContext"
+- "Point"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "UIImageRenderingMode"
+- !private "UIColor"
+- "CGFloat"
 - !private "CGLineCap"
 - "UIEvent"
+- !private "CGRect"
+- "UIImageView"
+- "PFObject"
 - !private "UIControlState"
-- "PFQuery"
+- !private "Event"
 - "liveQueryClient"
-- !private "UIImageRenderingMode"
+- !private "+"
+- "ParseLiveQuery"
+- !private "/"
+- !private "Void"
+- !private "UIGraphicsEndImageContext"
+- !private "*"
+- "Bool"
+- "UnicodeScalarType"
 - "LDViewController"
-- "UIImage"
-- !private "!"
-- !private "CGBlendMode"
+- !private "PFUser"
+- "UISwipeGestureRecognizer"
+- !private "DispatchQueue"
+- !private "=="
+- "UIViewController"
+- !private "~="
+- "AssignmentPrecedence"
+- "Double"
+- "CastingPrecedence"
+- "PFQuery"
+- !private "UIScreen"
+- !private "print"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGBlendMode"]
@@ -112,7 +110,6 @@ depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "Event"]
-- !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "PFObjectSubclass"]
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "Point"]
@@ -132,17 +129,14 @@ depends-member:
 - !private ["Ps9AnyObject", "async"]
 - ["Ps9AnyObject", "bigCircle"]
 - ["Ps9AnyObject", "blue"]
-- ["Ps9AnyObject", "button1"]
 - ["Ps9AnyObject", "button1Pressed"]
-- ["Ps9AnyObject", "button2"]
 - ["Ps9AnyObject", "button2Pressed"]
-- ["Ps9AnyObject", "button3"]
 - ["Ps9AnyObject", "button3Pressed"]
-- ["Ps9AnyObject", "button4"]
 - ["Ps9AnyObject", "button4Pressed"]
 - !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "cgColor"]
 - ["Ps9AnyObject", "circleOut"]
+- ["Ps9AnyObject", "colorButtons"]
 - !private ["Ps9AnyObject", "contentsScale"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -154,6 +148,7 @@ depends-member:
 - !private ["Ps9AnyObject", "fromY"]
 - ["Ps9AnyObject", "green"]
 - !private ["Ps9AnyObject", "handle"]
+- ["Ps9AnyObject", "hideButtons"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "imageView"]
 - ["Ps9AnyObject", "init"]
@@ -172,6 +167,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "query"]
 - ["Ps9AnyObject", "question"]
+- !private ["Ps9AnyObject", "questionID"]
 - ["Ps9AnyObject", "red"]
 - ["Ps9AnyObject", "redrawPencilIcon"]
 - ["Ps9AnyObject", "reset"]
@@ -185,12 +181,12 @@ depends-member:
 - !private ["Ps9AnyObject", "setLineCap"]
 - !private ["Ps9AnyObject", "setLineWidth"]
 - !private ["Ps9AnyObject", "setNeedsDisplay"]
+- !private ["Ps9AnyObject", "setRounded"]
 - !private ["Ps9AnyObject", "setStrokeColor"]
-- ["Ps9AnyObject", "setUpColorBubbles"]
+- ["Ps9AnyObject", "showButtons"]
 - !private ["Ps9AnyObject", "strokePath"]
 - !private ["Ps9AnyObject", "subscribe"]
 - ["Ps9AnyObject", "subscribeLiveQuery"]
-- !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "subscriptionQuery"]
 - ["Ps9AnyObject", "swipeDownRec"]
 - ["Ps9AnyObject", "swipeUpRec"]
@@ -209,6 +205,7 @@ depends-member:
 - ["Ps9AnyObject", "universalColorG"]
 - ["Ps9AnyObject", "universalColorR"]
 - !private ["Ps9AnyObject", "unsubscribe"]
+- !private ["Ps9AnyObject", "userID"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -216,6 +213,12 @@ depends-member:
 - !private ["Ps9AnyObject", "whereKey"]
 - !private ["Ps9AnyObject", "withRenderingMode"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -231,6 +234,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "layer"]
 - !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "setNeedsDisplay"]
+- !private ["PSo15CALayerDelegate", "setRounded"]
 - !private ["PSo15CALayerDelegate", "tintColor"]
 - !private ["PSo13CAMediaTiming", "contentsScale"]
 - ["OSC11CGBlendMode", "deinit"]
@@ -267,7 +271,6 @@ depends-member:
 - !private ["Ps7CVarArg", "Double"]
 - !private ["Ps7CVarArg", "Event"]
 - !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "PFUser"]
 - !private ["Ps7CVarArg", "Point"]
 - !private ["Ps7CVarArg", "Stride"]
@@ -281,22 +284,20 @@ depends-member:
 - !private ["Ps7CVarArg", "UIImageRenderingMode"]
 - !private ["Ps7CVarArg", "UIScreen"]
 - !private ["Ps7CVarArg", "UIView"]
+- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "alpha"]
 - !private ["Ps7CVarArg", "animate"]
 - !private ["Ps7CVarArg", "async"]
 - ["Ps7CVarArg", "bigCircle"]
 - ["Ps7CVarArg", "blue"]
-- ["Ps7CVarArg", "button1"]
 - ["Ps7CVarArg", "button1Pressed"]
-- ["Ps7CVarArg", "button2"]
 - ["Ps7CVarArg", "button2Pressed"]
-- ["Ps7CVarArg", "button3"]
 - ["Ps7CVarArg", "button3Pressed"]
-- ["Ps7CVarArg", "button4"]
 - ["Ps7CVarArg", "button4Pressed"]
 - !private ["Ps7CVarArg", "center"]
 - !private ["Ps7CVarArg", "cgColor"]
 - ["Ps7CVarArg", "circleOut"]
+- ["Ps7CVarArg", "colorButtons"]
 - !private ["Ps7CVarArg", "contentsScale"]
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
@@ -308,6 +309,7 @@ depends-member:
 - !private ["Ps7CVarArg", "fromX"]
 - !private ["Ps7CVarArg", "fromY"]
 - ["Ps7CVarArg", "green"]
+- ["Ps7CVarArg", "hideButtons"]
 - !private ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "imageView"]
 - ["Ps7CVarArg", "init"]
@@ -325,6 +327,7 @@ depends-member:
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "query"]
 - ["Ps7CVarArg", "question"]
+- !private ["Ps7CVarArg", "questionID"]
 - ["Ps7CVarArg", "red"]
 - ["Ps7CVarArg", "redrawPencilIcon"]
 - ["Ps7CVarArg", "reset"]
@@ -335,10 +338,10 @@ depends-member:
 - ["Ps7CVarArg", "sendPointData"]
 - !private ["Ps7CVarArg", "setImage"]
 - !private ["Ps7CVarArg", "setNeedsDisplay"]
-- ["Ps7CVarArg", "setUpColorBubbles"]
+- !private ["Ps7CVarArg", "setRounded"]
+- ["Ps7CVarArg", "showButtons"]
 - !private ["Ps7CVarArg", "subscribe"]
 - ["Ps7CVarArg", "subscribeLiveQuery"]
-- !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "subscriptionQuery"]
 - ["Ps7CVarArg", "swipeDownRec"]
 - ["Ps7CVarArg", "swipeUpRec"]
@@ -357,6 +360,7 @@ depends-member:
 - ["Ps7CVarArg", "universalColorG"]
 - ["Ps7CVarArg", "universalColorR"]
 - !private ["Ps7CVarArg", "unsubscribe"]
+- !private ["Ps7CVarArg", "userID"]
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidAppear"]
 - ["Ps7CVarArg", "viewDidLoad"]
@@ -371,6 +375,7 @@ depends-member:
 - !private ["C14ParseLiveQuery6Client", "unsubscribe"]
 - !private ["Vs11ClosedRange", "deinit"]
 - !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "first"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "init"]
@@ -385,7 +390,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
 - !private ["Ps28CustomDebugStringConvertible", "Event"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - !private ["Ps28CustomDebugStringConvertible", "Point"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
@@ -398,22 +402,20 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIImageRenderingMode"]
 - !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "animate"]
 - !private ["Ps28CustomDebugStringConvertible", "async"]
 - ["Ps28CustomDebugStringConvertible", "bigCircle"]
 - ["Ps28CustomDebugStringConvertible", "blue"]
-- ["Ps28CustomDebugStringConvertible", "button1"]
 - ["Ps28CustomDebugStringConvertible", "button1Pressed"]
-- ["Ps28CustomDebugStringConvertible", "button2"]
 - ["Ps28CustomDebugStringConvertible", "button2Pressed"]
-- ["Ps28CustomDebugStringConvertible", "button3"]
 - ["Ps28CustomDebugStringConvertible", "button3Pressed"]
-- ["Ps28CustomDebugStringConvertible", "button4"]
 - ["Ps28CustomDebugStringConvertible", "button4Pressed"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - ["Ps28CustomDebugStringConvertible", "circleOut"]
+- ["Ps28CustomDebugStringConvertible", "colorButtons"]
 - !private ["Ps28CustomDebugStringConvertible", "contentsScale"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -426,6 +428,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "fromY"]
 - ["Ps28CustomDebugStringConvertible", "green"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
+- ["Ps28CustomDebugStringConvertible", "hideButtons"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imageView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -443,6 +446,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "query"]
 - ["Ps28CustomDebugStringConvertible", "question"]
+- !private ["Ps28CustomDebugStringConvertible", "questionID"]
 - ["Ps28CustomDebugStringConvertible", "red"]
 - ["Ps28CustomDebugStringConvertible", "redrawPencilIcon"]
 - ["Ps28CustomDebugStringConvertible", "reset"]
@@ -453,11 +457,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "sendPointData"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setNeedsDisplay"]
-- ["Ps28CustomDebugStringConvertible", "setUpColorBubbles"]
+- !private ["Ps28CustomDebugStringConvertible", "setRounded"]
+- ["Ps28CustomDebugStringConvertible", "showButtons"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "subscribe"]
 - ["Ps28CustomDebugStringConvertible", "subscribeLiveQuery"]
-- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "subscriptionQuery"]
 - ["Ps28CustomDebugStringConvertible", "swipeDownRec"]
 - ["Ps28CustomDebugStringConvertible", "swipeUpRec"]
@@ -476,6 +480,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "universalColorG"]
 - ["Ps28CustomDebugStringConvertible", "universalColorR"]
 - !private ["Ps28CustomDebugStringConvertible", "unsubscribe"]
+- !private ["Ps28CustomDebugStringConvertible", "userID"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -499,6 +504,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Iterator"]
 - !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "first"]
 - !private ["Ps17CustomReflectable", "height"]
@@ -517,7 +523,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Double"]
 - !private ["Ps23CustomStringConvertible", "Event"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "Point"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
@@ -531,23 +536,21 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIImageRenderingMode"]
 - !private ["Ps23CustomStringConvertible", "UIScreen"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "animate"]
 - !private ["Ps23CustomStringConvertible", "async"]
 - ["Ps23CustomStringConvertible", "bigCircle"]
 - ["Ps23CustomStringConvertible", "blue"]
-- ["Ps23CustomStringConvertible", "button1"]
 - ["Ps23CustomStringConvertible", "button1Pressed"]
-- ["Ps23CustomStringConvertible", "button2"]
 - ["Ps23CustomStringConvertible", "button2Pressed"]
-- ["Ps23CustomStringConvertible", "button3"]
 - ["Ps23CustomStringConvertible", "button3Pressed"]
-- ["Ps23CustomStringConvertible", "button4"]
 - ["Ps23CustomStringConvertible", "button4Pressed"]
 - !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - ["Ps23CustomStringConvertible", "circleOut"]
+- ["Ps23CustomStringConvertible", "colorButtons"]
 - !private ["Ps23CustomStringConvertible", "contentsScale"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -559,6 +562,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "fromX"]
 - !private ["Ps23CustomStringConvertible", "fromY"]
 - ["Ps23CustomStringConvertible", "green"]
+- ["Ps23CustomStringConvertible", "hideButtons"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imageView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -576,6 +580,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "query"]
 - ["Ps23CustomStringConvertible", "question"]
+- !private ["Ps23CustomStringConvertible", "questionID"]
 - ["Ps23CustomStringConvertible", "red"]
 - ["Ps23CustomStringConvertible", "redrawPencilIcon"]
 - ["Ps23CustomStringConvertible", "reset"]
@@ -586,10 +591,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "sendPointData"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setNeedsDisplay"]
-- ["Ps23CustomStringConvertible", "setUpColorBubbles"]
+- !private ["Ps23CustomStringConvertible", "setRounded"]
+- ["Ps23CustomStringConvertible", "showButtons"]
 - !private ["Ps23CustomStringConvertible", "subscribe"]
 - ["Ps23CustomStringConvertible", "subscribeLiveQuery"]
-- !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "subscriptionQuery"]
 - ["Ps23CustomStringConvertible", "swipeDownRec"]
 - ["Ps23CustomStringConvertible", "swipeUpRec"]
@@ -608,6 +613,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "universalColorG"]
 - ["Ps23CustomStringConvertible", "universalColorR"]
 - !private ["Ps23CustomStringConvertible", "unsubscribe"]
+- !private ["Ps23CustomStringConvertible", "userID"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -631,7 +637,6 @@ depends-member:
 - !private ["Ps9Equatable", "Double"]
 - !private ["Ps9Equatable", "Event"]
 - !private ["Ps9Equatable", "Iterator"]
-- !private ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "Point"]
 - !private ["Ps9Equatable", "Stride"]
@@ -652,17 +657,14 @@ depends-member:
 - !private ["Ps9Equatable", "async"]
 - ["Ps9Equatable", "bigCircle"]
 - ["Ps9Equatable", "blue"]
-- ["Ps9Equatable", "button1"]
 - ["Ps9Equatable", "button1Pressed"]
-- ["Ps9Equatable", "button2"]
 - ["Ps9Equatable", "button2Pressed"]
-- ["Ps9Equatable", "button3"]
 - ["Ps9Equatable", "button3Pressed"]
-- ["Ps9Equatable", "button4"]
 - ["Ps9Equatable", "button4Pressed"]
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "cgColor"]
 - ["Ps9Equatable", "circleOut"]
+- ["Ps9Equatable", "colorButtons"]
 - !private ["Ps9Equatable", "contentsScale"]
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -675,6 +677,7 @@ depends-member:
 - !private ["Ps9Equatable", "fromY"]
 - ["Ps9Equatable", "green"]
 - !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "hideButtons"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imageView"]
 - ["Ps9Equatable", "init"]
@@ -693,6 +696,7 @@ depends-member:
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "query"]
 - ["Ps9Equatable", "question"]
+- !private ["Ps9Equatable", "questionID"]
 - ["Ps9Equatable", "red"]
 - ["Ps9Equatable", "redrawPencilIcon"]
 - ["Ps9Equatable", "reset"]
@@ -704,11 +708,11 @@ depends-member:
 - ["Ps9Equatable", "sendPointData"]
 - !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setNeedsDisplay"]
-- ["Ps9Equatable", "setUpColorBubbles"]
+- !private ["Ps9Equatable", "setRounded"]
+- ["Ps9Equatable", "showButtons"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "subscribe"]
 - ["Ps9Equatable", "subscribeLiveQuery"]
-- !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "subscriptionQuery"]
 - ["Ps9Equatable", "swipeDownRec"]
 - ["Ps9Equatable", "swipeUpRec"]
@@ -727,6 +731,7 @@ depends-member:
 - ["Ps9Equatable", "universalColorG"]
 - ["Ps9Equatable", "universalColorR"]
 - !private ["Ps9Equatable", "unsubscribe"]
+- !private ["Ps9Equatable", "userID"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -740,6 +745,7 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["O14ParseLiveQuery5Event", "created"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -747,6 +753,7 @@ depends-member:
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "Iterator"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -761,7 +768,6 @@ depends-member:
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "Event"]
 - !private ["Ps8Hashable", "Iterator"]
-- !private ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "Point"]
 - !private ["Ps8Hashable", "Stride"]
@@ -782,17 +788,14 @@ depends-member:
 - !private ["Ps8Hashable", "async"]
 - ["Ps8Hashable", "bigCircle"]
 - ["Ps8Hashable", "blue"]
-- ["Ps8Hashable", "button1"]
 - ["Ps8Hashable", "button1Pressed"]
-- ["Ps8Hashable", "button2"]
 - ["Ps8Hashable", "button2Pressed"]
-- ["Ps8Hashable", "button3"]
 - ["Ps8Hashable", "button3Pressed"]
-- ["Ps8Hashable", "button4"]
 - ["Ps8Hashable", "button4Pressed"]
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "cgColor"]
 - ["Ps8Hashable", "circleOut"]
+- ["Ps8Hashable", "colorButtons"]
 - !private ["Ps8Hashable", "contentsScale"]
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -804,6 +807,7 @@ depends-member:
 - !private ["Ps8Hashable", "fromX"]
 - !private ["Ps8Hashable", "fromY"]
 - ["Ps8Hashable", "green"]
+- ["Ps8Hashable", "hideButtons"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imageView"]
 - ["Ps8Hashable", "init"]
@@ -822,6 +826,7 @@ depends-member:
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "query"]
 - ["Ps8Hashable", "question"]
+- !private ["Ps8Hashable", "questionID"]
 - ["Ps8Hashable", "red"]
 - ["Ps8Hashable", "redrawPencilIcon"]
 - ["Ps8Hashable", "reset"]
@@ -833,10 +838,10 @@ depends-member:
 - ["Ps8Hashable", "sendPointData"]
 - !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setNeedsDisplay"]
-- ["Ps8Hashable", "setUpColorBubbles"]
+- !private ["Ps8Hashable", "setRounded"]
+- ["Ps8Hashable", "showButtons"]
 - !private ["Ps8Hashable", "subscribe"]
 - ["Ps8Hashable", "subscribeLiveQuery"]
-- !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "subscriptionQuery"]
 - ["Ps8Hashable", "swipeDownRec"]
 - ["Ps8Hashable", "swipeUpRec"]
@@ -855,6 +860,7 @@ depends-member:
 - ["Ps8Hashable", "universalColorG"]
 - ["Ps8Hashable", "universalColorR"]
 - !private ["Ps8Hashable", "unsubscribe"]
+- !private ["Ps8Hashable", "userID"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -862,11 +868,15 @@ depends-member:
 - !private ["Ps8Hashable", "whereKey"]
 - !private ["Ps8Hashable", "withRenderingMode"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "Iterator"]
 - ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "first"]
 - !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "first"]
+- !private ["Vs16IndexingIterator", "Element"]
 - !private ["Si", "Stride"]
 - ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
@@ -910,20 +920,18 @@ depends-member:
 - !private ["C4Guru16LDViewController", "Void"]
 - ["C4Guru16LDViewController", "bigCircle"]
 - ["C4Guru16LDViewController", "blue"]
-- ["C4Guru16LDViewController", "button1"]
 - ["C4Guru16LDViewController", "button1Pressed"]
-- ["C4Guru16LDViewController", "button2"]
 - ["C4Guru16LDViewController", "button2Pressed"]
-- ["C4Guru16LDViewController", "button3"]
 - ["C4Guru16LDViewController", "button3Pressed"]
-- ["C4Guru16LDViewController", "button4"]
 - ["C4Guru16LDViewController", "button4Pressed"]
 - ["C4Guru16LDViewController", "circleOut"]
+- ["C4Guru16LDViewController", "colorButtons"]
 - ["C4Guru16LDViewController", "deinit"]
 - ["C4Guru16LDViewController", "didReceiveMemoryWarning"]
 - ["C4Guru16LDViewController", "disconnectFromServer"]
 - ["C4Guru16LDViewController", "drawLines"]
 - ["C4Guru16LDViewController", "green"]
+- ["C4Guru16LDViewController", "hideButtons"]
 - ["C4Guru16LDViewController", "imageView"]
 - ["C4Guru16LDViewController", "init"]
 - ["C4Guru16LDViewController", "lastPoint"]
@@ -940,7 +948,7 @@ depends-member:
 - ["C4Guru16LDViewController", "resetButton"]
 - ["C4Guru16LDViewController", "selectedImage"]
 - ["C4Guru16LDViewController", "sendPointData"]
-- ["C4Guru16LDViewController", "setUpColorBubbles"]
+- ["C4Guru16LDViewController", "showButtons"]
 - ["C4Guru16LDViewController", "subscribeLiveQuery"]
 - ["C4Guru16LDViewController", "subscriptionQuery"]
 - ["C4Guru16LDViewController", "swipeDownRec"]
@@ -964,6 +972,10 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CGBlendMode"]
 - !private ["PSo8NSCoding", "CGFloat"]
@@ -973,7 +985,6 @@ depends-member:
 - !private ["PSo8NSCoding", "DispatchQueue"]
 - !private ["PSo8NSCoding", "Double"]
 - !private ["PSo8NSCoding", "Event"]
-- !private ["PSo8NSCoding", "PFObject"]
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "Point"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -990,17 +1001,14 @@ depends-member:
 - !private ["PSo8NSCoding", "animate"]
 - ["PSo8NSCoding", "bigCircle"]
 - ["PSo8NSCoding", "blue"]
-- ["PSo8NSCoding", "button1"]
 - ["PSo8NSCoding", "button1Pressed"]
-- ["PSo8NSCoding", "button2"]
 - ["PSo8NSCoding", "button2Pressed"]
-- ["PSo8NSCoding", "button3"]
 - ["PSo8NSCoding", "button3Pressed"]
-- ["PSo8NSCoding", "button4"]
 - ["PSo8NSCoding", "button4Pressed"]
 - !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "cgColor"]
 - ["PSo8NSCoding", "circleOut"]
+- ["PSo8NSCoding", "colorButtons"]
 - !private ["PSo8NSCoding", "contentsScale"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "disconnectFromServer"]
@@ -1008,6 +1016,7 @@ depends-member:
 - ["PSo8NSCoding", "drawLines"]
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "green"]
+- ["PSo8NSCoding", "hideButtons"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imageView"]
 - !private ["PSo8NSCoding", "init"]
@@ -1029,7 +1038,8 @@ depends-member:
 - ["PSo8NSCoding", "sendPointData"]
 - !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setNeedsDisplay"]
-- ["PSo8NSCoding", "setUpColorBubbles"]
+- !private ["PSo8NSCoding", "setRounded"]
+- ["PSo8NSCoding", "showButtons"]
 - ["PSo8NSCoding", "subscribeLiveQuery"]
 - ["PSo8NSCoding", "subscriptionQuery"]
 - ["PSo8NSCoding", "swipeDownRec"]
@@ -1063,7 +1073,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "DispatchQueue"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
 - !private ["PSo26NSExtensionRequestHandling", "Event"]
-- !private ["PSo26NSExtensionRequestHandling", "PFObject"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "Point"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
@@ -1078,19 +1087,17 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "bigCircle"]
 - ["PSo26NSExtensionRequestHandling", "blue"]
-- ["PSo26NSExtensionRequestHandling", "button1"]
 - ["PSo26NSExtensionRequestHandling", "button1Pressed"]
-- ["PSo26NSExtensionRequestHandling", "button2"]
 - ["PSo26NSExtensionRequestHandling", "button2Pressed"]
-- ["PSo26NSExtensionRequestHandling", "button3"]
 - ["PSo26NSExtensionRequestHandling", "button3Pressed"]
-- ["PSo26NSExtensionRequestHandling", "button4"]
 - ["PSo26NSExtensionRequestHandling", "button4Pressed"]
 - ["PSo26NSExtensionRequestHandling", "circleOut"]
+- ["PSo26NSExtensionRequestHandling", "colorButtons"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "disconnectFromServer"]
 - ["PSo26NSExtensionRequestHandling", "drawLines"]
 - ["PSo26NSExtensionRequestHandling", "green"]
+- ["PSo26NSExtensionRequestHandling", "hideButtons"]
 - ["PSo26NSExtensionRequestHandling", "imageView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "lastPoint"]
@@ -1107,7 +1114,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "resetButton"]
 - ["PSo26NSExtensionRequestHandling", "selectedImage"]
 - ["PSo26NSExtensionRequestHandling", "sendPointData"]
-- ["PSo26NSExtensionRequestHandling", "setUpColorBubbles"]
+- ["PSo26NSExtensionRequestHandling", "showButtons"]
 - ["PSo26NSExtensionRequestHandling", "subscribeLiveQuery"]
 - ["PSo26NSExtensionRequestHandling", "subscriptionQuery"]
 - ["PSo26NSExtensionRequestHandling", "swipeDownRec"]
@@ -1166,17 +1173,14 @@ depends-member:
 - !private ["CSo8NSObject", "async"]
 - ["CSo8NSObject", "bigCircle"]
 - ["CSo8NSObject", "blue"]
-- ["CSo8NSObject", "button1"]
 - ["CSo8NSObject", "button1Pressed"]
-- ["CSo8NSObject", "button2"]
 - ["CSo8NSObject", "button2Pressed"]
-- ["CSo8NSObject", "button3"]
 - ["CSo8NSObject", "button3Pressed"]
-- ["CSo8NSObject", "button4"]
 - ["CSo8NSObject", "button4Pressed"]
 - !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "cgColor"]
 - ["CSo8NSObject", "circleOut"]
+- ["CSo8NSObject", "colorButtons"]
 - !private ["CSo8NSObject", "contentsScale"]
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -1187,6 +1191,7 @@ depends-member:
 - !private ["CSo8NSObject", "fromX"]
 - !private ["CSo8NSObject", "fromY"]
 - ["CSo8NSObject", "green"]
+- ["CSo8NSObject", "hideButtons"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
@@ -1204,6 +1209,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "query"]
 - ["CSo8NSObject", "question"]
+- !private ["CSo8NSObject", "questionID"]
 - ["CSo8NSObject", "red"]
 - ["CSo8NSObject", "redrawPencilIcon"]
 - ["CSo8NSObject", "reset"]
@@ -1214,10 +1220,10 @@ depends-member:
 - ["CSo8NSObject", "sendPointData"]
 - !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setNeedsDisplay"]
-- ["CSo8NSObject", "setUpColorBubbles"]
+- !private ["CSo8NSObject", "setRounded"]
+- ["CSo8NSObject", "showButtons"]
 - !private ["CSo8NSObject", "subscribe"]
 - ["CSo8NSObject", "subscribeLiveQuery"]
-- !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "subscriptionQuery"]
 - ["CSo8NSObject", "swipeDownRec"]
 - ["CSo8NSObject", "swipeUpRec"]
@@ -1236,6 +1242,7 @@ depends-member:
 - ["CSo8NSObject", "universalColorG"]
 - ["CSo8NSObject", "universalColorR"]
 - !private ["CSo8NSObject", "unsubscribe"]
+- !private ["CSo8NSObject", "userID"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -1250,7 +1257,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - !private ["PSo16NSObjectProtocol", "Event"]
-- !private ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "Point"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -1268,17 +1274,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "async"]
 - ["PSo16NSObjectProtocol", "bigCircle"]
 - ["PSo16NSObjectProtocol", "blue"]
-- ["PSo16NSObjectProtocol", "button1"]
 - ["PSo16NSObjectProtocol", "button1Pressed"]
-- ["PSo16NSObjectProtocol", "button2"]
 - ["PSo16NSObjectProtocol", "button2Pressed"]
-- ["PSo16NSObjectProtocol", "button3"]
 - ["PSo16NSObjectProtocol", "button3Pressed"]
-- ["PSo16NSObjectProtocol", "button4"]
 - ["PSo16NSObjectProtocol", "button4Pressed"]
 - !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - ["PSo16NSObjectProtocol", "circleOut"]
+- ["PSo16NSObjectProtocol", "colorButtons"]
 - !private ["PSo16NSObjectProtocol", "contentsScale"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -1289,6 +1292,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "fromX"]
 - !private ["PSo16NSObjectProtocol", "fromY"]
 - ["PSo16NSObjectProtocol", "green"]
+- ["PSo16NSObjectProtocol", "hideButtons"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -1306,6 +1310,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "query"]
 - ["PSo16NSObjectProtocol", "question"]
+- !private ["PSo16NSObjectProtocol", "questionID"]
 - ["PSo16NSObjectProtocol", "red"]
 - ["PSo16NSObjectProtocol", "redrawPencilIcon"]
 - ["PSo16NSObjectProtocol", "reset"]
@@ -1316,10 +1321,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "sendPointData"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setNeedsDisplay"]
-- ["PSo16NSObjectProtocol", "setUpColorBubbles"]
+- !private ["PSo16NSObjectProtocol", "setRounded"]
+- ["PSo16NSObjectProtocol", "showButtons"]
 - !private ["PSo16NSObjectProtocol", "subscribe"]
 - ["PSo16NSObjectProtocol", "subscribeLiveQuery"]
-- !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "subscriptionQuery"]
 - ["PSo16NSObjectProtocol", "swipeDownRec"]
 - ["PSo16NSObjectProtocol", "swipeUpRec"]
@@ -1338,6 +1343,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "universalColorG"]
 - ["PSo16NSObjectProtocol", "universalColorR"]
 - !private ["PSo16NSObjectProtocol", "unsubscribe"]
+- !private ["PSo16NSObjectProtocol", "userID"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -1356,18 +1362,18 @@ depends-member:
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "blue"]
 - !private ["CSo8PFObject", "current"]
-- ["CSo8PFObject", "deinit"]
 - !private ["CSo8PFObject", "fromX"]
 - !private ["CSo8PFObject", "fromY"]
 - !private ["CSo8PFObject", "green"]
 - !private ["CSo8PFObject", "init"]
 - !private ["CSo8PFObject", "objectId"]
 - !private ["CSo8PFObject", "query"]
+- !private ["CSo8PFObject", "questionID"]
 - !private ["CSo8PFObject", "red"]
 - !private ["CSo8PFObject", "saveInBackground"]
-- !private ["CSo8PFObject", "subscript"]
 - !private ["CSo8PFObject", "toX"]
 - !private ["CSo8PFObject", "toY"]
+- !private ["CSo8PFObject", "userID"]
 - ["CSo7PFQuery", "deinit"]
 - !private ["CSo7PFQuery", "whereKey"]
 - !private ["PSo13PFSubclassing", "blue"]
@@ -1375,31 +1381,49 @@ depends-member:
 - !private ["PSo13PFSubclassing", "fromX"]
 - !private ["PSo13PFSubclassing", "fromY"]
 - !private ["PSo13PFSubclassing", "green"]
+- !private ["PSo13PFSubclassing", "init"]
 - !private ["PSo13PFSubclassing", "objectId"]
 - !private ["PSo13PFSubclassing", "query"]
+- !private ["PSo13PFSubclassing", "questionID"]
 - !private ["PSo13PFSubclassing", "red"]
+- !private ["PSo13PFSubclassing", "saveInBackground"]
 - !private ["PSo13PFSubclassing", "toX"]
 - !private ["PSo13PFSubclassing", "toY"]
+- !private ["PSo13PFSubclassing", "userID"]
 - !private ["CSo6PFUser", "current"]
 - ["CSo6PFUser", "deinit"]
 - !private ["CSo6PFUser", "objectId"]
 - !private ["C4Guru5Point", "blue"]
-- !private ["C4Guru5Point", "deinit"]
+- ["C4Guru5Point", "deinit"]
 - !private ["C4Guru5Point", "fromX"]
 - !private ["C4Guru5Point", "fromY"]
 - !private ["C4Guru5Point", "green"]
+- !private ["C4Guru5Point", "init"]
 - !private ["C4Guru5Point", "query"]
+- !private ["C4Guru5Point", "questionID"]
 - !private ["C4Guru5Point", "red"]
+- !private ["C4Guru5Point", "saveInBackground"]
 - !private ["C4Guru5Point", "toX"]
 - !private ["C4Guru5Point", "toY"]
+- !private ["C4Guru5Point", "userID"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
 - !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps16RawRepresentable", "alwaysTemplate"]
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["Ps16RawRepresentable", "round"]
 - ["PSo19SRWebSocketDelegate", "init"]
 - !private ["PSo19SRWebSocketDelegate", "subscribe"]
 - !private ["PSo19SRWebSocketDelegate", "unsubscribe"]
+- !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "first"]
 - !private ["Vs3Set", "Iterator"]
 - ["Vs3Set", "deinit"]
@@ -1433,6 +1457,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setNeedsDisplay"]
+- !private ["PSo29UIAccessibilityIdentification", "setRounded"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "withRenderingMode"]
 - !private ["PSo12UIAppearance", "alpha"]
@@ -1444,6 +1469,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "setNeedsDisplay"]
+- !private ["PSo12UIAppearance", "setRounded"]
 - !private ["PSo12UIAppearance", "tintColor"]
 - !private ["PSo21UIAppearanceContainer", "CGBlendMode"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
@@ -1453,7 +1479,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "DispatchQueue"]
 - !private ["PSo21UIAppearanceContainer", "Double"]
 - !private ["PSo21UIAppearanceContainer", "Event"]
-- !private ["PSo21UIAppearanceContainer", "PFObject"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "Point"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -1470,21 +1495,19 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "animate"]
 - ["PSo21UIAppearanceContainer", "bigCircle"]
 - ["PSo21UIAppearanceContainer", "blue"]
-- ["PSo21UIAppearanceContainer", "button1"]
 - ["PSo21UIAppearanceContainer", "button1Pressed"]
-- ["PSo21UIAppearanceContainer", "button2"]
 - ["PSo21UIAppearanceContainer", "button2Pressed"]
-- ["PSo21UIAppearanceContainer", "button3"]
 - ["PSo21UIAppearanceContainer", "button3Pressed"]
-- ["PSo21UIAppearanceContainer", "button4"]
 - ["PSo21UIAppearanceContainer", "button4Pressed"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - ["PSo21UIAppearanceContainer", "circleOut"]
+- ["PSo21UIAppearanceContainer", "colorButtons"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "disconnectFromServer"]
 - ["PSo21UIAppearanceContainer", "drawLines"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "green"]
+- ["PSo21UIAppearanceContainer", "hideButtons"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imageView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
@@ -1506,7 +1529,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sendPointData"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "setNeedsDisplay"]
-- ["PSo21UIAppearanceContainer", "setUpColorBubbles"]
+- !private ["PSo21UIAppearanceContainer", "setRounded"]
+- ["PSo21UIAppearanceContainer", "showButtons"]
 - ["PSo21UIAppearanceContainer", "subscribeLiveQuery"]
 - ["PSo21UIAppearanceContainer", "subscriptionQuery"]
 - ["PSo21UIAppearanceContainer", "swipeDownRec"]
@@ -1529,9 +1553,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "alpha"]
+- ["CSo8UIButton", "deinit"]
 - !private ["CSo8UIButton", "image"]
 - !private ["CSo8UIButton", "isEnabled"]
 - !private ["CSo8UIButton", "setImage"]
+- !private ["CSo8UIButton", "setRounded"]
 - !private ["CSo8UIButton", "tintColor"]
 - !private ["CSo7UIColor", "cgColor"]
 - ["CSo7UIColor", "deinit"]
@@ -1544,7 +1570,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "DispatchQueue"]
 - !private ["PSo18UIContentContainer", "Double"]
 - !private ["PSo18UIContentContainer", "Event"]
-- !private ["PSo18UIContentContainer", "PFObject"]
 - !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "Point"]
 - !private ["PSo18UIContentContainer", "UIColor"]
@@ -1559,19 +1584,17 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "bigCircle"]
 - ["PSo18UIContentContainer", "blue"]
-- ["PSo18UIContentContainer", "button1"]
 - ["PSo18UIContentContainer", "button1Pressed"]
-- ["PSo18UIContentContainer", "button2"]
 - ["PSo18UIContentContainer", "button2Pressed"]
-- ["PSo18UIContentContainer", "button3"]
 - ["PSo18UIContentContainer", "button3Pressed"]
-- ["PSo18UIContentContainer", "button4"]
 - ["PSo18UIContentContainer", "button4Pressed"]
 - ["PSo18UIContentContainer", "circleOut"]
+- ["PSo18UIContentContainer", "colorButtons"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "disconnectFromServer"]
 - ["PSo18UIContentContainer", "drawLines"]
 - ["PSo18UIContentContainer", "green"]
+- ["PSo18UIContentContainer", "hideButtons"]
 - ["PSo18UIContentContainer", "imageView"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "lastPoint"]
@@ -1588,7 +1611,7 @@ depends-member:
 - ["PSo18UIContentContainer", "resetButton"]
 - ["PSo18UIContentContainer", "selectedImage"]
 - ["PSo18UIContentContainer", "sendPointData"]
-- ["PSo18UIContentContainer", "setUpColorBubbles"]
+- ["PSo18UIContentContainer", "showButtons"]
 - ["PSo18UIContentContainer", "subscribeLiveQuery"]
 - ["PSo18UIContentContainer", "subscriptionQuery"]
 - ["PSo18UIContentContainer", "swipeDownRec"]
@@ -1613,6 +1636,7 @@ depends-member:
 - !private ["CSo9UIControl", "image"]
 - !private ["CSo9UIControl", "isEnabled"]
 - !private ["CSo9UIControl", "setImage"]
+- !private ["CSo9UIControl", "setRounded"]
 - !private ["CSo9UIControl", "tintColor"]
 - ["VSC14UIControlState", "deinit"]
 - !private ["VSC14UIControlState", "normal"]
@@ -1625,6 +1649,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "setNeedsDisplay"]
+- !private ["PSo17UICoordinateSpace", "setRounded"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animate"]
@@ -1635,6 +1660,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "setNeedsDisplay"]
+- !private ["PSo13UIDynamicItem", "setRounded"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
 - !private ["PSo18UIFocusEnvironment", "CGBlendMode"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
@@ -1644,7 +1670,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
 - !private ["PSo18UIFocusEnvironment", "Double"]
 - !private ["PSo18UIFocusEnvironment", "Event"]
-- !private ["PSo18UIFocusEnvironment", "PFObject"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "Point"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
@@ -1661,21 +1686,19 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "animate"]
 - ["PSo18UIFocusEnvironment", "bigCircle"]
 - ["PSo18UIFocusEnvironment", "blue"]
-- ["PSo18UIFocusEnvironment", "button1"]
 - ["PSo18UIFocusEnvironment", "button1Pressed"]
-- ["PSo18UIFocusEnvironment", "button2"]
 - ["PSo18UIFocusEnvironment", "button2Pressed"]
-- ["PSo18UIFocusEnvironment", "button3"]
 - ["PSo18UIFocusEnvironment", "button3Pressed"]
-- ["PSo18UIFocusEnvironment", "button4"]
 - ["PSo18UIFocusEnvironment", "button4Pressed"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - ["PSo18UIFocusEnvironment", "circleOut"]
+- ["PSo18UIFocusEnvironment", "colorButtons"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "disconnectFromServer"]
 - ["PSo18UIFocusEnvironment", "drawLines"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "green"]
+- ["PSo18UIFocusEnvironment", "hideButtons"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imageView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
@@ -1697,7 +1720,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sendPointData"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "setNeedsDisplay"]
-- ["PSo18UIFocusEnvironment", "setUpColorBubbles"]
+- !private ["PSo18UIFocusEnvironment", "setRounded"]
+- ["PSo18UIFocusEnvironment", "showButtons"]
 - ["PSo18UIFocusEnvironment", "subscribeLiveQuery"]
 - ["PSo18UIFocusEnvironment", "subscriptionQuery"]
 - ["PSo18UIFocusEnvironment", "swipeDownRec"]
@@ -1728,6 +1752,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "layer"]
 - !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "setNeedsDisplay"]
+- !private ["PSo11UIFocusItem", "setRounded"]
 - !private ["PSo11UIFocusItem", "tintColor"]
 - ["CSo7UIImage", "deinit"]
 - !private ["CSo7UIImage", "draw"]
@@ -1777,21 +1802,19 @@ depends-member:
 - !private ["CSo11UIResponder", "animate"]
 - ["CSo11UIResponder", "bigCircle"]
 - ["CSo11UIResponder", "blue"]
-- ["CSo11UIResponder", "button1"]
 - ["CSo11UIResponder", "button1Pressed"]
-- ["CSo11UIResponder", "button2"]
 - ["CSo11UIResponder", "button2Pressed"]
-- ["CSo11UIResponder", "button3"]
 - ["CSo11UIResponder", "button3Pressed"]
-- ["CSo11UIResponder", "button4"]
 - ["CSo11UIResponder", "button4Pressed"]
 - !private ["CSo11UIResponder", "center"]
 - ["CSo11UIResponder", "circleOut"]
+- ["CSo11UIResponder", "colorButtons"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "disconnectFromServer"]
 - ["CSo11UIResponder", "drawLines"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "green"]
+- ["CSo11UIResponder", "hideButtons"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
@@ -1813,7 +1836,8 @@ depends-member:
 - ["CSo11UIResponder", "sendPointData"]
 - !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "setNeedsDisplay"]
-- ["CSo11UIResponder", "setUpColorBubbles"]
+- !private ["CSo11UIResponder", "setRounded"]
+- ["CSo11UIResponder", "showButtons"]
 - ["CSo11UIResponder", "subscribeLiveQuery"]
 - ["CSo11UIResponder", "subscriptionQuery"]
 - ["CSo11UIResponder", "swipeDownRec"]
@@ -1842,7 +1866,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
 - !private ["PSo30UIResponderStandardEditActions", "Double"]
 - !private ["PSo30UIResponderStandardEditActions", "Event"]
-- !private ["PSo30UIResponderStandardEditActions", "PFObject"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - !private ["PSo30UIResponderStandardEditActions", "Point"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
@@ -1859,21 +1882,19 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "animate"]
 - ["PSo30UIResponderStandardEditActions", "bigCircle"]
 - ["PSo30UIResponderStandardEditActions", "blue"]
-- ["PSo30UIResponderStandardEditActions", "button1"]
 - ["PSo30UIResponderStandardEditActions", "button1Pressed"]
-- ["PSo30UIResponderStandardEditActions", "button2"]
 - ["PSo30UIResponderStandardEditActions", "button2Pressed"]
-- ["PSo30UIResponderStandardEditActions", "button3"]
 - ["PSo30UIResponderStandardEditActions", "button3Pressed"]
-- ["PSo30UIResponderStandardEditActions", "button4"]
 - ["PSo30UIResponderStandardEditActions", "button4Pressed"]
 - !private ["PSo30UIResponderStandardEditActions", "center"]
 - ["PSo30UIResponderStandardEditActions", "circleOut"]
+- ["PSo30UIResponderStandardEditActions", "colorButtons"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "disconnectFromServer"]
 - ["PSo30UIResponderStandardEditActions", "drawLines"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - ["PSo30UIResponderStandardEditActions", "green"]
+- ["PSo30UIResponderStandardEditActions", "hideButtons"]
 - !private ["PSo30UIResponderStandardEditActions", "image"]
 - ["PSo30UIResponderStandardEditActions", "imageView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
@@ -1895,7 +1916,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "sendPointData"]
 - !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - !private ["PSo30UIResponderStandardEditActions", "setNeedsDisplay"]
-- ["PSo30UIResponderStandardEditActions", "setUpColorBubbles"]
+- !private ["PSo30UIResponderStandardEditActions", "setRounded"]
+- ["PSo30UIResponderStandardEditActions", "showButtons"]
 - ["PSo30UIResponderStandardEditActions", "subscribeLiveQuery"]
 - ["PSo30UIResponderStandardEditActions", "subscriptionQuery"]
 - ["PSo30UIResponderStandardEditActions", "swipeDownRec"]
@@ -1928,7 +1950,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "DispatchQueue"]
 - !private ["PSo16UIStateRestoring", "Double"]
 - !private ["PSo16UIStateRestoring", "Event"]
-- !private ["PSo16UIStateRestoring", "PFObject"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "Point"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -1943,19 +1964,17 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "bigCircle"]
 - ["PSo16UIStateRestoring", "blue"]
-- ["PSo16UIStateRestoring", "button1"]
 - ["PSo16UIStateRestoring", "button1Pressed"]
-- ["PSo16UIStateRestoring", "button2"]
 - ["PSo16UIStateRestoring", "button2Pressed"]
-- ["PSo16UIStateRestoring", "button3"]
 - ["PSo16UIStateRestoring", "button3Pressed"]
-- ["PSo16UIStateRestoring", "button4"]
 - ["PSo16UIStateRestoring", "button4Pressed"]
 - ["PSo16UIStateRestoring", "circleOut"]
+- ["PSo16UIStateRestoring", "colorButtons"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "disconnectFromServer"]
 - ["PSo16UIStateRestoring", "drawLines"]
 - ["PSo16UIStateRestoring", "green"]
+- ["PSo16UIStateRestoring", "hideButtons"]
 - ["PSo16UIStateRestoring", "imageView"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "lastPoint"]
@@ -1972,7 +1991,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "resetButton"]
 - ["PSo16UIStateRestoring", "selectedImage"]
 - ["PSo16UIStateRestoring", "sendPointData"]
-- ["PSo16UIStateRestoring", "setUpColorBubbles"]
+- ["PSo16UIStateRestoring", "showButtons"]
 - ["PSo16UIStateRestoring", "subscribeLiveQuery"]
 - ["PSo16UIStateRestoring", "subscriptionQuery"]
 - ["PSo16UIStateRestoring", "swipeDownRec"]
@@ -2003,7 +2022,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "DispatchQueue"]
 - !private ["PSo18UITraitEnvironment", "Double"]
 - !private ["PSo18UITraitEnvironment", "Event"]
-- !private ["PSo18UITraitEnvironment", "PFObject"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "Point"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
@@ -2020,21 +2038,19 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "animate"]
 - ["PSo18UITraitEnvironment", "bigCircle"]
 - ["PSo18UITraitEnvironment", "blue"]
-- ["PSo18UITraitEnvironment", "button1"]
 - ["PSo18UITraitEnvironment", "button1Pressed"]
-- ["PSo18UITraitEnvironment", "button2"]
 - ["PSo18UITraitEnvironment", "button2Pressed"]
-- ["PSo18UITraitEnvironment", "button3"]
 - ["PSo18UITraitEnvironment", "button3Pressed"]
-- ["PSo18UITraitEnvironment", "button4"]
 - ["PSo18UITraitEnvironment", "button4Pressed"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - ["PSo18UITraitEnvironment", "circleOut"]
+- ["PSo18UITraitEnvironment", "colorButtons"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "disconnectFromServer"]
 - ["PSo18UITraitEnvironment", "drawLines"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "green"]
+- ["PSo18UITraitEnvironment", "hideButtons"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imageView"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -2058,7 +2074,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sendPointData"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "setNeedsDisplay"]
-- ["PSo18UITraitEnvironment", "setUpColorBubbles"]
+- !private ["PSo18UITraitEnvironment", "setRounded"]
+- ["PSo18UITraitEnvironment", "showButtons"]
 - ["PSo18UITraitEnvironment", "subscribeLiveQuery"]
 - ["PSo18UITraitEnvironment", "subscriptionQuery"]
 - ["PSo18UITraitEnvironment", "swipeDownRec"]
@@ -2089,6 +2106,7 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "setNeedsDisplay"]
+- !private ["CSo6UIView", "setRounded"]
 - !private ["CSo6UIView", "tintColor"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
@@ -2124,20 +2142,18 @@ depends-member:
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "bigCircle"]
 - ["CSo16UIViewController", "blue"]
-- ["CSo16UIViewController", "button1"]
 - ["CSo16UIViewController", "button1Pressed"]
-- ["CSo16UIViewController", "button2"]
 - ["CSo16UIViewController", "button2Pressed"]
-- ["CSo16UIViewController", "button3"]
 - ["CSo16UIViewController", "button3Pressed"]
-- ["CSo16UIViewController", "button4"]
 - ["CSo16UIViewController", "button4Pressed"]
 - ["CSo16UIViewController", "circleOut"]
+- ["CSo16UIViewController", "colorButtons"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "disconnectFromServer"]
 - ["CSo16UIViewController", "drawLines"]
 - ["CSo16UIViewController", "green"]
+- ["CSo16UIViewController", "hideButtons"]
 - ["CSo16UIViewController", "imageView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "lastPoint"]
@@ -2154,7 +2170,7 @@ depends-member:
 - ["CSo16UIViewController", "resetButton"]
 - ["CSo16UIViewController", "selectedImage"]
 - ["CSo16UIViewController", "sendPointData"]
-- ["CSo16UIViewController", "setUpColorBubbles"]
+- ["CSo16UIViewController", "showButtons"]
 - ["CSo16UIViewController", "subscribeLiveQuery"]
 - ["CSo16UIViewController", "subscriptionQuery"]
 - ["CSo16UIViewController", "swipeDownRec"]
@@ -2181,6 +2197,8 @@ depends-member:
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
@@ -2192,7 +2210,10 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setNeedsDisplay"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setRounded"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
@@ -2216,7 +2237,6 @@ depends-member:
 - !private ["Ps9_Hashable", "Double"]
 - !private ["Ps9_Hashable", "Event"]
 - !private ["Ps9_Hashable", "Iterator"]
-- !private ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "PFUser"]
 - !private ["Ps9_Hashable", "Point"]
 - !private ["Ps9_Hashable", "Stride"]
@@ -2237,17 +2257,14 @@ depends-member:
 - !private ["Ps9_Hashable", "async"]
 - ["Ps9_Hashable", "bigCircle"]
 - ["Ps9_Hashable", "blue"]
-- ["Ps9_Hashable", "button1"]
 - ["Ps9_Hashable", "button1Pressed"]
-- ["Ps9_Hashable", "button2"]
 - ["Ps9_Hashable", "button2Pressed"]
-- ["Ps9_Hashable", "button3"]
 - ["Ps9_Hashable", "button3Pressed"]
-- ["Ps9_Hashable", "button4"]
 - ["Ps9_Hashable", "button4Pressed"]
 - !private ["Ps9_Hashable", "center"]
 - !private ["Ps9_Hashable", "cgColor"]
 - ["Ps9_Hashable", "circleOut"]
+- ["Ps9_Hashable", "colorButtons"]
 - !private ["Ps9_Hashable", "contentsScale"]
 - !private ["Ps9_Hashable", "current"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
@@ -2259,6 +2276,7 @@ depends-member:
 - !private ["Ps9_Hashable", "fromX"]
 - !private ["Ps9_Hashable", "fromY"]
 - ["Ps9_Hashable", "green"]
+- ["Ps9_Hashable", "hideButtons"]
 - !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "imageView"]
 - ["Ps9_Hashable", "init"]
@@ -2277,6 +2295,7 @@ depends-member:
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "query"]
 - ["Ps9_Hashable", "question"]
+- !private ["Ps9_Hashable", "questionID"]
 - ["Ps9_Hashable", "red"]
 - ["Ps9_Hashable", "redrawPencilIcon"]
 - ["Ps9_Hashable", "reset"]
@@ -2288,10 +2307,10 @@ depends-member:
 - ["Ps9_Hashable", "sendPointData"]
 - !private ["Ps9_Hashable", "setImage"]
 - !private ["Ps9_Hashable", "setNeedsDisplay"]
-- ["Ps9_Hashable", "setUpColorBubbles"]
+- !private ["Ps9_Hashable", "setRounded"]
+- ["Ps9_Hashable", "showButtons"]
 - !private ["Ps9_Hashable", "subscribe"]
 - ["Ps9_Hashable", "subscribeLiveQuery"]
-- !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "subscriptionQuery"]
 - ["Ps9_Hashable", "swipeDownRec"]
 - ["Ps9_Hashable", "swipeUpRec"]
@@ -2310,6 +2329,7 @@ depends-member:
 - ["Ps9_Hashable", "universalColorG"]
 - ["Ps9_Hashable", "universalColorR"]
 - !private ["Ps9_Hashable", "unsubscribe"]
+- !private ["Ps9_Hashable", "userID"]
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidAppear"]
 - ["Ps9_Hashable", "viewDidLoad"]
@@ -2322,6 +2342,7 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "first"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
@@ -2338,6 +2359,9 @@ depends-member:
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
 - !private "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
 - "Sb"
@@ -2373,6 +2397,7 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -2382,6 +2407,7 @@ depends-nominal:
 - "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
 - "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
@@ -2393,6 +2419,8 @@ depends-nominal:
 - "C4Guru16LDViewController"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -2405,12 +2433,16 @@ depends-nominal:
 - !private "CSo9OS_object"
 - !private "Ps9OptionSet"
 - "Sq"
-- "CSo8PFObject"
+- !private "CSo8PFObject"
 - "CSo7PFQuery"
 - !private "PSo13PFSubclassing"
 - "CSo6PFUser"
-- !private "C4Guru5Point"
+- "C4Guru5Point"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
 - !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
 - "PSo19SRWebSocketDelegate"
 - !private "Ps8Sequence"
@@ -2428,7 +2460,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo8UIButton"
+- "CSo8UIButton"
 - "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
@@ -2454,9 +2486,11 @@ depends-nominal:
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
 - !private "Sc"
+- !private "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps33_ExpressibleByBuiltinFloatLiteral"
@@ -2585,4 +2619,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "12334d168fb0c18565234af6264e6e64"
+interface-hash: "69506c6682aef31e6680d1ffb83eb11f"

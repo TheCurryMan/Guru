@@ -7,12 +7,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "TimeInterval"
-- "Task"
-- !private "DispatchQueue"
-- "Void"
-- !private "+"
-- !private "DispatchTime"
 - !private "TaskCompletionSource"
+- !private "+"
+- "Task"
+- "Void"
+- !private "DispatchTime"
+- !private "DispatchQueue"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "DispatchTime"]

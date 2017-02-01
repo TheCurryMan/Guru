@@ -1,0 +1,58 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AggregateError"
+- "CancelledError"
+provides-nominal:
+- "V10BoltsSwift14AggregateError"
+- "V10BoltsSwift14CancelledError"
+provides-member:
+- ["V10BoltsSwift14AggregateError", ""]
+- ["V10BoltsSwift14CancelledError", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AggregateError"
+- "Error"
+- "AssignmentPrecedence"
+- "CancelledError"
+depends-member:
+- ["V10BoltsSwift14AggregateError", "Error"]
+- ["V10BoltsSwift14AggregateError", "_code"]
+- ["V10BoltsSwift14AggregateError", "_domain"]
+- ["V10BoltsSwift14AggregateError", "_getEmbeddedNSError"]
+- ["V10BoltsSwift14AggregateError", "_userInfo"]
+- ["V10BoltsSwift14AggregateError", "deinit"]
+- ["V10BoltsSwift14AggregateError", "errors"]
+- ["V10BoltsSwift14AggregateError", "init"]
+- ["Sa", "deinit"]
+- ["V10BoltsSwift14CancelledError", "_code"]
+- ["V10BoltsSwift14CancelledError", "_domain"]
+- ["V10BoltsSwift14CancelledError", "_getEmbeddedNSError"]
+- ["V10BoltsSwift14CancelledError", "_userInfo"]
+- ["V10BoltsSwift14CancelledError", "deinit"]
+- ["V10BoltsSwift14CancelledError", "init"]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
+- ["Ps5Error", "_userInfo"]
+- !private ["Ps5Error", "errors"]
+- ["Ps5Error", ""]
+depends-nominal:
+- "V10BoltsSwift14AggregateError"
+- "Sa"
+- "V10BoltsSwift14CancelledError"
+- "Ps5Error"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "412cbca0c337868cde7a756aeaf2e848"

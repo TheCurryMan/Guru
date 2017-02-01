@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -14,24 +14,24 @@
         {
           'type': 'file',
           'name': "BoltsSwift-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts-Swift.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -71,7 +71,7 @@
         {
           'type': 'file',
           'name': "Bolts-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-Swift.h"
         },
         {
           'type': 'file',
@@ -87,18 +87,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -283,7 +283,7 @@
         {
           'type': 'file',
           'name': "Parse-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Headers/Parse-Swift.h"
         },
         {
           'type': 'file',
@@ -304,23 +304,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Parse.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Parse.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "ParseLiveQuery-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
         },
         {
           'type': 'file',
@@ -331,18 +331,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/ParseLiveQuery.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/ParseLiveQuery.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Pods_Guru.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Pods_Guru.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -352,29 +352,29 @@
         {
           'type': 'file',
           'name': "Pods_Guru-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Pods_Guru.framework/Headers/Pods_Guru-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Pods_Guru.framework/Headers/Pods_Guru-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Pods_Guru.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Pods_Guru.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Guru.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-Guru.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "PopupController-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
         },
         {
           'type': 'file',
@@ -385,18 +385,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/PopupController.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/PopupController.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/SocketRocket/SocketRocket.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -406,7 +406,7 @@
         {
           'type': 'file',
           'name': "SocketRocket-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Headers/SocketRocket-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/SocketRocket/SocketRocket.framework/Headers/SocketRocket-Swift.h"
         },
         {
           'type': 'file',
@@ -422,12 +422,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/SocketRocket/SocketRocket.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/SocketRocket.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/SocketRocket.build/module.modulemap"
         }
       ]
     }

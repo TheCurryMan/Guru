@@ -15,12 +15,12 @@ provides-member:
 - ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- "AnyObject"
 - "Bool"
+- "AnyObject"
 - "Error"
-- "String"
+- "Int"
 - "LiveQueryErrors"
+- "String"
 depends-member:
 - ["Sb", "deinit"]
 - ["Vs10Dictionary", "deinit"]

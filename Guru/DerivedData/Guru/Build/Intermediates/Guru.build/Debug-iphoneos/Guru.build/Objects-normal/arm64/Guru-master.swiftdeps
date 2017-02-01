@@ -1,0 +1,19 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "280ca227e8f6e78c5e165971e9f74b9a"
+build_time: [539231157, 386445000]
+inputs:
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/LDViewController.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/VideoVC.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/WaitingScreen.swift": [539230289, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Utilities/Utils.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/HomePage.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Model/Review.swift": [539230808, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/AcceptViewController.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/DemoPopupViewController2.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/GuruReviewViewController.swift": [539231156, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Model/Point.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/SignUpViewController.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/GuruRequestsViewController.swift": [539227884, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/LoginViewController.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Utilities/UIView Extension.swift": [539227502, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/AppDelegate.swift": [539063942, 0]
