@@ -231,15 +231,15 @@ SWIFT_CLASS("_TtC4Guru24GuruReviewViewController")
 @class UITextField;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
-@interface HomePage : UIViewController <UITextFieldDelegate>
+@interface HomePage : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified questionField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptButton;
 @property (nonatomic) BOOL avail;
 @property (nonatomic, strong) PFObject * _Nullable question;
+@property (nonatomic, copy) NSArray<PFObject *> * _Nonnull questions;
+@property (nonatomic, strong) PFObject * _Nullable selectedQuestion;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointsLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified answeredLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified askedLabel;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topicButton;
 @property (nonatomic, strong) PopupController * _Nonnull popup;
 @property (nonatomic, copy) NSString * _Nonnull finalTopic;
@@ -250,12 +250,14 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 - (IBAction)logout:(id _Nonnull)sender;
 - (void)catchNotificationWithNotification:(NSNotification * _Nonnull)notification;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)updateUserStats;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (IBAction)showTopics:(id _Nonnull)sender;
 - (void)submitQuestionWithSender:(UIButton * _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (IBAction)accept:(id _Nonnull)sender;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -361,7 +363,12 @@ SWIFT_CLASS("_TtC4Guru21ProfileViewController")
 @property (nonatomic, weak) IBOutlet CosmosView * _Null_unspecified reviewBar;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified topicsBar;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointsLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified answeredLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified askedLabel;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)updateUserStats;
 - (void)didReceiveMemoryWarning;
 - (IBAction)exitView:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

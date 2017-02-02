@@ -6,276 +6,515 @@ provides-nominal:
 provides-member:
 - ["C4Guru21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "reviewBar"
-- "viewDidLoad"
-- "exitView"
-- "didReceiveMemoryWarning"
+- "answeredLabel"
+- "updateUserStats"
 - "topicsBar"
+- "pointsLabel"
+- "reviewBar"
+- "askedLabel"
+- "viewWillAppear"
+- "viewDidLoad"
+- "tableView"
+- "didReceiveMemoryWarning"
+- "exitView"
 depends-top-level:
-- "UISegmentedControl"
-- !private "PFUser"
-- "CosmosView"
 - "UITableView"
+- !private "PFUser"
+- "ProfileViewController"
+- "UISegmentedControl"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "Int"
+- "CosmosView"
+- !private "StringLiteralType"
+- "UILabel"
 - !private "BooleanLiteralType"
 - "UIViewController"
-- "ProfileViewController"
+- "Bool"
+- !private "String"
 depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "String"]
+- ["Ps9AnyObject", "answeredLabel"]
+- ["Ps9AnyObject", "askedLabel"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "dismiss"]
 - ["Ps9AnyObject", "exitView"]
 - !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "pointsLabel"]
 - ["Ps9AnyObject", "reviewBar"]
+- !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tableView"]
+- !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "topicsBar"]
+- ["Ps9AnyObject", "updateUserStats"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
 - ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "text"]
 - !private ["Ps7CVarArg", "PFUser"]
+- !private ["Ps7CVarArg", "String"]
+- ["Ps7CVarArg", "answeredLabel"]
+- ["Ps7CVarArg", "askedLabel"]
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "dismiss"]
 - ["Ps7CVarArg", "exitView"]
 - !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "pointsLabel"]
 - ["Ps7CVarArg", "reviewBar"]
+- !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
+- !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "topicsBar"]
+- ["Ps7CVarArg", "updateUserStats"]
 - ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- ["Ps28CustomDebugStringConvertible", "answeredLabel"]
+- ["Ps28CustomDebugStringConvertible", "askedLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
 - ["Ps28CustomDebugStringConvertible", "exitView"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "pointsLabel"]
 - ["Ps28CustomDebugStringConvertible", "reviewBar"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "topicsBar"]
+- ["Ps28CustomDebugStringConvertible", "updateUserStats"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- ["Ps23CustomStringConvertible", "answeredLabel"]
+- ["Ps23CustomStringConvertible", "askedLabel"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
 - ["Ps23CustomStringConvertible", "exitView"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "pointsLabel"]
 - ["Ps23CustomStringConvertible", "reviewBar"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
+- !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "topicsBar"]
+- ["Ps23CustomStringConvertible", "updateUserStats"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "PFUser"]
+- !private ["Ps9Equatable", "String"]
+- ["Ps9Equatable", "answeredLabel"]
+- ["Ps9Equatable", "askedLabel"]
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "dismiss"]
 - ["Ps9Equatable", "exitView"]
 - !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "pointsLabel"]
 - ["Ps9Equatable", "reviewBar"]
+- !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
+- !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "topicsBar"]
+- ["Ps9Equatable", "updateUserStats"]
 - ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "PFUser"]
+- !private ["Ps8Hashable", "String"]
+- ["Ps8Hashable", "answeredLabel"]
+- ["Ps8Hashable", "askedLabel"]
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "dismiss"]
 - ["Ps8Hashable", "exitView"]
 - !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "pointsLabel"]
 - ["Ps8Hashable", "reviewBar"]
+- !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
+- !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "topicsBar"]
+- ["Ps8Hashable", "updateUserStats"]
 - ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- ["Si", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "PFUser"]
+- !private ["PSo8NSCoding", "String"]
+- ["PSo8NSCoding", "answeredLabel"]
+- ["PSo8NSCoding", "askedLabel"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dismiss"]
 - ["PSo8NSCoding", "exitView"]
 - !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "pointsLabel"]
 - ["PSo8NSCoding", "reviewBar"]
 - ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "topicsBar"]
+- ["PSo8NSCoding", "updateUserStats"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
+- ["PSo26NSExtensionRequestHandling", "answeredLabel"]
+- ["PSo26NSExtensionRequestHandling", "askedLabel"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
 - ["PSo26NSExtensionRequestHandling", "exitView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "pointsLabel"]
 - ["PSo26NSExtensionRequestHandling", "reviewBar"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "topicsBar"]
+- ["PSo26NSExtensionRequestHandling", "updateUserStats"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CosmosView"]
+- !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "PFUser"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "answeredLabel"]
+- ["CSo8NSObject", "askedLabel"]
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "dismiss"]
 - ["CSo8NSObject", "exitView"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "pointsLabel"]
 - ["CSo8NSObject", "reviewBar"]
+- !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "topicsBar"]
+- ["CSo8NSObject", "updateUserStats"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- ["PSo16NSObjectProtocol", "answeredLabel"]
+- ["PSo16NSObjectProtocol", "askedLabel"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
 - ["PSo16NSObjectProtocol", "exitView"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "pointsLabel"]
 - ["PSo16NSObjectProtocol", "reviewBar"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "topicsBar"]
+- ["PSo16NSObjectProtocol", "updateUserStats"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "current"]
+- !private ["CSo8PFObject", "subscript"]
 - !private ["PSo13PFSubclassing", "current"]
+- !private ["PSo13PFSubclassing", "subscript"]
 - !private ["CSo6PFUser", "current"]
+- ["CSo6PFUser", "deinit"]
+- !private ["CSo6PFUser", "subscript"]
+- ["C4Guru21ProfileViewController", "Bool"]
 - ["C4Guru21ProfileViewController", "CosmosView"]
+- !private ["C4Guru21ProfileViewController", "Int"]
 - !private ["C4Guru21ProfileViewController", "PFUser"]
+- !private ["C4Guru21ProfileViewController", "String"]
+- ["C4Guru21ProfileViewController", "UILabel"]
 - ["C4Guru21ProfileViewController", "UISegmentedControl"]
 - ["C4Guru21ProfileViewController", "UITableView"]
+- ["C4Guru21ProfileViewController", "answeredLabel"]
+- ["C4Guru21ProfileViewController", "askedLabel"]
 - ["C4Guru21ProfileViewController", "deinit"]
 - ["C4Guru21ProfileViewController", "didReceiveMemoryWarning"]
 - !private ["C4Guru21ProfileViewController", "dismiss"]
 - ["C4Guru21ProfileViewController", "exitView"]
 - ["C4Guru21ProfileViewController", "init"]
+- ["C4Guru21ProfileViewController", "pointsLabel"]
 - ["C4Guru21ProfileViewController", "reviewBar"]
 - ["C4Guru21ProfileViewController", "tableView"]
 - ["C4Guru21ProfileViewController", "topicsBar"]
+- ["C4Guru21ProfileViewController", "updateUserStats"]
 - ["C4Guru21ProfileViewController", "viewDidLoad"]
+- ["C4Guru21ProfileViewController", "viewWillAppear"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
+- !private ["PSo21UIAppearanceContainer", "String"]
+- ["PSo21UIAppearanceContainer", "answeredLabel"]
+- ["PSo21UIAppearanceContainer", "askedLabel"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
 - ["PSo21UIAppearanceContainer", "exitView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "pointsLabel"]
 - ["PSo21UIAppearanceContainer", "reviewBar"]
 - ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "topicsBar"]
+- ["PSo21UIAppearanceContainer", "updateUserStats"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "PFUser"]
+- !private ["PSo18UIContentContainer", "String"]
+- ["PSo18UIContentContainer", "answeredLabel"]
+- ["PSo18UIContentContainer", "askedLabel"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dismiss"]
 - ["PSo18UIContentContainer", "exitView"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "pointsLabel"]
 - ["PSo18UIContentContainer", "reviewBar"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "topicsBar"]
+- ["PSo18UIContentContainer", "updateUserStats"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
+- !private ["PSo18UIFocusEnvironment", "String"]
+- ["PSo18UIFocusEnvironment", "answeredLabel"]
+- ["PSo18UIFocusEnvironment", "askedLabel"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
 - ["PSo18UIFocusEnvironment", "exitView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "pointsLabel"]
 - ["PSo18UIFocusEnvironment", "reviewBar"]
 - ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "topicsBar"]
+- ["PSo18UIFocusEnvironment", "updateUserStats"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CosmosView"]
+- !private ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "PFUser"]
+- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "answeredLabel"]
+- ["CSo11UIResponder", "askedLabel"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "dismiss"]
 - ["CSo11UIResponder", "exitView"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "pointsLabel"]
 - ["CSo11UIResponder", "reviewBar"]
 - ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "topicsBar"]
+- ["CSo11UIResponder", "updateUserStats"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
+- ["PSo30UIResponderStandardEditActions", "answeredLabel"]
+- ["PSo30UIResponderStandardEditActions", "askedLabel"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
 - ["PSo30UIResponderStandardEditActions", "exitView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "pointsLabel"]
 - ["PSo30UIResponderStandardEditActions", "reviewBar"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "topicsBar"]
+- ["PSo30UIResponderStandardEditActions", "updateUserStats"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "PFUser"]
+- !private ["PSo16UIStateRestoring", "String"]
+- ["PSo16UIStateRestoring", "answeredLabel"]
+- ["PSo16UIStateRestoring", "askedLabel"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
 - ["PSo16UIStateRestoring", "exitView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "pointsLabel"]
 - ["PSo16UIStateRestoring", "reviewBar"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "topicsBar"]
+- ["PSo16UIStateRestoring", "updateUserStats"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
+- !private ["PSo18UITraitEnvironment", "String"]
+- ["PSo18UITraitEnvironment", "answeredLabel"]
+- ["PSo18UITraitEnvironment", "askedLabel"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
 - ["PSo18UITraitEnvironment", "exitView"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "pointsLabel"]
 - ["PSo18UITraitEnvironment", "reviewBar"]
 - ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "topicsBar"]
+- ["PSo18UITraitEnvironment", "updateUserStats"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CosmosView"]
+- !private ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "PFUser"]
+- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "answeredLabel"]
+- ["CSo16UIViewController", "askedLabel"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dismiss"]
 - ["CSo16UIViewController", "exitView"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "pointsLabel"]
 - ["CSo16UIViewController", "reviewBar"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "topicsBar"]
+- ["CSo16UIViewController", "updateUserStats"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "PFUser"]
+- !private ["Ps9_Hashable", "String"]
+- ["Ps9_Hashable", "answeredLabel"]
+- ["Ps9_Hashable", "askedLabel"]
 - !private ["Ps9_Hashable", "current"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "dismiss"]
 - ["Ps9_Hashable", "exitView"]
 - !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "pointsLabel"]
 - ["Ps9_Hashable", "reviewBar"]
+- !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tableView"]
+- !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "topicsBar"]
+- ["Ps9_Hashable", "updateUserStats"]
 - ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sb"
+- !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "SQ"
+- "Si"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Sq"
 - !private "CSo8PFObject"
 - !private "PSo13PFSubclassing"
-- !private "CSo6PFUser"
+- "CSo6PFUser"
 - "C4Guru21ProfileViewController"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -390,4 +629,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "aa0e3c985d36caebed937f1415200cd3"
+interface-hash: "923612bde450f4c75d08ce3d3a931696"

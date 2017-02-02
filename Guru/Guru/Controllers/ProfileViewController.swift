@@ -16,6 +16,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var topicsBar: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var pointsLabel: UILabel!
+    @IBOutlet weak var answeredLabel: UILabel!
+    @IBOutlet weak var askedLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +27,17 @@ class ProfileViewController: UIViewController {
         var user = PFUser.current()
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        updateUserStats()
+    }
+    
+    func updateUserStats() {
+        let user = PFUser.current()
+        self.pointsLabel.text = String(user?["points"] as! Int)
+        self.answeredLabel.text = String(user?["answered"] as! Int)
+        self.askedLabel.text = String(user?["asked"] as! Int)
     }
 
     override func didReceiveMemoryWarning() {
