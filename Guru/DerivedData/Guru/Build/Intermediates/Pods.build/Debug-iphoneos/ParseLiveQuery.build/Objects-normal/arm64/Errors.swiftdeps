@@ -1,0 +1,164 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LiveQueryErrors"
+provides-nominal:
+- "V14ParseLiveQuery15LiveQueryErrors"
+- "VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError"
+- "VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError"
+- "VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError"
+- "VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError"
+provides-member:
+- ["V14ParseLiveQuery15LiveQueryErrors", ""]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", ""]
+- ["VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError", ""]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", ""]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- "Bool"
+- "LiveQueryErrors"
+- "Int"
+- "String"
+- "Error"
+depends-member:
+- ["Sb", "deinit"]
+- ["Vs10Dictionary", "deinit"]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
+- ["Ps5Error", "_userInfo"]
+- ["Ps5Error", ""]
+- ["Si", "deinit"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "AnyObject"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "String"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "_code"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "_domain"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "_getEmbeddedNSError"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "_userInfo"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "deinit"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "expectedKey"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "init"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "json"]
+- ["VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError", "_code"]
+- ["VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError", "_domain"]
+- ["VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError", "_getEmbeddedNSError"]
+- ["VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError", "_userInfo"]
+- ["VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError", "deinit"]
+- ["VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError", "init"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "String"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "_code"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "_domain"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "_getEmbeddedNSError"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "_userInfo"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "deinit"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "init"]
+- ["VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError", "response"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "AnyObject"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "Bool"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "Error"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "Int"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "InvalidJSONError"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "InvalidQueryError"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "InvalidResponseError"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "ServerReportedError"]
+- ["V14ParseLiveQuery15LiveQueryErrors", "String"]
+- !private ["V14ParseLiveQuery15LiveQueryErrors", "init"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "Bool"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "Int"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "String"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "_code"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "_domain"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "_getEmbeddedNSError"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "_userInfo"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "code"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "deinit"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "error"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "init"]
+- ["VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError", "reconnect"]
+- ["SS", "deinit"]
+depends-nominal:
+- "Sb"
+- "Vs10Dictionary"
+- "Ps5Error"
+- "Si"
+- "VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError"
+- "VV14ParseLiveQuery15LiveQueryErrors17InvalidQueryError"
+- "VV14ParseLiveQuery15LiveQueryErrors20InvalidResponseError"
+- "V14ParseLiveQuery15LiveQueryErrors"
+- "VV14ParseLiveQuery15LiveQueryErrors19ServerReportedError"
+- "SS"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/ParseLiveQuery/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/ParseLiveQuery.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Parse/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Parse.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/SocketRocket/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/SocketRocket.build/module.modulemap"
+interface-hash: "253fcd47326ffc67ca7bae80f1569158"

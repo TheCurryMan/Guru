@@ -1,0 +1,14 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "4c8edd076da1a1210dedc2b3bc7f1728"
+build_time: [539329739, 914295000]
+inputs:
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Internal/BoltsHelpers.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Client.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Internal/Errors.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/ObjCCompat.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Internal/Operation.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Parse+LiveQuery.swift": [538374953, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/PFQuery+Subscribe.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Internal/QueryEncoder.swift": [538375235, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/ParseLiveQuery/Sources/ParseLiveQuery/Subscription.swift": [538375235, 0]

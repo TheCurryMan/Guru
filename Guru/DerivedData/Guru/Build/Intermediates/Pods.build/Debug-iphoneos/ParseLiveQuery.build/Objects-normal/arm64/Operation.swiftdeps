@@ -1,0 +1,343 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ClientOperation"
+- "ServerResponse"
+provides-nominal:
+- "O14ParseLiveQuery15ClientOperation"
+- "O14ParseLiveQuery14ServerResponse"
+provides-member:
+- ["O14ParseLiveQuery15ClientOperation", ""]
+- ["O14ParseLiveQuery14ServerResponse", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "PFQuery"
+- "AnyObject"
+- !private "LiveQueryErrors"
+- "PFObject"
+- "ServerResponse"
+- "ClientOperation"
+- "Int"
+- !private "StringLiteralType"
+- "Client"
+- !private "~="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "CastingPrecedence"
+- "String"
+- !private "Dictionary"
+depends-member:
+- ["Ps9AnyObject", "RequestId"]
+- !private ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "Key"]
+- ["Ps7CVarArg", "RequestId"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subscript"]
+- ["C14ParseLiveQuery6Client", "RequestId"]
+- !private ["O14ParseLiveQuery15ClientOperation", "AnyObject"]
+- ["O14ParseLiveQuery15ClientOperation", "Client"]
+- !private ["O14ParseLiveQuery15ClientOperation", "Dictionary"]
+- ["O14ParseLiveQuery15ClientOperation", "JSONObjectRepresentation"]
+- ["O14ParseLiveQuery15ClientOperation", "PFObject"]
+- ["O14ParseLiveQuery15ClientOperation", "PFQuery"]
+- ["O14ParseLiveQuery15ClientOperation", "String"]
+- ["O14ParseLiveQuery15ClientOperation", "connect"]
+- ["O14ParseLiveQuery15ClientOperation", "deinit"]
+- ["O14ParseLiveQuery15ClientOperation", "subscribe"]
+- ["O14ParseLiveQuery15ClientOperation", "unsubscribe"]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- ["Ps28CustomDebugStringConvertible", "RequestId"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- ["Ps23CustomStringConvertible", "RequestId"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "subscript"]
+- ["Ps9Equatable", "RequestId"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "value"]
+- !private ["Ps5Error", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "RequestId"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "Value"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- ["Si", "deinit"]
+- ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "deinit"]
+- !private ["VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError", "init"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["V14ParseLiveQuery15LiveQueryErrors", "InvalidJSONError"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "RequestId"]
+- !private ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "RequestId"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["CSo7PFQuery", "deinit"]
+- !private ["Vs5Range", "deinit"]
+- ["VC14ParseLiveQuery6Client9RequestId", "deinit"]
+- !private ["VC14ParseLiveQuery6Client9RequestId", "init"]
+- !private ["VC14ParseLiveQuery6Client9RequestId", "value"]
+- ["PSo19SRWebSocketDelegate", "RequestId"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "subscript"]
+- ["O14ParseLiveQuery14ServerResponse", "AnyObject"]
+- ["O14ParseLiveQuery14ServerResponse", "Bool"]
+- ["O14ParseLiveQuery14ServerResponse", "Client"]
+- ["O14ParseLiveQuery14ServerResponse", "Int"]
+- !private ["O14ParseLiveQuery14ServerResponse", "LiveQueryErrors"]
+- !private ["O14ParseLiveQuery14ServerResponse", "ServerResponse"]
+- ["O14ParseLiveQuery14ServerResponse", "String"]
+- ["O14ParseLiveQuery14ServerResponse", "connected"]
+- ["O14ParseLiveQuery14ServerResponse", "create"]
+- ["O14ParseLiveQuery14ServerResponse", "deinit"]
+- ["O14ParseLiveQuery14ServerResponse", "delete"]
+- ["O14ParseLiveQuery14ServerResponse", "enter"]
+- ["O14ParseLiveQuery14ServerResponse", "error"]
+- ["O14ParseLiveQuery14ServerResponse", "init"]
+- ["O14ParseLiveQuery14ServerResponse", "leave"]
+- ["O14ParseLiveQuery14ServerResponse", "redirect"]
+- ["O14ParseLiveQuery14ServerResponse", "subscribed"]
+- ["O14ParseLiveQuery14ServerResponse", "unsubscribed"]
+- ["O14ParseLiveQuery14ServerResponse", "update"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "RequestId"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "Ps7CVarArg"
+- "C14ParseLiveQuery6Client"
+- "O14ParseLiveQuery15ClientOperation"
+- !private "Vs11ClosedRange"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- "VV14ParseLiveQuery15LiveQueryErrors16InvalidJSONError"
+- !private "Ps16IteratorProtocol"
+- !private "V14ParseLiveQuery15LiveQueryErrors"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- "CSo7PFQuery"
+- !private "Vs5Range"
+- "VC14ParseLiveQuery6Client9RequestId"
+- "PSo19SRWebSocketDelegate"
+- !private "Ps8Sequence"
+- "O14ParseLiveQuery14ServerResponse"
+- !private "Vs5Slice"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/ParseLiveQuery/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/ParseLiveQuery.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Parse/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Parse.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/SocketRocket/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/SocketRocket.build/module.modulemap"
+interface-hash: "8f728aad70a9008dfbba0c12a9bf269c"

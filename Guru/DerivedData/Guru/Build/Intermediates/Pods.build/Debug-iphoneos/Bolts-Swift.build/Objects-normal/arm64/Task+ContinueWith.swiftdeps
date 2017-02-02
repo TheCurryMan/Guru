@@ -1,0 +1,288 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C10BoltsSwift4Task", ""]
+- ["C10BoltsSwift4Task", "continueWith"]
+- ["C10BoltsSwift4Task", "continueWithTask"]
+- ["C10BoltsSwift4Task", "continueOnSuccessWith"]
+- ["C10BoltsSwift4Task", "continueOnSuccessWithTask"]
+- ["C10BoltsSwift4Task", "continueOnErrorWith"]
+- ["C10BoltsSwift4Task", "continueOnErrorWith"]
+- ["C10BoltsSwift4Task", "continueOnErrorWithTask"]
+- ["C10BoltsSwift4Task", "continueOnErrorWithTask"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "TaskContinuationOptions"
+- "Executor"
+- !private "abort"
+- "Task"
+- "StringLiteralType"
+- "Error"
+- !private "TaskState"
+- !private "TaskCompletionSource"
+- !private "CastingPrecedence"
+- !private "fatalError"
+depends-member:
+- !private ["Ps9AnyObject", "Task"]
+- !private ["Ps9AnyObject", "TaskCompletionSource"]
+- !private ["Ps9AnyObject", "TaskState"]
+- !private ["Ps9AnyObject", "abort"]
+- !private ["Ps9AnyObject", "appendOrRunContinuation"]
+- !private ["Ps9AnyObject", "cancel"]
+- !private ["Ps9AnyObject", "continueOnErrorWithTask"]
+- !private ["Ps9AnyObject", "continueOnSuccessWithTask"]
+- !private ["Ps9AnyObject", "continueWith"]
+- !private ["Ps9AnyObject", "continueWithTask"]
+- !private ["Ps9AnyObject", "error"]
+- !private ["Ps9AnyObject", "fatalError"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "result"]
+- !private ["Ps9AnyObject", "set"]
+- !private ["Ps9AnyObject", "setState"]
+- !private ["Ps9AnyObject", "state"]
+- !private ["Ps9AnyObject", "task"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Task"]
+- !private ["Ps28CustomDebugStringConvertible", "TaskCompletionSource"]
+- !private ["Ps28CustomDebugStringConvertible", "TaskState"]
+- !private ["Ps28CustomDebugStringConvertible", "abort"]
+- !private ["Ps28CustomDebugStringConvertible", "appendOrRunContinuation"]
+- !private ["Ps28CustomDebugStringConvertible", "continueOnErrorWithTask"]
+- !private ["Ps28CustomDebugStringConvertible", "continueOnSuccessWithTask"]
+- !private ["Ps28CustomDebugStringConvertible", "continueWith"]
+- !private ["Ps28CustomDebugStringConvertible", "continueWithTask"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "error"]
+- !private ["Ps28CustomDebugStringConvertible", "execute"]
+- !private ["Ps28CustomDebugStringConvertible", "fatalError"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "state"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Task"]
+- !private ["Ps23CustomStringConvertible", "TaskCompletionSource"]
+- !private ["Ps23CustomStringConvertible", "TaskState"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "abort"]
+- !private ["Ps23CustomStringConvertible", "appendOrRunContinuation"]
+- !private ["Ps23CustomStringConvertible", "continueOnErrorWithTask"]
+- !private ["Ps23CustomStringConvertible", "continueOnSuccessWithTask"]
+- !private ["Ps23CustomStringConvertible", "continueWith"]
+- !private ["Ps23CustomStringConvertible", "continueWithTask"]
+- !private ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "error"]
+- !private ["Ps23CustomStringConvertible", "execute"]
+- !private ["Ps23CustomStringConvertible", "fatalError"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "state"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "RunAlways"]
+- !private ["Ps9Equatable", "RunOnCancelled"]
+- !private ["Ps9Equatable", "RunOnError"]
+- !private ["Ps9Equatable", "RunOnSuccess"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "contains"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps5Error", "deinit"]
+- !private ["O10BoltsSwift8Executor", "default"]
+- ["O10BoltsSwift8Executor", "deinit"]
+- !private ["O10BoltsSwift8Executor", "execute"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "RunAlways"]
+- !private ["Ps25ExpressibleByArrayLiteral", "RunOnCancelled"]
+- !private ["Ps25ExpressibleByArrayLiteral", "RunOnError"]
+- !private ["Ps25ExpressibleByArrayLiteral", "RunOnSuccess"]
+- !private ["Ps25ExpressibleByArrayLiteral", "contains"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Os5Never", "deinit"]
+- !private ["Ps9OptionSet", "Element"]
+- !private ["Ps9OptionSet", "RunAlways"]
+- !private ["Ps9OptionSet", "RunOnCancelled"]
+- !private ["Ps9OptionSet", "RunOnError"]
+- !private ["Ps9OptionSet", "RunOnSuccess"]
+- !private ["Ps9OptionSet", "contains"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "RunAlways"]
+- !private ["Ps16RawRepresentable", "RunOnCancelled"]
+- !private ["Ps16RawRepresentable", "RunOnError"]
+- !private ["Ps16RawRepresentable", "RunOnSuccess"]
+- !private ["Ps16RawRepresentable", "contains"]
+- !private ["Ps10SetAlgebra", "Element"]
+- !private ["Ps10SetAlgebra", "RunAlways"]
+- !private ["Ps10SetAlgebra", "RunOnCancelled"]
+- !private ["Ps10SetAlgebra", "RunOnError"]
+- !private ["Ps10SetAlgebra", "RunOnSuccess"]
+- !private ["Ps10SetAlgebra", "contains"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- ["C10BoltsSwift4Task", "Error"]
+- ["C10BoltsSwift4Task", "Executor"]
+- ["C10BoltsSwift4Task", "TResult"]
+- ["C10BoltsSwift4Task", "Task"]
+- !private ["C10BoltsSwift4Task", "TaskCompletionSource"]
+- !private ["C10BoltsSwift4Task", "TaskContinuationOptions"]
+- !private ["C10BoltsSwift4Task", "TaskState"]
+- !private ["C10BoltsSwift4Task", "abort"]
+- !private ["C10BoltsSwift4Task", "appendOrRunContinuation"]
+- ["C10BoltsSwift4Task", "continueOnErrorWith"]
+- ["C10BoltsSwift4Task", "continueOnErrorWithTask"]
+- ["C10BoltsSwift4Task", "continueOnSuccessWith"]
+- ["C10BoltsSwift4Task", "continueOnSuccessWithTask"]
+- ["C10BoltsSwift4Task", "continueWith"]
+- ["C10BoltsSwift4Task", "continueWithTask"]
+- ["C10BoltsSwift4Task", "deinit"]
+- !private ["C10BoltsSwift4Task", "error"]
+- !private ["C10BoltsSwift4Task", "fatalError"]
+- !private ["C10BoltsSwift4Task", "init"]
+- !private ["C10BoltsSwift4Task", "result"]
+- !private ["C10BoltsSwift4Task", "state"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "cancel"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "deinit"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "init"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "set"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "setState"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "task"]
+- !private ["V10BoltsSwift23TaskContinuationOptions", "Element"]
+- !private ["V10BoltsSwift23TaskContinuationOptions", "RunAlways"]
+- !private ["V10BoltsSwift23TaskContinuationOptions", "RunOnCancelled"]
+- !private ["V10BoltsSwift23TaskContinuationOptions", "RunOnError"]
+- !private ["V10BoltsSwift23TaskContinuationOptions", "RunOnSuccess"]
+- !private ["V10BoltsSwift23TaskContinuationOptions", "contains"]
+- ["V10BoltsSwift23TaskContinuationOptions", "deinit"]
+- !private ["O10BoltsSwift9TaskState", "cancelled"]
+- !private ["O10BoltsSwift9TaskState", "deinit"]
+- !private ["O10BoltsSwift9TaskState", "error"]
+- !private ["O10BoltsSwift9TaskState", "fromClosure"]
+- !private ["O10BoltsSwift9TaskState", "pending"]
+- !private ["O10BoltsSwift9TaskState", "success"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps5Error"
+- "O10BoltsSwift8Executor"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- !private "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Os5Never"
+- !private "Ps9OptionSet"
+- !private "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps10SetAlgebra"
+- !private "Vs12StaticString"
+- !private "SS"
+- "C10BoltsSwift4Task"
+- !private "C10BoltsSwift20TaskCompletionSource"
+- "V10BoltsSwift23TaskContinuationOptions"
+- !private "O10BoltsSwift9TaskState"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "f06d987ee83179619f9d6e4d730b7422"

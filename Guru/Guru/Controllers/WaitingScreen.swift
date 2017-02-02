@@ -266,7 +266,12 @@ extension WaitingScreen: TVIRoomDelegate {
         self.room = nil
         
         self.videoScreen.showRoomUI(inRoom: false)
-        self.dismiss(animated: true, completion: nil)
+        if (self.tutor == false)
+        {
+            self.performSegue(withIdentifier: "review", sender: self)
+        } else {
+            self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+        }
     }
     
     func room(_ room: TVIRoom, didFailToConnectWithError error: Error) {
@@ -345,6 +350,14 @@ extension WaitingScreen : TVIParticipantDelegate {
             type = "audio"
         }
         logMessage(messageText: "Participant \(participant.identity) disabled \(type) track")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "review")
+        {
+            var vc = segue.destination as! GuruReviewViewController
+            vc.question = question
+        }
     }
 }
 

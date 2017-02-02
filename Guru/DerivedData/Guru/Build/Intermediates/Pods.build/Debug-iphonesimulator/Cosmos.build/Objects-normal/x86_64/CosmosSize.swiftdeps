@@ -1,0 +1,182 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CosmosSize"
+provides-nominal:
+- "C6Cosmos10CosmosSize"
+provides-member:
+- ["C6Cosmos10CosmosSize", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CALayer"
+- "AssignmentPrecedence"
+- !private ">"
+- "CosmosSize"
+- "CGSize"
+depends-member:
+- !private ["Ps9AnyObject", "CGSize"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["CSo7CALayer", "deinit"]
+- !private ["CSo7CALayer", "frame"]
+- !private ["PSo13CAMediaTiming", "frame"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "maxX"]
+- !private ["VSC6CGRect", "maxY"]
+- ["VSC6CGSize", "deinit"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "init"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "frame"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- ["C6Cosmos10CosmosSize", "CALayer"]
+- ["C6Cosmos10CosmosSize", "CGSize"]
+- ["C6Cosmos10CosmosSize", "calculateSizeToFitLayers"]
+- ["C6Cosmos10CosmosSize", "deinit"]
+- ["C6Cosmos10CosmosSize", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "maxX"]
+- !private ["Ps28CustomDebugStringConvertible", "maxY"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "maxX"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "maxY"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "maxX"]
+- !private ["Ps17CustomReflectable", "maxY"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "maxX"]
+- !private ["Ps9Equatable", "maxY"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "frame"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["CSo8NSObject", "frame"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "frame"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "maxX"]
+- !private ["Ps21_ObjectiveCBridgeable", "maxY"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Sb"
+- "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "VSC6CGSize"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- "C6Cosmos10CosmosSize"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- !private "PSo8NSCoding"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Cosmos/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/Cosmos.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "729d41e13fb80a15a636e47c5e2e5070"

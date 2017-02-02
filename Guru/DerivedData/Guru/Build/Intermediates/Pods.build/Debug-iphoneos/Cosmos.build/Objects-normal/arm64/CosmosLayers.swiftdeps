@@ -1,0 +1,526 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CosmosLayers"
+provides-nominal:
+- "C6Cosmos12CosmosLayers"
+provides-member:
+- ["C6Cosmos12CosmosLayers", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*="
+- !private "M_PI"
+- "CALayer"
+- !private "CATransform3DMakeRotation"
+- !private "..<"
+- !private "CGPoint"
+- !private "StarLayer"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "CATransform3DTranslate"
+- !private "TernaryPrecedence"
+- !private "CGFloat"
+- !private ">="
+- !private "CosmosRating"
+- "Bool"
+- !private "+"
+- !private "BooleanLiteralType"
+- "Double"
+- !private "+="
+- "CosmosLayers"
+- "CosmosSettings"
+- !private "-="
+- !private "CGRect"
+- !private "-"
+- !private "UIScreen"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CALayer"]
+- !private ["Ps9AnyObject", "CATransform3DMakeRotation"]
+- !private ["Ps9AnyObject", "CATransform3DTranslate"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "CGPoint"]
+- !private ["Ps9AnyObject", "CGRect"]
+- !private ["Ps9AnyObject", "CosmosRating"]
+- !private ["Ps9AnyObject", "M_PI"]
+- !private ["Ps9AnyObject", "StarLayer"]
+- !private ["Ps9AnyObject", "UIScreen"]
+- !private ["Ps9AnyObject", "addSublayer"]
+- !private ["Ps9AnyObject", "anchorPoint"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "contentsScale"]
+- !private ["Ps9AnyObject", "createCompositeStarLayer"]
+- !private ["Ps9AnyObject", "createPartialStar"]
+- !private ["Ps9AnyObject", "createStarLayer"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "position"]
+- !private ["Ps9AnyObject", "positionStarLayers"]
+- !private ["Ps9AnyObject", "scale"]
+- !private ["Ps9AnyObject", "transform"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "deinit"]
+- !private ["Sa", "init"]
+- !private ["Sa", "reverse"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "reverse"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps22BidirectionalIndexable", "reverse"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["CSo7CALayer", "addSublayer"]
+- !private ["CSo7CALayer", "anchorPoint"]
+- !private ["CSo7CALayer", "bounds"]
+- !private ["CSo7CALayer", "contentsScale"]
+- ["CSo7CALayer", "deinit"]
+- !private ["CSo7CALayer", "init"]
+- !private ["CSo7CALayer", "position"]
+- !private ["CSo7CALayer", "transform"]
+- !private ["PSo13CAMediaTiming", "addSublayer"]
+- !private ["PSo13CAMediaTiming", "anchorPoint"]
+- !private ["PSo13CAMediaTiming", "bounds"]
+- !private ["PSo13CAMediaTiming", "contentsScale"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "position"]
+- !private ["PSo13CAMediaTiming", "transform"]
+- ["VSC13CATransform3D", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- ["VSC7CGPoint", "deinit"]
+- !private ["VSC7CGPoint", "init"]
+- !private ["VSC7CGPoint", "x"]
+- ["VSC6CGRect", "deinit"]
+- !private ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGRect", "width"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "addSublayer"]
+- !private ["Ps7CVarArg", "anchorPoint"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "contentsScale"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "position"]
+- !private ["Ps7CVarArg", "reverse"]
+- !private ["Ps7CVarArg", "scale"]
+- !private ["Ps7CVarArg", "transform"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "reverse"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "init"]
+- ["C6Cosmos12CosmosLayers", "Bool"]
+- ["C6Cosmos12CosmosLayers", "CALayer"]
+- !private ["C6Cosmos12CosmosLayers", "CATransform3DMakeRotation"]
+- !private ["C6Cosmos12CosmosLayers", "CATransform3DTranslate"]
+- !private ["C6Cosmos12CosmosLayers", "CGFloat"]
+- !private ["C6Cosmos12CosmosLayers", "CGPoint"]
+- !private ["C6Cosmos12CosmosLayers", "CGRect"]
+- !private ["C6Cosmos12CosmosLayers", "CosmosRating"]
+- ["C6Cosmos12CosmosLayers", "CosmosSettings"]
+- ["C6Cosmos12CosmosLayers", "Double"]
+- !private ["C6Cosmos12CosmosLayers", "M_PI"]
+- !private ["C6Cosmos12CosmosLayers", "StarLayer"]
+- !private ["C6Cosmos12CosmosLayers", "UIScreen"]
+- ["C6Cosmos12CosmosLayers", "createCompositeStarLayer"]
+- ["C6Cosmos12CosmosLayers", "createPartialStar"]
+- !private ["C6Cosmos12CosmosLayers", "createStarLayer"]
+- ["C6Cosmos12CosmosLayers", "createStarLayers"]
+- ["C6Cosmos12CosmosLayers", "deinit"]
+- ["C6Cosmos12CosmosLayers", "init"]
+- ["C6Cosmos12CosmosLayers", "positionStarLayers"]
+- !private ["V6Cosmos12CosmosRating", "numberOfFilledStars"]
+- !private ["V6Cosmos12CosmosRating", "starFillLevel"]
+- ["V6Cosmos14CosmosSettings", "deinit"]
+- !private ["V6Cosmos14CosmosSettings", "emptyBorderColor"]
+- !private ["V6Cosmos14CosmosSettings", "emptyBorderWidth"]
+- !private ["V6Cosmos14CosmosSettings", "emptyColor"]
+- !private ["V6Cosmos14CosmosSettings", "fillMode"]
+- !private ["V6Cosmos14CosmosSettings", "filledBorderColor"]
+- !private ["V6Cosmos14CosmosSettings", "filledBorderWidth"]
+- !private ["V6Cosmos14CosmosSettings", "filledColor"]
+- !private ["V6Cosmos14CosmosSettings", "starMargin"]
+- !private ["V6Cosmos14CosmosSettings", "starPoints"]
+- !private ["V6Cosmos14CosmosSettings", "starSize"]
+- !private ["V6Cosmos14CosmosSettings", "totalStars"]
+- !private ["Vs14CountableRange", "Iterator"]
+- !private ["Vs14CountableRange", "_Element"]
+- ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addSublayer"]
+- !private ["Ps28CustomDebugStringConvertible", "anchorPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "contentsScale"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "position"]
+- !private ["Ps28CustomDebugStringConvertible", "reverse"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "transform"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "x"]
+- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "reverse"]
+- !private ["Ps17CustomReflectable", "size"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps17CustomReflectable", "x"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addSublayer"]
+- !private ["Ps23CustomStringConvertible", "anchorPoint"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "contentsScale"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "position"]
+- !private ["Ps23CustomStringConvertible", "reverse"]
+- !private ["Ps23CustomStringConvertible", "scale"]
+- !private ["Ps23CustomStringConvertible", "transform"]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "Iterator"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_Element"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addSublayer"]
+- !private ["Ps9Equatable", "anchorPoint"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "contentsScale"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "position"]
+- !private ["Ps9Equatable", "scale"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "transform"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "reverse"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addSublayer"]
+- !private ["Ps8Hashable", "anchorPoint"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "contentsScale"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "position"]
+- !private ["Ps8Hashable", "scale"]
+- !private ["Ps8Hashable", "transform"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "reverse"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "reverse"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "_DisabledRangeIndex"]
+- ["Si", "deinit"]
+- !private ["Ps7Integer", "IntegerLiteralType"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "_DisabledRangeIndex"]
+- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "IntegerLiteralType"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "reverse"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "reverse"]
+- !private ["PSo8NSCoding", "addSublayer"]
+- !private ["PSo8NSCoding", "anchorPoint"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "contentsScale"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "position"]
+- !private ["PSo8NSCoding", "transform"]
+- !private ["CSo8NSObject", "addSublayer"]
+- !private ["CSo8NSObject", "anchorPoint"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "contentsScale"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "position"]
+- !private ["CSo8NSObject", "scale"]
+- !private ["CSo8NSObject", "transform"]
+- !private ["PSo16NSObjectProtocol", "addSublayer"]
+- !private ["PSo16NSObjectProtocol", "anchorPoint"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "contentsScale"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "position"]
+- !private ["PSo16NSObjectProtocol", "scale"]
+- !private ["PSo16NSObjectProtocol", "transform"]
+- !private ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "reverse"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps21RandomAccessIndexable", "reverse"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "reverse"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "reverse"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "reverse"]
+- !private ["Ps13SignedInteger", "IntegerLiteralType"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps12SignedNumber", "IntegerLiteralType"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
+- !private ["Ps12SignedNumber", "init"]
+- ["O6Cosmos12StarFillMode", "deinit"]
+- !private ["V6Cosmos9StarLayer", "create"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- !private ["Ps10Strideable", "init"]
+- !private ["CSo7UIColor", "deinit"]
+- ["CSo8UIScreen", "deinit"]
+- !private ["CSo8UIScreen", "main"]
+- !private ["CSo8UIScreen", "scale"]
+- !private ["PSo18UITraitEnvironment", "main"]
+- !private ["PSo18UITraitEnvironment", "scale"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "reverse"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "reverse"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "IntegerLiteralType"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addSublayer"]
+- !private ["Ps9_Hashable", "anchorPoint"]
+- !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "contentsScale"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "position"]
+- !private ["Ps9_Hashable", "scale"]
+- !private ["Ps9_Hashable", "transform"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps8_Integer", "IntegerLiteralType"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "reverse"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps11_Strideable", "IntegerLiteralType"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- "VSC13CATransform3D"
+- "V12CoreGraphics7CGFloat"
+- "VSC7CGPoint"
+- "VSC6CGRect"
+- !private "VSC6CGSize"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "C6Cosmos12CosmosLayers"
+- !private "V6Cosmos12CosmosRating"
+- "V6Cosmos14CosmosSettings"
+- "Vs14CountableRange"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Sd"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps13FloatingPoint"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- !private "PSo8NSCoding"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- "O6Cosmos12StarFillMode"
+- !private "V6Cosmos9StarLayer"
+- !private "Ps10Strideable"
+- !private "CSo7UIColor"
+- "CSo8UIScreen"
+- !private "PSo18UITraitEnvironment"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Cosmos/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Cosmos.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "71b884e623e7f5163f4b7c64a0990de2"

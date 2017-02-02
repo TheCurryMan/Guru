@@ -10,93 +10,96 @@ provides-member:
 - ["C4Guru13WaitingScreen", ""]
 provides-dynamic-lookup:
 - "circles"
-- "logMessage"
-- "videoScreen"
 - "tokenUrl"
 - "camera"
-- "viewWillDisappear"
-- "loadingLabel"
-- "toggleCamera"
-- "localMedia"
-- "tutor"
-- "connect"
-- "didConnect"
-- "room"
-- "room"
-- "room"
-- "room"
-- "room"
-- "startPreview"
-- "accessToken"
-- "questionLabel"
-- "prepareLocalMedia"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "viewWillAppear"
-- "client"
-- "dismissView"
-- "cleanupRemoteParticipant"
-- "disconnect"
-- "viewDidLoad"
-- "dismissButton"
 - "prefersStatusBarHidden"
-- "guru"
-- "flipCamera"
-- "toggleMic"
+- "viewWillAppear"
+- "viewWillDisappear"
+- "dismissView"
 - "didReceiveMemoryWarning"
+- "logMessage"
 - "localAudioTrack"
+- "startPreview"
+- "videoScreen"
+- "guru"
+- "didConnect"
+- "toggleMic"
+- "prepareLocalMedia"
+- "cleanupRemoteParticipant"
+- "toggleCamera"
+- "viewDidLoad"
 - "localVideoTrack"
+- "disconnect"
+- "flipCamera"
 - "question"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "dismissButton"
+- "client"
+- "connect"
+- "tutor"
+- "loadingLabel"
+- "accessToken"
+- "prepare"
+- "localMedia"
+- "room"
+- "room"
+- "room"
+- "room"
+- "room"
+- "questionLabel"
 depends-top-level:
-- !private "CGFloat"
-- "TVIAudioTrack"
-- "TVIParticipantDelegate"
+- !private ">"
 - "UIButton"
-- "TVITrack"
 - "TVICameraCapturer"
-- "Error"
-- "UIImageView"
-- !private "/"
-- !private "TokenUtils"
-- "TVIParticipant"
-- !private "!="
+- !private "CGAffineTransform"
 - !private "UIView"
-- "TVILocalMedia"
+- "TVIParticipant"
+- "TVIRoomDelegate"
+- !private "PlatformUtils"
+- "BooleanLiteralType"
+- !private "M_PI"
+- !private "CGFloat"
+- !private "TVIConnectOptions"
+- "TVIVideoTrack"
+- "UILabel"
+- "TVIVideoClient"
+- "AnyObject"
+- "WaitingScreenDelegate"
 - "VideoVC"
 - "TVILocalAudioTrack"
-- !private "TVIConnectOptions"
-- !private "M_PI"
-- !private "-"
-- "TVIVideoClient"
-- !private ">"
-- !private "PlatformUtils"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "=="
-- "UILabel"
-- !private "Array"
-- "TVILocalVideoTrack"
-- "TVIVideoTrack"
-- "String"
-- !private "!"
-- "StringLiteralType"
-- "WaitingScreenDelegate"
-- "AnyObject"
-- "WaitingScreen"
+- "TVITrack"
 - !private "print"
+- !private "-"
+- !private "!"
+- "TVILocalMedia"
 - "PFObject"
-- "BooleanLiteralType"
-- !private "CGAffineTransform"
-- "UIViewController"
+- "UIStoryboardSegue"
+- "StringLiteralType"
+- !private "Array"
+- !private "!="
+- !private "/"
+- !private "GuruReviewViewController"
+- "TVILocalVideoTrack"
+- !private "TokenUtils"
+- "AssignmentPrecedence"
+- "String"
+- "TVIParticipantDelegate"
+- "Error"
+- "WaitingScreen"
 - "PFUser"
 - "Bool"
-- "TVIRoomDelegate"
+- "UIImageView"
+- !private "=="
+- "TVIAudioTrack"
+- "UIViewController"
 - "TVIRoom"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGAffineTransform"]
@@ -119,6 +122,8 @@ depends-member:
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "animate"]
 - !private ["Ps9AnyObject", "attach"]
+- !private ["Ps9AnyObject", "audioController"]
+- !private ["Ps9AnyObject", "audioOutput"]
 - ["Ps9AnyObject", "camera"]
 - !private ["Ps9AnyObject", "characters"]
 - ["Ps9AnyObject", "circles"]
@@ -127,6 +132,7 @@ depends-member:
 - ["Ps9AnyObject", "connect"]
 - ["Ps9AnyObject", "current"]
 - !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "destination"]
 - !private ["Ps9AnyObject", "detach"]
 - ["Ps9AnyObject", "didConnect"]
 - ["Ps9AnyObject", "didConnectToRoom"]
@@ -138,6 +144,7 @@ depends-member:
 - ["Ps9AnyObject", "dismissView"]
 - ["Ps9AnyObject", "flipCamera"]
 - ["Ps9AnyObject", "guru"]
+- !private ["Ps9AnyObject", "identifier"]
 - !private ["Ps9AnyObject", "identity"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
@@ -158,7 +165,9 @@ depends-member:
 - !private ["Ps9AnyObject", "objectId"]
 - ["Ps9AnyObject", "participant"]
 - !private ["Ps9AnyObject", "participants"]
+- !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "prefersStatusBarHidden"]
+- ["Ps9AnyObject", "prepare"]
 - ["Ps9AnyObject", "prepareLocalMedia"]
 - !private ["Ps9AnyObject", "previewView"]
 - !private ["Ps9AnyObject", "print"]
@@ -168,6 +177,7 @@ depends-member:
 - !private ["Ps9AnyObject", "removeFromParentViewController"]
 - !private ["Ps9AnyObject", "removeFromSuperview"]
 - ["Ps9AnyObject", "room"]
+- !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "selectSource"]
 - !private ["Ps9AnyObject", "setTitle"]
 - !private ["Ps9AnyObject", "showRoomUI"]
@@ -189,6 +199,7 @@ depends-member:
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "viewWillDisappear"]
+- !private ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Index"]
 - !private ["Sa", "IndexDistance"]
@@ -235,9 +246,11 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "isUserInteractionEnabled"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
+- !private ["PSo15CALayerDelegate", "rootViewController"]
 - !private ["PSo15CALayerDelegate", "setTitle"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "transform"]
+- !private ["PSo15CALayerDelegate", "window"]
 - ["VSC17CGAffineTransform", "deinit"]
 - !private ["VSC17CGAffineTransform", "init"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -271,6 +284,8 @@ depends-member:
 - !private ["Ps7CVarArg", "alpha"]
 - !private ["Ps7CVarArg", "animate"]
 - !private ["Ps7CVarArg", "attach"]
+- !private ["Ps7CVarArg", "audioController"]
+- !private ["Ps7CVarArg", "audioOutput"]
 - ["Ps7CVarArg", "camera"]
 - !private ["Ps7CVarArg", "characters"]
 - ["Ps7CVarArg", "circles"]
@@ -280,6 +295,7 @@ depends-member:
 - !private ["Ps7CVarArg", "count"]
 - ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "destination"]
 - !private ["Ps7CVarArg", "detach"]
 - ["Ps7CVarArg", "didConnect"]
 - ["Ps7CVarArg", "didConnectToRoom"]
@@ -291,6 +307,7 @@ depends-member:
 - ["Ps7CVarArg", "dismissView"]
 - ["Ps7CVarArg", "flipCamera"]
 - ["Ps7CVarArg", "guru"]
+- !private ["Ps7CVarArg", "identifier"]
 - !private ["Ps7CVarArg", "identity"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
@@ -311,7 +328,9 @@ depends-member:
 - !private ["Ps7CVarArg", "objectId"]
 - ["Ps7CVarArg", "participant"]
 - !private ["Ps7CVarArg", "participants"]
+- !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "prefersStatusBarHidden"]
+- ["Ps7CVarArg", "prepare"]
 - ["Ps7CVarArg", "prepareLocalMedia"]
 - !private ["Ps7CVarArg", "previewView"]
 - !private ["Ps7CVarArg", "print"]
@@ -321,6 +340,7 @@ depends-member:
 - !private ["Ps7CVarArg", "removeFromParentViewController"]
 - !private ["Ps7CVarArg", "removeFromSuperview"]
 - ["Ps7CVarArg", "room"]
+- !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "selectSource"]
 - !private ["Ps7CVarArg", "setTitle"]
 - !private ["Ps7CVarArg", "showRoomUI"]
@@ -342,6 +362,7 @@ depends-member:
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", "viewWillDisappear"]
+- !private ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
 - ["Vs9Character", "deinit"]
 - !private ["VSS13CharacterView", "IndexDistance"]
@@ -384,6 +405,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "animate"]
 - !private ["Ps28CustomDebugStringConvertible", "attach"]
+- !private ["Ps28CustomDebugStringConvertible", "audioController"]
+- !private ["Ps28CustomDebugStringConvertible", "audioOutput"]
 - ["Ps28CustomDebugStringConvertible", "camera"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
 - ["Ps28CustomDebugStringConvertible", "circles"]
@@ -393,6 +416,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "destination"]
 - !private ["Ps28CustomDebugStringConvertible", "detach"]
 - ["Ps28CustomDebugStringConvertible", "didConnect"]
 - ["Ps28CustomDebugStringConvertible", "didConnectToRoom"]
@@ -405,6 +429,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "flipCamera"]
 - !private ["Ps28CustomDebugStringConvertible", "frontCamera"]
 - ["Ps28CustomDebugStringConvertible", "guru"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - !private ["Ps28CustomDebugStringConvertible", "identity"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
@@ -425,7 +450,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "objectId"]
 - ["Ps28CustomDebugStringConvertible", "participant"]
 - !private ["Ps28CustomDebugStringConvertible", "participants"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
 - ["Ps28CustomDebugStringConvertible", "prepareLocalMedia"]
 - !private ["Ps28CustomDebugStringConvertible", "previewView"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -435,6 +462,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "removeFromParentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - ["Ps28CustomDebugStringConvertible", "room"]
+- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "selectSource"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "showRoomUI"]
@@ -456,6 +484,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
+- !private ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
@@ -505,6 +534,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "animate"]
 - !private ["Ps23CustomStringConvertible", "attach"]
+- !private ["Ps23CustomStringConvertible", "audioController"]
+- !private ["Ps23CustomStringConvertible", "audioOutput"]
 - ["Ps23CustomStringConvertible", "camera"]
 - !private ["Ps23CustomStringConvertible", "characters"]
 - ["Ps23CustomStringConvertible", "circles"]
@@ -514,6 +545,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "destination"]
 - !private ["Ps23CustomStringConvertible", "detach"]
 - ["Ps23CustomStringConvertible", "didConnect"]
 - ["Ps23CustomStringConvertible", "didConnectToRoom"]
@@ -525,6 +557,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "dismissView"]
 - ["Ps23CustomStringConvertible", "flipCamera"]
 - ["Ps23CustomStringConvertible", "guru"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
 - !private ["Ps23CustomStringConvertible", "identity"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
@@ -545,7 +578,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "objectId"]
 - ["Ps23CustomStringConvertible", "participant"]
 - !private ["Ps23CustomStringConvertible", "participants"]
+- !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
+- ["Ps23CustomStringConvertible", "prepare"]
 - ["Ps23CustomStringConvertible", "prepareLocalMedia"]
 - !private ["Ps23CustomStringConvertible", "previewView"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -555,6 +590,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "removeFromParentViewController"]
 - !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - ["Ps23CustomStringConvertible", "room"]
+- !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "selectSource"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
 - !private ["Ps23CustomStringConvertible", "showRoomUI"]
@@ -576,6 +612,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", "viewWillDisappear"]
+- !private ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
@@ -613,6 +650,8 @@ depends-member:
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "animate"]
 - !private ["Ps9Equatable", "attach"]
+- !private ["Ps9Equatable", "audioController"]
+- !private ["Ps9Equatable", "audioOutput"]
 - !private ["Ps9Equatable", "autoreverse"]
 - !private ["Ps9Equatable", "backCameraWide"]
 - ["Ps9Equatable", "camera"]
@@ -623,6 +662,7 @@ depends-member:
 - ["Ps9Equatable", "connect"]
 - ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "destination"]
 - !private ["Ps9Equatable", "detach"]
 - ["Ps9Equatable", "didConnect"]
 - ["Ps9Equatable", "didConnectToRoom"]
@@ -635,6 +675,7 @@ depends-member:
 - ["Ps9Equatable", "flipCamera"]
 - !private ["Ps9Equatable", "frontCamera"]
 - ["Ps9Equatable", "guru"]
+- !private ["Ps9Equatable", "identifier"]
 - !private ["Ps9Equatable", "identity"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
@@ -656,7 +697,9 @@ depends-member:
 - !private ["Ps9Equatable", "objectId"]
 - ["Ps9Equatable", "participant"]
 - !private ["Ps9Equatable", "participants"]
+- !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "prefersStatusBarHidden"]
+- ["Ps9Equatable", "prepare"]
 - ["Ps9Equatable", "prepareLocalMedia"]
 - !private ["Ps9Equatable", "previewView"]
 - !private ["Ps9Equatable", "print"]
@@ -667,6 +710,7 @@ depends-member:
 - !private ["Ps9Equatable", "removeFromSuperview"]
 - !private ["Ps9Equatable", "repeat"]
 - ["Ps9Equatable", "room"]
+- !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "selectSource"]
 - !private ["Ps9Equatable", "setTitle"]
 - !private ["Ps9Equatable", "showRoomUI"]
@@ -681,6 +725,7 @@ depends-member:
 - !private ["Ps9Equatable", "transform"]
 - ["Ps9Equatable", "tutor"]
 - ["Ps9Equatable", "username"]
+- !private ["Ps9Equatable", "videoChatSpeaker"]
 - !private ["Ps9Equatable", "videoDimensions"]
 - ["Ps9Equatable", "videoScreen"]
 - !private ["Ps9Equatable", "videoTracks"]
@@ -688,6 +733,7 @@ depends-member:
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "viewWillDisappear"]
+- !private ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
@@ -717,6 +763,8 @@ depends-member:
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
+- ["C4Guru24GuruReviewViewController", "deinit"]
+- !private ["C4Guru24GuruReviewViewController", "question"]
 - !private ["Ps8Hashable", "CGAffineTransform"]
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -741,6 +789,8 @@ depends-member:
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "animate"]
 - !private ["Ps8Hashable", "attach"]
+- !private ["Ps8Hashable", "audioController"]
+- !private ["Ps8Hashable", "audioOutput"]
 - !private ["Ps8Hashable", "backCameraWide"]
 - ["Ps8Hashable", "camera"]
 - !private ["Ps8Hashable", "characters"]
@@ -750,6 +800,7 @@ depends-member:
 - ["Ps8Hashable", "connect"]
 - ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "destination"]
 - !private ["Ps8Hashable", "detach"]
 - ["Ps8Hashable", "didConnect"]
 - ["Ps8Hashable", "didConnectToRoom"]
@@ -762,6 +813,7 @@ depends-member:
 - ["Ps8Hashable", "flipCamera"]
 - !private ["Ps8Hashable", "frontCamera"]
 - ["Ps8Hashable", "guru"]
+- !private ["Ps8Hashable", "identifier"]
 - !private ["Ps8Hashable", "identity"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
@@ -782,7 +834,9 @@ depends-member:
 - !private ["Ps8Hashable", "objectId"]
 - ["Ps8Hashable", "participant"]
 - !private ["Ps8Hashable", "participants"]
+- !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "prefersStatusBarHidden"]
+- ["Ps8Hashable", "prepare"]
 - ["Ps8Hashable", "prepareLocalMedia"]
 - !private ["Ps8Hashable", "previewView"]
 - !private ["Ps8Hashable", "print"]
@@ -792,6 +846,7 @@ depends-member:
 - !private ["Ps8Hashable", "removeFromParentViewController"]
 - !private ["Ps8Hashable", "removeFromSuperview"]
 - ["Ps8Hashable", "room"]
+- !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "selectSource"]
 - !private ["Ps8Hashable", "setTitle"]
 - !private ["Ps8Hashable", "showRoomUI"]
@@ -806,6 +861,7 @@ depends-member:
 - !private ["Ps8Hashable", "transform"]
 - ["Ps8Hashable", "tutor"]
 - ["Ps8Hashable", "username"]
+- !private ["Ps8Hashable", "videoChatSpeaker"]
 - !private ["Ps8Hashable", "videoDimensions"]
 - ["Ps8Hashable", "videoScreen"]
 - !private ["Ps8Hashable", "videoTracks"]
@@ -813,6 +869,7 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "viewWillDisappear"]
+- !private ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Index"]
@@ -920,7 +977,9 @@ depends-member:
 - !private ["PSo8NSCoding", "messageLabel"]
 - !private ["PSo8NSCoding", "micButton"]
 - ["PSo8NSCoding", "participant"]
+- !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
+- ["PSo8NSCoding", "prepare"]
 - ["PSo8NSCoding", "prepareLocalMedia"]
 - !private ["PSo8NSCoding", "previewView"]
 - !private ["PSo8NSCoding", "print"]
@@ -930,6 +989,7 @@ depends-member:
 - !private ["PSo8NSCoding", "removeFromParentViewController"]
 - !private ["PSo8NSCoding", "removeFromSuperview"]
 - ["PSo8NSCoding", "room"]
+- !private ["PSo8NSCoding", "rootViewController"]
 - !private ["PSo8NSCoding", "setTitle"]
 - !private ["PSo8NSCoding", "showRoomUI"]
 - ["PSo8NSCoding", "startPreview"]
@@ -945,6 +1005,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
+- !private ["PSo8NSCoding", "window"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "characters"]
 - ["PSo9NSCopying", "init"]
@@ -987,7 +1048,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "messageLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "micButton"]
 - ["PSo26NSExtensionRequestHandling", "participant"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
 - ["PSo26NSExtensionRequestHandling", "prepareLocalMedia"]
 - !private ["PSo26NSExtensionRequestHandling", "previewView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -1016,6 +1079,7 @@ depends-member:
 - !private ["CSo8NSObject", "CGAffineTransform"]
 - !private ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "Error"]
+- !private ["CSo8NSObject", "GuruReviewViewController"]
 - !private ["CSo8NSObject", "M_PI"]
 - ["CSo8NSObject", "PFObject"]
 - ["CSo8NSObject", "PFUser"]
@@ -1037,6 +1101,7 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - !private ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "VideoVC"]
 - ["CSo8NSObject", "accessToken"]
@@ -1047,6 +1112,8 @@ depends-member:
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "animate"]
 - !private ["CSo8NSObject", "attach"]
+- !private ["CSo8NSObject", "audioController"]
+- !private ["CSo8NSObject", "audioOutput"]
 - ["CSo8NSObject", "camera"]
 - !private ["CSo8NSObject", "characters"]
 - ["CSo8NSObject", "circles"]
@@ -1056,6 +1123,7 @@ depends-member:
 - ["CSo8NSObject", "current"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "destination"]
 - !private ["CSo8NSObject", "detach"]
 - ["CSo8NSObject", "didConnect"]
 - ["CSo8NSObject", "didConnectToRoom"]
@@ -1067,6 +1135,7 @@ depends-member:
 - ["CSo8NSObject", "dismissView"]
 - ["CSo8NSObject", "flipCamera"]
 - ["CSo8NSObject", "guru"]
+- !private ["CSo8NSObject", "identifier"]
 - !private ["CSo8NSObject", "identity"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
@@ -1087,7 +1156,9 @@ depends-member:
 - !private ["CSo8NSObject", "objectId"]
 - ["CSo8NSObject", "participant"]
 - !private ["CSo8NSObject", "participants"]
+- !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "prefersStatusBarHidden"]
+- ["CSo8NSObject", "prepare"]
 - ["CSo8NSObject", "prepareLocalMedia"]
 - !private ["CSo8NSObject", "previewView"]
 - !private ["CSo8NSObject", "print"]
@@ -1097,6 +1168,7 @@ depends-member:
 - !private ["CSo8NSObject", "removeFromParentViewController"]
 - !private ["CSo8NSObject", "removeFromSuperview"]
 - ["CSo8NSObject", "room"]
+- !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "selectSource"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "showRoomUI"]
@@ -1118,6 +1190,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
+- !private ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "CGAffineTransform"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "M_PI"]
@@ -1138,6 +1211,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "animate"]
 - !private ["PSo16NSObjectProtocol", "attach"]
+- !private ["PSo16NSObjectProtocol", "audioController"]
+- !private ["PSo16NSObjectProtocol", "audioOutput"]
 - ["PSo16NSObjectProtocol", "camera"]
 - !private ["PSo16NSObjectProtocol", "characters"]
 - ["PSo16NSObjectProtocol", "circles"]
@@ -1146,6 +1221,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "connect"]
 - ["PSo16NSObjectProtocol", "current"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "destination"]
 - !private ["PSo16NSObjectProtocol", "detach"]
 - ["PSo16NSObjectProtocol", "didConnect"]
 - ["PSo16NSObjectProtocol", "didConnectToRoom"]
@@ -1157,6 +1233,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "dismissView"]
 - ["PSo16NSObjectProtocol", "flipCamera"]
 - ["PSo16NSObjectProtocol", "guru"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
 - !private ["PSo16NSObjectProtocol", "identity"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
@@ -1177,7 +1254,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "objectId"]
 - ["PSo16NSObjectProtocol", "participant"]
 - !private ["PSo16NSObjectProtocol", "participants"]
+- !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
+- ["PSo16NSObjectProtocol", "prepare"]
 - ["PSo16NSObjectProtocol", "prepareLocalMedia"]
 - !private ["PSo16NSObjectProtocol", "previewView"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -1187,6 +1266,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "removeFromParentViewController"]
 - !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - ["PSo16NSObjectProtocol", "room"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "selectSource"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "showRoomUI"]
@@ -1208,6 +1288,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
+- !private ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "characters"]
 - ["PSo14NSSecureCoding", "init"]
@@ -1273,6 +1354,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "frontCamera"]
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["Ps16RawRepresentable", "repeat"]
+- !private ["Ps16RawRepresentable", "videoChatSpeaker"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "IndexDistance"]
@@ -1305,6 +1387,10 @@ depends-member:
 - !private ["SS", "characters"]
 - ["SS", "deinit"]
 - ["SS", "init"]
+- !private ["CSo18TVIAudioController", "audioOutput"]
+- ["CSo18TVIAudioController", "deinit"]
+- ["OSC14TVIAudioOutput", "deinit"]
+- !private ["OSC14TVIAudioOutput", "videoChatSpeaker"]
 - !private ["CSo13TVIAudioTrack", "isEnabled"]
 - ["CSo17TVICameraCapturer", "deinit"]
 - !private ["CSo17TVICameraCapturer", "init"]
@@ -1318,6 +1404,7 @@ depends-member:
 - !private ["CSo18TVILocalAudioTrack", "isEnabled"]
 - !private ["CSo13TVILocalMedia", "addAudioTrack"]
 - !private ["CSo13TVILocalMedia", "addVideoTrack"]
+- !private ["CSo13TVILocalMedia", "audioController"]
 - ["CSo13TVILocalMedia", "deinit"]
 - !private ["CSo13TVILocalMedia", "init"]
 - !private ["CSo13TVILocalMedia", "videoTracks"]
@@ -1362,6 +1449,7 @@ depends-member:
 - !private ["PSo22TVIParticipantDelegate", "localVideoTrack"]
 - !private ["PSo22TVIParticipantDelegate", "logMessage"]
 - ["PSo22TVIParticipantDelegate", "participant"]
+- !private ["PSo22TVIParticipantDelegate", "performSegue"]
 - !private ["PSo22TVIParticipantDelegate", "prepareLocalMedia"]
 - !private ["PSo22TVIParticipantDelegate", "print"]
 - !private ["PSo22TVIParticipantDelegate", "question"]
@@ -1412,6 +1500,7 @@ depends-member:
 - !private ["PSo15TVIRoomDelegate", "localVideoTrack"]
 - !private ["PSo15TVIRoomDelegate", "logMessage"]
 - ["PSo15TVIRoomDelegate", "participant"]
+- !private ["PSo15TVIRoomDelegate", "performSegue"]
 - !private ["PSo15TVIRoomDelegate", "prepareLocalMedia"]
 - !private ["PSo15TVIRoomDelegate", "print"]
 - !private ["PSo15TVIRoomDelegate", "question"]
@@ -1455,9 +1544,11 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "isUserInteractionEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "transform"]
+- !private ["PSo29UIAccessibilityIdentification", "window"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "animate"]
@@ -1465,9 +1556,11 @@ depends-member:
 - !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo12UIAppearance", "isUserInteractionEnabled"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
+- !private ["PSo12UIAppearance", "rootViewController"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "transform"]
+- !private ["PSo12UIAppearance", "window"]
 - !private ["PSo21UIAppearanceContainer", "CGAffineTransform"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "M_PI"]
@@ -1513,7 +1606,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "messageLabel"]
 - !private ["PSo21UIAppearanceContainer", "micButton"]
 - ["PSo21UIAppearanceContainer", "participant"]
+- !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
+- ["PSo21UIAppearanceContainer", "prepare"]
 - ["PSo21UIAppearanceContainer", "prepareLocalMedia"]
 - !private ["PSo21UIAppearanceContainer", "previewView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -1523,6 +1618,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "removeFromParentViewController"]
 - !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - ["PSo21UIAppearanceContainer", "room"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - !private ["PSo21UIAppearanceContainer", "showRoomUI"]
 - ["PSo21UIAppearanceContainer", "startPreview"]
@@ -1538,6 +1634,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
+- !private ["PSo21UIAppearanceContainer", "window"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "isEnabled"]
 - !private ["CSo8UIButton", "isHidden"]
@@ -1581,7 +1678,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "messageLabel"]
 - !private ["PSo18UIContentContainer", "micButton"]
 - ["PSo18UIContentContainer", "participant"]
+- !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
+- ["PSo18UIContentContainer", "prepare"]
 - ["PSo18UIContentContainer", "prepareLocalMedia"]
 - !private ["PSo18UIContentContainer", "previewView"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -1616,9 +1715,11 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "isUserInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "transform"]
+- !private ["PSo17UICoordinateSpace", "window"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animate"]
@@ -1626,9 +1727,11 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "isUserInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "transform"]
+- !private ["PSo13UIDynamicItem", "window"]
 - !private ["PSo18UIFocusEnvironment", "CGAffineTransform"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "M_PI"]
@@ -1674,7 +1777,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "messageLabel"]
 - !private ["PSo18UIFocusEnvironment", "micButton"]
 - ["PSo18UIFocusEnvironment", "participant"]
+- !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
+- ["PSo18UIFocusEnvironment", "prepare"]
 - ["PSo18UIFocusEnvironment", "prepareLocalMedia"]
 - !private ["PSo18UIFocusEnvironment", "previewView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -1684,6 +1789,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "removeFromParentViewController"]
 - !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - ["PSo18UIFocusEnvironment", "room"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - !private ["PSo18UIFocusEnvironment", "setTitle"]
 - !private ["PSo18UIFocusEnvironment", "showRoomUI"]
 - ["PSo18UIFocusEnvironment", "startPreview"]
@@ -1699,6 +1805,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
+- !private ["PSo18UIFocusEnvironment", "window"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "alpha"]
@@ -1707,9 +1814,11 @@ depends-member:
 - !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "isUserInteractionEnabled"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
+- !private ["PSo11UIFocusItem", "rootViewController"]
 - !private ["PSo11UIFocusItem", "setTitle"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "transform"]
+- !private ["PSo11UIFocusItem", "window"]
 - !private ["CSo11UIImageView", "transform"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
@@ -1717,6 +1826,7 @@ depends-member:
 - !private ["CSo11UIResponder", "CGAffineTransform"]
 - !private ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "Error"]
+- !private ["CSo11UIResponder", "GuruReviewViewController"]
 - !private ["CSo11UIResponder", "M_PI"]
 - ["CSo11UIResponder", "PFObject"]
 - ["CSo11UIResponder", "PFUser"]
@@ -1737,6 +1847,7 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - !private ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "VideoVC"]
 - ["CSo11UIResponder", "accessToken"]
@@ -1773,7 +1884,9 @@ depends-member:
 - !private ["CSo11UIResponder", "messageLabel"]
 - !private ["CSo11UIResponder", "micButton"]
 - ["CSo11UIResponder", "participant"]
+- !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
+- ["CSo11UIResponder", "prepare"]
 - ["CSo11UIResponder", "prepareLocalMedia"]
 - !private ["CSo11UIResponder", "previewView"]
 - !private ["CSo11UIResponder", "print"]
@@ -1783,6 +1896,7 @@ depends-member:
 - !private ["CSo11UIResponder", "removeFromParentViewController"]
 - !private ["CSo11UIResponder", "removeFromSuperview"]
 - ["CSo11UIResponder", "room"]
+- !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "setTitle"]
 - !private ["CSo11UIResponder", "showRoomUI"]
 - ["CSo11UIResponder", "startPreview"]
@@ -1798,6 +1912,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
+- !private ["CSo11UIResponder", "window"]
 - !private ["PSo30UIResponderStandardEditActions", "CGAffineTransform"]
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - !private ["PSo30UIResponderStandardEditActions", "M_PI"]
@@ -1843,7 +1958,9 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "messageLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "micButton"]
 - ["PSo30UIResponderStandardEditActions", "participant"]
+- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
 - ["PSo30UIResponderStandardEditActions", "prepareLocalMedia"]
 - !private ["PSo30UIResponderStandardEditActions", "previewView"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
@@ -1853,6 +1970,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "removeFromParentViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
 - ["PSo30UIResponderStandardEditActions", "room"]
+- !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "setTitle"]
 - !private ["PSo30UIResponderStandardEditActions", "showRoomUI"]
 - ["PSo30UIResponderStandardEditActions", "startPreview"]
@@ -1868,6 +1986,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewWillDisappear"]
+- !private ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "CGAffineTransform"]
 - !private ["PSo16UIStateRestoring", "CGFloat"]
@@ -1908,7 +2027,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "messageLabel"]
 - !private ["PSo16UIStateRestoring", "micButton"]
 - ["PSo16UIStateRestoring", "participant"]
+- !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
+- ["PSo16UIStateRestoring", "prepare"]
 - ["PSo16UIStateRestoring", "prepareLocalMedia"]
 - !private ["PSo16UIStateRestoring", "previewView"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -1932,6 +2053,9 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - ["CSo12UIStoryboard", "deinit"]
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
+- ["CSo17UIStoryboardSegue", "deinit"]
+- !private ["CSo17UIStoryboardSegue", "destination"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
 - !private ["PSo18UITraitEnvironment", "CGAffineTransform"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "M_PI"]
@@ -1977,7 +2101,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "messageLabel"]
 - !private ["PSo18UITraitEnvironment", "micButton"]
 - ["PSo18UITraitEnvironment", "participant"]
+- !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
+- ["PSo18UITraitEnvironment", "prepare"]
 - ["PSo18UITraitEnvironment", "prepareLocalMedia"]
 - !private ["PSo18UITraitEnvironment", "previewView"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -1987,6 +2113,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "removeFromParentViewController"]
 - !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - ["PSo18UITraitEnvironment", "room"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - !private ["PSo18UITraitEnvironment", "showRoomUI"]
 - ["PSo18UITraitEnvironment", "startPreview"]
@@ -2002,6 +2129,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
+- !private ["PSo18UITraitEnvironment", "window"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "alpha"]
@@ -2010,9 +2138,11 @@ depends-member:
 - !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "isUserInteractionEnabled"]
 - !private ["CSo6UIView", "removeFromSuperview"]
+- !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "transform"]
+- !private ["CSo6UIView", "window"]
 - !private ["VSC22UIViewAnimationOptions", "Element"]
 - !private ["VSC22UIViewAnimationOptions", "autoreverse"]
 - ["VSC22UIViewAnimationOptions", "deinit"]
@@ -2022,6 +2152,7 @@ depends-member:
 - !private ["CSo16UIViewController", "CGAffineTransform"]
 - !private ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "Error"]
+- !private ["CSo16UIViewController", "GuruReviewViewController"]
 - !private ["CSo16UIViewController", "M_PI"]
 - ["CSo16UIViewController", "PFObject"]
 - ["CSo16UIViewController", "PFUser"]
@@ -2042,6 +2173,7 @@ depends-member:
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - !private ["CSo16UIViewController", "UIView"]
 - ["CSo16UIViewController", "VideoVC"]
 - ["CSo16UIViewController", "accessToken"]
@@ -2073,7 +2205,9 @@ depends-member:
 - !private ["CSo16UIViewController", "messageLabel"]
 - !private ["CSo16UIViewController", "micButton"]
 - ["CSo16UIViewController", "participant"]
+- !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
+- ["CSo16UIViewController", "prepare"]
 - ["CSo16UIViewController", "prepareLocalMedia"]
 - !private ["CSo16UIViewController", "previewView"]
 - !private ["CSo16UIViewController", "print"]
@@ -2095,6 +2229,8 @@ depends-member:
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", ""]
+- ["CSo8UIWindow", "deinit"]
+- !private ["CSo8UIWindow", "rootViewController"]
 - ["Su", "deinit"]
 - ["Vs6UInt16", "deinit"]
 - ["Vs6UInt32", "deinit"]
@@ -2118,6 +2254,7 @@ depends-member:
 - !private ["C4Guru13WaitingScreen", "CGAffineTransform"]
 - !private ["C4Guru13WaitingScreen", "CGFloat"]
 - ["C4Guru13WaitingScreen", "Error"]
+- !private ["C4Guru13WaitingScreen", "GuruReviewViewController"]
 - !private ["C4Guru13WaitingScreen", "M_PI"]
 - ["C4Guru13WaitingScreen", "PFObject"]
 - ["C4Guru13WaitingScreen", "PFUser"]
@@ -2138,6 +2275,7 @@ depends-member:
 - ["C4Guru13WaitingScreen", "UIButton"]
 - ["C4Guru13WaitingScreen", "UIImageView"]
 - ["C4Guru13WaitingScreen", "UILabel"]
+- ["C4Guru13WaitingScreen", "UIStoryboardSegue"]
 - !private ["C4Guru13WaitingScreen", "UIView"]
 - ["C4Guru13WaitingScreen", "VideoVC"]
 - ["C4Guru13WaitingScreen", "accessToken"]
@@ -2164,7 +2302,9 @@ depends-member:
 - ["C4Guru13WaitingScreen", "localVideoTrack"]
 - ["C4Guru13WaitingScreen", "logMessage"]
 - ["C4Guru13WaitingScreen", "participant"]
+- !private ["C4Guru13WaitingScreen", "performSegue"]
 - ["C4Guru13WaitingScreen", "prefersStatusBarHidden"]
+- ["C4Guru13WaitingScreen", "prepare"]
 - ["C4Guru13WaitingScreen", "prepareLocalMedia"]
 - !private ["C4Guru13WaitingScreen", "print"]
 - ["C4Guru13WaitingScreen", "question"]
@@ -2213,6 +2353,7 @@ depends-member:
 - !private ["P4Guru21WaitingScreenDelegate", "localVideoTrack"]
 - !private ["P4Guru21WaitingScreenDelegate", "logMessage"]
 - ["P4Guru21WaitingScreenDelegate", "participant"]
+- !private ["P4Guru21WaitingScreenDelegate", "performSegue"]
 - !private ["P4Guru21WaitingScreenDelegate", "prepareLocalMedia"]
 - !private ["P4Guru21WaitingScreenDelegate", "print"]
 - !private ["P4Guru21WaitingScreenDelegate", "question"]
@@ -2243,9 +2384,11 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isUserInteractionEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "transform"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "window"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
@@ -2291,6 +2434,8 @@ depends-member:
 - !private ["Ps9_Hashable", "alpha"]
 - !private ["Ps9_Hashable", "animate"]
 - !private ["Ps9_Hashable", "attach"]
+- !private ["Ps9_Hashable", "audioController"]
+- !private ["Ps9_Hashable", "audioOutput"]
 - !private ["Ps9_Hashable", "backCameraWide"]
 - ["Ps9_Hashable", "camera"]
 - !private ["Ps9_Hashable", "characters"]
@@ -2300,6 +2445,7 @@ depends-member:
 - ["Ps9_Hashable", "connect"]
 - ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "destination"]
 - !private ["Ps9_Hashable", "detach"]
 - ["Ps9_Hashable", "didConnect"]
 - ["Ps9_Hashable", "didConnectToRoom"]
@@ -2312,6 +2458,7 @@ depends-member:
 - ["Ps9_Hashable", "flipCamera"]
 - !private ["Ps9_Hashable", "frontCamera"]
 - ["Ps9_Hashable", "guru"]
+- !private ["Ps9_Hashable", "identifier"]
 - !private ["Ps9_Hashable", "identity"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
@@ -2332,7 +2479,9 @@ depends-member:
 - !private ["Ps9_Hashable", "objectId"]
 - ["Ps9_Hashable", "participant"]
 - !private ["Ps9_Hashable", "participants"]
+- !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "prefersStatusBarHidden"]
+- ["Ps9_Hashable", "prepare"]
 - ["Ps9_Hashable", "prepareLocalMedia"]
 - !private ["Ps9_Hashable", "previewView"]
 - !private ["Ps9_Hashable", "print"]
@@ -2342,6 +2491,7 @@ depends-member:
 - !private ["Ps9_Hashable", "removeFromParentViewController"]
 - !private ["Ps9_Hashable", "removeFromSuperview"]
 - ["Ps9_Hashable", "room"]
+- !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "selectSource"]
 - !private ["Ps9_Hashable", "setTitle"]
 - !private ["Ps9_Hashable", "showRoomUI"]
@@ -2356,6 +2506,7 @@ depends-member:
 - !private ["Ps9_Hashable", "transform"]
 - ["Ps9_Hashable", "tutor"]
 - ["Ps9_Hashable", "username"]
+- !private ["Ps9_Hashable", "videoChatSpeaker"]
 - !private ["Ps9_Hashable", "videoDimensions"]
 - ["Ps9_Hashable", "videoScreen"]
 - !private ["Ps9_Hashable", "videoTracks"]
@@ -2363,6 +2514,7 @@ depends-member:
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", "viewWillDisappear"]
+- !private ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
@@ -2434,6 +2586,7 @@ depends-nominal:
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Sf"
 - !private "Ps13FloatingPoint"
+- "C4Guru24GuruReviewViewController"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
@@ -2481,6 +2634,8 @@ depends-nominal:
 - !private "Vs5Slice"
 - !private "Ps10Strideable"
 - "SS"
+- "CSo18TVIAudioController"
+- "OSC14TVIAudioOutput"
 - !private "CSo13TVIAudioTrack"
 - "CSo17TVICameraCapturer"
 - "CSo17TVIConnectOptions"
@@ -2520,10 +2675,12 @@ depends-nominal:
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - "CSo12UIStoryboard"
+- "CSo17UIStoryboardSegue"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "VSC22UIViewAnimationOptions"
 - "CSo16UIViewController"
+- "CSo8UIWindow"
 - "Su"
 - "Vs6UInt16"
 - "Vs6UInt32"
@@ -2661,6 +2818,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "c8a9109e34bd0b2881f77f38838490bf"
+interface-hash: "1351a0b96b3534eb0ae880847ecd70ce"

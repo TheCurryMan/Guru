@@ -6,37 +6,38 @@ provides-nominal:
 provides-member:
 - ["C4Guru11AppDelegate", ""]
 provides-dynamic-lookup:
-- "reactToNotification"
-- "topMostController"
 - "window"
 - "application"
+- "reactToNotification"
+- "topMostController"
 depends-top-level:
+- !private "Point"
+- "Bool"
+- "UIApplication"
 - "CastingPrecedence"
-- "UIApplicationLaunchOptionsKey"
 - "AssignmentPrecedence"
-- !private "Parse"
-- "UIViewController"
-- !private "PFObject"
-- !private "Error"
 - !private "AcceptViewController"
+- "UIApplicationLaunchOptionsKey"
 - !private "Dictionary"
-- "UIWindow"
-- !private "ParseClientConfiguration"
-- !private "String"
 - "AppDelegate"
 - !private "!="
 - !private "print"
 - "UIResponder"
-- "UIApplicationDelegate"
-- "StringLiteralType"
-- "UIApplication"
 - !private "OSNotificationDisplayType"
 - !private "BooleanLiteralType"
-- "Bool"
-- !private "OneSignal"
+- !private "Parse"
 - !private "kOSSettingsKeyInAppAlerts"
-- !private "OSNotificationOpenedResult"
+- "UIViewController"
 - "OSNotification"
+- !private "String"
+- "UIWindow"
+- !private "ParseClientConfiguration"
+- !private "OSNotificationOpenedResult"
+- !private "PFObject"
+- !private "OneSignal"
+- "StringLiteralType"
+- !private "Error"
+- "UIApplicationDelegate"
 depends-member:
 - !private ["C4Guru20AcceptViewController", "deinit"]
 - !private ["C4Guru20AcceptViewController", "question"]
@@ -46,6 +47,7 @@ depends-member:
 - !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "Parse"]
 - !private ["Ps9AnyObject", "ParseClientConfiguration"]
+- !private ["Ps9AnyObject", "Point"]
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "additionalData"]
 - ["Ps9AnyObject", "application"]
@@ -75,6 +77,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "question"]
 - ["Ps9AnyObject", "reactToNotification"]
+- !private ["Ps9AnyObject", "registerSubclass"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "storyboard"]
@@ -91,6 +94,7 @@ depends-member:
 - !private ["C4Guru11AppDelegate", "PFObject"]
 - !private ["C4Guru11AppDelegate", "Parse"]
 - !private ["C4Guru11AppDelegate", "ParseClientConfiguration"]
+- !private ["C4Guru11AppDelegate", "Point"]
 - !private ["C4Guru11AppDelegate", "String"]
 - ["C4Guru11AppDelegate", "UIApplication"]
 - ["C4Guru11AppDelegate", "UIApplicationLaunchOptionsKey"]
@@ -131,6 +135,7 @@ depends-member:
 - !private ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "Parse"]
 - !private ["Ps7CVarArg", "ParseClientConfiguration"]
+- !private ["Ps7CVarArg", "Point"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIApplication"]
@@ -165,6 +170,7 @@ depends-member:
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "question"]
 - ["Ps7CVarArg", "reactToNotification"]
+- !private ["Ps7CVarArg", "registerSubclass"]
 - !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "storyboard"]
@@ -193,6 +199,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "Parse"]
 - !private ["Ps28CustomDebugStringConvertible", "ParseClientConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "Point"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
@@ -225,6 +232,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "question"]
 - ["Ps28CustomDebugStringConvertible", "reactToNotification"]
+- !private ["Ps28CustomDebugStringConvertible", "registerSubclass"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "storyboard"]
@@ -258,6 +266,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "Parse"]
 - !private ["Ps23CustomStringConvertible", "ParseClientConfiguration"]
+- !private ["Ps23CustomStringConvertible", "Point"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
@@ -293,6 +302,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "question"]
 - ["Ps23CustomStringConvertible", "reactToNotification"]
+- !private ["Ps23CustomStringConvertible", "registerSubclass"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "storyboard"]
@@ -315,6 +325,7 @@ depends-member:
 - !private ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "Parse"]
 - !private ["Ps9Equatable", "ParseClientConfiguration"]
+- !private ["Ps9Equatable", "Point"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
@@ -349,6 +360,7 @@ depends-member:
 - !private ["Ps9Equatable", "question"]
 - !private ["Ps9Equatable", "rawValue"]
 - ["Ps9Equatable", "reactToNotification"]
+- !private ["Ps9Equatable", "registerSubclass"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "storyboard"]
@@ -376,6 +388,7 @@ depends-member:
 - !private ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "Parse"]
 - !private ["Ps8Hashable", "ParseClientConfiguration"]
+- !private ["Ps8Hashable", "Point"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
@@ -410,6 +423,7 @@ depends-member:
 - !private ["Ps8Hashable", "question"]
 - !private ["Ps8Hashable", "rawValue"]
 - ["Ps8Hashable", "reactToNotification"]
+- !private ["Ps8Hashable", "registerSubclass"]
 - !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "storyboard"]
@@ -473,6 +487,7 @@ depends-member:
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "Parse"]
 - !private ["CSo8NSObject", "ParseClientConfiguration"]
+- !private ["CSo8NSObject", "Point"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
@@ -506,6 +521,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "question"]
 - ["CSo8NSObject", "reactToNotification"]
+- !private ["CSo8NSObject", "registerSubclass"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "storyboard"]
@@ -516,6 +532,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "Parse"]
 - !private ["PSo16NSObjectProtocol", "ParseClientConfiguration"]
+- !private ["PSo16NSObjectProtocol", "Point"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "additionalData"]
 - ["PSo16NSObjectProtocol", "application"]
@@ -547,6 +564,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "question"]
 - ["PSo16NSObjectProtocol", "reactToNotification"]
+- !private ["PSo16NSObjectProtocol", "registerSubclass"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "server"]
 - !private ["PSo16NSObjectProtocol", "shared"]
@@ -569,6 +587,8 @@ depends-member:
 - ["CSo8PFObject", "deinit"]
 - !private ["CSo8PFObject", "fetchInBackground"]
 - !private ["CSo8PFObject", "init"]
+- !private ["CSo8PFObject", "registerSubclass"]
+- !private ["PSo13PFSubclassing", "registerSubclass"]
 - !private ["CSo5Parse", "initialize"]
 - ["CSo24ParseClientConfiguration", "deinit"]
 - !private ["CSo24ParseClientConfiguration", "init"]
@@ -576,6 +596,7 @@ depends-member:
 - !private ["PSo31ParseMutableClientConfiguration", "clientKey"]
 - !private ["PSo31ParseMutableClientConfiguration", "deinit"]
 - !private ["PSo31ParseMutableClientConfiguration", "server"]
+- !private ["C4Guru5Point", "registerSubclass"]
 - !private ["Vs5Range", "deinit"]
 - !private ["Ps16RawRepresentable", "none"]
 - !private ["Ps16RawRepresentable", "rawValue"]
@@ -623,6 +644,7 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "PFObject"]
 - !private ["PSo21UIApplicationDelegate", "Parse"]
 - !private ["PSo21UIApplicationDelegate", "ParseClientConfiguration"]
+- !private ["PSo21UIApplicationDelegate", "Point"]
 - !private ["PSo21UIApplicationDelegate", "UIApplication"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
@@ -668,6 +690,7 @@ depends-member:
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "Parse"]
 - !private ["CSo11UIResponder", "ParseClientConfiguration"]
+- !private ["CSo11UIResponder", "Point"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
@@ -706,6 +729,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "PFObject"]
 - !private ["PSo30UIResponderStandardEditActions", "Parse"]
 - !private ["PSo30UIResponderStandardEditActions", "ParseClientConfiguration"]
+- !private ["PSo30UIResponderStandardEditActions", "Point"]
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
@@ -774,6 +798,7 @@ depends-member:
 - !private ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "Parse"]
 - !private ["Ps9_Hashable", "ParseClientConfiguration"]
+- !private ["Ps9_Hashable", "Point"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIApplication"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
@@ -809,6 +834,7 @@ depends-member:
 - !private ["Ps9_Hashable", "question"]
 - !private ["Ps9_Hashable", "rawValue"]
 - ["Ps9_Hashable", "reactToNotification"]
+- !private ["Ps9_Hashable", "registerSubclass"]
 - !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "storyboard"]
@@ -895,9 +921,11 @@ depends-nominal:
 - !private "CSo9OneSignal"
 - "Sq"
 - "CSo8PFObject"
+- !private "PSo13PFSubclassing"
 - !private "CSo5Parse"
 - "CSo24ParseClientConfiguration"
 - !private "PSo31ParseMutableClientConfiguration"
+- !private "C4Guru5Point"
 - !private "Vs5Range"
 - !private "Ps16RawRepresentable"
 - !private "Ps8Sequence"
@@ -1051,6 +1079,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "4ce9b602108a729453791c7e0dad646c"

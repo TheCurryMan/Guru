@@ -1,0 +1,876 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Client"
+provides-nominal:
+- "C14ParseLiveQuery6Client"
+provides-member:
+- ["C14ParseLiveQuery6Client", ""]
+- ["C14ParseLiveQuery6Client", "shared"]
+- ["C14ParseLiveQuery6Client", "subscribe"]
+- ["C14ParseLiveQuery6Client", "subscribe"]
+- ["C14ParseLiveQuery6Client", "unsubscribe"]
+- ["C14ParseLiveQuery6Client", "unsubscribe"]
+- ["C14ParseLiveQuery6Client", "unsubscribe"]
+- ["C14ParseLiveQuery6Client", "reconnect"]
+- ["C14ParseLiveQuery6Client", "disconnect"]
+provides-dynamic-lookup:
+- "applicationId"
+- "userDisconnected"
+- "shared"
+- "socket"
+- "host"
+- "unsubscribe"
+- "reconnect"
+- "clientKey"
+- "disconnect"
+- "queue"
+depends-top-level:
+- "String"
+- !private "!="
+- "SubscriptionHandling"
+- !private "fatalError"
+- "TernaryPrecedence"
+- !private "URLComponents"
+- "URL"
+- "AssignmentPrecedence"
+- !private "Parse"
+- "PFQuery"
+- "Bool"
+- !private "&&"
+- !private "=="
+- "CastingPrecedence"
+- !private "!"
+- "Subscription"
+- "StringLiteralType"
+- !private "+="
+- !private "==="
+- "NSObject"
+- "SRWebSocket"
+- "PFObject"
+- !private "debugPrint"
+- "DispatchQueue"
+- !private "||"
+- "Client"
+- "Array"
+- !private "??"
+- !private "Int"
+- "BooleanLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "Client"]
+- ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "PFObjectSubclass"]
+- !private ["Ps9AnyObject", "Parse"]
+- !private ["Ps9AnyObject", "RequestId"]
+- !private ["Ps9AnyObject", "SRWebSocket"]
+- !private ["Ps9AnyObject", "Storage"]
+- !private ["Ps9AnyObject", "Subscription"]
+- ["Ps9AnyObject", "SubscriptionRecord"]
+- !private ["Ps9AnyObject", "URLComponents"]
+- !private ["Ps9AnyObject", "__once"]
+- ["Ps9AnyObject", "applicationId"]
+- !private ["Ps9AnyObject", "client"]
+- ["Ps9AnyObject", "clientKey"]
+- !private ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "debugPrint"]
+- !private ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "disconnect"]
+- !private ["Ps9AnyObject", "fatalError"]
+- ["Ps9AnyObject", "host"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "open"]
+- !private ["Ps9AnyObject", "query"]
+- ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "readyState"]
+- ["Ps9AnyObject", "reconnect"]
+- !private ["Ps9AnyObject", "requestId"]
+- ["Ps9AnyObject", "requestIdGenerator"]
+- !private ["Ps9AnyObject", "sendOperationAsync"]
+- !private ["Ps9AnyObject", "server"]
+- !private ["Ps9AnyObject", "setDelegateDispatchQueue"]
+- ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "sharedStorage"]
+- ["Ps9AnyObject", "socket"]
+- ["Ps9AnyObject", "subscribe"]
+- !private ["Ps9AnyObject", "subscriptionHandler"]
+- ["Ps9AnyObject", "subscriptions"]
+- !private ["Ps9AnyObject", "sync"]
+- ["Ps9AnyObject", "unsubscribe"]
+- ["Ps9AnyObject", "userDisconnected"]
+- !private ["Ps9AnyObject", "validatedCurrentConfiguration"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "deinit"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "forEach"]
+- ["Sa", "init"]
+- ["VE8DispatchCSo13DispatchQueue10Attributes", "Element"]
+- ["VE8DispatchCSo13DispatchQueue10Attributes", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "filter"]
+- !private ["Ps23BidirectionalCollection", "forEach"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "filter"]
+- !private ["Ps22BidirectionalIndexable", "forEach"]
+- ["Ps22BidirectionalIndexable", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Client"]
+- ["Ps7CVarArg", "DispatchQueue"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Parse"]
+- !private ["Ps7CVarArg", "RequestId"]
+- !private ["Ps7CVarArg", "SRWebSocket"]
+- !private ["Ps7CVarArg", "Storage"]
+- !private ["Ps7CVarArg", "Subscription"]
+- ["Ps7CVarArg", "SubscriptionRecord"]
+- !private ["Ps7CVarArg", "URLComponents"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
+- ["Ps7CVarArg", "applicationId"]
+- ["Ps7CVarArg", "clientKey"]
+- !private ["Ps7CVarArg", "close"]
+- !private ["Ps7CVarArg", "debugPrint"]
+- !private ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "disconnect"]
+- !private ["Ps7CVarArg", "fatalError"]
+- !private ["Ps7CVarArg", "filter"]
+- !private ["Ps7CVarArg", "forEach"]
+- ["Ps7CVarArg", "host"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "open"]
+- ["Ps7CVarArg", "queue"]
+- !private ["Ps7CVarArg", "readyState"]
+- ["Ps7CVarArg", "reconnect"]
+- ["Ps7CVarArg", "requestIdGenerator"]
+- !private ["Ps7CVarArg", "sendOperationAsync"]
+- !private ["Ps7CVarArg", "server"]
+- !private ["Ps7CVarArg", "setDelegateDispatchQueue"]
+- ["Ps7CVarArg", "shared"]
+- ["Ps7CVarArg", "socket"]
+- ["Ps7CVarArg", "subscribe"]
+- ["Ps7CVarArg", "subscriptions"]
+- !private ["Ps7CVarArg", "sync"]
+- ["Ps7CVarArg", "unsubscribe"]
+- ["Ps7CVarArg", "userDisconnected"]
+- !private ["Ps7CVarArg", "validatedCurrentConfiguration"]
+- ["Ps7CVarArg", ""]
+- ["C14ParseLiveQuery6Client", "Bool"]
+- ["C14ParseLiveQuery6Client", "Client"]
+- ["C14ParseLiveQuery6Client", "DispatchQueue"]
+- !private ["C14ParseLiveQuery6Client", "Int"]
+- ["C14ParseLiveQuery6Client", "PFObject"]
+- ["C14ParseLiveQuery6Client", "PFQuery"]
+- !private ["C14ParseLiveQuery6Client", "Parse"]
+- ["C14ParseLiveQuery6Client", "RequestId"]
+- ["C14ParseLiveQuery6Client", "SRWebSocket"]
+- ["C14ParseLiveQuery6Client", "Storage"]
+- ["C14ParseLiveQuery6Client", "String"]
+- ["C14ParseLiveQuery6Client", "Subscription"]
+- ["C14ParseLiveQuery6Client", "SubscriptionHandling"]
+- ["C14ParseLiveQuery6Client", "SubscriptionRecord"]
+- ["C14ParseLiveQuery6Client", "URL"]
+- !private ["C14ParseLiveQuery6Client", "URLComponents"]
+- ["C14ParseLiveQuery6Client", "applicationId"]
+- ["C14ParseLiveQuery6Client", "clientKey"]
+- !private ["C14ParseLiveQuery6Client", "debugPrint"]
+- ["C14ParseLiveQuery6Client", "deinit"]
+- ["C14ParseLiveQuery6Client", "disconnect"]
+- !private ["C14ParseLiveQuery6Client", "fatalError"]
+- ["C14ParseLiveQuery6Client", "host"]
+- ["C14ParseLiveQuery6Client", "init"]
+- ["C14ParseLiveQuery6Client", "queue"]
+- ["C14ParseLiveQuery6Client", "reconnect"]
+- ["C14ParseLiveQuery6Client", "requestIdGenerator"]
+- !private ["C14ParseLiveQuery6Client", "sendOperationAsync"]
+- ["C14ParseLiveQuery6Client", "shared"]
+- ["C14ParseLiveQuery6Client", "socket"]
+- ["C14ParseLiveQuery6Client", "subscribe"]
+- ["C14ParseLiveQuery6Client", "subscriptions"]
+- ["C14ParseLiveQuery6Client", "unsubscribe"]
+- ["C14ParseLiveQuery6Client", "userDisconnected"]
+- ["O14ParseLiveQuery15ClientOperation", "deinit"]
+- !private ["O14ParseLiveQuery15ClientOperation", "subscribe"]
+- !private ["O14ParseLiveQuery15ClientOperation", "unsubscribe"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "filter"]
+- !private ["Ps10Collection", "forEach"]
+- ["Ps10Collection", "init"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CONNECTING"]
+- !private ["Ps28CustomDebugStringConvertible", "Client"]
+- ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "OPEN"]
+- !private ["Ps28CustomDebugStringConvertible", "Parse"]
+- !private ["Ps28CustomDebugStringConvertible", "RequestId"]
+- !private ["Ps28CustomDebugStringConvertible", "SRWebSocket"]
+- !private ["Ps28CustomDebugStringConvertible", "Storage"]
+- !private ["Ps28CustomDebugStringConvertible", "Subscription"]
+- ["Ps28CustomDebugStringConvertible", "SubscriptionRecord"]
+- !private ["Ps28CustomDebugStringConvertible", "URLComponents"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- ["Ps28CustomDebugStringConvertible", "applicationId"]
+- ["Ps28CustomDebugStringConvertible", "clientKey"]
+- !private ["Ps28CustomDebugStringConvertible", "close"]
+- !private ["Ps28CustomDebugStringConvertible", "debugPrint"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "disconnect"]
+- !private ["Ps28CustomDebugStringConvertible", "fatalError"]
+- !private ["Ps28CustomDebugStringConvertible", "filter"]
+- !private ["Ps28CustomDebugStringConvertible", "forEach"]
+- ["Ps28CustomDebugStringConvertible", "host"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "open"]
+- ["Ps28CustomDebugStringConvertible", "queue"]
+- !private ["Ps28CustomDebugStringConvertible", "readyState"]
+- ["Ps28CustomDebugStringConvertible", "reconnect"]
+- ["Ps28CustomDebugStringConvertible", "requestIdGenerator"]
+- !private ["Ps28CustomDebugStringConvertible", "scheme"]
+- !private ["Ps28CustomDebugStringConvertible", "sendOperationAsync"]
+- !private ["Ps28CustomDebugStringConvertible", "server"]
+- !private ["Ps28CustomDebugStringConvertible", "setDelegateDispatchQueue"]
+- ["Ps28CustomDebugStringConvertible", "shared"]
+- ["Ps28CustomDebugStringConvertible", "socket"]
+- ["Ps28CustomDebugStringConvertible", "subscribe"]
+- ["Ps28CustomDebugStringConvertible", "subscriptions"]
+- !private ["Ps28CustomDebugStringConvertible", "sync"]
+- ["Ps28CustomDebugStringConvertible", "unsubscribe"]
+- !private ["Ps28CustomDebugStringConvertible", "url"]
+- ["Ps28CustomDebugStringConvertible", "userDisconnected"]
+- !private ["Ps28CustomDebugStringConvertible", "validatedCurrentConfiguration"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "CONNECTING"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "OPEN"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "filter"]
+- !private ["Ps17CustomReflectable", "forEach"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "scheme"]
+- !private ["Ps17CustomReflectable", "url"]
+- !private ["Ps23CustomStringConvertible", "Client"]
+- ["Ps23CustomStringConvertible", "DispatchQueue"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Parse"]
+- !private ["Ps23CustomStringConvertible", "RequestId"]
+- !private ["Ps23CustomStringConvertible", "SRWebSocket"]
+- !private ["Ps23CustomStringConvertible", "Storage"]
+- !private ["Ps23CustomStringConvertible", "Subscription"]
+- ["Ps23CustomStringConvertible", "SubscriptionRecord"]
+- !private ["Ps23CustomStringConvertible", "URLComponents"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- ["Ps23CustomStringConvertible", "applicationId"]
+- ["Ps23CustomStringConvertible", "clientKey"]
+- !private ["Ps23CustomStringConvertible", "close"]
+- !private ["Ps23CustomStringConvertible", "debugPrint"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "disconnect"]
+- !private ["Ps23CustomStringConvertible", "fatalError"]
+- !private ["Ps23CustomStringConvertible", "filter"]
+- !private ["Ps23CustomStringConvertible", "forEach"]
+- ["Ps23CustomStringConvertible", "host"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "open"]
+- ["Ps23CustomStringConvertible", "queue"]
+- !private ["Ps23CustomStringConvertible", "readyState"]
+- ["Ps23CustomStringConvertible", "reconnect"]
+- ["Ps23CustomStringConvertible", "requestIdGenerator"]
+- !private ["Ps23CustomStringConvertible", "scheme"]
+- !private ["Ps23CustomStringConvertible", "sendOperationAsync"]
+- !private ["Ps23CustomStringConvertible", "server"]
+- !private ["Ps23CustomStringConvertible", "setDelegateDispatchQueue"]
+- ["Ps23CustomStringConvertible", "shared"]
+- ["Ps23CustomStringConvertible", "socket"]
+- ["Ps23CustomStringConvertible", "subscribe"]
+- ["Ps23CustomStringConvertible", "subscriptions"]
+- !private ["Ps23CustomStringConvertible", "sync"]
+- ["Ps23CustomStringConvertible", "unsubscribe"]
+- !private ["Ps23CustomStringConvertible", "url"]
+- ["Ps23CustomStringConvertible", "userDisconnected"]
+- !private ["Ps23CustomStringConvertible", "validatedCurrentConfiguration"]
+- ["Ps23CustomStringConvertible", ""]
+- ["CSo14DispatchObject", "init"]
+- !private ["CSo14DispatchObject", "sync"]
+- ["CSo13DispatchQueue", "deinit"]
+- ["CSo13DispatchQueue", "init"]
+- !private ["CSo13DispatchQueue", "sync"]
+- !private ["Ps9Equatable", "CONNECTING"]
+- !private ["Ps9Equatable", "Client"]
+- ["Ps9Equatable", "DispatchQueue"]
+- ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "OPEN"]
+- !private ["Ps9Equatable", "Parse"]
+- !private ["Ps9Equatable", "RequestId"]
+- !private ["Ps9Equatable", "SRWebSocket"]
+- !private ["Ps9Equatable", "Storage"]
+- !private ["Ps9Equatable", "Subscription"]
+- ["Ps9Equatable", "SubscriptionRecord"]
+- !private ["Ps9Equatable", "URLComponents"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "applicationId"]
+- ["Ps9Equatable", "clientKey"]
+- !private ["Ps9Equatable", "close"]
+- !private ["Ps9Equatable", "debugPrint"]
+- !private ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "disconnect"]
+- !private ["Ps9Equatable", "fatalError"]
+- ["Ps9Equatable", "host"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "open"]
+- ["Ps9Equatable", "queue"]
+- !private ["Ps9Equatable", "readyState"]
+- ["Ps9Equatable", "reconnect"]
+- ["Ps9Equatable", "requestIdGenerator"]
+- !private ["Ps9Equatable", "scheme"]
+- !private ["Ps9Equatable", "sendOperationAsync"]
+- !private ["Ps9Equatable", "server"]
+- !private ["Ps9Equatable", "setDelegateDispatchQueue"]
+- ["Ps9Equatable", "shared"]
+- ["Ps9Equatable", "socket"]
+- ["Ps9Equatable", "subscribe"]
+- ["Ps9Equatable", "subscriptions"]
+- !private ["Ps9Equatable", "sync"]
+- ["Ps9Equatable", "unsubscribe"]
+- !private ["Ps9Equatable", "url"]
+- ["Ps9Equatable", "userDisconnected"]
+- !private ["Ps9Equatable", "validatedCurrentConfiguration"]
+- ["Ps9Equatable", ""]
+- ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "filter"]
+- !private ["Ps25ExpressibleByArrayLiteral", "forEach"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "CONNECTING"]
+- !private ["Ps23ExpressibleByNilLiteral", "OPEN"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "CONNECTING"]
+- !private ["Ps8Hashable", "Client"]
+- ["Ps8Hashable", "DispatchQueue"]
+- !private ["Ps8Hashable", "OPEN"]
+- !private ["Ps8Hashable", "Parse"]
+- !private ["Ps8Hashable", "RequestId"]
+- !private ["Ps8Hashable", "SRWebSocket"]
+- !private ["Ps8Hashable", "Storage"]
+- !private ["Ps8Hashable", "Subscription"]
+- ["Ps8Hashable", "SubscriptionRecord"]
+- !private ["Ps8Hashable", "URLComponents"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "applicationId"]
+- ["Ps8Hashable", "clientKey"]
+- !private ["Ps8Hashable", "close"]
+- !private ["Ps8Hashable", "debugPrint"]
+- !private ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "disconnect"]
+- !private ["Ps8Hashable", "fatalError"]
+- ["Ps8Hashable", "host"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "open"]
+- ["Ps8Hashable", "queue"]
+- !private ["Ps8Hashable", "readyState"]
+- ["Ps8Hashable", "reconnect"]
+- ["Ps8Hashable", "requestIdGenerator"]
+- !private ["Ps8Hashable", "scheme"]
+- !private ["Ps8Hashable", "sendOperationAsync"]
+- !private ["Ps8Hashable", "server"]
+- !private ["Ps8Hashable", "setDelegateDispatchQueue"]
+- ["Ps8Hashable", "shared"]
+- ["Ps8Hashable", "socket"]
+- ["Ps8Hashable", "subscribe"]
+- ["Ps8Hashable", "subscriptions"]
+- !private ["Ps8Hashable", "sync"]
+- ["Ps8Hashable", "unsubscribe"]
+- !private ["Ps8Hashable", "url"]
+- ["Ps8Hashable", "userDisconnected"]
+- !private ["Ps8Hashable", "validatedCurrentConfiguration"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "filter"]
+- !private ["Ps9Indexable", "forEach"]
+- ["Ps9Indexable", "init"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "filter"]
+- !private ["Ps13IndexableBase", "forEach"]
+- ["Ps13IndexableBase", "init"]
+- !private ["Vs16IndexingIterator", "Element"]
+- ["Si", "deinit"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "filter"]
+- !private ["Ps17MutableCollection", "forEach"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "filter"]
+- !private ["Ps16MutableIndexable", "forEach"]
+- ["Ps16MutableIndexable", "init"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "applicationId"]
+- !private ["PSo9NSCopying", "clientKey"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "server"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Client"]
+- ["CSo8NSObject", "DispatchQueue"]
+- !private ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "PFObject"]
+- ["CSo8NSObject", "PFQuery"]
+- !private ["CSo8NSObject", "Parse"]
+- ["CSo8NSObject", "RequestId"]
+- ["CSo8NSObject", "SRWebSocket"]
+- ["CSo8NSObject", "Storage"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Subscription"]
+- ["CSo8NSObject", "SubscriptionHandling"]
+- ["CSo8NSObject", "SubscriptionRecord"]
+- ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "URLComponents"]
+- ["CSo8NSObject", "applicationId"]
+- ["CSo8NSObject", "clientKey"]
+- !private ["CSo8NSObject", "close"]
+- !private ["CSo8NSObject", "debugPrint"]
+- ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "disconnect"]
+- !private ["CSo8NSObject", "fatalError"]
+- ["CSo8NSObject", "host"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "open"]
+- ["CSo8NSObject", "queue"]
+- !private ["CSo8NSObject", "readyState"]
+- ["CSo8NSObject", "reconnect"]
+- ["CSo8NSObject", "requestIdGenerator"]
+- !private ["CSo8NSObject", "sendOperationAsync"]
+- !private ["CSo8NSObject", "server"]
+- !private ["CSo8NSObject", "setDelegateDispatchQueue"]
+- ["CSo8NSObject", "shared"]
+- ["CSo8NSObject", "socket"]
+- ["CSo8NSObject", "subscribe"]
+- ["CSo8NSObject", "subscriptions"]
+- !private ["CSo8NSObject", "sync"]
+- ["CSo8NSObject", "unsubscribe"]
+- ["CSo8NSObject", "userDisconnected"]
+- !private ["CSo8NSObject", "validatedCurrentConfiguration"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Client"]
+- ["PSo16NSObjectProtocol", "DispatchQueue"]
+- !private ["PSo16NSObjectProtocol", "Parse"]
+- !private ["PSo16NSObjectProtocol", "RequestId"]
+- !private ["PSo16NSObjectProtocol", "SRWebSocket"]
+- !private ["PSo16NSObjectProtocol", "Storage"]
+- !private ["PSo16NSObjectProtocol", "Subscription"]
+- ["PSo16NSObjectProtocol", "SubscriptionRecord"]
+- !private ["PSo16NSObjectProtocol", "URLComponents"]
+- ["PSo16NSObjectProtocol", "applicationId"]
+- ["PSo16NSObjectProtocol", "clientKey"]
+- !private ["PSo16NSObjectProtocol", "close"]
+- !private ["PSo16NSObjectProtocol", "debugPrint"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "disconnect"]
+- !private ["PSo16NSObjectProtocol", "fatalError"]
+- ["PSo16NSObjectProtocol", "host"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "open"]
+- ["PSo16NSObjectProtocol", "queue"]
+- !private ["PSo16NSObjectProtocol", "readyState"]
+- ["PSo16NSObjectProtocol", "reconnect"]
+- ["PSo16NSObjectProtocol", "requestIdGenerator"]
+- !private ["PSo16NSObjectProtocol", "sendOperationAsync"]
+- !private ["PSo16NSObjectProtocol", "server"]
+- !private ["PSo16NSObjectProtocol", "setDelegateDispatchQueue"]
+- ["PSo16NSObjectProtocol", "shared"]
+- ["PSo16NSObjectProtocol", "socket"]
+- ["PSo16NSObjectProtocol", "subscribe"]
+- ["PSo16NSObjectProtocol", "subscriptions"]
+- !private ["PSo16NSObjectProtocol", "sync"]
+- ["PSo16NSObjectProtocol", "unsubscribe"]
+- ["PSo16NSObjectProtocol", "userDisconnected"]
+- !private ["PSo16NSObjectProtocol", "validatedCurrentConfiguration"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Os5Never", "deinit"]
+- ["CSo9OS_object", "init"]
+- !private ["CSo9OS_object", "sync"]
+- ["Ps9OptionSet", "Element"]
+- !private ["Sq", "CONNECTING"]
+- !private ["Sq", "OPEN"]
+- ["Sq", "deinit"]
+- ["CSo7PFQuery", "deinit"]
+- !private ["CSo5Parse", "validatedCurrentConfiguration"]
+- !private ["CSo24ParseClientConfiguration", "applicationId"]
+- !private ["CSo24ParseClientConfiguration", "clientKey"]
+- ["CSo24ParseClientConfiguration", "deinit"]
+- !private ["CSo24ParseClientConfiguration", "server"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "filter"]
+- !private ["Ps22RandomAccessCollection", "forEach"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "filter"]
+- !private ["Ps21RandomAccessIndexable", "forEach"]
+- ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "filter"]
+- !private ["Ps26RangeReplaceableCollection", "forEach"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "filter"]
+- !private ["Ps25RangeReplaceableIndexable", "forEach"]
+- ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps16RawRepresentable", "CONNECTING"]
+- ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "OPEN"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "scheme"]
+- !private ["P10Foundation20ReferenceConvertible", "url"]
+- ["VC14ParseLiveQuery6Client9RequestId", "deinit"]
+- !private ["VC14ParseLiveQuery6Client9RequestId", "init"]
+- !private ["OSC12SRReadyState", "CONNECTING"]
+- !private ["OSC12SRReadyState", "OPEN"]
+- ["OSC12SRReadyState", "deinit"]
+- !private ["CSo11SRWebSocket", "close"]
+- ["CSo11SRWebSocket", "deinit"]
+- !private ["CSo11SRWebSocket", "delegate"]
+- !private ["CSo11SRWebSocket", "init"]
+- !private ["CSo11SRWebSocket", "open"]
+- !private ["CSo11SRWebSocket", "readyState"]
+- !private ["CSo11SRWebSocket", "setDelegateDispatchQueue"]
+- !private ["PSo19SRWebSocketDelegate", "Client"]
+- ["PSo19SRWebSocketDelegate", "DispatchQueue"]
+- !private ["PSo19SRWebSocketDelegate", "Parse"]
+- !private ["PSo19SRWebSocketDelegate", "RequestId"]
+- !private ["PSo19SRWebSocketDelegate", "SRWebSocket"]
+- !private ["PSo19SRWebSocketDelegate", "Storage"]
+- !private ["PSo19SRWebSocketDelegate", "Subscription"]
+- ["PSo19SRWebSocketDelegate", "SubscriptionRecord"]
+- !private ["PSo19SRWebSocketDelegate", "URLComponents"]
+- !private ["PSo19SRWebSocketDelegate", "applicationId"]
+- !private ["PSo19SRWebSocketDelegate", "clientKey"]
+- !private ["PSo19SRWebSocketDelegate", "debugPrint"]
+- !private ["PSo19SRWebSocketDelegate", "fatalError"]
+- !private ["PSo19SRWebSocketDelegate", "host"]
+- !private ["PSo19SRWebSocketDelegate", "init"]
+- !private ["PSo19SRWebSocketDelegate", "queue"]
+- !private ["PSo19SRWebSocketDelegate", "reconnect"]
+- !private ["PSo19SRWebSocketDelegate", "requestIdGenerator"]
+- !private ["PSo19SRWebSocketDelegate", "sendOperationAsync"]
+- !private ["PSo19SRWebSocketDelegate", "socket"]
+- !private ["PSo19SRWebSocketDelegate", "subscribe"]
+- !private ["PSo19SRWebSocketDelegate", "subscriptions"]
+- !private ["PSo19SRWebSocketDelegate", "unsubscribe"]
+- !private ["PSo19SRWebSocketDelegate", "userDisconnected"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "filter"]
+- !private ["Ps8Sequence", "forEach"]
+- ["Ps8Sequence", "init"]
+- ["Ps10SetAlgebra", "Element"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- !private ["PSo14StreamDelegate", "close"]
+- !private ["PSo14StreamDelegate", "delegate"]
+- !private ["PSo14StreamDelegate", "init"]
+- !private ["PSo14StreamDelegate", "open"]
+- !private ["PSo14StreamDelegate", "readyState"]
+- !private ["PSo14StreamDelegate", "setDelegateDispatchQueue"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- !private ["C14ParseLiveQuery12Subscription", "PFObjectSubclass"]
+- ["C14ParseLiveQuery12Subscription", "deinit"]
+- !private ["C14ParseLiveQuery12Subscription", "init"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "PFObjectSubclass"]
+- !private ["P14ParseLiveQuery20SubscriptionHandling", "init"]
+- ["CC14ParseLiveQuery6Client18SubscriptionRecord", "deinit"]
+- !private ["CC14ParseLiveQuery6Client18SubscriptionRecord", "init"]
+- !private ["CC14ParseLiveQuery6Client18SubscriptionRecord", "query"]
+- !private ["CC14ParseLiveQuery6Client18SubscriptionRecord", "requestId"]
+- !private ["CC14ParseLiveQuery6Client18SubscriptionRecord", "subscriptionHandler"]
+- ["C10BoltsSwift4Task", "deinit"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["Su", "deinit"]
+- ["V10Foundation3URL", "deinit"]
+- ["V10Foundation13URLComponents", "deinit"]
+- !private ["V10Foundation13URLComponents", "init"]
+- !private ["V10Foundation13URLComponents", "scheme"]
+- !private ["V10Foundation13URLComponents", "url"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "filter"]
+- !private ["Ps14_ArrayProtocol", "forEach"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "filter"]
+- !private ["Ps24_DestructorSafeContainer", "forEach"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "CONNECTING"]
+- !private ["Ps9_Hashable", "Client"]
+- ["Ps9_Hashable", "DispatchQueue"]
+- !private ["Ps9_Hashable", "OPEN"]
+- !private ["Ps9_Hashable", "Parse"]
+- !private ["Ps9_Hashable", "RequestId"]
+- !private ["Ps9_Hashable", "SRWebSocket"]
+- !private ["Ps9_Hashable", "Storage"]
+- !private ["Ps9_Hashable", "Subscription"]
+- ["Ps9_Hashable", "SubscriptionRecord"]
+- !private ["Ps9_Hashable", "URLComponents"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "applicationId"]
+- ["Ps9_Hashable", "clientKey"]
+- !private ["Ps9_Hashable", "close"]
+- !private ["Ps9_Hashable", "debugPrint"]
+- !private ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "disconnect"]
+- !private ["Ps9_Hashable", "fatalError"]
+- ["Ps9_Hashable", "host"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "open"]
+- ["Ps9_Hashable", "queue"]
+- !private ["Ps9_Hashable", "readyState"]
+- ["Ps9_Hashable", "reconnect"]
+- ["Ps9_Hashable", "requestIdGenerator"]
+- !private ["Ps9_Hashable", "scheme"]
+- !private ["Ps9_Hashable", "sendOperationAsync"]
+- !private ["Ps9_Hashable", "server"]
+- !private ["Ps9_Hashable", "setDelegateDispatchQueue"]
+- ["Ps9_Hashable", "shared"]
+- ["Ps9_Hashable", "socket"]
+- ["Ps9_Hashable", "subscribe"]
+- ["Ps9_Hashable", "subscriptions"]
+- !private ["Ps9_Hashable", "sync"]
+- ["Ps9_Hashable", "unsubscribe"]
+- !private ["Ps9_Hashable", "url"]
+- ["Ps9_Hashable", "userDisconnected"]
+- !private ["Ps9_Hashable", "validatedCurrentConfiguration"]
+- ["Ps9_Hashable", ""]
+- !private ["P10Foundation14_MutableBoxing", "init"]
+- !private ["P10Foundation14_MutableBoxing", "scheme"]
+- !private ["P10Foundation14_MutableBoxing", "url"]
+- !private ["Ps21_ObjectiveCBridgeable", "CONNECTING"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "OPEN"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "filter"]
+- !private ["Ps21_ObjectiveCBridgeable", "forEach"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "scheme"]
+- !private ["Ps21_ObjectiveCBridgeable", "url"]
+- !private ["Vs26_OptionalNilComparisonType", "CONNECTING"]
+- !private ["Vs26_OptionalNilComparisonType", "OPEN"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "VE8DispatchCSo13DispatchQueue10Attributes"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- "Sb"
+- "Ps7CVarArg"
+- "C14ParseLiveQuery6Client"
+- "O14ParseLiveQuery15ClientOperation"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "CSo14DispatchObject"
+- "CSo13DispatchQueue"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- !private "Ps16IteratorProtocol"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Os5Never"
+- "CSo9OS_object"
+- "Ps9OptionSet"
+- "Sq"
+- "CSo7PFQuery"
+- !private "CSo5Parse"
+- "CSo24ParseClientConfiguration"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- "VC14ParseLiveQuery6Client9RequestId"
+- "OSC12SRReadyState"
+- "CSo11SRWebSocket"
+- "PSo19SRWebSocketDelegate"
+- "Ps8Sequence"
+- "Ps10SetAlgebra"
+- "Vs12StaticString"
+- !private "PSo14StreamDelegate"
+- "SS"
+- "C14ParseLiveQuery12Subscription"
+- !private "P14ParseLiveQuery20SubscriptionHandling"
+- "CC14ParseLiveQuery6Client18SubscriptionRecord"
+- "C10BoltsSwift4Task"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Su"
+- "V10Foundation3URL"
+- "V10Foundation13URLComponents"
+- "Ps14_ArrayProtocol"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "P10Foundation14_MutableBoxing"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/ParseLiveQuery/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/ParseLiveQuery.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Parse/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Parse.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/SocketRocket/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/SocketRocket.build/module.modulemap"
+interface-hash: "b937f02aa638d720451d57ee7af24a11"

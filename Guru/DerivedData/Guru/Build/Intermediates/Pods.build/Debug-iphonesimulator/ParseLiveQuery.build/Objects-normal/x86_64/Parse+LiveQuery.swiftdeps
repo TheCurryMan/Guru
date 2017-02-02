@@ -7,10 +7,10 @@ provides-member:
 provides-dynamic-lookup:
 - "validatedCurrentConfiguration"
 depends-top-level:
-- "Parse"
-- !private "preconditionFailure"
 - !private "StringLiteralType"
+- !private "preconditionFailure"
 - "ParseClientConfiguration"
+- "Parse"
 depends-member:
 - !private ["Ps9AnyObject", "Parse"]
 - !private ["Ps9AnyObject", "currentConfiguration"]

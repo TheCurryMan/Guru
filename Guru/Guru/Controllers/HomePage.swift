@@ -10,18 +10,19 @@ import UIKit
 import Parse
 import PopupController
 
-class HomePage: UIViewController, UITextFieldDelegate {
+class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var questionField: UITextField!
     //@IBOutlet weak var subjectsEntered: UITextField!
     @IBOutlet weak var acceptButton: UIButton!
     var avail = true
     var question: PFObject?
+    var questions = [PFObject]()
+    var selectedQuestion: PFObject?
 	@IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var pointsLabel: UILabel!
-    @IBOutlet weak var answeredLabel: UILabel!
-    @IBOutlet weak var askedLabel: UILabel!
+    @IBOutlet weak var emptyTableViewLabel: UILabel!
     @IBOutlet weak var topicButton: UIButton!
     var popup = PopupController()
     var finalTopic = ""
@@ -56,6 +57,30 @@ class HomePage: UIViewController, UITextFieldDelegate {
         nc.addObserver(forName:Notification.Name(rawValue:"topic"),
                        object:nil, queue:nil,
                        using:catchNotification)
+        tableView.tableFooterView = UIView()
+        tableView.register(UINib(nibName: "RequestTableViewCell", bundle: nil), forCellReuseIdentifier: "request")
+        
+        
+        let query = PFQuery(className: "Requests")
+        query.whereKey("tutor", equalTo: PFUser.current()!)
+        query.whereKeyDoesNotExist("question.tutor")
+        query.order(byAscending: "createdAt")
+        query.includeKeys(["question", "question.student"])
+        query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+            for object in objects! {
+                self.questions.append(object["question"] as! PFObject)
+            }
+            self.tableView.reloadData()
+            if (self.questions.count == 0)
+            {
+                self.tableView.isHidden = true
+                self.emptyTableViewLabel.isHidden = false
+            }
+            else {
+                self.tableView.isHidden = false
+                self.emptyTableViewLabel.isHidden = true
+            }
+        }
         
         
     
@@ -88,21 +113,9 @@ class HomePage: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         questionField.text = ""
-        self.updateUserStats()
         self.topicButton.setTitle("Calculus", for: UIControlState.normal)
         self.topicButton.setTitleColor(UIColor(red:0.73, green:0.73, blue:0.76, alpha:1.0), for: UIControlState.normal)
-        PFUser.current()?.fetchInBackground(block: { (user: PFObject?, error: Error?) in
-            self.updateUserStats()
-        })
     }
-    
-    func updateUserStats() {
-        let user = PFUser.current()
-        self.pointsLabel.text = String(user?["points"] as! Int)
-        self.answeredLabel.text = String(user?["answered"] as! Int)
-        self.askedLabel.text = String(user?["asked"] as! Int)
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -173,8 +186,31 @@ class HomePage: UIViewController, UITextFieldDelegate {
 
         
     }
-
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return questions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "request", for: indexPath) as! RequestTableViewCell
+        cell.selectionStyle = .none
+        let currentQuestion = questions[indexPath.row]
+        cell.questionLabel.text = currentQuestion["text"] as? String
+        cell.topicLabel.text = currentQuestion["topic"] as? String
+        cell.usernameLabel.text = (currentQuestion["student"] as! PFUser).username!
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: false)
+        
+        self.selectedQuestion = self.questions[indexPath.row]
+        performSegue(withIdentifier: "accept", sender: self)
+        
+    }
+    
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -182,6 +218,10 @@ class HomePage: UIViewController, UITextFieldDelegate {
         if (segue.identifier == "loading") {
             let waitingScreen = segue.destination as! WaitingScreen
             waitingScreen.question = self.question!
+        }
+        if (segue.identifier == "accept") {
+            let vc = segue.destination as! AcceptViewController
+            vc.question = self.selectedQuestion
         }
     }
  

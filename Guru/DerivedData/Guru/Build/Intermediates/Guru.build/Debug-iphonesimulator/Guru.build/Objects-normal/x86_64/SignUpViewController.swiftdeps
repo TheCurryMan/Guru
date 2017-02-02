@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C4Guru20SignUpViewController", ""]
 provides-dynamic-lookup:
-- "password"
+- "viewDidLoad"
 - "signUp"
+- "password"
 - "viewDidAppear"
-- "submit"
-- "tappedScreen"
 - "topics"
 - "didReceiveMemoryWarning"
-- "viewDidLoad"
+- "submit"
+- "tappedScreen"
 - "username"
 depends-top-level:
 - !private "!="
-- !private "OneSignal"
-- "UIViewController"
 - !private "NSError"
-- !private "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "Void"
-- "UITextField"
-- !private "NSString"
-- !private "StringLiteralType"
-- !private "PFUser"
-- !private "BooleanLiteralType"
-- "Bool"
 - "SignUpViewController"
+- "Bool"
+- !private "CastingPrecedence"
+- !private "OneSignal"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "PFUser"
+- "UITextField"
+- !private "Void"
+- !private "StringLiteralType"
+- !private "NSString"
+- "UIViewController"
 depends-member:
 - !private ["Vs11AnyHashable", "deinit"]
 - !private ["Ps9AnyObject", "OneSignal"]
@@ -49,7 +49,6 @@ depends-member:
 - !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tappedScreen"]
 - !private ["Ps9AnyObject", "text"]
-- !private ["Ps9AnyObject", "topic"]
 - ["Ps9AnyObject", "topics"]
 - !private ["Ps9AnyObject", "userInfo"]
 - ["Ps9AnyObject", "username"]
@@ -88,7 +87,6 @@ depends-member:
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tappedScreen"]
 - !private ["Ps7CVarArg", "text"]
-- !private ["Ps7CVarArg", "topic"]
 - ["Ps7CVarArg", "topics"]
 - !private ["Ps7CVarArg", "userInfo"]
 - ["Ps7CVarArg", "username"]
@@ -129,7 +127,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tappedScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
-- !private ["Ps28CustomDebugStringConvertible", "topic"]
 - ["Ps28CustomDebugStringConvertible", "topics"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
 - ["Ps28CustomDebugStringConvertible", "username"]
@@ -178,7 +175,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tappedScreen"]
 - !private ["Ps23CustomStringConvertible", "text"]
-- !private ["Ps23CustomStringConvertible", "topic"]
 - ["Ps23CustomStringConvertible", "topics"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
 - ["Ps23CustomStringConvertible", "username"]
@@ -213,7 +209,6 @@ depends-member:
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tappedScreen"]
 - !private ["Ps9Equatable", "text"]
-- !private ["Ps9Equatable", "topic"]
 - ["Ps9Equatable", "topics"]
 - !private ["Ps9Equatable", "userInfo"]
 - ["Ps9Equatable", "username"]
@@ -260,7 +255,6 @@ depends-member:
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tappedScreen"]
 - !private ["Ps8Hashable", "text"]
-- !private ["Ps8Hashable", "topic"]
 - ["Ps8Hashable", "topics"]
 - !private ["Ps8Hashable", "userInfo"]
 - ["Ps8Hashable", "username"]
@@ -313,7 +307,6 @@ depends-member:
 - ["PSo8NSCoding", "submit"]
 - ["PSo8NSCoding", "tappedScreen"]
 - !private ["PSo8NSCoding", "text"]
-- !private ["PSo8NSCoding", "topic"]
 - ["PSo8NSCoding", "topics"]
 - !private ["PSo8NSCoding", "userInfo"]
 - ["PSo8NSCoding", "username"]
@@ -334,7 +327,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "signUp"]
 - ["PSo26NSExtensionRequestHandling", "submit"]
 - ["PSo26NSExtensionRequestHandling", "tappedScreen"]
-- !private ["PSo26NSExtensionRequestHandling", "topic"]
 - ["PSo26NSExtensionRequestHandling", "topics"]
 - ["PSo26NSExtensionRequestHandling", "username"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
@@ -351,7 +343,6 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "components"]
 - !private ["CSo8NSObject", "current"]
-- !private ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "objectId"]
@@ -365,7 +356,6 @@ depends-member:
 - !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tappedScreen"]
 - !private ["CSo8NSObject", "text"]
-- !private ["CSo8NSObject", "topic"]
 - ["CSo8NSObject", "topics"]
 - !private ["CSo8NSObject", "userInfo"]
 - ["CSo8NSObject", "username"]
@@ -388,7 +378,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tappedScreen"]
 - !private ["PSo16NSObjectProtocol", "text"]
-- !private ["PSo16NSObjectProtocol", "topic"]
 - ["PSo16NSObjectProtocol", "topics"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
 - ["PSo16NSObjectProtocol", "username"]
@@ -448,7 +437,6 @@ depends-member:
 - ["C4Guru20SignUpViewController", "signUp"]
 - ["C4Guru20SignUpViewController", "submit"]
 - ["C4Guru20SignUpViewController", "tappedScreen"]
-- !private ["C4Guru20SignUpViewController", "topic"]
 - ["C4Guru20SignUpViewController", "topics"]
 - ["C4Guru20SignUpViewController", "username"]
 - ["C4Guru20SignUpViewController", "viewDidAppear"]
@@ -488,7 +476,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "submit"]
 - ["PSo21UIAppearanceContainer", "tappedScreen"]
 - !private ["PSo21UIAppearanceContainer", "text"]
-- !private ["PSo21UIAppearanceContainer", "topic"]
 - ["PSo21UIAppearanceContainer", "topics"]
 - ["PSo21UIAppearanceContainer", "username"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
@@ -503,7 +490,6 @@ depends-member:
 - ["PSo18UIContentContainer", "signUp"]
 - ["PSo18UIContentContainer", "submit"]
 - ["PSo18UIContentContainer", "tappedScreen"]
-- !private ["PSo18UIContentContainer", "topic"]
 - ["PSo18UIContentContainer", "topics"]
 - ["PSo18UIContentContainer", "username"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
@@ -528,7 +514,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "submit"]
 - ["PSo18UIFocusEnvironment", "tappedScreen"]
 - !private ["PSo18UIFocusEnvironment", "text"]
-- !private ["PSo18UIFocusEnvironment", "topic"]
 - ["PSo18UIFocusEnvironment", "topics"]
 - ["PSo18UIFocusEnvironment", "username"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
@@ -545,7 +530,6 @@ depends-member:
 - !private ["CSo11UIResponder", "PFUser"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "Void"]
-- !private ["CSo11UIResponder", "deinit"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "password"]
@@ -555,7 +539,6 @@ depends-member:
 - ["CSo11UIResponder", "submit"]
 - ["CSo11UIResponder", "tappedScreen"]
 - !private ["CSo11UIResponder", "text"]
-- !private ["CSo11UIResponder", "topic"]
 - ["CSo11UIResponder", "topics"]
 - ["CSo11UIResponder", "username"]
 - ["CSo11UIResponder", "viewDidAppear"]
@@ -571,7 +554,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "submit"]
 - ["PSo30UIResponderStandardEditActions", "tappedScreen"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
-- !private ["PSo30UIResponderStandardEditActions", "topic"]
 - ["PSo30UIResponderStandardEditActions", "topics"]
 - ["PSo30UIResponderStandardEditActions", "username"]
 - ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
@@ -586,7 +568,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "signUp"]
 - ["PSo16UIStateRestoring", "submit"]
 - ["PSo16UIStateRestoring", "tappedScreen"]
-- !private ["PSo16UIStateRestoring", "topic"]
 - ["PSo16UIStateRestoring", "topics"]
 - ["PSo16UIStateRestoring", "username"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
@@ -609,7 +590,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "submit"]
 - ["PSo18UITraitEnvironment", "tappedScreen"]
 - !private ["PSo18UITraitEnvironment", "text"]
-- !private ["PSo18UITraitEnvironment", "topic"]
 - ["PSo18UITraitEnvironment", "topics"]
 - ["PSo18UITraitEnvironment", "username"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
@@ -632,7 +612,6 @@ depends-member:
 - ["CSo16UIViewController", "signUp"]
 - ["CSo16UIViewController", "submit"]
 - ["CSo16UIViewController", "tappedScreen"]
-- !private ["CSo16UIViewController", "topic"]
 - ["CSo16UIViewController", "topics"]
 - ["CSo16UIViewController", "username"]
 - ["CSo16UIViewController", "viewDidAppear"]
@@ -676,7 +655,6 @@ depends-member:
 - !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tappedScreen"]
 - !private ["Ps9_Hashable", "text"]
-- !private ["Ps9_Hashable", "topic"]
 - ["Ps9_Hashable", "topics"]
 - !private ["Ps9_Hashable", "userInfo"]
 - ["Ps9_Hashable", "username"]
@@ -917,6 +895,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "318544466cd2ffc4ddb462f8da490de9"

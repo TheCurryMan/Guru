@@ -16,11 +16,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Int"
-- "AnyObject"
 - "Bool"
-- "Error"
-- "String"
 - "LiveQueryErrors"
+- "Error"
+- "AnyObject"
+- "String"
 depends-member:
 - ["Sb", "deinit"]
 - ["Vs10Dictionary", "deinit"]

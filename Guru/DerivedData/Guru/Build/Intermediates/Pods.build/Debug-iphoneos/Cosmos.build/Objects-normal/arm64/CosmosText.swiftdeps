@@ -1,0 +1,148 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CosmosText"
+provides-nominal:
+- "C6Cosmos10CosmosText"
+provides-member:
+- ["C6Cosmos10CosmosText", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Double"
+- "CALayer"
+- !private "+"
+- "AssignmentPrecedence"
+- "CGSize"
+- !private "CGFloat"
+- !private "-"
+- !private "/"
+- "CosmosText"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "position"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["CSo7CALayer", "bounds"]
+- ["CSo7CALayer", "deinit"]
+- !private ["CSo7CALayer", "position"]
+- !private ["PSo13CAMediaTiming", "bounds"]
+- !private ["PSo13CAMediaTiming", "position"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["VSC6CGRect", "height"]
+- ["VSC6CGSize", "deinit"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "position"]
+- !private ["Ps10Comparable", "init"]
+- ["C6Cosmos10CosmosText", "CALayer"]
+- !private ["C6Cosmos10CosmosText", "CGFloat"]
+- ["C6Cosmos10CosmosText", "CGSize"]
+- ["C6Cosmos10CosmosText", "Double"]
+- ["C6Cosmos10CosmosText", "deinit"]
+- ["C6Cosmos10CosmosText", "init"]
+- ["C6Cosmos10CosmosText", "position"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "position"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps28CustomDebugStringConvertible", "y"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "x"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "y"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps17CustomReflectable", "x"]
+- !private ["Ps17CustomReflectable", "y"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "position"]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "position"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "y"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "position"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "position"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "position"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "position"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "position"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
+- "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- "VSC6CGSize"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "C6Cosmos10CosmosText"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Sd"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps13FloatingPoint"
+- !private "Ps8Hashable"
+- !private "PSo8NSCoding"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Cosmos/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Cosmos.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "ef1273fd2c9a76b46e7223a2a509c65b"

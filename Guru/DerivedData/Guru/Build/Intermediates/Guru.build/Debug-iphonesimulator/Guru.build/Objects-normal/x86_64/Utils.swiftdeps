@@ -10,21 +10,21 @@ provides-member:
 - ["V4Guru10TokenUtils", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "Data"
 - "Bool"
-- !private "StringLiteralType"
-- "String"
-- !private "URL"
 - "TokenUtils"
 - "BooleanLiteralType"
-- !private "NSError"
-- !private "Data"
-- !private "AnyObject"
-- !private "print"
 - "PlatformUtils"
 - !private "Array"
+- "String"
+- !private "print"
+- !private "StringLiteralType"
+- !private "NSError"
+- !private "URL"
 - !private "JSONSerialization"
-- "CastingPrecedence"
 - "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "jsonObject"]
@@ -361,6 +361,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "b11bd1264502e259bbfe71a57cb5ab35"
