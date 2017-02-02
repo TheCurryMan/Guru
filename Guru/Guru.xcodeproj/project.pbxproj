@@ -31,6 +31,7 @@
 		E1044E8A1E4172C500ED262B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1044E891E4172C500ED262B /* LaunchScreen.storyboard */; };
 		E1044E8C1E417AB700ED262B /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044E8B1E417AB700ED262B /* Review.swift */; };
 		E156A71A1E3E696400C7B4CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E156A7191E3E696400C7B4CD /* LoginViewController.swift */; };
+		E18B79721E42E86B003E61F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B79711E42E86B003E61F3 /* ProfileViewController.swift */; };
 		E1B4140F1E40366800F722B2 /* GuruReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */; };
 		E1B414121E403AB200F722B2 /* star filled.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414101E403AB200F722B2 /* star filled.png */; };
 		E1B414131E403AB200F722B2 /* star (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414111E403AB200F722B2 /* star (1).png */; };
@@ -98,6 +99,7 @@
 		E1044E891E4172C500ED262B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1044E8B1E417AB700ED262B /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		E156A7191E3E696400C7B4CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E18B79711E42E86B003E61F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruReviewViewController.swift; sourceTree = "<group>"; };
 		E1B414101E403AB200F722B2 /* star filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star filled.png"; sourceTree = "<group>"; };
 		E1B414111E403AB200F722B2 /* star (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star (1).png"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
 				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
 				E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */,
+				E18B79711E42E86B003E61F3 /* ProfileViewController.swift */,
 			);
 			name = Controllers;
 			path = /Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers;
@@ -619,6 +622,7 @@
 				77D66B851E33E34600C90E01 /* Utils.swift in Sources */,
 				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1044E8C1E417AB700ED262B /* Review.swift in Sources */,
+				E18B79721E42E86B003E61F3 /* ProfileViewController.swift in Sources */,
 				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
 				E1F3F37E1E34B64D003C281D /* DemoPopupViewController2.swift in Sources */,
 				E1B4140F1E40366800F722B2 /* GuruReviewViewController.swift in Sources */,

@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Task"
-- "Bool"
-- !private "StringLiteralType"
-- "TaskCompletionSource"
-- "Error"
 - !private "preconditionFailure"
+- "TaskCompletionSource"
 - "TaskState"
+- !private "StringLiteralType"
+- "Bool"
+- "Error"
 depends-member:
 - ["Ps9AnyObject", "Task"]
 - ["Ps9AnyObject", "init"]

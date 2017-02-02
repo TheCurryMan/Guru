@@ -11,18 +11,18 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "Int32"
 - !private "AggregateError"
-- !private "=="
 - !private "TaskCompletionSource"
-- !private "IntegerLiteralType"
-- !private "FloatLiteralType"
-- !private ">"
-- "UnicodeScalarType"
-- "Task"
 - !private "OSAtomicIncrement32"
-- "Void"
 - !private "OSAtomicDecrement32"
-- !private "fatalError"
 - "StringLiteralType"
+- "UnicodeScalarType"
+- !private "=="
+- !private "fatalError"
+- !private ">"
+- !private "IntegerLiteralType"
+- "Void"
+- !private "FloatLiteralType"
+- "Task"
 depends-member:
 - !private ["V10BoltsSwift14AggregateError", "deinit"]
 - !private ["V10BoltsSwift14AggregateError", "init"]

@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C4Guru5Point", ""]
 provides-dynamic-lookup:
-- "parseClassName"
-- "green"
 - "fromX"
+- "green"
 - "toY"
 - "red"
-- "userID"
 - "toX"
 - "blue"
-- "questionID"
 - "fromY"
+- "userID"
 - "question"
+- "questionID"
+- "parseClassName"
 depends-top-level:
 - "Double"
-- "PFSubclassing"
 - "Point"
-- !private "StringLiteralType"
 - "PFObject"
 - "String"
+- "PFSubclassing"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "blue"]
 - ["Ps9AnyObject", "fromX"]
@@ -419,6 +419,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "1a14cc7a9f3f27cdb7f657e02e28cd5a"

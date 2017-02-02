@@ -9,20 +9,20 @@ provides-member:
 - ["C10BoltsSwift4Task", "whenAllResult"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AggregateError"
-- !private "Int32"
+- !private "FloatLiteralType"
 - !private "TaskCompletionSource"
-- "StringLiteralType"
-- !private ">"
-- "UnicodeScalarType"
-- !private "=="
 - "Void"
+- "UnicodeScalarType"
 - !private "IntegerLiteralType"
+- !private "=="
+- !private "AggregateError"
+- !private "fatalError"
 - !private "OSAtomicIncrement32"
 - !private "OSAtomicDecrement32"
-- !private "fatalError"
-- !private "FloatLiteralType"
+- "StringLiteralType"
 - "Task"
+- !private ">"
+- !private "Int32"
 depends-member:
 - !private ["V10BoltsSwift14AggregateError", "deinit"]
 - !private ["V10BoltsSwift14AggregateError", "init"]

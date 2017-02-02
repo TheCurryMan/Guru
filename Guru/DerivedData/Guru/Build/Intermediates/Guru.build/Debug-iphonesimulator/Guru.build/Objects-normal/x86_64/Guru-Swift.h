@@ -213,7 +213,7 @@ SWIFT_CLASS("_TtC4Guru24GuruReviewViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified threeStar;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified fourStar;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified fiveStar;
-@property (nonatomic, strong) PFObject * _Nonnull question;
+@property (nonatomic, strong) PFObject * _Null_unspecified question;
 @property (nonatomic) NSInteger rating;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -351,6 +351,21 @@ SWIFT_CLASS("_TtC4Guru5Point")
 + (NSString * _Nonnull)parseClassName;
 - (nonnull instancetype)initWithClassName:(NSString * _Nonnull)newClassName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CosmosView;
+@class UISegmentedControl;
+
+SWIFT_CLASS("_TtC4Guru21ProfileViewController")
+@interface ProfileViewController : UIViewController
+@property (nonatomic, weak) IBOutlet CosmosView * _Null_unspecified reviewBar;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified topicsBar;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)exitView:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

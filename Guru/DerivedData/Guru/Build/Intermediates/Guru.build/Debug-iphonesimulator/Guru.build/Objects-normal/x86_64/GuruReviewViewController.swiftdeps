@@ -6,40 +6,39 @@ provides-nominal:
 provides-member:
 - ["C4Guru24GuruReviewViewController", ""]
 provides-dynamic-lookup:
-- "clearAllStars"
-- "oneStar"
-- "fiveStarReview"
 - "fourStar"
-- "submitReview"
-- "twoStarReview"
-- "rating"
+- "viewDidLoad"
+- "twoStar"
+- "clearAllStars"
 - "reviewLabel"
 - "fiveStar"
-- "oneStarReview"
+- "rating"
+- "fourStarReview"
+- "question"
+- "fiveStarReview"
 - "didReceiveMemoryWarning"
-- "twoStar"
+- "submitReview"
 - "threeStarReview"
 - "threeStar"
-- "fourStarReview"
-- "viewDidLoad"
-- "question"
+- "oneStarReview"
+- "twoStarReview"
+- "oneStar"
 depends-top-level:
-- !private "UIImage"
-- !private "print"
-- "UIButton"
-- "AssignmentPrecedence"
-- "Int"
-- "PFObject"
-- !private "StringLiteralType"
-- "GuruReviewViewController"
-- "UIViewController"
-- "UILabel"
-- !private "Void"
 - "BooleanLiteralType"
+- "GuruReviewViewController"
+- "UILabel"
+- "UIButton"
+- !private "UIImage"
+- !private "StringLiteralType"
+- "Int"
+- !private "print"
+- "UIViewController"
+- "AssignmentPrecedence"
+- !private "Void"
+- "PFObject"
 - !private "Review"
 depends-member:
 - ["Ps9AnyObject", "Int"]
-- ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "Review"]
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "clearAllStars"]
@@ -49,7 +48,7 @@ depends-member:
 - ["Ps9AnyObject", "fiveStarReview"]
 - ["Ps9AnyObject", "fourStar"]
 - ["Ps9AnyObject", "fourStarReview"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "oneStar"]
 - ["Ps9AnyObject", "oneStarReview"]
 - !private ["Ps9AnyObject", "print"]
@@ -77,7 +76,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "window"]
 - ["Ps7CVarArg", "Int"]
-- ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "Review"]
 - !private ["Ps7CVarArg", "UIImage"]
 - ["Ps7CVarArg", "clearAllStars"]
@@ -109,7 +107,6 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "Int"]
-- ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "Review"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - ["Ps28CustomDebugStringConvertible", "clearAllStars"]
@@ -119,7 +116,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "fiveStarReview"]
 - ["Ps28CustomDebugStringConvertible", "fourStar"]
 - ["Ps28CustomDebugStringConvertible", "fourStarReview"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "oneStar"]
 - ["Ps28CustomDebugStringConvertible", "oneStarReview"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -144,7 +141,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "Int"]
-- ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "Review"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -176,7 +172,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "Int"]
-- ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "Review"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -244,7 +239,6 @@ depends-member:
 - !private ["C4Guru24GuruReviewViewController", "view"]
 - ["C4Guru24GuruReviewViewController", "viewDidLoad"]
 - ["Ps8Hashable", "Int"]
-- ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "Review"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -285,7 +279,6 @@ depends-member:
 - ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
 - ["PSo8NSCoding", "Int"]
-- ["PSo8NSCoding", "PFObject"]
 - !private ["PSo8NSCoding", "Review"]
 - !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "clearAllStars"]
@@ -316,7 +309,6 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - ["PSo26NSExtensionRequestHandling", "Int"]
-- ["PSo26NSExtensionRequestHandling", "PFObject"]
 - !private ["PSo26NSExtensionRequestHandling", "Review"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "clearAllStars"]
@@ -376,7 +368,6 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "window"]
 - ["PSo16NSObjectProtocol", "Int"]
-- ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "Review"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "clearAllStars"]
@@ -386,7 +377,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "fiveStarReview"]
 - ["PSo16NSObjectProtocol", "fourStar"]
 - ["PSo16NSObjectProtocol", "fourStarReview"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "oneStar"]
 - ["PSo16NSObjectProtocol", "oneStarReview"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -410,8 +401,7 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - !private ["Ps9OptionSet", "normal"]
 - ["Sq", "deinit"]
-- ["CSo8PFObject", "deinit"]
-- ["CSo8PFObject", "init"]
+- !private ["CSo8PFObject", "init"]
 - !private ["CSo8PFObject", "question"]
 - !private ["CSo8PFObject", "rating"]
 - !private ["CSo8PFObject", "saveInBackground"]
@@ -443,7 +433,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "window"]
 - ["PSo21UIAppearanceContainer", "Int"]
-- ["PSo21UIAppearanceContainer", "PFObject"]
 - !private ["PSo21UIAppearanceContainer", "Review"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "clearAllStars"]
@@ -474,7 +463,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "setImage"]
 - ["PSo18UIContentContainer", "Int"]
-- ["PSo18UIContentContainer", "PFObject"]
 - !private ["PSo18UIContentContainer", "Review"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "clearAllStars"]
@@ -512,7 +500,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "window"]
 - ["PSo18UIFocusEnvironment", "Int"]
-- ["PSo18UIFocusEnvironment", "PFObject"]
 - !private ["PSo18UIFocusEnvironment", "Review"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "clearAllStars"]
@@ -580,7 +567,6 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo11UIResponder", "window"]
 - ["PSo30UIResponderStandardEditActions", "Int"]
-- ["PSo30UIResponderStandardEditActions", "PFObject"]
 - !private ["PSo30UIResponderStandardEditActions", "Review"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - ["PSo30UIResponderStandardEditActions", "clearAllStars"]
@@ -610,7 +596,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["PSo16UIStateRestoring", "Int"]
-- ["PSo16UIStateRestoring", "PFObject"]
 - !private ["PSo16UIStateRestoring", "Review"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "clearAllStars"]
@@ -636,7 +621,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["PSo18UITraitEnvironment", "Int"]
-- ["PSo18UITraitEnvironment", "PFObject"]
 - !private ["PSo18UITraitEnvironment", "Review"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "clearAllStars"]
@@ -714,7 +698,6 @@ depends-member:
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "Int"]
-- ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "Review"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -790,7 +773,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - !private "Ps9OptionSet"
 - "Sq"
-- "CSo8PFObject"
+- !private "CSo8PFObject"
 - !private "PSo13PFSubclassing"
 - !private "Ps16RawRepresentable"
 - "C4Guru6Review"
@@ -946,6 +929,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "763a5063ba6788d77294baded7961082"
+interface-hash: "48be2951e1d76abcde025a1396311624"

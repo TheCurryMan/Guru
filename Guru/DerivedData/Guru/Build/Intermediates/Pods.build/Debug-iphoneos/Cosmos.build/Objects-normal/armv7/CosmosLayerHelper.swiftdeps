@@ -1,0 +1,339 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CosmosLayerHelper"
+provides-nominal:
+- "C6Cosmos17CosmosLayerHelper"
+provides-member:
+- ["C6Cosmos17CosmosLayerHelper", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CosmosLayerHelper"
+- !private "NSFontAttributeName"
+- !private "NSString"
+- "CATextLayer"
+- "UIFont"
+- "UIColor"
+- !private "CGRect"
+- !private "CGFont"
+- !private "Dictionary"
+- !private "UIScreen"
+- "AssignmentPrecedence"
+- !private "CGPoint"
+- "CastingPrecedence"
+- "String"
+- !private "CFString"
+depends-member:
+- !private ["Ps9AnyObject", "CATextLayer"]
+- !private ["Ps9AnyObject", "CGFont"]
+- !private ["Ps9AnyObject", "CGPoint"]
+- !private ["Ps9AnyObject", "CGRect"]
+- !private ["Ps9AnyObject", "NSFontAttributeName"]
+- !private ["Ps9AnyObject", "NSString"]
+- !private ["Ps9AnyObject", "UIScreen"]
+- !private ["Ps9AnyObject", "anchorPoint"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "cgColor"]
+- !private ["Ps9AnyObject", "contentsScale"]
+- !private ["Ps9AnyObject", "font"]
+- !private ["Ps9AnyObject", "fontName"]
+- !private ["Ps9AnyObject", "fontSize"]
+- !private ["Ps9AnyObject", "foregroundColor"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "pointSize"]
+- !private ["Ps9AnyObject", "scale"]
+- !private ["Ps9AnyObject", "size"]
+- !private ["Ps9AnyObject", "string"]
+- ["Ps9AnyObject", ""]
+- !private ["CSo7CALayer", "anchorPoint"]
+- !private ["CSo7CALayer", "bounds"]
+- !private ["CSo7CALayer", "contentsScale"]
+- !private ["CSo7CALayer", "font"]
+- !private ["CSo7CALayer", "fontSize"]
+- !private ["CSo7CALayer", "foregroundColor"]
+- !private ["CSo7CALayer", "init"]
+- !private ["CSo7CALayer", "string"]
+- !private ["PSo13CAMediaTiming", "anchorPoint"]
+- !private ["PSo13CAMediaTiming", "bounds"]
+- !private ["PSo13CAMediaTiming", "contentsScale"]
+- !private ["PSo13CAMediaTiming", "font"]
+- !private ["PSo13CAMediaTiming", "fontSize"]
+- !private ["PSo13CAMediaTiming", "foregroundColor"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "string"]
+- !private ["CSo11CATextLayer", "anchorPoint"]
+- !private ["CSo11CATextLayer", "bounds"]
+- !private ["CSo11CATextLayer", "contentsScale"]
+- ["CSo11CATextLayer", "deinit"]
+- !private ["CSo11CATextLayer", "font"]
+- !private ["CSo11CATextLayer", "fontSize"]
+- !private ["CSo11CATextLayer", "foregroundColor"]
+- !private ["CSo11CATextLayer", "init"]
+- !private ["CSo11CATextLayer", "string"]
+- ["CSo8CFString", "deinit"]
+- ["CSo7CGColor", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["CSo6CGFont", "init"]
+- ["VSC7CGPoint", "deinit"]
+- !private ["VSC7CGPoint", "init"]
+- ["VSC6CGRect", "deinit"]
+- !private ["VSC6CGRect", "init"]
+- ["VSC6CGSize", "deinit"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "anchorPoint"]
+- !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "cgColor"]
+- !private ["Ps7CVarArg", "contentsScale"]
+- !private ["Ps7CVarArg", "font"]
+- !private ["Ps7CVarArg", "fontName"]
+- !private ["Ps7CVarArg", "fontSize"]
+- !private ["Ps7CVarArg", "foregroundColor"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "pointSize"]
+- !private ["Ps7CVarArg", "scale"]
+- !private ["Ps7CVarArg", "size"]
+- !private ["Ps7CVarArg", "string"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "Value"]
+- ["C6Cosmos17CosmosLayerHelper", "CATextLayer"]
+- !private ["C6Cosmos17CosmosLayerHelper", "CFString"]
+- !private ["C6Cosmos17CosmosLayerHelper", "CGFont"]
+- !private ["C6Cosmos17CosmosLayerHelper", "CGPoint"]
+- !private ["C6Cosmos17CosmosLayerHelper", "CGRect"]
+- !private ["C6Cosmos17CosmosLayerHelper", "NSFontAttributeName"]
+- !private ["C6Cosmos17CosmosLayerHelper", "NSString"]
+- ["C6Cosmos17CosmosLayerHelper", "String"]
+- ["C6Cosmos17CosmosLayerHelper", "UIColor"]
+- ["C6Cosmos17CosmosLayerHelper", "UIFont"]
+- !private ["C6Cosmos17CosmosLayerHelper", "UIScreen"]
+- ["C6Cosmos17CosmosLayerHelper", "createTextLayer"]
+- ["C6Cosmos17CosmosLayerHelper", "deinit"]
+- ["C6Cosmos17CosmosLayerHelper", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "anchorPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "cgColor"]
+- !private ["Ps28CustomDebugStringConvertible", "contentsScale"]
+- !private ["Ps28CustomDebugStringConvertible", "font"]
+- !private ["Ps28CustomDebugStringConvertible", "fontName"]
+- !private ["Ps28CustomDebugStringConvertible", "fontSize"]
+- !private ["Ps28CustomDebugStringConvertible", "foregroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "pointSize"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "string"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "anchorPoint"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "cgColor"]
+- !private ["Ps23CustomStringConvertible", "contentsScale"]
+- !private ["Ps23CustomStringConvertible", "font"]
+- !private ["Ps23CustomStringConvertible", "fontName"]
+- !private ["Ps23CustomStringConvertible", "fontSize"]
+- !private ["Ps23CustomStringConvertible", "foregroundColor"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "pointSize"]
+- !private ["Ps23CustomStringConvertible", "scale"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- !private ["Ps23CustomStringConvertible", "string"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Ps9Equatable", "anchorPoint"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "cgColor"]
+- !private ["Ps9Equatable", "contentsScale"]
+- !private ["Ps9Equatable", "font"]
+- !private ["Ps9Equatable", "fontName"]
+- !private ["Ps9Equatable", "fontSize"]
+- !private ["Ps9Equatable", "foregroundColor"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "pointSize"]
+- !private ["Ps9Equatable", "scale"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "string"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "size"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "size"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "size"]
+- !private ["Ps8Hashable", "anchorPoint"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "cgColor"]
+- !private ["Ps8Hashable", "contentsScale"]
+- !private ["Ps8Hashable", "font"]
+- !private ["Ps8Hashable", "fontName"]
+- !private ["Ps8Hashable", "fontSize"]
+- !private ["Ps8Hashable", "foregroundColor"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "pointSize"]
+- !private ["Ps8Hashable", "scale"]
+- !private ["Ps8Hashable", "size"]
+- !private ["Ps8Hashable", "string"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "Value"]
+- !private ["PSo8NSCoding", "anchorPoint"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "cgColor"]
+- !private ["PSo8NSCoding", "contentsScale"]
+- !private ["PSo8NSCoding", "font"]
+- !private ["PSo8NSCoding", "fontSize"]
+- !private ["PSo8NSCoding", "foregroundColor"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "size"]
+- !private ["PSo8NSCoding", "string"]
+- !private ["PSo9NSCopying", "cgColor"]
+- !private ["PSo9NSCopying", "fontName"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "pointSize"]
+- !private ["PSo9NSCopying", "size"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "size"]
+- !private ["CSo8NSObject", "anchorPoint"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "cgColor"]
+- !private ["CSo8NSObject", "contentsScale"]
+- !private ["CSo8NSObject", "font"]
+- !private ["CSo8NSObject", "fontName"]
+- !private ["CSo8NSObject", "fontSize"]
+- !private ["CSo8NSObject", "foregroundColor"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "pointSize"]
+- !private ["CSo8NSObject", "scale"]
+- !private ["CSo8NSObject", "size"]
+- !private ["CSo8NSObject", "string"]
+- !private ["PSo16NSObjectProtocol", "anchorPoint"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "cgColor"]
+- !private ["PSo16NSObjectProtocol", "contentsScale"]
+- !private ["PSo16NSObjectProtocol", "font"]
+- !private ["PSo16NSObjectProtocol", "fontName"]
+- !private ["PSo16NSObjectProtocol", "fontSize"]
+- !private ["PSo16NSObjectProtocol", "foregroundColor"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "pointSize"]
+- !private ["PSo16NSObjectProtocol", "scale"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- !private ["PSo16NSObjectProtocol", "string"]
+- !private ["PSo14NSSecureCoding", "cgColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "size"]
+- ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "size"]
+- ["Sq", "deinit"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "Value"]
+- ["SS", "deinit"]
+- !private ["CSo7UIColor", "cgColor"]
+- ["CSo7UIColor", "deinit"]
+- ["CSo6UIFont", "deinit"]
+- !private ["CSo6UIFont", "fontName"]
+- !private ["CSo6UIFont", "pointSize"]
+- ["CSo8UIScreen", "deinit"]
+- !private ["CSo8UIScreen", "main"]
+- !private ["CSo8UIScreen", "scale"]
+- !private ["PSo18UITraitEnvironment", "main"]
+- !private ["PSo18UITraitEnvironment", "scale"]
+- !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "size"]
+- !private ["Ps9_Hashable", "anchorPoint"]
+- !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "cgColor"]
+- !private ["Ps9_Hashable", "contentsScale"]
+- !private ["Ps9_Hashable", "font"]
+- !private ["Ps9_Hashable", "fontName"]
+- !private ["Ps9_Hashable", "fontSize"]
+- !private ["Ps9_Hashable", "foregroundColor"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "pointSize"]
+- !private ["Ps9_Hashable", "scale"]
+- !private ["Ps9_Hashable", "size"]
+- !private ["Ps9_Hashable", "string"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- "CSo11CATextLayer"
+- "CSo8CFString"
+- "CSo7CGColor"
+- "V12CoreGraphics7CGFloat"
+- !private "CSo6CGFont"
+- "VSC7CGPoint"
+- "VSC6CGRect"
+- "VSC6CGSize"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- "C6Cosmos17CosmosLayerHelper"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- !private "Ps9Equatable"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Sq"
+- !private "Ps8Sequence"
+- "SS"
+- "CSo7UIColor"
+- "CSo6UIFont"
+- "CSo8UIScreen"
+- !private "PSo18UITraitEnvironment"
+- !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Cosmos/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Cosmos.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+interface-hash: "35e8cb8909bdcd9cbeb867c7bf65998a"

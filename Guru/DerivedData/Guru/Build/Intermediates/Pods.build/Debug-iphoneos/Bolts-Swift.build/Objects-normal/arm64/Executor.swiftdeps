@@ -7,20 +7,20 @@ provides-member:
 - ["O10BoltsSwift8Executor", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- !private "Int"
 - "DispatchQueue"
-- "Executor"
-- "Void"
-- !private "Thread"
-- "Foundation"
-- !private ">"
 - !private "+"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "CustomStringConvertible"
-- "String"
 - "CustomDebugStringConvertible"
+- "CustomStringConvertible"
+- "Foundation"
+- !private "Thread"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "StringLiteralType"
+- "String"
+- "Void"
+- "Executor"
+- !private "Int"
+- !private ">"
 depends-member:
 - !private ["Ps9AnyObject", "addOperation"]
 - !private ["Ps9AnyObject", "async"]

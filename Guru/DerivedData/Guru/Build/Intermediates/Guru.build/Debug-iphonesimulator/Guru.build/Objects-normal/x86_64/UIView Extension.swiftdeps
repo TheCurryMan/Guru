@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 - "setRounded"
 - "shake"
 depends-top-level:
-- !private "/"
-- "AssignmentPrecedence"
-- !private "CATransform3DMakeTranslation"
-- !private "CAKeyframeAnimation"
-- !private "BooleanLiteralType"
-- !private "Array"
-- "UIView"
 - !private "StringLiteralType"
+- "UIView"
+- !private "CATransform3DMakeTranslation"
 - !private "NSValue"
+- !private "/"
+- !private "BooleanLiteralType"
+- !private "CAKeyframeAnimation"
+- "AssignmentPrecedence"
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "CAKeyframeAnimation"]
 - !private ["Ps9AnyObject", "CATransform3DMakeTranslation"]
@@ -542,6 +542,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "81705e71790a4d098a3e0df5af1cd09e"

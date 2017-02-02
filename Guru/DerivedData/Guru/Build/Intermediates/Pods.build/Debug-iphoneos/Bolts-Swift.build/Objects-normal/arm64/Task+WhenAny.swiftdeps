@@ -7,9 +7,9 @@ provides-member:
 - ["C10BoltsSwift4Task", "whenAny"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Void"
-- "Task"
 - !private "TaskCompletionSource"
+- "Task"
+- "Void"
 depends-member:
 - !private ["Ps9AnyObject", "Task"]
 - !private ["Ps9AnyObject", "TaskCompletionSource"]

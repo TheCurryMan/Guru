@@ -353,6 +353,17 @@ SWIFT_CLASS("_TtC4Guru5Point")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class CosmosView;
+
+SWIFT_CLASS("_TtC4Guru21ProfileViewController")
+@interface ProfileViewController : UIViewController
+@property (nonatomic, weak) IBOutlet CosmosView * _Null_unspecified reviewBar;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC4Guru20RequestTableViewCell")
 @interface RequestTableViewCell : UITableViewCell

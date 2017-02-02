@@ -10,21 +10,21 @@ provides-member:
 - ["O14ParseLiveQuery14ServerResponse", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Dictionary"
+- "Bool"
+- "Client"
 - "AnyObject"
 - !private "LiveQueryErrors"
+- "Int"
+- !private "Dictionary"
+- "String"
+- !private "StringLiteralType"
 - !private "~="
 - "AssignmentPrecedence"
-- "ClientOperation"
 - "PFObject"
 - !private "CastingPrecedence"
-- "PFQuery"
-- "Int"
+- "ClientOperation"
 - "ServerResponse"
-- !private "StringLiteralType"
-- "Client"
-- "Bool"
-- "String"
+- "PFQuery"
 depends-member:
 - ["Ps9AnyObject", "RequestId"]
 - !private ["Ps9AnyObject", "deinit"]

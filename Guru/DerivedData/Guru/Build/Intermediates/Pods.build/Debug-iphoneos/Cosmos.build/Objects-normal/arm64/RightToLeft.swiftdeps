@@ -1,0 +1,137 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RightToLeft"
+provides-nominal:
+- "V6Cosmos11RightToLeft"
+provides-member:
+- ["V6Cosmos11RightToLeft", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "RightToLeft"
+- "Bool"
+- "UIView"
+- !private "UIApplication"
+depends-member:
+- !private ["Ps9AnyObject", "semanticContentAttribute"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "userInterfaceLayoutDirection"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "semanticContentAttribute"]
+- !private ["PSo15CALayerDelegate", "userInterfaceLayoutDirection"]
+- !private ["Ps7CVarArg", "semanticContentAttribute"]
+- !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "userInterfaceLayoutDirection"]
+- !private ["Ps28CustomDebugStringConvertible", "semanticContentAttribute"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "userInterfaceLayoutDirection"]
+- !private ["Ps23CustomStringConvertible", "semanticContentAttribute"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "userInterfaceLayoutDirection"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "rightToLeft"]
+- !private ["Ps9Equatable", "semanticContentAttribute"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "userInterfaceLayoutDirection"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "rightToLeft"]
+- !private ["Ps8Hashable", "semanticContentAttribute"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "userInterfaceLayoutDirection"]
+- !private ["PSo8NSCoding", "semanticContentAttribute"]
+- !private ["PSo8NSCoding", "userInterfaceLayoutDirection"]
+- !private ["CSo8NSObject", "semanticContentAttribute"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "userInterfaceLayoutDirection"]
+- !private ["PSo16NSObjectProtocol", "semanticContentAttribute"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "userInterfaceLayoutDirection"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "rightToLeft"]
+- ["V6Cosmos11RightToLeft", "Bool"]
+- !private ["V6Cosmos11RightToLeft", "UIApplication"]
+- ["V6Cosmos11RightToLeft", "UIView"]
+- ["V6Cosmos11RightToLeft", "init"]
+- ["V6Cosmos11RightToLeft", "isRightToLeft"]
+- !private ["PSo29UIAccessibilityIdentification", "semanticContentAttribute"]
+- !private ["PSo29UIAccessibilityIdentification", "userInterfaceLayoutDirection"]
+- !private ["PSo12UIAppearance", "semanticContentAttribute"]
+- !private ["PSo12UIAppearance", "userInterfaceLayoutDirection"]
+- !private ["PSo21UIAppearanceContainer", "semanticContentAttribute"]
+- !private ["PSo21UIAppearanceContainer", "userInterfaceLayoutDirection"]
+- ["CSo13UIApplication", "deinit"]
+- !private ["CSo13UIApplication", "shared"]
+- !private ["CSo13UIApplication", "userInterfaceLayoutDirection"]
+- !private ["PSo17UICoordinateSpace", "semanticContentAttribute"]
+- !private ["PSo17UICoordinateSpace", "userInterfaceLayoutDirection"]
+- !private ["PSo13UIDynamicItem", "semanticContentAttribute"]
+- !private ["PSo13UIDynamicItem", "userInterfaceLayoutDirection"]
+- !private ["PSo18UIFocusEnvironment", "semanticContentAttribute"]
+- !private ["PSo18UIFocusEnvironment", "userInterfaceLayoutDirection"]
+- !private ["PSo11UIFocusItem", "semanticContentAttribute"]
+- !private ["PSo11UIFocusItem", "userInterfaceLayoutDirection"]
+- !private ["CSo11UIResponder", "semanticContentAttribute"]
+- !private ["CSo11UIResponder", "shared"]
+- !private ["CSo11UIResponder", "userInterfaceLayoutDirection"]
+- !private ["PSo30UIResponderStandardEditActions", "semanticContentAttribute"]
+- !private ["PSo30UIResponderStandardEditActions", "shared"]
+- !private ["PSo30UIResponderStandardEditActions", "userInterfaceLayoutDirection"]
+- !private ["PSo18UITraitEnvironment", "semanticContentAttribute"]
+- !private ["PSo18UITraitEnvironment", "userInterfaceLayoutDirection"]
+- !private ["OSC30UIUserInterfaceLayoutDirection", "RawValue"]
+- ["OSC30UIUserInterfaceLayoutDirection", "deinit"]
+- !private ["OSC30UIUserInterfaceLayoutDirection", "rightToLeft"]
+- ["CSo6UIView", "deinit"]
+- !private ["CSo6UIView", "semanticContentAttribute"]
+- !private ["CSo6UIView", "userInterfaceLayoutDirection"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "semanticContentAttribute"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "userInterfaceLayoutDirection"]
+- !private ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "rightToLeft"]
+- !private ["Ps9_Hashable", "semanticContentAttribute"]
+- !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "userInterfaceLayoutDirection"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "PSo8NSCoding"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "Ps16RawRepresentable"
+- "V6Cosmos11RightToLeft"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- "CSo13UIApplication"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo18UITraitEnvironment"
+- "OSC30UIUserInterfaceLayoutDirection"
+- "CSo6UIView"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Cosmos/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Cosmos.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "89b73c946628cb864524edf474e34be5"

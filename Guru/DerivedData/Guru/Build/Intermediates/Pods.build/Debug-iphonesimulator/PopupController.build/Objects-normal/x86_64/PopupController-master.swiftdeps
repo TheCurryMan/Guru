@@ -1,5 +1,5 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "3b2c4d0280b6d5105ea4b818478795b7"
-build_time: [539228380, 591009000]
+build_time: [539324816, 200662000]
 inputs:
   "/Users/Avinash/Documents/Code/Guru/Guru/Pods/PopupController/Classes/PopupController.swift": [538392881, 0]
