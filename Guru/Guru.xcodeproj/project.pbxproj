@@ -32,6 +32,7 @@
 		E1044E8C1E417AB700ED262B /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044E8B1E417AB700ED262B /* Review.swift */; };
 		E156A71A1E3E696400C7B4CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E156A7191E3E696400C7B4CD /* LoginViewController.swift */; };
 		E18B79721E42E86B003E61F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B79711E42E86B003E61F3 /* ProfileViewController.swift */; };
+		E18B79741E43009F003E61F3 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = E18B79731E43009F003E61F3 /* user.png */; };
 		E1B4140F1E40366800F722B2 /* GuruReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */; };
 		E1B414121E403AB200F722B2 /* star filled.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414101E403AB200F722B2 /* star filled.png */; };
 		E1B414131E403AB200F722B2 /* star (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414111E403AB200F722B2 /* star (1).png */; };
@@ -100,6 +101,7 @@
 		E1044E8B1E417AB700ED262B /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		E156A7191E3E696400C7B4CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E18B79711E42E86B003E61F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E18B79731E43009F003E61F3 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruReviewViewController.swift; sourceTree = "<group>"; };
 		E1B414101E403AB200F722B2 /* star filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star filled.png"; sourceTree = "<group>"; };
 		E1B414111E403AB200F722B2 /* star (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star (1).png"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		77A86A041E3EE4FB00D23385 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E18B79731E43009F003E61F3 /* user.png */,
 				AFFAD9DD1E40094200A7A33D /* pencil.png */,
 				E1F3F3371E331BB4003C281D /* Assets.xcassets */,
 				AF2821641E33440500493A74 /* circle.png */,
@@ -447,6 +450,7 @@
 				E1F3F37B1E345698003C281D /* mute (2).png in Resources */,
 				AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */,
 				AF2821691E33466700493A74 /* Guru_green.png in Resources */,
+				E18B79741E43009F003E61F3 /* user.png in Resources */,
 				E1F3F37F1E34B64D003C281D /* DemoPopupViewController2.storyboard in Resources */,
 				E1F3F3731E33F058003C281D /* cancel (1).png in Resources */,
 				E1F3F3721E33F058003C281D /* checked (1).png in Resources */,

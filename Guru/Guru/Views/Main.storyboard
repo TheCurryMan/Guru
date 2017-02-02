@@ -374,15 +374,15 @@
                                     <action selector="pressedAsk:" destination="0ja-Hk-275" eventType="touchUpInside" id="B1d-nE-7HG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3JH-5G-JsH">
-                                <rect key="frame" x="292" y="34" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2P5-yS-rVH">
+                                <rect key="frame" x="152" y="82" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="Profile">
+                                <state key="normal" title="Logout">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PVY-kk-pub" kind="modal" id="uES-H8-XQZ"/>
+                                    <action selector="logout:" destination="0ja-Hk-275" eventType="touchUpInside" id="b82-S4-00f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mq5-rD-XoJ">
@@ -407,15 +407,14 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2P5-yS-rVH">
-                                <rect key="frame" x="152" y="82" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3JH-5G-JsH">
+                                <rect key="frame" x="309" y="23" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="Logout">
+                                <state key="normal" image="user.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logout:" destination="0ja-Hk-275" eventType="touchUpInside" id="b82-S4-00f"/>
+                                    <segue destination="PVY-kk-pub" kind="modal" id="uES-H8-XQZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1021,6 +1020,7 @@
         <image name="mute (2).png" width="256" height="256"/>
         <image name="pencil.png" width="128" height="128"/>
         <image name="star (1).png" width="256" height="256"/>
+        <image name="user.png" width="256" height="256"/>
         <image name="white_up.png" width="454" height="454"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
