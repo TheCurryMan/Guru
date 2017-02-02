@@ -8,24 +8,40 @@
 
 import UIKit
 import Parse
+import Cosmos
 
 class GuruReviewViewController: UIViewController {
 
     @IBOutlet weak var reviewLabel: UILabel!
     
-    @IBOutlet weak var oneStar: UIButton!
-    @IBOutlet weak var twoStar: UIButton!
-    @IBOutlet weak var threeStar: UIButton!
-    @IBOutlet weak var fourStar: UIButton!
-    @IBOutlet weak var fiveStar: UIButton!
+    @IBOutlet weak var reviewBar: CosmosView!
     
     var question: PFObject!
-    var rating = Int()
+    var rating = Double()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        reviewBar.rating = 0
 
         // Do any additional setup after loading the view.
+        
+        reviewBar.didFinishTouchingCosmos = { rating in
+            self.rating = rating
+            
+            if (rating <= 1) {
+                self.reviewLabel.text = "Poor"
+            } else if (rating <= 2){
+                self.reviewLabel.text = "Fair"
+            } else if (rating <= 3){
+                self.reviewLabel.text = "Good"
+            } else if (rating <= 4){
+                self.reviewLabel.text = "Very Good"
+            } else {
+                self.reviewLabel.text = "Excellent"
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,54 +49,11 @@ class GuruReviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func clearAllStars() {
-        oneStar.setImage(UIImage(named: "star (1).png"), for: .normal)
-        twoStar.setImage(UIImage(named: "star (1).png"), for: .normal)
-        threeStar.setImage(UIImage(named: "star (1).png"), for: .normal)
-        fourStar.setImage(UIImage(named: "star (1).png"), for: .normal)
-        fiveStar.setImage(UIImage(named: "star (1).png"), for: .normal)
-
-    }
-    
-    @IBAction func oneStarReview(_ sender: Any) {
-        clearAllStars()
-        oneStar.setImage(UIImage(named: "star filled.png"), for: .normal)
-        reviewLabel.text = "Poor"
-        rating = 1
-    }
-    @IBAction func twoStarReview(_ sender: Any) {
-        oneStarReview(self)
-        twoStar.setImage(UIImage(named: "star filled.png"), for: .normal)
-        reviewLabel.text = "Fair"
-        rating = 2
-    }
-    @IBAction func threeStarReview(_ sender: Any) {
-        twoStarReview(self)
-        threeStar.setImage(UIImage(named: "star filled.png"), for: .normal)
-        reviewLabel.text = "Good"
-        rating = 3
-    }
-    @IBAction func fourStarReview(_ sender: Any) {
-        threeStarReview(self)
-        fourStar.setImage(UIImage(named: "star filled.png"), for: .normal)
-        reviewLabel.text = "Very Good"
-        rating = 4
-    }
-    @IBAction func fiveStarReview(_ sender: Any) {
-        fourStarReview(self)
-        fiveStar.setImage(UIImage(named: "star filled.png"), for: .normal)
-        reviewLabel.text = "Excellent"
-        rating = 5
-    }
-    
-    
-    
-    
     @IBAction func submitReview(_ sender: Any) {
         
         let review = Review()
         review.question = question;
-        review.rating = rating
+        review.rating = Int(rating)
         review.saveInBackground {
             (success, error) -> Void in
             if (success) {
