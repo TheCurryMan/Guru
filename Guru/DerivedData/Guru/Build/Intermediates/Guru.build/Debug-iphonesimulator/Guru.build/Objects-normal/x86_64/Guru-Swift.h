@@ -203,31 +203,22 @@ SWIFT_CLASS("_TtC4Guru26GuruRequestsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+@class CosmosView;
 
 SWIFT_CLASS("_TtC4Guru24GuruReviewViewController")
 @interface GuruReviewViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified reviewLabel;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified oneStar;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified twoStar;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified threeStar;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified fourStar;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified fiveStar;
+@property (nonatomic, weak) IBOutlet CosmosView * _Null_unspecified reviewBar;
 @property (nonatomic, strong) PFObject * _Null_unspecified question;
-@property (nonatomic) NSInteger rating;
+@property (nonatomic) double rating;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (void)clearAllStars;
-- (IBAction)oneStarReview:(id _Nonnull)sender;
-- (IBAction)twoStarReview:(id _Nonnull)sender;
-- (IBAction)threeStarReview:(id _Nonnull)sender;
-- (IBAction)fourStarReview:(id _Nonnull)sender;
-- (IBAction)fiveStarReview:(id _Nonnull)sender;
 - (IBAction)submitReview:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 @class UITextField;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
@@ -356,7 +347,6 @@ SWIFT_CLASS("_TtC4Guru5Point")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CosmosView;
 @class UISegmentedControl;
 
 SWIFT_CLASS("_TtC4Guru21ProfileViewController")
