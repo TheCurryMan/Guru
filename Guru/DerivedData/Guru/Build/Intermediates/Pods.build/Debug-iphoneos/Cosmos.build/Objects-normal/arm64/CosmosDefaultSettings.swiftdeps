@@ -7,16 +7,16 @@ provides-member:
 - ["V6Cosmos21CosmosDefaultSettings", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "/"
-- "UIFont"
 - "Double"
-- "UIFontTextStyle"
-- "StarFillMode"
 - "UIScreen"
 - "UIColor"
-- "BooleanLiteralType"
+- "UIFont"
+- "/"
 - "CosmosDefaultSettings"
 - "CGPoint"
+- "StarFillMode"
+- "BooleanLiteralType"
+- "UIFontTextStyle"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "clear"]

@@ -7,13 +7,13 @@ provides-member:
 - ["V6Cosmos21CosmosLocalizedRating", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CosmosLocalizedRating"
-- !private ">"
-- "Dictionary"
 - "StringLiteralType"
+- !private ">"
+- "CosmosLocalizedRating"
+- "Dictionary"
+- "String"
 - !private "Locale"
 - "UnicodeScalarType"
-- "String"
 depends-member:
 - !private ["Ps9AnyObject", "components"]
 - ["Ps9AnyObject", "init"]

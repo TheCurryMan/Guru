@@ -7,9 +7,9 @@ provides-member:
 - ["C6Cosmos10CosmosSize", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private ">"
-- "CALayer"
 - "AssignmentPrecedence"
+- "CALayer"
+- !private ">"
 - "CosmosSize"
 - "CGSize"
 depends-member:

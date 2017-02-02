@@ -7,10 +7,10 @@ provides-member:
 - ["V6Cosmos14CosmosSettings", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CosmosSettings"
-- "CosmosDefaultSettings"
-- "CGPoint"
 - "Double"
+- "CosmosDefaultSettings"
+- "CosmosSettings"
+- "CGPoint"
 depends-member:
 - ["Sa", "deinit"]
 - ["Sb", "deinit"]

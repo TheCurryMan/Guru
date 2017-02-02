@@ -6,74 +6,76 @@ provides-nominal:
 provides-member:
 - ["C4Guru8HomePage", ""]
 provides-dynamic-lookup:
-- "pressedAsk"
-- "viewWillAppear"
-- "tapped"
-- "submitQuestion"
-- "accept"
-- "prepare"
-- "questionField"
-- "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "questions"
 - "backgroundView"
-- "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "topicButton"
+- "tapped"
+- "submitQuestion"
+- "question"
+- "showTopics"
+- "emptyTableViewLabel"
+- "pressedAsk"
+- "viewWillAppear"
+- "catchNotification"
+- "accept"
+- "questionField"
+- "popup"
+- "selectedQuestion"
+- "avail"
 - "textFieldShouldReturn"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "question"
 - "finalTopic"
-- "showTopics"
-- "catchNotification"
-- "acceptButton"
-- "popup"
 - "logout"
-- "selectedQuestion"
-- "avail"
+- "prepare"
+- "acceptButton"
 - "prefersStatusBarHidden"
 depends-top-level:
-- !private "WaitingScreen"
-- "Bool"
-- !private "AcceptViewController"
-- "BooleanLiteralType"
-- "Void"
-- "Int"
-- !private "print"
-- "UIView"
-- "Notification"
-- !private "!"
-- "HomePage"
-- !private "RequestTableViewCell"
-- "UITableViewCell"
-- "UIButton"
-- "UIStoryboardSegue"
-- !private "UIControlState"
-- !private "UIImage"
+- !private "NotificationCenter"
 - "PopupController"
-- "StringLiteralType"
+- !private "UIColor"
+- "Void"
+- "UIStoryboardSegue"
+- !private "AcceptViewController"
+- "PFObject"
+- "Bool"
+- "HomePage"
+- !private "UIControlState"
 - "UITextField"
-- !private "PFQuery"
-- !private "Error"
-- "UITableView"
-- !private "String"
-- "AnyObject"
+- "IndexPath"
+- !private "print"
+- !private "DemoPopupViewController2"
+- "CastingPrecedence"
 - !private "Array"
+- !private "!"
+- "UIButton"
 - "AssignmentPrecedence"
 - !private "=="
-- "UIViewController"
-- "CastingPrecedence"
-- "PFObject"
-- "UITableViewDataSource"
-- !private "PFUser"
-- !private "UIColor"
-- !private "NotificationCenter"
-- !private "DemoPopupViewController2"
-- "UITextFieldDelegate"
-- "IndexPath"
 - !private "UINib"
+- "UITableView"
+- "Int"
+- "UITableViewDataSource"
+- "UITableViewCell"
+- "StringLiteralType"
+- !private "UIImage"
+- !private "PFQuery"
+- "UITextFieldDelegate"
+- !private "String"
 - "UITableViewDelegate"
+- !private "RequestTableViewCell"
+- !private "PFUser"
+- !private "WaitingScreen"
+- !private "Error"
+- "UILabel"
+- "BooleanLiteralType"
+- "Notification"
+- "AnyObject"
+- "UIViewController"
+- "UIView"
 depends-member:
 - ["C4Guru20AcceptViewController", "deinit"]
 - !private ["C4Guru20AcceptViewController", "question"]
@@ -109,6 +111,7 @@ depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "didShowHandler"]
 - !private ["Ps9AnyObject", "dismiss"]
+- ["Ps9AnyObject", "emptyTableViewLabel"]
 - ["Ps9AnyObject", "finalTopic"]
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
 - !private ["Ps9AnyObject", "identifier"]
@@ -118,6 +121,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instance"]
 - !private ["Ps9AnyObject", "isEnabled"]
+- !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "logOut"]
 - ["Ps9AnyObject", "logout"]
@@ -237,6 +241,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "deselectRow"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "isEnabled"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "layer"]
 - !private ["PSo15CALayerDelegate", "questionLabel"]
 - !private ["PSo15CALayerDelegate", "register"]
@@ -295,6 +300,7 @@ depends-member:
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "didShowHandler"]
 - !private ["Ps7CVarArg", "dismiss"]
+- ["Ps7CVarArg", "emptyTableViewLabel"]
 - ["Ps7CVarArg", "finalTopic"]
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
 - !private ["Ps7CVarArg", "identifier"]
@@ -304,6 +310,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instance"]
 - !private ["Ps7CVarArg", "isEnabled"]
+- !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "logOut"]
 - ["Ps7CVarArg", "logout"]
@@ -428,6 +435,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "didShowHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- ["Ps28CustomDebugStringConvertible", "emptyTableViewLabel"]
 - ["Ps28CustomDebugStringConvertible", "finalTopic"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
@@ -437,6 +445,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instance"]
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "logOut"]
 - ["Ps28CustomDebugStringConvertible", "logout"]
@@ -571,6 +580,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "didShowHandler"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
+- ["Ps23CustomStringConvertible", "emptyTableViewLabel"]
 - ["Ps23CustomStringConvertible", "finalTopic"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
@@ -580,6 +590,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instance"]
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "logOut"]
 - ["Ps23CustomStringConvertible", "logout"]
@@ -703,6 +714,7 @@ depends-member:
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "didShowHandler"]
 - !private ["Ps9Equatable", "dismiss"]
+- ["Ps9Equatable", "emptyTableViewLabel"]
 - ["Ps9Equatable", "finalTopic"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
 - !private ["Ps9Equatable", "identifier"]
@@ -712,6 +724,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instance"]
 - !private ["Ps9Equatable", "isEnabled"]
+- !private ["Ps9Equatable", "isHidden"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "logOut"]
 - ["Ps9Equatable", "logout"]
@@ -844,6 +857,7 @@ depends-member:
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "didShowHandler"]
 - !private ["Ps8Hashable", "dismiss"]
+- ["Ps8Hashable", "emptyTableViewLabel"]
 - ["Ps8Hashable", "finalTopic"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
 - !private ["Ps8Hashable", "identifier"]
@@ -853,6 +867,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instance"]
 - !private ["Ps8Hashable", "isEnabled"]
+- !private ["Ps8Hashable", "isHidden"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "logOut"]
 - ["Ps8Hashable", "logout"]
@@ -942,6 +957,7 @@ depends-member:
 - !private ["C4Guru8HomePage", "UIColor"]
 - !private ["C4Guru8HomePage", "UIControlState"]
 - !private ["C4Guru8HomePage", "UIImage"]
+- ["C4Guru8HomePage", "UILabel"]
 - !private ["C4Guru8HomePage", "UINib"]
 - ["C4Guru8HomePage", "UIStoryboardSegue"]
 - ["C4Guru8HomePage", "UITableView"]
@@ -958,6 +974,7 @@ depends-member:
 - ["C4Guru8HomePage", "deinit"]
 - ["C4Guru8HomePage", "didReceiveMemoryWarning"]
 - !private ["C4Guru8HomePage", "dismiss"]
+- ["C4Guru8HomePage", "emptyTableViewLabel"]
 - ["C4Guru8HomePage", "finalTopic"]
 - ["C4Guru8HomePage", "indexPathForPreferredFocusedView"]
 - ["C4Guru8HomePage", "indexPathForPreferredFocusedViewInTableView"]
@@ -1100,12 +1117,14 @@ depends-member:
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "didShowHandler"]
 - !private ["PSo8NSCoding", "dismiss"]
+- ["PSo8NSCoding", "emptyTableViewLabel"]
 - ["PSo8NSCoding", "finalTopic"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedView"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "instance"]
 - !private ["PSo8NSCoding", "isEnabled"]
+- !private ["PSo8NSCoding", "isHidden"]
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "logout"]
 - ["PSo8NSCoding", "numberOfSections"]
@@ -1195,6 +1214,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "didShowHandler"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
+- ["PSo26NSExtensionRequestHandling", "emptyTableViewLabel"]
 - ["PSo26NSExtensionRequestHandling", "finalTopic"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
@@ -1265,6 +1285,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlState"]
 - !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UINib"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
@@ -1292,6 +1313,7 @@ depends-member:
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "didShowHandler"]
 - !private ["CSo8NSObject", "dismiss"]
+- ["CSo8NSObject", "emptyTableViewLabel"]
 - ["CSo8NSObject", "finalTopic"]
 - !private ["CSo8NSObject", "findObjectsInBackground"]
 - !private ["CSo8NSObject", "identifier"]
@@ -1301,6 +1323,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instance"]
 - !private ["CSo8NSObject", "isEnabled"]
+- !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "logOut"]
 - ["CSo8NSObject", "logout"]
@@ -1398,6 +1421,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "didShowHandler"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
+- ["PSo16NSObjectProtocol", "emptyTableViewLabel"]
 - ["PSo16NSObjectProtocol", "finalTopic"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
@@ -1407,6 +1431,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instance"]
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "logOut"]
 - ["PSo16NSObjectProtocol", "logout"]
@@ -1626,6 +1651,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "deselectRow"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "questionLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "register"]
@@ -1644,6 +1670,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "deselectRow"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "isEnabled"]
+- !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "questionLabel"]
 - !private ["PSo12UIAppearance", "register"]
@@ -1683,12 +1710,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "didShowHandler"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
+- ["PSo21UIAppearanceContainer", "emptyTableViewLabel"]
 - ["PSo21UIAppearanceContainer", "finalTopic"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "instance"]
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "logout"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
@@ -1780,6 +1809,7 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "didShowHandler"]
 - !private ["PSo18UIContentContainer", "dismiss"]
+- ["PSo18UIContentContainer", "emptyTableViewLabel"]
 - ["PSo18UIContentContainer", "finalTopic"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
@@ -1830,6 +1860,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "isHidden"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "resignFirstResponder"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["CSo9UIControl", "isEnabled"]
@@ -1845,6 +1876,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "deselectRow"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "isEnabled"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "questionLabel"]
 - !private ["PSo17UICoordinateSpace", "register"]
@@ -1863,6 +1895,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "deselectRow"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "isEnabled"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "questionLabel"]
 - !private ["PSo13UIDynamicItem", "register"]
@@ -1902,12 +1935,14 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "didShowHandler"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
+- ["PSo18UIFocusEnvironment", "emptyTableViewLabel"]
 - ["PSo18UIFocusEnvironment", "finalTopic"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "instance"]
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "logout"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
@@ -1971,6 +2006,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "deselectRow"]
 - !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "isEnabled"]
+- !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "layer"]
 - !private ["PSo11UIFocusItem", "questionLabel"]
 - !private ["PSo11UIFocusItem", "register"]
@@ -2000,6 +2036,7 @@ depends-member:
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
 - ["CSo7UILabel", "deinit"]
+- !private ["CSo7UILabel", "isHidden"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo5UINib", "deinit"]
 - !private ["CSo5UINib", "init"]
@@ -2022,6 +2059,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlState"]
 - !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "UINib"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
@@ -2043,12 +2081,14 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "didShowHandler"]
 - !private ["CSo11UIResponder", "dismiss"]
+- ["CSo11UIResponder", "emptyTableViewLabel"]
 - ["CSo11UIResponder", "finalTopic"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "instance"]
 - !private ["CSo11UIResponder", "isEnabled"]
+- !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "logout"]
 - ["CSo11UIResponder", "numberOfSections"]
@@ -2132,12 +2172,14 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "didShowHandler"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- ["PSo30UIResponderStandardEditActions", "emptyTableViewLabel"]
 - ["PSo30UIResponderStandardEditActions", "finalTopic"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "instance"]
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - ["PSo30UIResponderStandardEditActions", "logout"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
@@ -2199,6 +2241,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["CSo12UIScrollView", "deselectRow"]
+- !private ["CSo12UIScrollView", "isHidden"]
 - !private ["CSo12UIScrollView", "register"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["CSo12UIScrollView", "tableFooterView"]
@@ -2223,6 +2266,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "didCloseHandler"]
 - !private ["PSo20UIScrollViewDelegate", "didShowHandler"]
 - !private ["PSo20UIScrollViewDelegate", "dismiss"]
+- !private ["PSo20UIScrollViewDelegate", "emptyTableViewLabel"]
 - !private ["PSo20UIScrollViewDelegate", "finalTopic"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2288,6 +2332,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "didShowHandler"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
+- ["PSo16UIStateRestoring", "emptyTableViewLabel"]
 - ["PSo16UIStateRestoring", "finalTopic"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
@@ -2344,6 +2389,7 @@ depends-member:
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
 - !private ["CSo11UITableView", "deselectRow"]
+- !private ["CSo11UITableView", "isHidden"]
 - !private ["CSo11UITableView", "register"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "tableFooterView"]
@@ -2371,6 +2417,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "backgroundView"]
 - !private ["PSo21UITableViewDataSource", "catchNotification"]
 - !private ["PSo21UITableViewDataSource", "dismiss"]
+- !private ["PSo21UITableViewDataSource", "emptyTableViewLabel"]
 - !private ["PSo21UITableViewDataSource", "finalTopic"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -2428,6 +2475,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "backgroundView"]
 - !private ["PSo19UITableViewDelegate", "catchNotification"]
 - !private ["PSo19UITableViewDelegate", "dismiss"]
+- !private ["PSo19UITableViewDelegate", "emptyTableViewLabel"]
 - !private ["PSo19UITableViewDelegate", "finalTopic"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2488,6 +2536,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "backgroundView"]
 - !private ["PSo19UITextFieldDelegate", "catchNotification"]
 - !private ["PSo19UITextFieldDelegate", "dismiss"]
+- !private ["PSo19UITextFieldDelegate", "emptyTableViewLabel"]
 - !private ["PSo19UITextFieldDelegate", "finalTopic"]
 - ["PSo19UITextFieldDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITextFieldDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2556,12 +2605,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "didShowHandler"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
+- ["PSo18UITraitEnvironment", "emptyTableViewLabel"]
 - ["PSo18UITraitEnvironment", "finalTopic"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "instance"]
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "logout"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
@@ -2626,6 +2677,7 @@ depends-member:
 - !private ["CSo6UIView", "deselectRow"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "isEnabled"]
+- !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "questionLabel"]
 - !private ["CSo6UIView", "register"]
@@ -2659,6 +2711,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIControlState"]
 - !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "UINib"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
@@ -2679,6 +2732,7 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "didShowHandler"]
 - !private ["CSo16UIViewController", "dismiss"]
+- ["CSo16UIViewController", "emptyTableViewLabel"]
 - ["CSo16UIViewController", "finalTopic"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -2746,6 +2800,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "deselectRow"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "questionLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "register"]
@@ -2819,6 +2874,7 @@ depends-member:
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "didShowHandler"]
 - !private ["Ps9_Hashable", "dismiss"]
+- ["Ps9_Hashable", "emptyTableViewLabel"]
 - ["Ps9_Hashable", "finalTopic"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
 - !private ["Ps9_Hashable", "identifier"]
@@ -2828,6 +2884,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instance"]
 - !private ["Ps9_Hashable", "isEnabled"]
+- !private ["Ps9_Hashable", "isHidden"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "logOut"]
 - ["Ps9_Hashable", "logout"]
@@ -3200,4 +3257,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "3763d99f63179f394670dad4fb73536b"
+interface-hash: "9466f6e045fd22b92abc7fc7b7018627"

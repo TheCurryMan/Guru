@@ -10,12 +10,12 @@ provides-dynamic-lookup:
 - "rating"
 - "question"
 depends-top-level:
-- "Review"
-- "PFObject"
-- "PFSubclassing"
-- "Int"
-- "String"
 - !private "StringLiteralType"
+- "String"
+- "PFSubclassing"
+- "PFObject"
+- "Int"
+- "Review"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "object"]

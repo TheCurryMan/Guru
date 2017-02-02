@@ -7,23 +7,23 @@ provides-member:
 - ["V6Cosmos12CosmosRating", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "/"
-- !private "FloatLiteralType"
-- !private "+"
-- !private "max"
-- !private "IntegerLiteralType"
-- !private "-"
-- !private "*"
-- "AssignmentPrecedence"
-- !private ">"
-- !private "min"
-- !private "round"
-- "CosmosRating"
-- !private "floor"
-- "Int"
-- "StarFillMode"
 - "Double"
 - !private "<"
+- !private ">"
+- "AssignmentPrecedence"
+- !private "min"
+- !private "IntegerLiteralType"
+- !private "max"
+- !private "+"
+- "StarFillMode"
+- !private "FloatLiteralType"
+- !private "round"
+- "CosmosRating"
+- !private "-"
+- "Int"
+- !private "*"
+- !private "floor"
+- !private "/"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps19BinaryFloatingPoint", "init"]

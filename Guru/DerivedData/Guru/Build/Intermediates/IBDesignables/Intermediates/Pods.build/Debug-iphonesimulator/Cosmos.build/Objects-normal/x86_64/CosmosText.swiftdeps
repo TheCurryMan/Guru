@@ -7,15 +7,15 @@ provides-member:
 - ["C6Cosmos10CosmosText", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "CosmosText"
+- !private "CGFloat"
+- !private "-"
+- "CALayer"
+- "CGSize"
 - !private "/"
 - !private "+"
 - "Double"
-- "CALayer"
-- "CosmosText"
-- !private "-"
-- !private "CGFloat"
-- "AssignmentPrecedence"
-- "CGSize"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

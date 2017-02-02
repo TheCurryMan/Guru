@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C4Guru5Point", ""]
 provides-dynamic-lookup:
-- "fromX"
-- "green"
-- "toY"
-- "red"
-- "toX"
-- "blue"
-- "fromY"
 - "userID"
+- "toX"
+- "red"
+- "fromY"
+- "blue"
 - "question"
 - "questionID"
 - "parseClassName"
+- "fromX"
+- "green"
+- "toY"
 depends-top-level:
-- "Double"
-- "Point"
 - "PFObject"
+- "Point"
 - "String"
 - "PFSubclassing"
+- "Double"
 - !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "blue"]

@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "TaskCompletionSource"
-- "Task"
 - "Void"
+- "Task"
 depends-member:
 - !private ["Ps9AnyObject", "Task"]
 - !private ["Ps9AnyObject", "TaskCompletionSource"]

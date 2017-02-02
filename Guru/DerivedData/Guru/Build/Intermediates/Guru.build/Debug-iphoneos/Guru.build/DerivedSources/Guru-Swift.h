@@ -240,6 +240,7 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic, strong) PFObject * _Nullable selectedQuestion;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified backgroundView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emptyTableViewLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topicButton;
 @property (nonatomic, strong) PopupController * _Nonnull popup;
 @property (nonatomic, copy) NSString * _Nonnull finalTopic;

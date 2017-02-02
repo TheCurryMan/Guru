@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "StarFillMode"
-- "Int"
-- "=="
-- !private "~="
-- "IntegerLiteralType"
 - "FloatLiteralType"
+- "IntegerLiteralType"
+- !private "~="
+- "=="
+- "Int"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

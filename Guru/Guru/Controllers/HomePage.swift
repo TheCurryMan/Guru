@@ -22,6 +22,7 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
 	@IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var emptyTableViewLabel: UILabel!
     @IBOutlet weak var topicButton: UIButton!
     var popup = PopupController()
     var finalTopic = ""
@@ -70,6 +71,15 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
                 self.questions.append(object["question"] as! PFObject)
             }
             self.tableView.reloadData()
+            if (self.questions.count == 0)
+            {
+                self.tableView.isHidden = true
+                self.emptyTableViewLabel.isHidden = false
+            }
+            else {
+                self.tableView.isHidden = false
+                self.emptyTableViewLabel.isHidden = true
+            }
         }
         
         

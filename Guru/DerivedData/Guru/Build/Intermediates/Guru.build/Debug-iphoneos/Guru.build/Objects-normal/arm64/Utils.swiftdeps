@@ -10,21 +10,21 @@ provides-member:
 - ["V4Guru10TokenUtils", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
 - !private "Array"
-- !private "print"
+- "String"
 - !private "JSONSerialization"
 - !private "Data"
-- !private "NSError"
-- "BooleanLiteralType"
-- "PlatformUtils"
-- "String"
 - "AssignmentPrecedence"
-- !private "AnyObject"
-- "TokenUtils"
 - "CastingPrecedence"
-- !private "URL"
+- "TokenUtils"
+- !private "AnyObject"
+- !private "NSError"
+- !private "StringLiteralType"
 - "Bool"
+- "BooleanLiteralType"
+- !private "print"
+- !private "URL"
+- "PlatformUtils"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "jsonObject"]

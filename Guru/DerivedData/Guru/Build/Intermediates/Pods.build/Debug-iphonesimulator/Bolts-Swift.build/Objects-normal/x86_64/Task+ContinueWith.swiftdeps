@@ -13,14 +13,14 @@ provides-member:
 - ["C10BoltsSwift4Task", "continueOnErrorWithTask"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "abort"
-- "Task"
 - "Executor"
-- !private "TaskContinuationOptions"
 - !private "fatalError"
-- "StringLiteralType"
-- !private "CastingPrecedence"
+- "Task"
+- !private "abort"
+- !private "TaskContinuationOptions"
 - "Error"
+- !private "CastingPrecedence"
+- "StringLiteralType"
 - !private "TaskCompletionSource"
 - !private "TaskState"
 depends-member:

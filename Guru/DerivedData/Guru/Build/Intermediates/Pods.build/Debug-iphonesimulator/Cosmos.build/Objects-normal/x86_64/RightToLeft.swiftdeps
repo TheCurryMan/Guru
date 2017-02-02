@@ -7,11 +7,11 @@ provides-member:
 - ["V6Cosmos11RightToLeft", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "RightToLeft"
 - "UIView"
 - "Bool"
 - !private "=="
 - !private "UIApplication"
-- "RightToLeft"
 depends-member:
 - !private ["Ps9AnyObject", "semanticContentAttribute"]
 - !private ["Ps9AnyObject", "shared"]

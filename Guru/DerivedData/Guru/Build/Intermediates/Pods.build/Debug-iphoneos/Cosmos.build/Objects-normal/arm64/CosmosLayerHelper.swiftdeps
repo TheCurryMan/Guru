@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "CFString"
-- !private "Dictionary"
+- !private "UIScreen"
 - !private "CGPoint"
+- !private "CGRect"
+- "CastingPrecedence"
 - "UIFont"
+- "CATextLayer"
+- "AssignmentPrecedence"
+- "UIColor"
+- "CosmosLayerHelper"
 - "String"
 - !private "NSFontAttributeName"
-- !private "CGRect"
-- "UIColor"
-- !private "UIScreen"
-- "CosmosLayerHelper"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
+- !private "Dictionary"
 - !private "CGFont"
 - !private "NSString"
-- "CATextLayer"
 depends-member:
 - !private ["Ps9AnyObject", "CATextLayer"]
 - !private ["Ps9AnyObject", "CGFont"]

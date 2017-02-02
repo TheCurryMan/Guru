@@ -6,13 +6,13 @@ provides-member:
 - ["C10BoltsSwift4Task", "withDelay"]
 provides-dynamic-lookup:
 depends-top-level:
+- "TimeInterval"
+- !private "TaskCompletionSource"
+- "Task"
 - !private "+"
 - !private "DispatchQueue"
-- "TimeInterval"
 - "Void"
-- !private "TaskCompletionSource"
 - !private "DispatchTime"
-- "Task"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "DispatchTime"]

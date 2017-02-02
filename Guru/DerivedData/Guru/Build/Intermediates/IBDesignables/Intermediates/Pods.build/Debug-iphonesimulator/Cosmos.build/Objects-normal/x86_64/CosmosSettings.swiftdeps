@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "CosmosDefaultSettings"
 - "CGPoint"
-- "CosmosSettings"
 - "Double"
+- "CosmosSettings"
 depends-member:
 - ["Sa", "deinit"]
 - ["Sb", "deinit"]

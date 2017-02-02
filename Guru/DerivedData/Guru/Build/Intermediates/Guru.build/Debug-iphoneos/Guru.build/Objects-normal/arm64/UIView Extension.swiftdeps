@@ -10,14 +10,14 @@ provides-dynamic-lookup:
 - "shake"
 depends-top-level:
 - !private "CATransform3DMakeTranslation"
-- !private "/"
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
-- !private "CAKeyframeAnimation"
-- "UIView"
 - !private "Array"
+- !private "/"
+- "UIView"
 - !private "StringLiteralType"
 - !private "NSValue"
+- !private "CAKeyframeAnimation"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CAKeyframeAnimation"]
 - !private ["Ps9AnyObject", "CATransform3DMakeTranslation"]

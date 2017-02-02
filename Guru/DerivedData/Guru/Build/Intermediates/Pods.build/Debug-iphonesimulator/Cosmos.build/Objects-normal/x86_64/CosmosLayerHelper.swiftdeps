@@ -7,21 +7,21 @@ provides-member:
 - ["C6Cosmos17CosmosLayerHelper", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "CATextLayer"
 - !private "UIScreen"
-- "UIFont"
-- "CosmosLayerHelper"
-- !private "NSString"
-- "UIColor"
-- !private "CGFont"
-- "AssignmentPrecedence"
-- !private "Dictionary"
-- "CastingPrecedence"
 - !private "CFString"
 - !private "CGPoint"
+- !private "NSString"
 - "String"
-- !private "NSFontAttributeName"
 - !private "CGRect"
-- "CATextLayer"
+- "CastingPrecedence"
+- "CosmosLayerHelper"
+- "UIFont"
+- !private "NSFontAttributeName"
+- "AssignmentPrecedence"
+- !private "Dictionary"
+- !private "CGFont"
+- "UIColor"
 depends-member:
 - !private ["Ps9AnyObject", "CATextLayer"]
 - !private ["Ps9AnyObject", "CGFont"]

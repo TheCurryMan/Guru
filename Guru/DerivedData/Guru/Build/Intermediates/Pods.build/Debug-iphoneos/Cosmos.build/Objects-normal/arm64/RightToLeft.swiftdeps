@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "=="
-- "RightToLeft"
 - "Bool"
 - "UIView"
 - !private "UIApplication"
+- "RightToLeft"
 depends-member:
 - !private ["Ps9AnyObject", "semanticContentAttribute"]
 - !private ["Ps9AnyObject", "shared"]

@@ -11,9 +11,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AggregateError"
-- "AssignmentPrecedence"
 - "CancelledError"
 - "Error"
+- "AssignmentPrecedence"
 depends-member:
 - ["V10BoltsSwift14AggregateError", "Error"]
 - ["V10BoltsSwift14AggregateError", "_code"]

@@ -400,6 +400,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No questions are currently being asked! Check back again soon!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8wC-CJ-hvp">
+                                <rect key="frame" x="82" y="508" width="212" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2P5-yS-rVH">
                                 <rect key="frame" x="152" y="82" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -418,6 +425,7 @@
                     <connections>
                         <outlet property="acceptButton" destination="koS-63-Qnc" id="Q5R-cq-ctB"/>
                         <outlet property="backgroundView" destination="dRA-2A-sD9" id="N8o-TS-GFw"/>
+                        <outlet property="emptyTableViewLabel" destination="8wC-CJ-hvp" id="Jtu-CU-eFm"/>
                         <outlet property="questionField" destination="r5H-cD-kcB" id="UtV-LC-qoS"/>
                         <outlet property="tableView" destination="eUm-On-MJ8" id="kU4-PR-0Pl"/>
                         <outlet property="topicButton" destination="XiU-0b-w0Z" id="SGn-iP-VE3"/>
@@ -1022,7 +1030,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="vPi-8q-u3p"/>
+        <segue reference="F8c-Ml-Tat"/>
         <segue reference="qIo-tJ-kbc"/>
-        <segue reference="cNd-ID-MDd"/>
     </inferredMetricsTieBreakers>
 </document>

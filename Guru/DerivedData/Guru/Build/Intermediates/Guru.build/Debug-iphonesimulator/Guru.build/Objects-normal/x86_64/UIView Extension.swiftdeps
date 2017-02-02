@@ -6,17 +6,17 @@ provides-member:
 - ["CSo6UIView", "shake"]
 - ["CSo6UIView", "setRounded"]
 provides-dynamic-lookup:
-- "setRounded"
 - "shake"
+- "setRounded"
 depends-top-level:
+- !private "BooleanLiteralType"
 - !private "StringLiteralType"
+- "AssignmentPrecedence"
+- !private "CAKeyframeAnimation"
 - "UIView"
+- !private "/"
 - !private "CATransform3DMakeTranslation"
 - !private "NSValue"
-- !private "/"
-- !private "BooleanLiteralType"
-- !private "CAKeyframeAnimation"
-- "AssignmentPrecedence"
 - !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "CAKeyframeAnimation"]

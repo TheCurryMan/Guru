@@ -7,11 +7,11 @@ provides-member:
 - ["C6Cosmos10CosmosSize", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CosmosSize"
-- "AssignmentPrecedence"
-- "CGSize"
 - "CALayer"
+- "AssignmentPrecedence"
 - !private ">"
+- "CosmosSize"
+- "CGSize"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "frame"]

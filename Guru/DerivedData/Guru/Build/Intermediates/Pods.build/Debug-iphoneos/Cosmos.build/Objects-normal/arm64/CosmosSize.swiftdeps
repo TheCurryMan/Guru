@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- !private ">"
-- "CosmosSize"
-- "CGSize"
 - "CALayer"
+- "CGSize"
+- "CosmosSize"
+- !private ">"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "frame"]

@@ -7,15 +7,15 @@ provides-member:
 - ["V6Cosmos17CosmosTouchTarget", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "CGFloat"
-- !private "-"
-- "CosmosTouchTarget"
-- "CGRect"
-- !private "<"
 - "AssignmentPrecedence"
-- !private "/"
 - !private "IntegerLiteralType"
+- !private "CGFloat"
 - !private "FloatLiteralType"
+- !private "/"
+- "CosmosTouchTarget"
+- !private "-"
+- !private "<"
+- "CGRect"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]

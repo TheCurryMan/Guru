@@ -7,22 +7,22 @@ provides-member:
 - ["V6Cosmos11CosmosTouch", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "CosmosRating"
 - !private "/"
+- "Int"
+- !private "*"
+- "Double"
+- !private "+="
 - !private ">"
-- !private "max"
-- "CosmosSettings"
+- !private "<"
+- !private "=="
+- "CosmosTouch"
+- "AssignmentPrecedence"
 - !private "+"
 - !private "-="
-- !private "<"
-- "Double"
-- !private "=="
-- "AssignmentPrecedence"
 - "CGFloat"
-- "CosmosTouch"
-- !private "*"
-- !private "+="
-- "Int"
+- "CosmosSettings"
+- !private "max"
+- !private "CosmosRating"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
