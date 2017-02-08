@@ -251,17 +251,24 @@ class LDViewController: UIViewController {
         
         switch circleOut {
         case false:
-            UIView.animate(withDuration: 1, animations: {
-                self.showButtons()
+            UIView.animate(withDuration: 0.3, animations: {
                 self.bigCircle.alpha=1
+                self.bigCircle.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
                 self.circleOut=true
+            }, completion: {(finished:Bool) in
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.showButtons()
+                })
             })
-
         case true:
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: 0.1, animations: {
                 self.hideButtons()
-                self.bigCircle.alpha=0
-                self.circleOut=false
+            }, completion: {(finished:Bool) in
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.bigCircle.alpha=0
+                    self.bigCircle.transform = CGAffineTransform(scaleX: 1/1.8, y: 1/1.8)
+                    self.circleOut=false
+                })
             })
         }
     }

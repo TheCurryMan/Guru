@@ -21,6 +21,11 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var topics: UITextField!
+    @IBOutlet weak var guruLabel: UILabel!
+    @IBOutlet weak var guruLogoImg: UIImageView!
+    @IBOutlet var underlineLabels: [UIView]!
+    @IBOutlet weak var goButton: UIButton!
+    @IBOutlet weak var loginSubLabel: UIButton!
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -28,6 +33,17 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIView.animate(withDuration: 1.5, animations: {
+            self.guruLabel.alpha=1
+            self.guruLogoImg.alpha=1
+            for underline in self.underlineLabels {
+                underline.alpha=1;
+            }
+        })
+        UIView.animate(withDuration: 2.5, animations: {
+            self.goButton.alpha=1
+            self.loginSubLabel.alpha=1
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {
