@@ -12,44 +12,66 @@
 		6514C0C0DD4146398976A739 /* Pods_GuruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */; };
 		77A86A061E3EE66E00D23385 /* UIView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A86A051E3EE66E00D23385 /* UIView Extension.swift */; };
 		77BCB9CD1E345579004DF9AB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB9CC1E345579004DF9AB /* Point.swift */; };
-		77D66B831E33E1B200C90E01 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B821E33E1B200C90E01 /* VideoVC.swift */; };
 		77D66B851E33E34600C90E01 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B841E33E34600C90E01 /* Utils.swift */; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
 		AF2821631E33373500493A74 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821621E33373500493A74 /* Camera.png */; };
 		AF2821651E33440500493A74 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821641E33440500493A74 /* circle.png */; };
-		AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2821661E33448500493A74 /* WaitingScreen.swift */; };
 		AF2821691E33466700493A74 /* Guru_green.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821681E33466700493A74 /* Guru_green.png */; };
+		AF91891A1E4AAA5D00E8D458 /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91890F1E4AAA5D00E8D458 /* AcceptViewController.swift */; };
+		AF91891B1E4AAA5D00E8D458 /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91890F1E4AAA5D00E8D458 /* AcceptViewController.swift */; };
+		AF91891C1E4AAA5D00E8D458 /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91890F1E4AAA5D00E8D458 /* AcceptViewController.swift */; };
+		AF91891D1E4AAA5D00E8D458 /* DemoPopupViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189101E4AAA5D00E8D458 /* DemoPopupViewController2.swift */; };
+		AF91891E1E4AAA5D00E8D458 /* DemoPopupViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189101E4AAA5D00E8D458 /* DemoPopupViewController2.swift */; };
+		AF91891F1E4AAA5D00E8D458 /* DemoPopupViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189101E4AAA5D00E8D458 /* DemoPopupViewController2.swift */; };
+		AF9189201E4AAA5D00E8D458 /* GuruRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189111E4AAA5D00E8D458 /* GuruRequestsViewController.swift */; };
+		AF9189211E4AAA5D00E8D458 /* GuruRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189111E4AAA5D00E8D458 /* GuruRequestsViewController.swift */; };
+		AF9189221E4AAA5D00E8D458 /* GuruRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189111E4AAA5D00E8D458 /* GuruRequestsViewController.swift */; };
+		AF9189231E4AAA5D00E8D458 /* GuruReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189121E4AAA5D00E8D458 /* GuruReviewViewController.swift */; };
+		AF9189241E4AAA5D00E8D458 /* GuruReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189121E4AAA5D00E8D458 /* GuruReviewViewController.swift */; };
+		AF9189251E4AAA5D00E8D458 /* GuruReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189121E4AAA5D00E8D458 /* GuruReviewViewController.swift */; };
+		AF9189261E4AAA5D00E8D458 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189131E4AAA5D00E8D458 /* HomePage.swift */; };
+		AF9189271E4AAA5D00E8D458 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189131E4AAA5D00E8D458 /* HomePage.swift */; };
+		AF9189281E4AAA5D00E8D458 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189131E4AAA5D00E8D458 /* HomePage.swift */; };
+		AF9189291E4AAA5D00E8D458 /* LDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189141E4AAA5D00E8D458 /* LDViewController.swift */; };
+		AF91892A1E4AAA5D00E8D458 /* LDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189141E4AAA5D00E8D458 /* LDViewController.swift */; };
+		AF91892B1E4AAA5D00E8D458 /* LDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189141E4AAA5D00E8D458 /* LDViewController.swift */; };
+		AF91892C1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189151E4AAA5D00E8D458 /* LoginViewController.swift */; };
+		AF91892D1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189151E4AAA5D00E8D458 /* LoginViewController.swift */; };
+		AF91892E1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189151E4AAA5D00E8D458 /* LoginViewController.swift */; };
+		AF91892F1E4AAA5D00E8D458 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189161E4AAA5D00E8D458 /* ProfileViewController.swift */; };
+		AF9189301E4AAA5D00E8D458 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189161E4AAA5D00E8D458 /* ProfileViewController.swift */; };
+		AF9189311E4AAA5D00E8D458 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189161E4AAA5D00E8D458 /* ProfileViewController.swift */; };
+		AF9189321E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189171E4AAA5D00E8D458 /* SignUpViewController.swift */; };
+		AF9189331E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189171E4AAA5D00E8D458 /* SignUpViewController.swift */; };
+		AF9189341E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189171E4AAA5D00E8D458 /* SignUpViewController.swift */; };
+		AF9189351E4AAA5D00E8D458 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189181E4AAA5D00E8D458 /* VideoVC.swift */; };
+		AF9189361E4AAA5D00E8D458 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189181E4AAA5D00E8D458 /* VideoVC.swift */; };
+		AF9189371E4AAA5D00E8D458 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189181E4AAA5D00E8D458 /* VideoVC.swift */; };
+		AF9189381E4AAA5D00E8D458 /* WaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189191E4AAA5D00E8D458 /* WaitingScreen.swift */; };
+		AF9189391E4AAA5D00E8D458 /* WaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189191E4AAA5D00E8D458 /* WaitingScreen.swift */; };
+		AF91893A1E4AAA5D00E8D458 /* WaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9189191E4AAA5D00E8D458 /* WaitingScreen.swift */; };
 		AFB441761E331FF9006C3864 /* BKG.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB441751E331FF9006C3864 /* BKG.png */; };
-		AFB441781E332246006C3864 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB441771E332246006C3864 /* HomePage.swift */; };
 		AFB4417C1E3322DE006C3864 /* Guru_trans.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB4417B1E3322DE006C3864 /* Guru_trans.png */; };
 		AFBE11DF1E3441A8008BCBC8 /* Reset.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBE11DC1E3441A8008BCBC8 /* Reset.png */; };
 		AFBE11E01E3441A8008BCBC8 /* white_down.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBE11DD1E3441A8008BCBC8 /* white_down.png */; };
 		AFBE11E11E3441A8008BCBC8 /* white_up.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBE11DE1E3441A8008BCBC8 /* white_up.png */; };
-		AFBE11E31E34421F008BCBC8 /* LDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE11E21E34421F008BCBC8 /* LDViewController.swift */; };
 		AFFAD9DE1E40094200A7A33D /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFAD9DD1E40094200A7A33D /* pencil.png */; };
 		E1044E881E41729B00ED262B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1044E871E41729B00ED262B /* Main.storyboard */; };
 		E1044E8A1E4172C500ED262B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1044E891E4172C500ED262B /* LaunchScreen.storyboard */; };
 		E1044E8C1E417AB700ED262B /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044E8B1E417AB700ED262B /* Review.swift */; };
-		E156A71A1E3E696400C7B4CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E156A7191E3E696400C7B4CD /* LoginViewController.swift */; };
-		E18B79721E42E86B003E61F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B79711E42E86B003E61F3 /* ProfileViewController.swift */; };
 		E18B79741E43009F003E61F3 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = E18B79731E43009F003E61F3 /* user.png */; };
-		E1B4140F1E40366800F722B2 /* GuruReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */; };
 		E1B414121E403AB200F722B2 /* star filled.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414101E403AB200F722B2 /* star filled.png */; };
 		E1B414131E403AB200F722B2 /* star (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1B414111E403AB200F722B2 /* star (1).png */; };
 		E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3301E331BB4003C281D /* AppDelegate.swift */; };
 		E1F3F3381E331BB4003C281D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3371E331BB4003C281D /* Assets.xcassets */; };
 		E1F3F3461E331BB4003C281D /* GuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3451E331BB4003C281D /* GuruTests.swift */; };
 		E1F3F3511E331BB4003C281D /* GuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3501E331BB4003C281D /* GuruUITests.swift */; };
-		E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3601E333152003C281D /* SignUpViewController.swift */; };
 		E1F3F3651E334DAB003C281D /* notifications-button (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3641E334DAB003C281D /* notifications-button (1).png */; };
 		E1F3F36B1E33D1D1003C281D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F36A1E33D1D1003C281D /* red.png */; };
-		E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */; };
 		E1F3F36F1E33DA83003C281D /* RequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */; };
 		E1F3F3721E33F058003C281D /* checked (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3701E33F058003C281D /* checked (1).png */; };
 		E1F3F3731E33F058003C281D /* cancel (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F3711E33F058003C281D /* cancel (1).png */; };
-		E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */; };
 		E1F3F37B1E345698003C281D /* mute (2).png in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F37A1E345698003C281D /* mute (2).png */; };
-		E1F3F37E1E34B64D003C281D /* DemoPopupViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */; };
 		E1F3F37F1E34B64D003C281D /* DemoPopupViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F37D1E34B64D003C281D /* DemoPopupViewController2.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -79,30 +101,34 @@
 		77A86A051E3EE66E00D23385 /* UIView Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView Extension.swift"; sourceTree = "<group>"; };
 		77AA496A1E336B3A0065DC6B /* Guru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guru.entitlements; sourceTree = "<group>"; };
 		77BCB9CC1E345579004DF9AB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		77D66B821E33E1B200C90E01 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		77D66B841E33E34600C90E01 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBCFAF66F74F2ADF68E3E27 /* Pods-GuruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A326BE5B6BCB5F3DAC5D4E50 /* Pods-GuruTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF2821621E33373500493A74 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
 		AF2821641E33440500493A74 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
-		AF2821661E33448500493A74 /* WaitingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingScreen.swift; sourceTree = "<group>"; };
 		AF2821681E33466700493A74 /* Guru_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guru_green.png; sourceTree = "<group>"; };
+		AF91890F1E4AAA5D00E8D458 /* AcceptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AcceptViewController.swift; path = Guru/Controllers/AcceptViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF9189101E4AAA5D00E8D458 /* DemoPopupViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoPopupViewController2.swift; path = Guru/Controllers/DemoPopupViewController2.swift; sourceTree = SOURCE_ROOT; };
+		AF9189111E4AAA5D00E8D458 /* GuruRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuruRequestsViewController.swift; path = Guru/Controllers/GuruRequestsViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF9189121E4AAA5D00E8D458 /* GuruReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuruReviewViewController.swift; path = Guru/Controllers/GuruReviewViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF9189131E4AAA5D00E8D458 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePage.swift; path = Guru/Controllers/HomePage.swift; sourceTree = SOURCE_ROOT; };
+		AF9189141E4AAA5D00E8D458 /* LDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDViewController.swift; path = Guru/Controllers/LDViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF9189151E4AAA5D00E8D458 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Guru/Controllers/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF9189161E4AAA5D00E8D458 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Guru/Controllers/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF9189171E4AAA5D00E8D458 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Guru/Controllers/SignUpViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF9189181E4AAA5D00E8D458 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoVC.swift; path = Guru/Controllers/VideoVC.swift; sourceTree = SOURCE_ROOT; };
+		AF9189191E4AAA5D00E8D458 /* WaitingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitingScreen.swift; path = Guru/Controllers/WaitingScreen.swift; sourceTree = SOURCE_ROOT; };
 		AFB441751E331FF9006C3864 /* BKG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG.png; sourceTree = "<group>"; };
-		AFB441771E332246006C3864 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		AFB4417B1E3322DE006C3864 /* Guru_trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guru_trans.png; sourceTree = "<group>"; };
 		AFBE11DC1E3441A8008BCBC8 /* Reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset.png; sourceTree = "<group>"; };
 		AFBE11DD1E3441A8008BCBC8 /* white_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_down.png; sourceTree = "<group>"; };
 		AFBE11DE1E3441A8008BCBC8 /* white_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_up.png; sourceTree = "<group>"; };
-		AFBE11E21E34421F008BCBC8 /* LDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDViewController.swift; sourceTree = "<group>"; };
 		AFFAD9DD1E40094200A7A33D /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
 		E1044E871E41729B00ED262B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E1044E891E4172C500ED262B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1044E8B1E417AB700ED262B /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
-		E156A7191E3E696400C7B4CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E18B79711E42E86B003E61F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E18B79731E43009F003E61F3 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
-		E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruReviewViewController.swift; sourceTree = "<group>"; };
 		E1B414101E403AB200F722B2 /* star filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star filled.png"; sourceTree = "<group>"; };
 		E1B414111E403AB200F722B2 /* star (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star (1).png"; sourceTree = "<group>"; };
 		E1F3F32D1E331BB4003C281D /* Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guru.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,16 +141,12 @@
 		E1F3F34C1E331BB4003C281D /* GuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F3F3501E331BB4003C281D /* GuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuruUITests.swift; sourceTree = "<group>"; };
 		E1F3F3521E331BB4003C281D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1F3F3601E333152003C281D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1F3F3641E334DAB003C281D /* notifications-button (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notifications-button (1).png"; sourceTree = "<group>"; };
 		E1F3F36A1E33D1D1003C281D /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
-		E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruRequestsViewController.swift; sourceTree = "<group>"; };
 		E1F3F36E1E33DA83003C281D /* RequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestTableViewCell.xib; sourceTree = "<group>"; };
 		E1F3F3701E33F058003C281D /* checked (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked (1).png"; sourceTree = "<group>"; };
 		E1F3F3711E33F058003C281D /* cancel (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel (1).png"; sourceTree = "<group>"; };
-		E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
 		E1F3F37A1E345698003C281D /* mute (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mute (2).png"; sourceTree = "<group>"; };
-		E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPopupViewController2.swift; sourceTree = "<group>"; };
 		E1F3F37D1E34B64D003C281D /* DemoPopupViewController2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoPopupViewController2.storyboard; sourceTree = "<group>"; };
 		FD5A8A3A83ABA723A8406644 /* Pods-GuruUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruUITests/Pods-GuruUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,17 +193,17 @@
 		77A86A001E3EE49100D23385 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E156A7191E3E696400C7B4CD /* LoginViewController.swift */,
-				E1F3F3601E333152003C281D /* SignUpViewController.swift */,
-				AFB441771E332246006C3864 /* HomePage.swift */,
-				E18B79711E42E86B003E61F3 /* ProfileViewController.swift */,
-				E1F3F37C1E34B64D003C281D /* DemoPopupViewController2.swift */,
-				E1F3F36C1E33D246003C281D /* GuruRequestsViewController.swift */,
-				E1F3F3741E33FEF8003C281D /* AcceptViewController.swift */,
-				AF2821661E33448500493A74 /* WaitingScreen.swift */,
-				77D66B821E33E1B200C90E01 /* VideoVC.swift */,
-				AFBE11E21E34421F008BCBC8 /* LDViewController.swift */,
-				E1B4140E1E40366800F722B2 /* GuruReviewViewController.swift */,
+				AF91890F1E4AAA5D00E8D458 /* AcceptViewController.swift */,
+				AF9189101E4AAA5D00E8D458 /* DemoPopupViewController2.swift */,
+				AF9189111E4AAA5D00E8D458 /* GuruRequestsViewController.swift */,
+				AF9189121E4AAA5D00E8D458 /* GuruReviewViewController.swift */,
+				AF9189131E4AAA5D00E8D458 /* HomePage.swift */,
+				AF9189141E4AAA5D00E8D458 /* LDViewController.swift */,
+				AF9189151E4AAA5D00E8D458 /* LoginViewController.swift */,
+				AF9189161E4AAA5D00E8D458 /* ProfileViewController.swift */,
+				AF9189171E4AAA5D00E8D458 /* SignUpViewController.swift */,
+				AF9189181E4AAA5D00E8D458 /* VideoVC.swift */,
+				AF9189191E4AAA5D00E8D458 /* WaitingScreen.swift */,
 			);
 			name = Controllers;
 			path = /Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers;
@@ -620,21 +642,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFBE11E31E34421F008BCBC8 /* LDViewController.swift in Sources */,
-				77D66B831E33E1B200C90E01 /* VideoVC.swift in Sources */,
-				AF2821671E33448500493A74 /* WaitingScreen.swift in Sources */,
+				AF91891D1E4AAA5D00E8D458 /* DemoPopupViewController2.swift in Sources */,
+				AF91892C1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */,
+				AF9189321E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */,
+				AF9189291E4AAA5D00E8D458 /* LDViewController.swift in Sources */,
+				AF91892F1E4AAA5D00E8D458 /* ProfileViewController.swift in Sources */,
+				AF9189351E4AAA5D00E8D458 /* VideoVC.swift in Sources */,
+				AF9189201E4AAA5D00E8D458 /* GuruRequestsViewController.swift in Sources */,
 				77D66B851E33E34600C90E01 /* Utils.swift in Sources */,
-				AFB441781E332246006C3864 /* HomePage.swift in Sources */,
 				E1044E8C1E417AB700ED262B /* Review.swift in Sources */,
-				E18B79721E42E86B003E61F3 /* ProfileViewController.swift in Sources */,
-				E1F3F3751E33FEF8003C281D /* AcceptViewController.swift in Sources */,
-				E1F3F37E1E34B64D003C281D /* DemoPopupViewController2.swift in Sources */,
-				E1B4140F1E40366800F722B2 /* GuruReviewViewController.swift in Sources */,
 				77BCB9CD1E345579004DF9AB /* Point.swift in Sources */,
-				E1F3F3611E333152003C281D /* SignUpViewController.swift in Sources */,
-				E1F3F36D1E33D246003C281D /* GuruRequestsViewController.swift in Sources */,
-				E156A71A1E3E696400C7B4CD /* LoginViewController.swift in Sources */,
+				AF9189231E4AAA5D00E8D458 /* GuruReviewViewController.swift in Sources */,
+				AF9189381E4AAA5D00E8D458 /* WaitingScreen.swift in Sources */,
 				77A86A061E3EE66E00D23385 /* UIView Extension.swift in Sources */,
+				AF91891A1E4AAA5D00E8D458 /* AcceptViewController.swift in Sources */,
+				AF9189261E4AAA5D00E8D458 /* HomePage.swift in Sources */,
 				E1F3F3311E331BB4003C281D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +665,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF91891B1E4AAA5D00E8D458 /* AcceptViewController.swift in Sources */,
+				AF9189391E4AAA5D00E8D458 /* WaitingScreen.swift in Sources */,
+				AF9189271E4AAA5D00E8D458 /* HomePage.swift in Sources */,
+				AF91891E1E4AAA5D00E8D458 /* DemoPopupViewController2.swift in Sources */,
+				AF91892A1E4AAA5D00E8D458 /* LDViewController.swift in Sources */,
+				AF9189331E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */,
+				AF9189361E4AAA5D00E8D458 /* VideoVC.swift in Sources */,
+				AF91892D1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */,
+				AF9189211E4AAA5D00E8D458 /* GuruRequestsViewController.swift in Sources */,
+				AF9189301E4AAA5D00E8D458 /* ProfileViewController.swift in Sources */,
+				AF9189241E4AAA5D00E8D458 /* GuruReviewViewController.swift in Sources */,
 				E1F3F3461E331BB4003C281D /* GuruTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +684,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF91891C1E4AAA5D00E8D458 /* AcceptViewController.swift in Sources */,
+				AF91893A1E4AAA5D00E8D458 /* WaitingScreen.swift in Sources */,
+				AF9189281E4AAA5D00E8D458 /* HomePage.swift in Sources */,
+				AF91891F1E4AAA5D00E8D458 /* DemoPopupViewController2.swift in Sources */,
+				AF91892B1E4AAA5D00E8D458 /* LDViewController.swift in Sources */,
+				AF9189341E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */,
+				AF9189371E4AAA5D00E8D458 /* VideoVC.swift in Sources */,
+				AF91892E1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */,
+				AF9189221E4AAA5D00E8D458 /* GuruRequestsViewController.swift in Sources */,
+				AF9189311E4AAA5D00E8D458 /* ProfileViewController.swift in Sources */,
+				AF9189251E4AAA5D00E8D458 /* GuruReviewViewController.swift in Sources */,
 				E1F3F3511E331BB4003C281D /* GuruUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

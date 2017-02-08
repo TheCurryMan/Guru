@@ -17,9 +17,15 @@ class SignUpViewController: UIViewController {
         password.resignFirstResponder()
         topics.resignFirstResponder()
     }
+    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var topics: UITextField!
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
