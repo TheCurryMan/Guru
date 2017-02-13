@@ -49,6 +49,10 @@ class GuruReviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     @IBAction func submitReview(_ sender: Any) {
         
         question["review"] = self.rating
