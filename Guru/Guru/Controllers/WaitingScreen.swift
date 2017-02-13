@@ -355,7 +355,7 @@ extension WaitingScreen : TVIParticipantDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "review")
         {
-            var vc = segue.destination as! GuruReviewViewController
+            let vc = segue.destination as! GuruReviewViewController
             vc.question = question
         }
     }

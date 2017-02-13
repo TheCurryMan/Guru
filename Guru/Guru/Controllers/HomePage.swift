@@ -26,23 +26,14 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     @IBOutlet weak var topicButton: UIButton!
     var popup = PopupController()
     var finalTopic = ""
-    @IBAction func tapped(_ sender: Any) {
-        questionField.resignFirstResponder()
-        //subjectsEntered.resignFirstResponder()
-    }
     
-    @IBAction func pressedAsk(_ sender: UIButton) {
-        sender.isEnabled = false
-        submitQuestion(sender: sender)
-    }
-    
-    override var prefersStatusBarHidden: Bool{
-        return true
-    }
-    
+//    override var prefersStatusBarHidden: Bool{
+//        return true
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.backgroundView.layer.cornerRadius = 15
+
         let user = PFUser.current()
         avail = user?["available"] as! Bool
         if(avail)
@@ -81,10 +72,12 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
                 self.emptyTableViewLabel.isHidden = true
             }
         }
-        
-        
     
     }
+    
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
     @IBAction func logout(_ sender: Any) {
         PFUser.logOut()
         self.dismiss(animated: true, completion: nil)
@@ -183,8 +176,17 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             currentUser["available"] = avail
             currentUser.saveInBackground()
         }
-
         
+    }
+    
+    @IBAction func tapped(_ sender: Any) {
+        questionField.resignFirstResponder()
+        //subjectsEntered.resignFirstResponder()
+    }
+    
+    @IBAction func pressedAsk(_ sender: UIButton) {
+        sender.isEnabled = false
+        submitQuestion(sender: sender)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
