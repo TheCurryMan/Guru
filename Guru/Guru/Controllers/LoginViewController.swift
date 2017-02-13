@@ -52,7 +52,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!)
             { (user, error) -> Void in
                 if error == nil {
-                    self.performSegue(withIdentifier: "login", sender: self)
+                    self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
                 } else {
                     print("whoops")
                     self.passwordField.backgroundColor = UIColor.red

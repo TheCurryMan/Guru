@@ -31,8 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }, handleNotificationAction: { (notificationResult: OSNotificationOpenedResult?) in
             self.reactToNotification(notification: notificationResult!.notification!)
         },settings: [kOSSettingsKeyInAppAlerts: OSNotificationDisplayType.none.rawValue])
-        
-        
+                
         return true
     }
     

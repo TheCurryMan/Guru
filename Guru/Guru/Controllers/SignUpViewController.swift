@@ -46,15 +46,6 @@ class SignUpViewController: UIViewController {
         })
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        let currentUser = PFUser.current()
-        if currentUser != nil {
-            self.performSegue(withIdentifier: "signup", sender: self)
-        } else {
-            // Show the signup or login screen
-        }
-    }
-    
     @IBAction func submit(_ sender: Any) {
         signUp()
     }
@@ -77,7 +68,7 @@ class SignUpViewController: UIViewController {
         user.signUpInBackground {
             (success, error) -> Void in
             if let error = error {
-                let errorString = (error as NSError).userInfo["error"] as? NSString
+                print("error signing up user: \(error.localizedDescription)")
                 // Show the errorString somewhere and let the user try again.
             } else {
                 // Hooray! Let them use the app now.
@@ -85,7 +76,7 @@ class SignUpViewController: UIViewController {
                 self.password.text = ""
                 self.topics.text = ""
                 OneSignal.sendTag("userID", value: PFUser.current()!.objectId!)
-                self.performSegue(withIdentifier: "signup", sender: self)
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }

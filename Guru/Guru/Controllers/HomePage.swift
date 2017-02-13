@@ -11,7 +11,7 @@ import Parse
 import PopupController
 
 class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var questionField: UITextField!
     //@IBOutlet weak var subjectsEntered: UITextField!
     @IBOutlet weak var acceptButton: UIButton!
@@ -19,7 +19,7 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     var question: PFObject?
     var questions = [PFObject]()
     var selectedQuestion: PFObject?
-	@IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var emptyTableViewLabel: UILabel!
@@ -27,13 +27,39 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     var popup = PopupController()
     var finalTopic = ""
     
-//    override var prefersStatusBarHidden: Bool{
-//        return true
-//    }
+    //    override var prefersStatusBarHidden: Bool{
+    //        return true
+    //    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.backgroundView.layer.cornerRadius = 15
-
+        
+        let nc = NotificationCenter.default
+        nc.addObserver(forName:Notification.Name(rawValue:"topic"),
+                       object:nil, queue:nil,
+                       using:catchNotification)
+        tableView.tableFooterView = UIView()
+        tableView.register(UINib(nibName: "RequestTableViewCell", bundle: nil), forCellReuseIdentifier: "request")
+        
+        
+    }
+    
+    //    override var preferredStatusBarStyle: UIStatusBarStyle {
+    //        return .lightContent
+    //    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let currentUser = PFUser.current()
+        if currentUser == nil {
+            self.presentSignup()
+        }
+        else {
+            self.loadData()
+        }
+        
+    }
+    
+    func loadData() {
         let user = PFUser.current()
         avail = user?["available"] as! Bool
         if(avail)
@@ -43,14 +69,6 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         else {
             acceptButton.setImage(UIImage(named: "red.png"), for: .normal)
         }
-        
-        let nc = NotificationCenter.default
-        nc.addObserver(forName:Notification.Name(rawValue:"topic"),
-                       object:nil, queue:nil,
-                       using:catchNotification)
-        tableView.tableFooterView = UIView()
-        tableView.register(UINib(nibName: "RequestTableViewCell", bundle: nil), forCellReuseIdentifier: "request")
-        
         
         let query = PFQuery(className: "Requests")
         query.whereKey("tutor", equalTo: PFUser.current()!)
@@ -72,15 +90,15 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
                 self.emptyTableViewLabel.isHidden = true
             }
         }
-    
     }
-    
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .lightContent
-//    }
     @IBAction func logout(_ sender: Any) {
         PFUser.logOut()
-        self.dismiss(animated: true, completion: nil)
+        self.presentSignup()
+    }
+    
+    func presentSignup() {
+        let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "signupVC")
+        self.present(signupVC!, animated: true, completion: nil)
     }
     
     func catchNotification(notification:Notification) -> Void {
@@ -97,8 +115,8 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         popup.dismiss()
         
         //let alert = UIAlertController(title: "Notification!",
-              //                        message:"\(message) received at \(date)",
-            //preferredStyle: UIAlertControllerStyle.alert)
+        //                        message:"\(message) received at \(date)",
+        //preferredStyle: UIAlertControllerStyle.alert)
         //alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         //self.present(alert, animated: true, completion: nil)
         
@@ -130,16 +148,16 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             .didCloseHandler { _ in
                 print("closed popup!")
                 
-            }
+        }
         
         _ = popup.show(DemoPopupViewController2.instance())
         
     }
-
+    
     
     func submitQuestion(sender: UIButton) {
         let user = PFUser.current()
-
+        
         let question = PFObject(className:"Question")
         question["text"] = questionField.text
         question["topic"] = topicButton.titleLabel?.text
@@ -156,15 +174,15 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             sender.isEnabled = true
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     @IBAction func accept(_ sender: Any) {
-       avail = !avail
+        avail = !avail
         if(avail)
         {   acceptButton.setImage(UIImage(named: "Guru_trans.png"), for: .normal)
             
@@ -212,9 +230,9 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         
     }
     
-
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "loading") {
@@ -226,6 +244,6 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             vc.question = self.selectedQuestion
         }
     }
- 
-
+    
+    
 }
