@@ -193,17 +193,17 @@
 		77A86A001E3EE49100D23385 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AF9189171E4AAA5D00E8D458 /* SignUpViewController.swift */,
+				AF9189151E4AAA5D00E8D458 /* LoginViewController.swift */,
+				AF9189131E4AAA5D00E8D458 /* HomePage.swift */,
 				AF91890F1E4AAA5D00E8D458 /* AcceptViewController.swift */,
 				AF9189101E4AAA5D00E8D458 /* DemoPopupViewController2.swift */,
 				AF9189111E4AAA5D00E8D458 /* GuruRequestsViewController.swift */,
 				AF9189121E4AAA5D00E8D458 /* GuruReviewViewController.swift */,
-				AF9189131E4AAA5D00E8D458 /* HomePage.swift */,
-				AF9189141E4AAA5D00E8D458 /* LDViewController.swift */,
-				AF9189151E4AAA5D00E8D458 /* LoginViewController.swift */,
 				AF9189161E4AAA5D00E8D458 /* ProfileViewController.swift */,
-				AF9189171E4AAA5D00E8D458 /* SignUpViewController.swift */,
-				AF9189181E4AAA5D00E8D458 /* VideoVC.swift */,
 				AF9189191E4AAA5D00E8D458 /* WaitingScreen.swift */,
+				AF9189181E4AAA5D00E8D458 /* VideoVC.swift */,
+				AF9189141E4AAA5D00E8D458 /* LDViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

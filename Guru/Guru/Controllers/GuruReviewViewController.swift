@@ -55,7 +55,7 @@ class GuruReviewViewController: UIViewController {
     
     @IBAction func submitReview(_ sender: Any) {
         
-        question["review"] = self.rating
+        question["rating"] = self.rating
         question.saveInBackground {
             (success, error) -> Void in
             if (success) {

@@ -37,6 +37,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             count += 1
         }
         self.topicsBar.selectedSegmentIndex = 0
+        self.reviewBar.rating = 0
         
         tableView.register(UINib(nibName: "RequestTableViewCell", bundle: nil), forCellReuseIdentifier: "request")
     }
@@ -58,12 +59,14 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             if (error == nil && objects != nil) {
                 self.allQuestions = objects!
                 var totalRatingCount = 0.0
+                var ratingsCount = 0
                 for question in self.allQuestions {
                     if let rating = question["rating"] as? Double {
                         totalRatingCount += rating
+                        ratingsCount += 1
                     }
                 }
-                self.averageRating = totalRatingCount/Double(self.allQuestions.count)
+                self.averageRating = totalRatingCount/Double(ratingsCount)
                 self.reviewBar.rating = self.averageRating
                 self.sortQuestions()
             }
