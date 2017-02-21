@@ -213,13 +213,14 @@ SWIFT_CLASS("_TtC4Guru24GuruReviewViewController")
 @property (nonatomic) double rating;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (IBAction)submitReview:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 @class UITextField;
+@class UIButton;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
 @interface HomePage : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
@@ -235,11 +236,11 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topicButton;
 @property (nonatomic, strong) PopupController * _Nonnull popup;
 @property (nonatomic, copy) NSString * _Nonnull finalTopic;
-- (IBAction)tapped:(id _Nonnull)sender;
-- (IBAction)pressedAsk:(UIButton * _Nonnull)sender;
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)loadData;
 - (IBAction)logout:(id _Nonnull)sender;
+- (void)presentSignup;
 - (void)catchNotificationWithNotification:(NSNotification * _Nonnull)notification;
 - (void)viewWillAppear:(BOOL)animated;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
@@ -247,6 +248,8 @@ SWIFT_CLASS("_TtC4Guru8HomePage")
 - (void)submitQuestionWithSender:(UIButton * _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (IBAction)accept:(id _Nonnull)sender;
+- (IBAction)tapped:(id _Nonnull)sender;
+- (IBAction)pressedAsk:(UIButton * _Nonnull)sender;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -316,6 +319,7 @@ SWIFT_CLASS("_TtC4Guru19LoginViewController")
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
@@ -350,18 +354,27 @@ SWIFT_CLASS("_TtC4Guru5Point")
 @class UISegmentedControl;
 
 SWIFT_CLASS("_TtC4Guru21ProfileViewController")
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet CosmosView * _Null_unspecified reviewBar;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified topicsBar;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified usernameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointsLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified answeredLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified askedLabel;
+@property (nonatomic, copy) NSArray<PFObject *> * _Nonnull allQuestions;
+@property (nonatomic, copy) NSArray<PFObject *> * _Nonnull selectedQuestions;
+@property (nonatomic) double averageRating;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)updateUserStats;
+- (IBAction)changedSegment:(UISegmentedControl * _Nonnull)sender;
+- (void)sortQuestions;
 - (void)didReceiveMemoryWarning;
 - (IBAction)exitView:(id _Nonnull)sender;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -393,8 +406,13 @@ SWIFT_CLASS("_TtC4Guru20SignUpViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topics;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified guruLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified guruLogoImg;
+@property (nonatomic, copy) IBOutletCollection(UIView) NSArray<UIView *> * _Null_unspecified underlineLabels;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified goButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginSubLabel;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)submit:(id _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (void)signUp;

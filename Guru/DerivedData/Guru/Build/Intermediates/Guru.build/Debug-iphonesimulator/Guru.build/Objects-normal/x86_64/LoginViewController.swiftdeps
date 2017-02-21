@@ -7,32 +7,33 @@ provides-member:
 - ["C4Guru19LoginViewController", ""]
 provides-dynamic-lookup:
 - "goButtonPressed"
-- "textFieldShouldReturn"
+- "prefersStatusBarHidden"
 - "cancel"
 - "passwordField"
-- "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "tappedScreen"
+- "viewDidAppear"
+- "viewDidLoad"
+- "usernameField"
 - "textFieldDidBeginEditing"
 - "login"
-- "viewDidAppear"
-- "usernameField"
-- "didReceiveMemoryWarning"
+- "textFieldShouldReturn"
 depends-top-level:
-- !private "&&"
 - "LoginViewController"
-- "AssignmentPrecedence"
-- "UIViewController"
-- !private "UIColor"
-- !private "=="
-- "UITextField"
-- !private "!="
-- "Bool"
-- !private "PFUser"
-- !private "StringLiteralType"
-- !private "Void"
-- !private "print"
 - !private "BooleanLiteralType"
+- !private "UIColor"
+- !private "StringLiteralType"
+- "UIViewController"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "&&"
+- "Bool"
 - "UITextFieldDelegate"
+- !private "Void"
+- !private "!="
+- "UITextField"
+- !private "print"
+- !private "PFUser"
 depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -48,10 +49,11 @@ depends-member:
 - !private ["Ps9AnyObject", "logInWithUsername"]
 - ["Ps9AnyObject", "login"]
 - ["Ps9AnyObject", "passwordField"]
-- !private ["Ps9AnyObject", "performSegue"]
+- ["Ps9AnyObject", "prefersStatusBarHidden"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "red"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
+- !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "shake"]
 - ["Ps9AnyObject", "tappedScreen"]
 - !private ["Ps9AnyObject", "text"]
@@ -66,6 +68,7 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
@@ -74,8 +77,10 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "endEditing"]
 - !private ["PSo15CALayerDelegate", "resignFirstResponder"]
+- !private ["PSo15CALayerDelegate", "rootViewController"]
 - !private ["PSo15CALayerDelegate", "shake"]
 - !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "window"]
 - !private ["Ps7CVarArg", "PFUser"]
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "backgroundColor"]
@@ -90,10 +95,11 @@ depends-member:
 - !private ["Ps7CVarArg", "logInWithUsername"]
 - ["Ps7CVarArg", "login"]
 - ["Ps7CVarArg", "passwordField"]
-- !private ["Ps7CVarArg", "performSegue"]
+- ["Ps7CVarArg", "prefersStatusBarHidden"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "red"]
 - !private ["Ps7CVarArg", "resignFirstResponder"]
+- !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "shake"]
 - ["Ps7CVarArg", "tappedScreen"]
 - !private ["Ps7CVarArg", "text"]
@@ -108,6 +114,7 @@ depends-member:
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidAppear"]
 - ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
@@ -124,10 +131,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "logInWithUsername"]
 - ["Ps28CustomDebugStringConvertible", "login"]
 - ["Ps28CustomDebugStringConvertible", "passwordField"]
-- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
+- ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "red"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
+- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "shake"]
 - ["Ps28CustomDebugStringConvertible", "tappedScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -142,6 +150,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
@@ -162,10 +171,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "logInWithUsername"]
 - ["Ps23CustomStringConvertible", "login"]
 - ["Ps23CustomStringConvertible", "passwordField"]
-- !private ["Ps23CustomStringConvertible", "performSegue"]
+- ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "red"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
+- !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "shake"]
 - ["Ps23CustomStringConvertible", "tappedScreen"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -180,6 +190,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "UIColor"]
@@ -196,10 +207,11 @@ depends-member:
 - !private ["Ps9Equatable", "logInWithUsername"]
 - ["Ps9Equatable", "login"]
 - ["Ps9Equatable", "passwordField"]
-- !private ["Ps9Equatable", "performSegue"]
+- ["Ps9Equatable", "prefersStatusBarHidden"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "red"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
+- !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "shake"]
 - ["Ps9Equatable", "tappedScreen"]
 - !private ["Ps9Equatable", "text"]
@@ -214,6 +226,7 @@ depends-member:
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -236,10 +249,11 @@ depends-member:
 - !private ["Ps8Hashable", "logInWithUsername"]
 - ["Ps8Hashable", "login"]
 - ["Ps8Hashable", "passwordField"]
-- !private ["Ps8Hashable", "performSegue"]
+- ["Ps8Hashable", "prefersStatusBarHidden"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "red"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
+- !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "shake"]
 - ["Ps8Hashable", "tappedScreen"]
 - !private ["Ps8Hashable", "text"]
@@ -254,6 +268,7 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["C4Guru19LoginViewController", "Bool"]
@@ -269,7 +284,7 @@ depends-member:
 - ["C4Guru19LoginViewController", "init"]
 - ["C4Guru19LoginViewController", "login"]
 - ["C4Guru19LoginViewController", "passwordField"]
-- !private ["C4Guru19LoginViewController", "performSegue"]
+- ["C4Guru19LoginViewController", "prefersStatusBarHidden"]
 - !private ["C4Guru19LoginViewController", "print"]
 - ["C4Guru19LoginViewController", "tappedScreen"]
 - ["C4Guru19LoginViewController", "textField"]
@@ -300,10 +315,11 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "login"]
 - ["PSo8NSCoding", "passwordField"]
-- !private ["PSo8NSCoding", "performSegue"]
+- ["PSo8NSCoding", "prefersStatusBarHidden"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "red"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
+- !private ["PSo8NSCoding", "rootViewController"]
 - !private ["PSo8NSCoding", "shake"]
 - ["PSo8NSCoding", "tappedScreen"]
 - !private ["PSo8NSCoding", "text"]
@@ -318,6 +334,7 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "window"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "red"]
@@ -330,7 +347,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "login"]
 - ["PSo26NSExtensionRequestHandling", "passwordField"]
-- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
+- ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "tappedScreen"]
 - ["PSo26NSExtensionRequestHandling", "textField"]
@@ -363,10 +380,11 @@ depends-member:
 - !private ["CSo8NSObject", "logInWithUsername"]
 - ["CSo8NSObject", "login"]
 - ["CSo8NSObject", "passwordField"]
-- !private ["CSo8NSObject", "performSegue"]
+- ["CSo8NSObject", "prefersStatusBarHidden"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "red"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
+- !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "shake"]
 - ["CSo8NSObject", "tappedScreen"]
 - !private ["CSo8NSObject", "text"]
@@ -381,6 +399,7 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
@@ -395,10 +414,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "logInWithUsername"]
 - ["PSo16NSObjectProtocol", "login"]
 - ["PSo16NSObjectProtocol", "passwordField"]
-- !private ["PSo16NSObjectProtocol", "performSegue"]
+- ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "red"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "shake"]
 - ["PSo16NSObjectProtocol", "tappedScreen"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -413,6 +433,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "red"]
@@ -430,15 +451,19 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "shake"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "window"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "becomeFirstResponder"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "endEditing"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
+- !private ["PSo12UIAppearance", "rootViewController"]
 - !private ["PSo12UIAppearance", "shake"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "window"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -452,9 +477,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "login"]
 - ["PSo21UIAppearanceContainer", "passwordField"]
-- !private ["PSo21UIAppearanceContainer", "performSegue"]
+- ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "shake"]
 - ["PSo21UIAppearanceContainer", "tappedScreen"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -469,6 +495,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "window"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "red"]
@@ -481,7 +508,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "login"]
 - ["PSo18UIContentContainer", "passwordField"]
-- !private ["PSo18UIContentContainer", "performSegue"]
+- ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "tappedScreen"]
 - ["PSo18UIContentContainer", "textField"]
@@ -513,15 +540,19 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "endEditing"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
 - !private ["PSo17UICoordinateSpace", "shake"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "window"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "becomeFirstResponder"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "endEditing"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
 - !private ["PSo13UIDynamicItem", "shake"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "window"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -535,9 +566,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "login"]
 - ["PSo18UIFocusEnvironment", "passwordField"]
-- !private ["PSo18UIFocusEnvironment", "performSegue"]
+- ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - !private ["PSo18UIFocusEnvironment", "shake"]
 - ["PSo18UIFocusEnvironment", "tappedScreen"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -552,14 +584,17 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "window"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "becomeFirstResponder"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "endEditing"]
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
+- !private ["PSo11UIFocusItem", "rootViewController"]
 - !private ["PSo11UIFocusItem", "shake"]
 - !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "window"]
 - !private ["PSo10UIKeyInput", "backgroundColor"]
 - !private ["PSo10UIKeyInput", "becomeFirstResponder"]
 - !private ["PSo10UIKeyInput", "delegate"]
@@ -582,9 +617,10 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "login"]
 - ["CSo11UIResponder", "passwordField"]
-- !private ["CSo11UIResponder", "performSegue"]
+- ["CSo11UIResponder", "prefersStatusBarHidden"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
+- !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "shake"]
 - ["CSo11UIResponder", "tappedScreen"]
 - !private ["CSo11UIResponder", "text"]
@@ -599,6 +635,7 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo11UIResponder", "window"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -612,9 +649,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "login"]
 - ["PSo30UIResponderStandardEditActions", "passwordField"]
-- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
+- ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
+- !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "shake"]
 - ["PSo30UIResponderStandardEditActions", "tappedScreen"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -629,6 +667,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -639,7 +678,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "login"]
 - ["PSo16UIStateRestoring", "passwordField"]
-- !private ["PSo16UIStateRestoring", "performSegue"]
+- ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "tappedScreen"]
 - ["PSo16UIStateRestoring", "textField"]
@@ -666,7 +705,6 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "dismiss"]
 - !private ["PSo19UITextFieldDelegate", "login"]
 - !private ["PSo19UITextFieldDelegate", "passwordField"]
-- !private ["PSo19UITextFieldDelegate", "performSegue"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
@@ -703,9 +741,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "login"]
 - ["PSo18UITraitEnvironment", "passwordField"]
-- !private ["PSo18UITraitEnvironment", "performSegue"]
+- ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "shake"]
 - ["PSo18UITraitEnvironment", "tappedScreen"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -720,14 +759,17 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "window"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "becomeFirstResponder"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "endEditing"]
 - !private ["CSo6UIView", "resignFirstResponder"]
+- !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo6UIView", "shake"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "window"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "PFUser"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -741,7 +783,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "login"]
 - ["CSo16UIViewController", "passwordField"]
-- !private ["CSo16UIViewController", "performSegue"]
+- ["CSo16UIViewController", "prefersStatusBarHidden"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "tappedScreen"]
 - ["CSo16UIViewController", "textField"]
@@ -756,13 +798,17 @@ depends-member:
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["CSo8UIWindow", "deinit"]
+- !private ["CSo8UIWindow", "rootViewController"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "becomeFirstResponder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "shake"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "window"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -785,10 +831,11 @@ depends-member:
 - !private ["Ps9_Hashable", "logInWithUsername"]
 - ["Ps9_Hashable", "login"]
 - ["Ps9_Hashable", "passwordField"]
-- !private ["Ps9_Hashable", "performSegue"]
+- ["Ps9_Hashable", "prefersStatusBarHidden"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "red"]
 - !private ["Ps9_Hashable", "resignFirstResponder"]
+- !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "shake"]
 - ["Ps9_Hashable", "tappedScreen"]
 - !private ["Ps9_Hashable", "text"]
@@ -803,6 +850,7 @@ depends-member:
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidAppear"]
 - ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -867,6 +915,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "CSo8UIWindow"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
@@ -890,6 +939,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
@@ -941,6 +994,8 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Modules/ParseLiveQuery.swiftmodule/x86_64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
@@ -953,6 +1008,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/ParseLiveQuery/ParseLiveQuery.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
@@ -982,14 +1041,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/x86_64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "e4b6034de9260b47f853592db118cc5f"
+interface-hash: "6290d3601e8d40c0cd00fc9734e8c492"
