@@ -1,0 +1,19 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "38b8d31192ceafc8a589bf55e3ddf6c1"
+build_time: [540282072, 260210000]
+inputs:
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosAccessibility.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosDefaultSettings.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosLayerHelper.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosLayers.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosLocalizedRating.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosRating.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosSettings.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosSize.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosText.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosTouch.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/Helpers/CosmosTouchTarget.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/CosmosView.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/Helpers/RightToLeft.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/StarFillMode.swift": [539322918, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Cosmos/Cosmos/StarLayer.swift": [539322918, 0]

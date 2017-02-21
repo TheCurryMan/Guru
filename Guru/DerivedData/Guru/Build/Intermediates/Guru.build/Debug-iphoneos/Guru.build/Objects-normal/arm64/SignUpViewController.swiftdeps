@@ -6,41 +6,55 @@ provides-nominal:
 provides-member:
 - ["C4Guru20SignUpViewController", ""]
 provides-dynamic-lookup:
-- "topics"
 - "signUp"
-- "viewDidLoad"
-- "submit"
-- "password"
-- "viewDidAppear"
-- "tappedScreen"
-- "username"
+- "goButton"
 - "didReceiveMemoryWarning"
+- "underlineLabels"
+- "submit"
+- "guruLabel"
+- "password"
+- "loginSubLabel"
+- "viewDidLoad"
+- "tappedScreen"
+- "topics"
+- "guruLogoImg"
+- "prefersStatusBarHidden"
+- "username"
 depends-top-level:
-- "SignUpViewController"
-- !private "CastingPrecedence"
-- !private "NSError"
+- "UIView"
+- "UIViewController"
 - "AssignmentPrecedence"
-- !private "!="
 - "UITextField"
 - !private "OneSignal"
-- !private "NSString"
-- "UIViewController"
+- "UIButton"
+- "SignUpViewController"
+- !private "print"
+- "UILabel"
 - !private "BooleanLiteralType"
-- "Bool"
-- !private "PFUser"
+- "UIImageView"
 - !private "Void"
+- !private "PFUser"
 - !private "StringLiteralType"
+- "Bool"
 depends-member:
-- !private ["Vs11AnyHashable", "deinit"]
 - !private ["Ps9AnyObject", "OneSignal"]
 - !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "alpha"]
+- !private ["Ps9AnyObject", "animate"]
 - !private ["Ps9AnyObject", "components"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "dismiss"]
+- ["Ps9AnyObject", "goButton"]
+- ["Ps9AnyObject", "guruLabel"]
+- ["Ps9AnyObject", "guruLogoImg"]
 - !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "loginSubLabel"]
 - !private ["Ps9AnyObject", "objectId"]
 - ["Ps9AnyObject", "password"]
-- !private ["Ps9AnyObject", "performSegue"]
+- ["Ps9AnyObject", "prefersStatusBarHidden"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - !private ["Ps9AnyObject", "sendTag"]
 - ["Ps9AnyObject", "signUp"]
@@ -50,35 +64,43 @@ depends-member:
 - ["Ps9AnyObject", "tappedScreen"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "topics"]
-- !private ["Ps9AnyObject", "userInfo"]
+- ["Ps9AnyObject", "underlineLabels"]
 - ["Ps9AnyObject", "username"]
-- ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
 - ["Sa", "deinit"]
-- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
-- !private ["Ps17BitwiseOperations", "Stride"]
-- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
-- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
 - ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "alpha"]
+- !private ["PSo15CALayerDelegate", "animate"]
 - !private ["PSo15CALayerDelegate", "resignFirstResponder"]
 - !private ["PSo15CALayerDelegate", "text"]
-- !private ["Ps7CVarArg", "Index"]
-- !private ["Ps7CVarArg", "IndexDistance"]
-- !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "OneSignal"]
 - !private ["Ps7CVarArg", "PFUser"]
-- !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "SubSequence"]
-- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
+- !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "alpha"]
+- !private ["Ps7CVarArg", "animate"]
 - !private ["Ps7CVarArg", "components"]
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "dismiss"]
+- ["Ps7CVarArg", "goButton"]
+- ["Ps7CVarArg", "guruLabel"]
+- ["Ps7CVarArg", "guruLogoImg"]
 - !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "loginSubLabel"]
 - !private ["Ps7CVarArg", "objectId"]
 - ["Ps7CVarArg", "password"]
-- !private ["Ps7CVarArg", "performSegue"]
+- ["Ps7CVarArg", "prefersStatusBarHidden"]
+- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - !private ["Ps7CVarArg", "sendTag"]
 - ["Ps7CVarArg", "signUp"]
@@ -88,37 +110,36 @@ depends-member:
 - ["Ps7CVarArg", "tappedScreen"]
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "topics"]
-- !private ["Ps7CVarArg", "userInfo"]
+- ["Ps7CVarArg", "underlineLabels"]
 - ["Ps7CVarArg", "username"]
-- ["Ps7CVarArg", "viewDidAppear"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
+- !private ["Vs9Character", "deinit"]
 - !private ["V10Foundation12CharacterSet", "deinit"]
-- !private ["Vs11ClosedRange", "deinit"]
-- !private ["Ps10Collection", "Index"]
-- !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "SubSequence"]
 - !private ["Ps10Collection", "_Element"]
-- !private ["Ps10Collection", "subscript"]
-- !private ["Ps10Comparable", "IntegerLiteralType"]
-- !private ["Ps10Comparable", "Stride"]
-- !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "components"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "OneSignal"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
-- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "alpha"]
+- !private ["Ps28CustomDebugStringConvertible", "animate"]
 - !private ["Ps28CustomDebugStringConvertible", "components"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- ["Ps28CustomDebugStringConvertible", "goButton"]
+- ["Ps28CustomDebugStringConvertible", "guruLabel"]
+- ["Ps28CustomDebugStringConvertible", "guruLogoImg"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "loginSubLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "objectId"]
 - ["Ps28CustomDebugStringConvertible", "password"]
-- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
+- ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - !private ["Ps28CustomDebugStringConvertible", "sendTag"]
 - ["Ps28CustomDebugStringConvertible", "signUp"]
@@ -128,45 +149,36 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "tappedScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "topics"]
-- !private ["Ps28CustomDebugStringConvertible", "userInfo"]
+- ["Ps28CustomDebugStringConvertible", "underlineLabels"]
 - ["Ps28CustomDebugStringConvertible", "username"]
-- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "components"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "Index"]
-- !private ["Ps17CustomReflectable", "IndexDistance"]
-- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
-- !private ["Ps17CustomReflectable", "Stride"]
-- !private ["Ps17CustomReflectable", "SubSequence"]
-- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
+- !private ["Ps17CustomReflectable", "Iterator"]
 - !private ["Ps17CustomReflectable", "_Element"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "components"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps17CustomReflectable", "subscript"]
-- !private ["Ps23CustomStringConvertible", "Index"]
-- !private ["Ps23CustomStringConvertible", "IndexDistance"]
-- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "OneSignal"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
-- !private ["Ps23CustomStringConvertible", "SubSequence"]
-- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "alpha"]
+- !private ["Ps23CustomStringConvertible", "animate"]
 - !private ["Ps23CustomStringConvertible", "components"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "dismiss"]
+- ["Ps23CustomStringConvertible", "goButton"]
+- ["Ps23CustomStringConvertible", "guruLabel"]
+- ["Ps23CustomStringConvertible", "guruLogoImg"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "loginSubLabel"]
 - !private ["Ps23CustomStringConvertible", "objectId"]
 - ["Ps23CustomStringConvertible", "password"]
-- !private ["Ps23CustomStringConvertible", "performSegue"]
+- ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - !private ["Ps23CustomStringConvertible", "sendTag"]
 - ["Ps23CustomStringConvertible", "signUp"]
@@ -176,31 +188,29 @@ depends-member:
 - ["Ps23CustomStringConvertible", "tappedScreen"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "topics"]
-- !private ["Ps23CustomStringConvertible", "userInfo"]
+- ["Ps23CustomStringConvertible", "underlineLabels"]
 - ["Ps23CustomStringConvertible", "username"]
-- ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Vs10Dictionary", "Index"]
-- !private ["Vs10Dictionary", "IndexDistance"]
-- !private ["Vs10Dictionary", "SubSequence"]
-- !private ["Vs10Dictionary", "_Element"]
-- !private ["Vs10Dictionary", "deinit"]
-- !private ["Vs10Dictionary", "subscript"]
-- !private ["Vs15DictionaryIndex", "deinit"]
-- !private ["Ps9Equatable", "IntegerLiteralType"]
+- ["Sd", "deinit"]
 - !private ["Ps9Equatable", "OneSignal"]
 - !private ["Ps9Equatable", "PFUser"]
-- !private ["Ps9Equatable", "Stride"]
-- !private ["Ps9Equatable", "_DisabledRangeIndex"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "alpha"]
+- !private ["Ps9Equatable", "animate"]
 - !private ["Ps9Equatable", "components"]
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "dismiss"]
+- ["Ps9Equatable", "goButton"]
+- ["Ps9Equatable", "guruLabel"]
+- ["Ps9Equatable", "guruLogoImg"]
 - !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "loginSubLabel"]
 - !private ["Ps9Equatable", "objectId"]
 - ["Ps9Equatable", "password"]
-- !private ["Ps9Equatable", "performSegue"]
+- ["Ps9Equatable", "prefersStatusBarHidden"]
+- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - !private ["Ps9Equatable", "sendTag"]
 - ["Ps9Equatable", "signUp"]
@@ -210,43 +220,42 @@ depends-member:
 - ["Ps9Equatable", "tappedScreen"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "topics"]
-- !private ["Ps9Equatable", "userInfo"]
+- ["Ps9Equatable", "underlineLabels"]
 - ["Ps9Equatable", "username"]
-- ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
-- !private ["Ps5Error", "userInfo"]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "IndexDistance"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "_Element"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps5Error", "localizedDescription"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "components"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps23ExpressibleByNilLiteral", "Iterator"]
 - !private ["Ps32ExpressibleByStringInterpolation", "components"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "components"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "components"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "OneSignal"]
 - !private ["Ps8Hashable", "PFUser"]
-- !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "_DisabledRangeIndex"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "alpha"]
+- !private ["Ps8Hashable", "animate"]
 - !private ["Ps8Hashable", "components"]
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "dismiss"]
+- ["Ps8Hashable", "goButton"]
+- ["Ps8Hashable", "guruLabel"]
+- ["Ps8Hashable", "guruLogoImg"]
 - !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "loginSubLabel"]
 - !private ["Ps8Hashable", "objectId"]
 - ["Ps8Hashable", "password"]
-- !private ["Ps8Hashable", "performSegue"]
+- ["Ps8Hashable", "prefersStatusBarHidden"]
+- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - !private ["Ps8Hashable", "sendTag"]
 - ["Ps8Hashable", "signUp"]
@@ -256,98 +265,107 @@ depends-member:
 - ["Ps8Hashable", "tappedScreen"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "topics"]
-- !private ["Ps8Hashable", "userInfo"]
+- ["Ps8Hashable", "underlineLabels"]
 - ["Ps8Hashable", "username"]
-- ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "Iterator"]
 - ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Index"]
-- !private ["Ps9Indexable", "IndexDistance"]
 - !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "subscript"]
-- !private ["Ps13IndexableBase", "Index"]
-- !private ["Ps13IndexableBase", "IndexDistance"]
 - !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "SubSequence"]
 - !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
-- !private ["Si", "_DisabledRangeIndex"]
 - ["Si", "deinit"]
-- !private ["Ps7Integer", "IntegerLiteralType"]
-- !private ["Ps7Integer", "Stride"]
-- !private ["Ps7Integer", "_DisabledRangeIndex"]
-- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
-- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - !private ["Ps16IteratorProtocol", "Element"]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "components"]
 - !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "IntegerLiteralType"]
-- !private ["Ps10MirrorPath", "Stride"]
-- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "components"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "OneSignal"]
 - !private ["PSo8NSCoding", "PFUser"]
+- !private ["PSo8NSCoding", "UIView"]
+- !private ["PSo8NSCoding", "alpha"]
+- !private ["PSo8NSCoding", "animate"]
 - !private ["PSo8NSCoding", "components"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dismiss"]
+- ["PSo8NSCoding", "goButton"]
+- ["PSo8NSCoding", "guruLabel"]
+- ["PSo8NSCoding", "guruLogoImg"]
 - !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "loginSubLabel"]
 - ["PSo8NSCoding", "password"]
-- !private ["PSo8NSCoding", "performSegue"]
+- ["PSo8NSCoding", "prefersStatusBarHidden"]
+- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - ["PSo8NSCoding", "signUp"]
 - ["PSo8NSCoding", "submit"]
 - ["PSo8NSCoding", "tappedScreen"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "topics"]
-- !private ["PSo8NSCoding", "userInfo"]
+- ["PSo8NSCoding", "underlineLabels"]
 - ["PSo8NSCoding", "username"]
-- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "components"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "userInfo"]
-- !private ["CSo7NSError", "deinit"]
-- !private ["CSo7NSError", "userInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "OneSignal"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
+- !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dismiss"]
+- ["PSo26NSExtensionRequestHandling", "goButton"]
+- ["PSo26NSExtensionRequestHandling", "guruLabel"]
+- ["PSo26NSExtensionRequestHandling", "guruLogoImg"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "loginSubLabel"]
 - ["PSo26NSExtensionRequestHandling", "password"]
-- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
+- ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "signUp"]
 - ["PSo26NSExtensionRequestHandling", "submit"]
 - ["PSo26NSExtensionRequestHandling", "tappedScreen"]
 - ["PSo26NSExtensionRequestHandling", "topics"]
+- ["PSo26NSExtensionRequestHandling", "underlineLabels"]
 - ["PSo26NSExtensionRequestHandling", "username"]
-- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "components"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "NSError"]
-- !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "OneSignal"]
 - !private ["CSo8NSObject", "PFUser"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "alpha"]
+- !private ["CSo8NSObject", "animate"]
 - !private ["CSo8NSObject", "components"]
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dismiss"]
+- ["CSo8NSObject", "goButton"]
+- ["CSo8NSObject", "guruLabel"]
+- ["CSo8NSObject", "guruLogoImg"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "loginSubLabel"]
 - !private ["CSo8NSObject", "objectId"]
 - ["CSo8NSObject", "password"]
-- !private ["CSo8NSObject", "performSegue"]
+- ["CSo8NSObject", "prefersStatusBarHidden"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - !private ["CSo8NSObject", "sendTag"]
 - ["CSo8NSObject", "signUp"]
@@ -357,19 +375,27 @@ depends-member:
 - ["CSo8NSObject", "tappedScreen"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "topics"]
-- !private ["CSo8NSObject", "userInfo"]
+- ["CSo8NSObject", "underlineLabels"]
 - ["CSo8NSObject", "username"]
-- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "OneSignal"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
+- !private ["PSo16NSObjectProtocol", "animate"]
 - !private ["PSo16NSObjectProtocol", "components"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dismiss"]
+- ["PSo16NSObjectProtocol", "goButton"]
+- ["PSo16NSObjectProtocol", "guruLabel"]
+- ["PSo16NSObjectProtocol", "guruLogoImg"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "loginSubLabel"]
 - !private ["PSo16NSObjectProtocol", "objectId"]
 - ["PSo16NSObjectProtocol", "password"]
-- !private ["PSo16NSObjectProtocol", "performSegue"]
+- ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - !private ["PSo16NSObjectProtocol", "sendTag"]
 - ["PSo16NSObjectProtocol", "signUp"]
@@ -379,16 +405,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "tappedScreen"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "topics"]
-- !private ["PSo16NSObjectProtocol", "userInfo"]
+- ["PSo16NSObjectProtocol", "underlineLabels"]
 - ["PSo16NSObjectProtocol", "username"]
-- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "components"]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "userInfo"]
 - !private ["CSo8NSString", "components"]
-- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo9OneSignal", "sendTag"]
 - ["Sq", "deinit"]
@@ -414,46 +437,44 @@ depends-member:
 - !private ["CSo6PFUser", "signUpInBackground"]
 - !private ["CSo6PFUser", "subscript"]
 - !private ["CSo6PFUser", "username"]
-- !private ["Vs5Range", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Index"]
-- !private ["Ps8Sequence", "IndexDistance"]
 - !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "SubSequence"]
 - !private ["Ps8Sequence", "_Element"]
-- !private ["Ps8Sequence", "subscript"]
 - ["C4Guru20SignUpViewController", "Bool"]
-- !private ["C4Guru20SignUpViewController", "NSError"]
-- !private ["C4Guru20SignUpViewController", "NSString"]
 - !private ["C4Guru20SignUpViewController", "OneSignal"]
 - !private ["C4Guru20SignUpViewController", "PFUser"]
+- ["C4Guru20SignUpViewController", "UIButton"]
+- ["C4Guru20SignUpViewController", "UIImageView"]
+- ["C4Guru20SignUpViewController", "UILabel"]
 - ["C4Guru20SignUpViewController", "UITextField"]
+- ["C4Guru20SignUpViewController", "UIView"]
 - !private ["C4Guru20SignUpViewController", "Void"]
 - ["C4Guru20SignUpViewController", "deinit"]
 - ["C4Guru20SignUpViewController", "didReceiveMemoryWarning"]
+- !private ["C4Guru20SignUpViewController", "dismiss"]
+- ["C4Guru20SignUpViewController", "goButton"]
+- ["C4Guru20SignUpViewController", "guruLabel"]
+- ["C4Guru20SignUpViewController", "guruLogoImg"]
 - ["C4Guru20SignUpViewController", "init"]
+- ["C4Guru20SignUpViewController", "loginSubLabel"]
 - ["C4Guru20SignUpViewController", "password"]
-- !private ["C4Guru20SignUpViewController", "performSegue"]
+- ["C4Guru20SignUpViewController", "prefersStatusBarHidden"]
+- !private ["C4Guru20SignUpViewController", "print"]
 - ["C4Guru20SignUpViewController", "signUp"]
 - ["C4Guru20SignUpViewController", "submit"]
 - ["C4Guru20SignUpViewController", "tappedScreen"]
 - ["C4Guru20SignUpViewController", "topics"]
+- ["C4Guru20SignUpViewController", "underlineLabels"]
 - ["C4Guru20SignUpViewController", "username"]
-- ["C4Guru20SignUpViewController", "viewDidAppear"]
 - ["C4Guru20SignUpViewController", "viewDidLoad"]
-- !private ["Ps13SignedInteger", "IntegerLiteralType"]
-- !private ["Ps13SignedInteger", "Stride"]
-- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
-- !private ["Ps12SignedNumber", "IntegerLiteralType"]
-- !private ["Ps12SignedNumber", "Stride"]
-- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
-- !private ["Vs5Slice", "Index"]
-- !private ["Vs5Slice", "Iterator"]
-- !private ["Vs5Slice", "SubSequence"]
-- !private ["Vs5Slice", "_Element"]
-- !private ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["Ps10Strideable", "Stride"]
-- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["SS", "components"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
@@ -461,116 +482,182 @@ depends-member:
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "components"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- !private ["PSo29UIAccessibilityIdentification", "animate"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "alpha"]
+- !private ["PSo12UIAppearance", "animate"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "OneSignal"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
+- !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
+- !private ["PSo21UIAppearanceContainer", "animate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dismiss"]
+- ["PSo21UIAppearanceContainer", "goButton"]
+- ["PSo21UIAppearanceContainer", "guruLabel"]
+- ["PSo21UIAppearanceContainer", "guruLogoImg"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "loginSubLabel"]
 - ["PSo21UIAppearanceContainer", "password"]
-- !private ["PSo21UIAppearanceContainer", "performSegue"]
+- ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "signUp"]
 - ["PSo21UIAppearanceContainer", "submit"]
 - ["PSo21UIAppearanceContainer", "tappedScreen"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "topics"]
+- ["PSo21UIAppearanceContainer", "underlineLabels"]
 - ["PSo21UIAppearanceContainer", "username"]
-- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "alpha"]
 - !private ["PSo18UIContentContainer", "OneSignal"]
 - !private ["PSo18UIContentContainer", "PFUser"]
+- !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dismiss"]
+- ["PSo18UIContentContainer", "goButton"]
+- ["PSo18UIContentContainer", "guruLabel"]
+- ["PSo18UIContentContainer", "guruLogoImg"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "loginSubLabel"]
 - ["PSo18UIContentContainer", "password"]
-- !private ["PSo18UIContentContainer", "performSegue"]
+- ["PSo18UIContentContainer", "prefersStatusBarHidden"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "signUp"]
 - ["PSo18UIContentContainer", "submit"]
 - ["PSo18UIContentContainer", "tappedScreen"]
 - ["PSo18UIContentContainer", "topics"]
+- ["PSo18UIContentContainer", "underlineLabels"]
 - ["PSo18UIContentContainer", "username"]
-- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "alpha"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "resignFirstResponder"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "alpha"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
+- !private ["PSo17UICoordinateSpace", "animate"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "alpha"]
+- !private ["PSo13UIDynamicItem", "animate"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "OneSignal"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
+- !private ["PSo18UIFocusEnvironment", "UIView"]
+- !private ["PSo18UIFocusEnvironment", "alpha"]
+- !private ["PSo18UIFocusEnvironment", "animate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "dismiss"]
+- ["PSo18UIFocusEnvironment", "goButton"]
+- ["PSo18UIFocusEnvironment", "guruLabel"]
+- ["PSo18UIFocusEnvironment", "guruLogoImg"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "loginSubLabel"]
 - ["PSo18UIFocusEnvironment", "password"]
-- !private ["PSo18UIFocusEnvironment", "performSegue"]
+- ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - ["PSo18UIFocusEnvironment", "signUp"]
 - ["PSo18UIFocusEnvironment", "submit"]
 - ["PSo18UIFocusEnvironment", "tappedScreen"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "topics"]
+- ["PSo18UIFocusEnvironment", "underlineLabels"]
 - ["PSo18UIFocusEnvironment", "username"]
-- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "alpha"]
+- !private ["PSo11UIFocusItem", "animate"]
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
 - !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo11UIImageView", "alpha"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "alpha"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "NSError"]
-- !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "OneSignal"]
 - !private ["CSo11UIResponder", "PFUser"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "alpha"]
+- !private ["CSo11UIResponder", "animate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dismiss"]
+- ["CSo11UIResponder", "goButton"]
+- ["CSo11UIResponder", "guruLabel"]
+- ["CSo11UIResponder", "guruLogoImg"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "loginSubLabel"]
 - ["CSo11UIResponder", "password"]
-- !private ["CSo11UIResponder", "performSegue"]
+- ["CSo11UIResponder", "prefersStatusBarHidden"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "signUp"]
 - ["CSo11UIResponder", "submit"]
 - ["CSo11UIResponder", "tappedScreen"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "topics"]
+- ["CSo11UIResponder", "underlineLabels"]
 - ["CSo11UIResponder", "username"]
-- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "OneSignal"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
+- !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- !private ["PSo30UIResponderStandardEditActions", "animate"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- ["PSo30UIResponderStandardEditActions", "goButton"]
+- ["PSo30UIResponderStandardEditActions", "guruLabel"]
+- ["PSo30UIResponderStandardEditActions", "guruLogoImg"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "loginSubLabel"]
 - ["PSo30UIResponderStandardEditActions", "password"]
-- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
+- ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
 - ["PSo30UIResponderStandardEditActions", "signUp"]
 - ["PSo30UIResponderStandardEditActions", "submit"]
 - ["PSo30UIResponderStandardEditActions", "tappedScreen"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "topics"]
+- ["PSo30UIResponderStandardEditActions", "underlineLabels"]
 - ["PSo30UIResponderStandardEditActions", "username"]
-- ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "OneSignal"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
+- !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dismiss"]
+- ["PSo16UIStateRestoring", "goButton"]
+- ["PSo16UIStateRestoring", "guruLabel"]
+- ["PSo16UIStateRestoring", "guruLogoImg"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "loginSubLabel"]
 - ["PSo16UIStateRestoring", "password"]
-- !private ["PSo16UIStateRestoring", "performSegue"]
+- ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "signUp"]
 - ["PSo16UIStateRestoring", "submit"]
 - ["PSo16UIStateRestoring", "tappedScreen"]
 - ["PSo16UIStateRestoring", "topics"]
+- ["PSo16UIStateRestoring", "underlineLabels"]
 - ["PSo16UIStateRestoring", "username"]
-- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "resignFirstResponder"]
@@ -581,50 +668,78 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "OneSignal"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
+- !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
+- !private ["PSo18UITraitEnvironment", "animate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dismiss"]
+- ["PSo18UITraitEnvironment", "goButton"]
+- ["PSo18UITraitEnvironment", "guruLabel"]
+- ["PSo18UITraitEnvironment", "guruLogoImg"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "loginSubLabel"]
 - ["PSo18UITraitEnvironment", "password"]
-- !private ["PSo18UITraitEnvironment", "performSegue"]
+- ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "signUp"]
 - ["PSo18UITraitEnvironment", "submit"]
 - ["PSo18UITraitEnvironment", "tappedScreen"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "topics"]
+- ["PSo18UITraitEnvironment", "underlineLabels"]
 - ["PSo18UITraitEnvironment", "username"]
-- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "alpha"]
+- !private ["CSo6UIView", "animate"]
+- !private ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "NSError"]
-- !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "OneSignal"]
 - !private ["CSo16UIViewController", "PFUser"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dismiss"]
+- ["CSo16UIViewController", "goButton"]
+- ["CSo16UIViewController", "guruLabel"]
+- ["CSo16UIViewController", "guruLogoImg"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "loginSubLabel"]
 - ["CSo16UIViewController", "password"]
-- !private ["CSo16UIViewController", "performSegue"]
+- ["CSo16UIViewController", "prefersStatusBarHidden"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "signUp"]
 - ["CSo16UIViewController", "submit"]
 - ["CSo16UIViewController", "tappedScreen"]
 - ["CSo16UIViewController", "topics"]
+- ["CSo16UIViewController", "underlineLabels"]
 - ["CSo16UIViewController", "username"]
-- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "components"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "components"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "components"]
@@ -633,20 +748,24 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "components"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "OneSignal"]
 - !private ["Ps9_Hashable", "PFUser"]
-- !private ["Ps9_Hashable", "Stride"]
-- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "UIView"]
+- !private ["Ps9_Hashable", "alpha"]
+- !private ["Ps9_Hashable", "animate"]
 - !private ["Ps9_Hashable", "components"]
 - !private ["Ps9_Hashable", "current"]
-- !private ["Ps9_Hashable", "deinit"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "dismiss"]
+- ["Ps9_Hashable", "goButton"]
+- ["Ps9_Hashable", "guruLabel"]
+- ["Ps9_Hashable", "guruLogoImg"]
 - !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "loginSubLabel"]
 - !private ["Ps9_Hashable", "objectId"]
 - ["Ps9_Hashable", "password"]
-- !private ["Ps9_Hashable", "performSegue"]
+- ["Ps9_Hashable", "prefersStatusBarHidden"]
+- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "resignFirstResponder"]
 - !private ["Ps9_Hashable", "sendTag"]
 - ["Ps9_Hashable", "signUp"]
@@ -656,80 +775,59 @@ depends-member:
 - ["Ps9_Hashable", "tappedScreen"]
 - !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "topics"]
-- !private ["Ps9_Hashable", "userInfo"]
+- ["Ps9_Hashable", "underlineLabels"]
 - ["Ps9_Hashable", "username"]
-- ["Ps9_Hashable", "viewDidAppear"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "Stride"]
-- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
-- !private ["Ps8_Integer", "IntegerLiteralType"]
-- !private ["Ps8_Integer", "Stride"]
-- !private ["Ps8_Integer", "_DisabledRangeIndex"]
-- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
-- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "components"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
-- !private ["Ps14_SignedInteger", "Stride"]
-- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
-- !private ["Ps11_Strideable", "IntegerLiteralType"]
-- !private ["Ps11_Strideable", "Stride"]
-- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
 depends-nominal:
-- !private "Vs11AnyHashable"
 - "Ps9AnyObject"
 - "Sa"
-- !private "Ps17BitwiseOperations"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
 - "Sb"
 - !private "PSo15CALayerDelegate"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
+- !private "Vs9Character"
 - !private "V10Foundation12CharacterSet"
-- !private "Vs11ClosedRange"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- !private "Vs10Dictionary"
-- !private "Vs15DictionaryIndex"
+- "Sd"
 - "Ps9Equatable"
 - !private "Ps5Error"
-- !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
 - "Si"
-- !private "Ps7Integer"
-- !private "Ps17IntegerArithmetic"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "CSo7NSError"
 - "PSo26NSExtensionRequestHandling"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
@@ -741,19 +839,19 @@ depends-nominal:
 - !private "CSo8PFObject"
 - !private "PSo13PFSubclassing"
 - "CSo6PFUser"
-- !private "Vs5Range"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps8Sequence"
 - "C4Guru20SignUpViewController"
-- !private "Ps13SignedInteger"
-- !private "Ps12SignedNumber"
-- !private "Vs5Slice"
-- !private "Ps10Strideable"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
@@ -761,7 +859,9 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
+- !private "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
@@ -771,22 +871,22 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
-- !private "Ps14_Incrementable"
-- !private "Ps8_Integer"
-- !private "Ps18_IntegerArithmetic"
 - !private "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
-- !private "Ps14_SignedInteger"
-- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -799,6 +899,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
@@ -850,6 +954,8 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Modules/ParseLiveQuery.swiftmodule/arm64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
@@ -862,6 +968,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
@@ -891,14 +1001,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/arm64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/arm64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "318544466cd2ffc4ddb462f8da490de9"
+interface-hash: "f546da25a06b74225d42499382531bfe"

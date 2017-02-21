@@ -1,0 +1,315 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "unknownDomain"
+- "objcTask"
+- "swiftTask"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "swiftTask"
+- "objcTask"
+- "Task"
+- "StringLiteralType"
+- "AnyObject"
+- !private "fatalError"
+- !private "TaskCompletionSource"
+- !private "BFTaskCompletionSource"
+- !private "??"
+- "BFTask"
+- !private "CastingPrecedence"
+- "unknownDomain"
+- !private "NSError"
+depends-member:
+- !private ["Ps9AnyObject", "cancelled"]
+- !private ["Ps9AnyObject", "continue"]
+- !private ["Ps9AnyObject", "continueWith"]
+- ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "error"]
+- !private ["Ps9AnyObject", "faulted"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isCancelled"]
+- !private ["Ps9AnyObject", "isFaulted"]
+- !private ["Ps9AnyObject", "result"]
+- !private ["Ps9AnyObject", "task"]
+- !private ["Ps9AnyObject", "tryCancel"]
+- !private ["Ps9AnyObject", "trySet"]
+- !private ["Ps9AnyObject", "trySetCancelled"]
+- !private ["Ps9AnyObject", "trySetError"]
+- !private ["Ps9AnyObject", "trySetResult"]
+- !private ["CSo6BFTask", "continue"]
+- ["CSo6BFTask", "deinit"]
+- !private ["CSo6BFTask", "error"]
+- !private ["CSo6BFTask", "isCancelled"]
+- !private ["CSo6BFTask", "isFaulted"]
+- !private ["CSo6BFTask", "result"]
+- ["CSo22BFTaskCompletionSource", "deinit"]
+- !private ["CSo22BFTaskCompletionSource", "init"]
+- !private ["CSo22BFTaskCompletionSource", "task"]
+- !private ["CSo22BFTaskCompletionSource", "trySetCancelled"]
+- !private ["CSo22BFTaskCompletionSource", "trySetError"]
+- !private ["CSo22BFTaskCompletionSource", "trySetResult"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "continue"]
+- !private ["Ps7CVarArg", "error"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isCancelled"]
+- !private ["Ps7CVarArg", "isFaulted"]
+- !private ["Ps7CVarArg", "result"]
+- !private ["Ps7CVarArg", "task"]
+- !private ["Ps7CVarArg", "trySetCancelled"]
+- !private ["Ps7CVarArg", "trySetError"]
+- !private ["Ps7CVarArg", "trySetResult"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "cancelled"]
+- !private ["Ps28CustomDebugStringConvertible", "continue"]
+- !private ["Ps28CustomDebugStringConvertible", "continueWith"]
+- !private ["Ps28CustomDebugStringConvertible", "error"]
+- !private ["Ps28CustomDebugStringConvertible", "faulted"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isCancelled"]
+- !private ["Ps28CustomDebugStringConvertible", "isFaulted"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "task"]
+- !private ["Ps28CustomDebugStringConvertible", "trySetCancelled"]
+- !private ["Ps28CustomDebugStringConvertible", "trySetError"]
+- !private ["Ps28CustomDebugStringConvertible", "trySetResult"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "cancelled"]
+- !private ["Ps23CustomStringConvertible", "continue"]
+- !private ["Ps23CustomStringConvertible", "continueWith"]
+- !private ["Ps23CustomStringConvertible", "error"]
+- !private ["Ps23CustomStringConvertible", "faulted"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isCancelled"]
+- !private ["Ps23CustomStringConvertible", "isFaulted"]
+- !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "task"]
+- !private ["Ps23CustomStringConvertible", "trySetCancelled"]
+- !private ["Ps23CustomStringConvertible", "trySetError"]
+- !private ["Ps23CustomStringConvertible", "trySetResult"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "continue"]
+- !private ["Ps9Equatable", "error"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isCancelled"]
+- !private ["Ps9Equatable", "isFaulted"]
+- !private ["Ps9Equatable", "result"]
+- !private ["Ps9Equatable", "task"]
+- !private ["Ps9Equatable", "trySetCancelled"]
+- !private ["Ps9Equatable", "trySetError"]
+- !private ["Ps9Equatable", "trySetResult"]
+- !private ["Ps5Error", "deinit"]
+- !private ["Ps5Error", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "continue"]
+- !private ["Ps8Hashable", "error"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isCancelled"]
+- !private ["Ps8Hashable", "isFaulted"]
+- !private ["Ps8Hashable", "result"]
+- !private ["Ps8Hashable", "task"]
+- !private ["Ps8Hashable", "trySetCancelled"]
+- !private ["Ps8Hashable", "trySetError"]
+- !private ["Ps8Hashable", "trySetResult"]
+- !private ["Si", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- !private ["CSo7NSError", "deinit"]
+- !private ["CSo7NSError", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "continue"]
+- !private ["CSo8NSObject", "error"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isCancelled"]
+- !private ["CSo8NSObject", "isFaulted"]
+- !private ["CSo8NSObject", "result"]
+- !private ["CSo8NSObject", "task"]
+- !private ["CSo8NSObject", "trySetCancelled"]
+- !private ["CSo8NSObject", "trySetError"]
+- !private ["CSo8NSObject", "trySetResult"]
+- !private ["PSo16NSObjectProtocol", "continue"]
+- !private ["PSo16NSObjectProtocol", "error"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isCancelled"]
+- !private ["PSo16NSObjectProtocol", "isFaulted"]
+- !private ["PSo16NSObjectProtocol", "result"]
+- !private ["PSo16NSObjectProtocol", "task"]
+- !private ["PSo16NSObjectProtocol", "trySetCancelled"]
+- !private ["PSo16NSObjectProtocol", "trySetError"]
+- !private ["PSo16NSObjectProtocol", "trySetResult"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- !private ["Os5Never", "deinit"]
+- !private ["Sq", "deinit"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- !private ["C10BoltsSwift4Task", "cancelled"]
+- !private ["C10BoltsSwift4Task", "continueWith"]
+- ["C10BoltsSwift4Task", "deinit"]
+- !private ["C10BoltsSwift4Task", "error"]
+- !private ["C10BoltsSwift4Task", "faulted"]
+- !private ["C10BoltsSwift4Task", "result"]
+- ["C10BoltsSwift20TaskCompletionSource", "deinit"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "init"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "task"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "tryCancel"]
+- !private ["C10BoltsSwift20TaskCompletionSource", "trySet"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Su", "deinit"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "continue"]
+- !private ["Ps9_Hashable", "error"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isCancelled"]
+- !private ["Ps9_Hashable", "isFaulted"]
+- !private ["Ps9_Hashable", "result"]
+- !private ["Ps9_Hashable", "task"]
+- !private ["Ps9_Hashable", "trySetCancelled"]
+- !private ["Ps9_Hashable", "trySetError"]
+- !private ["Ps9_Hashable", "trySetResult"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "CSo6BFTask"
+- "CSo22BFTaskCompletionSource"
+- !private "Sb"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo7NSError"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "Os5Never"
+- !private "Sq"
+- !private "Vs12StaticString"
+- "SS"
+- "C10BoltsSwift4Task"
+- "C10BoltsSwift20TaskCompletionSource"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/ParseLiveQuery/ParseLiveQuery-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/ParseLiveQuery.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Bolts-Swift/Bolts-Swift-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts-Swift.build/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPurchase.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFProduct.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFPush.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFInstallation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSession.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRole.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFRelation.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFQuery.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject+Subclass.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFGeoPoint.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFFile.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConfig.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Synchronous.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFCloud.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils+Deprecated.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFSubclassing.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFObject.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFUser.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnonymousUtils.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFAnalytics.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFACL.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/PFConstants.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/ParseClientConfiguration.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Parse/Parse/Parse.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/Parse/Parse-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/Parse.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SRWebSocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/SocketRocket/SocketRocket/SocketRocket.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/SocketRocket/SocketRocket-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphoneos/SocketRocket.build/module.modulemap"
+interface-hash: "e194acf6bad2ebd9973ea7e6161faef3"

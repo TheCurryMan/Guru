@@ -6,5 +6,9 @@
 	<string>3V593WX43L.com.wagmob.guru</string>
 	<key>aps-environment</key>
 	<string>development</string>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>3V593WX43L.com.dcdwebdesign.guru</string>
+	</array>
 </dict>
 </plist>
