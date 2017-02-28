@@ -150,7 +150,7 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
                 
         }
         
-        _ = popup.show(DemoPopupViewController2.instance())
+        _ = popup.show(DemoPopupViewController2.instance(withMultipleSelection: false))
         
     }
     

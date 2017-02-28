@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="0ja-Hk-275">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="0ja-Hk-275">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -113,45 +113,50 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guru" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vn3-d2-Z8u">
-                                <rect key="frame" x="158" y="137" width="140" height="65"/>
+                                <rect key="frame" x="158" y="54" width="140" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view alpha="0.10000000000000001" contentMode="scaleToFill" misplaced="YES" id="Gnu-I9-IWG">
-                                <rect key="frame" x="40" y="326" width="284" height="2"/>
+                                <rect key="frame" x="40" y="243" width="284" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="20" id="bWN-WF-45p">
-                                <rect key="frame" x="40" y="358" width="267" height="30"/>
+                                <rect key="frame" x="40" y="275" width="267" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
                             <view alpha="0.10000000000000001" contentMode="scaleToFill" misplaced="YES" id="v4L-1F-PAB">
-                                <rect key="frame" x="40" y="397" width="284" height="2"/>
+                                <rect key="frame" x="40" y="314" width="284" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="20" id="XMa-Om-b8r">
-                                <rect key="frame" x="40" y="288" width="267" height="30"/>
+                                <rect key="frame" x="40" y="205" width="267" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Topics" textAlignment="natural" minimumFontSize="20" id="W7w-Ta-wOV">
-                                <rect key="frame" x="40" y="427" width="267" height="30"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hVq-aL-9zr">
+                                <rect key="frame" x="40" y="344" width="267" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
-                            </textField>
+                                <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Topics">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.67450980392156867" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectTopics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxj-IL-qHK"/>
+                                </connections>
+                            </button>
                             <view alpha="0.10000000000000001" contentMode="scaleToFill" misplaced="YES" id="ttt-Rn-AYE">
-                                <rect key="frame" x="40" y="465" width="284" height="2"/>
+                                <rect key="frame" x="40" y="382" width="284" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -179,7 +184,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Guru_trans.png" id="UWu-l3-49N">
-                                <rect key="frame" x="40" y="116" width="134" height="107"/>
+                                <rect key="frame" x="40" y="33" width="134" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -195,7 +200,7 @@
                         <outlet property="guruLogoImg" destination="UWu-l3-49N" id="0Kd-j9-8yA"/>
                         <outlet property="loginSubLabel" destination="582-H2-N7t" id="lSW-3E-ghz"/>
                         <outlet property="password" destination="bWN-WF-45p" id="Trn-qQ-gOr"/>
-                        <outlet property="topics" destination="W7w-Ta-wOV" id="DLP-Sl-H9T"/>
+                        <outlet property="topicButton" destination="hVq-aL-9zr" id="Mv1-Gd-xvk"/>
                         <outlet property="username" destination="XMa-Om-b8r" id="WQw-g1-1jQ"/>
                         <outletCollection property="underlineLabels" destination="ttt-Rn-AYE" collectionClass="NSMutableArray" id="nvq-nQ-OVu"/>
                         <outletCollection property="underlineLabels" destination="v4L-1F-PAB" collectionClass="NSMutableArray" id="hji-eE-9GF"/>
@@ -1037,7 +1042,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="S2a-jK-q84"/>
-        <segue reference="cNd-ID-MDd"/>
+        <segue reference="qIo-tJ-kbc"/>
+        <segue reference="F8c-Ml-Tat"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,7 @@ target 'Guru' do
   pod 'ParseLiveQuery'
   pod 'PopupController'
   pod 'Cosmos', '~> 8.0'
+  pod 'M13Checkbox'
 
 
   # Pods for Guru

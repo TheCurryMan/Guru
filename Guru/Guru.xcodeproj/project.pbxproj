@@ -12,6 +12,7 @@
 		6514C0C0DD4146398976A739 /* Pods_GuruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B038141BA34C22430AC3657 /* Pods_GuruTests.framework */; };
 		77A86A061E3EE66E00D23385 /* UIView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A86A051E3EE66E00D23385 /* UIView Extension.swift */; };
 		77BCB9CD1E345579004DF9AB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB9CC1E345579004DF9AB /* Point.swift */; };
+		77D291451E6504000039D5F0 /* UIViewController Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D291441E6504000039D5F0 /* UIViewController Extension.swift */; };
 		77D66B851E33E34600C90E01 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B841E33E34600C90E01 /* Utils.swift */; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
 		AF2821631E33373500493A74 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821621E33373500493A74 /* Camera.png */; };
@@ -101,6 +102,7 @@
 		77A86A051E3EE66E00D23385 /* UIView Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView Extension.swift"; sourceTree = "<group>"; };
 		77AA496A1E336B3A0065DC6B /* Guru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guru.entitlements; sourceTree = "<group>"; };
 		77BCB9CC1E345579004DF9AB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		77D291441E6504000039D5F0 /* UIViewController Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController Extension.swift"; sourceTree = "<group>"; };
 		77D66B841E33E34600C90E01 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBCFAF66F74F2ADF68E3E27 /* Pods-GuruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			children = (
 				77D66B841E33E34600C90E01 /* Utils.swift */,
 				77A86A051E3EE66E00D23385 /* UIView Extension.swift */,
+				77D291441E6504000039D5F0 /* UIViewController Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				AF91892C1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */,
 				AF9189321E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */,
 				AF9189291E4AAA5D00E8D458 /* LDViewController.swift in Sources */,
+				77D291451E6504000039D5F0 /* UIViewController Extension.swift in Sources */,
 				AF91892F1E4AAA5D00E8D458 /* ProfileViewController.swift in Sources */,
 				AF9189351E4AAA5D00E8D458 /* VideoVC.swift in Sources */,
 				AF9189201E4AAA5D00E8D458 /* GuruRequestsViewController.swift in Sources */,
