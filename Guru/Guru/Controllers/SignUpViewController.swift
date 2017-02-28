@@ -33,6 +33,9 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         UIView.animate(withDuration: 1.5, animations: {
             self.guruLabel.alpha=1
             self.guruLogoImg.alpha=1
@@ -44,6 +47,7 @@ class SignUpViewController: UIViewController {
             self.goButton.alpha=1
             self.loginSubLabel.alpha=1
         })
+
     }
     
     @IBAction func submit(_ sender: Any) {

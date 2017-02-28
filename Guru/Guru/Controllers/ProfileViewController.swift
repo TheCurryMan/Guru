@@ -25,6 +25,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     var selectedQuestions = [PFObject]()
     var averageRating = 0.0
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
