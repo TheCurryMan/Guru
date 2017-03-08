@@ -29,7 +29,6 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
         ("Programming")
     ]
     
-    var selectedTopics: [String] = []
     
     var multipleSelection = false
     
@@ -74,7 +73,7 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
         
         if (multipleSelection) {
             cell.checkbox.isHidden = false
-            if (selectedTopics.contains(text)) {
+            if (GuruManager.sharedInstance.selectedTopics.contains(text)) {
                 cell.checkbox.setCheckState(.checked, animated: false)
             }
             else {
@@ -103,20 +102,20 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
         }
         else {
             print("selected row")
-            if (selectedTopics.contains(topic!)) {
+            if (GuruManager.sharedInstance.selectedTopics.contains(topic!)) {
                 //remove selected topic
-                if let i = selectedTopics.index(of: topic!) {
-                    selectedTopics.remove(at: i)
+                if let i = GuruManager.sharedInstance.selectedTopics.index(of: topic!) {
+                    GuruManager.sharedInstance.selectedTopics.remove(at: i)
                 }
                 cell.checkbox.setCheckState(.unchecked, animated: true)
-                if (selectedTopics.count == 0) {
+                if (GuruManager.sharedInstance.selectedTopics.count == 0) {
                     self.disableBottomButton()
                 }
             }
             else {
                 //add selected topic
-                if (selectedTopics.count <= 3) {
-                    selectedTopics.append(topic!)
+                if (GuruManager.sharedInstance.selectedTopics.count < 3) {
+                    GuruManager.sharedInstance.selectedTopics.append(topic!)
                     cell.checkbox.setCheckState(.checked, animated: true)
                     self.enableBottomButton()
                 }
@@ -127,7 +126,7 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
         let nc = NotificationCenter.default
         nc.post(name:Notification.Name(rawValue:"topicSignUp"),
                 object: nil,
-                userInfo: ["topics": self.selectedTopics])
+                userInfo: ["topics": GuruManager.sharedInstance.selectedTopics])
     }
     
     func enableBottomButton() {

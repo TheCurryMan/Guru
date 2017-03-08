@@ -27,7 +27,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var loginSubLabel: UIButton!
     @IBOutlet weak var topicButton: UIButton!
     
-    var selectedTopics = [String]()
     var popup = PopupController()
     
     
@@ -42,6 +41,8 @@ class SignUpViewController: UIViewController {
         nc.addObserver(forName:Notification.Name(rawValue:"topicSignUp"),
                        object:nil, queue:nil,
                        using:catchNotification)
+        
+        GuruManager.sharedInstance.selectedTopics.removeAll()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -74,7 +75,7 @@ class SignUpViewController: UIViewController {
         else if (password.text == nil) {
             showAlert("Please enter a password")
         }
-        else if (self.selectedTopics.count == 0) {
+        else if (GuruManager.sharedInstance.selectedTopics.count == 0) {
             showAlert("Please select up to 3 topics")
         }
         else {
@@ -82,7 +83,7 @@ class SignUpViewController: UIViewController {
             user.username = username.text
             user.password = password.text
             // other fields can be set just like with PFObject
-            user["topics"] = self.selectedTopics
+            user["topics"] = GuruManager.sharedInstance.selectedTopics
             user["available"] = true
             user["points"] = 10
             user["asked"] = 0
@@ -132,8 +133,8 @@ class SignUpViewController: UIViewController {
                 print("No userInfo found in notification")
                 return
         }
-        self.selectedTopics = topics
-        self.topicButton.setTitle(self.selectedTopics.joined(separator: ", "), for: UIControlState.normal)
+        GuruManager.sharedInstance.selectedTopics = topics
+        self.topicButton.setTitle(GuruManager.sharedInstance.selectedTopics.joined(separator: ", "), for: UIControlState.normal)
         self.topicButton.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
         popup.dismiss()
         

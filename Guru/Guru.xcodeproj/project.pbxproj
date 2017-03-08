@@ -14,6 +14,7 @@
 		77BCB9CD1E345579004DF9AB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB9CC1E345579004DF9AB /* Point.swift */; };
 		77D291451E6504000039D5F0 /* UIViewController Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D291441E6504000039D5F0 /* UIViewController Extension.swift */; };
 		77D66B851E33E34600C90E01 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D66B841E33E34600C90E01 /* Utils.swift */; };
+		77F90A471E6FC8EB00562A51 /* GuruManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F90A461E6FC8EB00562A51 /* GuruManager.swift */; };
 		96DA3444A3C840FEBAAC77C2 /* Pods_GuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1393730C2C16AC42DB83B0DD /* Pods_GuruUITests.framework */; };
 		AF2821631E33373500493A74 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821621E33373500493A74 /* Camera.png */; };
 		AF2821651E33440500493A74 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2821641E33440500493A74 /* circle.png */; };
@@ -104,6 +105,7 @@
 		77BCB9CC1E345579004DF9AB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		77D291441E6504000039D5F0 /* UIViewController Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController Extension.swift"; sourceTree = "<group>"; };
 		77D66B841E33E34600C90E01 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		77F90A461E6FC8EB00562A51 /* GuruManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruManager.swift; sourceTree = "<group>"; };
 		7CE0C271F402BDF81C2BDB1A /* Pods_Guru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBCFAF66F74F2ADF68E3E27 /* Pods-GuruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A326BE5B6BCB5F3DAC5D4E50 /* Pods-GuruTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuruTests/Pods-GuruTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				77BCB9CC1E345579004DF9AB /* Point.swift */,
 				E1044E8B1E417AB700ED262B /* Review.swift */,
+				77F90A461E6FC8EB00562A51 /* GuruManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F90A471E6FC8EB00562A51 /* GuruManager.swift in Sources */,
 				AF91891D1E4AAA5D00E8D458 /* DemoPopupViewController2.swift in Sources */,
 				AF91892C1E4AAA5D00E8D458 /* LoginViewController.swift in Sources */,
 				AF9189321E4AAA5D00E8D458 /* SignUpViewController.swift in Sources */,
