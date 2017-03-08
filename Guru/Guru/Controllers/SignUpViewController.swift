@@ -57,6 +57,7 @@ class SignUpViewController: UIViewController {
             self.goButton.alpha=1
             self.loginSubLabel.alpha=1
         })
+
     }
     
     @IBAction func submit(_ sender: Any) {

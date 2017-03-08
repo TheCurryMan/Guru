@@ -43,6 +43,10 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
     
     var videoScreen: VideoVC!
 
+//    override var prefersStatusBarHidden: Bool {
+//        return true
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.videoScreen = self.storyboard?.instantiateViewController(withIdentifier: "videoVC") as! VideoVC
@@ -223,10 +227,7 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
         print(messageText)
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -6,76 +6,78 @@ provides-nominal:
 provides-member:
 - ["C4Guru8HomePage", ""]
 provides-dynamic-lookup:
-- "questions"
-- "topicButton"
-- "pressedAsk"
-- "submitQuestion"
-- "acceptButton"
+- "questionField"
+- "logout"
 - "finalTopic"
 - "backgroundView"
 - "emptyTableViewLabel"
-- "prepare"
-- "prefersStatusBarHidden"
-- "viewDidLoad"
-- "logout"
-- "selectedQuestion"
-- "viewWillAppear"
-- "didReceiveMemoryWarning"
+- "viewDidAppear"
 - "textFieldShouldReturn"
-- "questionField"
+- "questions"
+- "pressedAsk"
+- "tapped"
+- "didReceiveMemoryWarning"
+- "viewWillAppear"
 - "question"
-- "popup"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "catchNotification"
-- "avail"
 - "accept"
 - "showTopics"
-- "tapped"
+- "viewDidLoad"
+- "prepare"
+- "loadData"
+- "selectedQuestion"
+- "popup"
+- "acceptButton"
+- "submitQuestion"
+- "avail"
+- "topicButton"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "presentSignup"
+- "catchNotification"
 depends-top-level:
-- !private "UIImage"
-- !private "WaitingScreen"
+- "Notification"
+- "Void"
+- "UITextField"
 - "CastingPrecedence"
 - "AssignmentPrecedence"
-- !private "=="
-- "HomePage"
-- !private "PFQuery"
-- !private "NotificationCenter"
-- !private "RequestTableViewCell"
-- !private "!"
-- "Notification"
-- "IndexPath"
-- !private "AcceptViewController"
-- "AnyObject"
-- !private "Error"
-- "UITextField"
-- "UIViewController"
-- "PopupController"
-- !private "String"
 - !private "UINib"
-- "PFObject"
-- !private "UIColor"
-- "UIView"
-- "Bool"
-- !private "PFUser"
-- "Void"
 - !private "print"
-- "StringLiteralType"
-- "UITableViewCell"
-- "UIStoryboardSegue"
-- "UITextFieldDelegate"
-- "BooleanLiteralType"
-- "UIButton"
-- "UITableView"
-- "Int"
-- "UILabel"
 - "UITableViewDataSource"
-- !private "Array"
-- !private "DemoPopupViewController2"
+- !private "AcceptViewController"
 - "UITableViewDelegate"
+- "Int"
+- !private "Error"
+- "UIViewController"
+- !private "=="
+- !private "!"
+- "Bool"
+- "UITableViewCell"
+- !private "NotificationCenter"
+- "UILabel"
+- "PFObject"
+- !private "DemoPopupViewController2"
+- "IndexPath"
+- "UITextFieldDelegate"
+- "AnyObject"
+- !private "UIColor"
+- !private "UIImage"
+- "PopupController"
+- !private "RequestTableViewCell"
+- !private "WaitingScreen"
+- "UIButton"
+- "BooleanLiteralType"
+- "HomePage"
+- !private "String"
 - !private "UIControlState"
+- !private "Array"
+- "UIView"
+- "UITableView"
+- !private "PFUser"
+- "StringLiteralType"
+- "UIStoryboardSegue"
+- !private "PFQuery"
 depends-member:
 - ["C4Guru20AcceptViewController", "deinit"]
 - !private ["C4Guru20AcceptViewController", "question"]
@@ -120,9 +122,11 @@ depends-member:
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instance"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isEnabled"]
 - !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "layer"]
+- ["Ps9AnyObject", "loadData"]
 - !private ["Ps9AnyObject", "logOut"]
 - ["Ps9AnyObject", "logout"]
 - ["Ps9AnyObject", "numberOfSections"]
@@ -130,8 +134,9 @@ depends-member:
 - !private ["Ps9AnyObject", "order"]
 - !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "popup"]
-- ["Ps9AnyObject", "prefersStatusBarHidden"]
 - ["Ps9AnyObject", "prepare"]
+- !private ["Ps9AnyObject", "present"]
+- ["Ps9AnyObject", "presentSignup"]
 - ["Ps9AnyObject", "pressedAsk"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "question"]
@@ -163,6 +168,7 @@ depends-member:
 - !private ["Ps9AnyObject", "setTitleColor"]
 - !private ["Ps9AnyObject", "show"]
 - ["Ps9AnyObject", "showTopics"]
+- !private ["Ps9AnyObject", "storyboard"]
 - ["Ps9AnyObject", "submitQuestion"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "tableFooterView"]
@@ -181,6 +187,7 @@ depends-member:
 - !private ["Ps9AnyObject", "topicLabel"]
 - !private ["Ps9AnyObject", "username"]
 - !private ["Ps9AnyObject", "usernameLabel"]
+- ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
@@ -309,9 +316,11 @@ depends-member:
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instance"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isEnabled"]
 - !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "layer"]
+- ["Ps7CVarArg", "loadData"]
 - !private ["Ps7CVarArg", "logOut"]
 - ["Ps7CVarArg", "logout"]
 - ["Ps7CVarArg", "numberOfSections"]
@@ -319,8 +328,9 @@ depends-member:
 - !private ["Ps7CVarArg", "order"]
 - !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "popup"]
-- ["Ps7CVarArg", "prefersStatusBarHidden"]
 - ["Ps7CVarArg", "prepare"]
+- !private ["Ps7CVarArg", "present"]
+- ["Ps7CVarArg", "presentSignup"]
 - ["Ps7CVarArg", "pressedAsk"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "question"]
@@ -352,6 +362,7 @@ depends-member:
 - !private ["Ps7CVarArg", "setTitleColor"]
 - !private ["Ps7CVarArg", "show"]
 - ["Ps7CVarArg", "showTopics"]
+- !private ["Ps7CVarArg", "storyboard"]
 - ["Ps7CVarArg", "submitQuestion"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "tableFooterView"]
@@ -370,6 +381,7 @@ depends-member:
 - !private ["Ps7CVarArg", "topicLabel"]
 - !private ["Ps7CVarArg", "username"]
 - !private ["Ps7CVarArg", "usernameLabel"]
+- ["Ps7CVarArg", "viewDidAppear"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
@@ -444,9 +456,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instance"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
+- ["Ps28CustomDebugStringConvertible", "loadData"]
 - !private ["Ps28CustomDebugStringConvertible", "logOut"]
 - ["Ps28CustomDebugStringConvertible", "logout"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
@@ -454,8 +468,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "order"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "popup"]
-- ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
+- ["Ps28CustomDebugStringConvertible", "presentSignup"]
 - ["Ps28CustomDebugStringConvertible", "pressedAsk"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "question"]
@@ -488,6 +503,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setTitleColor"]
 - !private ["Ps28CustomDebugStringConvertible", "show"]
 - ["Ps28CustomDebugStringConvertible", "showTopics"]
+- !private ["Ps28CustomDebugStringConvertible", "storyboard"]
 - ["Ps28CustomDebugStringConvertible", "submitQuestion"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "tableFooterView"]
@@ -507,6 +523,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
 - !private ["Ps28CustomDebugStringConvertible", "username"]
 - !private ["Ps28CustomDebugStringConvertible", "usernameLabel"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
@@ -589,9 +606,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instance"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "layer"]
+- ["Ps23CustomStringConvertible", "loadData"]
 - !private ["Ps23CustomStringConvertible", "logOut"]
 - ["Ps23CustomStringConvertible", "logout"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
@@ -599,8 +618,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "order"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "popup"]
-- ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
 - ["Ps23CustomStringConvertible", "prepare"]
+- !private ["Ps23CustomStringConvertible", "present"]
+- ["Ps23CustomStringConvertible", "presentSignup"]
 - ["Ps23CustomStringConvertible", "pressedAsk"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "question"]
@@ -633,6 +653,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setTitleColor"]
 - !private ["Ps23CustomStringConvertible", "show"]
 - ["Ps23CustomStringConvertible", "showTopics"]
+- !private ["Ps23CustomStringConvertible", "storyboard"]
 - ["Ps23CustomStringConvertible", "submitQuestion"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "tableFooterView"]
@@ -652,6 +673,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "userInfo"]
 - !private ["Ps23CustomStringConvertible", "username"]
 - !private ["Ps23CustomStringConvertible", "usernameLabel"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -723,9 +745,11 @@ depends-member:
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instance"]
+- !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isEnabled"]
 - !private ["Ps9Equatable", "isHidden"]
 - !private ["Ps9Equatable", "layer"]
+- ["Ps9Equatable", "loadData"]
 - !private ["Ps9Equatable", "logOut"]
 - ["Ps9Equatable", "logout"]
 - !private ["Ps9Equatable", "none"]
@@ -735,8 +759,9 @@ depends-member:
 - !private ["Ps9Equatable", "order"]
 - !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "popup"]
-- ["Ps9Equatable", "prefersStatusBarHidden"]
 - ["Ps9Equatable", "prepare"]
+- !private ["Ps9Equatable", "present"]
+- ["Ps9Equatable", "presentSignup"]
 - ["Ps9Equatable", "pressedAsk"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "question"]
@@ -770,6 +795,7 @@ depends-member:
 - !private ["Ps9Equatable", "show"]
 - ["Ps9Equatable", "showTopics"]
 - !private ["Ps9Equatable", "slideUp"]
+- !private ["Ps9Equatable", "storyboard"]
 - ["Ps9Equatable", "submitQuestion"]
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "tableFooterView"]
@@ -789,6 +815,7 @@ depends-member:
 - !private ["Ps9Equatable", "userInfo"]
 - !private ["Ps9Equatable", "username"]
 - !private ["Ps9Equatable", "usernameLabel"]
+- ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
@@ -866,9 +893,11 @@ depends-member:
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instance"]
+- !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isEnabled"]
 - !private ["Ps8Hashable", "isHidden"]
 - !private ["Ps8Hashable", "layer"]
+- ["Ps8Hashable", "loadData"]
 - !private ["Ps8Hashable", "logOut"]
 - ["Ps8Hashable", "logout"]
 - !private ["Ps8Hashable", "none"]
@@ -877,8 +906,9 @@ depends-member:
 - !private ["Ps8Hashable", "order"]
 - !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "popup"]
-- ["Ps8Hashable", "prefersStatusBarHidden"]
 - ["Ps8Hashable", "prepare"]
+- !private ["Ps8Hashable", "present"]
+- ["Ps8Hashable", "presentSignup"]
 - ["Ps8Hashable", "pressedAsk"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "question"]
@@ -912,6 +942,7 @@ depends-member:
 - !private ["Ps8Hashable", "show"]
 - ["Ps8Hashable", "showTopics"]
 - !private ["Ps8Hashable", "slideUp"]
+- !private ["Ps8Hashable", "storyboard"]
 - ["Ps8Hashable", "submitQuestion"]
 - !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "tableFooterView"]
@@ -931,6 +962,7 @@ depends-member:
 - !private ["Ps8Hashable", "userInfo"]
 - !private ["Ps8Hashable", "username"]
 - !private ["Ps8Hashable", "usernameLabel"]
+- ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
@@ -973,19 +1005,20 @@ depends-member:
 - ["C4Guru8HomePage", "catchNotification"]
 - ["C4Guru8HomePage", "deinit"]
 - ["C4Guru8HomePage", "didReceiveMemoryWarning"]
-- !private ["C4Guru8HomePage", "dismiss"]
 - ["C4Guru8HomePage", "emptyTableViewLabel"]
 - ["C4Guru8HomePage", "finalTopic"]
 - ["C4Guru8HomePage", "indexPathForPreferredFocusedView"]
 - ["C4Guru8HomePage", "indexPathForPreferredFocusedViewInTableView"]
 - ["C4Guru8HomePage", "init"]
+- ["C4Guru8HomePage", "loadData"]
 - ["C4Guru8HomePage", "logout"]
 - ["C4Guru8HomePage", "numberOfSections"]
 - ["C4Guru8HomePage", "numberOfSectionsInTableView"]
 - !private ["C4Guru8HomePage", "performSegue"]
 - ["C4Guru8HomePage", "popup"]
-- ["C4Guru8HomePage", "prefersStatusBarHidden"]
 - ["C4Guru8HomePage", "prepare"]
+- !private ["C4Guru8HomePage", "present"]
+- ["C4Guru8HomePage", "presentSignup"]
 - ["C4Guru8HomePage", "pressedAsk"]
 - !private ["C4Guru8HomePage", "print"]
 - ["C4Guru8HomePage", "question"]
@@ -1007,6 +1040,7 @@ depends-member:
 - ["C4Guru8HomePage", "sectionIndexTitlesForTableView"]
 - ["C4Guru8HomePage", "selectedQuestion"]
 - ["C4Guru8HomePage", "showTopics"]
+- !private ["C4Guru8HomePage", "storyboard"]
 - ["C4Guru8HomePage", "submitQuestion"]
 - ["C4Guru8HomePage", "tableView"]
 - ["C4Guru8HomePage", "tapped"]
@@ -1018,6 +1052,7 @@ depends-member:
 - ["C4Guru8HomePage", "textFieldShouldEndEditing"]
 - ["C4Guru8HomePage", "textFieldShouldReturn"]
 - ["C4Guru8HomePage", "topicButton"]
+- ["C4Guru8HomePage", "viewDidAppear"]
 - ["C4Guru8HomePage", "viewDidLoad"]
 - ["C4Guru8HomePage", "viewForZooming"]
 - ["C4Guru8HomePage", "viewForZoomingInScrollView"]
@@ -1126,13 +1161,15 @@ depends-member:
 - !private ["PSo8NSCoding", "isEnabled"]
 - !private ["PSo8NSCoding", "isHidden"]
 - !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "loadData"]
 - ["PSo8NSCoding", "logout"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "popup"]
-- ["PSo8NSCoding", "prefersStatusBarHidden"]
 - ["PSo8NSCoding", "prepare"]
+- !private ["PSo8NSCoding", "present"]
+- ["PSo8NSCoding", "presentSignup"]
 - ["PSo8NSCoding", "pressedAsk"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "question"]
@@ -1163,6 +1200,7 @@ depends-member:
 - !private ["PSo8NSCoding", "setTitleColor"]
 - !private ["PSo8NSCoding", "show"]
 - ["PSo8NSCoding", "showTopics"]
+- !private ["PSo8NSCoding", "storyboard"]
 - ["PSo8NSCoding", "submitQuestion"]
 - !private ["PSo8NSCoding", "tableFooterView"]
 - ["PSo8NSCoding", "tableView"]
@@ -1179,6 +1217,7 @@ depends-member:
 - ["PSo8NSCoding", "topicButton"]
 - !private ["PSo8NSCoding", "topicLabel"]
 - !private ["PSo8NSCoding", "usernameLabel"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -1220,13 +1259,15 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "instance"]
+- ["PSo26NSExtensionRequestHandling", "loadData"]
 - ["PSo26NSExtensionRequestHandling", "logout"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "popup"]
-- ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
+- ["PSo26NSExtensionRequestHandling", "presentSignup"]
 - ["PSo26NSExtensionRequestHandling", "pressedAsk"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "question"]
@@ -1249,6 +1290,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "selectedQuestion"]
 - !private ["PSo26NSExtensionRequestHandling", "show"]
 - ["PSo26NSExtensionRequestHandling", "showTopics"]
+- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
 - ["PSo26NSExtensionRequestHandling", "submitQuestion"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "tapped"]
@@ -1260,6 +1302,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldEndEditing"]
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldReturn"]
 - ["PSo26NSExtensionRequestHandling", "topicButton"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
@@ -1322,9 +1365,11 @@ depends-member:
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instance"]
+- !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "isEnabled"]
 - !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "loadData"]
 - !private ["CSo8NSObject", "logOut"]
 - ["CSo8NSObject", "logout"]
 - ["CSo8NSObject", "numberOfSections"]
@@ -1332,8 +1377,9 @@ depends-member:
 - !private ["CSo8NSObject", "order"]
 - !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "popup"]
-- ["CSo8NSObject", "prefersStatusBarHidden"]
 - ["CSo8NSObject", "prepare"]
+- !private ["CSo8NSObject", "present"]
+- ["CSo8NSObject", "presentSignup"]
 - ["CSo8NSObject", "pressedAsk"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "question"]
@@ -1365,6 +1411,7 @@ depends-member:
 - !private ["CSo8NSObject", "setTitleColor"]
 - !private ["CSo8NSObject", "show"]
 - ["CSo8NSObject", "showTopics"]
+- !private ["CSo8NSObject", "storyboard"]
 - ["CSo8NSObject", "submitQuestion"]
 - !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "tableFooterView"]
@@ -1383,6 +1430,7 @@ depends-member:
 - !private ["CSo8NSObject", "topicLabel"]
 - !private ["CSo8NSObject", "username"]
 - !private ["CSo8NSObject", "usernameLabel"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -1430,9 +1478,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instance"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "loadData"]
 - !private ["PSo16NSObjectProtocol", "logOut"]
 - ["PSo16NSObjectProtocol", "logout"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
@@ -1440,8 +1490,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "order"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "popup"]
-- ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - ["PSo16NSObjectProtocol", "prepare"]
+- !private ["PSo16NSObjectProtocol", "present"]
+- ["PSo16NSObjectProtocol", "presentSignup"]
 - ["PSo16NSObjectProtocol", "pressedAsk"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "question"]
@@ -1473,6 +1524,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setTitleColor"]
 - !private ["PSo16NSObjectProtocol", "show"]
 - ["PSo16NSObjectProtocol", "showTopics"]
+- !private ["PSo16NSObjectProtocol", "storyboard"]
 - ["PSo16NSObjectProtocol", "submitQuestion"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "tableFooterView"]
@@ -1491,6 +1543,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "topicLabel"]
 - !private ["PSo16NSObjectProtocol", "username"]
 - !private ["PSo16NSObjectProtocol", "usernameLabel"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -1719,13 +1772,15 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "loadData"]
 - ["PSo21UIAppearanceContainer", "logout"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "popup"]
-- ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - ["PSo21UIAppearanceContainer", "prepare"]
+- !private ["PSo21UIAppearanceContainer", "present"]
+- ["PSo21UIAppearanceContainer", "presentSignup"]
 - ["PSo21UIAppearanceContainer", "pressedAsk"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "question"]
@@ -1756,6 +1811,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "setTitleColor"]
 - !private ["PSo21UIAppearanceContainer", "show"]
 - ["PSo21UIAppearanceContainer", "showTopics"]
+- !private ["PSo21UIAppearanceContainer", "storyboard"]
 - ["PSo21UIAppearanceContainer", "submitQuestion"]
 - !private ["PSo21UIAppearanceContainer", "tableFooterView"]
 - ["PSo21UIAppearanceContainer", "tableView"]
@@ -1772,6 +1828,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "topicButton"]
 - !private ["PSo21UIAppearanceContainer", "topicLabel"]
 - !private ["PSo21UIAppearanceContainer", "usernameLabel"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
@@ -1815,13 +1872,15 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "instance"]
+- ["PSo18UIContentContainer", "loadData"]
 - ["PSo18UIContentContainer", "logout"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "popup"]
-- ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - ["PSo18UIContentContainer", "prepare"]
+- !private ["PSo18UIContentContainer", "present"]
+- ["PSo18UIContentContainer", "presentSignup"]
 - ["PSo18UIContentContainer", "pressedAsk"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "question"]
@@ -1844,6 +1903,7 @@ depends-member:
 - ["PSo18UIContentContainer", "selectedQuestion"]
 - !private ["PSo18UIContentContainer", "show"]
 - ["PSo18UIContentContainer", "showTopics"]
+- !private ["PSo18UIContentContainer", "storyboard"]
 - ["PSo18UIContentContainer", "submitQuestion"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "tapped"]
@@ -1855,6 +1915,7 @@ depends-member:
 - ["PSo18UIContentContainer", "textFieldShouldEndEditing"]
 - ["PSo18UIContentContainer", "textFieldShouldReturn"]
 - ["PSo18UIContentContainer", "topicButton"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
@@ -1944,13 +2005,15 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "loadData"]
 - ["PSo18UIFocusEnvironment", "logout"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "popup"]
-- ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UIFocusEnvironment", "prepare"]
+- !private ["PSo18UIFocusEnvironment", "present"]
+- ["PSo18UIFocusEnvironment", "presentSignup"]
 - ["PSo18UIFocusEnvironment", "pressedAsk"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "question"]
@@ -1981,6 +2044,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "setTitleColor"]
 - !private ["PSo18UIFocusEnvironment", "show"]
 - ["PSo18UIFocusEnvironment", "showTopics"]
+- !private ["PSo18UIFocusEnvironment", "storyboard"]
 - ["PSo18UIFocusEnvironment", "submitQuestion"]
 - !private ["PSo18UIFocusEnvironment", "tableFooterView"]
 - ["PSo18UIFocusEnvironment", "tableView"]
@@ -1997,6 +2061,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "topicButton"]
 - !private ["PSo18UIFocusEnvironment", "topicLabel"]
 - !private ["PSo18UIFocusEnvironment", "usernameLabel"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
@@ -2090,13 +2155,15 @@ depends-member:
 - !private ["CSo11UIResponder", "isEnabled"]
 - !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "loadData"]
 - ["CSo11UIResponder", "logout"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "popup"]
-- ["CSo11UIResponder", "prefersStatusBarHidden"]
 - ["CSo11UIResponder", "prepare"]
+- !private ["CSo11UIResponder", "present"]
+- ["CSo11UIResponder", "presentSignup"]
 - ["CSo11UIResponder", "pressedAsk"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "question"]
@@ -2127,6 +2194,7 @@ depends-member:
 - !private ["CSo11UIResponder", "setTitleColor"]
 - !private ["CSo11UIResponder", "show"]
 - ["CSo11UIResponder", "showTopics"]
+- !private ["CSo11UIResponder", "storyboard"]
 - ["CSo11UIResponder", "submitQuestion"]
 - !private ["CSo11UIResponder", "tableFooterView"]
 - ["CSo11UIResponder", "tableView"]
@@ -2143,6 +2211,7 @@ depends-member:
 - ["CSo11UIResponder", "topicButton"]
 - !private ["CSo11UIResponder", "topicLabel"]
 - !private ["CSo11UIResponder", "usernameLabel"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
@@ -2181,13 +2250,15 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "loadData"]
 - ["PSo30UIResponderStandardEditActions", "logout"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "popup"]
-- ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
+- ["PSo30UIResponderStandardEditActions", "presentSignup"]
 - ["PSo30UIResponderStandardEditActions", "pressedAsk"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "question"]
@@ -2218,6 +2289,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "setTitleColor"]
 - !private ["PSo30UIResponderStandardEditActions", "show"]
 - ["PSo30UIResponderStandardEditActions", "showTopics"]
+- !private ["PSo30UIResponderStandardEditActions", "storyboard"]
 - ["PSo30UIResponderStandardEditActions", "submitQuestion"]
 - !private ["PSo30UIResponderStandardEditActions", "tableFooterView"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
@@ -2234,6 +2306,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "topicButton"]
 - !private ["PSo30UIResponderStandardEditActions", "topicLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "usernameLabel"]
+- ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
@@ -2272,10 +2345,13 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "instance"]
+- !private ["PSo20UIScrollViewDelegate", "loadData"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
 - !private ["PSo20UIScrollViewDelegate", "popup"]
+- !private ["PSo20UIScrollViewDelegate", "present"]
+- !private ["PSo20UIScrollViewDelegate", "presentSignup"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "question"]
 - !private ["PSo20UIScrollViewDelegate", "questionField"]
@@ -2296,6 +2372,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo20UIScrollViewDelegate", "selectedQuestion"]
 - !private ["PSo20UIScrollViewDelegate", "show"]
+- !private ["PSo20UIScrollViewDelegate", "storyboard"]
 - !private ["PSo20UIScrollViewDelegate", "submitQuestion"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "textField"]
@@ -2338,13 +2415,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "instance"]
+- ["PSo16UIStateRestoring", "loadData"]
 - ["PSo16UIStateRestoring", "logout"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "popup"]
-- ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - ["PSo16UIStateRestoring", "prepare"]
+- !private ["PSo16UIStateRestoring", "present"]
+- ["PSo16UIStateRestoring", "presentSignup"]
 - ["PSo16UIStateRestoring", "pressedAsk"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "question"]
@@ -2367,6 +2446,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "selectedQuestion"]
 - !private ["PSo16UIStateRestoring", "show"]
 - ["PSo16UIStateRestoring", "showTopics"]
+- !private ["PSo16UIStateRestoring", "storyboard"]
 - ["PSo16UIStateRestoring", "submitQuestion"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "tapped"]
@@ -2378,11 +2458,14 @@ depends-member:
 - ["PSo16UIStateRestoring", "textFieldShouldEndEditing"]
 - ["PSo16UIStateRestoring", "textFieldShouldReturn"]
 - ["PSo16UIStateRestoring", "topicButton"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
 - ["CSo17UIStoryboardSegue", "deinit"]
 - !private ["CSo17UIStoryboardSegue", "destination"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
@@ -2416,16 +2499,18 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "avail"]
 - !private ["PSo21UITableViewDataSource", "backgroundView"]
 - !private ["PSo21UITableViewDataSource", "catchNotification"]
-- !private ["PSo21UITableViewDataSource", "dismiss"]
 - !private ["PSo21UITableViewDataSource", "emptyTableViewLabel"]
 - !private ["PSo21UITableViewDataSource", "finalTopic"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "instance"]
+- !private ["PSo21UITableViewDataSource", "loadData"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "performSegue"]
 - !private ["PSo21UITableViewDataSource", "popup"]
+- !private ["PSo21UITableViewDataSource", "present"]
+- !private ["PSo21UITableViewDataSource", "presentSignup"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "question"]
 - !private ["PSo21UITableViewDataSource", "questionField"]
@@ -2445,6 +2530,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "sectionIndexTitles"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UITableViewDataSource", "selectedQuestion"]
+- !private ["PSo21UITableViewDataSource", "storyboard"]
 - !private ["PSo21UITableViewDataSource", "submitQuestion"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "textField"]
@@ -2474,16 +2560,18 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "avail"]
 - !private ["PSo19UITableViewDelegate", "backgroundView"]
 - !private ["PSo19UITableViewDelegate", "catchNotification"]
-- !private ["PSo19UITableViewDelegate", "dismiss"]
 - !private ["PSo19UITableViewDelegate", "emptyTableViewLabel"]
 - !private ["PSo19UITableViewDelegate", "finalTopic"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "instance"]
+- !private ["PSo19UITableViewDelegate", "loadData"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "performSegue"]
 - !private ["PSo19UITableViewDelegate", "popup"]
+- !private ["PSo19UITableViewDelegate", "present"]
+- !private ["PSo19UITableViewDelegate", "presentSignup"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "question"]
 - !private ["PSo19UITableViewDelegate", "questionField"]
@@ -2503,6 +2591,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "sectionIndexTitles"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo19UITableViewDelegate", "selectedQuestion"]
+- !private ["PSo19UITableViewDelegate", "storyboard"]
 - !private ["PSo19UITableViewDelegate", "submitQuestion"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "textField"]
@@ -2535,15 +2624,17 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "avail"]
 - !private ["PSo19UITextFieldDelegate", "backgroundView"]
 - !private ["PSo19UITextFieldDelegate", "catchNotification"]
-- !private ["PSo19UITextFieldDelegate", "dismiss"]
 - !private ["PSo19UITextFieldDelegate", "emptyTableViewLabel"]
 - !private ["PSo19UITextFieldDelegate", "finalTopic"]
 - ["PSo19UITextFieldDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITextFieldDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITextFieldDelegate", "loadData"]
 - ["PSo19UITextFieldDelegate", "numberOfSections"]
 - ["PSo19UITextFieldDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITextFieldDelegate", "performSegue"]
 - !private ["PSo19UITextFieldDelegate", "popup"]
+- !private ["PSo19UITextFieldDelegate", "present"]
+- !private ["PSo19UITextFieldDelegate", "presentSignup"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - !private ["PSo19UITextFieldDelegate", "question"]
 - !private ["PSo19UITextFieldDelegate", "questionField"]
@@ -2563,6 +2654,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "sectionIndexTitles"]
 - ["PSo19UITextFieldDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo19UITextFieldDelegate", "selectedQuestion"]
+- !private ["PSo19UITextFieldDelegate", "storyboard"]
 - !private ["PSo19UITextFieldDelegate", "submitQuestion"]
 - ["PSo19UITextFieldDelegate", "tableView"]
 - ["PSo19UITextFieldDelegate", "textField"]
@@ -2614,13 +2706,15 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "isEnabled"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "loadData"]
 - ["PSo18UITraitEnvironment", "logout"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "popup"]
-- ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UITraitEnvironment", "prepare"]
+- !private ["PSo18UITraitEnvironment", "present"]
+- ["PSo18UITraitEnvironment", "presentSignup"]
 - ["PSo18UITraitEnvironment", "pressedAsk"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "question"]
@@ -2651,6 +2745,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "setTitleColor"]
 - !private ["PSo18UITraitEnvironment", "show"]
 - ["PSo18UITraitEnvironment", "showTopics"]
+- !private ["PSo18UITraitEnvironment", "storyboard"]
 - ["PSo18UITraitEnvironment", "submitQuestion"]
 - !private ["PSo18UITraitEnvironment", "tableFooterView"]
 - ["PSo18UITraitEnvironment", "tableView"]
@@ -2667,6 +2762,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "topicButton"]
 - !private ["PSo18UITraitEnvironment", "topicLabel"]
 - !private ["PSo18UITraitEnvironment", "usernameLabel"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
@@ -2738,13 +2834,15 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "instance"]
+- ["CSo16UIViewController", "loadData"]
 - ["CSo16UIViewController", "logout"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "popup"]
-- ["CSo16UIViewController", "prefersStatusBarHidden"]
 - ["CSo16UIViewController", "prepare"]
+- !private ["CSo16UIViewController", "present"]
+- ["CSo16UIViewController", "presentSignup"]
 - ["CSo16UIViewController", "pressedAsk"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "question"]
@@ -2767,6 +2865,7 @@ depends-member:
 - ["CSo16UIViewController", "selectedQuestion"]
 - !private ["CSo16UIViewController", "show"]
 - ["CSo16UIViewController", "showTopics"]
+- !private ["CSo16UIViewController", "storyboard"]
 - ["CSo16UIViewController", "submitQuestion"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "tapped"]
@@ -2778,6 +2877,7 @@ depends-member:
 - ["CSo16UIViewController", "textFieldShouldEndEditing"]
 - ["CSo16UIViewController", "textFieldShouldReturn"]
 - ["CSo16UIViewController", "topicButton"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
@@ -2883,9 +2983,11 @@ depends-member:
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instance"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isEnabled"]
 - !private ["Ps9_Hashable", "isHidden"]
 - !private ["Ps9_Hashable", "layer"]
+- ["Ps9_Hashable", "loadData"]
 - !private ["Ps9_Hashable", "logOut"]
 - ["Ps9_Hashable", "logout"]
 - !private ["Ps9_Hashable", "none"]
@@ -2894,8 +2996,9 @@ depends-member:
 - !private ["Ps9_Hashable", "order"]
 - !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "popup"]
-- ["Ps9_Hashable", "prefersStatusBarHidden"]
 - ["Ps9_Hashable", "prepare"]
+- !private ["Ps9_Hashable", "present"]
+- ["Ps9_Hashable", "presentSignup"]
 - ["Ps9_Hashable", "pressedAsk"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "question"]
@@ -2929,6 +3032,7 @@ depends-member:
 - !private ["Ps9_Hashable", "show"]
 - ["Ps9_Hashable", "showTopics"]
 - !private ["Ps9_Hashable", "slideUp"]
+- !private ["Ps9_Hashable", "storyboard"]
 - ["Ps9_Hashable", "submitQuestion"]
 - !private ["Ps9_Hashable", "subscript"]
 - !private ["Ps9_Hashable", "tableFooterView"]
@@ -2948,6 +3052,7 @@ depends-member:
 - !private ["Ps9_Hashable", "userInfo"]
 - !private ["Ps9_Hashable", "username"]
 - !private ["Ps9_Hashable", "usernameLabel"]
+- ["Ps9_Hashable", "viewDidAppear"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
@@ -3107,6 +3212,7 @@ depends-nominal:
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- "CSo12UIStoryboard"
 - "CSo17UIStoryboardSegue"
 - "CSo11UITableView"
 - "CSo15UITableViewCell"
@@ -3155,6 +3261,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
@@ -3206,6 +3316,8 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Modules/ParseLiveQuery.swiftmodule/arm64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
@@ -3218,6 +3330,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
@@ -3247,14 +3363,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/arm64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/arm64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
-interface-hash: "9466f6e045fd22b92abc7fc7b7018627"
+interface-hash: "1fcc076de9eb50f3561113cd937f8664"

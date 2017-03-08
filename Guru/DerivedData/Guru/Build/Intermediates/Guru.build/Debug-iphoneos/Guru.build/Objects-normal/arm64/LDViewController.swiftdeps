@@ -7,101 +7,103 @@ provides-nominal:
 provides-member:
 - ["C4Guru16LDViewController", ""]
 provides-dynamic-lookup:
-- "selectedImage"
-- "hideButtons"
-- "swipeUpRec"
-- "pointQuery"
-- "viewDidAppear"
-- "touchesBegan"
-- "swipeDownRec"
-- "button2Pressed"
-- "swiped"
-- "viewDidLoad"
-- "pencilIcon"
 - "imageView"
-- "question"
-- "tool"
-- "togglePressed"
-- "lastPoint"
-- "blue"
-- "button1Pressed"
-- "touchesEnded"
-- "disconnectFromServer"
-- "universalColorB"
-- "universalColorG"
-- "green"
-- "sendPointData"
-- "button4Pressed"
-- "redrawPencilIcon"
-- "bigCircle"
-- "toggleButton"
-- "touchesMoved"
-- "drawLines"
-- "didReceiveMemoryWarning"
-- "circleOut"
-- "universalColorR"
-- "prefersStatusBarHidden"
-- "button3Pressed"
-- "pressedPencil"
-- "colorButtons"
-- "reset"
-- "viewWillDisappear"
-- "subscribeLiveQuery"
-- "red"
 - "toggleStatus"
+- "hideButtons"
+- "circleOut"
+- "prefersStatusBarHidden"
+- "swipeUpRec"
+- "viewDidAppear"
+- "pressedPencil"
+- "universalColorR"
+- "button1Pressed"
+- "togglePressed"
+- "selectedImage"
+- "touchesEnded"
+- "touchesMoved"
+- "reset"
+- "universalColorG"
+- "touchesBegan"
 - "showButtons"
+- "bigCircle"
+- "universalColorB"
+- "toggleButton"
+- "drawLines"
+- "button2Pressed"
+- "question"
+- "disconnectFromServer"
+- "viewWillDisappear"
+- "redrawPencilIcon"
+- "tool"
+- "didReceiveMemoryWarning"
+- "colorButtons"
 - "resetButton"
+- "lastPoint"
+- "sendPointData"
+- "blue"
+- "green"
+- "red"
+- "button4Pressed"
+- "pointQuery"
+- "subscribeLiveQuery"
+- "swipeDownRec"
+- "pencilIcon"
+- "swiped"
+- "button3Pressed"
+- "viewDidLoad"
 depends-top-level:
-- !private "/"
-- !private "UIControlState"
-- !private "StringLiteralType"
-- "UISwipeGestureRecognizer"
-- "CGPoint"
-- "UIImage"
-- !private "Event"
-- !private "PFUser"
-- "UIViewController"
-- "Subscription"
-- "BooleanLiteralType"
-- "Point"
-- "Set"
-- "UITouch"
-- !private "CGBlendMode"
-- !private "print"
-- "liveQueryClient"
-- !private "UIGraphicsBeginImageContext"
-- !private "UIGraphicsGetCurrentContext"
 - !private "UIScreen"
-- "UnicodeScalarType"
-- "CastingPrecedence"
-- !private "+"
-- !private "~="
-- "AssignmentPrecedence"
-- !private "UIImageRenderingMode"
-- !private "=="
-- "LDViewController"
-- "PFObject"
-- !private "UIGraphicsEndImageContext"
-- !private "CGRect"
-- !private "UIColor"
-- "ParseLiveQuery"
-- "UIImageView"
-- "Double"
+- !private "UIGraphicsGetCurrentContext"
 - "Bool"
-- !private "DispatchQueue"
-- "UIButton"
-- !private "Void"
+- "UITouch"
+- "LDViewController"
 - !private "UIView"
-- "UIEvent"
-- !private "*"
-- "CGFloat"
-- "AnyObject"
+- !private "Event"
+- "UIButton"
+- !private "UIImageRenderingMode"
+- !private "UIControlState"
+- !private "UIGraphicsBeginImageContext"
+- "PFQuery"
+- !private "UIGraphicsEndImageContext"
+- !private "CGAffineTransform"
+- "CGPoint"
+- "UISwipeGestureRecognizer"
+- "UIViewController"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "CGRect"
+- !private "CGBlendMode"
+- !private "PFUser"
+- !private "DispatchQueue"
+- !private "=="
+- !private "~="
+- "Set"
+- "AssignmentPrecedence"
+- "PFObject"
+- "CastingPrecedence"
 - !private "!"
 - !private "CGLineCap"
-- "PFQuery"
+- "Point"
+- "liveQueryClient"
+- !private "StringLiteralType"
+- !private "print"
+- "ParseLiveQuery"
+- "UIEvent"
+- "BooleanLiteralType"
+- !private "/"
+- "UnicodeScalarType"
+- !private "+"
+- "Subscription"
+- "UIImage"
+- !private "UIColor"
+- "AnyObject"
+- "Double"
+- "UIImageView"
+- !private "*"
+- !private "Void"
+- "CGFloat"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGAffineTransform"]
 - !private ["Ps9AnyObject", "CGBlendMode"]
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "CGLineCap"]
@@ -201,6 +203,7 @@ depends-member:
 - ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "touchesEnded"]
 - ["Ps9AnyObject", "touchesMoved"]
+- !private ["Ps9AnyObject", "transform"]
 - ["Ps9AnyObject", "universalColorB"]
 - ["Ps9AnyObject", "universalColorG"]
 - ["Ps9AnyObject", "universalColorR"]
@@ -236,7 +239,10 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "setNeedsDisplay"]
 - !private ["PSo15CALayerDelegate", "setRounded"]
 - !private ["PSo15CALayerDelegate", "tintColor"]
+- !private ["PSo15CALayerDelegate", "transform"]
 - !private ["PSo13CAMediaTiming", "contentsScale"]
+- !private ["VSC17CGAffineTransform", "deinit"]
+- !private ["VSC17CGAffineTransform", "init"]
 - ["OSC11CGBlendMode", "deinit"]
 - !private ["OSC11CGBlendMode", "normal"]
 - ["CSo7CGColor", "deinit"]
@@ -262,6 +268,7 @@ depends-member:
 - !private ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGRect", "width"]
+- !private ["Ps7CVarArg", "CGAffineTransform"]
 - !private ["Ps7CVarArg", "CGBlendMode"]
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "CGLineCap"]
@@ -356,6 +363,7 @@ depends-member:
 - ["Ps7CVarArg", "touchesBegan"]
 - ["Ps7CVarArg", "touchesEnded"]
 - ["Ps7CVarArg", "touchesMoved"]
+- !private ["Ps7CVarArg", "transform"]
 - ["Ps7CVarArg", "universalColorB"]
 - ["Ps7CVarArg", "universalColorG"]
 - ["Ps7CVarArg", "universalColorR"]
@@ -381,6 +389,7 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "CGAffineTransform"]
 - !private ["Ps28CustomDebugStringConvertible", "CGBlendMode"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGLineCap"]
@@ -476,6 +485,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "touchesEnded"]
 - ["Ps28CustomDebugStringConvertible", "touchesMoved"]
+- !private ["Ps28CustomDebugStringConvertible", "transform"]
 - ["Ps28CustomDebugStringConvertible", "universalColorB"]
 - ["Ps28CustomDebugStringConvertible", "universalColorG"]
 - ["Ps28CustomDebugStringConvertible", "universalColorR"]
@@ -514,6 +524,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "x"]
 - !private ["Ps17CustomReflectable", "y"]
 - ["Ps17CustomReflectable", "zero"]
+- !private ["Ps23CustomStringConvertible", "CGAffineTransform"]
 - !private ["Ps23CustomStringConvertible", "CGBlendMode"]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "CGLineCap"]
@@ -609,6 +620,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "touchesEnded"]
 - ["Ps23CustomStringConvertible", "touchesMoved"]
+- !private ["Ps23CustomStringConvertible", "transform"]
 - ["Ps23CustomStringConvertible", "universalColorB"]
 - ["Ps23CustomStringConvertible", "universalColorG"]
 - ["Ps23CustomStringConvertible", "universalColorR"]
@@ -628,6 +640,7 @@ depends-member:
 - !private ["CSo13DispatchQueue", "main"]
 - ["Sd", "deinit"]
 - !private ["Sd", "init"]
+- !private ["Ps9Equatable", "CGAffineTransform"]
 - !private ["Ps9Equatable", "CGBlendMode"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGLineCap"]
@@ -727,6 +740,7 @@ depends-member:
 - ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "touchesEnded"]
 - ["Ps9Equatable", "touchesMoved"]
+- !private ["Ps9Equatable", "transform"]
 - ["Ps9Equatable", "universalColorB"]
 - ["Ps9Equatable", "universalColorG"]
 - ["Ps9Equatable", "universalColorR"]
@@ -759,6 +773,7 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "CGAffineTransform"]
 - !private ["Ps8Hashable", "CGBlendMode"]
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "CGLineCap"]
@@ -856,6 +871,7 @@ depends-member:
 - ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "touchesEnded"]
 - ["Ps8Hashable", "touchesMoved"]
+- !private ["Ps8Hashable", "transform"]
 - ["Ps8Hashable", "universalColorB"]
 - ["Ps8Hashable", "universalColorG"]
 - ["Ps8Hashable", "universalColorR"]
@@ -888,6 +904,7 @@ depends-member:
 - !private ["Ps16IteratorProtocol", "Element"]
 - ["C4Guru16LDViewController", "AnyObject"]
 - ["C4Guru16LDViewController", "Bool"]
+- !private ["C4Guru16LDViewController", "CGAffineTransform"]
 - !private ["C4Guru16LDViewController", "CGBlendMode"]
 - ["C4Guru16LDViewController", "CGFloat"]
 - !private ["C4Guru16LDViewController", "CGLineCap"]
@@ -977,6 +994,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "Iterator"]
 - !private ["Ps16MutableIndexable", "_Element"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "CGAffineTransform"]
 - !private ["PSo8NSCoding", "CGBlendMode"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGLineCap"]
@@ -1053,6 +1071,7 @@ depends-member:
 - ["PSo8NSCoding", "touchesBegan"]
 - ["PSo8NSCoding", "touchesEnded"]
 - ["PSo8NSCoding", "touchesMoved"]
+- !private ["PSo8NSCoding", "transform"]
 - ["PSo8NSCoding", "universalColorB"]
 - ["PSo8NSCoding", "universalColorG"]
 - ["PSo8NSCoding", "universalColorR"]
@@ -1065,6 +1084,7 @@ depends-member:
 - !private ["PSo9NSCopying", "cgColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "whereKey"]
+- !private ["PSo26NSExtensionRequestHandling", "CGAffineTransform"]
 - !private ["PSo26NSExtensionRequestHandling", "CGBlendMode"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGLineCap"]
@@ -1138,6 +1158,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGAffineTransform"]
 - !private ["CSo8NSObject", "CGBlendMode"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGLineCap"]
@@ -1238,6 +1259,7 @@ depends-member:
 - ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "touchesEnded"]
 - ["CSo8NSObject", "touchesMoved"]
+- !private ["CSo8NSObject", "transform"]
 - ["CSo8NSObject", "universalColorB"]
 - ["CSo8NSObject", "universalColorG"]
 - ["CSo8NSObject", "universalColorR"]
@@ -1249,6 +1271,7 @@ depends-member:
 - ["CSo8NSObject", "viewWillDisappear"]
 - !private ["CSo8NSObject", "whereKey"]
 - !private ["CSo8NSObject", "withRenderingMode"]
+- !private ["PSo16NSObjectProtocol", "CGAffineTransform"]
 - !private ["PSo16NSObjectProtocol", "CGBlendMode"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGLineCap"]
@@ -1339,6 +1362,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "touchesEnded"]
 - ["PSo16NSObjectProtocol", "touchesMoved"]
+- !private ["PSo16NSObjectProtocol", "transform"]
 - ["PSo16NSObjectProtocol", "universalColorB"]
 - ["PSo16NSObjectProtocol", "universalColorG"]
 - ["PSo16NSObjectProtocol", "universalColorR"]
@@ -1459,6 +1483,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "setNeedsDisplay"]
 - !private ["PSo29UIAccessibilityIdentification", "setRounded"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "transform"]
 - !private ["PSo29UIAccessibilityIdentification", "withRenderingMode"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "animate"]
@@ -1471,6 +1496,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "setNeedsDisplay"]
 - !private ["PSo12UIAppearance", "setRounded"]
 - !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo12UIAppearance", "transform"]
+- !private ["PSo21UIAppearanceContainer", "CGAffineTransform"]
 - !private ["PSo21UIAppearanceContainer", "CGBlendMode"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGLineCap"]
@@ -1544,6 +1571,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "touchesBegan"]
 - ["PSo21UIAppearanceContainer", "touchesEnded"]
 - ["PSo21UIAppearanceContainer", "touchesMoved"]
+- !private ["PSo21UIAppearanceContainer", "transform"]
 - ["PSo21UIAppearanceContainer", "universalColorB"]
 - ["PSo21UIAppearanceContainer", "universalColorG"]
 - ["PSo21UIAppearanceContainer", "universalColorR"]
@@ -1562,6 +1590,7 @@ depends-member:
 - !private ["CSo7UIColor", "cgColor"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "init"]
+- !private ["PSo18UIContentContainer", "CGAffineTransform"]
 - !private ["PSo18UIContentContainer", "CGBlendMode"]
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGLineCap"]
@@ -1651,6 +1680,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "setNeedsDisplay"]
 - !private ["PSo17UICoordinateSpace", "setRounded"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo17UICoordinateSpace", "transform"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animate"]
 - !private ["PSo13UIDynamicItem", "center"]
@@ -1662,6 +1692,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "setNeedsDisplay"]
 - !private ["PSo13UIDynamicItem", "setRounded"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo13UIDynamicItem", "transform"]
+- !private ["PSo18UIFocusEnvironment", "CGAffineTransform"]
 - !private ["PSo18UIFocusEnvironment", "CGBlendMode"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGLineCap"]
@@ -1735,6 +1767,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "touchesBegan"]
 - ["PSo18UIFocusEnvironment", "touchesEnded"]
 - ["PSo18UIFocusEnvironment", "touchesMoved"]
+- !private ["PSo18UIFocusEnvironment", "transform"]
 - ["PSo18UIFocusEnvironment", "universalColorB"]
 - ["PSo18UIFocusEnvironment", "universalColorG"]
 - ["PSo18UIFocusEnvironment", "universalColorR"]
@@ -1754,6 +1787,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "setNeedsDisplay"]
 - !private ["PSo11UIFocusItem", "setRounded"]
 - !private ["PSo11UIFocusItem", "tintColor"]
+- !private ["PSo11UIFocusItem", "transform"]
 - ["CSo7UIImage", "deinit"]
 - !private ["CSo7UIImage", "draw"]
 - !private ["CSo7UIImage", "init"]
@@ -1766,8 +1800,10 @@ depends-member:
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "layer"]
 - !private ["CSo11UIImageView", "setNeedsDisplay"]
+- !private ["CSo11UIImageView", "transform"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "CGAffineTransform"]
 - !private ["CSo11UIResponder", "CGBlendMode"]
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGLineCap"]
@@ -1851,6 +1887,7 @@ depends-member:
 - ["CSo11UIResponder", "touchesBegan"]
 - ["CSo11UIResponder", "touchesEnded"]
 - ["CSo11UIResponder", "touchesMoved"]
+- !private ["CSo11UIResponder", "transform"]
 - ["CSo11UIResponder", "universalColorB"]
 - ["CSo11UIResponder", "universalColorG"]
 - ["CSo11UIResponder", "universalColorR"]
@@ -1858,6 +1895,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillDisappear"]
+- !private ["PSo30UIResponderStandardEditActions", "CGAffineTransform"]
 - !private ["PSo30UIResponderStandardEditActions", "CGBlendMode"]
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - !private ["PSo30UIResponderStandardEditActions", "CGLineCap"]
@@ -1931,6 +1969,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "touchesBegan"]
 - ["PSo30UIResponderStandardEditActions", "touchesEnded"]
 - ["PSo30UIResponderStandardEditActions", "touchesMoved"]
+- !private ["PSo30UIResponderStandardEditActions", "transform"]
 - ["PSo30UIResponderStandardEditActions", "universalColorB"]
 - ["PSo30UIResponderStandardEditActions", "universalColorG"]
 - ["PSo30UIResponderStandardEditActions", "universalColorR"]
@@ -1942,6 +1981,7 @@ depends-member:
 - ["CSo8UIScreen", "deinit"]
 - !private ["CSo8UIScreen", "main"]
 - !private ["CSo8UIScreen", "scale"]
+- !private ["PSo16UIStateRestoring", "CGAffineTransform"]
 - !private ["PSo16UIStateRestoring", "CGBlendMode"]
 - !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "CGLineCap"]
@@ -2014,6 +2054,7 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - ["CSo7UITouch", "deinit"]
 - !private ["CSo7UITouch", "location"]
+- !private ["PSo18UITraitEnvironment", "CGAffineTransform"]
 - !private ["PSo18UITraitEnvironment", "CGBlendMode"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGLineCap"]
@@ -2089,6 +2130,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "touchesBegan"]
 - ["PSo18UITraitEnvironment", "touchesEnded"]
 - ["PSo18UITraitEnvironment", "touchesMoved"]
+- !private ["PSo18UITraitEnvironment", "transform"]
 - ["PSo18UITraitEnvironment", "universalColorB"]
 - ["PSo18UITraitEnvironment", "universalColorG"]
 - ["PSo18UITraitEnvironment", "universalColorR"]
@@ -2108,8 +2150,10 @@ depends-member:
 - !private ["CSo6UIView", "setNeedsDisplay"]
 - !private ["CSo6UIView", "setRounded"]
 - !private ["CSo6UIView", "tintColor"]
+- !private ["CSo6UIView", "transform"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "CGAffineTransform"]
 - !private ["CSo16UIViewController", "CGBlendMode"]
 - ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGLineCap"]
@@ -2212,6 +2256,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setNeedsDisplay"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setRounded"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "transform"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -2228,6 +2273,7 @@ depends-member:
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps26_ExpressibleByImageLiteral", "withRenderingMode"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "CGAffineTransform"]
 - !private ["Ps9_Hashable", "CGBlendMode"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGLineCap"]
@@ -2325,6 +2371,7 @@ depends-member:
 - ["Ps9_Hashable", "touchesBegan"]
 - ["Ps9_Hashable", "touchesEnded"]
 - ["Ps9_Hashable", "touchesMoved"]
+- !private ["Ps9_Hashable", "transform"]
 - ["Ps9_Hashable", "universalColorB"]
 - ["Ps9_Hashable", "universalColorG"]
 - ["Ps9_Hashable", "universalColorR"]
@@ -2368,6 +2415,7 @@ depends-nominal:
 - "CSo7CALayer"
 - !private "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
+- !private "VSC17CGAffineTransform"
 - "OSC11CGBlendMode"
 - "CSo7CGColor"
 - "CSo9CGContext"
@@ -2521,6 +2569,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
@@ -2572,6 +2624,8 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Headers/Parse-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Parse/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Modules/ParseLiveQuery.swiftmodule/arm64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Modules/BoltsSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Bolts-Swift/BoltsSwift.framework/Headers/BoltsSwift-Swift.h"
@@ -2584,6 +2638,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Headers/ParseLiveQuery-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/ParseLiveQuery/ParseLiveQuery.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoViewRenderer.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoTrack.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/Pods/TwilioVideo/TwilioVideo.framework/Headers/TVIVideoRenderer.h"
@@ -2613,14 +2671,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/PopupController.swiftmodule/arm64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/PopupController/PopupController.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/arm64.swiftmodule"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Headers/OneSignal.h"
-- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/OneSignal/iOS_SDK/Framework/OneSignal.framework/Modules/module.modulemap"
 interface-hash: "69506c6682aef31e6680d1ffb83eb11f"

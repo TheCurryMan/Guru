@@ -48,6 +48,11 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     //        return .lightContent
     //    }
     
+    
+//    override var prefersStatusBarHidden: Bool {
+//        return true
+//    }
+    
     override func viewDidAppear(_ animated: Bool) {
         let currentUser = PFUser.current()
         if currentUser == nil {
