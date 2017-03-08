@@ -23,6 +23,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>M13Checkbox.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -73,6 +78,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>20A9DD9ABBF08BC57372A26C35327BF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>27E51815DE79D042F77AB5B4813E7CE7</key>
 		<dict>
 			<key>primary</key>
@@ -103,7 +113,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9895B6EF3FF2A80C7939A786DEEA74F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A29D751E5F4E7FFAA15FBD0B09942F3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B32E2EBE041CC7976BC655ED9502F195</key>
 		<dict>
 			<key>primary</key>
 			<true/>
