@@ -46,14 +46,14 @@ class SignUpViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 1.5, animations: {
+        UIView.animate(withDuration: 1, animations: {
             self.guruLabel.alpha=1
             self.guruLogoImg.alpha=1
             for underline in self.underlineLabels {
                 underline.alpha=1;
             }
         })
-        UIView.animate(withDuration: 2.5, animations: {
+        UIView.animate(withDuration: 1.5, animations: {
             self.goButton.alpha=1
             self.loginSubLabel.alpha=1
         })
