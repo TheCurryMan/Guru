@@ -94,7 +94,7 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
         let topic = cell.titleLabel.text
         self.tableView.deselectRow(at: indexPath, animated: false)
         print("adding topic")
-        if (!multipleSelection) {
+        if (!self.multipleSelection) {
             let nc = NotificationCenter.default
             nc.post(name:Notification.Name(rawValue:"topic"),
                     object: nil,
