@@ -49,9 +49,9 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     //    }
     
     
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
+    //    override var prefersStatusBarHidden: Bool {
+    //        return true
+    //    }
     
     override func viewDidAppear(_ animated: Bool) {
         let currentUser = PFUser.current()
@@ -80,9 +80,16 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         query.whereKeyDoesNotExist("question.tutor")
         query.order(byAscending: "createdAt")
         query.includeKeys(["question", "question.student"])
+        let calendar = Calendar.current
+        let date = calendar.date(byAdding: .minute, value: -1, to: Date())
+        query.whereKey("createdAt", greaterThan: date!)
         query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+            print("requests count: \(objects?.count)")
+            self.questions.removeAll()
             for object in objects! {
-                self.questions.append(object["question"] as! PFObject)
+                if ((object["question"] as! PFObject)["tutor"] == nil) {
+                    self.questions.append(object["question"] as! PFObject)
+                }
             }
             self.tableView.reloadData()
             if (self.questions.count == 0)

@@ -59,8 +59,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         let questionQuery = PFQuery(className: "Question")
         questionQuery.whereKey("tutor", equalTo: PFUser.current()!)
         questionQuery.includeKey("student")
+        questionQuery.order(byDescending: "createdAt")
         questionQuery.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
             if (error == nil && objects != nil) {
+                print("questions count: \(objects?.count)")
                 self.allQuestions = objects!
                 var totalRatingCount = 0.0
                 var ratingsCount = 0
