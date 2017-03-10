@@ -157,8 +157,11 @@ class WaitingScreen: UIViewController, WaitingScreenDelegate {
             // Update the button title
             if (self.localAudioTrack?.isEnabled == true) {
                 self.videoScreen.micButton.setTitle("Mute", for: .normal)
+                self.videoScreen.micButton.setImage(UIImage(named:"speaker (2).png"), for: UIControlState.normal)
             } else {
                 self.videoScreen.micButton.setTitle("Unmute", for: .normal)
+                self.videoScreen.micButton.setImage(UIImage(named:"mute (3).png"), for: UIControlState.normal)
+                
             }
         }
     }

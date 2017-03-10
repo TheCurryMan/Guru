@@ -60,7 +60,7 @@ class GuruReviewViewController: UIViewController {
             (success, error) -> Void in
             if (success) {
                 print("Sent Review")
-                self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+                self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
             }
         }
     }

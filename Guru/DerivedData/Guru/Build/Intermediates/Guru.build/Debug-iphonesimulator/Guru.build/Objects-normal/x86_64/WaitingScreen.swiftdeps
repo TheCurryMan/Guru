@@ -9,97 +9,98 @@ provides-member:
 - ["P4Guru21WaitingScreenDelegate", ""]
 - ["C4Guru13WaitingScreen", ""]
 provides-dynamic-lookup:
-- "questionLabel"
-- "prepareLocalMedia"
-- "didReceiveMemoryWarning"
-- "logMessage"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "participant"
-- "connect"
-- "accessToken"
-- "viewDidLoad"
-- "dismissView"
-- "cleanupRemoteParticipant"
-- "viewWillDisappear"
-- "guru"
-- "room"
-- "room"
-- "room"
-- "room"
-- "room"
-- "localAudioTrack"
-- "dismissButton"
 - "client"
-- "toggleCamera"
-- "startPreview"
-- "camera"
-- "prefersStatusBarHidden"
-- "didConnect"
-- "circles"
-- "videoScreen"
-- "disconnect"
-- "viewWillAppear"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "participant"
+- "cleanupRemoteParticipant"
 - "question"
-- "localVideoTrack"
+- "dismissView"
+- "room"
+- "room"
+- "room"
+- "room"
+- "room"
+- "viewWillAppear"
 - "loadingLabel"
-- "prepare"
-- "localMedia"
-- "tokenUrl"
+- "connect"
 - "tutor"
+- "localMedia"
+- "logMessage"
+- "toggleCamera"
+- "videoScreen"
 - "toggleMic"
+- "didReceiveMemoryWarning"
+- "disconnect"
+- "tokenUrl"
+- "prepareLocalMedia"
+- "camera"
+- "prepare"
+- "circles"
+- "accessToken"
+- "localVideoTrack"
+- "questionLabel"
+- "startPreview"
 - "flipCamera"
+- "guru"
+- "viewWillDisappear"
+- "localAudioTrack"
+- "didConnect"
+- "dismissButton"
+- "viewDidLoad"
 depends-top-level:
+- !private "-"
+- "TVITrack"
+- "Bool"
+- "StringLiteralType"
+- "TVIVideoClient"
+- "VideoVC"
+- "TVIParticipant"
+- "PFUser"
+- "TVIRoomDelegate"
+- !private "TVIConnectOptions"
 - "BooleanLiteralType"
-- !private "UIView"
-- !private "!="
-- !private "CGAffineTransform"
-- "WaitingScreenDelegate"
+- "TVIRoom"
+- !private "CGFloat"
+- !private "UIControlState"
+- "UIViewController"
 - !private "print"
-- "UIImageView"
+- !private "TokenUtils"
+- "TVILocalMedia"
+- !private "PlatformUtils"
+- !private "M_PI"
+- !private "CGAffineTransform"
+- "TVIParticipantDelegate"
 - "TVICameraCapturer"
 - "AnyObject"
-- "UIButton"
-- "Bool"
-- !private "!"
-- !private ">"
-- !private "Array"
-- "UIViewController"
-- "TVIParticipant"
-- "String"
-- "TVIRoomDelegate"
-- "StringLiteralType"
-- "TVIVideoTrack"
-- "VideoVC"
-- !private "GuruReviewViewController"
-- "TVIRoom"
-- "TVILocalVideoTrack"
-- !private "M_PI"
-- "TVITrack"
-- !private "-"
-- !private "/"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "TokenUtils"
-- "PFUser"
-- "WaitingScreen"
 - "TVIAudioTrack"
-- "CastingPrecedence"
-- !private "PlatformUtils"
+- !private "/"
+- !private "!"
+- "UIImageView"
+- "UIButton"
 - "UILabel"
-- !private "TVIConnectOptions"
-- "UIStoryboardSegue"
-- "TVIVideoClient"
-- "Error"
+- "TVILocalVideoTrack"
+- "TVIVideoTrack"
+- !private "UIView"
+- "WaitingScreen"
 - "PFObject"
+- !private "GuruReviewViewController"
+- "UIStoryboardSegue"
+- "Error"
+- "String"
+- !private "!="
+- !private ">"
+- "WaitingScreenDelegate"
+- !private "Array"
 - "TVILocalAudioTrack"
-- "TVILocalMedia"
-- "TVIParticipantDelegate"
-- !private "CGFloat"
+- !private "UIImage"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "=="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGAffineTransform"]
@@ -113,6 +114,8 @@ depends-member:
 - !private ["Ps9AnyObject", "TVILocalMedia"]
 - !private ["Ps9AnyObject", "TVIVideoClient"]
 - !private ["Ps9AnyObject", "TokenUtils"]
+- !private ["Ps9AnyObject", "UIControlState"]
+- !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIView"]
 - ["Ps9AnyObject", "accessToken"]
 - !private ["Ps9AnyObject", "addAudioTrack"]
@@ -166,7 +169,6 @@ depends-member:
 - ["Ps9AnyObject", "participant"]
 - !private ["Ps9AnyObject", "participants"]
 - !private ["Ps9AnyObject", "performSegue"]
-- ["Ps9AnyObject", "prefersStatusBarHidden"]
 - ["Ps9AnyObject", "prepare"]
 - ["Ps9AnyObject", "prepareLocalMedia"]
 - !private ["Ps9AnyObject", "previewView"]
@@ -179,6 +181,7 @@ depends-member:
 - ["Ps9AnyObject", "room"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "selectSource"]
+- !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setTitle"]
 - !private ["Ps9AnyObject", "showRoomUI"]
 - !private ["Ps9AnyObject", "source"]
@@ -247,6 +250,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "isUserInteractionEnabled"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
 - !private ["PSo15CALayerDelegate", "rootViewController"]
+- !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "setTitle"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "transform"]
@@ -273,6 +277,8 @@ depends-member:
 - !private ["Ps7CVarArg", "TVILocalMedia"]
 - !private ["Ps7CVarArg", "TVIVideoClient"]
 - !private ["Ps7CVarArg", "TokenUtils"]
+- !private ["Ps7CVarArg", "UIControlState"]
+- !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -329,7 +335,6 @@ depends-member:
 - ["Ps7CVarArg", "participant"]
 - !private ["Ps7CVarArg", "participants"]
 - !private ["Ps7CVarArg", "performSegue"]
-- ["Ps7CVarArg", "prefersStatusBarHidden"]
 - ["Ps7CVarArg", "prepare"]
 - ["Ps7CVarArg", "prepareLocalMedia"]
 - !private ["Ps7CVarArg", "previewView"]
@@ -342,6 +347,7 @@ depends-member:
 - ["Ps7CVarArg", "room"]
 - !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "selectSource"]
+- !private ["Ps7CVarArg", "setImage"]
 - !private ["Ps7CVarArg", "setTitle"]
 - !private ["Ps7CVarArg", "showRoomUI"]
 - !private ["Ps7CVarArg", "source"]
@@ -395,6 +401,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "TVILocalMedia"]
 - !private ["Ps28CustomDebugStringConvertible", "TVIVideoClient"]
 - !private ["Ps28CustomDebugStringConvertible", "TokenUtils"]
+- !private ["Ps28CustomDebugStringConvertible", "UIControlState"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "accessToken"]
@@ -451,7 +459,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "participant"]
 - !private ["Ps28CustomDebugStringConvertible", "participants"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
-- ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - ["Ps28CustomDebugStringConvertible", "prepareLocalMedia"]
 - !private ["Ps28CustomDebugStringConvertible", "previewView"]
@@ -464,6 +471,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "room"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "selectSource"]
+- !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "showRoomUI"]
 - !private ["Ps28CustomDebugStringConvertible", "source"]
@@ -522,6 +530,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "TVILocalMedia"]
 - !private ["Ps23CustomStringConvertible", "TVIVideoClient"]
 - !private ["Ps23CustomStringConvertible", "TokenUtils"]
+- !private ["Ps23CustomStringConvertible", "UIControlState"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -579,7 +589,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "participant"]
 - !private ["Ps23CustomStringConvertible", "participants"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
-- ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - ["Ps23CustomStringConvertible", "prepareLocalMedia"]
 - !private ["Ps23CustomStringConvertible", "previewView"]
@@ -592,6 +601,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "room"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "selectSource"]
+- !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
 - !private ["Ps23CustomStringConvertible", "showRoomUI"]
 - !private ["Ps23CustomStringConvertible", "source"]
@@ -639,6 +649,8 @@ depends-member:
 - !private ["Ps9Equatable", "TVILocalMedia"]
 - !private ["Ps9Equatable", "TVIVideoClient"]
 - !private ["Ps9Equatable", "TokenUtils"]
+- !private ["Ps9Equatable", "UIControlState"]
+- !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -698,7 +710,6 @@ depends-member:
 - ["Ps9Equatable", "participant"]
 - !private ["Ps9Equatable", "participants"]
 - !private ["Ps9Equatable", "performSegue"]
-- ["Ps9Equatable", "prefersStatusBarHidden"]
 - ["Ps9Equatable", "prepare"]
 - ["Ps9Equatable", "prepareLocalMedia"]
 - !private ["Ps9Equatable", "previewView"]
@@ -712,6 +723,7 @@ depends-member:
 - ["Ps9Equatable", "room"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "selectSource"]
+- !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setTitle"]
 - !private ["Ps9Equatable", "showRoomUI"]
 - !private ["Ps9Equatable", "source"]
@@ -778,6 +790,8 @@ depends-member:
 - !private ["Ps8Hashable", "TVILocalMedia"]
 - !private ["Ps8Hashable", "TVIVideoClient"]
 - !private ["Ps8Hashable", "TokenUtils"]
+- !private ["Ps8Hashable", "UIControlState"]
+- !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -835,7 +849,6 @@ depends-member:
 - ["Ps8Hashable", "participant"]
 - !private ["Ps8Hashable", "participants"]
 - !private ["Ps8Hashable", "performSegue"]
-- ["Ps8Hashable", "prefersStatusBarHidden"]
 - ["Ps8Hashable", "prepare"]
 - ["Ps8Hashable", "prepareLocalMedia"]
 - !private ["Ps8Hashable", "previewView"]
@@ -848,6 +861,7 @@ depends-member:
 - ["Ps8Hashable", "room"]
 - !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "selectSource"]
+- !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setTitle"]
 - !private ["Ps8Hashable", "showRoomUI"]
 - !private ["Ps8Hashable", "source"]
@@ -941,6 +955,8 @@ depends-member:
 - !private ["PSo8NSCoding", "TVILocalMedia"]
 - !private ["PSo8NSCoding", "TVIVideoClient"]
 - !private ["PSo8NSCoding", "TokenUtils"]
+- !private ["PSo8NSCoding", "UIControlState"]
+- !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIView"]
 - ["PSo8NSCoding", "accessToken"]
 - !private ["PSo8NSCoding", "addChildViewController"]
@@ -978,7 +994,6 @@ depends-member:
 - !private ["PSo8NSCoding", "micButton"]
 - ["PSo8NSCoding", "participant"]
 - !private ["PSo8NSCoding", "performSegue"]
-- ["PSo8NSCoding", "prefersStatusBarHidden"]
 - ["PSo8NSCoding", "prepare"]
 - ["PSo8NSCoding", "prepareLocalMedia"]
 - !private ["PSo8NSCoding", "previewView"]
@@ -990,6 +1005,7 @@ depends-member:
 - !private ["PSo8NSCoding", "removeFromSuperview"]
 - ["PSo8NSCoding", "room"]
 - !private ["PSo8NSCoding", "rootViewController"]
+- !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setTitle"]
 - !private ["PSo8NSCoding", "showRoomUI"]
 - ["PSo8NSCoding", "startPreview"]
@@ -1019,6 +1035,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "TVILocalMedia"]
 - !private ["PSo26NSExtensionRequestHandling", "TVIVideoClient"]
 - !private ["PSo26NSExtensionRequestHandling", "TokenUtils"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "accessToken"]
 - !private ["PSo26NSExtensionRequestHandling", "addChildViewController"]
@@ -1049,7 +1067,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "micButton"]
 - ["PSo26NSExtensionRequestHandling", "participant"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
-- ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - ["PSo26NSExtensionRequestHandling", "prepareLocalMedia"]
 - !private ["PSo26NSExtensionRequestHandling", "previewView"]
@@ -1099,6 +1116,8 @@ depends-member:
 - ["CSo8NSObject", "TVIVideoTrack"]
 - !private ["CSo8NSObject", "TokenUtils"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIControlState"]
+- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -1157,7 +1176,6 @@ depends-member:
 - ["CSo8NSObject", "participant"]
 - !private ["CSo8NSObject", "participants"]
 - !private ["CSo8NSObject", "performSegue"]
-- ["CSo8NSObject", "prefersStatusBarHidden"]
 - ["CSo8NSObject", "prepare"]
 - ["CSo8NSObject", "prepareLocalMedia"]
 - !private ["CSo8NSObject", "previewView"]
@@ -1170,6 +1188,7 @@ depends-member:
 - ["CSo8NSObject", "room"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "selectSource"]
+- !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "showRoomUI"]
 - !private ["CSo8NSObject", "source"]
@@ -1202,6 +1221,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "TVILocalMedia"]
 - !private ["PSo16NSObjectProtocol", "TVIVideoClient"]
 - !private ["PSo16NSObjectProtocol", "TokenUtils"]
+- !private ["PSo16NSObjectProtocol", "UIControlState"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - ["PSo16NSObjectProtocol", "accessToken"]
 - !private ["PSo16NSObjectProtocol", "addAudioTrack"]
@@ -1255,7 +1276,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "participant"]
 - !private ["PSo16NSObjectProtocol", "participants"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
-- ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - ["PSo16NSObjectProtocol", "prepareLocalMedia"]
 - !private ["PSo16NSObjectProtocol", "previewView"]
@@ -1268,6 +1288,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "room"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "selectSource"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "showRoomUI"]
 - !private ["PSo16NSObjectProtocol", "source"]
@@ -1428,6 +1449,8 @@ depends-member:
 - !private ["PSo22TVIParticipantDelegate", "TVILocalMedia"]
 - !private ["PSo22TVIParticipantDelegate", "TVIVideoClient"]
 - !private ["PSo22TVIParticipantDelegate", "TokenUtils"]
+- !private ["PSo22TVIParticipantDelegate", "UIControlState"]
+- !private ["PSo22TVIParticipantDelegate", "UIImage"]
 - !private ["PSo22TVIParticipantDelegate", "UIView"]
 - !private ["PSo22TVIParticipantDelegate", "accessToken"]
 - !private ["PSo22TVIParticipantDelegate", "addChildViewController"]
@@ -1479,6 +1502,8 @@ depends-member:
 - !private ["PSo15TVIRoomDelegate", "TVILocalMedia"]
 - !private ["PSo15TVIRoomDelegate", "TVIVideoClient"]
 - !private ["PSo15TVIRoomDelegate", "TokenUtils"]
+- !private ["PSo15TVIRoomDelegate", "UIControlState"]
+- !private ["PSo15TVIRoomDelegate", "UIImage"]
 - !private ["PSo15TVIRoomDelegate", "UIView"]
 - !private ["PSo15TVIRoomDelegate", "accessToken"]
 - !private ["PSo15TVIRoomDelegate", "addChildViewController"]
@@ -1540,11 +1565,13 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animate"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "isUserInteractionEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "transform"]
@@ -1557,6 +1584,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "isUserInteractionEnabled"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "rootViewController"]
+- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "transform"]
@@ -1571,6 +1599,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "TVILocalMedia"]
 - !private ["PSo21UIAppearanceContainer", "TVIVideoClient"]
 - !private ["PSo21UIAppearanceContainer", "TokenUtils"]
+- !private ["PSo21UIAppearanceContainer", "UIControlState"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - ["PSo21UIAppearanceContainer", "accessToken"]
 - !private ["PSo21UIAppearanceContainer", "addChildViewController"]
@@ -1607,7 +1637,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "micButton"]
 - ["PSo21UIAppearanceContainer", "participant"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
-- ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - ["PSo21UIAppearanceContainer", "prepareLocalMedia"]
 - !private ["PSo21UIAppearanceContainer", "previewView"]
@@ -1619,6 +1648,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - ["PSo21UIAppearanceContainer", "room"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - !private ["PSo21UIAppearanceContainer", "showRoomUI"]
 - ["PSo21UIAppearanceContainer", "startPreview"]
@@ -1638,6 +1668,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "isEnabled"]
 - !private ["CSo8UIButton", "isHidden"]
+- !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["PSo18UIContentContainer", "CGAffineTransform"]
 - !private ["PSo18UIContentContainer", "CGFloat"]
@@ -1649,6 +1680,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "TVILocalMedia"]
 - !private ["PSo18UIContentContainer", "TVIVideoClient"]
 - !private ["PSo18UIContentContainer", "TokenUtils"]
+- !private ["PSo18UIContentContainer", "UIControlState"]
+- !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "accessToken"]
 - !private ["PSo18UIContentContainer", "addChildViewController"]
@@ -1679,7 +1712,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "micButton"]
 - ["PSo18UIContentContainer", "participant"]
 - !private ["PSo18UIContentContainer", "performSegue"]
-- ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - ["PSo18UIContentContainer", "prepare"]
 - ["PSo18UIContentContainer", "prepareLocalMedia"]
 - !private ["PSo18UIContentContainer", "previewView"]
@@ -1705,6 +1737,7 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["CSo9UIControl", "isEnabled"]
 - !private ["CSo9UIControl", "isHidden"]
+- !private ["CSo9UIControl", "setImage"]
 - !private ["CSo9UIControl", "setTitle"]
 - ["VSC14UIControlState", "deinit"]
 - !private ["VSC14UIControlState", "normal"]
@@ -1716,6 +1749,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "isUserInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "rootViewController"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "transform"]
@@ -1728,6 +1762,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "isUserInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "rootViewController"]
+- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "transform"]
@@ -1742,6 +1777,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "TVILocalMedia"]
 - !private ["PSo18UIFocusEnvironment", "TVIVideoClient"]
 - !private ["PSo18UIFocusEnvironment", "TokenUtils"]
+- !private ["PSo18UIFocusEnvironment", "UIControlState"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - ["PSo18UIFocusEnvironment", "accessToken"]
 - !private ["PSo18UIFocusEnvironment", "addChildViewController"]
@@ -1778,7 +1815,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "micButton"]
 - ["PSo18UIFocusEnvironment", "participant"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
-- ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - ["PSo18UIFocusEnvironment", "prepareLocalMedia"]
 - !private ["PSo18UIFocusEnvironment", "previewView"]
@@ -1790,6 +1826,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - ["PSo18UIFocusEnvironment", "room"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "setTitle"]
 - !private ["PSo18UIFocusEnvironment", "showRoomUI"]
 - ["PSo18UIFocusEnvironment", "startPreview"]
@@ -1815,10 +1852,12 @@ depends-member:
 - !private ["PSo11UIFocusItem", "isUserInteractionEnabled"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
 - !private ["PSo11UIFocusItem", "rootViewController"]
+- !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "setTitle"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "transform"]
 - !private ["PSo11UIFocusItem", "window"]
+- !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "transform"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
@@ -1845,6 +1884,8 @@ depends-member:
 - ["CSo11UIResponder", "TVIVideoTrack"]
 - !private ["CSo11UIResponder", "TokenUtils"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIControlState"]
+- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -1885,7 +1926,6 @@ depends-member:
 - !private ["CSo11UIResponder", "micButton"]
 - ["CSo11UIResponder", "participant"]
 - !private ["CSo11UIResponder", "performSegue"]
-- ["CSo11UIResponder", "prefersStatusBarHidden"]
 - ["CSo11UIResponder", "prepare"]
 - ["CSo11UIResponder", "prepareLocalMedia"]
 - !private ["CSo11UIResponder", "previewView"]
@@ -1897,6 +1937,7 @@ depends-member:
 - !private ["CSo11UIResponder", "removeFromSuperview"]
 - ["CSo11UIResponder", "room"]
 - !private ["CSo11UIResponder", "rootViewController"]
+- !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "setTitle"]
 - !private ["CSo11UIResponder", "showRoomUI"]
 - ["CSo11UIResponder", "startPreview"]
@@ -1923,6 +1964,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "TVILocalMedia"]
 - !private ["PSo30UIResponderStandardEditActions", "TVIVideoClient"]
 - !private ["PSo30UIResponderStandardEditActions", "TokenUtils"]
+- !private ["PSo30UIResponderStandardEditActions", "UIControlState"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - ["PSo30UIResponderStandardEditActions", "accessToken"]
 - !private ["PSo30UIResponderStandardEditActions", "addChildViewController"]
@@ -1959,7 +2002,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "micButton"]
 - ["PSo30UIResponderStandardEditActions", "participant"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
-- ["PSo30UIResponderStandardEditActions", "prefersStatusBarHidden"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - ["PSo30UIResponderStandardEditActions", "prepareLocalMedia"]
 - !private ["PSo30UIResponderStandardEditActions", "previewView"]
@@ -1971,6 +2013,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
 - ["PSo30UIResponderStandardEditActions", "room"]
 - !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - !private ["PSo30UIResponderStandardEditActions", "setTitle"]
 - !private ["PSo30UIResponderStandardEditActions", "showRoomUI"]
 - ["PSo30UIResponderStandardEditActions", "startPreview"]
@@ -1998,6 +2041,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "TVILocalMedia"]
 - !private ["PSo16UIStateRestoring", "TVIVideoClient"]
 - !private ["PSo16UIStateRestoring", "TokenUtils"]
+- !private ["PSo16UIStateRestoring", "UIControlState"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "accessToken"]
 - !private ["PSo16UIStateRestoring", "addChildViewController"]
@@ -2028,7 +2073,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "micButton"]
 - ["PSo16UIStateRestoring", "participant"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
-- ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - ["PSo16UIStateRestoring", "prepare"]
 - ["PSo16UIStateRestoring", "prepareLocalMedia"]
 - !private ["PSo16UIStateRestoring", "previewView"]
@@ -2066,6 +2110,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "TVILocalMedia"]
 - !private ["PSo18UITraitEnvironment", "TVIVideoClient"]
 - !private ["PSo18UITraitEnvironment", "TokenUtils"]
+- !private ["PSo18UITraitEnvironment", "UIControlState"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - ["PSo18UITraitEnvironment", "accessToken"]
 - !private ["PSo18UITraitEnvironment", "addChildViewController"]
@@ -2102,7 +2148,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "micButton"]
 - ["PSo18UITraitEnvironment", "participant"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
-- ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - ["PSo18UITraitEnvironment", "prepareLocalMedia"]
 - !private ["PSo18UITraitEnvironment", "previewView"]
@@ -2114,6 +2159,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - ["PSo18UITraitEnvironment", "room"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - !private ["PSo18UITraitEnvironment", "showRoomUI"]
 - ["PSo18UITraitEnvironment", "startPreview"]
@@ -2139,6 +2185,7 @@ depends-member:
 - !private ["CSo6UIView", "isUserInteractionEnabled"]
 - !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "rootViewController"]
+- !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "transform"]
@@ -2171,6 +2218,8 @@ depends-member:
 - ["CSo16UIViewController", "TVIVideoTrack"]
 - !private ["CSo16UIViewController", "TokenUtils"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIControlState"]
+- !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -2206,7 +2255,6 @@ depends-member:
 - !private ["CSo16UIViewController", "micButton"]
 - ["CSo16UIViewController", "participant"]
 - !private ["CSo16UIViewController", "performSegue"]
-- ["CSo16UIViewController", "prefersStatusBarHidden"]
 - ["CSo16UIViewController", "prepare"]
 - ["CSo16UIViewController", "prepareLocalMedia"]
 - !private ["CSo16UIViewController", "previewView"]
@@ -2273,6 +2321,8 @@ depends-member:
 - ["C4Guru13WaitingScreen", "TVIVideoTrack"]
 - !private ["C4Guru13WaitingScreen", "TokenUtils"]
 - ["C4Guru13WaitingScreen", "UIButton"]
+- !private ["C4Guru13WaitingScreen", "UIControlState"]
+- !private ["C4Guru13WaitingScreen", "UIImage"]
 - ["C4Guru13WaitingScreen", "UIImageView"]
 - ["C4Guru13WaitingScreen", "UILabel"]
 - ["C4Guru13WaitingScreen", "UIStoryboardSegue"]
@@ -2303,7 +2353,6 @@ depends-member:
 - ["C4Guru13WaitingScreen", "logMessage"]
 - ["C4Guru13WaitingScreen", "participant"]
 - !private ["C4Guru13WaitingScreen", "performSegue"]
-- ["C4Guru13WaitingScreen", "prefersStatusBarHidden"]
 - ["C4Guru13WaitingScreen", "prepare"]
 - ["C4Guru13WaitingScreen", "prepareLocalMedia"]
 - !private ["C4Guru13WaitingScreen", "print"]
@@ -2332,6 +2381,8 @@ depends-member:
 - !private ["P4Guru21WaitingScreenDelegate", "TVILocalMedia"]
 - !private ["P4Guru21WaitingScreenDelegate", "TVIVideoClient"]
 - !private ["P4Guru21WaitingScreenDelegate", "TokenUtils"]
+- !private ["P4Guru21WaitingScreenDelegate", "UIControlState"]
+- !private ["P4Guru21WaitingScreenDelegate", "UIImage"]
 - !private ["P4Guru21WaitingScreenDelegate", "UIView"]
 - !private ["P4Guru21WaitingScreenDelegate", "accessToken"]
 - !private ["P4Guru21WaitingScreenDelegate", "addChildViewController"]
@@ -2385,6 +2436,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isUserInteractionEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "transform"]
@@ -2408,6 +2460,7 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "characters"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "characters"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGAffineTransform"]
@@ -2423,6 +2476,8 @@ depends-member:
 - !private ["Ps9_Hashable", "TVILocalMedia"]
 - !private ["Ps9_Hashable", "TVIVideoClient"]
 - !private ["Ps9_Hashable", "TokenUtils"]
+- !private ["Ps9_Hashable", "UIControlState"]
+- !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -2480,7 +2535,6 @@ depends-member:
 - ["Ps9_Hashable", "participant"]
 - !private ["Ps9_Hashable", "participants"]
 - !private ["Ps9_Hashable", "performSegue"]
-- ["Ps9_Hashable", "prefersStatusBarHidden"]
 - ["Ps9_Hashable", "prepare"]
 - ["Ps9_Hashable", "prepareLocalMedia"]
 - !private ["Ps9_Hashable", "previewView"]
@@ -2493,6 +2547,7 @@ depends-member:
 - ["Ps9_Hashable", "room"]
 - !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "selectSource"]
+- !private ["Ps9_Hashable", "setImage"]
 - !private ["Ps9_Hashable", "setTitle"]
 - !private ["Ps9_Hashable", "showRoomUI"]
 - !private ["Ps9_Hashable", "source"]
@@ -2669,6 +2724,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
+- !private "CSo7UIImage"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
@@ -2701,6 +2757,7 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
@@ -2726,6 +2783,10 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-Swift.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Headers/PopupController-umbrella.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/PopupController/PopupController.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/M13Checkbox/M13Checkbox.framework/Modules/M13Checkbox.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/M13Checkbox/M13Checkbox.framework/Headers/M13Checkbox-Swift.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/M13Checkbox/M13Checkbox.framework/Headers/M13Checkbox-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/M13Checkbox/M13Checkbox.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
@@ -2824,4 +2885,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
-interface-hash: "1351a0b96b3534eb0ae880847ecd70ce"
+interface-hash: "47c947ceec5316a5aee5c7a45e2ff511"

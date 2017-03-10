@@ -1,0 +1,22 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "3693ef71e79f8c8ce6a7d46ebc957f67"
+build_time: [542430565, 534591000]
+inputs:
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/M13Checkbox+IB.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/M13Checkbox.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Paths/M13CheckboxAddRemovePathGenerator.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/M13CheckboxAnimationGenerator.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxBounceController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Paths/M13CheckboxCheckPathGenerator.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/M13CheckboxController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Paths/M13CheckboxDisclosurePathGenerator.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxDotController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxExpandController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxFadeController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxFillController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxFlatController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/M13CheckboxGestureRecognizer.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Paths/M13CheckboxPathGenerator.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Paths/M13CheckboxRadioPathGenerator.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxSpiralController.swift": [542407152, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Pods/M13Checkbox/Sources/Managers/M13CheckboxStrokeController.swift": [542407152, 0]

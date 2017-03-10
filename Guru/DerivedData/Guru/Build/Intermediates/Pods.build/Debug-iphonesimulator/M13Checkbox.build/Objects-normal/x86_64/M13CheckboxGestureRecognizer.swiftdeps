@@ -1,0 +1,269 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "M13CheckboxGestureRecognizer"
+provides-nominal:
+- "C11M13Checkbox28M13CheckboxGestureRecognizer"
+provides-member:
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", ""]
+provides-dynamic-lookup:
+- "touchesEnded"
+depends-top-level:
+- !private "!"
+- "M13CheckboxGestureRecognizer"
+- "Set"
+- "AssignmentPrecedence"
+- "UILongPressGestureRecognizer"
+- "UITouch"
+- "Selector"
+- "UIEvent"
+depends-member:
+- !private ["Ps9AnyObject", "bounds"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "location"]
+- !private ["Ps9AnyObject", "minimumPressDuration"]
+- !private ["Ps9AnyObject", "state"]
+- ["Ps9AnyObject", "touchesEnded"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "bounds"]
+- ["VSC7CGPoint", "deinit"]
+- !private ["VSC6CGRect", "contains"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "first"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "location"]
+- !private ["Ps7CVarArg", "minimumPressDuration"]
+- !private ["Ps7CVarArg", "state"]
+- ["Ps7CVarArg", "touchesEnded"]
+- !private ["Ps7CVarArg", "view"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "first"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "contains"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "location"]
+- !private ["Ps28CustomDebugStringConvertible", "minimumPressDuration"]
+- !private ["Ps28CustomDebugStringConvertible", "state"]
+- ["Ps28CustomDebugStringConvertible", "touchesEnded"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "contains"]
+- !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "contains"]
+- !private ["Ps17CustomReflectable", "first"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "location"]
+- !private ["Ps23CustomStringConvertible", "minimumPressDuration"]
+- !private ["Ps23CustomStringConvertible", "state"]
+- ["Ps23CustomStringConvertible", "touchesEnded"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Iterator"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "contains"]
+- !private ["Ps9Equatable", "failed"]
+- !private ["Ps9Equatable", "first"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "location"]
+- !private ["Ps9Equatable", "minimumPressDuration"]
+- !private ["Ps9Equatable", "state"]
+- ["Ps9Equatable", "touchesEnded"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "first"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "Iterator"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "failed"]
+- !private ["Ps8Hashable", "first"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "location"]
+- !private ["Ps8Hashable", "minimumPressDuration"]
+- !private ["Ps8Hashable", "state"]
+- ["Ps8Hashable", "touchesEnded"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "first"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "first"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", "Selector"]
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", "Set"]
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", "UIEvent"]
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", "UITouch"]
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", "deinit"]
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", "init"]
+- !private ["C11M13Checkbox28M13CheckboxGestureRecognizer", "minimumPressDuration"]
+- !private ["C11M13Checkbox28M13CheckboxGestureRecognizer", "state"]
+- ["C11M13Checkbox28M13CheckboxGestureRecognizer", "touchesEnded"]
+- !private ["C11M13Checkbox28M13CheckboxGestureRecognizer", "view"]
+- !private ["PSo8NSCoding", "bounds"]
+- ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "Set"]
+- ["CSo8NSObject", "UIEvent"]
+- ["CSo8NSObject", "UITouch"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "location"]
+- !private ["CSo8NSObject", "minimumPressDuration"]
+- !private ["CSo8NSObject", "state"]
+- ["CSo8NSObject", "touchesEnded"]
+- !private ["CSo8NSObject", "view"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "location"]
+- !private ["PSo16NSObjectProtocol", "minimumPressDuration"]
+- !private ["PSo16NSObjectProtocol", "state"]
+- ["PSo16NSObjectProtocol", "touchesEnded"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "failed"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "first"]
+- !private ["Vs3Set", "Iterator"]
+- ["Vs3Set", "deinit"]
+- !private ["Vs3Set", "first"]
+- !private ["Ps10SetAlgebra", "Iterator"]
+- !private ["Ps10SetAlgebra", "first"]
+- !private ["Vs11SetIterator", "Element"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- ["CSo7UIEvent", "deinit"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- !private ["PSo11UIFocusItem", "bounds"]
+- ["CSo19UIGestureRecognizer", "Selector"]
+- ["CSo19UIGestureRecognizer", "Set"]
+- ["CSo19UIGestureRecognizer", "UIEvent"]
+- ["CSo19UIGestureRecognizer", "UITouch"]
+- ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo19UIGestureRecognizer", "minimumPressDuration"]
+- !private ["CSo19UIGestureRecognizer", "state"]
+- ["CSo19UIGestureRecognizer", "touchesEnded"]
+- !private ["CSo19UIGestureRecognizer", "view"]
+- ["OSC24UIGestureRecognizerState", "deinit"]
+- !private ["OSC24UIGestureRecognizerState", "failed"]
+- ["CSo28UILongPressGestureRecognizer", "Selector"]
+- ["CSo28UILongPressGestureRecognizer", "Set"]
+- ["CSo28UILongPressGestureRecognizer", "UIEvent"]
+- ["CSo28UILongPressGestureRecognizer", "UITouch"]
+- ["CSo28UILongPressGestureRecognizer", "deinit"]
+- ["CSo28UILongPressGestureRecognizer", "init"]
+- !private ["CSo28UILongPressGestureRecognizer", "minimumPressDuration"]
+- !private ["CSo28UILongPressGestureRecognizer", "state"]
+- ["CSo28UILongPressGestureRecognizer", "touchesEnded"]
+- !private ["CSo28UILongPressGestureRecognizer", "view"]
+- ["CSo28UILongPressGestureRecognizer", ""]
+- !private ["CSo11UIResponder", "bounds"]
+- !private ["PSo30UIResponderStandardEditActions", "bounds"]
+- ["CSo7UITouch", "deinit"]
+- !private ["CSo7UITouch", "location"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["CSo6UIView", "bounds"]
+- ["CSo6UIView", "deinit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "Iterator"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "failed"]
+- !private ["Ps9_Hashable", "first"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "location"]
+- !private ["Ps9_Hashable", "minimumPressDuration"]
+- !private ["Ps9_Hashable", "state"]
+- ["Ps9_Hashable", "touchesEnded"]
+- !private ["Ps9_Hashable", "view"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "contains"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "VSC7CGPoint"
+- !private "VSC6CGRect"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- "C11M13Checkbox28M13CheckboxGestureRecognizer"
+- !private "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- "Vs3Set"
+- !private "Ps10SetAlgebra"
+- !private "Vs11SetIterator"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "CSo7UIEvent"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo19UIGestureRecognizer"
+- "OSC24UIGestureRecognizerState"
+- "CSo28UILongPressGestureRecognizer"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- "CSo7UITouch"
+- !private "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/M13Checkbox/M13Checkbox-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/M13Checkbox.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "c726fad8ea8488e4fa731ff2c95017f2"
