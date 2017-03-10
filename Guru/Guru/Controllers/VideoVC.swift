@@ -64,6 +64,7 @@ class VideoVC: UIViewController {
     }
     @IBAction func toggleMic(sender: AnyObject) {
         print("toggle mic")
+        //micButton.image(for: UIControlState.normal) = UIImage(named: String)
         self.delegate?.toggleMic(sender: sender)
     }
     

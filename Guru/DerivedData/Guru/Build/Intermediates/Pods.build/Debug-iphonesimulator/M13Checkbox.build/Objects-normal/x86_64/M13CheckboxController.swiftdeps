@@ -1,0 +1,298 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "M13CheckboxController"
+provides-nominal:
+- "C11M13Checkbox21M13CheckboxController"
+provides-member:
+- ["C11M13Checkbox21M13CheckboxController", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- !private "!="
+- "AssignmentPrecedence"
+- "M13CheckboxController"
+- "M13CheckboxPathGenerator"
+- "UIColor"
+- !private "&&"
+- !private "M13CheckboxAddRemovePathGenerator"
+- "Bool"
+- "Void"
+- "M13CheckboxAnimationGenerator"
+- !private "M13CheckboxRadioPathGenerator"
+- "M13Checkbox"
+- "BooleanLiteralType"
+- "M13CheckboxCheckPathGenerator"
+- "CALayer"
+- !private "M13CheckboxDisclosurePathGenerator"
+depends-member:
+- ["Ps9AnyObject", "CheckState"]
+- !private ["Ps9AnyObject", "M13CheckboxAddRemovePathGenerator"]
+- ["Ps9AnyObject", "M13CheckboxAnimationGenerator"]
+- ["Ps9AnyObject", "M13CheckboxCheckPathGenerator"]
+- !private ["Ps9AnyObject", "M13CheckboxDisclosurePathGenerator"]
+- !private ["Ps9AnyObject", "M13CheckboxRadioPathGenerator"]
+- ["Ps9AnyObject", "MarkType"]
+- ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "animate"]
+- ["Ps9AnyObject", "black"]
+- !private ["Ps9AnyObject", "boxLineWidth"]
+- !private ["Ps9AnyObject", "boxType"]
+- !private ["Ps9AnyObject", "checkmarkLineWidth"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layoutLayers"]
+- ["Ps9AnyObject", "lightGray"]
+- !private ["Ps9AnyObject", "markType"]
+- !private ["Ps9AnyObject", "pathForMark"]
+- !private ["Ps9AnyObject", "pathGenerator"]
+- !private ["Ps9AnyObject", "resetLayersForState"]
+- !private ["Ps9AnyObject", "setMarkType"]
+- !private ["Ps9AnyObject", "size"]
+- !private ["Ps9AnyObject", "state"]
+- ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "deinit"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "CheckState"]
+- ["PSo15CALayerDelegate", "MarkType"]
+- ["Ps7CVarArg", "CheckState"]
+- ["Ps7CVarArg", "MarkType"]
+- ["Ps7CVarArg", "black"]
+- ["Ps7CVarArg", "lightGray"]
+- ["Ps7CVarArg", "white"]
+- ["OC11M13Checkbox11M13Checkbox10CheckState", "deinit"]
+- ["OC11M13Checkbox11M13Checkbox10CheckState", "unchecked"]
+- ["Ps28CustomDebugStringConvertible", "CheckState"]
+- ["Ps28CustomDebugStringConvertible", "MarkType"]
+- ["Ps28CustomDebugStringConvertible", "black"]
+- ["Ps28CustomDebugStringConvertible", "lightGray"]
+- ["Ps28CustomDebugStringConvertible", "white"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "CheckState"]
+- ["Ps23CustomStringConvertible", "MarkType"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "black"]
+- ["Ps23CustomStringConvertible", "lightGray"]
+- ["Ps23CustomStringConvertible", "white"]
+- ["Ps9Equatable", "CheckState"]
+- ["Ps9Equatable", "MarkType"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "addRemove"]
+- ["Ps9Equatable", "black"]
+- ["Ps9Equatable", "checkmark"]
+- ["Ps9Equatable", "disclosure"]
+- ["Ps9Equatable", "lightGray"]
+- ["Ps9Equatable", "radio"]
+- ["Ps9Equatable", "unchecked"]
+- ["Ps9Equatable", "white"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "CheckState"]
+- ["Ps8Hashable", "MarkType"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "addRemove"]
+- ["Ps8Hashable", "black"]
+- ["Ps8Hashable", "checkmark"]
+- ["Ps8Hashable", "disclosure"]
+- ["Ps8Hashable", "lightGray"]
+- ["Ps8Hashable", "radio"]
+- ["Ps8Hashable", "unchecked"]
+- ["Ps8Hashable", "white"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["C11M13Checkbox11M13Checkbox", "CheckState"]
+- ["C11M13Checkbox11M13Checkbox", "MarkType"]
+- ["C11M13Checkbox33M13CheckboxAddRemovePathGenerator", "deinit"]
+- !private ["C11M13Checkbox33M13CheckboxAddRemovePathGenerator", "init"]
+- ["C11M13Checkbox29M13CheckboxAnimationGenerator", "deinit"]
+- ["C11M13Checkbox29M13CheckboxAnimationGenerator", "init"]
+- ["C11M13Checkbox29M13CheckboxCheckPathGenerator", "deinit"]
+- ["C11M13Checkbox29M13CheckboxCheckPathGenerator", "init"]
+- ["C11M13Checkbox21M13CheckboxController", "Bool"]
+- ["C11M13Checkbox21M13CheckboxController", "CALayer"]
+- ["C11M13Checkbox21M13CheckboxController", "M13Checkbox"]
+- !private ["C11M13Checkbox21M13CheckboxController", "M13CheckboxAddRemovePathGenerator"]
+- ["C11M13Checkbox21M13CheckboxController", "M13CheckboxAnimationGenerator"]
+- ["C11M13Checkbox21M13CheckboxController", "M13CheckboxCheckPathGenerator"]
+- !private ["C11M13Checkbox21M13CheckboxController", "M13CheckboxDisclosurePathGenerator"]
+- ["C11M13Checkbox21M13CheckboxController", "M13CheckboxPathGenerator"]
+- !private ["C11M13Checkbox21M13CheckboxController", "M13CheckboxRadioPathGenerator"]
+- ["C11M13Checkbox21M13CheckboxController", "UIColor"]
+- ["C11M13Checkbox21M13CheckboxController", "Void"]
+- ["C11M13Checkbox21M13CheckboxController", "animate"]
+- ["C11M13Checkbox21M13CheckboxController", "animationGenerator"]
+- ["C11M13Checkbox21M13CheckboxController", "deinit"]
+- ["C11M13Checkbox21M13CheckboxController", "enableMorphing"]
+- ["C11M13Checkbox21M13CheckboxController", "hideBox"]
+- ["C11M13Checkbox21M13CheckboxController", "init"]
+- ["C11M13Checkbox21M13CheckboxController", "layersToDisplay"]
+- ["C11M13Checkbox21M13CheckboxController", "layoutLayers"]
+- ["C11M13Checkbox21M13CheckboxController", "markType"]
+- ["C11M13Checkbox21M13CheckboxController", "pathGenerator"]
+- ["C11M13Checkbox21M13CheckboxController", "resetLayersForState"]
+- ["C11M13Checkbox21M13CheckboxController", "secondaryCheckmarkTintColor"]
+- ["C11M13Checkbox21M13CheckboxController", "secondaryTintColor"]
+- ["C11M13Checkbox21M13CheckboxController", "setMarkType"]
+- ["C11M13Checkbox21M13CheckboxController", "state"]
+- ["C11M13Checkbox21M13CheckboxController", "tintColor"]
+- ["C11M13Checkbox34M13CheckboxDisclosurePathGenerator", "deinit"]
+- !private ["C11M13Checkbox34M13CheckboxDisclosurePathGenerator", "init"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "boxLineWidth"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "boxType"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "checkmarkLineWidth"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "cornerRadius"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "deinit"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "init"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForMark"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "size"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "deinit"]
+- !private ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "init"]
+- !private ["OC11M13Checkbox11M13Checkbox8MarkType", "RawValue"]
+- ["OC11M13Checkbox11M13Checkbox8MarkType", "addRemove"]
+- ["OC11M13Checkbox11M13Checkbox8MarkType", "checkmark"]
+- ["OC11M13Checkbox11M13Checkbox8MarkType", "deinit"]
+- ["OC11M13Checkbox11M13Checkbox8MarkType", "disclosure"]
+- ["OC11M13Checkbox11M13Checkbox8MarkType", "radio"]
+- ["PSo8NSCoding", "CheckState"]
+- ["PSo8NSCoding", "MarkType"]
+- ["PSo8NSCoding", "black"]
+- ["PSo8NSCoding", "lightGray"]
+- ["PSo8NSCoding", "white"]
+- ["PSo9NSCopying", "black"]
+- ["PSo9NSCopying", "lightGray"]
+- ["PSo9NSCopying", "white"]
+- ["CSo8NSObject", "CheckState"]
+- ["CSo8NSObject", "MarkType"]
+- ["CSo8NSObject", "black"]
+- ["CSo8NSObject", "lightGray"]
+- ["CSo8NSObject", "white"]
+- ["PSo16NSObjectProtocol", "CheckState"]
+- ["PSo16NSObjectProtocol", "MarkType"]
+- ["PSo16NSObjectProtocol", "black"]
+- ["PSo16NSObjectProtocol", "lightGray"]
+- ["PSo16NSObjectProtocol", "white"]
+- ["PSo14NSSecureCoding", "black"]
+- ["PSo14NSSecureCoding", "lightGray"]
+- ["PSo14NSSecureCoding", "white"]
+- ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "addRemove"]
+- ["Ps16RawRepresentable", "checkmark"]
+- ["Ps16RawRepresentable", "disclosure"]
+- ["Ps16RawRepresentable", "radio"]
+- ["Ps16RawRepresentable", "unchecked"]
+- ["PSo29UIAccessibilityIdentification", "CheckState"]
+- ["PSo29UIAccessibilityIdentification", "MarkType"]
+- ["PSo12UIAppearance", "CheckState"]
+- ["PSo12UIAppearance", "MarkType"]
+- ["PSo21UIAppearanceContainer", "CheckState"]
+- ["PSo21UIAppearanceContainer", "MarkType"]
+- ["CSo7UIColor", "black"]
+- ["CSo7UIColor", "deinit"]
+- ["CSo7UIColor", "lightGray"]
+- ["CSo7UIColor", "white"]
+- ["CSo9UIControl", "CheckState"]
+- ["CSo9UIControl", "MarkType"]
+- ["PSo17UICoordinateSpace", "CheckState"]
+- ["PSo17UICoordinateSpace", "MarkType"]
+- ["PSo13UIDynamicItem", "CheckState"]
+- ["PSo13UIDynamicItem", "MarkType"]
+- ["PSo18UIFocusEnvironment", "CheckState"]
+- ["PSo18UIFocusEnvironment", "MarkType"]
+- ["PSo11UIFocusItem", "CheckState"]
+- ["PSo11UIFocusItem", "MarkType"]
+- ["CSo11UIResponder", "CheckState"]
+- ["CSo11UIResponder", "MarkType"]
+- ["PSo30UIResponderStandardEditActions", "CheckState"]
+- ["PSo30UIResponderStandardEditActions", "MarkType"]
+- ["PSo18UITraitEnvironment", "CheckState"]
+- ["PSo18UITraitEnvironment", "MarkType"]
+- ["CSo6UIView", "CheckState"]
+- ["CSo6UIView", "MarkType"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "CheckState"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "MarkType"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps26_ExpressibleByColorLiteral", "black"]
+- ["Ps26_ExpressibleByColorLiteral", "lightGray"]
+- ["Ps26_ExpressibleByColorLiteral", "white"]
+- ["Ps9_Hashable", "CheckState"]
+- ["Ps9_Hashable", "MarkType"]
+- !private ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "addRemove"]
+- ["Ps9_Hashable", "black"]
+- ["Ps9_Hashable", "checkmark"]
+- ["Ps9_Hashable", "disclosure"]
+- ["Ps9_Hashable", "lightGray"]
+- ["Ps9_Hashable", "radio"]
+- ["Ps9_Hashable", "unchecked"]
+- ["Ps9_Hashable", "white"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "OC11M13Checkbox11M13Checkbox10CheckState"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- "C11M13Checkbox11M13Checkbox"
+- "C11M13Checkbox33M13CheckboxAddRemovePathGenerator"
+- "C11M13Checkbox29M13CheckboxAnimationGenerator"
+- "C11M13Checkbox29M13CheckboxCheckPathGenerator"
+- "C11M13Checkbox21M13CheckboxController"
+- "C11M13Checkbox34M13CheckboxDisclosurePathGenerator"
+- "C11M13Checkbox24M13CheckboxPathGenerator"
+- "C11M13Checkbox29M13CheckboxRadioPathGenerator"
+- "OC11M13Checkbox11M13Checkbox8MarkType"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "Sq"
+- "Ps16RawRepresentable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/M13Checkbox/M13Checkbox-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/M13Checkbox.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "4126bb7395f974f4b8a820792afd1b37"

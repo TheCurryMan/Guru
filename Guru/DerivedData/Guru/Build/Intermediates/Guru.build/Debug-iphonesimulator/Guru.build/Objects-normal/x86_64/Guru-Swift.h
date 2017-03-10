@@ -159,29 +159,38 @@ SWIFT_CLASS("_TtC4Guru11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class M13Checkbox;
 
 SWIFT_CLASS("_TtC4Guru14DemoPopup2Cell")
 @interface DemoPopup2Cell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, strong) IBOutlet M13Checkbox * _Null_unspecified checkbox;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class PopupController;
 @class UITableView;
+@class UIButton;
 
 SWIFT_CLASS("_TtC4Guru24DemoPopupViewController2")
 @interface DemoPopupViewController2 : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomButton;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull topics;
+@property (nonatomic) BOOL multipleSelection;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
-+ (DemoPopupViewController2 * _Nonnull)instance;
++ (DemoPopupViewController2 * _Nonnull)instanceWithMultipleSelection:(BOOL)multipleSelection;
 - (void)didReceiveMemoryWarning;
 - (CGSize)sizeForPopup:(PopupController * _Nonnull)popupController size:(CGSize)size showingKeyboard:(BOOL)showingKeyboard;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)dismissView:(id _Nonnull)sender;
+- (void)enableBottomButton;
+- (void)disableBottomButton;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -220,7 +229,6 @@ SWIFT_CLASS("_TtC4Guru24GuruReviewViewController")
 @end
 
 @class UITextField;
-@class UIButton;
 
 SWIFT_CLASS("_TtC4Guru8HomePage")
 @interface HomePage : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
@@ -405,17 +413,21 @@ SWIFT_CLASS("_TtC4Guru20SignUpViewController")
 - (IBAction)tappedScreen:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topics;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified guruLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified guruLogoImg;
 @property (nonatomic, copy) IBOutletCollection(UIView) NSArray<UIView *> * _Null_unspecified underlineLabels;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified goButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginSubLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topicButton;
+@property (nonatomic, strong) PopupController * _Nonnull popup;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)submit:(id _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (void)signUp;
+- (IBAction)selectTopics:(id _Nonnull)sender;
+- (void)catchNotificationWithNotification:(NSNotification * _Nonnull)notification;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -424,6 +436,12 @@ SWIFT_CLASS("_TtC4Guru20SignUpViewController")
 @interface UIView (SWIFT_EXTENSION(Guru))
 - (void)shake;
 - (void)setRounded;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(Guru))
+- (void)showAlert:(NSString * _Nonnull)title;
+- (void)showAlert:(NSString * _Nonnull)title message:(NSString * _Nonnull)message;
 @end
 
 
@@ -487,7 +505,6 @@ SWIFT_CLASS("_TtC4Guru13WaitingScreen")
 - (void)prepareLocalMedia;
 - (void)cleanupRemoteParticipant;
 - (void)logMessageWithMessageText:(NSString * _Nonnull)messageText;
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)didReceiveMemoryWarning;
 - (IBAction)dismissView:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

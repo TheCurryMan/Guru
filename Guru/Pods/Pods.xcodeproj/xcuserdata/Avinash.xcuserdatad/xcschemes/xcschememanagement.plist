@@ -8,55 +8,85 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Cosmos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>M13Checkbox.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
 		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>ParseLiveQuery.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>Pods-Guru.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>Pods-GuruTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>Pods-GuruUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>PopupController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 		<key>SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>20A9DD9ABBF08BC57372A26C35327BF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2E0595D602850048C2B60495D87C3D28</key>
 		<dict>
 			<key>primary</key>
@@ -73,6 +103,16 @@
 			<true/>
 		</dict>
 		<key>6485A2D831B1921346BF65935A4163EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9895B6EF3FF2A80C7939A786DEEA74F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B32E2EBE041CC7976BC655ED9502F195</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -125,6 +125,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/M13Checkbox/M13Checkbox.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "M13Checkbox-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/M13Checkbox/M13Checkbox.framework/Headers/M13Checkbox-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "M13Checkbox-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/M13Checkbox/M13Checkbox-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/M13Checkbox/M13Checkbox.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/Pods.build/Debug-iphonesimulator/M13Checkbox.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Products/Debug-iphonesimulator/Parse/Parse.framework/Headers",
       'contents': [
         {

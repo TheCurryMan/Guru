@@ -804,7 +804,7 @@
                                 <rect key="frame" x="60" y="619" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" image="mute (2).png">
+                                <state key="normal" image="speaker (2).png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -814,7 +814,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fd6-39-vba">
                                 <rect key="frame" x="6" y="619" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cancel (1).png">
+                                <state key="normal" image="cancel2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1029,10 +1029,11 @@
         <image name="Guru_trans.png" width="1024" height="1024"/>
         <image name="Reset.png" width="614" height="497"/>
         <image name="cancel (1).png" width="256" height="256"/>
+        <image name="cancel2.png" width="256" height="256"/>
         <image name="checked (1).png" width="256" height="256"/>
         <image name="circle.png" width="500" height="500"/>
-        <image name="mute (2).png" width="256" height="256"/>
         <image name="pencil.png" width="128" height="128"/>
+        <image name="speaker (2).png" width="256" height="256"/>
         <image name="user.png" width="256" height="256"/>
         <image name="white_up.png" width="454" height="454"/>
     </resources>

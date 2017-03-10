@@ -1,0 +1,104 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "M13CheckboxRadioPathGenerator"
+provides-nominal:
+- "C11M13Checkbox29M13CheckboxRadioPathGenerator"
+provides-member:
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "M13CheckboxRadioPathGenerator"
+- "M13CheckboxPathGenerator"
+- "UIBezierPath"
+- !private "*"
+- !private "CGAffineTransform"
+depends-member:
+- !private ["Ps9AnyObject", "CGAffineTransform"]
+- !private ["Ps9AnyObject", "apply"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "pathForBox"]
+- ["Ps9AnyObject", "pathForLongMark"]
+- ["Ps9AnyObject", "pathForLongMixedMark"]
+- ["Ps9AnyObject", "pathForLongUnselectedMark"]
+- ["Ps9AnyObject", "pathForMark"]
+- ["Ps9AnyObject", "pathForMixedMark"]
+- ["Ps9AnyObject", "pathForUnselectedMark"]
+- !private ["Ps9AnyObject", "size"]
+- ["Ps9AnyObject", ""]
+- ["VSC17CGAffineTransform", "deinit"]
+- !private ["VSC17CGAffineTransform", "init"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "apply"]
+- !private ["Ps28CustomDebugStringConvertible", "apply"]
+- !private ["Ps23CustomStringConvertible", "apply"]
+- !private ["Ps9Equatable", "apply"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps8Hashable", "apply"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "CGAffineTransform"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "UIBezierPath"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "deinit"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "init"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForBox"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForLongMark"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForLongMixedMark"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForLongUnselectedMark"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForMark"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForMixedMark"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", "pathForUnselectedMark"]
+- !private ["C11M13Checkbox24M13CheckboxPathGenerator", "size"]
+- ["C11M13Checkbox24M13CheckboxPathGenerator", ""]
+- !private ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "CGAffineTransform"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "UIBezierPath"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "deinit"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "init"]
+- !private ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "pathForBox"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "pathForLongMark"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "pathForLongMixedMark"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "pathForLongUnselectedMark"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "pathForMark"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "pathForMixedMark"]
+- ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "pathForUnselectedMark"]
+- !private ["C11M13Checkbox29M13CheckboxRadioPathGenerator", "size"]
+- !private ["PSo8NSCoding", "apply"]
+- !private ["PSo9NSCopying", "apply"]
+- !private ["CSo8NSObject", "apply"]
+- !private ["PSo16NSObjectProtocol", "apply"]
+- ["Sq", "deinit"]
+- !private ["CSo12UIBezierPath", "apply"]
+- ["CSo12UIBezierPath", "deinit"]
+- !private ["Ps9_Hashable", "apply"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "VSC17CGAffineTransform"
+- "V12CoreGraphics7CGFloat"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- "C11M13Checkbox24M13CheckboxPathGenerator"
+- "C11M13Checkbox29M13CheckboxRadioPathGenerator"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- "Sq"
+- "CSo12UIBezierPath"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Guru/Guru/Pods/Target Support Files/M13Checkbox/M13Checkbox-umbrella.h"
+- "/Users/Avinash/Documents/Code/Guru/Guru/DerivedData/Guru/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/M13Checkbox.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "b4e04c46efb0d878c772a32c69b3617a"
