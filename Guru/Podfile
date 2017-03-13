@@ -8,7 +8,7 @@ target 'Guru' do
   use_frameworks!
   pod ‘Parse’
   pod 'OneSignal’, '~> 2.3.5’
-  pod 'TwilioVideo', '1.0.0-beta5'
+  pod 'TwilioVideo', '1.0.0-beta10’
   pod 'ParseLiveQuery'
   pod 'PopupController'
   pod 'Cosmos', '~> 8.0'

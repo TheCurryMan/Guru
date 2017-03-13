@@ -2,7 +2,7 @@
 //  TVIAudioConstraints.h
 //  TwilioVideo
 //
-//  Copyright © 2016 Twilio Inc. All rights reserved.
+//  Copyright © 2016-2017 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,6 +22,8 @@
  *  @brief Reduces background noise levels. Defaults to `NO`.
  */
 @property (nonatomic, assign) BOOL noiseReduction;
+
+- (null_unspecified instancetype)init __attribute__((unavailable("Use a TVIAudioConstraintsBuilderBlock instead.")));
 
 @end
 

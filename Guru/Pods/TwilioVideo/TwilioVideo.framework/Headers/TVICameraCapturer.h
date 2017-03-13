@@ -2,7 +2,7 @@
 //  TVICameraCapturer.h
 //  TwilioVideo
 //
-//  Copyright © 2016 Twilio Inc. All rights reserved.
+//  Copyright © 2016-2017 Twilio, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -168,10 +168,9 @@ typedef NS_ENUM(NSUInteger, TVIVideoCaptureSource) {
 /**
  *  @brief A view which allows you to preview the camera source.
  *
- *  @discussion The value is `nil` at the time when `TVICameraCapturer` is constructed. However, this property will be set
- *  by the time the `cameraCapturerPreviewDidStart` delegate method is called.
+ *  @discussion Camera preview will not begin until the `cameraCapturerPreviewDidStart` delegate method is called.
  */
-@property (nonatomic, strong, readonly, nullable) TVICameraPreviewView *previewView;
+@property (nonatomic, strong, readonly, nonnull) TVICameraPreviewView *previewView;
 
 /**
  *  Returns `YES` if the capturer is currently interrupted, and `NO` otherwise.

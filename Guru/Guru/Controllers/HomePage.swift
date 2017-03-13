@@ -26,6 +26,7 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     @IBOutlet weak var topicButton: UIButton!
     var popup = PopupController()
     var finalTopic = ""
+    var pickedTopic = false
     
     //    override var prefersStatusBarHidden: Bool{
     //        return true
@@ -40,8 +41,6 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
                        using:catchNotification)
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "RequestTableViewCell", bundle: nil), forCellReuseIdentifier: "request")
-        
-        
     }
     
     //    override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -66,6 +65,7 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     
     func loadData() {
         let user = PFUser.current()
+        user?.fetchInBackground()
         avail = user?["available"] as! Bool
         if(avail)
         {   acceptButton.setImage(UIImage(named: "Guru_trans.png"), for: .normal)
@@ -125,6 +125,7 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         self.topicButton.setTitle(self.finalTopic, for: UIControlState.normal)
         self.topicButton.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
         popup.dismiss()
+        self.pickedTopic = true
         
         //let alert = UIAlertController(title: "Notification!",
         //                        message:"\(message) received at \(date)",
@@ -135,9 +136,10 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        questionField.text = ""
+        questionField.text = nil
         self.topicButton.setTitle("Calculus", for: UIControlState.normal)
         self.topicButton.setTitleColor(UIColor(red:0.73, green:0.73, blue:0.76, alpha:1.0), for: UIControlState.normal)
+        self.pickedTopic = false
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -145,6 +147,7 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     }
     
     @IBAction func showTopics(_ sender: AnyObject) {
+        self.questionField.resignFirstResponder()
         self.popup = PopupController
             .create(self)
             .customize(
@@ -168,22 +171,26 @@ class HomePage: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     
     
     func submitQuestion(sender: UIButton) {
-        let user = PFUser.current()
-        
-        let question = PFObject(className:"Question")
-        question["text"] = questionField.text
-        question["topic"] = topicButton.titleLabel?.text
-        question["student"] = user
-        question.saveInBackground {
-            (success, error) -> Void in
-            if (success) {
-                self.question = question
-                self.performSegue(withIdentifier: "loading", sender: self)
-                
-            } else {
-                // There was a problem, check error.description
+        if (self.pickedTopic == true || (questionField.text?.characters.count)! > 0) {
+            let user = PFUser.current()
+            let question = PFObject(className:"Question")
+            question["text"] = questionField.text
+            question["topic"] = topicButton.titleLabel?.text
+            question["student"] = user
+            question.saveInBackground {
+                (success, error) -> Void in
+                if (success) {
+                    self.question = question
+                    self.performSegue(withIdentifier: "loading", sender: self)
+                    
+                } else {
+                    // There was a problem, check error.description
+                }
+                sender.isEnabled = true
             }
-            sender.isEnabled = true
+        }
+        else {
+            self.showAlert("Please fill in all fields", message: nil)
         }
     }
     

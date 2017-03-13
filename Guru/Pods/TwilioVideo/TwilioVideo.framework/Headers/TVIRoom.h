@@ -2,13 +2,15 @@
 //  TVIRoom.h
 //  TwilioVideo
 //
-//  Copyright © 2016 Twilio Inc. All rights reserved.
+//  Copyright © 2016-2017 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @class TVILocalParticipant;
 @class TVIParticipant;
+@class TVIStatsReport;
+
 @protocol TVIRoomDelegate;
 
 /**
@@ -31,6 +33,13 @@ typedef NS_ENUM(NSUInteger, TVIRoomState) {
      */
     TVIRoomStateDisconnected
 };
+
+/**
+ * `TVIRoomGetStatsBlock` is invoked asynchronously when the results of the `TVIRoom getStatsWithBlock:` method are available.
+ *
+ * @param statsReports A collection of `TVIStatsReport` objects
+ */
+typedef void (^TVIRoomGetStatsBlock)(NSArray<TVIStatsReport *> * _Nonnull statsReports);
 
 /**
  *  `TVIRoom` represents a media session with zero or more remote Participants. Media shared by any one Participant is 
@@ -65,6 +74,11 @@ typedef NS_ENUM(NSUInteger, TVIRoomState) {
 @property (nonatomic, copy, readonly, nonnull) NSArray<TVIParticipant *> *participants;
 
 /**
+ *  @brief Indicates if the Room is being recorded.
+ */
+@property (nonatomic, assign, readonly, getter=isRecording) BOOL recording;
+
+/**
  *  @brief The sid of the Room.
  */
 @property (nonatomic, copy, readonly, nonnull) NSString *sid;
@@ -94,6 +108,16 @@ typedef NS_ENUM(NSUInteger, TVIRoomState) {
  *  @brief Disconnects from the Room.
  */
 - (void)disconnect;
+
+/**
+ * @brief Retrieve stats for all media tracks.
+ *
+ * @param block The block to be invoked when the stats are available.
+ *
+ * @discussion Stats are retrieved asynchronously. In the case where the room is the `TVIRoomStateDisconnected` state,
+ *             reports won't be delivered.
+ */
+- (void)getStatsWithBlock:(nonnull TVIRoomGetStatsBlock)block;
 
 @end
 
@@ -155,5 +179,19 @@ typedef NS_ENUM(NSUInteger, TVIRoomState) {
  *  @param participant The participant who disconnected from the Room.
  */
 - (void)room:(nonnull TVIRoom *)room participantDidDisconnect:(nonnull TVIParticipant *)participant;
+
+/**
+ *  @brief Called when the media being shared to a `Room` is being recorded.
+ *
+ *  @param  room The Room for which recording has been started.
+ */
+- (void)roomDidStartRecording:(nonnull TVIRoom *)room;
+
+/**
+ *  @brief This method is invoked when the recording of media shared to a `Room` has stopped.
+ *
+ *  @param  room The Room for which recording has been stopped.
+ */
+- (void)roomDidStopRecording:(nonnull TVIRoom *)room;
 
 @end

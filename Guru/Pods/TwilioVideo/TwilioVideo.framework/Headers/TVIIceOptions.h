@@ -2,7 +2,7 @@
 //  TVIIceOptions.h
 //  TwilioVideo
 //
-//  Copyright © 2016 Twilio Inc. All rights reserved.
+//  Copyright © 2016-2017 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -27,12 +27,12 @@ typedef NS_ENUM(NSUInteger, TVIIceTransportPolicy) {
 @interface TVIIceServer : NSObject
 
 /**
- *  @brief The URL for the ICE server.
+ *  @brief The URL string for the ICE server.
  *
  *  @discussion Your server URL must begin with either the stun: or turn: scheme.
  *  For example, a STUN server could be defined as <stun:stun.company.com:port>.
  */
-@property (nonnull, nonatomic, readonly, copy) NSString *url;
+@property (nonnull, nonatomic, readonly, copy) NSString *urlString;
 
 /**
  *  @brief The user name. Required for TURN servers.
@@ -47,24 +47,24 @@ typedef NS_ENUM(NSUInteger, TVIIceTransportPolicy) {
 /**
  *  Creates a `TVIIceServer`.
  *
- *  @param serverUrl The URL for your STUN or TURN server.
+ *  @param serverURLString The URL for your STUN or TURN server.
  *
  *  @return A `TVIIceServer` object.
  */
-- (null_unspecified instancetype)initWithURL:(nonnull NSString *)serverUrl;
+- (null_unspecified instancetype)initWithURLString:(nonnull NSString *)serverURLString;
 
 /**
  *  Creates a `TVIIceServer`.
  *
- *  @param serverUrl The URL for your STUN or TURN server.
- *  @param username  The username credential for your server.
- *  @param password  The password credential for your server.
+ *  @param serverURLString The URL for your STUN or TURN server.
+ *  @param username The username credential for your server.
+ *  @param password The password credential for your server.
  *
  *  @return A `TVIIceServer` object.
  */
-- (null_unspecified instancetype)initWithURL:(nonnull NSString *)serverUrl
-                                    username:(nullable NSString *)username
-                                    password:(nullable NSString *)password;
+- (null_unspecified instancetype)initWithURLString:(nonnull NSString *)serverURLString
+                                          username:(nullable NSString *)username
+                                          password:(nullable NSString *)password;
 
 /**
  *  @brief Developers should initialize with a parameterized initializer.
@@ -92,6 +92,8 @@ typedef NS_ENUM(NSUInteger, TVIIceTransportPolicy) {
  *  @brief The transport policy to use. Defaults to `TVIIceTransportPolicyAll`.
  */
 @property (nonatomic, assign) TVIIceTransportPolicy transportPolicy;
+
+- (null_unspecified instancetype)init __attribute__((unavailable("Use a TVIIceOptionsBuilderBlock instead.")));
 
 @end
 

@@ -2,7 +2,7 @@
 //  TVIVideoConstraints.h
 //  TwilioVideo
 //
-//  Copyright © 2016 Twilio Inc. All rights reserved.
+//  Copyright © 2016-2017 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -121,6 +121,8 @@ extern TVIAspectRatio const TVIAspectRatio16x9;
  *  @brief Specifies the aspect ratio of your video.
  */
 @property (nonatomic, assign) TVIAspectRatio aspectRatio;
+
+- (null_unspecified instancetype)init __attribute__((unavailable("Use a TVIVideoConstraintsBuilderBlock instead.")));
 
 @end
 

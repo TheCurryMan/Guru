@@ -2,7 +2,7 @@
 //  TVIVideoViewRenderer.h
 //  TwilioVideo
 //
-//  Copyright © 2016 Twilio Inc. All rights reserved.
+//  Copyright © 2016-2017 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -101,6 +101,10 @@ typedef NS_ENUM(NSUInteger, TVIVideoRenderingType) {
 
 /**
  *  @brief Creates a video renderer with a rendering type and a delegate.
+ *
+ *  @discussion The OpenGL ES renderer supports zero copy rendering of NV12 sources. However, it currently fails to create
+ *  textures when the input is an NV12 CVPixelBuffer without `kCVPixelBufferOpenGLTextureCacheCompatibilityKey` set to `true`.
+ *  This is only an issue for custom capturers which produce NV12 buffers without this flag set.
  *
  *  @param renderingType The rendering type.
  *  @param delegate An object implementing the TVIVideoViewRendererDelegate protocol (often a UIViewController).

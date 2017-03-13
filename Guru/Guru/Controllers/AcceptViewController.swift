@@ -41,7 +41,7 @@ class AcceptViewController: UIViewController {
                     self.performSegue(withIdentifier: "acceptCallSegue", sender: self)
                 }
                 else {
-                    _ = self.navigationController?.popViewController(animated: true)
+                    self.showAlert("Call already answered", message: nil)
                 }
             }
     }
