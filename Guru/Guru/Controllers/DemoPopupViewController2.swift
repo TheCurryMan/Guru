@@ -16,16 +16,17 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
     @IBOutlet weak var bottomButton: UIButton!
     var topics = [
         ("Algebra"),
-        ("Geometry"),
-        ("Precalculus"),
+        ("Biology"),
         ("Calculus"),
         ("Chemistry"),
-        ("Biology"),
-        ("Physics"),
-        ("History"),
-        ("Geography"),
         ("Economics"),
+        ("Emotional Support"),
+        ("Geography"),
+        ("Geometry"),
         ("Government"),
+        ("History"),
+        ("Physics"),
+        ("Precalculus"),
         ("Programming")
     ]
     
@@ -34,7 +35,12 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.bottomButton.setTitle("Select up to 3 topics", for: .disabled)
+        if (multipleSelection) {
+            self.bottomButton.setTitle("Select up to 3 topics", for: .disabled)
+        } else {
+            self.bottomButton.setTitle("Select your topic", for: .disabled)
+        }
+        
         self.bottomButton.setTitle("Done", for: .normal)
         self.disableBottomButton()
         tableView.delegate = self

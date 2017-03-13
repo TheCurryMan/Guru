@@ -10,12 +10,12 @@ provides-dynamic-lookup:
 - "parseClassName"
 - "rating"
 depends-top-level:
-- "PFObject"
 - "String"
-- "Review"
-- "PFSubclassing"
 - "Int"
+- "PFSubclassing"
+- "Review"
 - !private "StringLiteralType"
+- "PFObject"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "object"]

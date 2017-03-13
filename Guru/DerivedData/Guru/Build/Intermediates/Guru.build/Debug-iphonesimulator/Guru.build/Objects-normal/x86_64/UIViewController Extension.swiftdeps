@@ -9,11 +9,11 @@ provides-dynamic-lookup:
 - "showAlert"
 - "showAlert"
 depends-top-level:
-- "String"
-- !private "StringLiteralType"
-- !private "UIAlertController"
 - !private "BooleanLiteralType"
 - "UIViewController"
+- !private "StringLiteralType"
+- "String"
+- !private "UIAlertController"
 - !private "UIAlertAction"
 depends-member:
 - !private ["Ps9AnyObject", "UIAlertAction"]

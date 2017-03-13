@@ -1,14 +1,14 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "7a0dec60946b313c695b44b52ad4fe6e"
-build_time: [542442485, 740601000]
+options: "253cd7d92c18cef70d1343ae39820e86"
+build_time: [542678943, 405229000]
 inputs:
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Model/GuruManager.swift": [542407151, 0]
-  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/DemoPopupViewController2.swift": [542407151, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/DemoPopupViewController2.swift": [542678940, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/LoginViewController.swift": [542407151, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/SignUpViewController.swift": [542407151, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/LDViewController.swift": [540282060, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Utilities/UIViewController Extension.swift": [542407152, 0]
-  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/ProfileViewController.swift": [542407151, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/ProfileViewController.swift": [542443348, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/VideoVC.swift": [542438539, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/GuruRequestsViewController.swift": [540282066, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Utilities/Utils.swift": [539227502, 0]
@@ -18,5 +18,5 @@ inputs:
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/WaitingScreen.swift": [542442478, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Utilities/UIView Extension.swift": [539227502, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/AcceptViewController.swift": [539227502, 0]
-  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/HomePage.swift": [542407151, 0]
+  "/Users/Avinash/Documents/Code/Guru/Guru/Guru/Controllers/HomePage.swift": [542443348, 0]
   "/Users/Avinash/Documents/Code/Guru/Guru/Guru/AppDelegate.swift": [540282066, 0]

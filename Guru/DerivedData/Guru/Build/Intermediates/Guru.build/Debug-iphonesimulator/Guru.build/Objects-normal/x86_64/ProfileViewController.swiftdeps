@@ -6,57 +6,57 @@ provides-nominal:
 provides-member:
 - ["C4Guru21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "usernameLabel"
+- "sortQuestions"
+- "answeredLabel"
+- "changedSegment"
+- "updateUserStats"
 - "selectedQuestions"
 - "viewWillAppear"
-- "changedSegment"
+- "topicsBar"
 - "didReceiveMemoryWarning"
-- "answeredLabel"
-- "reviewBar"
-- "numberOfSections"
-- "averageRating"
-- "updateUserStats"
-- "allQuestions"
-- "tableView"
-- "tableView"
-- "tableView"
+- "askedLabel"
 - "exitView"
 - "pointsLabel"
-- "topicsBar"
-- "askedLabel"
+- "tableView"
+- "tableView"
+- "tableView"
+- "usernameLabel"
+- "allQuestions"
+- "averageRating"
+- "reviewBar"
+- "numberOfSections"
 - "viewDidLoad"
-- "sortQuestions"
 depends-top-level:
-- !private "!="
-- !private "/"
-- !private "BooleanLiteralType"
 - !private "String"
-- !private "+="
-- "CosmosView"
-- "Bool"
-- "UISegmentedControl"
-- "UITableViewDelegate"
-- "UITableView"
-- !private "PFQuery"
-- !private "UIColor"
-- !private "Error"
 - "PFObject"
+- !private "/"
 - !private "&&"
-- !private "Double"
-- "UIViewController"
-- "UITableViewDataSource"
-- "Int"
-- !private "StringLiteralType"
-- "IndexPath"
-- !private "print"
-- "UITableViewCell"
-- !private "PFUser"
+- "UILabel"
+- !private "RequestTableViewCell"
+- "CastingPrecedence"
+- !private "Error"
 - "AssignmentPrecedence"
 - !private "=="
-- "UILabel"
-- "CastingPrecedence"
+- !private "print"
+- "Int"
+- "Bool"
 - "ProfileViewController"
-- !private "RequestTableViewCell"
+- "UIViewController"
+- "UITableViewDataSource"
+- "UITableViewCell"
+- "IndexPath"
+- "UITableViewDelegate"
+- !private "+="
+- !private "BooleanLiteralType"
+- !private "PFUser"
+- "UISegmentedControl"
+- "UITableView"
+- !private "!="
+- !private "PFQuery"
+- "CosmosView"
+- !private "UIColor"
+- !private "StringLiteralType"
+- !private "Double"
 - !private "UINib"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -92,6 +92,7 @@ depends-member:
 - !private ["Ps9AnyObject", "lightGray"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "order"]
 - ["Ps9AnyObject", "pointsLabel"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "questionLabel"]
@@ -238,6 +239,7 @@ depends-member:
 - !private ["Ps7CVarArg", "lightGray"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- !private ["Ps7CVarArg", "order"]
 - ["Ps7CVarArg", "pointsLabel"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "questionLabel"]
@@ -339,6 +341,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "lightGray"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "order"]
 - ["Ps28CustomDebugStringConvertible", "pointsLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "questionLabel"]
@@ -445,6 +448,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "lightGray"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "order"]
 - ["Ps23CustomStringConvertible", "pointsLabel"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "questionLabel"]
@@ -537,6 +541,7 @@ depends-member:
 - !private ["Ps9Equatable", "none"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "order"]
 - ["Ps9Equatable", "pointsLabel"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "questionLabel"]
@@ -641,6 +646,7 @@ depends-member:
 - !private ["Ps8Hashable", "none"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "order"]
 - ["Ps8Hashable", "pointsLabel"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "questionLabel"]
@@ -829,6 +835,7 @@ depends-member:
 - !private ["PSo9NSCopying", "includeKey"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lightGray"]
+- !private ["PSo9NSCopying", "order"]
 - !private ["PSo9NSCopying", "whereKey"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
 - ["PSo26NSExtensionRequestHandling", "PFObject"]
@@ -921,6 +928,7 @@ depends-member:
 - !private ["CSo8NSObject", "lightGray"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "order"]
 - ["CSo8NSObject", "pointsLabel"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "questionLabel"]
@@ -993,6 +1001,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "lightGray"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "order"]
 - ["PSo16NSObjectProtocol", "pointsLabel"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "questionLabel"]
@@ -1049,6 +1058,7 @@ depends-member:
 - !private ["CSo7PFQuery", "findObjectsInBackground"]
 - !private ["CSo7PFQuery", "includeKey"]
 - !private ["CSo7PFQuery", "init"]
+- !private ["CSo7PFQuery", "order"]
 - !private ["CSo7PFQuery", "whereKey"]
 - !private ["PSo13PFSubclassing", "current"]
 - !private ["PSo13PFSubclassing", "subscript"]
@@ -2043,6 +2053,7 @@ depends-member:
 - !private ["Ps9_Hashable", "none"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps9_Hashable", "order"]
 - ["Ps9_Hashable", "pointsLabel"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "questionLabel"]
