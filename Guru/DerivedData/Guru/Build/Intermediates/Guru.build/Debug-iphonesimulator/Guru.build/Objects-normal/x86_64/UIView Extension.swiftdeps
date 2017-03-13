@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 - "shake"
 - "setRounded"
 depends-top-level:
-- !private "NSValue"
 - !private "Array"
 - "AssignmentPrecedence"
 - !private "CAKeyframeAnimation"
-- !private "CATransform3DMakeTranslation"
 - !private "BooleanLiteralType"
+- !private "NSValue"
 - !private "/"
-- !private "StringLiteralType"
+- !private "CATransform3DMakeTranslation"
 - "UIView"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CAKeyframeAnimation"]
 - !private ["Ps9AnyObject", "CATransform3DMakeTranslation"]

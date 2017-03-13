@@ -6,82 +6,86 @@ provides-nominal:
 provides-member:
 - ["C4Guru8HomePage", ""]
 provides-dynamic-lookup:
-- "pressedAsk"
-- "tapped"
-- "viewWillAppear"
-- "avail"
-- "viewDidLoad"
-- "question"
-- "logout"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "questions"
-- "topicButton"
-- "presentSignup"
-- "submitQuestion"
-- "catchNotification"
-- "acceptButton"
-- "loadData"
-- "backgroundView"
-- "showTopics"
-- "questionField"
-- "selectedQuestion"
-- "popup"
-- "didReceiveMemoryWarning"
-- "prepare"
-- "finalTopic"
-- "emptyTableViewLabel"
 - "textFieldShouldReturn"
+- "prepare"
+- "presentSignup"
+- "question"
 - "accept"
+- "submitQuestion"
+- "finalTopic"
+- "viewDidLoad"
+- "acceptButton"
+- "selectedQuestion"
+- "pressedAsk"
+- "backgroundView"
+- "tapped"
+- "catchNotification"
 - "viewDidAppear"
+- "viewWillAppear"
+- "showTopics"
+- "didReceiveMemoryWarning"
+- "popup"
+- "emptyTableViewLabel"
+- "questions"
+- "questionField"
+- "logout"
+- "topicButton"
+- "loadData"
+- "avail"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
-- "Notification"
+- !private "UIControlState"
+- !private "AcceptViewController"
+- "UITableViewDelegate"
+- "Int"
 - "CastingPrecedence"
-- "UIView"
-- "IndexPath"
-- "UIStoryboardSegue"
-- "UITableViewCell"
-- "AssignmentPrecedence"
-- !private "String"
-- !private "PFQuery"
-- !private "=="
-- !private "UIImage"
-- !private "print"
+- !private "!"
+- "UITableViewDataSource"
 - "UIButton"
-- "UITextFieldDelegate"
-- "PopupController"
+- "UITableViewCell"
+- "AnyObject"
+- !private "PFQuery"
+- "AssignmentPrecedence"
+- !private "UIImage"
 - "UILabel"
 - !private "UINib"
 - "HomePage"
-- !private "!"
-- !private "AcceptViewController"
-- !private "DemoPopupViewController2"
-- !private "UIControlState"
-- !private "PFUser"
-- "PFObject"
-- !private "NotificationCenter"
-- "UITextField"
-- "StringLiteralType"
-- !private "Array"
-- "Bool"
-- "UITableViewDelegate"
-- !private "RequestTableViewCell"
-- "BooleanLiteralType"
-- "UITableView"
-- "Void"
+- !private "Date"
+- !private "=="
+- !private "print"
 - !private "UIColor"
-- "AnyObject"
-- "UIViewController"
-- !private "Error"
-- "Int"
-- "UITableViewDataSource"
 - !private "WaitingScreen"
+- !private "String"
+- "Void"
+- !private "DemoPopupViewController2"
+- "BooleanLiteralType"
+- !private "Calendar"
+- "Notification"
+- !private "NotificationCenter"
+- "UITextFieldDelegate"
+- "UITextField"
+- !private "Error"
+- !private "PFUser"
+- "UIView"
+- "PopupController"
+- "Bool"
+- "PFObject"
+- !private "RequestTableViewCell"
+- "UIViewController"
+- "StringLiteralType"
+- "UITableView"
+- !private "Array"
+- "UIStoryboardSegue"
+- "IndexPath"
 depends-member:
 - ["C4Guru20AcceptViewController", "deinit"]
 - !private ["C4Guru20AcceptViewController", "question"]
 - !private ["Vs11AnyHashable", "deinit"]
+- !private ["Ps9AnyObject", "Calendar"]
+- !private ["Ps9AnyObject", "Date"]
 - !private ["Ps9AnyObject", "DemoPopupViewController2"]
 - !private ["Ps9AnyObject", "Notification"]
 - !private ["Ps9AnyObject", "NotificationCenter"]
@@ -205,6 +209,7 @@ depends-member:
 - !private ["Sa", "count"]
 - ["Sa", "deinit"]
 - ["Sa", "init"]
+- !private ["Sa", "removeAll"]
 - !private ["Sa", "subscript"]
 - ["CSo6BFTask", "deinit"]
 - !private ["Ps23BidirectionalCollection", "Element"]
@@ -217,6 +222,7 @@ depends-member:
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "count"]
 - ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "removeAll"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Ps22BidirectionalIndexable", "Element"]
@@ -229,6 +235,7 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "append"]
 - !private ["Ps22BidirectionalIndexable", "count"]
 - ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps22BidirectionalIndexable", "removeAll"]
 - !private ["Ps22BidirectionalIndexable", "row"]
 - !private ["Ps22BidirectionalIndexable", "subscript"]
 - !private ["Vs18BidirectionalSlice", "Index"]
@@ -265,6 +272,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "usernameLabel"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "Calendar"]
+- !private ["Ps7CVarArg", "Date"]
 - !private ["Ps7CVarArg", "DemoPopupViewController2"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Index"]
@@ -339,6 +348,7 @@ depends-member:
 - ["Ps7CVarArg", "questions"]
 - !private ["Ps7CVarArg", "register"]
 - !private ["Ps7CVarArg", "reloadData"]
+- !private ["Ps7CVarArg", "removeAll"]
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - !private ["Ps7CVarArg", "saveInBackground"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
@@ -389,6 +399,10 @@ depends-member:
 - !private ["Ps7CVarArg", "whereKey"]
 - !private ["Ps7CVarArg", "whereKeyDoesNotExist"]
 - ["Ps7CVarArg", ""]
+- !private ["V10Foundation8Calendar", "current"]
+- !private ["V10Foundation8Calendar", "date"]
+- ["V10Foundation8Calendar", "deinit"]
+- !private ["Vs9Character", "deinit"]
 - !private ["Vs11ClosedRange", "deinit"]
 - !private ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Index"]
@@ -400,6 +414,7 @@ depends-member:
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "count"]
 - ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "removeAll"]
 - !private ["Ps10Collection", "row"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
@@ -407,6 +422,10 @@ depends-member:
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "row"]
+- ["OV10Foundation8Calendar9Component", "deinit"]
+- !private ["OV10Foundation8Calendar9Component", "minute"]
+- !private ["Ps28CustomDebugStringConvertible", "Calendar"]
+- !private ["Ps28CustomDebugStringConvertible", "Date"]
 - !private ["Ps28CustomDebugStringConvertible", "DemoPopupViewController2"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -439,6 +458,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "customize"]
 - !private ["Ps28CustomDebugStringConvertible", "darkGray"]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
 - !private ["Ps28CustomDebugStringConvertible", "default"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "deselectRow"]
@@ -479,6 +499,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "questions"]
 - !private ["Ps28CustomDebugStringConvertible", "register"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAll"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
@@ -549,10 +570,15 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "current"]
+- !private ["Ps17CustomReflectable", "date"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "removeAll"]
 - !private ["Ps17CustomReflectable", "row"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "userInfo"]
+- !private ["Ps23CustomStringConvertible", "Calendar"]
+- !private ["Ps23CustomStringConvertible", "Date"]
 - !private ["Ps23CustomStringConvertible", "DemoPopupViewController2"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -589,6 +615,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "customize"]
 - !private ["Ps23CustomStringConvertible", "darkGray"]
+- !private ["Ps23CustomStringConvertible", "date"]
 - !private ["Ps23CustomStringConvertible", "default"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "deselectRow"]
@@ -629,6 +656,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "questions"]
 - !private ["Ps23CustomStringConvertible", "register"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
+- !private ["Ps23CustomStringConvertible", "removeAll"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
@@ -681,6 +709,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "whereKey"]
 - !private ["Ps23CustomStringConvertible", "whereKeyDoesNotExist"]
 - ["Ps23CustomStringConvertible", ""]
+- ["V10Foundation4Date", "deinit"]
+- !private ["V10Foundation4Date", "init"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -700,6 +730,9 @@ depends-member:
 - ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Vs15DictionaryIndex", "deinit"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Calendar"]
+- !private ["Ps9Equatable", "Date"]
 - !private ["Ps9Equatable", "DemoPopupViewController2"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Name"]
@@ -728,6 +761,7 @@ depends-member:
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "customize"]
 - !private ["Ps9Equatable", "darkGray"]
+- !private ["Ps9Equatable", "date"]
 - !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "deselectRow"]
@@ -752,6 +786,7 @@ depends-member:
 - ["Ps9Equatable", "loadData"]
 - !private ["Ps9Equatable", "logOut"]
 - ["Ps9Equatable", "logout"]
+- !private ["Ps9Equatable", "minute"]
 - !private ["Ps9Equatable", "none"]
 - !private ["Ps9Equatable", "normal"]
 - ["Ps9Equatable", "numberOfSections"]
@@ -832,7 +867,9 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "minute"]
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
+- !private ["Ps25ExpressibleByArrayLiteral", "removeAll"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -848,6 +885,9 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "Calendar"]
+- !private ["Ps8Hashable", "Date"]
 - !private ["Ps8Hashable", "DemoPopupViewController2"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Name"]
@@ -876,6 +916,7 @@ depends-member:
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "customize"]
 - !private ["Ps8Hashable", "darkGray"]
+- !private ["Ps8Hashable", "date"]
 - !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "deselectRow"]
@@ -900,6 +941,7 @@ depends-member:
 - ["Ps8Hashable", "loadData"]
 - !private ["Ps8Hashable", "logOut"]
 - ["Ps8Hashable", "logout"]
+- !private ["Ps8Hashable", "minute"]
 - !private ["Ps8Hashable", "none"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
@@ -973,6 +1015,8 @@ depends-member:
 - !private ["C4Guru8HomePage", "AcceptViewController"]
 - ["C4Guru8HomePage", "AnyObject"]
 - ["C4Guru8HomePage", "Bool"]
+- !private ["C4Guru8HomePage", "Calendar"]
+- !private ["C4Guru8HomePage", "Date"]
 - !private ["C4Guru8HomePage", "DemoPopupViewController2"]
 - !private ["C4Guru8HomePage", "Error"]
 - ["C4Guru8HomePage", "IndexPath"]
@@ -1070,6 +1114,7 @@ depends-member:
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
 - ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "removeAll"]
 - !private ["Ps9Indexable", "row"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Ps13IndexableBase", "Element"]
@@ -1082,6 +1127,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "append"]
 - !private ["Ps13IndexableBase", "count"]
 - ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "removeAll"]
 - !private ["Ps13IndexableBase", "row"]
 - !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
@@ -1089,6 +1135,10 @@ depends-member:
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
 - ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
@@ -1111,6 +1161,7 @@ depends-member:
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "count"]
 - ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "removeAll"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["Ps17MutableCollection", "subscript"]
 - !private ["Ps16MutableIndexable", "Element"]
@@ -1122,9 +1173,12 @@ depends-member:
 - !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
 - ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "removeAll"]
 - !private ["Ps16MutableIndexable", "row"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Calendar"]
+- !private ["PSo8NSCoding", "Date"]
 - !private ["PSo8NSCoding", "DemoPopupViewController2"]
 - !private ["PSo8NSCoding", "Notification"]
 - !private ["PSo8NSCoding", "NotificationCenter"]
@@ -1230,6 +1284,8 @@ depends-member:
 - !private ["PSo9NSCopying", "order"]
 - !private ["PSo9NSCopying", "whereKey"]
 - !private ["PSo9NSCopying", "whereKeyDoesNotExist"]
+- !private ["PSo26NSExtensionRequestHandling", "Calendar"]
+- !private ["PSo26NSExtensionRequestHandling", "Date"]
 - !private ["PSo26NSExtensionRequestHandling", "DemoPopupViewController2"]
 - !private ["PSo26NSExtensionRequestHandling", "Notification"]
 - !private ["PSo26NSExtensionRequestHandling", "NotificationCenter"]
@@ -1312,6 +1368,8 @@ depends-member:
 - !private ["CSo8NSObject", "AcceptViewController"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Calendar"]
+- !private ["CSo8NSObject", "Date"]
 - !private ["CSo8NSObject", "DemoPopupViewController2"]
 - !private ["CSo8NSObject", "Error"]
 - ["CSo8NSObject", "IndexPath"]
@@ -1437,6 +1495,8 @@ depends-member:
 - ["CSo8NSObject", "viewWillAppear"]
 - !private ["CSo8NSObject", "whereKey"]
 - !private ["CSo8NSObject", "whereKeyDoesNotExist"]
+- !private ["PSo16NSObjectProtocol", "Calendar"]
+- !private ["PSo16NSObjectProtocol", "Date"]
 - !private ["PSo16NSObjectProtocol", "DemoPopupViewController2"]
 - !private ["PSo16NSObjectProtocol", "Notification"]
 - !private ["PSo16NSObjectProtocol", "NotificationCenter"]
@@ -1562,6 +1622,7 @@ depends-member:
 - !private ["CSo18NotificationCenter", "addObserver"]
 - !private ["CSo18NotificationCenter", "default"]
 - ["CSo18NotificationCenter", "deinit"]
+- !private ["Ps9OptionSet", "minute"]
 - !private ["Ps9OptionSet", "normal"]
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "current"]
@@ -1616,6 +1677,7 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "count"]
 - ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "removeAll"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps21RandomAccessIndexable", "Element"]
@@ -1628,6 +1690,7 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "append"]
 - !private ["Ps21RandomAccessIndexable", "count"]
 - ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps21RandomAccessIndexable", "removeAll"]
 - !private ["Ps21RandomAccessIndexable", "row"]
 - !private ["Ps21RandomAccessIndexable", "subscript"]
 - !private ["Vs17RandomAccessSlice", "Index"]
@@ -1646,6 +1709,7 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "removeAll"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps25RangeReplaceableIndexable", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Index"]
@@ -1656,11 +1720,16 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "append"]
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "removeAll"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "minute"]
 - !private ["Ps16RawRepresentable", "none"]
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["P10Foundation20ReferenceConvertible", "Name"]
+- !private ["P10Foundation20ReferenceConvertible", "current"]
+- !private ["P10Foundation20ReferenceConvertible", "date"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["P10Foundation20ReferenceConvertible", "userInfo"]
 - ["C4Guru20RequestTableViewCell", "deinit"]
@@ -1678,8 +1747,10 @@ depends-member:
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "count"]
 - ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "removeAll"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Ps10SetAlgebra", "minute"]
 - !private ["Ps10SetAlgebra", "normal"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
 - !private ["Ps13SignedInteger", "Stride"]
@@ -1738,6 +1809,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "titleLabel"]
 - !private ["PSo12UIAppearance", "topicLabel"]
 - !private ["PSo12UIAppearance", "usernameLabel"]
+- !private ["PSo21UIAppearanceContainer", "Calendar"]
+- !private ["PSo21UIAppearanceContainer", "Date"]
 - !private ["PSo21UIAppearanceContainer", "DemoPopupViewController2"]
 - !private ["PSo21UIAppearanceContainer", "Notification"]
 - !private ["PSo21UIAppearanceContainer", "NotificationCenter"]
@@ -1843,6 +1916,8 @@ depends-member:
 - !private ["CSo7UIColor", "darkGray"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "init"]
+- !private ["PSo18UIContentContainer", "Calendar"]
+- !private ["PSo18UIContentContainer", "Date"]
 - !private ["PSo18UIContentContainer", "DemoPopupViewController2"]
 - !private ["PSo18UIContentContainer", "Notification"]
 - !private ["PSo18UIContentContainer", "NotificationCenter"]
@@ -1971,6 +2046,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "titleLabel"]
 - !private ["PSo13UIDynamicItem", "topicLabel"]
 - !private ["PSo13UIDynamicItem", "usernameLabel"]
+- !private ["PSo18UIFocusEnvironment", "Calendar"]
+- !private ["PSo18UIFocusEnvironment", "Date"]
 - !private ["PSo18UIFocusEnvironment", "DemoPopupViewController2"]
 - !private ["PSo18UIFocusEnvironment", "Notification"]
 - !private ["PSo18UIFocusEnvironment", "NotificationCenter"]
@@ -2108,6 +2185,8 @@ depends-member:
 - !private ["CSo11UIResponder", "AcceptViewController"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Calendar"]
+- !private ["CSo11UIResponder", "Date"]
 - !private ["CSo11UIResponder", "DemoPopupViewController2"]
 - !private ["CSo11UIResponder", "Error"]
 - ["CSo11UIResponder", "IndexPath"]
@@ -2216,6 +2295,8 @@ depends-member:
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "Calendar"]
+- !private ["PSo30UIResponderStandardEditActions", "Date"]
 - !private ["PSo30UIResponderStandardEditActions", "DemoPopupViewController2"]
 - !private ["PSo30UIResponderStandardEditActions", "Notification"]
 - !private ["PSo30UIResponderStandardEditActions", "NotificationCenter"]
@@ -2318,6 +2399,8 @@ depends-member:
 - !private ["CSo12UIScrollView", "register"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["CSo12UIScrollView", "tableFooterView"]
+- !private ["PSo20UIScrollViewDelegate", "Calendar"]
+- !private ["PSo20UIScrollViewDelegate", "Date"]
 - !private ["PSo20UIScrollViewDelegate", "DemoPopupViewController2"]
 - !private ["PSo20UIScrollViewDelegate", "Notification"]
 - !private ["PSo20UIScrollViewDelegate", "NotificationCenter"]
@@ -2386,6 +2469,8 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "Calendar"]
+- !private ["PSo16UIStateRestoring", "Date"]
 - !private ["PSo16UIStateRestoring", "DemoPopupViewController2"]
 - !private ["PSo16UIStateRestoring", "Notification"]
 - !private ["PSo16UIStateRestoring", "NotificationCenter"]
@@ -2483,6 +2568,8 @@ depends-member:
 - !private ["CSo15UITableViewCell", "usernameLabel"]
 - ["OSC29UITableViewCellSelectionStyle", "deinit"]
 - !private ["OSC29UITableViewCellSelectionStyle", "none"]
+- !private ["PSo21UITableViewDataSource", "Calendar"]
+- !private ["PSo21UITableViewDataSource", "Date"]
 - !private ["PSo21UITableViewDataSource", "DemoPopupViewController2"]
 - !private ["PSo21UITableViewDataSource", "Notification"]
 - !private ["PSo21UITableViewDataSource", "NotificationCenter"]
@@ -2544,6 +2631,8 @@ depends-member:
 - ["PSo21UITableViewDataSource", "viewForZooming"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "Calendar"]
+- !private ["PSo19UITableViewDelegate", "Date"]
 - !private ["PSo19UITableViewDelegate", "DemoPopupViewController2"]
 - !private ["PSo19UITableViewDelegate", "Notification"]
 - !private ["PSo19UITableViewDelegate", "NotificationCenter"]
@@ -2608,6 +2697,8 @@ depends-member:
 - ["CSo11UITextField", "deinit"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
+- !private ["PSo19UITextFieldDelegate", "Calendar"]
+- !private ["PSo19UITextFieldDelegate", "Date"]
 - !private ["PSo19UITextFieldDelegate", "DemoPopupViewController2"]
 - !private ["PSo19UITextFieldDelegate", "Notification"]
 - !private ["PSo19UITextFieldDelegate", "NotificationCenter"]
@@ -2672,6 +2763,8 @@ depends-member:
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "Calendar"]
+- !private ["PSo18UITraitEnvironment", "Date"]
 - !private ["PSo18UITraitEnvironment", "DemoPopupViewController2"]
 - !private ["PSo18UITraitEnvironment", "Notification"]
 - !private ["PSo18UITraitEnvironment", "NotificationCenter"]
@@ -2791,6 +2884,8 @@ depends-member:
 - !private ["CSo16UIViewController", "AcceptViewController"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Calendar"]
+- !private ["CSo16UIViewController", "Date"]
 - !private ["CSo16UIViewController", "DemoPopupViewController2"]
 - !private ["CSo16UIViewController", "Error"]
 - ["CSo16UIViewController", "IndexPath"]
@@ -2883,6 +2978,13 @@ depends-member:
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["VCSo10NSCalendar4Unit", "minute"]
 - ["C4Guru13WaitingScreen", "deinit"]
 - !private ["C4Guru13WaitingScreen", "question"]
 - !private ["P4Guru21WaitingScreenDelegate", "question"]
@@ -2895,6 +2997,7 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "count"]
 - ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "removeAll"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "deselectRow"]
@@ -2924,6 +3027,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "removeAll"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -2937,6 +3041,8 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Calendar"]
+- !private ["Ps9_Hashable", "Date"]
 - !private ["Ps9_Hashable", "DemoPopupViewController2"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Name"]
@@ -2965,6 +3071,7 @@ depends-member:
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "customize"]
 - !private ["Ps9_Hashable", "darkGray"]
+- !private ["Ps9_Hashable", "date"]
 - !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "deinit"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
@@ -2990,6 +3097,7 @@ depends-member:
 - ["Ps9_Hashable", "loadData"]
 - !private ["Ps9_Hashable", "logOut"]
 - ["Ps9_Hashable", "logout"]
+- !private ["Ps9_Hashable", "minute"]
 - !private ["Ps9_Hashable", "none"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
@@ -3069,6 +3177,8 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["P10Foundation14_MutableBoxing", "current"]
+- !private ["P10Foundation14_MutableBoxing", "date"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
@@ -3082,7 +3192,10 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "current"]
+- !private ["Ps21_ObjectiveCBridgeable", "date"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "removeAll"]
 - !private ["Ps21_ObjectiveCBridgeable", "row"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "userInfo"]
@@ -3110,18 +3223,23 @@ depends-nominal:
 - !private "PSo13CAMediaTiming"
 - "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
+- "V10Foundation8Calendar"
+- !private "Vs9Character"
 - !private "Vs11ClosedRange"
 - "Ps10Collection"
 - "Ps10Comparable"
+- "OV10Foundation8Calendar9Component"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- "V10Foundation4Date"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - "C4Guru24DemoPopupViewController2"
 - "Vs10Dictionary"
 - !private "Vs15DictionaryIndex"
+- !private "Sd"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
@@ -3131,6 +3249,7 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
 - "Ps8Hashable"
 - "C4Guru8HomePage"
 - "SQ"
@@ -3139,6 +3258,10 @@ depends-nominal:
 - "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
 - "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
@@ -3226,6 +3349,13 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "VCSo10NSCalendar4Unit"
 - "C4Guru13WaitingScreen"
 - !private "P4Guru21WaitingScreenDelegate"
 - "Ps14_ArrayProtocol"
@@ -3244,6 +3374,7 @@ depends-nominal:
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation14_MutableBoxing"
 - "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"

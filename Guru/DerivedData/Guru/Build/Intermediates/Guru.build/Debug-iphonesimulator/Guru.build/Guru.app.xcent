@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>3V593WX43L.com.wagmob.guru</string>
+	<string>9FC732TXJR.com.dcdwebdesign.guru</string>
 	<key>aps-environment</key>
 	<string>development</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>3V593WX43L.com.dcdwebdesign.guru</string>
+		<string>9FC732TXJR.com.dcdwebdesign.guru</string>
 	</array>
 </dict>
 </plist>
