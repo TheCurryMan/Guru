@@ -25,6 +25,7 @@ class DemoPopupViewController2: UIViewController, PopupContentViewController, UI
         ("Geometry"),
         ("Government"),
         ("History"),
+        ("Literature"),
         ("Physics"),
         ("Precalculus"),
         ("Programming")
