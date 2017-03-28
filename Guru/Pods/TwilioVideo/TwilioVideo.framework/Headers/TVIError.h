@@ -45,6 +45,7 @@ typedef NS_ENUM (NSUInteger, TVIError)
     TVIErrorRoomTimeoutOutOfRangeError = 53109,               ///< Timeout is out of range
     TVIErrorRoomStatusCallbackMethodInvalidError = 53110,     ///< StatusCallbackMethod is invalid
     TVIErrorRoomStatusCallbackInvalidError = 53111,           ///< StatusCallback is invalid
+    TVIErrorRoomStatusInvalidError = 53112,                   ///< Status is invalid
     TVIErrorParticipantIdentityInvalidError = 53200,          ///< Participant identity is invalid
     TVIErrorParticipantIdentityTooLongError = 53201,          ///< Participant identity is too long
     TVIErrorParticipantIdentityCharsInvalidError = 53202,     ///< Participant identity contains invalid characters
@@ -59,7 +60,7 @@ typedef NS_ENUM (NSUInteger, TVIError)
     TVIErrorMediaClientRemoteDescFailedError = 53402,         ///< Client is unable to apply a remote media description
     TVIErrorMediaServerRemoteDescFailedError = 53403,         ///< Server is unable to apply a remote media description
     TVIErrorMediaNoSupportedCodecError = 53404,               ///< No supported codec
-    TVIErrorMediaConnectionError = 53405,                     ///< Media conection failed
+    TVIErrorMediaConnectionError = 53405,                     ///< Media connection failed
     TVIErrorConfigurationAcquireFailedError = 53500,          ///< Unable to acquire configuration
     TVIErrorConfigurationAcquireTurnFailedError = 53501       ///< Unable to acquire TURN credentials
 };

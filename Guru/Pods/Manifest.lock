@@ -12,7 +12,7 @@ PODS:
     - SocketRocket (~> 0.5)
   - PopupController (0.2.0)
   - SocketRocket (0.5.1)
-  - TwilioVideo (1.0.0-beta10)
+  - TwilioVideo (1.0.0-beta12)
 
 DEPENDENCIES:
   - Cosmos (~> 8.0)
@@ -21,7 +21,7 @@ DEPENDENCIES:
   - Parse
   - ParseLiveQuery
   - PopupController
-  - TwilioVideo (= 1.0.0-beta10)
+  - TwilioVideo (= 1.0.0-beta12)
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -33,8 +33,8 @@ SPEC CHECKSUMS:
   ParseLiveQuery: 4c0f3f571ba0f358a4e592cd7d4b55c95ab9655e
   PopupController: 0b69fdf11cbeaa807789a8c3992599083640988f
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
-  TwilioVideo: 54778d3d55d9f4be4cdc669d98eccbfae52cbe29
+  TwilioVideo: 666a87c224ffcfc0d31d8b603ffb02a2c7b91989
 
-PODFILE CHECKSUM: 5265933aa395909da86bdb1058adfa90491742fc
+PODFILE CHECKSUM: 3d33960548f62be29d01aa597b8cfea3d76442fd
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

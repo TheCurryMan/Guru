@@ -40,6 +40,17 @@
 @property (nonatomic, strong, nullable) TVILocalMedia *localMedia;
 
 /**
+ *  @brief A BOOL which determines if the SDK will attempt to reconnect after returning to the foreground.
+ *
+ *  @discussion When the Room is in `TVIRoomStateConnected` state, the SDK attempts to reconnect if the app comes to
+ *  foreground within a short period of time. If the app does not come to foreground within a short time, SDK triggers
+ *  disconnect. If the Room is in `TVIRoomStateConnecting` state before the app goes to background, the SDK will trigger
+ *  disconnect.
+ *  By default, this behavior is enabled when CallKit is not used. Set this connect options to `NO` to disable it.
+ */
+@property (nonatomic, assign, getter = shouldReconnectAfterReturningToForeground) BOOL reconnectAfterReturningToForeground;
+
+/**
  *  @brief The name of the Room which you want to connect to.
  *
  *  @discussion You can provide the name of new or existing Room. The default value of `nil` indicates that a new Room will be created.
@@ -110,6 +121,17 @@ typedef void (^TVIConnectOptionsBuilderBlock)(TVIConnectOptionsBuilder * _Nonnul
  *  will be provided instead.
  */
 @property (nonatomic, strong, readonly, nullable) TVILocalMedia *localMedia;
+
+/**
+ *  @brief A BOOL which determines if the SDK will attempt to reconnect after returning to the foreground.
+ *
+ *  @discussion When the Room is in `TVIRoomStateConnected` state, the SDK attempts to reconnect if the app comes to
+ *  foreground within a short period of time. If the app does not come to foreground within a short time, SDK triggers
+ *  disconnect. If the Room is in `TVIRoomStateConnecting` state before the app goes to background, the SDK will trigger
+ *  disconnect.
+ *  By default, this behavior is enabled when CallKit is not used. Set this connect options to `NO` to disable it.
+ */
+@property (nonatomic, assign, readonly, getter = shouldReconnectAfterReturningToForeground) BOOL reconnectAfterReturningToForeground;
 
 /**
  *  @brief The name of the Room which you want to connect to.
